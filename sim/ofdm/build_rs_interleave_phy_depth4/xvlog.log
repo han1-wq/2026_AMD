@@ -1,0 +1,135 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_dma_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_dma_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_dma_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_iq_scale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_iq_scale
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_packet_mailbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_packet_mailbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_packet_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_packet_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/accum_avg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accum_avg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/add_freq_offset_sample_offset.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_freq_offset_sample_offset
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/bpsk_deinterleaver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bpsk_deinterleaver
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/bpsk_demodulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bpsk_demodulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/bpsk_param_gain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bpsk_param_gain
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/delay_samples.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_samples
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/fcs_for_data_field.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fcs_for_data_field
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/fix_atan2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fix_atan2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/qam64_demodulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ofdm_data_frontend
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/qam64_descramble.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module qam64_descramble
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/ram_simple2port.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_simple2port
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/recv_data_finished_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module recv_data_finished_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs_packet_decoder
+WARNING: [VRFC 10-3380] identifier 'product' is used before its declaration [/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:80]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx802p11_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx802p11_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx_coarse_cfo_use_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_coarse_cfo_use_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx_estimate_channel_info.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_estimate_channel_info
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx_fine_cfo_correct_use_lt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_fine_cfo_correct_use_lt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx_phase_tracker_correct_use_pilot.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_phase_tracker_correct_use_pilot
+INFO: [VRFC 10-311] analyzing module pilot_rotate_full_precision
+INFO: [VRFC 10-311] analyzing module pilot_stream_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx_sync_long_packet_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_sync_long_packet_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rx_timed_to_freqd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_timed_to_freqd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/sync_short_packet_detect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_short_packet_detect
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/viterbi_decoders.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module viterbi_decoders
+INFO: [VRFC 10-311] analyzing module viterbi_decoders_legacy
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/Tx802p11.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tx802p11
+INFO: [VRFC 10-311] analyzing module tx_fft_input_queue
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/crc32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_block_layout.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs_block_layout
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_gf.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs_gf_mul
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_packet_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs_packet_encoder
+WARNING: [VRFC 10-3380] identifier 'parity_index' is used before its declaration [/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_packet_encoder.v:33]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/scramble_lc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scramble_lc
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_conv_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_conv_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_freqd_to_timed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_freqd_to_timed
+INFO: [VRFC 10-311] analyzing module tx_symbol_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_gen_pkt_sig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_gen_pkt_sig
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_gen_sig_freqd_to_timed.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_gen_sig_freqd_to_timed
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_gen_sig_interleaver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_gen_sig_interleaver
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_gen_sig_modulate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_gen_sig_modulate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_generate_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_generate_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_interleaver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_interleaver
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_modulate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_modulate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_out_arrange.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_out_arrange
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/tx_puncture.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_puncture
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/tx802p11_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx802p11_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/tx_gen_sig.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tx_gen_sig
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/lt_64_cross_corr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lt_64_cross_corr
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/blk_mem_gen_tx_gen_interleaved_bits/sim/blk_mem_gen_tx_gen_interleaved_bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_tx_gen_interleaved_bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/blk_mem_preamble_im/sim/blk_mem_preamble_im.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_preamble_im
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/blk_mem_preamble_re/sim/blk_mem_preamble_re.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_preamble_re
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/blk_mem_tx_gen_sig_interleaver/sim/blk_mem_tx_gen_sig_interleaver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_tx_gen_sig_interleaver
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/fft_buffer_32x512/sim/fft_buffer_32x512.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_buffer_32x512
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/fifo_generator_8to1/sim/fifo_generator_8to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_8to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/fifo_tx_gen_sig_modulate_48_52/sim/fifo_tx_gen_sig_modulate_48_52.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_tx_gen_sig_modulate_48_52
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/ila_for_bpsk_param_gain/sim/ila_for_bpsk_param_gain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_for_bpsk_param_gain
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/lt_buf_52x32bit/sim/lt_buf_52x32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lt_buf_52x32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/pilot_scramble/sim/pilot_scramble.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pilot_scramble
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/rom_pattern_store/sim/rom_pattern_store.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom_pattern_store
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/antenna_channel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module antenna_channel
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_ofdm_rf_chain.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ofdm_rf_chain
+WARNING: [VRFC 10-3380] identifier 'cycle_count' is used before its declaration [/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_ofdm_rf_chain.v:42]
+WARNING: [VRFC 10-3380] identifier 'rf_burst_applied' is used before its declaration [/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_ofdm_rf_chain.v:64]
+WARNING: [VRFC 10-3380] identifier 'rf_burst_samples' is used before its declaration [/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_ofdm_rf_chain.v:65]
+WARNING: [VRFC 10-3380] identifier 'gain' is used before its declaration [/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_ofdm_rf_chain.v:67]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/tools/Xilinx/Vivado/2022.1/data/verilog/src/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

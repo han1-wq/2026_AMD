@@ -1,0 +1,1 @@
+../../../hls/timing_margin_20261013/build_platform.tcl

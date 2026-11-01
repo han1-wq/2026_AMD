@@ -1,0 +1,139 @@
+2026-10-14T01:27:37.37560300255-01:27:37 **** Build of configuration Hardware for project dpu_trd_kernels ****
+000-make -j8 all 
+000-/tools/Xilinx/Vivado/2022.1/bin/vivado -mode batch -source ../src/prj/Vitis/scripts_gui/gen_dpu_xo.tcl -tclargs .. DPUCZDX8G.xo DPUCZDX8G hw dpu_base /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm
+000-/tools/Xilinx/Vivado/2022.1/bin/vivado -mode batch -source ../src/prj/Vitis/scripts_gui/gen_sfm_xo.tcl -tclargs .. sfm_xrt_top.xo sfm_xrt_top hw dpu_base /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm
+000-
+000-****** Vivado v2022.1 (64-bit)
+000-  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+000-  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+000-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+000-
+000-source ../src/prj/Vitis/scripts_gui/gen_sfm_xo.tcl
+000-# if { $::argc != 6 } {
+000-#     puts "ERROR: Program \"$::argv0\" requires 6 arguments!\n"
+000-#     puts "Usage: $::argv0 <top_dir> <xoname> <krnl_name> <target> <xpfm_path> <device>\n"
+000-#     exit
+000-# }
+000-# set top_dir   [lindex $::argv 0]
+000-# set xoname    [lindex $::argv 1]
+000-# set krnl_name [lindex $::argv 2]
+000-# set target    [lindex $::argv 3]
+000-# set xpfm_path [lindex $::argv 4]
+000-# set device    [lindex $::argv 5]
+000-# set suffix "${krnl_name}_${target}_${device}"
+000-# variable script_dir [file dirname [ file normalize [ info script ]]]
+000-# source -notrace $script_dir/package_sfm_kernel.tcl
+000-
+000-****** Vivado v2022.1 (64-bit)
+000-  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+000-  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+000-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+000-
+000-source ../src/prj/Vitis/scripts_gui/gen_dpu_xo.tcl
+000-# if { $::argc != 6 } {
+000-#     puts "ERROR: Program \"$::argv0\" requires 6 arguments!\n"
+000-#     puts "Usage: $::argv0 <top_dir> <xoname> <krnl_name> <target> <xpfm_path> <device>\n"
+000-#     exit
+000-# }
+000-# set top_dir   [lindex $::argv 0]
+000-# set xoname    [lindex $::argv 1]
+000-# set krnl_name [lindex $::argv 2]
+000-# set target    [lindex $::argv 3]
+000-# set xpfm_path [lindex $::argv 4]
+000-# set device    [lindex $::argv 5]
+000-# set suffix "${krnl_name}_${target}_${device}"
+000-# variable script_dir [file dirname [ file normalize [ info script ]]]
+000-# puts $script_dir
+000-/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/prj/Vitis/scripts_gui
+000-# source -notrace $script_dir/package_dpu_kernel.tcl
+000-INFO: [IP_Flow 19-234] Refreshing IP repositories
+000-INFO: [IP_Flow 19-1704] No user IP repositories specified
+000-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-2162: IP 'fp_add' is locked:1-WARNING: [IP_Flow 19-2162] IP 'fp_add' is locked:
+000-* Current project part 'xc7vx485tffg1157-1' and the part 'xc7z020clg400-2' used to customize the IP 'fp_add' do not match.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-2162: IP 'fp_acc' is locked:1-WARNING: [IP_Flow 19-2162] IP 'fp_acc' is locked:
+000-* Current project part 'xc7vx485tffg1157-1' and the part 'xc7z020clg400-2' used to customize the IP 'fp_acc' do not match.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-2162: IP 'fp_div' is locked:1-WARNING: [IP_Flow 19-2162] IP 'fp_div' is locked:
+000-* Current project part 'xc7vx485tffg1157-1' and the part 'xc7z020clg400-2' used to customize the IP 'fp_div' do not match.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-2162: IP 'fp_convert' is locked:1-WARNING: [IP_Flow 19-2162] IP 'fp_convert' is locked:
+000-* Current project part 'xc7vx485tffg1157-1' and the part 'xc7z020clg400-2' used to customize the IP 'fp_convert' do not match.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-2162: IP 'fp_exp' is locked:1-WARNING: [IP_Flow 19-2162] IP 'fp_exp' is locked:
+000-* Current project part 'xc7vx485tffg1157-1' and the part 'xc7z020clg400-2' used to customize the IP 'fp_exp' do not match.
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-13651: The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_add/fp_add.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_add'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.1-WARNING: [Vivado 12-13651] The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_add/fp_add.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_add'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-13651: The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_acc/fp_acc.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_acc'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.1-WARNING: [Vivado 12-13651] The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_acc/fp_acc.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_acc'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-13651: The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_div/fp_div.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_div'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.1-WARNING: [Vivado 12-13651] The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_div/fp_div.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_div'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-13651: The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_convert/fp_convert.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_convert'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.1-WARNING: [Vivado 12-13651] The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_convert/fp_convert.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_convert'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-13651: The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_exp/fp_exp.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_exp'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.1-WARNING: [Vivado 12-13651] The IP file '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_exp/fp_exp.xci' has been moved from its original location, as a result the outputs for this IP will now be generated in '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/dpu_ip/DPUCZDX8G_v4_0_0/xci/sfm/fp_exp'. Alternatively a copy of the IP can be imported into the project using one of the 'import_ip' or 'import_files' commands.
+000-add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2764.578 ; gain = 37.988 ; free physical = 6098 ; free virtual = 11773
+000-INFO: [IP_Flow 19-5654] Module 'sfm_xrt_top' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_control' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'interrupt' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'interrupt': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXI'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+000-INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+000-INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+000-INFO: [IP_Flow 19-795] Syncing license key meta-data
+000-INFO: [IP_Flow 19-234] Refreshing IP repositories
+000-INFO: [IP_Flow 19-1704] No user IP repositories specified
+000-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+000-INFO: [IP_Flow 19-5654] Module 'DPUCZDX8G' uses SystemVerilog sources with a Verilog top file. These SystemVerilog files will not be analysed by the packager.
+000-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/arch_def.vh" from the top-level HDL file.
+000-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/dpu_conf.vh" from the top-level HDL file.
+000-INFO: [IP_Flow 19-1842] HDL Parser: Found include file "src/arch_para.vh" from the top-level HDL file.
+000-INFO: [IP_Flow 19-234] Refreshing IP repositories
+000-INFO: [IP_Flow 19-1704] No user IP repositories specified
+000-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_clk_2' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_clk_2' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_rst_n_2' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_rst_n_2' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI_GP0' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI_HP0' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXI_HP2' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXI_CONTROL' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'interrupt' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+000-INFO: [IP_Flow 19-4728] Bus Interface 'interrupt': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'M_AXI_GP0'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'ap_clk_2': Added interface parameter 'ASSOCIATED_RESET' with value 'ap_rst_n_2'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'ap_rst_n_2': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+000-INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-5661: Bus Interface 'ap_clk_2' does not have any bus interfaces associated with it.1-WARNING: [IP_Flow 19-5661] Bus Interface 'ap_clk_2' does not have any bus interfaces associated with it.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-3157: Bus Interface 'ap_rst_n_2': Bus parameter POLARITY is ACTIVE_LOW but port 'ap_rst_n_2' is not *resetn - please double check the POLARITY setting.1-WARNING: [IP_Flow 19-3157] Bus Interface 'ap_rst_n_2': Bus parameter POLARITY is ACTIVE_LOW but port 'ap_rst_n_2' is not *resetn - please double check the POLARITY setting.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-991: Unrecognized or unsupported file 'src/fingerprint_json.ttcl' found in file group 'Synthesis'.1-WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'src/fingerprint_json.ttcl' found in file group 'Synthesis'.
+000-Resolution: Remove the file from the specified file group.
+000/dpu_trd_kernels/Hardware0-1-1IP_Flow 19-991: Unrecognized or unsupported file 'src/fingerprint_json.ttcl' found in file group 'Simulation'.1-WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'src/fingerprint_json.ttcl' found in file group 'Simulation'.
+000-Resolution: Remove the file from the specified file group.
+000-INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+000-INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+000-INFO: [IP_Flow 19-795] Syncing license key meta-data
+000-INFO: [IP_Flow 19-234] Refreshing IP repositories
+000-INFO: [IP_Flow 19-1704] No user IP repositories specified
+000-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_clk_2' of definition 'xilinx.com:signal:clock:1.0' (from TCL Argument).
+000-INFO: [IP_Flow 19-5107] Inferred bus interface 'ap_rst_n_2' of definition 'xilinx.com:signal:reset:1.0' (from TCL Argument).
+000-# if {[file exists "${xoname}"]} {
+000-#     file delete -force "${xoname}"
+000-# }
+000-# package_xo -xo_path ${xoname} -kernel_name ${krnl_name} -ip_directory ./packaged_kernel_${suffix} -kernel_xml $top_dir/src/prj/Vitis/kernel_xml/dpu/kernel.xml
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-4404: The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.1-WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+000-INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 01:27:59 2026...
+000-ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2804.598 ; gain = 0.000 ; free physical = 6457 ; free virtual = 12110
+000-# if {[file exists "${xoname}"]} {
+000-#     file delete -force "${xoname}"
+000-# }
+000-# package_xo -xo_path ${xoname} -kernel_name ${krnl_name} -ip_directory ./packaged_kernel_${suffix} -kernel_xml $top_dir/src/prj/Vitis/kernel_xml/sfm/kernel.xml
+000/dpu_trd_kernels/Hardware0-1-1Vivado 12-4404: The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.1-WARNING: [Vivado 12-4404] The CPU emulation flow in v++ is only supported when using a packaged XO file that contains C-model files, none were found.
+000-INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 01:28:02 2026...
+00255-
+01:28:02 Build Finished (took 25s.523ms)
+

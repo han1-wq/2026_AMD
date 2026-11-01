@@ -1,0 +1,1 @@
+../../../../../../projects/ofdm/build_sw/ofdm_dma/_ide/psinit/ps7_init.tcl

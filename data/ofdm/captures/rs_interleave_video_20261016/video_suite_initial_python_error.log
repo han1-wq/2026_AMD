@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/run_video_suite.py", line 121, in <module>
+    main()
+  File "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/run_video_suite.py", line 88, in main
+    profiles = generate()
+  File "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/run_video_suite.py", line 29, in generate
+    texture = Image.frombytes('L', (1280, 720), randomizer.randbytes(1280 * 720)).convert('RGB')
+AttributeError: 'Random' object has no attribute 'randbytes'

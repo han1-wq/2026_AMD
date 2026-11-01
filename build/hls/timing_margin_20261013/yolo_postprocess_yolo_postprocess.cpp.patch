@@ -1,0 +1,32 @@
+--- /home/amd/Workspace/HLS_IP/timing_margin_20261013/baseline/yolo_postprocess/src/yolo_postprocess.cpp
++++ /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp
+@@ -10,8 +10,27 @@
+ ap_uint<64> area(unsigned w, unsigned h) {
+ #pragma HLS INLINE off
+ #pragma HLS PIPELINE II=1
+-    ap_uint<64> value = ap_uint<32>(w) * ap_uint<32>(h);
+-#pragma HLS BIND_OP variable=value op=mul impl=fabric latency=2
++    // Explicit partial products prevent a single 32x32 fabric carry network.
++    // Preserve all 64 product bits; do not assume small decoded coordinates.
++    ap_uint<16> wl = w, wh = w >> 16, hl = h, hh = h >> 16;
++    ap_uint<32> p00 = wl * hl;
++    ap_uint<32> p01 = wl * hh;
++    ap_uint<32> p10 = wh * hl;
++    ap_uint<32> p11 = wh * hh;
++#pragma HLS BIND_OP variable=p00 op=mul impl=fabric latency=2
++#pragma HLS BIND_OP variable=p01 op=mul impl=fabric latency=2
++#pragma HLS BIND_OP variable=p10 op=mul impl=fabric latency=2
++#pragma HLS BIND_OP variable=p11 op=mul impl=fabric latency=2
++    ap_uint<33> cross = ap_uint<33>(p01) + p10;
++    ap_uint<34> middle = ap_uint<34>(cross) + (p00 >> 16);
++    ap_uint<32> high = p11 + (middle >> 16);
++#pragma HLS BIND_OP variable=cross op=add impl=fabric latency=1
++#pragma HLS BIND_OP variable=middle op=add impl=fabric latency=1
++#pragma HLS BIND_OP variable=high op=add impl=fabric latency=1
++    ap_uint<64> value;
++    value.range(15, 0) = p00.range(15, 0);
++    value.range(31, 16) = middle.range(15, 0);
++    value.range(63, 32) = high;
+     return value;
+ }
+ 

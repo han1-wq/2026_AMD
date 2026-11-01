@@ -1,0 +1,15 @@
+{
+  "board": "192.168.137.10",
+  "port": 5001,
+  "source": "/home/ubuntu/x3plus-kv260-docker/yolo-ofdm-test.png",
+  "source_bytes": 546596,
+  "source_sha256": "b205e870672a313ef88b6fd23313fd5436a70b9ff585940573d2d37e58f4606b",
+  "count": 200,
+  "timeout_s": 30.0,
+  "persistent_connection": true,
+  "tcp_nodelay": true,
+  "scheduled_sleep_s": 0,
+  "start_local": "2026-10-10T06:49:36+0000",
+  "timeout_policy": "30s default whole-transfer deadline, not only socket idle timeout",
+  "measurement": "application records after RF FCS/ARQ; raw BER unavailable; counter deltas when supported"
+}

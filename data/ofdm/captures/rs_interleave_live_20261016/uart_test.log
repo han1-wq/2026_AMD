@@ -1,0 +1,40 @@
+Connected: /dev/serial/by-id/usb-Xilinx_my_product_desc_0ABC01-if01-port0
+LENGTH_CHECKS_PASS: 66 packets
+100/500 PASS 0.204s 
+200/500 PASS 0.204s 
+300/500 PASS 0.203s 
+400/500 PASS 0.203s 
+500/500 PASS 0.204s 
+{
+  "requested": 500,
+  "attempts": 500,
+  "successes": 500,
+  "failures": 0,
+  "not_attempted": 0,
+  "completed": true,
+  "passed": true,
+  "wall_s": 101.74847216800117,
+  "successful_bytes": 500000,
+  "compared_bits": 4000000,
+  "verified_payload_differing_bits": 0,
+  "failed_payload_differing_bits": null,
+  "raw_rf_ber": null,
+  "link_retries": null,
+  "rx_dropped": null,
+  "measurement": "Only fully verified returns are saved; failed/partial data is not bit-counted",
+  "application_goodput_Bps": 4914.078701589042,
+  "success_elapsed_s": {
+    "n": 500,
+    "min": 0.20130689600046026,
+    "mean": 0.20338673143220512,
+    "median": 0.20337871000083396,
+    "p90": 0.20413638210084173,
+    "p95": 0.204348530896641,
+    "p99": 0.20542180648015346,
+    "max": 0.2084571949999372,
+    "stdev": 0.0007419205870922913
+  },
+  "sent_sha256": "f45414fdeba82c4213779e186c5aaca6a81cf0945ccf728ead1aaafff682ec98",
+  "received_sha256": "f45414fdeba82c4213779e186c5aaca6a81cf0945ccf728ead1aaafff682ec98"
+}
+UART_TEST_PASS

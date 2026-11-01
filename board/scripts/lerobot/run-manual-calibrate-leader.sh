@@ -1,0 +1,1 @@
+../../../src/ps/lerobot-deploy/run-manual-calibrate-leader.sh

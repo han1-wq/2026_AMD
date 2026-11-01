@@ -1,0 +1,5 @@
+0_ttl64 success 20 retrans 587 first_ms 2.100481001434673 elapsed_ms 156.32012650075922
+1_ttl1 success 20 retrans 342 first_ms 2.8495509995991597 elapsed_ms 156.78427950024343
+2_ttl64 success 20 retrans 680 first_ms 2.2392765004042303 elapsed_ms 156.5440345002571
+3_ttl1 success 20 retrans 386 first_ms 2.5726409994604182 elapsed_ms 156.75123050004913
+PATH_AB_PASS

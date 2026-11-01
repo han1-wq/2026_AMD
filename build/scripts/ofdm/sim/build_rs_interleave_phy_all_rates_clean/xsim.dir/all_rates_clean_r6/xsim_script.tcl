@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_all_rates_clean/xsim.dir/all_rates_clean_r6/xsim_script.tcl

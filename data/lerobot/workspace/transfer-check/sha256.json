@@ -1,0 +1,6 @@
+{
+  "expected.npy": "051dae7f84532676094e8b16ec599b0f863aec17a73b569311367361b85dec49",
+  "inputs.npz": "6cb1a1e500e5a621969d5bf581ad31cefca26c8dfc5dda4d1531e473a78902c4",
+  "pretrained_model/config.json": "5dc877b462c341b77f4ea31704039c5e251f15e289a9cb3de469a2a960aed613",
+  "pretrained_model/model.safetensors": "fc01e65a65810d96fa8956ccd70421a3fcdbaec02f8d27c98207cea8dc404fcd"
+}

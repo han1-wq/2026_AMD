@@ -1,0 +1,6 @@
+{
+  "directory": "/home/amd/x3plus-kv260-docker/navigation-fix/validation-diagnostic-20261020-061749",
+  "image": "sha256:dbd61011ab231b6c6eeb9634183b9df81f106d39789e3a13d3c244e35c3f03f5",
+  "container": "x3plus-heading-diagnostic-20261020-061749",
+  "id": "a2395e39fc9beb5e39bf5aab83fb3ec87134020694c450a4b570218b26d9f826"
+}

@@ -1,0 +1,35 @@
+{
+  "ROBOT": {
+    "ok": true,
+    "message": "/dev/myserial → /dev/ttyUSB1",
+    "device": {
+      "path": "/dev/ttyUSB1",
+      "vid": "1a86",
+      "pid": "7523",
+      "serial": "",
+      "interface": "00",
+      "location": "1-1.4",
+      "product": "USB Serial"
+    }
+  },
+  "LIDAR": {
+    "ok": true,
+    "message": "/dev/ydlidar → /dev/ttyUSB0",
+    "device": {
+      "path": "/dev/ttyUSB0",
+      "vid": "10c4",
+      "pid": "ea60",
+      "serial": "0001",
+      "interface": "00",
+      "location": "1-1.1",
+      "product": "CP2102 USB to UART Bridge Controller"
+    }
+  }
+}
+设备号一致（不代表驱动/通信健康）
+Navigation runtime source checksums verified (12 files).
+Keyboard control is already stopped.
+Navigation mode guard passed: keyboard and SLAM are absent.
+导航已启动，地图：qps；等待 map_server、AMCL、move_base 和 TF...
+导航服务已启动（第 3/60 次检查），等待定位确认，速度尚未放行。
+在导航 RViz 使用 2D Pose Estimate 设置实际位姿；/navigation/ready 为 true 后才可下发目标。

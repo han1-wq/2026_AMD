@@ -1,0 +1,7 @@
+compiled/md5sum.txt: OK
+compiled/meta.json: OK
+compiled/yolov4_leaky_416_tf.prototxt: OK
+compiled/yolov4_leaky_416_tf.xmodel: OK
+overlay/dpu.bit: OK
+overlay/dpu.hwh: OK
+overlay/dpu.xclbin: OK

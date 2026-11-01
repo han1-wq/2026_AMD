@@ -1,0 +1,495 @@
+{
+  "started_at_utc": "2026-10-31T02:14:45.710831+00:00",
+  "finished_at_utc": "2026-10-31T02:17:11.269120+00:00",
+  "complete": true,
+  "ok": true,
+  "scope": "skill tools, documentation, offline artifact preflight only",
+  "hardware_actions": false,
+  "business_regression_rerun": false,
+  "public_official_documentation_read": true,
+  "checks": [
+    {
+      "name": "unit_tests",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:14:45.710831+00:00",
+      "finished_at_utc": "2026-10-31T02:14:46.291987+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "",
+      "stderr": "test_cli_exit_codes (test_check_skills.SkillChecks) ... ok\ntest_documented_command_is_not_executed (test_check_skills.SkillChecks) ... ok\ntest_duplicate_module (test_check_skills.SkillChecks) ... ok\ntest_duplicate_skill_name (test_check_skills.SkillChecks) ... ok\ntest_empty_section (test_check_skills.SkillChecks) ... ok\ntest_experience_requires_evidence_link (test_check_skills.SkillChecks) ... ok\ntest_imported_hash_changed (test_check_skills.SkillChecks) ... ok\ntest_malformed_json (test_check_skills.SkillChecks) ... ok\ntest_missing_frontmatter (test_check_skills.SkillChecks) ... ok\ntest_missing_reference (test_check_skills.SkillChecks) ... ok\ntest_missing_section (test_check_skills.SkillChecks) ... ok\ntest_missing_verified_effect (test_check_skills.SkillChecks) ... ok\ntest_relative_reference (test_check_skills.SkillChecks) ... ok\ntest_relocated_package (test_check_skills.SkillChecks) ... ok\ntest_standalone_lists_missing_external_evidence (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_internal_missing_link (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_unclosed_code_fence (test_check_skills.SkillChecks) ... ok\ntest_unregistered_skill (test_check_skills.SkillChecks) ... ok\ntest_unsafe_default_scope (test_check_skills.SkillChecks) ... ok\ntest_valid_catalog (test_check_skills.SkillChecks) ... ok\ntest_wrong_catalog_root (test_check_skills.SkillChecks) ... ok\ntest_destination_inside_source_rejected (test_export_skills.ExportTests) ... ok\ntest_existing_destination_rejected (test_export_skills.ExportTests) ... ok\ntest_export_preserves_source_and_imports (test_export_skills.ExportTests) ... ok\ntest_relative_path_rejected (test_export_skills.ExportTests) ... ok\ntest_symlink_rejected (test_export_skills.ExportTests) ... ok\ntest_cli_success_failure_and_malformed (test_validate_evidence.EvidenceTests) ... ok\ntest_dtype_and_shape_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_equal (test_validate_evidence.EvidenceTests) ... ok\ntest_json_nonfinite_and_duplicate_keys (test_validate_evidence.EvidenceTests) ... ok\ntest_numeric_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_corruption_or_missing_file (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_mismatched_stem (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_missing_ip (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_pass_is_offline_only (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_duplicate_ip_and_dtd (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_non_utf8_xml (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_invalid_stage (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_missing_or_invalid_metric (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_pass (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_bad_metrics (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_changed_source (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_resource_excess (test_validate_evidence.EvidenceTests) ... ok\ntest_reject_bad_tensor_and_tolerances (test_validate_evidence.EvidenceTests) ... ok\ntest_relative_tolerance (test_validate_evidence.EvidenceTests) ... ok\ntest_uint64_comparison_does_not_round_away_difference (test_validate_evidence.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 48 tests in 0.456s\n\nOK\n"
+    },
+    {
+      "name": "golden_positive",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/validate_evidence.py",
+        "golden",
+        "/home/amd/kv260-ofdm-reproduction/skill/examples/reference.json",
+        "/home/amd/kv260-ofdm-reproduction/skill/examples/candidate-pass.json"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:14:46.292506+00:00",
+      "finished_at_utc": "2026-10-31T02:14:46.348682+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"scope\": \"numeric-values-only\",\n  \"elements\": 4,\n  \"mismatches\": 0,\n  \"first_mismatch_indices\": [],\n  \"max_abs_error\": \"0\",\n  \"atol\": 0.0,\n  \"rtol\": 0.0,\n  \"limitations\": \"No tensor layout, model accuracy or golden independence verification.\",\n  \"hardware_actions\": false,\n  \"network_actions\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "golden_negative",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/validate_evidence.py",
+        "golden",
+        "/home/amd/kv260-ofdm-reproduction/skill/examples/reference.json",
+        "/home/amd/kv260-ofdm-reproduction/skill/examples/candidate-fail.json"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:14:46.349188+00:00",
+      "finished_at_utc": "2026-10-31T02:14:46.402918+00:00",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "ok": true,
+      "stdout": "{\n  \"ok\": false,\n  \"scope\": \"numeric-values-only\",\n  \"elements\": 4,\n  \"mismatches\": 1,\n  \"first_mismatch_indices\": [\n    2\n  ],\n  \"max_abs_error\": \"1\",\n  \"atol\": 0.0,\n  \"rtol\": 0.0,\n  \"limitations\": \"No tensor layout, model accuracy or golden independence verification.\",\n  \"hardware_actions\": false,\n  \"network_actions\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "archived_pynq_artifact_preflight",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/validate_evidence.py",
+        "pynq",
+        "/home/amd/kv260-ofdm-reproduction/skill/evidence/pynq-archived-contract.json"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:14:46.886177+00:00",
+      "finished_at_utc": "2026-10-31T02:14:47.002054+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"scope\": \"classic-pynq-artifact-preflight-only\",\n  \"missing_instances\": [],\n  \"instances_checked\": [\n    \"image_preprocess_1\",\n    \"yolo_postprocess_1\"\n  ],\n  \"limitations\": \"No device compatibility, IP ABI, bit/HWH semantic pairing, allocation, DMA or board execution verification.\",\n  \"hardware_actions\": false,\n  \"network_actions\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "full_skill_structure",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/check_skills.py"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:14:47.003476+00:00",
+      "finished_at_utc": "2026-10-31T02:14:47.097437+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"package_root\": \"/home/amd/kv260-ofdm-reproduction\",\n  \"modules\": 14,\n  \"documents_checked\": 26,\n  \"imported_documents\": 1,\n  \"hardware_actions\": false,\n  \"documented_commands_executed\": false,\n  \"validation_scope\": \"full-package-references\",\n  \"external_references_not_checked\": [],\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "actual_skill_export",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/export_skills.py",
+        "--source-skill",
+        "/home/amd/kv260-ofdm-reproduction/skill",
+        "--destination-root",
+        "/tmp/skill-real-export-rpqo6v6v/new-team"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:14:47.099141+00:00",
+      "finished_at_utc": "2026-10-31T02:14:47.229135+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"destination\": \"/tmp/skill-real-export-rpqo6v6v/new-team\",\n  \"source_modified\": false,\n  \"imported_bytes_modified\": false,\n  \"rewritten_documents\": [\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/ofdm-link-dma/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/templates/GAP_RECORD.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/templates/RUN_RECORD.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/templates/INTEGRATION_HANDOFF.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/templates/REUSABLE_PROMPTS.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/vivado-platform/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/so101-teleop/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/pynq-portable/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/roarm-servo/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/delivery-audit/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/hls-postprocess/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/hls-preprocess/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/host-integration/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/x3plus-navigation/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/reusable-workflows/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/lerobot-act/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/kv260-vision/SKILL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/references/EVIDENCE_SCHEMAS.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/references/VALIDATION_MATRIX.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/references/PYNQ_SOURCES.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/references/TROUBLESHOOTING.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/skill/ofdm-firmware/SKILL.md\"\n  ],\n  \"validation\": {\n    \"ok\": true,\n    \"package_root\": \"/tmp/skill-real-export-rpqo6v6v/new-team\",\n    \"modules\": 14,\n    \"documents_checked\": 26,\n    \"imported_documents\": 1,\n    \"hardware_actions\": false,\n    \"documented_commands_executed\": false,\n    \"validation_scope\": \"skill-only\",\n    \"external_references_not_checked\": [\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/build_hls.sh\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/build_ofdm_firmware.sh\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/environment/lerobot/\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/projects/ofdm/build_hw/TOP.xsa\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/reports/INDEX.csv\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/scripts/INDEX.csv\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/build/verify_delivery.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/data/lerobot/workspace/\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/KNOWN_GAPS.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/PACKAGING_SUMMARY.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/SHA256SUMS\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/absolute_path_references.csv\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/excluded_files.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/public_key_review.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/repository_revision.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/skill-expansion-diff.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/skill-expansion-validation.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/source_inventory.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/report/source_manifest.csv\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/b3136_artifacts.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/hls_host_config.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/hls_link_config.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/navigation.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/new_tools_checks.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/ofdm_host.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/ofdm_xsa.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/so101_protocol.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/summary.json\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/vision_controls.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/x3plus_bundle.log\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/run_software_checks.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/AI-VISION.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_core.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_dma_ui.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_vision_ui.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_yolo_capture.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/motion.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/remote_arm.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/servo.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/tests/\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/host/config.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/scripts/build.tcl\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/scripts/integrate_bd.tcl\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/scripts/validate_integration.tcl\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/src/image_preprocess.h\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/tb/test_host_config.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/host/adapter.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/host/config.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/scripts/build.tcl\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/src/yolo_postprocess.h\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/dpu_platform2/\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/dpu_platform2/IMAGE_PREPROCESS_HLS_DESIGN.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/DMA_BRINGUP.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/build_dma_sw.tcl\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/check_dma_xsa.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/host/PROTOCOL.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/host/dma_image.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/host/dma_uart.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/artifacts.sha256\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/run_vision.sh\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/runtime/hardware.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/test_controls.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/verify_ros.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/vision_hls.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/VALIDATION.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/teleop.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/test_teleop.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/teleop-ui/README.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/validate_environment.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/Dockerfile\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/README-KV260.md\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/navigation-fix/\",\n      \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/verify-bundle.sh\"\n    ],\n    \"errors\": []\n  },\n  \"note\": \"Only skill copied. External source/report references remain unavailable. Evidence JSON/logs retain historical paths; they are not rerun results.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "exported_structure",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/tmp/skill-real-export-rpqo6v6v/new-team/skill/tools/check_skills.py",
+        "--root",
+        "/tmp/skill-real-export-rpqo6v6v/new-team",
+        "--standalone"
+      ],
+      "cwd": "/tmp/skill-real-export-rpqo6v6v/new-team",
+      "started_at_utc": "2026-10-31T02:14:47.229506+00:00",
+      "finished_at_utc": "2026-10-31T02:14:47.302601+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"package_root\": \"/tmp/skill-real-export-rpqo6v6v/new-team\",\n  \"modules\": 14,\n  \"documents_checked\": 26,\n  \"imported_documents\": 1,\n  \"hardware_actions\": false,\n  \"documented_commands_executed\": false,\n  \"validation_scope\": \"skill-only\",\n  \"external_references_not_checked\": [\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/build_hls.sh\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/build_ofdm_firmware.sh\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/environment/lerobot/\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/projects/ofdm/build_hw/TOP.xsa\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/reports/INDEX.csv\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/scripts/INDEX.csv\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/build/verify_delivery.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/data/lerobot/workspace/\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/KNOWN_GAPS.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/PACKAGING_SUMMARY.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/SHA256SUMS\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/absolute_path_references.csv\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/excluded_files.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/public_key_review.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/repository_revision.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/skill-expansion-diff.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/skill-expansion-validation.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/source_inventory.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/report/source_manifest.csv\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/b3136_artifacts.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/hls_host_config.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/hls_link_config.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/navigation.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/new_tools_checks.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/ofdm_host.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/ofdm_xsa.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/so101_protocol.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/summary.json\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/vision_controls.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/results/packaging-validation/x3plus_bundle.log\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/sim/run_software_checks.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/AI-VISION.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_core.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_dma_ui.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_vision_ui.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/kv260-launcher-ai/launcher_yolo_capture.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/motion.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/remote_arm.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/servo.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/host/roarm-vision-console/tests/\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/host/config.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/scripts/build.tcl\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/scripts/integrate_bd.tcl\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/scripts/validate_integration.tcl\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/src/image_preprocess.h\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/image_preprocess/tb/test_host_config.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/host/adapter.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/host/config.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/scripts/build.tcl\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/HLS_IP/yolo_postprocess/src/yolo_postprocess.h\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/dpu_platform2/\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/kv260/dpu_platform2/IMAGE_PREPROCESS_HLS_DESIGN.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/DMA_BRINGUP.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/build_dma_sw.tcl\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/check_dma_xsa.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/host/PROTOCOL.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/host/dma_image.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ofdm/eeSDR_ofdm_loopback/host/dma_uart.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/artifacts.sha256\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/run_vision.sh\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/runtime/hardware.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/test_controls.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/verify_ros.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/kv260_B3136/vision_hls.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/VALIDATION.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/teleop.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/network-teleop/test_teleop.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/teleop-ui/README.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/lerobot-deploy/validate_environment.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/Dockerfile\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/README-KV260.md\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/navigation-fix/\",\n    \"/tmp/skill-real-export-rpqo6v6v/new-team/src/ps/x3plus-kv260-docker/verify-bundle.sh\"\n  ],\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "exported_unit_tests",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/tmp/skill-real-export-rpqo6v6v/new-team/skill/tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/tmp/skill-real-export-rpqo6v6v/new-team",
+      "started_at_utc": "2026-10-31T02:14:47.302964+00:00",
+      "finished_at_utc": "2026-10-31T02:14:47.792311+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "",
+      "stderr": "test_cli_exit_codes (test_check_skills.SkillChecks) ... ok\ntest_documented_command_is_not_executed (test_check_skills.SkillChecks) ... ok\ntest_duplicate_module (test_check_skills.SkillChecks) ... ok\ntest_duplicate_skill_name (test_check_skills.SkillChecks) ... ok\ntest_empty_section (test_check_skills.SkillChecks) ... ok\ntest_experience_requires_evidence_link (test_check_skills.SkillChecks) ... ok\ntest_imported_hash_changed (test_check_skills.SkillChecks) ... ok\ntest_malformed_json (test_check_skills.SkillChecks) ... ok\ntest_missing_frontmatter (test_check_skills.SkillChecks) ... ok\ntest_missing_reference (test_check_skills.SkillChecks) ... ok\ntest_missing_section (test_check_skills.SkillChecks) ... ok\ntest_missing_verified_effect (test_check_skills.SkillChecks) ... ok\ntest_relative_reference (test_check_skills.SkillChecks) ... ok\ntest_relocated_package (test_check_skills.SkillChecks) ... ok\ntest_standalone_lists_missing_external_evidence (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_internal_missing_link (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_unclosed_code_fence (test_check_skills.SkillChecks) ... ok\ntest_unregistered_skill (test_check_skills.SkillChecks) ... ok\ntest_unsafe_default_scope (test_check_skills.SkillChecks) ... ok\ntest_valid_catalog (test_check_skills.SkillChecks) ... ok\ntest_wrong_catalog_root (test_check_skills.SkillChecks) ... ok\ntest_destination_inside_source_rejected (test_export_skills.ExportTests) ... ok\ntest_existing_destination_rejected (test_export_skills.ExportTests) ... ok\ntest_export_preserves_source_and_imports (test_export_skills.ExportTests) ... ok\ntest_relative_path_rejected (test_export_skills.ExportTests) ... ok\ntest_symlink_rejected (test_export_skills.ExportTests) ... ok\ntest_cli_success_failure_and_malformed (test_validate_evidence.EvidenceTests) ... ok\ntest_dtype_and_shape_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_equal (test_validate_evidence.EvidenceTests) ... ok\ntest_json_nonfinite_and_duplicate_keys (test_validate_evidence.EvidenceTests) ... ok\ntest_numeric_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_corruption_or_missing_file (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_mismatched_stem (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_missing_ip (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_pass_is_offline_only (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_duplicate_ip_and_dtd (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_non_utf8_xml (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_invalid_stage (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_missing_or_invalid_metric (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_pass (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_bad_metrics (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_changed_source (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_resource_excess (test_validate_evidence.EvidenceTests) ... ok\ntest_reject_bad_tensor_and_tolerances (test_validate_evidence.EvidenceTests) ... ok\ntest_relative_tolerance (test_validate_evidence.EvidenceTests) ... ok\ntest_uint64_comparison_does_not_round_away_difference (test_validate_evidence.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 48 tests in 0.381s\n\nOK\n"
+    },
+    {
+      "name": "exported_golden_positive",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/tmp/skill-real-export-rpqo6v6v/new-team/skill/tools/validate_evidence.py",
+        "golden",
+        "/tmp/skill-real-export-rpqo6v6v/new-team/skill/examples/reference.json",
+        "/tmp/skill-real-export-rpqo6v6v/new-team/skill/examples/candidate-pass.json"
+      ],
+      "cwd": "/tmp/skill-real-export-rpqo6v6v/new-team",
+      "started_at_utc": "2026-10-31T02:14:47.792785+00:00",
+      "finished_at_utc": "2026-10-31T02:14:47.852669+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"scope\": \"numeric-values-only\",\n  \"elements\": 4,\n  \"mismatches\": 0,\n  \"first_mismatch_indices\": [],\n  \"max_abs_error\": \"0\",\n  \"atol\": 0.0,\n  \"rtol\": 0.0,\n  \"limitations\": \"No tensor layout, model accuracy or golden independence verification.\",\n  \"hardware_actions\": false,\n  \"network_actions\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "final_unit_tests",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:17:09.646300+00:00",
+      "finished_at_utc": "2026-10-31T02:17:10.225467+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "",
+      "stderr": "test_cli_exit_codes (test_check_skills.SkillChecks) ... ok\ntest_documented_command_is_not_executed (test_check_skills.SkillChecks) ... ok\ntest_duplicate_module (test_check_skills.SkillChecks) ... ok\ntest_duplicate_skill_name (test_check_skills.SkillChecks) ... ok\ntest_empty_section (test_check_skills.SkillChecks) ... ok\ntest_experience_requires_evidence_link (test_check_skills.SkillChecks) ... ok\ntest_imported_hash_changed (test_check_skills.SkillChecks) ... ok\ntest_malformed_json (test_check_skills.SkillChecks) ... ok\ntest_missing_frontmatter (test_check_skills.SkillChecks) ... ok\ntest_missing_reference (test_check_skills.SkillChecks) ... ok\ntest_missing_section (test_check_skills.SkillChecks) ... ok\ntest_missing_verified_effect (test_check_skills.SkillChecks) ... ok\ntest_relative_reference (test_check_skills.SkillChecks) ... ok\ntest_relocated_package (test_check_skills.SkillChecks) ... ok\ntest_standalone_lists_missing_external_evidence (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_internal_missing_link (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_unclosed_code_fence (test_check_skills.SkillChecks) ... ok\ntest_unregistered_skill (test_check_skills.SkillChecks) ... ok\ntest_unsafe_default_scope (test_check_skills.SkillChecks) ... ok\ntest_valid_catalog (test_check_skills.SkillChecks) ... ok\ntest_wrong_catalog_root (test_check_skills.SkillChecks) ... ok\ntest_dangling_destination_symlink_rejected (test_export_skills.ExportTests) ... ok\ntest_destination_inside_source_rejected (test_export_skills.ExportTests) ... ok\ntest_existing_destination_rejected (test_export_skills.ExportTests) ... ok\ntest_export_preserves_source_and_imports (test_export_skills.ExportTests) ... ok\ntest_relative_path_rejected (test_export_skills.ExportTests) ... ok\ntest_symlink_rejected (test_export_skills.ExportTests) ... ok\ntest_cli_success_failure_and_malformed (test_validate_evidence.EvidenceTests) ... ok\ntest_dtype_and_shape_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_equal (test_validate_evidence.EvidenceTests) ... ok\ntest_json_nonfinite_and_duplicate_keys (test_validate_evidence.EvidenceTests) ... ok\ntest_numeric_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_corruption_or_missing_file (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_mismatched_stem (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_missing_ip (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_pass_is_offline_only (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_duplicate_ip_and_dtd (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_non_utf8_xml (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_invalid_stage (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_missing_or_invalid_metric (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_pass (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_bad_metrics (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_changed_source (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_resource_excess (test_validate_evidence.EvidenceTests) ... ok\ntest_reject_bad_tensor_and_tolerances (test_validate_evidence.EvidenceTests) ... ok\ntest_relative_tolerance (test_validate_evidence.EvidenceTests) ... ok\ntest_uint64_comparison_does_not_round_away_difference (test_validate_evidence.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 49 tests in 0.453s\n\nOK\n"
+    },
+    {
+      "name": "final_full_skill_structure",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/check_skills.py"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:17:10.225824+00:00",
+      "finished_at_utc": "2026-10-31T02:17:10.315816+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"package_root\": \"/home/amd/kv260-ofdm-reproduction\",\n  \"modules\": 14,\n  \"documents_checked\": 26,\n  \"imported_documents\": 1,\n  \"hardware_actions\": false,\n  \"documented_commands_executed\": false,\n  \"validation_scope\": \"full-package-references\",\n  \"external_references_not_checked\": [],\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "final_export",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/export_skills.py",
+        "--source-skill",
+        "/home/amd/kv260-ofdm-reproduction/skill",
+        "--destination-root",
+        "/tmp/skill-final-migration-1wssgerd/team"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "started_at_utc": "2026-10-31T02:17:10.317689+00:00",
+      "finished_at_utc": "2026-10-31T02:17:10.442878+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"destination\": \"/tmp/skill-final-migration-1wssgerd/team\",\n  \"source_modified\": false,\n  \"imported_bytes_modified\": false,\n  \"rewritten_documents\": [\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/ofdm-link-dma/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/templates/GAP_RECORD.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/templates/RUN_RECORD.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/templates/INTEGRATION_HANDOFF.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/templates/REUSABLE_PROMPTS.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/vivado-platform/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/so101-teleop/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/pynq-portable/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/roarm-servo/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/delivery-audit/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/hls-postprocess/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/hls-preprocess/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/host-integration/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/x3plus-navigation/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/reusable-workflows/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/lerobot-act/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/kv260-vision/SKILL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/references/EVIDENCE_SCHEMAS.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/references/VALIDATION_MATRIX.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/references/PYNQ_SOURCES.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/references/TROUBLESHOOTING.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/skill/ofdm-firmware/SKILL.md\"\n  ],\n  \"validation\": {\n    \"ok\": true,\n    \"package_root\": \"/tmp/skill-final-migration-1wssgerd/team\",\n    \"modules\": 14,\n    \"documents_checked\": 26,\n    \"imported_documents\": 1,\n    \"hardware_actions\": false,\n    \"documented_commands_executed\": false,\n    \"validation_scope\": \"skill-only\",\n    \"external_references_not_checked\": [\n      \"/tmp/skill-final-migration-1wssgerd/team/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/build_hls.sh\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/build_ofdm_firmware.sh\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/environment/lerobot/\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/projects/ofdm/build_hw/TOP.xsa\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/reports/INDEX.csv\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/scripts/INDEX.csv\",\n      \"/tmp/skill-final-migration-1wssgerd/team/build/verify_delivery.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/data/lerobot/workspace/\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/KNOWN_GAPS.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/PACKAGING_SUMMARY.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/SHA256SUMS\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/absolute_path_references.csv\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/excluded_files.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/public_key_review.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/repository_revision.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/skill-expansion-diff.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/skill-expansion-validation.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/source_inventory.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/report/source_manifest.csv\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/b3136_artifacts.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/hls_host_config.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/hls_link_config.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/navigation.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/new_tools_checks.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/ofdm_host.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/ofdm_xsa.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/so101_protocol.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/summary.json\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/vision_controls.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/x3plus_bundle.log\",\n      \"/tmp/skill-final-migration-1wssgerd/team/sim/run_software_checks.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/AI-VISION.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_core.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_dma_ui.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_vision_ui.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_yolo_capture.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/motion.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/remote_arm.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/servo.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/tests/\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/host/config.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/scripts/build.tcl\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/scripts/integrate_bd.tcl\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/scripts/validate_integration.tcl\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/src/image_preprocess.h\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/tb/test_host_config.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/host/adapter.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/host/config.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/scripts/build.tcl\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/src/yolo_postprocess.h\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/dpu_platform2/\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/dpu_platform2/IMAGE_PREPROCESS_HLS_DESIGN.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/DMA_BRINGUP.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/build_dma_sw.tcl\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/check_dma_xsa.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/host/PROTOCOL.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/host/dma_image.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/host/dma_uart.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/artifacts.sha256\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/run_vision.sh\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/runtime/hardware.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/test_controls.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/verify_ros.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/vision_hls.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/VALIDATION.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/teleop.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/test_teleop.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/teleop-ui/README.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/validate_environment.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/Dockerfile\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/README-KV260.md\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/navigation-fix/\",\n      \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/verify-bundle.sh\"\n    ],\n    \"errors\": []\n  },\n  \"note\": \"Only skill copied. External source/report references remain unavailable. Evidence JSON/logs retain historical paths; they are not rerun results.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "final_exported_unit_tests",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/tmp/skill-final-migration-1wssgerd/team/skill/tools",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/tmp/skill-final-migration-1wssgerd/team",
+      "started_at_utc": "2026-10-31T02:17:10.443283+00:00",
+      "finished_at_utc": "2026-10-31T02:17:10.940790+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "",
+      "stderr": "test_cli_exit_codes (test_check_skills.SkillChecks) ... ok\ntest_documented_command_is_not_executed (test_check_skills.SkillChecks) ... ok\ntest_duplicate_module (test_check_skills.SkillChecks) ... ok\ntest_duplicate_skill_name (test_check_skills.SkillChecks) ... ok\ntest_empty_section (test_check_skills.SkillChecks) ... ok\ntest_experience_requires_evidence_link (test_check_skills.SkillChecks) ... ok\ntest_imported_hash_changed (test_check_skills.SkillChecks) ... ok\ntest_malformed_json (test_check_skills.SkillChecks) ... ok\ntest_missing_frontmatter (test_check_skills.SkillChecks) ... ok\ntest_missing_reference (test_check_skills.SkillChecks) ... ok\ntest_missing_section (test_check_skills.SkillChecks) ... ok\ntest_missing_verified_effect (test_check_skills.SkillChecks) ... ok\ntest_relative_reference (test_check_skills.SkillChecks) ... ok\ntest_relocated_package (test_check_skills.SkillChecks) ... ok\ntest_standalone_lists_missing_external_evidence (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_internal_missing_link (test_check_skills.SkillChecks) ... ok\ntest_standalone_rejects_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_unclosed_code_fence (test_check_skills.SkillChecks) ... ok\ntest_unregistered_skill (test_check_skills.SkillChecks) ... ok\ntest_unsafe_default_scope (test_check_skills.SkillChecks) ... ok\ntest_valid_catalog (test_check_skills.SkillChecks) ... ok\ntest_wrong_catalog_root (test_check_skills.SkillChecks) ... ok\ntest_dangling_destination_symlink_rejected (test_export_skills.ExportTests) ... ok\ntest_destination_inside_source_rejected (test_export_skills.ExportTests) ... ok\ntest_existing_destination_rejected (test_export_skills.ExportTests) ... ok\ntest_export_preserves_source_and_imports (test_export_skills.ExportTests) ... ok\ntest_relative_path_rejected (test_export_skills.ExportTests) ... ok\ntest_symlink_rejected (test_export_skills.ExportTests) ... ok\ntest_cli_success_failure_and_malformed (test_validate_evidence.EvidenceTests) ... ok\ntest_dtype_and_shape_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_equal (test_validate_evidence.EvidenceTests) ... ok\ntest_json_nonfinite_and_duplicate_keys (test_validate_evidence.EvidenceTests) ... ok\ntest_numeric_mismatch (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_corruption_or_missing_file (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_mismatched_stem (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_missing_ip (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_pass_is_offline_only (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_duplicate_ip_and_dtd (test_validate_evidence.EvidenceTests) ... ok\ntest_pynq_reject_non_utf8_xml (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_invalid_stage (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_missing_or_invalid_metric (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_pass (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_bad_metrics (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_reject_changed_source (test_validate_evidence.EvidenceTests) ... ok\ntest_qor_resource_excess (test_validate_evidence.EvidenceTests) ... ok\ntest_reject_bad_tensor_and_tolerances (test_validate_evidence.EvidenceTests) ... ok\ntest_relative_tolerance (test_validate_evidence.EvidenceTests) ... ok\ntest_uint64_comparison_does_not_round_away_difference (test_validate_evidence.EvidenceTests) ... ok\n\n----------------------------------------------------------------------\nRan 49 tests in 0.388s\n\nOK\n"
+    },
+    {
+      "name": "final_exported_structure",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/tmp/skill-final-migration-1wssgerd/team/skill/tools/check_skills.py",
+        "--root",
+        "/tmp/skill-final-migration-1wssgerd/team",
+        "--standalone"
+      ],
+      "cwd": "/tmp/skill-final-migration-1wssgerd/team",
+      "started_at_utc": "2026-10-31T02:17:10.941153+00:00",
+      "finished_at_utc": "2026-10-31T02:17:11.016695+00:00",
+      "returncode": 0,
+      "expected_returncode": 0,
+      "ok": true,
+      "stdout": "{\n  \"ok\": true,\n  \"package_root\": \"/tmp/skill-final-migration-1wssgerd/team\",\n  \"modules\": 14,\n  \"documents_checked\": 26,\n  \"imported_documents\": 1,\n  \"hardware_actions\": false,\n  \"documented_commands_executed\": false,\n  \"validation_scope\": \"skill-only\",\n  \"external_references_not_checked\": [\n    \"/tmp/skill-final-migration-1wssgerd/team/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/build_hls.sh\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/build_ofdm_firmware.sh\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/environment/lerobot/\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/projects/ofdm/build_hw/TOP.xsa\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/reports/INDEX.csv\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/scripts/INDEX.csv\",\n    \"/tmp/skill-final-migration-1wssgerd/team/build/verify_delivery.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/data/lerobot/workspace/\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/KNOWN_GAPS.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/PACKAGING_SUMMARY.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/SHA256SUMS\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/absolute_path_references.csv\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/excluded_files.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/public_key_review.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/repository_revision.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/skill-expansion-diff.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/skill-expansion-validation.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/source_inventory.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/report/source_manifest.csv\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/b3136_artifacts.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/hls_host_config.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/hls_link_config.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/navigation.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/new_tools_checks.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/ofdm_host.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/ofdm_xsa.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/so101_protocol.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/summary.json\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/vision_controls.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/results/packaging-validation/x3plus_bundle.log\",\n    \"/tmp/skill-final-migration-1wssgerd/team/sim/run_software_checks.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/AI-VISION.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_core.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_dma_ui.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_vision_ui.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/kv260-launcher-ai/launcher_yolo_capture.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/motion.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/remote_arm.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/servo.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/host/roarm-vision-console/tests/\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/host/config.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/scripts/build.tcl\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/scripts/integrate_bd.tcl\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/scripts/validate_integration.tcl\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/src/image_preprocess.h\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/image_preprocess/tb/test_host_config.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/host/adapter.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/host/config.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/scripts/build.tcl\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/HLS_IP/yolo_postprocess/src/yolo_postprocess.h\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/dpu_platform2/\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/kv260/dpu_platform2/IMAGE_PREPROCESS_HLS_DESIGN.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/DMA_BRINGUP.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/build_dma_sw.tcl\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/check_dma_xsa.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/host/PROTOCOL.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/host/dma_image.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ofdm/eeSDR_ofdm_loopback/host/dma_uart.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/artifacts.sha256\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/run_vision.sh\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/runtime/hardware.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/test_controls.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/verify_ros.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/kv260_B3136/vision_hls.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/VALIDATION.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/teleop.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/network-teleop/test_teleop.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/teleop-ui/README.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/lerobot-deploy/validate_environment.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/Dockerfile\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/README-KV260.md\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/navigation-fix/\",\n    \"/tmp/skill-final-migration-1wssgerd/team/src/ps/x3plus-kv260-docker/verify-bundle.sh\"\n  ],\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "final_exported_negative_demo",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/tmp/skill-final-migration-1wssgerd/team/skill/tools/validate_evidence.py",
+        "golden",
+        "/tmp/skill-final-migration-1wssgerd/team/skill/examples/reference.json",
+        "/tmp/skill-final-migration-1wssgerd/team/skill/examples/candidate-fail.json"
+      ],
+      "cwd": "/tmp/skill-final-migration-1wssgerd/team",
+      "started_at_utc": "2026-10-31T02:17:11.017093+00:00",
+      "finished_at_utc": "2026-10-31T02:17:11.071350+00:00",
+      "returncode": 1,
+      "expected_returncode": 1,
+      "ok": true,
+      "stdout": "{\n  \"ok\": false,\n  \"scope\": \"numeric-values-only\",\n  \"elements\": 4,\n  \"mismatches\": 1,\n  \"first_mismatch_indices\": [\n    2\n  ],\n  \"max_abs_error\": \"1\",\n  \"atol\": 0.0,\n  \"rtol\": 0.0,\n  \"limitations\": \"No tensor layout, model accuracy or golden independence verification.\",\n  \"hardware_actions\": false,\n  \"network_actions\": false\n}\n",
+      "stderr": ""
+    }
+  ],
+  "python_ast_files": [
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/check_skills.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/export_skills.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_check_skills.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_export_skills.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_validate_evidence.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/validate_evidence.py"
+  ],
+  "bash_syntax": [
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/README.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/README.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/README.md",
+      "block": 2,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/delivery-audit/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/delivery-audit/SKILL.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/delivery-audit/SKILL.md",
+      "block": 2,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/hls-postprocess/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/hls-preprocess/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/hls-preprocess/SKILL.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/kv260-vision/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/ofdm-firmware/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/ofdm-firmware/SKILL.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/ofdm-link-dma/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/ofdm-link-dma/SKILL.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/references/EVIDENCE_SCHEMAS.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/references/EVIDENCE_SCHEMAS.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/references/EVIDENCE_SCHEMAS.md",
+      "block": 2,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/references/VALIDATION_MATRIX.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/references/VALIDATION_MATRIX.md",
+      "block": 1,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/reusable-workflows/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/so101-teleop/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    },
+    {
+      "path": "/home/amd/kv260-ofdm-reproduction/skill/x3plus-navigation/SKILL.md",
+      "block": 0,
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "protected_hashes": {
+    "report/source_manifest.csv": {
+      "sha256": "b715424460ba9a87bf419dd5a53ac4fe4e3c13cbed5fb1a678102a247447090b",
+      "baseline_sha256": "b715424460ba9a87bf419dd5a53ac4fe4e3c13cbed5fb1a678102a247447090b",
+      "ok": true
+    },
+    "report/source_inventory.json": {
+      "sha256": "23f0ce2a83ce20b1588c80100b89caf257a77de8219dc837b91cd1e43482bd97",
+      "baseline_sha256": "23f0ce2a83ce20b1588c80100b89caf257a77de8219dc837b91cd1e43482bd97",
+      "ok": true
+    },
+    "report/excluded_files.json": {
+      "sha256": "702fc66f34362cc919bdefbb9eac34e2421c877324ff2d150b6cb3b4de201dd1",
+      "baseline_sha256": "702fc66f34362cc919bdefbb9eac34e2421c877324ff2d150b6cb3b4de201dd1",
+      "ok": true
+    },
+    "skill/imported/roarm_console/visual-servo/SKILL.md": {
+      "sha256": "55a9b64903b774fb9310a2529a114f7cb257871932f469d36d348840088bb5f8",
+      "baseline_sha256": "55a9b64903b774fb9310a2529a114f7cb257871932f469d36d348840088bb5f8",
+      "ok": true
+    }
+  },
+  "source_manifest_rows": 31528,
+  "source_manifest_destinations_unique": true,
+  "imported_provenance": {
+    "project": "roarm_console",
+    "source": "/home/amd/roarm-vision-console/skills/visual-servo/SKILL.md",
+    "destination": "skill/imported/roarm_console/visual-servo/SKILL.md",
+    "bytes": "4682",
+    "sha256": "55a9b64903b774fb9310a2529a114f7cb257871932f469d36d348840088bb5f8"
+  },
+  "limitations": [
+    "Synthetic tests do not prove hardware behavior.",
+    "PYNQ artifact preflight does not load Overlay or verify bit/HWH semantic compatibility.",
+    "Prompts not benchmarked for cross-team/model stability."
+  ],
+  "tested_tool_sha256": {
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/check_skills.py": "aeb3c1f170915e6e6321b1c43e15eb925fd252bee9a72b69012947979beb0602",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/export_skills.py": "813428b30f26b6c324fe49c885606aaebf4c0a4b80b8494a3d3363754f44f981",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_check_skills.py": "69ce2361be4e82834d7e2bafd58e1e173183a0fad07d735417c13a477c68430e",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_export_skills.py": "baefa7977c2f15aa9200cfb19376cd6a330d70983c3150963847464d852360b5",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_validate_evidence.py": "52759a9fed44656c877b6143deaa01083766e64432bd2ff78ad9035cd5b562fa",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/validate_evidence.py": "818ae0c927c2fb94d5f540c6a09378fe3002c056d3286196f649d652e6f84e81"
+  },
+  "final_unit_test_count": 49
+}

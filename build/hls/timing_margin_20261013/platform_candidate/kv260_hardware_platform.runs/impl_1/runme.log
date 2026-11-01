@@ -1,0 +1,860 @@
+
+*** Running vivado
+    with args -log kv260_hardware_platform_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source kv260_hardware_platform_wrapper.tcl -notrace
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source kv260_hardware_platform_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/ip_repo/vision/image_preprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/ip_repo/vision/yolo_postprocess'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: link_design -top kv260_hardware_platform_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.66 . Memory (MB): peak = 2760.523 ; gain = 0.000 ; free physical = 2896 ; free virtual = 6776
+INFO: [Netlist 29-17] Analyzing 1933 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_10'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_10/kv260_hardware_platform_proc_sys_reset_0_10_board.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_1/bd_c9ca_psr_aclk_0.xdc] for cell 'kv260_hardware_platform_i/vision_write_sc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_1/bd_c9ca_psr_aclk_0.xdc] for cell 'kv260_hardware_platform_i/vision_write_sc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_1/bd_c9ca_psr_aclk_0_board.xdc] for cell 'kv260_hardware_platform_i/vision_write_sc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_1/bd_c9ca_psr_aclk_0_board.xdc] for cell 'kv260_hardware_platform_i/vision_write_sc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_1/bd_5d58_psr_aclk_0.xdc] for cell 'kv260_hardware_platform_i/vision_read_sc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_1/bd_5d58_psr_aclk_0.xdc] for cell 'kv260_hardware_platform_i/vision_read_sc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_1/bd_5d58_psr_aclk_0_board.xdc] for cell 'kv260_hardware_platform_i/vision_read_sc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_1/bd_5d58_psr_aclk_0_board.xdc] for cell 'kv260_hardware_platform_i/vision_read_sc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_rst_ps8_0_99M_0/kv260_hardware_platform_rst_ps8_0_99M_0.xdc] for cell 'kv260_hardware_platform_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_rst_ps8_0_99M_0/kv260_hardware_platform_rst_ps8_0_99M_0.xdc] for cell 'kv260_hardware_platform_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_rst_ps8_0_99M_0/kv260_hardware_platform_rst_ps8_0_99M_0_board.xdc] for cell 'kv260_hardware_platform_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_rst_ps8_0_99M_0/kv260_hardware_platform_rst_ps8_0_99M_0_board.xdc] for cell 'kv260_hardware_platform_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_axi_intc_0_0/kv260_hardware_platform_axi_intc_0_0.xdc] for cell 'kv260_hardware_platform_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_axi_intc_0_0/kv260_hardware_platform_axi_intc_0_0.xdc] for cell 'kv260_hardware_platform_i/axi_intc_0/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_11'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_11/kv260_hardware_platform_proc_sys_reset_0_11.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_11'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_11/kv260_hardware_platform_proc_sys_reset_0_11_board.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_10'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_10/kv260_hardware_platform_proc_sys_reset_0_10.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_zynq_ultra_ps_e_0_0/kv260_hardware_platform_zynq_ultra_ps_e_0_0.xdc] for cell 'kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_zynq_ultra_ps_e_0_0/kv260_hardware_platform_zynq_ultra_ps_e_0_0.xdc] for cell 'kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_9'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_9/kv260_hardware_platform_proc_sys_reset_0_9.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_9'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_9/kv260_hardware_platform_proc_sys_reset_0_9_board.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_8/kv260_hardware_platform_proc_sys_reset_0_8.xdc] for cell 'kv260_hardware_platform_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_8/kv260_hardware_platform_proc_sys_reset_0_8.xdc] for cell 'kv260_hardware_platform_i/proc_sys_reset_2/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_8/kv260_hardware_platform_proc_sys_reset_0_8_board.xdc] for cell 'kv260_hardware_platform_i/proc_sys_reset_2/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_8/kv260_hardware_platform_proc_sys_reset_0_8_board.xdc] for cell 'kv260_hardware_platform_i/proc_sys_reset_2/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_7'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_7/kv260_hardware_platform_proc_sys_reset_0_7.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_7'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_7/kv260_hardware_platform_proc_sys_reset_0_7_board.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_6'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_6/kv260_hardware_platform_proc_sys_reset_0_6.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'kv260_hardware_platform_proc_sys_reset_0_6'. The XDC file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_proc_sys_reset_0_6/kv260_hardware_platform_proc_sys_reset_0_6_board.xdc will not be read for any cell of this module.
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_clk_wiz_0_1/kv260_hardware_platform_clk_wiz_0_1.xdc] for cell 'kv260_hardware_platform_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_clk_wiz_0_1/kv260_hardware_platform_clk_wiz_0_1.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_clk_wiz_0_1/kv260_hardware_platform_clk_wiz_0_1.xdc:57]
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_clk_wiz_0_1/kv260_hardware_platform_clk_wiz_0_1.xdc] for cell 'kv260_hardware_platform_i/clk_wiz_1/inst'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_clk_wiz_0_1/kv260_hardware_platform_clk_wiz_0_1_board.xdc] for cell 'kv260_hardware_platform_i/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_clk_wiz_0_1/kv260_hardware_platform_clk_wiz_0_1_board.xdc] for cell 'kv260_hardware_platform_i/clk_wiz_1/inst'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_axi_intc_0_0/kv260_hardware_platform_axi_intc_0_0_clocks.xdc] for cell 'kv260_hardware_platform_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_axi_intc_0_0/kv260_hardware_platform_axi_intc_0_0_clocks.xdc] for cell 'kv260_hardware_platform_i/axi_intc_0/U0'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0_clocks.xdc] for cell 'kv260_hardware_platform_i/ps8_0_axi_periph/m01_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0_clocks.xdc:17]
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0_clocks.xdc] for cell 'kv260_hardware_platform_i/ps8_0_axi_periph/m01_couplers/auto_cc/inst'
+Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1_clocks.xdc] for cell 'kv260_hardware_platform_i/ps8_0_axi_periph/m02_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1_clocks.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1_clocks.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-15' -to list should not be empty. [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1_clocks.xdc:13]
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1_clocks.xdc:17]
+Finished Parsing XDC File [/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1_clocks.xdc] for cell 'kv260_hardware_platform_i/ps8_0_axi_periph/m02_couplers/auto_cc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-15' -from list should not be empty. [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:30]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-15' -from list should not be empty. [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:30]
+INFO: [Project 1-1714] 109 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 8 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2695 ; free virtual = 6572
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 416 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 63 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 182 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 8 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 123 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+15 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 3602.918 ; gain = 901.395 ; free physical = 2689 ; free virtual = 6566
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2617 ; free virtual = 6496
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_image_preprocess_Pipeline_VITIS_LOOP_540_4_fu_556/flow_control_loop_pipe_sequential_init_U/zext_ln540_reg_159[7]_i_1 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_image_preprocess_Pipeline_VITIS_LOOP_540_4_fu_556/flow_control_loop_pipe_sequential_init_U/grp_image_preprocess_Pipeline_VITIS_LOOP_540_4_fu_556_ap_start_reg_i_2, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/in_words_U/U_image_preprocess_fifo_w128_d64_A_x_ram/dout[127]_i_1 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/in_words_U/U_image_preprocess_fifo_w128_d64_A_x_ram/i___704_i_1, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_267_1_fu_104/add13_i15_i_reg_2852[10]_i_2 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_267_1_fu_104/i___134_i_1, which resulted in an inversion of 22 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_267_1_fu_104/zext_ln77_8_reg_2842[6]_i_1 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_267_1_fu_104/i___137_i_1, which resulted in an inversion of 36 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_344_3_fu_260/waddr[5]_i_1__3 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_344_3_fu_260/i___705_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_376_6_VITIS_LOOP_378_7_fu_302/dout[47]_i_1 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_376_6_VITIS_LOOP_378_7_fu_302/i___127_i_1, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/icmp_ln333_reg_608[0]_i_1 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/icmp_ln333_reg_608[0]_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_write_words_4_U0/grp_p_anonymous_namespace_write_words_4_Pipeline_VITIS_LOOP_419_2_fu_137/dout[127]_i_1__1 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_write_words_4_U0/grp_p_anonymous_namespace_write_words_4_Pipeline_VITIS_LOOP_419_2_fu_137/i___239_i_2, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/flow_control_loop_delay_pipe_U/dout[23]_i_1__2 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/flow_control_loop_delay_pipe_U/raddr_reg[1]_i_2__7, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/words_U/U_image_preprocess_fifo_w128_d64_A_ram/dout[127]_i_1__2 into driver instance kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/words_U/U_image_preprocess_fifo_w128_d64_A_ram/raddr_reg[1]_i_2__6, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/axaddr_offset_r[0]_i_1__0 into driver instance kv260_hardware_platform_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/axaddr_offset_r[0]_i_2__0, which resulted in an inversion of 6 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_offset_r[0]_i_1 into driver instance kv260_hardware_platform_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.aw_channel_0/aw_cmd_fsm_0/axaddr_offset_r[0]_i_2, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/bus_read/fifo_rctl/sect_len_buf[7]_i_1 into driver instance kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/bus_read/fifo_rctl/state[1]_i_2, which resulted in an inversion of 16 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_121_7_fu_873/ap_enable_reg_pp0_iter1_i_1__0 into driver instance kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_121_7_fu_873/flow_control_loop_pipe_sequential_init_U/ram_reg_bram_0_i_43, which resulted in an inversion of 20 pins
+INFO: [Opt 31-1287] Pulled Inverter kv260_hardware_platform_i/yolo_postprocess_1/inst/select_ln103_5_reg_2299[5]_i_1 into driver instance kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_6ns_6ns_11_1_1_U56/select_ln103_5_reg_2299[5]_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-138] Pushed 88 inverter(s) to 6723 load pin(s).
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_267_1_fu_104/mac_muladd_8ns_7ns_17s_18_4_1_U149/image_preprocess_mac_muladd_8ns_7ns_17s_18_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/mac_muladd_8ns_7ns_17s_18_4_1_U73/image_preprocess_mac_muladd_8ns_7ns_17s_18_4_1_DSP48_2_U/p_reg_reg
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 646f6504
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 3121 ; free virtual = 7014
+INFO: [Opt 31-389] Phase Retarget created 37 cells and removed 412 cells
+INFO: [Opt 31-1021] In phase Retarget, 54 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 71340372
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 3084 ; free virtual = 6977
+INFO: [Opt 31-389] Phase Constant propagation created 11 cells and removed 159 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 76 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: c44ae070
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2847 ; free virtual = 6740
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 165 cells
+INFO: [Opt 31-1021] In phase Sweep, 91 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 4 BUFG optimization | Checksum: c44ae070
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2737 ; free virtual = 6629
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: c44ae070
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2731 ; free virtual = 6624
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: c44ae070
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2718 ; free virtual = 6608
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 54 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              37  |             412  |                                             54  |
+|  Constant propagation         |              11  |             159  |                                             76  |
+|  Sweep                        |               0  |             165  |                                             91  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             54  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2577 ; free virtual = 6459
+Ending Logic Optimization Task | Checksum: 14e73dd05
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2576 ; free virtual = 6458
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2538 ; free virtual = 6420
+Ending Netlist Obfuscation Task | Checksum: 14e73dd05
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2538 ; free virtual = 6419
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 3602.918 ; gain = 0.000 ; free physical = 2536 ; free virtual = 6418
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+INFO: [Common 17-1381] The checkpoint '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3701.145 ; gain = 98.227 ; free physical = 2176 ; free virtual = 6077
+INFO: [runtcl-4] Executing : report_drc -file kv260_hardware_platform_wrapper_drc_opted.rpt -pb kv260_hardware_platform_wrapper_drc_opted.pb -rpx kv260_hardware_platform_wrapper_drc_opted.rpx
+Command: report_drc -file kv260_hardware_platform_wrapper_drc_opted.rpt -pb kv260_hardware_platform_wrapper_drc_opted.pb -rpx kv260_hardware_platform_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 4934.289 ; gain = 1233.145 ; free physical = 1256 ; free virtual = 5308
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 936 ; free virtual = 4943
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: f8f97969
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 936 ; free virtual = 4943
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 929 ; free virtual = 4936
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f6293993
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 1314 ; free virtual = 5340
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1e59e7d5a
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 1421 ; free virtual = 5494
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1e59e7d5a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 1414 ; free virtual = 5477
+Phase 1 Placer Initialization | Checksum: 1e59e7d5a
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 1409 ; free virtual = 5472
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1527f55b3
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 937 ; free virtual = 5004
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1527f55b3
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 4934.289 ; gain = 0.000 ; free physical = 890 ; free virtual = 4959
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1527f55b3
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:30 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 752 ; free virtual = 4873
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 1d1594fcd
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 510 ; free virtual = 4622
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 1d1594fcd
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 507 ; free virtual = 4619
+Phase 2.1.1 Partition Driven Placement | Checksum: 1d1594fcd
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 512 ; free virtual = 4624
+Phase 2.1 Floorplanning | Checksum: 1d1594fcd
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 523 ; free virtual = 4635
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1d1594fcd
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 517 ; free virtual = 4630
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1166ac8ad
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 492 ; free virtual = 4604
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1109 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 406 nets or LUTs. Breaked 0 LUT, combined 406 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 15 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 5 nets.  Re-placed 13 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 5 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 13 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 1159 ; free virtual = 5308
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net kv260_hardware_platform_i/proc_sys_reset_2/U0/peripheral_aresetn[0]. Replicated 39 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 39 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 39 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.18 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 988 ; free virtual = 5140
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 944 ; free virtual = 5096
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            406  |                   406  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     5  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |           39  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           39  |            406  |                   412  |           0  |           5  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 19d466ab4
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:04 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 592 ; free virtual = 4745
+Phase 2.4 Global Placement Core | Checksum: 1800b2b55
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:06 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 663 ; free virtual = 4814
+Phase 2 Global Placement | Checksum: 1800b2b55
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:06 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 684 ; free virtual = 4835
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1cfc43028
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:09 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 719 ; free virtual = 4877
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 147b93435
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:13 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 1322 ; free virtual = 5476
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 18d95bf19
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:19 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 470 ; free virtual = 4632
+
+Phase 3.3.2 Flow Legalize Slice Clusters
+Phase 3.3.2 Flow Legalize Slice Clusters | Checksum: 1f0cd313c
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:19 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 432 ; free virtual = 4594
+
+Phase 3.3.3 Slice Area Swap
+
+Phase 3.3.3.1 Slice Area Swap Initial
+Phase 3.3.3.1 Slice Area Swap Initial | Checksum: 1ec109fc3
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:26 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 1478 ; free virtual = 5513
+Phase 3.3.3 Slice Area Swap | Checksum: 1ec109fc3
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:27 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 1441 ; free virtual = 5476
+Phase 3.3 Small Shape DP | Checksum: 185c95690
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:31 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 1011 ; free virtual = 5042
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1048e651d
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:33 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 904 ; free virtual = 4884
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 157a45cfd
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:33 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 867 ; free virtual = 4849
+Phase 3 Detail Placement | Checksum: 157a45cfd
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:33 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 722 ; free virtual = 4743
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c1d0ae2b
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.240 | TNS=-23.064 |
+Phase 1 Physical Synthesis Initialization | Checksum: 18e5424cd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 1527 ; free virtual = 4906
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1fcf85405
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 1604 ; free virtual = 5010
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1c1d0ae2b
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:51 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 1470 ; free virtual = 4918
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.300. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2097b5d3a
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:02:12 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 818 ; free virtual = 4206
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:02:12 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 816 ; free virtual = 4204
+Phase 4.1 Post Commit Optimization | Checksum: 2097b5d3a
+
+Time (s): cpu = 00:02:33 ; elapsed = 00:02:12 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 768 ; free virtual = 4157
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 706 ; free virtual = 4109
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 216c1b4e5
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:02:15 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 692 ; free virtual = 4098
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                2x2|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                8x8|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 216c1b4e5
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:02:15 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 689 ; free virtual = 4094
+Phase 4.3 Placer Reporting | Checksum: 216c1b4e5
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:16 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 757 ; free virtual = 4162
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5010.668 ; gain = 0.000 ; free physical = 757 ; free virtual = 4162
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:16 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 757 ; free virtual = 4162
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1caca253e
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:16 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 748 ; free virtual = 4155
+Ending Placer Task | Checksum: 16830061a
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:16 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 752 ; free virtual = 4158
+INFO: [Common 17-83] Releasing license: Implementation
+96 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:40 ; elapsed = 00:02:18 . Memory (MB): peak = 5010.668 ; gain = 76.379 ; free physical = 879 ; free virtual = 4286
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5026.676 ; gain = 8.004 ; free physical = 1808 ; free virtual = 5308
+report_design_analysis: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 5026.676 ; gain = 0.000 ; free physical = 1642 ; free virtual = 5183
+INFO: [Common 17-1381] The checkpoint '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 5026.676 ; gain = 16.008 ; free physical = 532 ; free virtual = 3790
+INFO: [runtcl-4] Executing : report_io -file kv260_hardware_platform_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.37 . Memory (MB): peak = 5026.676 ; gain = 0.000 ; free physical = 437 ; free virtual = 3694
+INFO: [runtcl-4] Executing : report_utilization -file kv260_hardware_platform_wrapper_utilization_placed.rpt -pb kv260_hardware_platform_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file kv260_hardware_platform_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.42 . Memory (MB): peak = 5026.676 ; gain = 0.000 ; free physical = 1317 ; free virtual = 4579
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+107 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 5026.676 ; gain = 0.000 ; free physical = 1501 ; free virtual = 4847
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 5040.051 ; gain = 13.375 ; free physical = 445 ; free virtual = 2966
+INFO: [Common 17-1381] The checkpoint '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 5040.051 ; gain = 13.375 ; free physical = 1063 ; free virtual = 3449
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: aa420b6b ConstDB: 0 ShapeSum: b0a7a304 RouteDB: d4657ab
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.57 . Memory (MB): peak = 5040.051 ; gain = 0.000 ; free physical = 1505 ; free virtual = 3279
+Post Restoration Checksum: NetGraph: 85d2e620 NumContArr: bd91c309 Constraints: 131bf2a5 Timing: 0
+Phase 1 Build RT Design | Checksum: 156809bce
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 5040.051 ; gain = 0.000 ; free physical = 973 ; free virtual = 3143
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 156809bce
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 5040.051 ; gain = 0.000 ; free physical = 885 ; free virtual = 3076
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 156809bce
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 5040.051 ; gain = 0.000 ; free physical = 1072 ; free virtual = 3249
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: df4277a1
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 5078.465 ; gain = 38.414 ; free physical = 742 ; free virtual = 2794
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 16e0f7a8b
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 5078.465 ; gain = 38.414 ; free physical = 2290 ; free virtual = 4391
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.500  | TNS=0.000  | WHS=-0.078 | THS=-228.835|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 20c574939
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:40 . Memory (MB): peak = 5134.754 ; gain = 94.703 ; free physical = 1322 ; free virtual = 3174
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.500  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 15f423738
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:41 . Memory (MB): peak = 5134.754 ; gain = 94.703 ; free physical = 1085 ; free virtual = 3003
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 53704
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 47412
+  Number of Partially Routed Nets     = 6292
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 22ebfbd55
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:43 . Memory (MB): peak = 5144.043 ; gain = 103.992 ; free physical = 697 ; free virtual = 2699
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 22ebfbd55
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:43 . Memory (MB): peak = 5144.043 ; gain = 103.992 ; free physical = 461 ; free virtual = 2482
+Phase 3 Initial Routing | Checksum: 22e2805c8
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:54 . Memory (MB): peak = 5144.043 ; gain = 103.992 ; free physical = 400 ; free virtual = 969
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 12700
+ Number of Nodes with overlaps = 1479
+ Number of Nodes with overlaps = 351
+ Number of Nodes with overlaps = 107
+ Number of Nodes with overlaps = 49
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.070 | TNS=-1.152 | WHS=-0.047 | THS=-0.728 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 152f5ab26
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:03:22 . Memory (MB): peak = 5144.043 ; gain = 103.992 ; free physical = 9184 ; free virtual = 12853
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 305
+ Number of Nodes with overlaps = 53
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.152 | TNS=-10.501| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1cceea0c3
+
+Time (s): cpu = 00:03:52 ; elapsed = 00:03:36 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11498 ; free virtual = 15522
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 128
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.008 | TNS=-0.117 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 13ecc7e03
+
+Time (s): cpu = 00:04:11 ; elapsed = 00:03:56 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11805 ; free virtual = 15905
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 191
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.054  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 139acf628
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:04:09 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11711 ; free virtual = 15722
+Phase 4 Rip-up And Reroute | Checksum: 139acf628
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:04:09 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11712 ; free virtual = 15722
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+
+Phase 5.1.1.1 Update Timing
+Phase 5.1.1.1 Update Timing | Checksum: 123c9fbe9
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:04:15 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11726 ; free virtual = 15736
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.054  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 5.1.1 Delay CleanUp | Checksum: d2037613
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:04:15 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11726 ; free virtual = 15736
+Phase 5.1 TNS Cleanup | Checksum: d2037613
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:04:15 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11726 ; free virtual = 15736
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: d2037613
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:04:15 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11725 ; free virtual = 15736
+Phase 5 Delay and Skew Optimization | Checksum: d2037613
+
+Time (s): cpu = 00:04:33 ; elapsed = 00:04:15 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11725 ; free virtual = 15736
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: ce9704ae
+
+Time (s): cpu = 00:04:39 ; elapsed = 00:04:19 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11726 ; free virtual = 15737
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.054  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: c8ec463a
+
+Time (s): cpu = 00:04:39 ; elapsed = 00:04:19 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11725 ; free virtual = 15736
+Phase 6 Post Hold Fix | Checksum: c8ec463a
+
+Time (s): cpu = 00:04:39 ; elapsed = 00:04:19 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11725 ; free virtual = 15735
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.70248 %
+  Global Horizontal Routing Utilization  = 7.72216 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 901a169c
+
+Time (s): cpu = 00:04:40 ; elapsed = 00:04:20 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11724 ; free virtual = 15735
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 901a169c
+
+Time (s): cpu = 00:04:40 ; elapsed = 00:04:20 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11724 ; free virtual = 15735
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 901a169c
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:04:22 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11729 ; free virtual = 15739
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 901a169c
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:04:23 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11729 ; free virtual = 15739
+
+Phase 11 Route finalize
+Phase 11 Route finalize | Checksum: 901a169c
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:04:23 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11729 ; free virtual = 15739
+
+Phase 12 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.038  | TNS=0.000  | WHS=0.009  | THS=0.000  |
+
+Phase 12 Post Router Timing | Checksum: fedd4bd4
+
+Time (s): cpu = 00:04:59 ; elapsed = 00:04:31 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11691 ; free virtual = 15702
+INFO: [Route 35-61] The design met the timing requirement.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:04:59 ; elapsed = 00:04:31 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11873 ; free virtual = 15884
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+128 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:09 ; elapsed = 00:04:38 . Memory (MB): peak = 5152.043 ; gain = 111.992 ; free physical = 11873 ; free virtual = 15884
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5168.051 ; gain = 8.004 ; free physical = 11580 ; free virtual = 15714
+report_design_analysis: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5168.051 ; gain = 0.000 ; free physical = 11810 ; free virtual = 15897
+INFO: [Common 17-1381] The checkpoint '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 5168.051 ; gain = 16.008 ; free physical = 11770 ; free virtual = 15766
+INFO: [runtcl-4] Executing : report_drc -file kv260_hardware_platform_wrapper_drc_routed.rpt -pb kv260_hardware_platform_wrapper_drc_routed.pb -rpx kv260_hardware_platform_wrapper_drc_routed.rpx
+Command: report_drc -file kv260_hardware_platform_wrapper_drc_routed.rpt -pb kv260_hardware_platform_wrapper_drc_routed.pb -rpx kv260_hardware_platform_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file kv260_hardware_platform_wrapper_methodology_drc_routed.rpt -pb kv260_hardware_platform_wrapper_methodology_drc_routed.pb -rpx kv260_hardware_platform_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file kv260_hardware_platform_wrapper_methodology_drc_routed.rpt -pb kv260_hardware_platform_wrapper_methodology_drc_routed.pb -rpx kv260_hardware_platform_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 5168.051 ; gain = 0.000 ; free physical = 11808 ; free virtual = 15854
+INFO: [runtcl-4] Executing : report_power -file kv260_hardware_platform_wrapper_power_routed.rpt -pb kv260_hardware_platform_wrapper_power_summary_routed.pb -rpx kv260_hardware_platform_wrapper_power_routed.rpx
+Command: report_power -file kv260_hardware_platform_wrapper_power_routed.rpt -pb kv260_hardware_platform_wrapper_power_summary_routed.pb -rpx kv260_hardware_platform_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+141 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 5176.062 ; gain = 8.012 ; free physical = 11727 ; free virtual = 15792
+INFO: [runtcl-4] Executing : report_route_status -file kv260_hardware_platform_wrapper_route_status.rpt -pb kv260_hardware_platform_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file kv260_hardware_platform_wrapper_timing_summary_routed.rpt -pb kv260_hardware_platform_wrapper_timing_summary_routed.pb -rpx kv260_hardware_platform_wrapper_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file kv260_hardware_platform_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file kv260_hardware_platform_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file kv260_hardware_platform_wrapper_bus_skew_routed.rpt -pb kv260_hardware_platform_wrapper_bus_skew_routed.pb -rpx kv260_hardware_platform_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5188.082 ; gain = 8.004 ; free physical = 11377 ; free virtual = 15583
+INFO: [Common 17-1381] The checkpoint '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.runs/impl_1/kv260_hardware_platform_wrapper_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 5188.082 ; gain = 12.020 ; free physical = 11590 ; free virtual = 15657
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -warn_on_violation -file kv260_hardware_platform_wrapper_timing_summary_postroute_physopted.rpt -pb kv260_hardware_platform_wrapper_timing_summary_postroute_physopted.pb -rpx kv260_hardware_platform_wrapper_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file kv260_hardware_platform_wrapper_bus_skew_postroute_physopted.rpt -pb kv260_hardware_platform_wrapper_bus_skew_postroute_physopted.pb -rpx kv260_hardware_platform_wrapper_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 00:15:58 2026...

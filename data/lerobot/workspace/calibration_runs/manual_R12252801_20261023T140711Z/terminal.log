@@ -1,0 +1,43 @@
+Script started on 2026-10-23 07:07:11-07:00 [TERM="xterm-256color" TTY="/dev/pts/37" COLUMNS="80" LINES="24"]
+INFO 2026-10-23 14:07:14 calibrate.py:77 {'robot': {'calibration_dir': None,
+           'cameras': {},
+           'disable_torque_on_disconnect': True,
+           'id': 'R12252801',
+           'max_relative_target': None,
+           'port': '/dev/ttyACM0',
+           'use_degrees': False},
+ 'teleop': None}
+Try to load calibration params from:  /workspace/calibration/robots/so101_follower/R12252801.json
+Traceback (most recent call last):
+  File "/opt/venv/bin/lerobot-calibrate", line 7, in <module>
+    sys.exit(main())
+  File "/opt/lerobot/src/lerobot/scripts/lerobot_calibrate.py", line 91, in main
+    calibrate()
+  File "/opt/venv/lib/python3.10/site-packages/draccus/argparsing.py", line 225, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/opt/lerobot/src/lerobot/scripts/lerobot_calibrate.py", line 84, in calibrate
+    device.connect(calibrate=False)
+  File "/opt/lerobot/src/lerobot/robots/so101_follower/so101_follower.py", line 93, in connect
+    self.bus.connect()
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 430, in connect
+    self._connect(handshake)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 439, in _connect
+    self._handshake()
+  File "/opt/lerobot/src/lerobot/motors/feetech/feetech.py", line 167, in _handshake
+    self._assert_motors_exist()
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 403, in _assert_motors_exist
+    raise RuntimeError("\n".join(error_lines))
+RuntimeError: FeetechMotorsBus motor check failed on port '/dev/ttyACM0':
+
+Missing motor IDs:
+  - 1 (expected model: 777)
+  - 2 (expected model: 777)
+  - 6 (expected model: 777)
+
+Full expected motor list (id: model_number):
+{1: 777, 2: 777, 3: 777, 4: 777, 5: 777, 6: 777}
+
+Full found motor list (id: model_number):
+{3: 777, 4: 777, 5: 777}
+
+Script done on 2026-10-23 07:07:15-07:00 [COMMAND_EXIT_CODE="1"]

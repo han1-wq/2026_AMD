@@ -1,0 +1,1 @@
+../../../../../../../src/ps/lerobot-deploy/lerobot/tests/policies/smolvla/test_smolvla_rtc.py

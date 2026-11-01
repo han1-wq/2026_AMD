@@ -1,0 +1,52 @@
+[
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py",
+    "line": 58,
+    "text": "self.joints = [90, 145, 0, 45, 90, 30]"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py",
+    "line": 59,
+    "text": "self.car.set_uart_servo_angle_array(self.joints, 1000)"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py",
+    "line": 65,
+    "text": "self.car.set_uart_servo_angle_array(self.joints, 1000) '''"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py",
+    "line": 121,
+    "text": "self.car.set_uart_servo_angle_array(msg.joints, msg.run_time)"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py",
+    "line": 250,
+    "text": "self.car.set_uart_servo_angle_array("
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py",
+    "line": 261,
+    "text": "#driver.car.set_uart_servo_angle_array(driver.joints, 1000)"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch",
+    "line": 10,
+    "text": "<arg name=\"enable_multipoint\" default=\"false\"/>"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch",
+    "line": 12,
+    "text": "<arg name=\"quality_interlock\" default=\"false\"/>"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch",
+    "line": 13,
+    "text": "<node name='send_mark' pkg=\"yahboomcar_nav\" type=\"send_mark.py\" if=\"$(arg enable_multipoint)\"/>"
+  },
+  {
+    "file": "src/ps/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch",
+    "line": 16,
+    "text": "<param name=\"quality_interlock\" value=\"$(arg quality_interlock)\"/>"
+  }
+]

@@ -1,0 +1,139 @@
+frame build_sw - ofdm_dma/src/link.c - Vitis IDE 
+panel Design
+page tab list Explorer
+page tab Explorer
+panel Explorer
+table cell dma_platform
+table cell ofdm_dma_system [ dma_platform ] 
+table cell ofdm_dma [ standalone on ps7_cortexa9_0 ]
+table cell Binaries
+table cell Includes
+table cell Debug
+table cell src
+table cell ad9361_api.c
+table cell ad9361_api.h
+table cell ad9361_conv.c
+table cell ad9361.c
+table cell ad9361.h
+table cell board_phy.c
+table cell common.h
+table cell config.h
+table cell dma_transport.c
+table cell dma_transport.h
+table cell link.c
+table cell link.h
+table cell main.c
+table cell net_trace.c
+table cell net_trace.h
+table cell platform_config.h
+table cell platform.c
+table cell platform.h
+table cell services.c
+table cell services.h
+table cell util.c
+table cell util.h
+table cell lscript.ld
+table cell README.txt
+table cell Xilinx.spec
+table cell _ide
+table cell ofdm_dma.prj
+table cell ofdm_dma_system.sprj
+page tab list Assistant
+page tab Assistant
+panel Assistant
+table cell dma_platform [Platform]
+table cell ofdm_dma_system [System]
+table cell ofdm_dma [Application]
+table cell Debug
+table cell Release
+table cell Debug
+table cell Release
+page tab list link.c
+page tab main.c
+panel link.c
+page tab board_phy.c
+panel link.c
+page tab config.h
+panel link.c
+page tab dma_transport.c
+panel link.c
+page tab link.c
+panel link.c
+page tab list Outline
+page tab Outline
+panel Outline
+table cell link.h
+table cell string.h
+table cell WINDOW
+table cell UART_RESERVE
+table cell ACK_COUNT
+table cell DUP_COUNT
+table cell RETRY_MS
+table cell RETRY_LIMIT
+table cell SUBMIT_TIMEOUT_MS
+table cell packet
+table cell window : struct packet[]
+table cell acks : uint8_t[][]
+table cell duplicates : uint8_t[][]
+table cell ack_wr : unsigned
+table cell ack_rd : unsigned
+table cell dup_wr : unsigned
+table cell dup_used : unsigned
+table cell cursor : unsigned
+table cell uart_budget : unsigned
+table cell transmit : link_send_fn
+table cell deliver : link_deliver_fn
+table cell failed : link_failure_fn
+table cell link_retries : uint32_t
+table cell link_failures : uint32_t
+table cell link_invalid : uint32_t
+table cell link_delivered : uint32_t
+table cell link_get16(const uint8_t*) : uint16_t
+table cell link_get32(const uint8_t*) : uint32_t
+table cell link_put16(uint8_t*, uint16_t) : void
+table cell link_put32(uint8_t*, uint32_t) : void
+table cell same(const uint8_t*, const uint8_t*) : int
+table cell link_validate(const uint8_t*, unsigned) : int
+table cell link_init(link_send_fn, link_deliver_fn) : void
+table cell link_set_failure_handler(link_failure_fn) : void
+table cell link_cancel_image(uint8_t, uint32_t, uint32_t) : void
+table cell link_free(unsigned) : unsigned
+table cell link_pending(uint8_t, uint32_t, uint32_t) : unsigned
+table cell link_enqueue(const uint8_t*, unsigned) : int
+table cell link_receive(const uint8_t*, unsigned) : void
+table cell link_poll(uint32_t) : void
+text Outline is disabled due to scalability mode (options).
+page tab list Console
+page tab Console
+toggle button Menu
+toggle button Menu
+panel Console
+label Build Console
+page tab Problems
+toggle button Menu
+toggle button Menu
+panel Console
+label Build Console
+page tab Vitis Log
+toggle button Menu
+toggle button Menu
+panel Console
+label Build Console
+page tab Guidance
+toggle button Menu
+toggle button Menu
+panel Console
+label Build Console
+toggle button Menu
+toggle button Menu
+toggle button Menu
+toggle button Menu
+toggle button Menu
+toggle button Menu
+toggle button Menu
+toggle button Menu
+toggle button Design
+toggle button Debug
+label Writable
+label Smart Insert
+label 88 : 25 : 3950

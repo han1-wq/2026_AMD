@@ -1,0 +1,9 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[WARN] [1792558610.018996]: Navigation goal refused: map_changed_initial_pose_required
+[WARN] [1792558616.427731]: Navigation goal refused: initial_pose_disagreement
+[WARN] [1792558622.839177]: Navigation goal refused: scan_ray_obstructed
+[WARN] [1792558657.195319]: Navigation goal refused: stale_scan_initial_pose_required
+[WARN] [1792558669.315624]: Navigation goal refused: initial_pose_required
+[WARN] [1792558694.763289]: Navigation goal refused: stale_amcl_pose_initial_pose_required
+[WARN] [1792558703.580230]: Navigation goal refused: map_changed_initial_pose_required
+[WARN] [1792558707.610895]: Navigation goal refused: invalid_initial_pose

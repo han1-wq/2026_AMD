@@ -1,0 +1,44 @@
+[
+  {
+    "path": "build/projects/ofdm/build_hw/TOP.xsa",
+    "exists": true,
+    "bytes": 1456489,
+    "sha256": "fed3af4919fa03cfdc21ff486fcc11de307358627d3eb4a77706d8359c44841f"
+  },
+  {
+    "path": "build/projects/ofdm/build_hw/ofdm_ad9361.runs/impl_1/TOP.bit",
+    "exists": true,
+    "bytes": 4045663,
+    "sha256": "a57d4441f1d61d5158fce8af64cfe215631c2abbae7274ae85f22c07cbb560d1"
+  },
+  {
+    "path": "board/artifacts/kv260_B3136/overlay/dpu.bit",
+    "exists": true,
+    "bytes": 7797827,
+    "sha256": "fd88c6ed3e4955bac031dd70ecb77b4544e8e71f9f7a6b0f3cb73e1eedc2e6a6"
+  },
+  {
+    "path": "board/artifacts/kv260_B3136/overlay/dpu.hwh",
+    "exists": true,
+    "bytes": 910395,
+    "sha256": "682f8d5f32f7ee48273ca54e56e85152c9bdcf098b7a29fb131d4957a5147d1c"
+  },
+  {
+    "path": "board/artifacts/kv260_B3136/overlay/dpu.xclbin",
+    "exists": true,
+    "bytes": 7849021,
+    "sha256": "f66d15a02b18bad8e0326daff698b174254250bdcb5952d8a8413ffa04064c10"
+  },
+  {
+    "path": "data/models/kv260_B3136/compiled/yolov4_leaky_416_tf.xmodel",
+    "exists": true,
+    "bytes": 67821826,
+    "sha256": "ec73ee6f6d6159433fe639288412e32eef1371b6de2d5d384fdfb6f6e2fc1e7d"
+  },
+  {
+    "path": "data/lerobot/workspace/transfer-check/pretrained_model/model.safetensors",
+    "exists": true,
+    "bytes": 45397424,
+    "sha256": "fc01e65a65810d96fa8956ccd70421a3fcdbaec02f8d27c98207cea8dc404fcd"
+  }
+]

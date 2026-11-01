@@ -1,0 +1,34 @@
+--- /home/amd/Workspace/HLS_IP/timing_margin_20261013/baseline/yolo_postprocess/tb/test_yolo_postprocess.cpp
++++ /home/amd/Workspace/HLS_IP/yolo_postprocess/tb/test_yolo_postprocess.cpp
+@@ -14,7 +14,10 @@
+ static const int anchors[3][3][2] = {{{10,13},{16,30},{33,23}},
+     {{30,61},{62,45},{59,119}},{{116,90},{156,198},{373,326}}};
+ static const int fixes[3] = {4,5,6};
+-static double sigmoid(double v) { return 1/(1+std::exp(-std::max(-30.0,std::min(30.0,v)))); }
++// Keep the independent golden model in host libm, not HLS libhlsm's
++// bit-accurate double-exp implementation (very slow in Vitis HLS 2022.1).
++static double host_exp(double v) { return double(std::exp(static_cast<long double>(v))); }
++static double sigmoid(double v) { return 1/(1+host_exp(-std::max(-30.0,std::min(30.0,v)))); }
+ struct Ref { double x1,y1,x2,y2,score; unsigned cls,id; };
+ 
+ static std::vector<Ref> reference(const std::vector<signed char>& bytes, bool nms) {
+@@ -32,8 +35,8 @@
+                 if(score<0.3) continue;
+                 double cx=(x+sigmoid(p[0]*scale))*stride;
+                 double cy=(y+sigmoid(p[1]*scale))*stride;
+-                double hw=std::exp(std::max(-10.0,std::min(10.0,p[2]*scale)))*anchors[s][a][0]/2;
+-                double hh=std::exp(std::max(-10.0,std::min(10.0,p[3]*scale)))*anchors[s][a][1]/2;
++                double hw=host_exp(std::max(-10.0,std::min(10.0,p[2]*scale)))*anchors[s][a][0]/2;
++                double hh=host_exp(std::max(-10.0,std::min(10.0,p[3]*scale)))*anchors[s][a][1]/2;
+                 result.push_back({cx-hw,cy-hh,cx+hw,cy+hh,score,cls,id});
+             }
+     }
+@@ -60,7 +63,7 @@
+         double z=std::ldexp(double(v<128?int(v):int(v)-256),-fixes[s]);
+         lut[s*1792+v]=std::nearbyint(sigmoid(z)*32768);
+         for(unsigned a=0;a<3;++a) for(unsigned d=0;d<2;++d)
+-            lut[s*1792+(1+2*a+d)*256+v]=std::nearbyint(std::exp(std::max(-10.0,std::min(10.0,z)))*anchors[s][a][d]*128);
++            lut[s*1792+(1+2*a+d)*256+v]=std::nearbyint(host_exp(std::max(-10.0,std::min(10.0,z)))*anchors[s][a][d]*128);
+     }
+     std::vector<signed char> bytes(ypost::ANCHORS*85,-128);
+     std::vector<ap_uint<128>> input(ypost::INPUT_WORDS);

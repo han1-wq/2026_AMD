@@ -1,0 +1,1 @@
+../../../../../../data/lerobot/workspace/calibration_runs/so101_readonly_diagnostic_20261023/verify_stop.py

@@ -1,0 +1,32 @@
+test_atomic_write_failure_preserves_saved_config (test_console.BackendTests) ... ok
+test_changed_host_address_is_recovered_without_overwriting_file (test_console.BackendTests) ... ok
+test_config_roundtrip_and_corrupt_fallback (test_console.BackendTests) ... ok
+test_custom_port_and_ips_reach_launcher (test_console.BackendTests) ... ok
+test_data_connectivity_does_not_confirm_navigation (test_console.BackendTests) ... ok
+test_diagnosis_does_not_hide_callback_failure (test_console.BackendTests) ... ok
+test_diagnosis_requires_running_viewer_for_complete_success (test_console.BackendTests) ... ok
+test_docker_failure_not_reported_as_stopped (test_console.BackendTests) ... ok
+test_legacy_viewer_is_slam (test_console.BackendTests) ... ok
+test_navigation_diagnosis_requires_board_confirmation (test_console.BackendTests) ... ok
+test_network_change_reports_nic_route_and_viewer_mismatch (test_console.BackendTests) ... ok
+test_no_route_or_docker_failure_is_not_healthy (test_console.BackendTests) ... ok
+test_nonlocal_ip_does_not_start_docker (test_console.BackendTests) ... ok
+test_probe_rejects_stale_network (test_console.BackendTests) ... ok
+test_probe_requires_messages_and_both_fresh_transforms (test_console.BackendTests) ... ok
+test_profiles_roundtrip_and_corruption_preserved (test_console.BackendTests) ... ok
+test_reconnect_keeps_mode_and_saves_only_after_validation (test_console.BackendTests) ... ok
+test_reconnect_without_viewer_does_not_launch (test_console.BackendTests) ... ok
+test_reject_invalid_configuration (test_console.BackendTests) ... ok
+test_scan_count_without_fresh_scan_is_not_connectivity (test_console.BackendTests) ... ok
+test_empty_queue_does_not_add_refresh_timers (test_console.GuiTests) ... ok
+test_expired_probe_is_not_left_green (test_console.GuiTests) ... ok
+test_gateway_change_with_same_source_invalidates_probe (test_console.GuiTests) ... ok
+test_input_change_immediately_invalidates_probe (test_console.GuiTests) ... ok
+test_network_change_invalidates_even_with_reachable_master (test_console.GuiTests) ... ok
+test_old_background_result_cannot_validate_new_input (test_console.GuiTests) ... ok
+test_profile_load_preserves_manual_interface_choice (test_console.GuiTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.505s
+
+OK

@@ -1,0 +1,25 @@
+test_acceleration_change_blocked (__main__.GuardTests) ... ok
+test_cleanup_never_switches_mode_if_torque_off_failed (__main__.GuardTests) ... ok
+test_cleanup_operation_times_out (__main__.GuardTests) ... ok
+test_negative_speed_limit (__main__.GuardTests) ... ok
+test_phase_and_overall_watchdogs (__main__.GuardTests) ... ok
+test_position_command_blocked (__main__.GuardTests) ... ok
+test_protections_preserved (__main__.GuardTests) ... ok
+test_read_overload_latches_and_not_runtimeerror (__main__.GuardTests) ... ok
+test_readonly_health_checks (__main__.GuardTests) ... ok
+test_recovery_uses_same_speed (__main__.GuardTests) ... ok
+test_shutdown_bypasses_fault_and_verifies (__main__.GuardTests) ... ok
+test_speed_limit_latches (__main__.GuardTests) ... ok
+test_stale_velocity_enable_blocked (__main__.GuardTests) ... ok
+test_stop_continues_after_one_motor_error (__main__.GuardTests) ... ok
+test_temperature_voltage_status_trip (__main__.GuardTests) ... ok
+test_torque_caps (__main__.GuardTests) ... ok
+test_unexpected_position_mode_enable_blocked (__main__.GuardTests) ... ok
+test_upstream_exploration_aborts_overload (__main__.GuardTests) ... ok
+test_velocity_mode_enable_allowed (__main__.GuardTests) ... ok
+test_write_overload_latches (__main__.GuardTests) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.058s
+
+OK

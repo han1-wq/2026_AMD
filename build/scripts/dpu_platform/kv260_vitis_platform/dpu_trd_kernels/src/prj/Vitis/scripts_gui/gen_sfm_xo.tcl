@@ -1,0 +1,1 @@
+../../../../../../../../../src/kv260/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/src/prj/Vitis/scripts_gui/gen_sfm_xo.tcl

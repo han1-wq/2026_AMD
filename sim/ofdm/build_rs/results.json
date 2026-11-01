@@ -1,0 +1,9 @@
+{
+  "cases": 204,
+  "pass": true,
+  "seed": "0x255239",
+  "correctable_cases": 186,
+  "over_limit_cases": 18,
+  "generator": "013b0d68bd44d11e08a34129e56232243b",
+  "scope": "RTL RS TX/RX + CRC32 + DMA commit/backpressure"
+}

@@ -1,0 +1,5 @@
+{
+  "type": "MotionFault",
+  "message": "Read failed; stopping without recovery: Failed to read 'Status' on id_=6 after 1 tries. [RxPacketError] Overload error!",
+  "motion_fault": "Read failed; stopping without recovery: Failed to read 'Status' on id_=6 after 1 tries. [RxPacketError] Overload error!"
+}

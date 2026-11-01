@@ -1,0 +1,5 @@
+<launch>
+  <arg name="viewer_name" default="pc_slam_rviz"/>
+  <node pkg="rviz" type="rviz" name="$(arg viewer_name)" required="true"
+        args="-d /pc-rviz/slam.rviz" output="screen"/>
+</launch>

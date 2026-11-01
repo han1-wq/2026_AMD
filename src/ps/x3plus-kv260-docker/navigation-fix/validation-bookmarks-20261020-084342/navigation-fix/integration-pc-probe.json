@@ -1,0 +1,122 @@
+{
+  "tf": {
+    "map -> base_footprint": {
+      "age_seconds": 0.01, 
+      "ok": true
+    }, 
+    "map -> laser": {
+      "age_seconds": 0.01, 
+      "ok": true
+    }
+  }, 
+  "received": {
+    "move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "goals": [], 
+      "age_seconds": 0.025869131088256836, 
+      "stamp": 1792511042.071663
+    }, 
+    "map": {
+      "count": 1, 
+      "age_seconds": 15.419515609741211, 
+      "stamp": 1792511026.6780434, 
+      "height": 200, 
+      "width": 240, 
+      "fresh": false
+    }, 
+    "scan": {
+      "count": 108, 
+      "fresh": true, 
+      "frame": "laser", 
+      "age_seconds": 0.006273031234741211, 
+      "stamp": 1792511042.091299
+    }, 
+    "localization": {
+      "count": 13, 
+      "age_seconds": 0.06243777275085449, 
+      "stamp": 1792511042.035128, 
+      "covariance": [
+        0.0020318020426657313, 
+        6.111479128900754e-05, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        6.111479128900754e-05, 
+        0.0011137389428241828, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.00014888797034765588
+      ], 
+      "fresh": true, 
+      "y": 1.2870281337625278, 
+      "x": 2.631900960190935
+    }, 
+    "cmd_vel": {
+      "count": 59, 
+      "fresh": true, 
+      "nonzero_seen": false, 
+      "velocity_xy_yaw": [
+        0.0, 
+        0.0, 
+        0.0
+      ], 
+      "age_seconds": -2.86102294921875e-06
+    }, 
+    "navigation": {
+      "count": 59, 
+      "fresh": true, 
+      "status": {
+        "scan_match": 1.0, 
+        "stamp": 1792511042.0689, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }, 
+      "age_seconds": -2.86102294921875e-06
+    }, 
+    "internal_move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "goals": [
+        {
+          "status": 3, 
+          "text": "Goal reached.", 
+          "id": "/navigation_guard-2-1792511032.414"
+        }
+      ], 
+      "age_seconds": 0.14077162742614746, 
+      "stamp": 1792511041.9568174
+    }
+  }
+}

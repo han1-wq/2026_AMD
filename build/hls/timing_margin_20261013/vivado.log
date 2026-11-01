@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 13 23:35:56 2026
+# Process ID: 463357
+# Current directory: /home/amd/Workspace/HLS_IP/timing_margin_20261013
+# Command line: vivado -mode batch -notrace -source /home/amd/Workspace/HLS_IP/timing_margin_20261013/preflight_bd.tcl
+# Log file: /home/amd/Workspace/HLS_IP/timing_margin_20261013/vivado.log
+# Journal file: /home/amd/Workspace/HLS_IP/timing_margin_20261013/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source /home/amd/Workspace/HLS_IP/timing_margin_20261013/preflight_bd.tcl -notrace
+INFO: [Project 1-313] Project file moved from '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/ip_repo/vision/image_preprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/ip_repo/vision/yolo_postprocess'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2701.520 ; gain = 5.961 ; free physical = 3739 ; free virtual = 8825
+Reading block design file </home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_3
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_4
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_5
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- local:vision:image_preprocess:1.0 - image_preprocess_1
+Adding component instance block -- local:vision:yolo_postprocess:1.0 - yolo_postprocess_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_read_sc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_write_sc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - vision_irq_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - vision_irq_zero
+Successfully read diagram <kv260_hardware_platform> from block design file </home/amd/Workspace/HLS_IP/timing_margin_20261013/platform_candidate/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>
+UPGRADE_COMMANDS=mig_mig_v7_0_Ip_Mig_getXDCInfo_upgrade upgrade_bd_cells upgrade_ip memory_v1_Ip_memory_getXDCInfo_upgrade upgrade_project mig_mig_v7_0_Ip_Mig_setSelectedBytes_upgrade mig_mig_v7_1_Ip_Mig_getXDCInfo_upgrade get_ip_upgrade_results mig_mig_v7_1_Ip_Mig_setSelectedBytes_upgrade memory_v1_Ip_memory_setSelectedBytes_upgrade
+
+Topic             Description
+upgrade_bd_cells  Upgrade configurable IPIntegrator cell(s) to later version
+
+For help on an individual topic, type 'help <topic>'. For example:
+% help create_project
+ERROR: [Common 17-54] The object 'project' does not have a property 'IP_USER_FILES_DIR'.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 23:36:08 2026...

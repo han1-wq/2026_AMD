@@ -1,0 +1,197 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/run_integration.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set project /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.xpr
+# set mode [lindex $argv 0]
+# if {$mode ni {check apply prepare verify clock100}} { error "Use check, apply, prepare, verify, or clock100" }
+# file mkdir [file join $root reports $mode]
+# open_project $project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.1/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'local:vision:yolo_postprocess:1.0'. The one found in IP location '/home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess/solution_200mhz/impl/ip' will take precedence over the same IP in location /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'local:vision:image_preprocess:1.0'. The one found in IP location '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip' will take precedence over the same IP in location /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'kv260_hardware_platform.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+kv260_hardware_platform_yolo_postprocess_1_0
+kv260_hardware_platform_image_preprocess_1_0
+
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2702.590 ; gain = 5.961 ; free physical = 8309 ; free virtual = 15605
+# set repos [get_property ip_repo_paths [current_project]]
+# set pinned_repos {}
+# foreach core {image_preprocess yolo_postprocess} {
+#     set repo [file join $root ip_repo $core]
+#     if {![file exists [file join $repo component.xml]]} { error "Missing IP snapshot $repo" }
+#     lappend pinned_repos $repo
+# }
+# foreach repo $repos {
+#     if {[lsearch -exact $pinned_repos $repo] < 0} { lappend pinned_repos $repo }
+# }
+# set_property ip_repo_paths $pinned_repos [current_project]
+# update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.1/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'local:vision:yolo_postprocess:1.0'. The one found in IP location '/home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess/solution_200mhz/impl/ip' will take precedence over the same IP in location /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'local:vision:image_preprocess:1.0'. The one found in IP location '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip' will take precedence over the same IP in location /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess
+# set bd [get_files */kv260_hardware_platform.bd]
+# if {[llength $bd] != 1} { error "Expected one platform BD" }
+# if {$mode eq "check"} {
+#     set repos [get_property ip_repo_paths [current_project]]
+#     set part [get_property PART [current_project]]
+#     set copy [file join $root check_source kv260_hardware_platform.bd]
+#     file mkdir [file dirname $copy]
+#     set backup_file [file join $root backup_path.txt]
+#     if {[file exists $backup_file]} {
+#         set fp [open $backup_file r]
+#         set original [file join [string trim [read $fp]] original_bd.json]
+#         close $fp
+#         file copy -force $original $copy
+#     } else {
+#         file copy -force $bd $copy
+#     }
+#     close_project
+#     create_project -force accelerator_bd_check [file join $root check_project] -part $part
+#     set_property ip_repo_paths $repos [current_project]
+#     update_ip_catalog
+#     import_files $copy
+#     set bd [get_files */kv260_hardware_platform.bd]
+# }
+# open_bd_design $bd
+Reading block design file </home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_3
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_4
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_5
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:RTLKernel:DPUCZDX8G:1.0 - DPUCZDX8G_1
+Adding component instance block -- xilinx.com:RTLKernel:sfm_xrt_top:1.0 - sfm_xrt_top_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_ic_zynq_ultra_ps_e_0_S_AXI_HPC0_FPD
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_ic_zynq_ultra_ps_e_0_S_AXI_HP1_FPD
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - axi_intc_0_intr_1_interrupt_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - irq_const_tieoff
+Adding component instance block -- local:vision:image_preprocess:1.0 - image_preprocess_1
+Adding component instance block -- local:vision:yolo_postprocess:1.0 - yolo_postprocess_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_read_sc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_write_sc
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH from address space /sfm_xrt_top_1/M_AXI.
+Successfully read diagram <kv260_hardware_platform> from block design file </home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>
+# if {$mode in {check apply}} { source [file join $root scripts integrate_accelerators.tcl] }
+# if {$mode eq "clock100"} { source [file join $root scripts connect_vision_100mhz.tcl] }
+## if {[get_property CONFIG.CLKOUT1_REQUESTED_OUT_FREQ [get_bd_cells clk_wiz_1]] != 100} {
+##     error "Expected clk_wiz_1/clk_out1 at 100 MHz"
+## }
+## set vision_clock [get_bd_pins clk_wiz_1/clk_out1]
+## set vision_clock_net [get_bd_nets -of_objects $vision_clock]
+## if {[get_bd_nets -of_objects [get_bd_pins proc_sys_reset_0/slowest_sync_clk]] ne $vision_clock_net} {
+##     error "proc_sys_reset_0 must be synchronized to clk_wiz_1/clk_out1"
+## }
+## set vision_connections {}
+## foreach pin {
+##     image_preprocess_1/ap_clk yolo_postprocess_1/ap_clk
+##     vision_read_sc/aclk vision_write_sc/aclk
+##     zynq_ultra_ps_e_0/saxihp2_fpd_aclk zynq_ultra_ps_e_0/saxihp3_fpd_aclk
+##     ps8_0_axi_periph/M03_ACLK ps8_0_axi_periph/M04_ACLK
+## } {
+##     lappend vision_connections [list $pin clk_wiz_1/clk_out1 clk_wiz_1/clk_out3]
+## }
+## foreach pin {image_preprocess_1/ap_rst_n yolo_postprocess_1/ap_rst_n} {
+##     lappend vision_connections [list $pin proc_sys_reset_0/peripheral_aresetn proc_sys_reset_2/peripheral_aresetn]
+## }
+## foreach pin {vision_read_sc/aresetn vision_write_sc/aresetn ps8_0_axi_periph/M03_ARESETN ps8_0_axi_periph/M04_ARESETN} {
+##     lappend vision_connections [list $pin proc_sys_reset_0/interconnect_aresetn proc_sys_reset_2/interconnect_aresetn]
+## }
+## foreach connection $vision_connections {
+##     lassign $connection endpoint target previous
+##     set pin [get_bd_pins $endpoint]
+##     if {[llength $pin] != 1} { error "Missing endpoint $endpoint" }
+##     set net [get_bd_nets -quiet -of_objects $pin]
+##     if {[llength $net]} {
+##         set pins [get_bd_pins -of_objects $net]
+##         if {[lsearch -exact $pins /$target] < 0 && [lsearch -exact $pins /$previous] < 0} {
+##             error "Unexpected existing clock/reset driver for $endpoint"
+##         }
+##     }
+## }
+## foreach connection $vision_connections {
+##     lassign $connection endpoint target previous
+##     set pin [get_bd_pins $endpoint]
+##     set net [get_bd_nets -quiet -of_objects $pin]
+##     set target_net [get_bd_nets -of_objects [get_bd_pins $target]]
+##     if {$net eq $target_net} { continue }
+##     if {[llength $net]} { disconnect_bd_net $net $pin }
+##     connect_bd_net [get_bd_pins $target] $pin
+##     puts "VISION_100MHZ: $endpoint <- $target"
+## }
+VISION_100MHZ: image_preprocess_1/ap_clk <- clk_wiz_1/clk_out1
+VISION_100MHZ: yolo_postprocess_1/ap_clk <- clk_wiz_1/clk_out1
+VISION_100MHZ: vision_read_sc/aclk <- clk_wiz_1/clk_out1
+VISION_100MHZ: vision_write_sc/aclk <- clk_wiz_1/clk_out1
+VISION_100MHZ: zynq_ultra_ps_e_0/saxihp2_fpd_aclk <- clk_wiz_1/clk_out1
+VISION_100MHZ: zynq_ultra_ps_e_0/saxihp3_fpd_aclk <- clk_wiz_1/clk_out1
+VISION_100MHZ: ps8_0_axi_periph/M03_ACLK <- clk_wiz_1/clk_out1
+VISION_100MHZ: ps8_0_axi_periph/M04_ACLK <- clk_wiz_1/clk_out1
+VISION_100MHZ: image_preprocess_1/ap_rst_n <- proc_sys_reset_0/peripheral_aresetn
+VISION_100MHZ: yolo_postprocess_1/ap_rst_n <- proc_sys_reset_0/peripheral_aresetn
+VISION_100MHZ: vision_read_sc/aresetn <- proc_sys_reset_0/interconnect_aresetn
+VISION_100MHZ: vision_write_sc/aresetn <- proc_sys_reset_0/interconnect_aresetn
+VISION_100MHZ: ps8_0_axi_periph/M03_ARESETN <- proc_sys_reset_0/interconnect_aresetn
+VISION_100MHZ: ps8_0_axi_periph/M04_ARESETN <- proc_sys_reset_0/interconnect_aresetn
+# validate_bd_design
+ERROR: [BD 5-336] This command cannot be run, as the BD-design is locked. Locked reason(s):
+* Block design contains locked IPs. Please run report_ip_status for more details and recommendations on how to fix this issue. 
+List of locked IPs: 
+kv260_hardware_platform_yolo_postprocess_1_0
+kv260_hardware_platform_image_preprocess_1_0
+
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+
+    while executing
+"validate_bd_design"
+    (file "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/run_integration.tcl" line 47)
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 20:14:30 2026...

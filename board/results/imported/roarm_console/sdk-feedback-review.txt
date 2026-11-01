@@ -1,0 +1,89 @@
+    def _res(self, real_command, genre):
+        try_count = 0
+        while try_count < 10:     
+            if self.host:
+                url = f"http://{self.host}/js?json={real_command.decode()}"
+                response = requests.get(url)
+                if genre != JsonCmd.FEEDBACK_GET:
+                    data = real_command
+                else:                                
+                    data = json.loads(response.text)
+            else:
+                self._write(real_command)
+                if genre != JsonCmd.FEEDBACK_GET:
+                    data = real_command
+                else:          
+                    data = self._read(genre)   
+                
+            if data is not None and data != b'':
+                break
+            try_count += 1
+        else:
+            return -1
+              
+        res = self._process_received(data, genre)
+        if res is None:
+            return None
+        elif isinstance(res, list) and len(res) == 1:
+            return res[0]      
+
+def calibration_parameters(**kwargs):
+    robot_limit = {
+        "roarm_m2": {
+            "joint": [1, 2, 3, 4],            
+            "radians_min": [-3.3, -1.9, -1.2, -0.2],
+            "radians_max": [3.3, 1.9, 3.3, 1.9],            
+            "angles_min": [-190, -110, -70, -10],
+            "angles_max": [190, 110, 190, 100],
+            "positions_min": [-500, -500, 0, 0],
+            "positions_max": [500, 500, 600, 90],
+            "torques_min": [1, 1, 1, 1],
+            "torques_max": [1000, 1000, 1000, 1000],
+        },     
+        "roarm_m3": {
+            "joint": [1, 2, 3, 4, 5, 6],            
+            "radians_min": [-3.3, -1.9, -1.2, -1.9, -3.3, -0.2],
+            "radians_max": [3.3, 1.9, 3.3, 1.9, 3.3, 1.9],            
+            "angles_min": [-190, -110, -70, -110, -190, -10],
+            "angles_max": [190, 110, 190, 110, 190, 100],
+            "positions_min": [-500, -500, 0, -90,-180, 0],
+            "positions_max": [500, 500, 600, 90, 180, 90],
+            "torques_min": [1, 1, 1, 1, 1, 1],
+            "torques_max": [1000, 1000, 1000, 1000, 1000, 1000],
+        },          
+    }
+
+    parameter_validations = {
+        "cmd": lambda value, value_type, roarm_type, kwargs: check_cmd_or_mode("cmd", value, [0, 1], value_type),
+        "mode": lambda value, value_type, roarm_type, kwargs: check_cmd_or_mode("mode", value, [0, 1], value_type), 
+        "wifi_cmd": lambda value, value_type, roarm_type, kwargs: check_wifi_cmd("wifi_cmd", value, [0, 1, 2, 3], value_type),           
+        "joint": lambda value, value_type,  roarm_type, kwargs: check_joint(value, robot_limit[roarm_type]["joint"]),   
+        "radian": lambda value, value_type,  roarm_type, kwargs: check_joint_robot_limit(value, "radians", kwargs, roarm_type, "radian", robot_limit),
+        "angle": lambda value, value_type,  roarm_type, kwargs: check_joint_robot_limit(value, "angles", kwargs, roarm_type, "angle", robot_limit), 
+        "position": lambda value, value_type,  roarm_type, kwargs: check_joint_robot_limit(value, "positions", kwargs, roarm_type, "position", robot_limit),                
+        "radians": lambda value, value_type,  roarm_type, kwargs: check_joints_robot_limit(value, "radians", roarm_type, robot_limit),
+        "angles": lambda value, value_type,  roarm_type, kwargs: check_joints_robot_limit(value, "angles",  roarm_type, robot_limit),
+        "pose": lambda value, value_type,  roarm_type, kwargs: check_joints_robot_limit(value, "positions", roarm_type, robot_limit), 
+        "torques": lambda value, value_type,  roarm_type, kwargs: check_joints_robot_limit( value, "torques", roarm_type, robot_limit),       
+        "speed": lambda value, value_type,  roarm_type, kwargs: check_joint_speed_acc("speed", value, [0, 4096], value_type),
+        "acc": lambda value, value_type,  roarm_type, kwargs: check_joint_speed_acc("acc", value, [0, 254], value_type),
+        "ssid": lambda value, value_type, roarm_type, kwargs: check_value_type("ssid", value_type, str),   
+        "password": lambda value, value_type, roarm_type, kwargs: check_value_type("password", value_type, str)   
+    }
+
+    roarm_type = kwargs.get("roarm_type", None)
+    if roarm_type not in robot_limit:
+        raise RoarmDataException(f"Unknown roarm_type: {roarm_type}")
+
+    for parameter, value in kwargs.items():
+        if parameter == "roarm_type":
+            continue
+        
+        if parameter in parameter_validations:
+            try:
+                value_type = type(value)
+                parameter_validations[parameter](value, value_type, roarm_type, kwargs)
+            except RoarmDataException as e:
+                print(f"Error in parameter {parameter}: {str(e)}")
+                raise e  
+

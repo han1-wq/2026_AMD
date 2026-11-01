@@ -1,0 +1,15 @@
+01:20:25 DEBUG : Logs will be stored at '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/IDE.log'.
+01:20:27 INFO  : Launching XSCT server: xsct -n  -interactive /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/temp_xsdb_launch_script.tcl
+01:20:27 INFO  : Registering command handlers for Vitis TCF services
+01:20:27 INFO  : Platform repository initialization has completed.
+01:20:30 INFO  : XSCT server has started successfully.
+01:20:30 INFO  : plnx-install-location is set to ''
+01:20:30 INFO  : Successfully done setting XSCT server connection channel  
+01:20:30 INFO  : Successfully done query RDI_DATADIR 
+01:20:30 INFO  : Successfully done setting workspace for the tool. 
+01:21:35 INFO  : Result from executing command 'getProjects': dpu_base
+01:21:35 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+01:23:05 INFO  : Build configuration of 'dpu_trd_system' is updated to 'Hardware'
+01:23:05 INFO  : Build configuration of system project is automatically updated to 'Hardware'.
+01:23:06 INFO  : Build configuration of 'dpu_trd_system_hw_link' is updated to 'Hardware'
+01:23:06 INFO  : Build configuration of 'dpu_trd_kernels' is updated to 'Hardware'

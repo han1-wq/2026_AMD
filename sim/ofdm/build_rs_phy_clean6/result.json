@@ -1,0 +1,13 @@
+{
+  "name": "clean6",
+  "rate": 6,
+  "payload": 64,
+  "rs": 1,
+  "errors": 0,
+  "packets": 1,
+  "cfo": 0,
+  "interference": 0,
+  "passed": true,
+  "scope": "real PHY + RS + FCS + DMA with backpressure",
+  "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_clean6/driver.log"
+}

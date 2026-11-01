@@ -1,0 +1,11 @@
+test_both_modes_enable_robot_visuals (test_viewer_config.ViewerConfigTests) ... ok
+test_launchers_only_start_viewer_with_matching_config (test_viewer_config.ViewerConfigTests) ... ok
+test_navigation_pose_and_goal_topics_are_unchanged (test_viewer_config.ViewerConfigTests) ... ok
+test_navigation_start_pose_marker_is_observation_only (test_viewer_config.ViewerConfigTests) ... ok
+test_slam_preserves_map_scan_and_position_axes (test_viewer_config.ViewerConfigTests) ... ok
+test_slam_tools_remain_observation_only (test_viewer_config.ViewerConfigTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.073s
+
+OK

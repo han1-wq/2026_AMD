@@ -1,0 +1,188 @@
+
+
+================================================================
+== Vitis HLS Report for 'p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_313_2_VITIS_LOOP_315_3'
+================================================================
+* Date:           Tue Oct 13 19:40:18 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        image_preprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.115 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    | min |  max |   Type  |
+    +---------+---------+-----------+-----------+-----+------+---------+
+    |        2|     9602|  10.000 ns|  48.010 us|    2|  9602|       no|
+    +---------+---------+-----------+-----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                                     |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |              Loop Name              |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_313_2_VITIS_LOOP_315_3  |        0|     9600|         2|          1|          1|  0 ~ 9600|       yes|
+        +-------------------------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.42>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%x = alloca i32 1"   --->   Operation 5 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%consumed_1 = alloca i32 1"   --->   Operation 6 'alloca' 'consumed_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 7 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tobool_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %tobool"   --->   Operation 8 'read' 'tobool_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %width"   --->   Operation 9 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%cmp31_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %cmp31"   --->   Operation 10 'read' 'cmp31_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%mul_ln313_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %mul_ln313"   --->   Operation 11 'read' 'mul_ln313_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%consumed_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %consumed"   --->   Operation 12 'read' 'consumed_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%consumed_cast = zext i12 %consumed_read"   --->   Operation 13 'zext' 'consumed_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i24 %rows_V, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 14 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i24 %rows_V_1, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %preview_pixels6, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i48 %pairs, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.42ns)   --->   "%store_ln0 = store i64 0, i64 %indvar_flatten"   --->   Operation 18 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 19 [1/1] (0.42ns)   --->   "%store_ln0 = store i32 %consumed_cast, i32 %consumed_1"   --->   Operation 19 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 20 [1/1] (0.42ns)   --->   "%store_ln0 = store i32 0, i32 %x"   --->   Operation 20 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body22"   --->   Operation 21 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 1.55>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i64 %indvar_flatten" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313]   --->   Operation 22 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (1.13ns)   --->   "%icmp_ln313 = icmp_eq  i64 %indvar_flatten_load, i64 %mul_ln313_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313]   --->   Operation 23 'icmp' 'icmp_ln313' <Predicate = true> <Delay = 1.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (1.08ns)   --->   "%add_ln313 = add i64 %indvar_flatten_load, i64 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313]   --->   Operation 24 'add' 'add_ln313' <Predicate = true> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln313 = br i1 %icmp_ln313, void %for.end.loopexit, void %VITIS_LOOP_325_4.loopexit.exitStub" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313]   --->   Operation 25 'br' 'br_ln313' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln320 = br i1 %cmp31_read, void %for.inc, void %if.then32" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:320]   --->   Operation 26 'br' 'br_ln320' <Predicate = (!icmp_ln313)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.42ns)   --->   "%store_ln315 = store i64 %add_ln313, i64 %indvar_flatten" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 27 'store' 'store_ln315' <Predicate = (!icmp_ln313)> <Delay = 0.42>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 57 'ret' 'ret_ln0' <Predicate = (icmp_ln313)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.11>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "%x_load = load i32 %x" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 28 'load' 'x_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%consumed_1_load = load i32 %consumed_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:322]   --->   Operation 29 'load' 'consumed_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_313_2_VITIS_LOOP_315_3_str"   --->   Operation 30 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 9600, i64 2336"   --->   Operation 31 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.99ns)   --->   "%icmp_ln315 = icmp_eq  i32 %x_load, i32 %width_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 32 'icmp' 'icmp_ln315' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 33 [1/1] (0.44ns)   --->   "%select_ln303 = select i1 %icmp_ln315, i32 0, i32 %x_load" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:303]   --->   Operation 33 'select' 'select_ln303' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] (1.01ns)   --->   "%add_ln322 = add i32 %consumed_1_load, i32 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:322]   --->   Operation 34 'add' 'add_ln322' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 35 [1/1] (0.44ns)   --->   "%select_ln303_1 = select i1 %icmp_ln315, i32 %add_ln322, i32 %consumed_1_load" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:303]   --->   Operation 35 'select' 'select_ln303_1' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%trunc_ln303 = trunc i32 %select_ln303_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:303]   --->   Operation 36 'trunc' 'trunc_ln303' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%zext_ln315 = zext i32 %select_ln303" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 37 'zext' 'zext_ln315' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%specpipeline_ln316 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_5" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:316]   --->   Operation 38 'specpipeline' 'specpipeline_ln316' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%specloopname_ln315 = specloopname void @_ssdm_op_SpecLoopName, void @empty_55" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 39 'specloopname' 'specloopname_ln315' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (1.55ns)   --->   "%pairs_read = read i48 @_ssdm_op_Read.ap_fifo.volatile.i48P0A, i48 %pairs" [/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 40 'read' 'pairs_read' <Predicate = true> <Delay = 1.55> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 48> <Depth = 64> <FIFO>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%tmp_original = trunc i48 %pairs_read" [/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 41 'trunc' 'tmp_original' <Predicate = (!tobool_read)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_enhanced = partselect i24 @_ssdm_op_PartSelect.i24.i48.i32.i32, i48 %pairs_read, i32 24, i32 47" [/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 42 'partselect' 'tmp_enhanced' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%rows_V_addr = getelementptr i24 %rows_V, i64 0, i64 %zext_ln315" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 43 'getelementptr' 'rows_V_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%rows_V_1_addr = getelementptr i24 %rows_V_1, i64 0, i64 %zext_ln315" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 44 'getelementptr' 'rows_V_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.32ns)   --->   "%select_ln319 = select i1 %tobool_read, i24 %tmp_enhanced, i24 %tmp_original" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 45 'select' 'select_ln319' <Predicate = true> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln319 = br i1 %trunc_ln303, void %arrayidx306.case.0, void %arrayidx306.case.1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 46 'br' 'br_ln319' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (1.23ns)   --->   "%store_ln319 = store i24 %select_ln319, i11 %rows_V_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 47 'store' 'store_ln319' <Predicate = (!trunc_ln303)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln319 = br void %arrayidx306.exit" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 48 'br' 'br_ln319' <Predicate = (!trunc_ln303)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (1.23ns)   --->   "%store_ln319 = store i24 %select_ln319, i11 %rows_V_1_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 49 'store' 'store_ln319' <Predicate = (trunc_ln303)> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln319 = br void %arrayidx306.exit" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319]   --->   Operation 50 'br' 'br_ln319' <Predicate = (trunc_ln303)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (1.55ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %preview_pixels6, i24 %tmp_enhanced" [/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 51 'write' 'write_ln174' <Predicate = (cmp31_read)> <Delay = 1.55> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 64> <FIFO>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln320 = br void %for.inc" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:320]   --->   Operation 52 'br' 'br_ln320' <Predicate = (cmp31_read)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (1.01ns)   --->   "%add_ln315 = add i32 %select_ln303, i32 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 53 'add' 'add_ln315' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 54 [1/1] (0.42ns)   --->   "%store_ln315 = store i32 %select_ln303_1, i32 %consumed_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 54 'store' 'store_ln315' <Predicate = true> <Delay = 0.42>
+ST_3 : Operation 55 [1/1] (0.42ns)   --->   "%store_ln315 = store i32 %add_ln315, i32 %x" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 55 'store' 'store_ln315' <Predicate = true> <Delay = 0.42>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln315 = br void %for.body22" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315]   --->   Operation 56 'br' 'br_ln315' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0.427ns
+The critical path consists of the following:
+	'alloca' operation ('indvar_flatten') [12]  (0 ns)
+	'store' operation ('store_ln0') of constant 0 on local variable 'indvar_flatten' [23]  (0.427 ns)
+
+ <State 2>: 1.56ns
+The critical path consists of the following:
+	'load' operation ('indvar_flatten_load', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313) on local variable 'indvar_flatten' [28]  (0 ns)
+	'add' operation ('add_ln313', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313) [30]  (1.08 ns)
+	'store' operation ('store_ln315', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:315) of variable 'add_ln313', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:313 on local variable 'indvar_flatten' [65]  (0.427 ns)
+	blocking operation 0.045 ns on control path)
+
+ <State 3>: 3.12ns
+The critical path consists of the following:
+	fifo read operation ('pairs_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pairs' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) [45]  (1.56 ns)
+	'select' operation ('select_ln319', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319) [50]  (0.321 ns)
+	'store' operation ('store_ln319', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319) of variable 'select_ln319', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:319 on array 'rows_V' [53]  (1.24 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,80 @@
+====================================================================
+Version:    xcd v2022.1 (64-bit)
+Copyright:  Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Created:    Wed Oct 14 02:32:57 2026
+====================================================================
+
+1. Kernel and compute unit information
+======================================
+
+Compute Unit: DPUCZDX8G_1
+Kernel: DPUCZDX8G
+Base Address: 0x80000000
+Clock Pins: aclk, ap_clk_2
+Reset Pin: ap_rst_n_2 
+
+Compute Unit: sfm_xrt_top_1
+Kernel: sfm_xrt_top
+Base Address: 0x80001000
+Clock Pin: aclk
+Reset Pin: aresetn
+
+2. Interface Connections
+========================
+
+IP to Compute Unit
+------------------
+Source Pin: ps8_0_axi_periph/M03_AXI
+Destination Pin: DPUCZDX8G_1/S_AXI_CONTROL
+
+Source Pin: ps8_0_axi_periph/M04_AXI
+Destination Pin: sfm_xrt_top_1/s_axi_control
+
+Compute Unit to IP
+------------------
+Source Pin: DPUCZDX8G_1/M_AXI_GP0
+Destination Pin: axi_ic_zynq_ultra_ps_e_0_S_AXI_HPC0_FPD/S00_AXI
+
+Source Pin: DPUCZDX8G_1/M_AXI_HP0
+Destination Pin: axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI
+
+Source Pin: DPUCZDX8G_1/M_AXI_HP2
+Destination Pin: axi_ic_zynq_ultra_ps_e_0_S_AXI_HP1_FPD/S00_AXI
+
+Source Pin: sfm_xrt_top_1/M_AXI
+Destination Pin: axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI
+
+3. Clock Connections
+====================
+
+Compute Unit: DPUCZDX8G_1
+Source Pin: clk_wiz_1/clk_out4
+Destination Pin: DPUCZDX8G_1/aclk
+
+Compute Unit: DPUCZDX8G_1
+Source Pin: clk_wiz_1/clk_out6
+Destination Pin: DPUCZDX8G_1/ap_clk_2
+
+Compute Unit: sfm_xrt_top_1
+Clock ID: 0
+Clock Frequency: 99.999000 MHz
+Source Pin: clk_wiz_1/clk_out1
+Destination Pin: sfm_xrt_top_1/aclk
+
+Clock Instance: clk_wiz_1
+Source Pin: zynq_ultra_ps_e_0/pl_clk0
+Destination Pin: clk_wiz_1/clk_in1
+
+4. Reset Connections
+====================
+
+Compute Unit: DPUCZDX8G_1
+Source Pin: proc_sys_reset_3/peripheral_aresetn 
+Destination Pin: DPUCZDX8G_1/ap_rst_n_2 
+Associated Clock Pin: DPUCZDX8G_1/aclk
+
+Compute Unit: sfm_xrt_top_1
+Source Pin: proc_sys_reset_0/peripheral_aresetn
+Destination Pin: sfm_xrt_top_1/aresetn
+Associated Clock Pin: sfm_xrt_top_1/aclk
+

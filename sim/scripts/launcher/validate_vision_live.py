@@ -1,0 +1,1 @@
+../../../src/host/kv260-launcher-ai/validate_vision_live.py

@@ -1,0 +1,32 @@
+test_expired_frame_blocks_model (test_console.CoordinatorTests) ... ok
+test_observe_never_moves (test_console.CoordinatorTests) ... ok
+test_stop_discards_inflight_result (test_console.CoordinatorTests) ... ok
+test_config_does_not_leak_key (test_console.HttpTests) ... ok
+test_cross_origin_denied (test_console.HttpTests) ... ok
+test_home (test_console.HttpTests) ... ok
+test_motion_route_not_available (test_console.HttpTests) ... ok
+test_post_without_token_denied (test_console.HttpTests) ... ok
+test_stop (test_console.HttpTests) ... ok
+test_untrusted_host_denied (test_console.HttpTests) ... ok
+test_bool_confidence_rejected (test_console.ValidationTests) ... ok
+test_depth_bigendian_padding (test_console.ValidationTests) ... ok
+test_depth_roundtrip (test_console.ValidationTests) ... ok
+test_expired_snapshot (test_console.ValidationTests) ... ok
+test_frame_nan_validation (test_console.ValidationTests) ... ok
+test_frame_sync_validation (test_console.ValidationTests) ... ok
+test_invalid_coordinate (test_console.ValidationTests) ... ok
+test_key_not_public (test_console.ValidationTests) ... ok
+test_missing_coordinate_rejected (test_console.ValidationTests) ... ok
+test_oversized_depth (test_console.ValidationTests) ... ok
+test_remote_contains_no_motion_call (test_console.ValidationTests) ... ok
+test_snapshot_after (test_console.ValidationTests) ... ok
+test_truncated_depth (test_console.ValidationTests) ... ok
+test_url_credentials_rejected (test_console.ValidationTests) ... ok
+test_valid_decision (test_console.ValidationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.552s
+
+OK
+
+EXIT=0

@@ -1,0 +1,1 @@
+../../../hls/timing_margin_20261013/synth_candidate.tcl

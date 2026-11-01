@@ -1,0 +1,26 @@
+--- /home/amd/Workspace/HLS_IP/timing_margin_20261013/baseline/yolo_postprocess/tb/test_nms_arithmetic.cpp
++++ /home/amd/Workspace/HLS_IP/yolo_postprocess/tb/test_nms_arithmetic.cpp
+@@ -17,6 +17,16 @@
+ }
+ 
+ int main() {
++    // Exercise every partial-product carry boundary and the full unsigned ABI.
++    const unsigned edges[] = {0u, 1u, 65535u, 65536u, 65537u,
++                              0x7fffffffu, 0x80000000u, 0xfffffffeu, 0xffffffffu};
++    for (unsigned w : edges) for (unsigned h : edges)
++        assert(area(w, h).to_uint64() == uint64_t(w) * h);
++    std::mt19937 area_rng(121);
++    for (unsigned i = 0; i < 50000; ++i) {
++        unsigned w = area_rng(), h = area_rng();
++        assert(area(w, h).to_uint64() == uint64_t(w) * h);
++    }
+     Box a = {-100, -100, 100, 100, 1, 0, 0};
+     Box b = a;
+     for (unsigned threshold : {0u, 1u, 32768u, 39322u, 65535u, 65536u}) {
+@@ -42,5 +52,5 @@
+         unsigned threshold = rng() % 65537;
+         assert(suppress(a, b, threshold) == reference(a, b, threshold));
+     }
+-    std::cout << "PASS exact NMS products and strict threshold boundaries\n";
++    std::cout << "PASS 50081 full-width area products, exact NMS products and strict threshold boundaries\n";
+ }

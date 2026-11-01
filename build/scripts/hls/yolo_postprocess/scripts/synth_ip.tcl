@@ -1,0 +1,1 @@
+../../../../../src/kv260/HLS_IP/yolo_postprocess/scripts/synth_ip.tcl

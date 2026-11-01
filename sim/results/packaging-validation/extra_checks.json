@@ -1,0 +1,60 @@
+[
+  {
+    "name": "x3plus_bundle",
+    "command": [
+      "bash",
+      "/home/amd/kv260-ofdm-reproduction/src/ps/x3plus-kv260-docker/verify-bundle.sh"
+    ],
+    "returncode": 0,
+    "log": "sim/results/packaging-validation/x3plus_bundle.log"
+  },
+  {
+    "name": "hls_help",
+    "command": [
+      "bash",
+      "/home/amd/kv260-ofdm-reproduction/build/build_hls.sh",
+      "--help"
+    ],
+    "returncode": 0,
+    "log": "sim/results/packaging-validation/hls_help.log"
+  },
+  {
+    "name": "firmware_help",
+    "command": [
+      "bash",
+      "/home/amd/kv260-ofdm-reproduction/build/build_ofdm_firmware.sh",
+      "--help"
+    ],
+    "returncode": 0,
+    "log": "sim/results/packaging-validation/firmware_help.log"
+  },
+  {
+    "name": "wrapper_shell_syntax",
+    "command": [
+      "bash",
+      "-n",
+      "/home/amd/kv260-ofdm-reproduction/build/build_hls.sh",
+      "/home/amd/kv260-ofdm-reproduction/build/build_ofdm_firmware.sh"
+    ],
+    "returncode": 0,
+    "log": "sim/results/packaging-validation/wrapper_shell_syntax.log"
+  },
+  {
+    "name": "compiler_version",
+    "command": [
+      "cc",
+      "--version"
+    ],
+    "returncode": 0,
+    "log": "sim/results/packaging-validation/compiler_version.log"
+  },
+  {
+    "name": "iverilog_version",
+    "command": [
+      "iverilog",
+      "-V"
+    ],
+    "returncode": 0,
+    "log": "sim/results/packaging-validation/iverilog_version.log"
+  }
+]

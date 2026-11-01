@@ -1,0 +1,749 @@
+
+
+================================================================
+== Synthesis Summary Report of 'image_preprocess'
+================================================================
++ General Information: 
+    * Date:           Tue Oct 13 19:40:29 2026
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        image_preprocess
+    * Solution:       solution_200mhz (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------------------------------------+--------+-------+----------+-----------+----------+----------+---------+----------+----------+----------+------------+-------------+-----+
+    |                                         Modules                                         |  Issue |       | Latency  |  Latency  | Iteration|          |   Trip  |          |          |          |            |             |     |
+    |                                         & Loops                                         |  Type  | Slack | (cycles) |    (ns)   |  Latency | Interval |  Count  | Pipelined|   BRAM   |    DSP   |     FF     |     LUT     | URAM|
+    +-----------------------------------------------------------------------------------------+--------+-------+----------+-----------+----------+----------+---------+----------+----------+----------+------------+-------------+-----+
+    |+ image_preprocess                                                                       |  Timing|  -0.29|  10430689|  5.215e+07|         -|  10430690|        -|        no|  54 (18%)|   43 (3%)|  18153 (7%)|  28587 (24%)|    -|
+    | + image_preprocess_Pipeline_VITIS_LOOP_524_4                                            |       -|   2.25|       258|  1.290e+03|         -|       258|        -|        no|         -|         -|    29 (~0%)|     73 (~0%)|    -|
+    |  o VITIS_LOOP_524_4                                                                     |       -|   4.37|       256|  1.280e+03|         2|         1|      256|       yes|         -|         -|           -|            -|    -|
+    | + p_anonymous_namespace_make_coordinates                                                |       -|   0.76|     26625|  1.331e+05|         -|     26625|        -|        no|         -|   2 (~0%)|  1330 (~0%)|    1273 (1%)|    -|
+    |  o VITIS_LOOP_215_1                                                                     |       -|   4.37|     26624|  1.331e+05|        64|         -|      416|        no|         -|         -|           -|            -|    -|
+    | + p_anonymous_namespace_make_coordinates                                                |       -|   0.76|     26625|  1.331e+05|         -|     26625|        -|        no|         -|   2 (~0%)|  1330 (~0%)|    1273 (1%)|    -|
+    |  o VITIS_LOOP_215_1                                                                     |       -|   4.37|     26624|  1.331e+05|        64|         -|      416|        no|         -|         -|           -|            -|    -|
+    | + p_anonymous_namespace_statistics_pass*                                                |  Timing|  -0.01|   4147233|  2.074e+07|         -|   4147218|        -|  dataflow|   10 (3%)|  11 (~0%)|  2197 (~0%)|    3602 (3%)|    -|
+    |  + p_anonymous_namespace_read_words                                                     |  Timing|  -0.01|    406081|  2.030e+06|         -|    406081|        -|        no|         -|   1 (~0%)|   369 (~0%)|    589 (~0%)|    -|
+    |   o VITIS_LOOP_114_1                                                                    |       -|   4.37|    406080|  2.030e+06|       376|         -|     1080|        no|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_read_words_Pipeline_VITIS_LOOP_116_2                         |  Timing|  -0.01|       363|  1.815e+03|         -|       363|        -|        no|         -|         -|   162 (~0%)|    113 (~0%)|    -|
+    |     o VITIS_LOOP_116_2                                                                  |       -|   4.37|       361|  1.805e+03|         3|         1|      360|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_unpack                                                         |       -|   0.06|   2073606|  1.037e+07|         -|   2073606|        -|        no|         -|   3 (~0%)|   520 (~0%)|    1324 (1%)|    -|
+    |   + p_anonymous_namespace_unpack_Pipeline_VITIS_LOOP_127_1_VITIS_LOOP_131_2             |       -|   0.06|   2073604|  1.037e+07|         -|   2073604|        -|        no|         -|         -|   387 (~0%)|    1237 (1%)|    -|
+    |    o VITIS_LOOP_127_1_VITIS_LOOP_131_2                                                  |       -|   4.37|   2073602|  1.037e+07|         4|         1|  2073600|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_statistics_pass_Block_entry36_proc                             |       -|   0.70|         0|      0.000|         -|         0|        -|        no|         -|         -|    24 (~0%)|    161 (~0%)|    -|
+    |  + p_anonymous_namespace_histogram_pixels                                               |       -|   0.37|   4147217|  2.074e+07|         -|   4147217|        -|        no|         -|   7 (~0%)|   674 (~0%)|    1186 (1%)|    -|
+    |   o VITIS_LOOP_149_1                                                                    |       -|   4.37|   4147215|  2.074e+07|        18|         2|  2073600|       yes|         -|         -|           -|            -|    -|
+    | + p_anonymous_namespace_build_lut                                                       |       -|   0.89|      3333|  1.666e+04|         -|      3333|        -|        no|         -|         -|   261 (~0%)|    708 (~0%)|    -|
+    |  + p_anonymous_namespace_build_lut_Pipeline_VITIS_LOOP_177_1                            |       -|   2.26|       258|  1.290e+03|         -|       258|        -|        no|         -|         -|    44 (~0%)|    126 (~0%)|    -|
+    |   o VITIS_LOOP_177_1                                                                    |       -|   4.37|       256|  1.280e+03|         2|         1|      256|       yes|         -|         -|           -|            -|    -|
+    |  o VITIS_LOOP_185_2                                                                     |       -|   4.37|      3072|  1.536e+04|        12|         -|      256|        no|         -|         -|           -|            -|    -|
+    |   o VITIS_LOOP_197_3                                                                    |       -|   4.37|         8|     40.000|         1|         -|        8|        no|         -|         -|           -|            -|    -|
+    | + p_anonymous_namespace_output_pass*                                                    |  Timing|  -0.01|   6249444|  3.125e+07|         -|   6249415|        -|  dataflow|  39 (13%)|   28 (2%)|   8379 (3%)|  12461 (10%)|    -|
+    |  + entry_proc                                                                           |       -|   2.46|         0|      0.000|         -|         0|        -|        no|         -|         -|     3 (~0%)|     56 (~0%)|    -|
+    |  + p_anonymous_namespace_read_words_1                                                   |  Timing|  -0.01|    406081|  2.030e+06|         -|    406081|        -|        no|         -|   1 (~0%)|   369 (~0%)|    589 (~0%)|    -|
+    |   o VITIS_LOOP_114_1                                                                    |       -|   4.37|    406080|  2.030e+06|       376|         -|     1080|        no|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_read_words_1_Pipeline_VITIS_LOOP_116_2                       |  Timing|  -0.01|       363|  1.815e+03|         -|       363|        -|        no|         -|         -|   162 (~0%)|    113 (~0%)|    -|
+    |     o VITIS_LOOP_116_2                                                                  |       -|   4.37|       361|  1.805e+03|         3|         1|      360|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_unpack_2                                                       |       -|   0.06|   2073606|  1.037e+07|         -|   2073606|        -|        no|         -|   3 (~0%)|   520 (~0%)|    1324 (1%)|    -|
+    |   + p_anonymous_namespace_unpack_2_Pipeline_VITIS_LOOP_127_1_VITIS_LOOP_131_2           |       -|   0.06|   2073604|  1.037e+07|         -|   2073604|        -|        no|         -|         -|   387 (~0%)|    1237 (1%)|    -|
+    |    o VITIS_LOOP_127_1_VITIS_LOOP_131_2                                                  |       -|   4.37|   2073602|  1.037e+07|         4|         1|  2073600|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_output_pass_Block_entry47_proc                                 |       -|   0.70|         0|      0.000|         -|         0|        -|        no|         -|         -|    26 (~0%)|    170 (~0%)|    -|
+    |  + p_anonymous_namespace_color_stage                                                    |  Timing|  -0.00|   2073620|  1.037e+07|         -|   2073620|        -|        no|         -|   8 (~0%)|  1281 (~0%)|    2954 (2%)|    -|
+    |   + p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_238_1                         |  Timing|  -0.00|   2073618|  1.037e+07|         -|   2073618|        -|        no|         -|   8 (~0%)|  1273 (~0%)|    2885 (2%)|    -|
+    |    o VITIS_LOOP_238_1                                                                   |       -|   4.37|   2073616|  1.037e+07|        18|         1|  2073600|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_collect_or_drain                                               |       -|   0.88|   4147204|  2.074e+07|         -|   4147204|        -|        no|         -|         -|   187 (~0%)|    403 (~0%)|    -|
+    |   + p_anonymous_namespace_collect_or_drain_Pipeline_VITIS_LOOP_261_2                    |       -|   2.21|   2073602|  1.037e+07|         -|   2073602|        -|        no|         -|         -|    25 (~0%)|     93 (~0%)|    -|
+    |    o VITIS_LOOP_261_2                                                                   |       -|   4.37|   2073600|  1.037e+07|         2|         1|  2073600|       yes|         -|         -|           -|            -|    -|
+    |   + p_anonymous_namespace_collect_or_drain_Pipeline_VITIS_LOOP_254_1                    |       -|   0.88|   4147202|  2.074e+07|         -|   4147202|        -|        no|         -|         -|   133 (~0%)|    245 (~0%)|    -|
+    |    o VITIS_LOOP_254_1                                                                   |       -|   4.37|   4147200|  2.074e+07|         3|         2|  2073600|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_resize_and_split                                               |       -|   0.28|   6249414|  3.125e+07|         -|   6249414|        -|        no|    6 (2%)|   15 (1%)|  1332 (~0%)|    2021 (1%)|    -|
+    |   + p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_347_6_VITIS_LOOP_349_7   |       -|   1.26|   2073602|  1.037e+07|         -|   2073602|        -|        no|         -|         -|    68 (~0%)|    160 (~0%)|    -|
+    |    o VITIS_LOOP_347_6_VITIS_LOOP_349_7                                                  |       -|   4.37|   2073600|  1.037e+07|         2|         1|  2073600|       yes|         -|         -|           -|            -|    -|
+    |   o VITIS_LOOP_305_1                                                                    |       -|   4.37|   4175808|  2.088e+07|     10038|         -|      416|        no|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_313_2_VITIS_LOOP_315_3  |       -|   1.25|      9602|  4.801e+04|         -|      9602|        -|        no|         -|         -|   132 (~0%)|    364 (~0%)|    -|
+    |     o VITIS_LOOP_313_2_VITIS_LOOP_315_3                                                 |       -|   4.37|      9600|  4.800e+04|         2|         1|     9600|       yes|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_325_4                   |       -|   0.95|       428|  2.140e+03|         -|       428|        -|        no|         -|   9 (~0%)|   756 (~0%)|    791 (~0%)|    -|
+    |     o VITIS_LOOP_325_4                                                                  |       -|   4.37|       426|  2.130e+03|        12|         1|      416|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_output_pass_Block_entry412_proc                                |       -|   3.92|         0|      0.000|         -|         0|        -|        no|         -|         -|     3 (~0%)|     28 (~0%)|    -|
+    |  + p_anonymous_namespace_pack                                                           |       -|   0.69|    175553|  8.778e+05|         -|    175553|        -|        no|         -|         -|   480 (~0%)|   1033 (~0%)|    -|
+    |   o VITIS_LOOP_363_1                                                                    |       -|   4.37|    175552|  8.778e+05|       422|         -|      416|        no|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_pack_Pipeline_VITIS_LOOP_367_2                               |       -|   0.95|       419|  2.095e+03|         -|       419|        -|        no|         -|         -|   328 (~0%)|    888 (~0%)|    -|
+    |     o VITIS_LOOP_367_2                                                                  |       -|   4.37|       417|  2.085e+03|         3|         1|      416|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_output_pass_Block_entry414_proc                                |       -|   3.92|         0|      0.000|         -|         0|        -|        no|         -|         -|     3 (~0%)|     28 (~0%)|    -|
+    |  + p_anonymous_namespace_pack_3                                                         |       -|   0.69|   2080081|  1.040e+07|         -|   2080081|        -|        no|         -|         -|   613 (~0%)|   1133 (~0%)|    -|
+    |   o VITIS_LOOP_363_1                                                                    |       -|   4.37|   2080080|  1.040e+07|      1926|         -|     1080|        no|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_pack_3_Pipeline_VITIS_LOOP_367_2                             |       -|   0.95|      1923|  9.615e+03|         -|      1923|        -|        no|         -|         -|   351 (~0%)|    920 (~0%)|    -|
+    |     o VITIS_LOOP_367_2                                                                  |       -|   4.37|      1921|  9.605e+03|         3|         1|     1920|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_write_words                                                    |  Timing|  -0.01|     32459|  1.623e+05|         -|     32459|        -|        no|         -|         -|   221 (~0%)|    354 (~0%)|    -|
+    |   + p_anonymous_namespace_write_words_Pipeline_VITIS_LOOP_388_1_VITIS_LOOP_390_2        |  Timing|  -0.01|     32451|  1.623e+05|         -|     32451|        -|        no|         -|         -|   149 (~0%)|     96 (~0%)|    -|
+    |    o VITIS_LOOP_388_1_VITIS_LOOP_390_2                                                  |       -|   4.37|     32449|  1.622e+05|         3|         1|    32448|       yes|         -|         -|           -|            -|    -|
+    |  + p_anonymous_namespace_write_words_4                                                  |  Timing|  -0.01|    405001|  2.025e+06|         -|    405001|        -|        no|         -|   1 (~0%)|   464 (~0%)|    632 (~0%)|    -|
+    |   o VITIS_LOOP_388_1                                                                    |       -|   4.37|    405000|  2.025e+06|       375|         -|     1080|        no|         -|         -|           -|            -|    -|
+    |    + p_anonymous_namespace_write_words_4_Pipeline_VITIS_LOOP_390_2                      |  Timing|  -0.01|       363|  1.815e+03|         -|       363|        -|        no|         -|         -|   162 (~0%)|    115 (~0%)|    -|
+    |     o VITIS_LOOP_390_2                                                                  |       -|   4.37|       361|  1.805e+03|         3|         1|      360|       yes|         -|         -|           -|            -|    -|
+    | o VITIS_LOOP_512_1                                                                      |       -|   4.37|       704|  3.520e+03|        22|         -|       32|        no|         -|         -|           -|            -|    -|
+    |  + image_preprocess_Pipeline_VITIS_LOOP_514_2                                           |       -|   2.18|        18|     90.000|         -|        18|        -|        no|         -|         -|     7 (~0%)|    487 (~0%)|    -|
+    |   o VITIS_LOOP_514_2                                                                    |       -|   4.37|        16|     80.000|         1|         1|       16|       yes|         -|         -|           -|            -|    -|
+    +-----------------------------------------------------------------------------------------+--------+-------+----------+-----------+----------+----------+---------+----------+----------+----------+------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++--------------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface          | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|                    | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++--------------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem_in      | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 32           | 16           | 2           | 16          |
+| m_axi_gmem_out     | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 16           | 32           | 16          | 2           |
+| m_axi_gmem_preview | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 16           | 32           | 16          | 2           |
++--------------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 9             | 24     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+--------------------------+--------+-------+--------+---------------------------------------+----------------------------------------------------------------------+
+| Interface     | Register                 | Offset | Width | Access | Description                           | Bit Fields                                                           |
++---------------+--------------------------+--------+-------+--------+---------------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL                     | 0x00   | 32    | RW     | Control signals                       | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER                     | 0x04   | 32    | RW     | Global Interrupt Enable Register      | 0=Enable                                                             |
+| s_axi_control | IP_IER                   | 0x08   | 32    | RW     | IP Interrupt Enable Register          | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR                   | 0x0c   | 32    | RW     | IP Interrupt Status Register          | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | ap_return                | 0x10   | 32    | R      | Data signal of ap_return              |                                                                      |
+| s_axi_control | src_1                    | 0x18   | 32    | W      | Data signal of src                    |                                                                      |
+| s_axi_control | src_2                    | 0x1c   | 32    | W      | Data signal of src                    |                                                                      |
+| s_axi_control | tensor_1                 | 0x24   | 32    | W      | Data signal of tensor                 |                                                                      |
+| s_axi_control | tensor_2                 | 0x28   | 32    | W      | Data signal of tensor                 |                                                                      |
+| s_axi_control | preview_1                | 0x30   | 32    | W      | Data signal of preview                |                                                                      |
+| s_axi_control | preview_2                | 0x34   | 32    | W      | Data signal of preview                |                                                                      |
+| s_axi_control | luts_1                   | 0x3c   | 32    | W      | Data signal of luts                   |                                                                      |
+| s_axi_control | luts_2                   | 0x40   | 32    | W      | Data signal of luts                   |                                                                      |
+| s_axi_control | width                    | 0x48   | 32    | W      | Data signal of width                  |                                                                      |
+| s_axi_control | height                   | 0x50   | 32    | W      | Data signal of height                 |                                                                      |
+| s_axi_control | src_stride               | 0x58   | 32    | W      | Data signal of src_stride             |                                                                      |
+| s_axi_control | src_capacity             | 0x60   | 32    | W      | Data signal of src_capacity           |                                                                      |
+| s_axi_control | tensor_capacity          | 0x68   | 32    | W      | Data signal of tensor_capacity        |                                                                      |
+| s_axi_control | preview_stride           | 0x70   | 32    | W      | Data signal of preview_stride         |                                                                      |
+| s_axi_control | preview_capacity         | 0x78   | 32    | W      | Data signal of preview_capacity       |                                                                      |
+| s_axi_control | resized_w                | 0x80   | 32    | W      | Data signal of resized_w              |                                                                      |
+| s_axi_control | resized_h                | 0x88   | 32    | W      | Data signal of resized_h              |                                                                      |
+| s_axi_control | pad_x                    | 0x90   | 32    | W      | Data signal of pad_x                  |                                                                      |
+| s_axi_control | pad_y                    | 0x98   | 32    | W      | Data signal of pad_y                  |                                                                      |
+| s_axi_control | output_mode              | 0xa0   | 32    | W      | Data signal of output_mode            |                                                                      |
+| s_axi_control | flags                    | 0xa8   | 32    | W      | Data signal of flags                  |                                                                      |
+| s_axi_control | eq_mode                  | 0xb0   | 32    | W      | Data signal of eq_mode                |                                                                      |
+| s_axi_control | saturation_q12           | 0xb8   | 32    | W      | Data signal of saturation_q12         |                                                                      |
+| s_axi_control | frame_id                 | 0xc0   | 32    | W      | Data signal of frame_id               |                                                                      |
+| s_axi_control | config_id                | 0xc8   | 32    | W      | Data signal of config_id              |                                                                      |
+| s_axi_control | completed_frame_id       | 0xd0   | 32    | R      | Data signal of completed_frame_id     |                                                                      |
+| s_axi_control | completed_frame_id_ctrl  | 0xd4   | 32    | R      | Control signal of completed_frame_id  | 0=completed_frame_id_ap_vld                                          |
+| s_axi_control | completed_config_id      | 0xe0   | 32    | R      | Data signal of completed_config_id    |                                                                      |
+| s_axi_control | completed_config_id_ctrl | 0xe4   | 32    | R      | Control signal of completed_config_id | 0=completed_config_id_ap_vld                                         |
+| s_axi_control | tensor_bytes             | 0xf0   | 32    | R      | Data signal of tensor_bytes           |                                                                      |
+| s_axi_control | tensor_bytes_ctrl        | 0xf4   | 32    | R      | Control signal of tensor_bytes        | 0=tensor_bytes_ap_vld                                                |
+| s_axi_control | preview_bytes            | 0x100  | 32    | R      | Data signal of preview_bytes          |                                                                      |
+| s_axi_control | preview_bytes_ctrl       | 0x104  | 32    | R      | Control signal of preview_bytes       | 0=preview_bytes_ap_vld                                               |
+| s_axi_control | abi_version              | 0x110  | 32    | R      | Data signal of abi_version            |                                                                      |
+| s_axi_control | abi_version_ctrl         | 0x114  | 32    | R      | Control signal of abi_version         | 0=abi_version_ap_vld                                                 |
++---------------+--------------------------+--------+-------+--------+---------------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++---------------------+-----------+----------------------+
+| Argument            | Direction | Datatype             |
++---------------------+-----------+----------------------+
+| src                 | in        | ap_uint<128> const * |
+| tensor              | out       | ap_uint<128>*        |
+| preview             | out       | ap_uint<128>*        |
+| luts                | in        | ap_uint<128> const * |
+| width               | in        | unsigned int         |
+| height              | in        | unsigned int         |
+| src_stride          | in        | unsigned int         |
+| src_capacity        | in        | unsigned int         |
+| tensor_capacity     | in        | unsigned int         |
+| preview_stride      | in        | unsigned int         |
+| preview_capacity    | in        | unsigned int         |
+| resized_w           | in        | unsigned int         |
+| resized_h           | in        | unsigned int         |
+| pad_x               | in        | unsigned int         |
+| pad_y               | in        | unsigned int         |
+| output_mode         | in        | unsigned int         |
+| flags               | in        | unsigned int         |
+| eq_mode             | in        | unsigned int         |
+| saturation_q12      | in        | unsigned int         |
+| frame_id            | in        | unsigned int         |
+| config_id           | in        | unsigned int         |
+| completed_frame_id  | out       | unsigned int&        |
+| completed_config_id | out       | unsigned int&        |
+| tensor_bytes        | out       | unsigned int&        |
+| preview_bytes       | out       | unsigned int&        |
+| abi_version         | out       | unsigned int&        |
+| return              | out       | unsigned int         |
++---------------------+-----------+----------------------+
+
+* SW-to-HW Mapping
++---------------------+--------------------+-----------+----------+----------------------------------------------------+
+| Argument            | HW Interface       | HW Type   | HW Usage | HW Info                                            |
++---------------------+--------------------+-----------+----------+----------------------------------------------------+
+| src                 | m_axi_gmem_in      | interface |          |                                                    |
+| src                 | s_axi_control      | register  | offset   | name=src_1 offset=0x18 range=32                    |
+| src                 | s_axi_control      | register  | offset   | name=src_2 offset=0x1c range=32                    |
+| tensor              | m_axi_gmem_out     | interface |          |                                                    |
+| tensor              | s_axi_control      | register  | offset   | name=tensor_1 offset=0x24 range=32                 |
+| tensor              | s_axi_control      | register  | offset   | name=tensor_2 offset=0x28 range=32                 |
+| preview             | m_axi_gmem_preview | interface |          |                                                    |
+| preview             | s_axi_control      | register  | offset   | name=preview_1 offset=0x30 range=32                |
+| preview             | s_axi_control      | register  | offset   | name=preview_2 offset=0x34 range=32                |
+| luts                | m_axi_gmem_in      | interface |          |                                                    |
+| luts                | s_axi_control      | register  | offset   | name=luts_1 offset=0x3c range=32                   |
+| luts                | s_axi_control      | register  | offset   | name=luts_2 offset=0x40 range=32                   |
+| width               | s_axi_control      | register  |          | name=width offset=0x48 range=32                    |
+| height              | s_axi_control      | register  |          | name=height offset=0x50 range=32                   |
+| src_stride          | s_axi_control      | register  |          | name=src_stride offset=0x58 range=32               |
+| src_capacity        | s_axi_control      | register  |          | name=src_capacity offset=0x60 range=32             |
+| tensor_capacity     | s_axi_control      | register  |          | name=tensor_capacity offset=0x68 range=32          |
+| preview_stride      | s_axi_control      | register  |          | name=preview_stride offset=0x70 range=32           |
+| preview_capacity    | s_axi_control      | register  |          | name=preview_capacity offset=0x78 range=32         |
+| resized_w           | s_axi_control      | register  |          | name=resized_w offset=0x80 range=32                |
+| resized_h           | s_axi_control      | register  |          | name=resized_h offset=0x88 range=32                |
+| pad_x               | s_axi_control      | register  |          | name=pad_x offset=0x90 range=32                    |
+| pad_y               | s_axi_control      | register  |          | name=pad_y offset=0x98 range=32                    |
+| output_mode         | s_axi_control      | register  |          | name=output_mode offset=0xa0 range=32              |
+| flags               | s_axi_control      | register  |          | name=flags offset=0xa8 range=32                    |
+| eq_mode             | s_axi_control      | register  |          | name=eq_mode offset=0xb0 range=32                  |
+| saturation_q12      | s_axi_control      | register  |          | name=saturation_q12 offset=0xb8 range=32           |
+| frame_id            | s_axi_control      | register  |          | name=frame_id offset=0xc0 range=32                 |
+| config_id           | s_axi_control      | register  |          | name=config_id offset=0xc8 range=32                |
+| completed_frame_id  | s_axi_control      | register  |          | name=completed_frame_id offset=0xd0 range=32       |
+| completed_frame_id  | s_axi_control      | register  |          | name=completed_frame_id_ctrl offset=0xd4 range=32  |
+| completed_config_id | s_axi_control      | register  |          | name=completed_config_id offset=0xe0 range=32      |
+| completed_config_id | s_axi_control      | register  |          | name=completed_config_id_ctrl offset=0xe4 range=32 |
+| tensor_bytes        | s_axi_control      | register  |          | name=tensor_bytes offset=0xf0 range=32             |
+| tensor_bytes        | s_axi_control      | register  |          | name=tensor_bytes_ctrl offset=0xf4 range=32        |
+| preview_bytes       | s_axi_control      | register  |          | name=preview_bytes offset=0x100 range=32           |
+| preview_bytes       | s_axi_control      | register  |          | name=preview_bytes_ctrl offset=0x104 range=32      |
+| abi_version         | s_axi_control      | register  |          | name=abi_version offset=0x110 range=32             |
+| abi_version         | s_axi_control      | register  |          | name=abi_version_ctrl offset=0x114 range=32        |
+| return              | s_axi_control      | register  |          | name=ap_return offset=0x10 range=32                |
++---------------------+--------------------+-----------+----------+----------------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------------+------------------+-----------+----------+-------+-----------------------------------------------------------------------------+
+| HW Interface       | Loop             | Direction | Length   | Width | Location                                                                    |
++--------------------+------------------+-----------+----------+-------+-----------------------------------------------------------------------------+
+| m_axi_gmem_in      | VITIS_LOOP_116_2 | read      | variable | 128   | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:116:20 |
+| m_axi_gmem_out     | VITIS_LOOP_388_1 | write     | 32448    | 128   | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:388:23 |
+| m_axi_gmem_preview | VITIS_LOOP_390_2 | write     | variable | 128   | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:390:20 |
+| m_axi_gmem_in      | VITIS_LOOP_512_1 | read      | 32       | 128   | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:512:23 |
++--------------------+------------------+-----------+----------+-------+-----------------------------------------------------------------------------+
+
+* Inferred Bursts and Widening Missed
++-----------------------------+----------+------------------+--------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------------+
+| HW Interface                | Variable | Loop             | Problem                                                                                                | Resolution | Location                                                                    |
++-----------------------------+----------+------------------+--------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------------+
+| m_axi_gmem_in,gmem_in       | src      | VITIS_LOOP_114_1 | Access call is in the conditional branch                                                               | 214-232    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:114:23 |
+| m_axi_gmem_out,gmem_preview | dst      | VITIS_LOOP_388_1 | Access call is in the conditional branch                                                               | 214-232    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:388:23 |
+| m_axi_gmem_in,gmem_in       | src      | VITIS_LOOP_114_1 | Access call is in the conditional branch                                                               | 214-232    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:114:23 |
+| m_axi_gmem_in               | luts     | VITIS_LOOP_512_1 | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:512:23 |
+| m_axi_gmem_in,gmem_in       | src      | VITIS_LOOP_116_2 | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:116:20 |
+| m_axi_gmem_out,gmem_preview | dst      | VITIS_LOOP_390_2 | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:390:20 |
+| m_axi_gmem_in,gmem_in       | src      | VITIS_LOOP_116_2 | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:116:20 |
+| m_axi_gmem_out,gmem_preview | dst      | VITIS_LOOP_390_2 | Could not widen since type i128 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:390:20 |
++-----------------------------+----------+------------------+--------------------------------------------------------------------------------------------------------+------------+-----------------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------------------------------------+-----+--------+----------------------------+------+--------+---------+
+| Name                                                                                          | DSP | Pragma | Variable                   | Op   | Impl   | Latency |
++-----------------------------------------------------------------------------------------------+-----+--------+----------------------------+------+--------+---------+
+| + image_preprocess                                                                            | 43  |        |                            |      |        |         |
+|   add_ln478_fu_734_p2                                                                         | -   |        | add_ln478                  | add  | fabric | 0       |
+|   add_ln478_1_fu_746_p2                                                                       | -   |        | add_ln478_1                | add  | fabric | 0       |
+|   sub_ln480_fu_816_p2                                                                         | -   |        | sub_ln480                  | sub  | fabric | 0       |
+|   mul_13ns_11ns_24_1_1_U345                                                                   | -   | yes    | ret_V                      | mul  | fabric | 0       |
+|   mul_13ns_11ns_24_1_1_U346                                                                   | -   | yes    | ret_V_1                    | mul  | fabric | 0       |
+|   sub_ln493_fu_1030_p2                                                                        | -   |        | sub_ln493                  | sub  | fabric | 0       |
+|   sub_ln494_fu_1056_p2                                                                        | -   |        | sub_ln494                  | sub  | fabric | 0       |
+|   add_ln512_fu_1228_p2                                                                        | -   |        | add_ln512                  | add  | fabric | 0       |
+|   mul_11ns_11ns_22_1_1_U347                                                                   | -   | yes    | ret_V_2                    | mul  | fabric | 0       |
+|   mul_11ns_11ns_22_1_1_U348                                                                   | -   | yes    | ret_V_3                    | mul  | fabric | 0       |
+|   mul_11ns_11ns_22_1_1_U349                                                                   | -   | yes    | ret_V_4                    | mul  | fabric | 0       |
+|   sub_ln547_fu_1364_p2                                                                        | -   |        | sub_ln547                  | sub  | fabric | 0       |
+|  + image_preprocess_Pipeline_VITIS_LOOP_524_4                                                 | 0   |        |                            |      |        |         |
+|    i_2_fu_116_p2                                                                              | -   |        | i_2                        | add  | fabric | 0       |
+|  + p_anonymous_namespace_make_coordinates (grp_p_anonymous_namespace_make_coordinates_fu_594) | 2   |        |                            |      |        |         |
+|    sub19_fu_161_p2                                                                            | -   |        | sub19                      | add  | fabric | 0       |
+|    add_ln226_fu_167_p2                                                                        | -   |        | add_ln226                  | add  | fabric | 0       |
+|    add_ln215_fu_190_p2                                                                        | -   |        | add_ln215                  | add  | fabric | 0       |
+|    mul_10ns_32s_32_1_1_U14                                                                    | 1   |        | mul_ln219                  | mul  | auto   | 0       |
+|    numerator_fu_219_p2                                                                        | -   |        | numerator                  | sub  | fabric | 0       |
+|    mul_mul_21ns_9ns_30_4_1_U18                                                                | 1   |        | mul_ln224                  | mul  | dsp48  | 3       |
+|    r_fu_306_p2                                                                                | -   |        | r                          | sub  | fabric | 0       |
+|    q_1_fu_342_p2                                                                              | -   |        | q_1                        | add  | fabric | 0       |
+|  + p_anonymous_namespace_make_coordinates (grp_p_anonymous_namespace_make_coordinates_fu_602) | 2   |        |                            |      |        |         |
+|    sub19_fu_161_p2                                                                            | -   |        | sub19                      | add  | fabric | 0       |
+|    add_ln226_fu_167_p2                                                                        | -   |        | add_ln226                  | add  | fabric | 0       |
+|    add_ln215_fu_190_p2                                                                        | -   |        | add_ln215                  | add  | fabric | 0       |
+|    mul_10ns_32s_32_1_1_U14                                                                    | 1   |        | mul_ln219                  | mul  | auto   | 0       |
+|    numerator_fu_219_p2                                                                        | -   |        | numerator                  | sub  | fabric | 0       |
+|    mul_mul_21ns_9ns_30_4_1_U18                                                                | 1   |        | mul_ln224                  | mul  | dsp48  | 3       |
+|    r_fu_306_p2                                                                                | -   |        | r                          | sub  | fabric | 0       |
+|    q_1_fu_342_p2                                                                              | -   |        | q_1                        | add  | fabric | 0       |
+|  + image_preprocess_Pipeline_VITIS_LOOP_514_2                                                 | 0   |        |                            |      |        |         |
+|    add_ln514_fu_198_p2                                                                        | -   |        | add_ln514                  | add  | fabric | 0       |
+|    add_ln516_fu_208_p2                                                                        | -   |        | add_ln516                  | add  | fabric | 0       |
+|  + p_anonymous_namespace_statistics_pass                                                      | 11  |        |                            |      |        |         |
+|    tmp_U                                                                                      | -   |        | tmp                        | fifo | srl    | 0       |
+|   + p_anonymous_namespace_read_words                                                          | 1   |        |                            |      |        |         |
+|     y_6_fu_221_p2                                                                             | -   |        | y_6                        | add  | fabric | 0       |
+|     mul_mul_9ns_11ns_20_4_1_U32                                                               | 1   |        | empty                      | mul  | dsp48  | 3       |
+|     empty_280_fu_246_p2                                                                       | -   |        | empty_280                  | add  | fabric | 0       |
+|    + p_anonymous_namespace_read_words_Pipeline_VITIS_LOOP_116_2                               | 0   |        |                            |      |        |         |
+|      add_ln116_fu_106_p2                                                                      | -   |        | add_ln116                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_unpack                                                              | 3   |        |                            |      |        |         |
+|     mul_32ns_32ns_64_1_1_U46                                                                  | 3   |        | bound                      | mul  | auto   | 0       |
+|    + p_anonymous_namespace_unpack_Pipeline_VITIS_LOOP_127_1_VITIS_LOOP_131_2                  | 0   |        |                            |      |        |         |
+|      add_ln127_fu_144_p2                                                                      | -   |        | add_ln127                  | add  | fabric | 0       |
+|      bits_fu_206_p2                                                                           | -   |        | bits                       | add  | fabric | 0       |
+|      bits_2_fu_220_p2                                                                         | -   |        | bits_2                     | add  | fabric | 0       |
+|      add_ln131_fu_161_p2                                                                      | -   |        | add_ln131                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_statistics_pass_Block_entry36_proc                                  | 0   |        |                            |      |        |         |
+|     mul_11ns_11ns_22_1_1_U52                                                                  | -   | yes    | ret_V                      | mul  | fabric | 0       |
+|   + p_anonymous_namespace_histogram_pixels                                                    | 7   |        |                            |      |        |         |
+|     i_5_fu_268_p2                                                                             | -   |        | i_5                        | add  | fabric | 0       |
+|     mac_muladd_8ns_8ns_15s_17_4_1_U56                                                         | 1   |        | tmp3_i                     | mul  | dsp48  | 3       |
+|     mac_muladd_8ns_7ns_17s_18_4_1_U57                                                         | 1   |        | tmp6_i                     | mul  | dsp48  | 3       |
+|     sub_ln48_fu_370_p2                                                                        | -   |        | sub_ln48                   | sub  | fabric | 0       |
+|     sub_ln50_fu_380_p2                                                                        | -   |        | sub_ln50                   | sub  | fabric | 0       |
+|     mac_muladd_8ns_8ns_15s_17_4_1_U56                                                         | 1   |        | add_ln50                   | add  | dsp48  | 3       |
+|     mac_muladd_8ns_7ns_17s_18_4_1_U57                                                         | 1   |        | add_ln50_1                 | add  | dsp48  | 3       |
+|     delta_fu_420_p2                                                                           | -   |        | delta                      | sub  | fabric | 0       |
+|     mac_muladd_14ns_10s_22s_25_4_1_U58                                                        | 1   |        | ret_V                      | mul  | dsp48  | 3       |
+|     delta_1_fu_433_p2                                                                         | -   |        | delta_1                    | sub  | fabric | 0       |
+|     mac_muladd_14ns_10s_22s_25_4_1_U59                                                        | 1   |        | ret_V_5                    | mul  | dsp48  | 3       |
+|     delta_2_fu_446_p2                                                                         | -   |        | delta_2                    | sub  | fabric | 0       |
+|     mac_muladd_14ns_10s_22s_25_4_1_U60                                                        | 1   |        | ret_V_6                    | mul  | dsp48  | 3       |
+|     mac_muladd_14ns_10s_22s_25_4_1_U58                                                        | 1   |        | add_ln76                   | add  | dsp48  | 3       |
+|     sub_ln30_fu_474_p2                                                                        | -   |        | sub_ln30                   | sub  | fabric | 0       |
+|     q_fu_536_p2                                                                               | -   |        | q                          | add  | fabric | 0       |
+|     sub_ln35_fu_719_p2                                                                        | -   |        | sub_ln35                   | sub  | fabric | 0       |
+|     mac_muladd_14ns_10s_22s_25_4_1_U59                                                        | 1   |        | add_ln76_1                 | add  | dsp48  | 3       |
+|     sub_ln30_1_fu_557_p2                                                                      | -   |        | sub_ln30_1                 | sub  | fabric | 0       |
+|     q_4_fu_619_p2                                                                             | -   |        | q_4                        | add  | fabric | 0       |
+|     sub_ln35_1_fu_794_p2                                                                      | -   |        | sub_ln35_1                 | sub  | fabric | 0       |
+|     mac_muladd_14ns_10s_22s_25_4_1_U60                                                        | 1   |        | add_ln76_2                 | add  | dsp48  | 3       |
+|     sub_ln30_2_fu_640_p2                                                                      | -   |        | sub_ln30_2                 | sub  | fabric | 0       |
+|     q_6_fu_702_p2                                                                             | -   |        | q_6                        | add  | fabric | 0       |
+|     sub_ln35_2_fu_869_p2                                                                      | -   |        | sub_ln35_2                 | sub  | fabric | 0       |
+|     mac_muladd_8ns_8ns_15s_16_4_1_U61                                                         | 1   |        | tmp10_i                    | mul  | dsp48  | 3       |
+|     sub_ln48_1_fu_986_p2                                                                      | -   |        | sub_ln48_1                 | sub  | fabric | 0       |
+|     sub_ln50_1_fu_996_p2                                                                      | -   |        | sub_ln50_1                 | sub  | fabric | 0       |
+|     add_ln49_1_fu_1006_p2                                                                     | -   |        | add_ln49_1                 | add  | fabric | 0       |
+|     mac_muladd_8ns_8ns_15s_16_4_1_U61                                                         | 1   |        | add_ln50_4                 | add  | dsp48  | 3       |
+|     mac_muladd_8ns_7ns_16s_16_4_1_U62                                                         | 1   |        | mul_ln50                   | mul  | dsp48  | 3       |
+|     mac_muladd_8ns_7ns_16s_16_4_1_U62                                                         | 1   |        | add_ln50_3                 | add  | dsp48  | 3       |
+|     hist_d1                                                                                   | -   |        | add_ln232                  | add  | fabric | 0       |
+|  + p_anonymous_namespace_build_lut                                                            | 0   |        |                            |      |        |         |
+|    denominator_V_fu_180_p2                                                                    | -   |        | denominator_V              | sub  | fabric | 0       |
+|    i_12_fu_215_p2                                                                             | -   |        | i_12                       | add  | fabric | 0       |
+|    cdf_V_1_fu_228_p2                                                                          | -   |        | cdf_V_1                    | add  | fabric | 0       |
+|    normalized_V_fu_249_p2                                                                     | -   |        | normalized_V               | sub  | fabric | 0       |
+|    remainder_V_fu_275_p2                                                                      | -   |        | remainder_V                | sub  | fabric | 0       |
+|    remainder_V_2_fu_312_p2                                                                    | -   |        | remainder_V_2              | sub  | fabric | 0       |
+|    bit_1_fu_344_p2                                                                            | -   |        | bit_1                      | add  | fabric | 0       |
+|    q_V_fu_388_p2                                                                              | -   |        | q_V                        | add  | fabric | 0       |
+|   + p_anonymous_namespace_build_lut_Pipeline_VITIS_LOOP_177_1                                 | 0   |        |                            |      |        |         |
+|     add_ln177_fu_85_p2                                                                        | -   |        | add_ln177                  | add  | fabric | 0       |
+|  + p_anonymous_namespace_output_pass                                                          | 28  |        |                            |      |        |         |
+|    flags_cast_loc_channel_U                                                                   | -   |        | flags_cast_loc_channel     | fifo | srl    | 0       |
+|    mul_ln1540_loc_c36_channel_U                                                               | -   |        | mul_ln1540_loc_c36_channel | fifo | srl    | 0       |
+|    icmp_ln426_loc_c35_channel_U                                                               | -   |        | icmp_ln426_loc_c35_channel | fifo | srl    | 0       |
+|    icmp_ln427_loc_c34_channel_U                                                               | -   |        | icmp_ln427_loc_c34_channel | fifo | srl    | 0       |
+|   + p_anonymous_namespace_read_words_1                                                        | 1   |        |                            |      |        |         |
+|     y_4_fu_221_p2                                                                             | -   |        | y_4                        | add  | fabric | 0       |
+|     mul_mul_9ns_11ns_20_4_1_U110                                                              | 1   |        | empty                      | mul  | dsp48  | 3       |
+|     empty_277_fu_246_p2                                                                       | -   |        | empty_277                  | add  | fabric | 0       |
+|    + p_anonymous_namespace_read_words_1_Pipeline_VITIS_LOOP_116_2                             | 0   |        |                            |      |        |         |
+|      add_ln116_fu_106_p2                                                                      | -   |        | add_ln116                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_unpack_2                                                            | 3   |        |                            |      |        |         |
+|     mul_32ns_32ns_64_1_1_U123                                                                 | 3   |        | bound                      | mul  | auto   | 0       |
+|    + p_anonymous_namespace_unpack_2_Pipeline_VITIS_LOOP_127_1_VITIS_LOOP_131_2                | 0   |        |                            |      |        |         |
+|      add_ln127_fu_144_p2                                                                      | -   |        | add_ln127                  | add  | fabric | 0       |
+|      bits_fu_206_p2                                                                           | -   |        | bits                       | add  | fabric | 0       |
+|      bits_5_fu_220_p2                                                                         | -   |        | bits_5                     | add  | fabric | 0       |
+|      add_ln131_fu_161_p2                                                                      | -   |        | add_ln131                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_output_pass_Block_entry47_proc                                      | 0   |        |                            |      |        |         |
+|     mul_11ns_11ns_22_1_1_U128                                                                 | -   | yes    | ret_V                      | mul  | fabric | 0       |
+|   + p_anonymous_namespace_color_stage                                                         | 8   |        |                            |      |        |         |
+|    + p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_238_1                              | 8   |        |                            |      |        |         |
+|      i_7_fu_332_p2                                                                            | -   |        | i_7                        | add  | fabric | 0       |
+|      mac_muladd_8ns_8ns_15s_17_4_1_U132                                                       | 1   |        | tmp4_i                     | mul  | dsp48  | 3       |
+|      mac_muladd_8ns_7ns_17s_18_4_1_U133                                                       | 1   |        | tmp7_i                     | mul  | dsp48  | 3       |
+|      sub_ln48_fu_434_p2                                                                       | -   |        | sub_ln48                   | sub  | fabric | 0       |
+|      sub_ln50_fu_444_p2                                                                       | -   |        | sub_ln50                   | sub  | fabric | 0       |
+|      mac_muladd_8ns_8ns_15s_17_4_1_U132                                                       | 1   |        | add_ln50                   | add  | dsp48  | 3       |
+|      mac_muladd_8ns_7ns_17s_18_4_1_U133                                                       | 1   |        | add_ln50_4                 | add  | dsp48  | 3       |
+|      delta_fu_484_p2                                                                          | -   |        | delta                      | sub  | fabric | 0       |
+|      mac_muladd_14ns_10s_22s_25_4_1_U134                                                      | 1   |        | ret_V                      | mul  | dsp48  | 3       |
+|      delta_3_fu_497_p2                                                                        | -   |        | delta_3                    | sub  | fabric | 0       |
+|      mac_muladd_14ns_10s_22s_25_4_1_U135                                                      | 1   |        | ret_V_7                    | mul  | dsp48  | 3       |
+|      delta_4_fu_510_p2                                                                        | -   |        | delta_4                    | sub  | fabric | 0       |
+|      mac_muladd_14ns_10s_22s_25_4_1_U136                                                      | 1   |        | ret_V_8                    | mul  | dsp48  | 3       |
+|      mac_muladd_14ns_10s_22s_25_4_1_U134                                                      | 1   |        | add_ln76                   | add  | dsp48  | 3       |
+|      sub_ln30_fu_538_p2                                                                       | -   |        | sub_ln30                   | sub  | fabric | 0       |
+|      q_fu_600_p2                                                                              | -   |        | q                          | add  | fabric | 0       |
+|      sub_ln35_fu_614_p2                                                                       | -   |        | sub_ln35                   | sub  | fabric | 0       |
+|      mac_muladd_14ns_10s_22s_25_4_1_U135                                                      | 1   |        | add_ln76_3                 | add  | dsp48  | 3       |
+|      sub_ln30_3_fu_645_p2                                                                     | -   |        | sub_ln30_3                 | sub  | fabric | 0       |
+|      q_9_fu_707_p2                                                                            | -   |        | q_9                        | add  | fabric | 0       |
+|      sub_ln35_3_fu_721_p2                                                                     | -   |        | sub_ln35_3                 | sub  | fabric | 0       |
+|      mac_muladd_14ns_10s_22s_25_4_1_U136                                                      | 1   |        | add_ln76_4                 | add  | dsp48  | 3       |
+|      sub_ln30_4_fu_752_p2                                                                     | -   |        | sub_ln30_4                 | sub  | fabric | 0       |
+|      q_11_fu_814_p2                                                                           | -   |        | q_11                       | add  | fabric | 0       |
+|      sub_ln35_4_fu_931_p2                                                                     | -   |        | sub_ln35_4                 | sub  | fabric | 0       |
+|      add_ln47_fu_1300_p2                                                                      | -   |        | add_ln47                   | add  | fabric | 0       |
+|      add_ln48_fu_1061_p2                                                                      | -   |        | add_ln48                   | add  | fabric | 0       |
+|      sub_ln47_fu_1111_p2                                                                      | -   |        | sub_ln47                   | sub  | fabric | 0       |
+|      sub_ln47_1_fu_1121_p2                                                                    | -   |        | sub_ln47_1                 | sub  | fabric | 0       |
+|      add_ln49_2_fu_1131_p2                                                                    | -   |        | add_ln49_2                 | add  | fabric | 0       |
+|      add_ln49_4_fu_1345_p2                                                                    | -   |        | add_ln49_4                 | add  | fabric | 0       |
+|      add_ln49_5_fu_1354_p2                                                                    | -   |        | add_ln49_5                 | add  | fabric | 0       |
+|      add13_i15_i_fu_1149_p2                                                                   | -   |        | add13_i15_i                | sub  | fabric | 0       |
+|      sub_ln86_fu_1205_p2                                                                      | -   |        | sub_ln86                   | sub  | fabric | 0       |
+|      sub_ln30_5_fu_1455_p2                                                                    | -   |        | sub_ln30_5                 | sub  | fabric | 0       |
+|      q_13_fu_1519_p2                                                                          | -   |        | q_13                       | add  | fabric | 0       |
+|      sub_ln35_5_fu_1650_p2                                                                    | -   |        | sub_ln35_5                 | sub  | fabric | 0       |
+|      add_ln91_1_fu_1223_p2                                                                    | -   |        | add_ln91_1                 | add  | fabric | 0       |
+|      add_ln91_3_fu_1239_p2                                                                    | -   |        | add_ln91_3                 | add  | fabric | 0       |
+|      add_ln91_4_fu_1249_p2                                                                    | -   |        | add_ln91_4                 | add  | fabric | 0       |
+|      add_ln89_fu_1269_p2                                                                      | -   |        | add_ln89                   | add  | fabric | 0       |
+|      sub_ln89_fu_1549_p2                                                                      | -   |        | sub_ln89                   | sub  | fabric | 0       |
+|      add_ln91_5_fu_1558_p2                                                                    | -   |        | add_ln91_5                 | add  | fabric | 0       |
+|      sub_ln30_6_fu_1572_p2                                                                    | -   |        | sub_ln30_6                 | sub  | fabric | 0       |
+|      q_15_fu_1636_p2                                                                          | -   |        | q_15                       | add  | fabric | 0       |
+|      sub_ln35_6_fu_1731_p2                                                                    | -   |        | sub_ln35_6                 | sub  | fabric | 0       |
+|      sub_ln94_fu_1820_p2                                                                      | -   |        | sub_ln94                   | sub  | fabric | 0       |
+|      sub_ln94_1_fu_1846_p2                                                                    | -   |        | sub_ln94_1                 | sub  | fabric | 0       |
+|      mac_muladd_9s_9ns_14s_17_4_1_U137                                                        | 1   |        | mul_ln95                   | mul  | dsp48  | 3       |
+|      mac_muladd_9s_9ns_14s_17_4_1_U137                                                        | 1   |        | add_ln95                   | add  | dsp48  | 3       |
+|      add_ln95_1_fu_1954_p2                                                                    | -   |        | add_ln95_1                 | add  | fabric | 0       |
+|      cr359_fu_1964_p2                                                                         | -   |        | cr359                      | add  | fabric | 0       |
+|      sub_ln96_fu_1912_p2                                                                      | -   |        | sub_ln96                   | sub  | fabric | 0       |
+|      cb88_fu_1922_p2                                                                          | -   |        | cb88                       | add  | fabric | 0       |
+|      mac_muladd_9s_8ns_14s_16_4_1_U138                                                        | 1   |        | mul_ln97                   | mul  | dsp48  | 3       |
+|      mac_muladd_9s_8ns_14s_16_4_1_U138                                                        | 1   |        | add_ln97                   | add  | dsp48  | 3       |
+|      cr183_fu_1973_p2                                                                         | -   |        | cr183                      | add  | fabric | 0       |
+|      mac_muladd_9s_9ns_15s_17_4_1_U139                                                        | 1   |        | mul_ln98                   | mul  | dsp48  | 3       |
+|      mac_muladd_9s_9ns_15s_17_4_1_U139                                                        | 1   |        | cb454                      | add  | dsp48  | 3       |
+|      sub_ln99_fu_1990_p2                                                                      | -   |        | sub_ln99                   | sub  | fabric | 0       |
+|      sub_ln100_fu_2005_p2                                                                     | -   |        | sub_ln100                  | sub  | fabric | 0       |
+|      sub_ln101_fu_2020_p2                                                                     | -   |        | sub_ln101                  | sub  | fabric | 0       |
+|      sub_ln102_fu_2035_p2                                                                     | -   |        | sub_ln102                  | sub  | fabric | 0       |
+|      add_ln104_fu_2050_p2                                                                     | -   |        | add_ln104                  | add  | fabric | 0       |
+|      sub_ln30_7_fu_2064_p2                                                                    | -   |        | sub_ln30_7                 | sub  | fabric | 0       |
+|      q_17_fu_2128_p2                                                                          | -   |        | q_17                       | add  | fabric | 0       |
+|      sub_ln35_7_fu_2339_p2                                                                    | -   |        | sub_ln35_7                 | sub  | fabric | 0       |
+|      sub_ln30_8_fu_2162_p2                                                                    | -   |        | sub_ln30_8                 | sub  | fabric | 0       |
+|      q_19_fu_2226_p2                                                                          | -   |        | q_19                       | add  | fabric | 0       |
+|      sub_ln35_8_fu_2406_p2                                                                    | -   |        | sub_ln35_8                 | sub  | fabric | 0       |
+|      add_ln106_fu_2240_p2                                                                     | -   |        | add_ln106                  | add  | fabric | 0       |
+|      sub_ln30_9_fu_2254_p2                                                                    | -   |        | sub_ln30_9                 | sub  | fabric | 0       |
+|      q_21_fu_2318_p2                                                                          | -   |        | q_21                       | add  | fabric | 0       |
+|      sub_ln35_9_fu_2473_p2                                                                    | -   |        | sub_ln35_9                 | sub  | fabric | 0       |
+|   + p_anonymous_namespace_collect_or_drain                                                    | 0   |        |                            |      |        |         |
+|    + p_anonymous_namespace_collect_or_drain_Pipeline_VITIS_LOOP_261_2                         | 0   |        |                            |      |        |         |
+|      i_8_fu_68_p2                                                                             | -   |        | i_8                        | add  | fabric | 0       |
+|    + p_anonymous_namespace_collect_or_drain_Pipeline_VITIS_LOOP_254_1                         | 0   |        |                            |      |        |         |
+|      i_10_fu_117_p2                                                                           | -   |        | i_10                       | add  | fabric | 0       |
+|      hist_d1                                                                                  | -   |        | add_ln232                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_resize_and_split                                                    | 15  |        |                            |      |        |         |
+|     add_fu_349_p2                                                                             | -   |        | add                        | add  | fabric | 0       |
+|     add43_fu_355_p2                                                                           | -   |        | add43                      | add  | fabric | 0       |
+|     add_ln305_fu_405_p2                                                                       | -   |        | add_ln305                  | add  | fabric | 0       |
+|     sub_ln309_fu_437_p2                                                                       | -   |        | sub_ln309                  | sub  | fabric | 0       |
+|     add_ln312_fu_456_p2                                                                       | -   |        | add_ln312                  | add  | fabric | 0       |
+|     add_ln313_fu_488_p2                                                                       | -   |        | add_ln313                  | add  | fabric | 0       |
+|     sub_ln313_fu_498_p2                                                                       | -   |        | sub_ln313                  | sub  | fabric | 0       |
+|     mul_32ns_32ns_64_1_1_U221                                                                 | 3   |        | mul_ln313                  | mul  | auto   | 0       |
+|     add60_fu_530_p2                                                                           | -   |        | add60                      | add  | fabric | 0       |
+|     sub_ln347_fu_572_p2                                                                       | -   |        | sub_ln347                  | sub  | fabric | 0       |
+|     mul_32ns_32ns_64_1_1_U222                                                                 | 3   |        | mul_ln303                  | mul  | auto   | 0       |
+|    + p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_313_2_VITIS_LOOP_315_3        | 0   |        |                            |      |        |         |
+|      add_ln313_fu_190_p2                                                                      | -   |        | add_ln313                  | add  | fabric | 0       |
+|      add_ln322_fu_220_p2                                                                      | -   |        | add_ln322                  | add  | fabric | 0       |
+|      add_ln315_fu_268_p2                                                                      | -   |        | add_ln315                  | add  | fabric | 0       |
+|    + p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_325_4                         | 9   |        |                            |      |        |         |
+|      add_ln325_fu_310_p2                                                                      | -   |        | add_ln325                  | add  | fabric | 0       |
+|      sub_ln329_fu_332_p2                                                                      | -   |        | sub_ln329                  | sub  | fabric | 0       |
+|      add_ln331_fu_352_p2                                                                      | -   |        | add_ln331                  | add  | fabric | 0       |
+|      add_ln331_1_fu_367_p2                                                                    | -   |        | add_ln331_1                | add  | fabric | 0       |
+|      dt_fu_449_p2                                                                             | -   |        | dt                         | sub  | fabric | 0       |
+|      db_fu_463_p2                                                                             | -   |        | db                         | sub  | fabric | 0       |
+|      mac_muladd_12ns_9s_19ns_20_4_1_U189                                                      | 1   |        | mul_ln75                   | mul  | dsp48  | 3       |
+|      mac_muladd_12ns_9s_20ns_20_4_1_U192                                                      | 1   |        | mul_ln75_1                 | mul  | dsp48  | 3       |
+|      mac_muladd_12ns_9s_19ns_20_4_1_U189                                                      | 1   |        | top_V                      | add  | dsp48  | 3       |
+|      grp_fu_956_p2                                                                            | -   |        | bottom_V                   | sub  | fabric | 0       |
+|      mac_muladd_12ns_9s_20ns_20_4_1_U192                                                      | 1   |        | vertical_delta_V           | add  | dsp48  | 3       |
+|      mac_muladd_20s_12ns_22ns_30_4_1_U195                                                     | 1   |        | mul_ln1540                 | mul  | dsp48  | 3       |
+|      mac_muladd_20s_12ns_22ns_30_4_1_U195                                                     | 1   |        | add_ln75                   | add  | dsp48  | 3       |
+|      sum_V_fu_799_p2                                                                          | -   |        | sum_V                      | add  | fabric | 0       |
+|      dt_1_fu_533_p2                                                                           | -   |        | dt_1                       | sub  | fabric | 0       |
+|      db_1_fu_547_p2                                                                           | -   |        | db_1                       | sub  | fabric | 0       |
+|      mac_muladd_12ns_9s_19ns_20_4_1_U190                                                      | 1   |        | mul_ln75_2                 | mul  | dsp48  | 3       |
+|      mac_muladd_12ns_9s_20ns_20_4_1_U193                                                      | 1   |        | mul_ln75_3                 | mul  | dsp48  | 3       |
+|      mac_muladd_12ns_9s_19ns_20_4_1_U190                                                      | 1   |        | top_V_1                    | add  | dsp48  | 3       |
+|      grp_fu_964_p2                                                                            | -   |        | bottom_V_1                 | sub  | fabric | 0       |
+|      mac_muladd_12ns_9s_20ns_20_4_1_U193                                                      | 1   |        | vertical_delta_V_1         | add  | dsp48  | 3       |
+|      mac_muladd_20s_12ns_22ns_30_4_1_U196                                                     | 1   |        | mul_ln1540_1               | mul  | dsp48  | 3       |
+|      mac_muladd_20s_12ns_22ns_30_4_1_U196                                                     | 1   |        | add_ln75_4                 | add  | dsp48  | 3       |
+|      sum_V_1_fu_821_p2                                                                        | -   |        | sum_V_1                    | add  | fabric | 0       |
+|      dt_2_fu_625_p2                                                                           | -   |        | dt_2                       | sub  | fabric | 0       |
+|      db_2_fu_639_p2                                                                           | -   |        | db_2                       | sub  | fabric | 0       |
+|      mac_muladd_12ns_9s_19ns_20_4_1_U191                                                      | 1   |        | mul_ln75_4                 | mul  | dsp48  | 3       |
+|      mac_muladd_12ns_9s_20ns_20_4_1_U194                                                      | 1   |        | mul_ln75_5                 | mul  | dsp48  | 3       |
+|      mac_muladd_12ns_9s_19ns_20_4_1_U191                                                      | 1   |        | top_V_2                    | add  | dsp48  | 3       |
+|      grp_fu_972_p2                                                                            | -   |        | bottom_V_2                 | sub  | fabric | 0       |
+|      mac_muladd_12ns_9s_20ns_20_4_1_U194                                                      | 1   |        | vertical_delta_V_2         | add  | dsp48  | 3       |
+|      mac_muladd_20s_12ns_22ns_30_4_1_U197                                                     | 1   |        | mul_ln1540_2               | mul  | dsp48  | 3       |
+|      mac_muladd_20s_12ns_22ns_30_4_1_U197                                                     | 1   |        | add_ln75_8                 | add  | dsp48  | 3       |
+|      sum_V_2_fu_843_p2                                                                        | -   |        | sum_V_2                    | add  | fabric | 0       |
+|    + p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_347_6_VITIS_LOOP_349_7        | 0   |        |                            |      |        |         |
+|      add_ln347_fu_94_p2                                                                       | -   |        | add_ln347                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_pack                                                                | 0   |        |                            |      |        |         |
+|     y_10_fu_113_p2                                                                            | -   |        | y_10                       | add  | fabric | 0       |
+|    + p_anonymous_namespace_pack_Pipeline_VITIS_LOOP_367_2                                     | 0   |        |                            |      |        |         |
+|      x_7_fu_127_p2                                                                            | -   |        | x_7                        | add  | fabric | 0       |
+|      bits_fu_169_p2                                                                           | -   |        | bits                       | add  | fabric | 0       |
+|      bits_6_fu_209_p2                                                                         | -   |        | bits_6                     | add  | fabric | 0       |
+|   + p_anonymous_namespace_pack_3                                                              | 0   |        |                            |      |        |         |
+|     y_8_fu_151_p2                                                                             | -   |        | y_8                        | add  | fabric | 0       |
+|    + p_anonymous_namespace_pack_3_Pipeline_VITIS_LOOP_367_2                                   | 0   |        |                            |      |        |         |
+|      x_9_fu_135_p2                                                                            | -   |        | x_9                        | add  | fabric | 0       |
+|      bits_fu_177_p2                                                                           | -   |        | bits                       | add  | fabric | 0       |
+|      bits_7_fu_217_p2                                                                         | -   |        | bits_7                     | add  | fabric | 0       |
+|   + p_anonymous_namespace_write_words                                                         | 0   |        |                            |      |        |         |
+|    + p_anonymous_namespace_write_words_Pipeline_VITIS_LOOP_388_1_VITIS_LOOP_390_2             | 0   |        |                            |      |        |         |
+|      add_ln388_fu_100_p2                                                                      | -   |        | add_ln388                  | add  | fabric | 0       |
+|   + p_anonymous_namespace_write_words_4                                                       | 1   |        |                            |      |        |         |
+|     y_2_fu_212_p2                                                                             | -   |        | y_2                        | add  | fabric | 0       |
+|     mul_mul_9ns_11ns_20_4_1_U278                                                              | 1   |        | empty                      | mul  | dsp48  | 3       |
+|     empty_264_fu_237_p2                                                                       | -   |        | empty_264                  | add  | fabric | 0       |
+|    + p_anonymous_namespace_write_words_4_Pipeline_VITIS_LOOP_390_2                            | 0   |        |                            |      |        |         |
+|      add_ln390_fu_110_p2                                                                      | -   |        | add_ln390                  | add  | fabric | 0       |
++-----------------------------------------------------------------------------------------------+-----+--------+----------------------------+------+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------------------------------+------+------+--------+------------------+---------+--------+---------+
+| Name                                       | BRAM | URAM | Pragma | Variable         | Storage | Impl   | Latency |
++--------------------------------------------+------+------+--------+------------------+---------+--------+---------+
+| + image_preprocess                         | 54   | 0    |        |                  |         |        |         |
+|   color_V_U                                | -    | -    | yes    | color_V          | ram_2p  | lutram | 1       |
+|   color_V_1_U                              | -    | -    | yes    | color_V_1        | ram_2p  | lutram | 1       |
+|   color_V_2_U                              | -    | -    | yes    | color_V_2        | ram_2p  | lutram | 1       |
+|   quant_V_U                                | -    | -    | yes    | quant_V          | ram_2p  | lutram | 1       |
+|   quant_V_1_U                              | -    | -    | yes    | quant_V_1        | ram_2p  | lutram | 1       |
+|   quant_V_2_U                              | -    | -    | yes    | quant_V_2        | ram_2p  | lutram | 1       |
+|   eq_V_U                                   | -    | -    | yes    | eq_V             | ram_2p  | lutram | 1       |
+|   hist_V_U                                 | 1    | -    | yes    | hist_V           | ram_2p  | bram   | 1       |
+|   xc_index_V_U                             | 1    | -    | yes    | xc_index_V       | ram_1p  | bram   | 1       |
+|   xc_weight_V_U                            | 1    | -    | yes    | xc_weight_V      | ram_1p  | bram   | 1       |
+|   yc_index_V_U                             | 1    | -    | yes    | yc_index_V       | ram_1p  | bram   | 1       |
+|   yc_weight_V_U                            | 1    | -    | yes    | yc_weight_V      | ram_1p  | bram   | 1       |
+|   previous_V_U                             | -    | -    | pragma | previous_V       | ram_2p  | lutram | 1       |
+|  + p_anonymous_namespace_statistics_pass   | 10   | 0    |        |                  |         |        |         |
+|    height_c_U                              | -    | -    |        | height_c         | fifo    | srl    | 0       |
+|    width_c_U                               | -    | -    |        | width_c          | fifo    | srl    | 0       |
+|    words_U                                 | 8    | -    |        | words            | fifo    | memory | 0       |
+|    pixels_U                                | 2    | -    |        | pixels           | fifo    | memory | 0       |
+|  + p_anonymous_namespace_output_pass       | 39   | 0    |        |                  |         |        |         |
+|    mul_ln1540_loc_c_U                      | -    | -    |        | mul_ln1540_loc_c | fifo    | srl    | 0       |
+|    icmp_ln426_loc_c_U                      | -    | -    |        | icmp_ln426_loc_c | fifo    | srl    | 0       |
+|    icmp_ln427_loc_c_U                      | -    | -    |        | icmp_ln427_loc_c | fifo    | srl    | 0       |
+|    collect_c_U                             | -    | -    |        | collect_c        | fifo    | srl    | 0       |
+|    preview_stride_c_U                      | -    | -    |        | preview_stride_c | fifo    | srl    | 0       |
+|    height_c33_U                            | -    | -    |        | height_c33       | fifo    | srl    | 0       |
+|    height_c32_U                            | -    | -    |        | height_c32       | fifo    | srl    | 0       |
+|    height_c_U                              | -    | -    |        | height_c         | fifo    | srl    | 0       |
+|    width_c31_U                             | -    | -    |        | width_c31        | fifo    | srl    | 0       |
+|    width_c30_U                             | -    | -    |        | width_c30        | fifo    | srl    | 0       |
+|    width_c_U                               | -    | -    |        | width_c          | fifo    | srl    | 0       |
+|    preview_c_U                             | -    | -    |        | preview_c        | fifo    | srl    | 0       |
+|    tensor_c_U                              | -    | -    |        | tensor_c         | fifo    | srl    | 0       |
+|    in_words_U                              | 8    | -    |        | in_words         | fifo    | memory | 0       |
+|    tensor_words_U                          | 8    | -    |        | tensor_words     | fifo    | memory | 0       |
+|    preview_words_U                         | 8    | -    |        | preview_words    | fifo    | memory | 0       |
+|    in_pixels_U                             | 2    | -    |        | in_pixels        | fifo    | memory | 0       |
+|    tensor_pixels_U                         | 2    | -    |        | tensor_pixels    | fifo    | memory | 0       |
+|    preview_pixels_U                        | 2    | -    |        | preview_pixels   | fifo    | memory | 0       |
+|    pairs_U                                 | 3    | -    |        | pairs            | fifo    | memory | 0       |
+|    hist_pixels_U                           | -    | -    |        | hist_pixels      | fifo    | srl    | 0       |
+|   + p_anonymous_namespace_resize_and_split | 6    | 0    |        |                  |         |        |         |
+|     rows_V_U                               | 3    | -    | yes    | rows_V           | ram_2p  | bram   | 1       |
+|     rows_V_1_U                             | 3    | -    | yes    | rows_V_1         | ram_2p  | bram   | 1       |
++--------------------------------------------+------+------+--------+------------------+---------+--------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+--------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| Type            | Options                                                                                                            | Location                                                                 |
++-----------------+--------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:11 in word_address                           |
+| bind_op         | variable=base op=mul impl=fabric                                                                                   | ../src/image_preprocess.cpp:15 in word_address, base                     |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:20 in pixel_count                            |
+| bind_op         | variable=count op=mul impl=fabric                                                                                  | ../src/image_preprocess.cpp:23 in pixel_count, count                     |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:28 in round_shift_even                       |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:39 in clip                                   |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:44 in luma                                   |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:55 in adjust                                 |
+| array_partition | variable=c complete                                                                                                | ../src/image_preprocess.cpp:57 in adjust, c                              |
+| unroll          |                                                                                                                    | ../src/image_preprocess.cpp:59 in adjust                                 |
+| unroll          |                                                                                                                    | ../src/image_preprocess.cpp:65 in adjust                                 |
+| unroll          |                                                                                                                    | ../src/image_preprocess.cpp:71 in adjust                                 |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:83 in equalize                               |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:112 in read_words                            |
+| loop_tripcount  | min=416 max=1080                                                                                                   | ../src/image_preprocess.cpp:115 in read_words                            |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:117 in read_words                            |
+| loop_tripcount  | min=78 max=360                                                                                                     | ../src/image_preprocess.cpp:118 in read_words                            |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:126 in unpack                                |
+| loop_tripcount  | min=416 max=1080                                                                                                   | ../src/image_preprocess.cpp:128 in unpack                                |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:132 in unpack                                |
+| loop_tripcount  | min=416 max=1920                                                                                                   | ../src/image_preprocess.cpp:133 in unpack                                |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:148 in histogram_pixels                      |
+| pipeline        | II=2                                                                                                               | ../src/image_preprocess.cpp:150 in histogram_pixels                      |
+| loop_tripcount  | min=173056 max=2073600                                                                                             | ../src/image_preprocess.cpp:151 in histogram_pixels                      |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:163 in statistics_pass                       |
+| dataflow        |                                                                                                                    | ../src/image_preprocess.cpp:164 in statistics_pass                       |
+| stream          | variable=words depth=64                                                                                            | ../src/image_preprocess.cpp:167 in statistics_pass, words                |
+| stream          | variable=pixels depth=64                                                                                           | ../src/image_preprocess.cpp:168 in statistics_pass, pixels               |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:175 in build_lut                             |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:178 in build_lut                             |
+| pipeline        | off                                                                                                                | ../src/image_preprocess.cpp:186 in build_lut                             |
+| pipeline        | off                                                                                                                | ../src/image_preprocess.cpp:198 in build_lut                             |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:214 in make_coordinates                      |
+| pipeline        | off                                                                                                                | ../src/image_preprocess.cpp:216 in make_coordinates                      |
+| loop_tripcount  | min=1 max=416                                                                                                      | ../src/image_preprocess.cpp:217 in make_coordinates                      |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:237 in color_stage                           |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:239 in color_stage                           |
+| loop_tripcount  | min=173056 max=2073600                                                                                             | ../src/image_preprocess.cpp:240 in color_stage                           |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:252 in collect_or_drain                      |
+| pipeline        | II=2                                                                                                               | ../src/image_preprocess.cpp:255 in collect_or_drain                      |
+| loop_tripcount  | min=173056 max=2073600                                                                                             | ../src/image_preprocess.cpp:256 in collect_or_drain                      |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:262 in collect_or_drain                      |
+| loop_tripcount  | min=173056 max=2073600                                                                                             | ../src/image_preprocess.cpp:263 in collect_or_drain                      |
+| inline          |                                                                                                                    | ../src/image_preprocess.cpp:271 in interpolate                           |
+| unroll          |                                                                                                                    | ../src/image_preprocess.cpp:274 in interpolate                           |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:299 in resize_and_split                      |
+| array_partition | variable=rows complete dim=1                                                                                       | ../src/image_preprocess.cpp:301 in resize_and_split, rows                |
+| bind_storage    | variable=rows type=ram_2p impl=bram                                                                                | ../src/image_preprocess.cpp:302 in resize_and_split, rows                |
+| loop_tripcount  | min=0 max=5                                                                                                        | ../src/image_preprocess.cpp:314 in resize_and_split                      |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:316 in resize_and_split                      |
+| loop_tripcount  | min=416 max=1920                                                                                                   | ../src/image_preprocess.cpp:317 in resize_and_split                      |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:326 in resize_and_split                      |
+| unroll          |                                                                                                                    | ../src/image_preprocess.cpp:339 in resize_and_split                      |
+| loop_tripcount  | min=0 max=1080                                                                                                     | ../src/image_preprocess.cpp:348 in resize_and_split                      |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:350 in resize_and_split                      |
+| loop_tripcount  | min=416 max=1920                                                                                                   | ../src/image_preprocess.cpp:351 in resize_and_split                      |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:361 in pack                                  |
+| loop_tripcount  | min=416 max=1080                                                                                                   | ../src/image_preprocess.cpp:364 in pack                                  |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:368 in pack                                  |
+| loop_tripcount  | min=416 max=1920                                                                                                   | ../src/image_preprocess.cpp:369 in pack                                  |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:385 in write_words                           |
+| loop_tripcount  | min=416 max=1080                                                                                                   | ../src/image_preprocess.cpp:389 in write_words                           |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:391 in write_words                           |
+| loop_tripcount  | min=78 max=360                                                                                                     | ../src/image_preprocess.cpp:392 in write_words                           |
+| inline          | off                                                                                                                | ../src/image_preprocess.cpp:406 in output_pass                           |
+| dataflow        |                                                                                                                    | ../src/image_preprocess.cpp:407 in output_pass                           |
+| stream          | variable=in_words depth=64                                                                                         | ../src/image_preprocess.cpp:412 in output_pass, in_words                 |
+| stream          | variable=tensor_words depth=64                                                                                     | ../src/image_preprocess.cpp:413 in output_pass, tensor_words             |
+| stream          | variable=preview_words depth=64                                                                                    | ../src/image_preprocess.cpp:414 in output_pass, preview_words            |
+| stream          | variable=in_pixels depth=64                                                                                        | ../src/image_preprocess.cpp:415 in output_pass, in_pixels                |
+| stream          | variable=tensor_pixels depth=64                                                                                    | ../src/image_preprocess.cpp:416 in output_pass, tensor_pixels            |
+| stream          | variable=preview_pixels depth=64                                                                                   | ../src/image_preprocess.cpp:417 in output_pass, preview_pixels           |
+| stream          | variable=pairs depth=64                                                                                            | ../src/image_preprocess.cpp:418 in output_pass, pairs                    |
+| stream          | variable=hist_pixels depth=64                                                                                      | ../src/image_preprocess.cpp:419 in output_pass, hist_pixels              |
+| interface       | m_axi port=src offset=slave bundle=gmem_in depth=388800 max_read_burst_length=32 num_read_outstanding=2            | ../src/image_preprocess.cpp:443 in image_preprocess, src                 |
+| interface       | m_axi port=luts offset=slave bundle=gmem_in depth=32 max_read_burst_length=32 num_read_outstanding=2               | ../src/image_preprocess.cpp:444 in image_preprocess, luts                |
+| interface       | m_axi port=tensor offset=slave bundle=gmem_out depth=32448 max_write_burst_length=32 num_write_outstanding=2       | ../src/image_preprocess.cpp:445 in image_preprocess, tensor              |
+| interface       | m_axi port=preview offset=slave bundle=gmem_preview depth=388800 max_write_burst_length=32 num_write_outstanding=2 | ../src/image_preprocess.cpp:446 in image_preprocess, preview             |
+| interface       | s_axilite port=src bundle=control                                                                                  | ../src/image_preprocess.cpp:447 in image_preprocess, src                 |
+| interface       | s_axilite port=luts bundle=control                                                                                 | ../src/image_preprocess.cpp:448 in image_preprocess, luts                |
+| interface       | s_axilite port=tensor bundle=control                                                                               | ../src/image_preprocess.cpp:449 in image_preprocess, tensor              |
+| interface       | s_axilite port=preview bundle=control                                                                              | ../src/image_preprocess.cpp:450 in image_preprocess, preview             |
+| interface       | s_axilite port=width bundle=control                                                                                | ../src/image_preprocess.cpp:451 in image_preprocess, width               |
+| interface       | s_axilite port=height bundle=control                                                                               | ../src/image_preprocess.cpp:452 in image_preprocess, height              |
+| interface       | s_axilite port=src_stride bundle=control                                                                           | ../src/image_preprocess.cpp:453 in image_preprocess, src_stride          |
+| interface       | s_axilite port=src_capacity bundle=control                                                                         | ../src/image_preprocess.cpp:454 in image_preprocess, src_capacity        |
+| interface       | s_axilite port=tensor_capacity bundle=control                                                                      | ../src/image_preprocess.cpp:455 in image_preprocess, tensor_capacity     |
+| interface       | s_axilite port=preview_stride bundle=control                                                                       | ../src/image_preprocess.cpp:456 in image_preprocess, preview_stride      |
+| interface       | s_axilite port=preview_capacity bundle=control                                                                     | ../src/image_preprocess.cpp:457 in image_preprocess, preview_capacity    |
+| interface       | s_axilite port=resized_w bundle=control                                                                            | ../src/image_preprocess.cpp:458 in image_preprocess, resized_w           |
+| interface       | s_axilite port=resized_h bundle=control                                                                            | ../src/image_preprocess.cpp:459 in image_preprocess, resized_h           |
+| interface       | s_axilite port=pad_x bundle=control                                                                                | ../src/image_preprocess.cpp:460 in image_preprocess, pad_x               |
+| interface       | s_axilite port=pad_y bundle=control                                                                                | ../src/image_preprocess.cpp:461 in image_preprocess, pad_y               |
+| interface       | s_axilite port=output_mode bundle=control                                                                          | ../src/image_preprocess.cpp:462 in image_preprocess, output_mode         |
+| interface       | s_axilite port=flags bundle=control                                                                                | ../src/image_preprocess.cpp:463 in image_preprocess, flags               |
+| interface       | s_axilite port=eq_mode bundle=control                                                                              | ../src/image_preprocess.cpp:464 in image_preprocess, eq_mode             |
+| interface       | s_axilite port=saturation_q12 bundle=control                                                                       | ../src/image_preprocess.cpp:465 in image_preprocess, saturation_q12      |
+| interface       | s_axilite port=frame_id bundle=control                                                                             | ../src/image_preprocess.cpp:466 in image_preprocess, frame_id            |
+| interface       | s_axilite port=config_id bundle=control                                                                            | ../src/image_preprocess.cpp:467 in image_preprocess, config_id           |
+| interface       | s_axilite port=completed_frame_id bundle=control                                                                   | ../src/image_preprocess.cpp:468 in image_preprocess, completed_frame_id  |
+| interface       | s_axilite port=completed_config_id bundle=control                                                                  | ../src/image_preprocess.cpp:469 in image_preprocess, completed_config_id |
+| interface       | s_axilite port=tensor_bytes bundle=control                                                                         | ../src/image_preprocess.cpp:470 in image_preprocess, tensor_bytes        |
+| interface       | s_axilite port=preview_bytes bundle=control                                                                        | ../src/image_preprocess.cpp:471 in image_preprocess, preview_bytes       |
+| interface       | s_axilite port=abi_version bundle=control                                                                          | ../src/image_preprocess.cpp:472 in image_preprocess, abi_version         |
+| interface       | s_axilite port=return bundle=control                                                                               | ../src/image_preprocess.cpp:473 in image_preprocess, return              |
+| bind_op         | variable=source_required op=mul impl=fabric                                                                        | ../src/image_preprocess.cpp:486 in image_preprocess, source_required     |
+| bind_op         | variable=preview_required op=mul impl=fabric                                                                       | ../src/image_preprocess.cpp:487 in image_preprocess, preview_required    |
+| array_partition | variable=color complete dim=1                                                                                      | ../src/image_preprocess.cpp:497 in image_preprocess, color               |
+| array_partition | variable=quant complete dim=1                                                                                      | ../src/image_preprocess.cpp:498 in image_preprocess, quant               |
+| bind_storage    | variable=color type=ram_2p impl=lutram                                                                             | ../src/image_preprocess.cpp:499 in image_preprocess, color               |
+| bind_storage    | variable=quant type=ram_2p impl=lutram                                                                             | ../src/image_preprocess.cpp:500 in image_preprocess, quant               |
+| bind_storage    | variable=eq type=ram_2p impl=lutram                                                                                | ../src/image_preprocess.cpp:501 in image_preprocess, eq                  |
+| bind_storage    | variable=hist type=ram_2p impl=bram                                                                                | ../src/image_preprocess.cpp:503 in image_preprocess, hist                |
+| bind_storage    | variable=previous type=ram_2p impl=lutram                                                                          | ../src/image_preprocess.cpp:508 in image_preprocess, previous            |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:515 in image_preprocess                      |
+| unroll          |                                                                                                                    | ../src/image_preprocess.cpp:518 in image_preprocess                      |
+| pipeline        | II=1                                                                                                               | ../src/image_preprocess.cpp:525 in image_preprocess                      |
+| bind_storage    | variable=xc type=ram_1p impl=bram                                                                                  | ../src/image_preprocess.cpp:530 in image_preprocess, xc                  |
+| bind_storage    | variable=yc type=ram_1p impl=bram                                                                                  | ../src/image_preprocess.cpp:531 in image_preprocess, yc                  |
++-----------------+--------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------+
+
+

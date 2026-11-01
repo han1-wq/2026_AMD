@@ -1,0 +1,401 @@
+{
+  "scope": "Real AMCL + production guard, synthetic scan/map/TF, inert planner, no hardware", 
+  "results": [
+    {
+      "phase": "cold_start_rejects_all_goal_and_speed_inputs", 
+      "guard": {
+        "current_fault": "high_pose_uncertainty", 
+        "stamp": 1792510862.155397, 
+        "initial_pose_required": true, 
+        "reason": "map_changed_initial_pose_required", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 0.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": "map_changed_initial_pose_required"
+      }, 
+      "forwarded": 0, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "explicit_wrong_initial_pose_rejected", 
+      "guard": {
+        "current_fault": "initial_pose_disagreement", 
+        "stamp": 1792510868.600835, 
+        "initial_pose_required": false, 
+        "reason": "initial_pose_disagreement", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 0.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }, 
+      "forwarded": 0, 
+      "output_zero": true
+    }, 
+    {
+      "estimated_pose": [
+        1.9764632469774126, 
+        0.9799878611480733, 
+        -2.5427793654590927
+      ], 
+      "guard": {
+        "current_fault": "scan_ray_obstructed", 
+        "stamp": 1792510874.599653, 
+        "initial_pose_required": false, 
+        "reason": "scan_ray_obstructed", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 0.7666666666666667, 
+        "ray_conflict": 0.16666666666666666, 
+        "latched_reason": ""
+      }, 
+      "truth_pose": [
+        2.0, 
+        1.0, 
+        0.6
+      ], 
+      "phase": "reversed_heading_diagnostic", 
+      "position_error_m": 0.03089440797741671, 
+      "yaw_error_rad": 3.140405941720494
+    }, 
+    {
+      "phase": "correct_position_reversed_initial_heading_rejected", 
+      "guard": {
+        "current_fault": "scan_ray_obstructed", 
+        "stamp": 1792510875.008228, 
+        "initial_pose_required": false, 
+        "reason": "scan_ray_obstructed", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 0.7666666666666667, 
+        "ray_conflict": 0.16666666666666666, 
+        "latched_reason": ""
+      }, 
+      "forwarded": 0, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "correct_initial_pose_converges_and_confirms", 
+      "position_error_m": 0.04858288057949265, 
+      "yaw_error_rad": 0.005386034879614754, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510878.45907, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "confirmed_action_and_speed_forwarded", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510878.561051, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "transient_scan_recovers_without_initialpose_or_old_goal_replay", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510881.929468, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "fresh_goal_after_transient_recovery_moves_without_initialpose", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510882.031385, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "scan_loss_cancels_goal_and_stops", 
+      "guard": {
+        "current_fault": "stale_scan", 
+        "stamp": 1792510883.049159, 
+        "initial_pose_required": false, 
+        "reason": "stale_scan", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }, 
+      "stop_latency_s": 1.0596859455108643
+    }, 
+    {
+      "phase": "scan_recovery_requires_new_initial_pose", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510891.146113, 
+        "initial_pose_required": true, 
+        "reason": "stale_scan_initial_pose_required", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": "stale_scan_initial_pose_required"
+      }, 
+      "forwarded": 2, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "reinitialize_after_scan_loss", 
+      "position_error_m": 0.04925936385857953, 
+      "yaw_error_rad": 0.011031703717831689, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510894.097892, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "scan_map_mismatch_stops_navigation", 
+      "guard": {
+        "current_fault": "scan_map_mismatch", 
+        "stamp": 1792510894.19971, 
+        "initial_pose_required": false, 
+        "reason": "scan_map_mismatch", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 0.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "reinitialize_after_scan_mismatch", 
+      "position_error_m": 0.04258677648114806, 
+      "yaw_error_rad": 0.0071828362742411, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510897.666148, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "tf_loss_stops_navigation", 
+      "guard": {
+        "current_fault": "invalid_scan_or_tf: Lookup would require extrapolation into the future.  Requested time 1792510898.230912924 but the latest data is at time 1792510897.674876928, when looking up transform from frame [base_footprint] to frame [odom]", 
+        "stamp": 1792510898.27971, 
+        "initial_pose_required": false, 
+        "reason": "invalid_scan_or_tf: Lookup would require extrapolation into the future.  Requested time 1792510898.230912924 but the latest data is at time 1792510897.674876928, when looking up transform from frame [base_footprint] to frame [odom]", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "reinitialize_after_tf_loss", 
+      "position_error_m": 0.05190563382274152, 
+      "yaw_error_rad": 0.004674565564652178, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510901.138537, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "same_map_reuse_resets_confirmation", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510901.858448, 
+        "initial_pose_required": true, 
+        "reason": "initial_pose_required", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": "initial_pose_required"
+      }, 
+      "forwarded": 2, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "confirm_before_amcl_restart", 
+      "position_error_m": 0.045735266072920895, 
+      "yaw_error_rad": 0.005363841479478659, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510905.238437, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "amcl_restart_never_reuses_confirmation", 
+      "guard": {
+        "current_fault": "high_pose_uncertainty", 
+        "stamp": 1792510916.38377, 
+        "initial_pose_required": true, 
+        "reason": "stale_amcl_pose_initial_pose_required", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": "stale_amcl_pose_initial_pose_required"
+      }, 
+      "forwarded": 2, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "correct_initial_pose_after_restart", 
+      "position_error_m": 0.07812840131290628, 
+      "yaw_error_rad": 0.0081073746636795, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510919.953026, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "confirm_after_second_session_reset", 
+      "position_error_m": 0.03556281054748428, 
+      "yaw_error_rad": 0.001047787902184183, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510923.018137, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "previous_session_goal_rejected", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510923.018137, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "high_covariance_rejected_by_quality_checker", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510923.018137, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "map_replacement_revokes_confirmation", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510923.529402, 
+        "initial_pose_required": true, 
+        "reason": "map_changed_initial_pose_required", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": "map_changed_initial_pose_required"
+      }, 
+      "forwarded": 2, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "reinitialize_after_map_replacement", 
+      "position_error_m": 0.04258677648114806, 
+      "yaw_error_rad": 0.0071828362742411, 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510927.009602, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }
+    }, 
+    {
+      "phase": "invalid_initial_pose_revokes_confirmation", 
+      "guard": {
+        "current_fault": "", 
+        "stamp": 1792510927.519301, 
+        "initial_pose_required": true, 
+        "reason": "invalid_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0, 
+        "latched_reason": "invalid_initial_pose"
+      }, 
+      "forwarded": 2, 
+      "output_zero": true
+    }
+  ], 
+  "passed": true
+}

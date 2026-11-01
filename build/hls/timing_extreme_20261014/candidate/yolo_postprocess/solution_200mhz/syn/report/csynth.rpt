@@ -1,0 +1,351 @@
+
+
+================================================================
+== Synthesis Summary Report of 'yolo_postprocess'
+================================================================
++ General Information: 
+    * Date:           Wed Oct 14 00:10:51 2026
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        yolo_postprocess
+    * Solution:       solution_200mhz (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |                             Modules                             |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |         |            |            |     |
+    |                             & Loops                             |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |   DSP   |     FF     |     LUT    | URAM|
+    +-----------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+    |+ yolo_postprocess                                               |  Timing|  -0.01|        -|          -|         -|        -|     -|        no|  12 (4%)|  22 (1%)|   8366 (3%)|  10540 (8%)|    -|
+    | + yolo_postprocess_Pipeline_VITIS_LOOP_171_8                    |  Timing|  -0.01|        -|          -|         -|        -|     -|        no|        -|        -|   245 (~0%)|   108 (~0%)|    -|
+    |  o VITIS_LOOP_171_8                                             |       -|   4.37|        -|          -|         3|        1|     -|       yes|        -|        -|           -|           -|    -|
+    | o VITIS_LOOP_130_1                                              |       -|   4.37|  2585037|  1.293e+07|    861679|        -|     3|        no|        -|        -|           -|           -|    -|
+    |  + yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3  |  Timing|  -0.01|     1802|  9.010e+03|         -|     1802|     -|        no|        -|        -|   371 (~0%)|   817 (~0%)|    -|
+    |   o VITIS_LOOP_131_2_VITIS_LOOP_132_3                           |       -|   4.37|     1800|  9.000e+03|        10|        1|  1792|       yes|        -|        -|           -|           -|    -|
+    |  o VITIS_LOOP_138_4_VITIS_LOOP_139_5_VITIS_LOOP_140_6           |       -|   4.37|   859872|  4.299e+06|       106|        -|  8112|        no|        -|        -|           -|           -|    -|
+    |   + yolo_postprocess_Pipeline_VITIS_LOOP_145_7                  |  Timing|  -0.01|       97|    485.000|         -|       97|     -|        no|        -|        -|   861 (~0%)|   1215 (1%)|    -|
+    |    o VITIS_LOOP_145_7                                           |       -|   4.37|       95|    475.000|        12|        1|    85|       yes|        -|        -|           -|           -|    -|
+    | o VITIS_LOOP_173_9                                              |       -|   4.37|        -|          -|         -|        -|     -|        no|        -|        -|           -|           -|    -|
+    |  + yolo_postprocess_Pipeline_VITIS_LOOP_175_10                  |       -|   1.27|        -|          -|         -|        -|     -|        no|        -|        -|   133 (~0%)|   199 (~0%)|    -|
+    |   o VITIS_LOOP_175_10                                           |       -|   4.37|        -|          -|         2|        1|     -|       yes|        -|        -|           -|           -|    -|
+    |  + yolo_postprocess_Pipeline_VITIS_LOOP_183_11                  |       -|   0.75|        -|          -|         -|        -|     -|        no|        -|  16 (1%)|   2547 (1%)|   1895 (1%)|    -|
+    |   o VITIS_LOOP_183_11                                           |       -|   4.37|        -|          -|        22|        1|     -|       yes|        -|        -|           -|           -|    -|
+    |    + p_anonymous_namespace_suppress                             |      II|   1.12|       18|     90.000|         -|        1|     -|       yes|        -|  16 (1%)|  2207 (~0%)|   1692 (1%)|    -|
+    |     + p_anonymous_namespace_area                                |       -|   2.69|        6|     30.000|         -|        1|     -|       yes|        -|  4 (~0%)|   337 (~0%)|   196 (~0%)|    -|
+    |     + p_anonymous_namespace_area                                |       -|   2.69|        6|     30.000|         -|        1|     -|       yes|        -|  4 (~0%)|   337 (~0%)|   196 (~0%)|    -|
+    |     + p_anonymous_namespace_area                                |       -|   2.69|        6|     30.000|         -|        1|     -|       yes|        -|  4 (~0%)|   337 (~0%)|   196 (~0%)|    -|
+    |     + p_anonymous_namespace_threshold_product                   |       -|   2.50|        6|     30.000|         -|        1|     -|       yes|        -|  4 (~0%)|   439 (~0%)|   261 (~0%)|    -|
+    +-----------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+---------+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| Interface      | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   |
+|                | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |
++----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+| m_axi_gmem_in  | 128 -> 128 | 64            | 0       | slave  | 0        | 0         | 32           | 16           | 2           | 16          |
+| m_axi_gmem_out | 256 -> 256 | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 2           |
++----------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 24     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------------------+--------+-------+--------+-----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register             | Offset | Width | Access | Description                       | Bit Fields                                                           |
++---------------+----------------------+--------+-------+--------+-----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL                 | 0x00   | 32    | RW     | Control signals                   | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER                 | 0x04   | 32    | RW     | Global Interrupt Enable Register  | 0=Enable                                                             |
+| s_axi_control | IP_IER               | 0x08   | 32    | RW     | IP Interrupt Enable Register      | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR               | 0x0c   | 32    | RW     | IP Interrupt Status Register      | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | ap_return            | 0x10   | 32    | R      | Data signal of ap_return          |                                                                      |
+| s_axi_control | input_r_1            | 0x18   | 32    | W      | Data signal of input_r            |                                                                      |
+| s_axi_control | input_r_2            | 0x1c   | 32    | W      | Data signal of input_r            |                                                                      |
+| s_axi_control | tables_1             | 0x24   | 32    | W      | Data signal of tables             |                                                                      |
+| s_axi_control | tables_2             | 0x28   | 32    | W      | Data signal of tables             |                                                                      |
+| s_axi_control | output_r_1           | 0x30   | 32    | W      | Data signal of output_r           |                                                                      |
+| s_axi_control | output_r_2           | 0x34   | 32    | W      | Data signal of output_r           |                                                                      |
+| s_axi_control | input_words          | 0x3c   | 32    | W      | Data signal of input_words        |                                                                      |
+| s_axi_control | table_words          | 0x44   | 32    | W      | Data signal of table_words        |                                                                      |
+| s_axi_control | output_capacity      | 0x4c   | 32    | W      | Data signal of output_capacity    |                                                                      |
+| s_axi_control | confidence_q30       | 0x54   | 32    | W      | Data signal of confidence_q30     |                                                                      |
+| s_axi_control | nms_q16              | 0x5c   | 32    | W      | Data signal of nms_q16            |                                                                      |
+| s_axi_control | enable_nms           | 0x64   | 32    | W      | Data signal of enable_nms         |                                                                      |
+| s_axi_control | candidate_count      | 0x6c   | 32    | R      | Data signal of candidate_count    |                                                                      |
+| s_axi_control | candidate_count_ctrl | 0x70   | 32    | R      | Control signal of candidate_count | 0=candidate_count_ap_vld                                             |
+| s_axi_control | detection_count      | 0x7c   | 32    | R      | Data signal of detection_count    |                                                                      |
+| s_axi_control | detection_count_ctrl | 0x80   | 32    | R      | Control signal of detection_count | 0=detection_count_ap_vld                                             |
++---------------+----------------------+--------+-------+--------+-----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+----------------------+
+| Argument        | Direction | Datatype             |
++-----------------+-----------+----------------------+
+| input           | in        | ap_uint<128> const * |
+| tables          | in        | unsigned int const * |
+| output          | out       | ap_uint<256>*        |
+| input_words     | in        | unsigned int         |
+| table_words     | in        | unsigned int         |
+| output_capacity | in        | unsigned int         |
+| confidence_q30  | in        | unsigned int         |
+| nms_q16         | in        | unsigned int         |
+| enable_nms      | in        | unsigned int         |
+| candidate_count | out       | unsigned int&        |
+| detection_count | out       | unsigned int&        |
+| return          | out       | unsigned int         |
++-----------------+-----------+----------------------+
+
+* SW-to-HW Mapping
++-----------------+----------------+-----------+----------+------------------------------------------------+
+| Argument        | HW Interface   | HW Type   | HW Usage | HW Info                                        |
++-----------------+----------------+-----------+----------+------------------------------------------------+
+| input           | m_axi_gmem_in  | interface |          |                                                |
+| input           | s_axi_control  | interface | offset   |                                                |
+| tables          | m_axi_gmem_in  | interface |          |                                                |
+| tables          | s_axi_control  | register  | offset   | name=tables_1 offset=0x24 range=32             |
+| tables          | s_axi_control  | register  | offset   | name=tables_2 offset=0x28 range=32             |
+| output          | m_axi_gmem_out | interface |          |                                                |
+| output          | s_axi_control  | interface | offset   |                                                |
+| input_words     | s_axi_control  | register  |          | name=input_words offset=0x3c range=32          |
+| table_words     | s_axi_control  | register  |          | name=table_words offset=0x44 range=32          |
+| output_capacity | s_axi_control  | register  |          | name=output_capacity offset=0x4c range=32      |
+| confidence_q30  | s_axi_control  | register  |          | name=confidence_q30 offset=0x54 range=32       |
+| nms_q16         | s_axi_control  | register  |          | name=nms_q16 offset=0x5c range=32              |
+| enable_nms      | s_axi_control  | register  |          | name=enable_nms offset=0x64 range=32           |
+| candidate_count | s_axi_control  | register  |          | name=candidate_count offset=0x6c range=32      |
+| candidate_count | s_axi_control  | register  |          | name=candidate_count_ctrl offset=0x70 range=32 |
+| detection_count | s_axi_control  | register  |          | name=detection_count offset=0x7c range=32      |
+| detection_count | s_axi_control  | register  |          | name=detection_count_ctrl offset=0x80 range=32 |
+| return          | s_axi_control  | register  |          | name=ap_return offset=0x10 range=32            |
++-----------------+----------------+-----------+----------+------------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++----------------+------------------+-----------+----------+-------+-------------------------------------------------------------------------------------------------------------+
+| HW Interface   | Loop             | Direction | Length   | Width | Location                                                                                                    |
++----------------+------------------+-----------+----------+-------+-------------------------------------------------------------------------------------------------------------+
+| m_axi_gmem_out | VITIS_LOOP_171_8 | write     | variable | 256   | /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:171:27 |
++----------------+------------------+-----------+----------+-------+-------------------------------------------------------------------------------------------------------------+
+
+* Inferred Bursts and Widening Missed
++----------------+----------+------------------+--------------------------------------------------------------------------------------------------------+------------+-------------------------------------------------------------------------------------------------------------+
+| HW Interface   | Variable | Loop             | Problem                                                                                                | Resolution | Location                                                                                                    |
++----------------+----------+------------------+--------------------------------------------------------------------------------------------------------+------------+-------------------------------------------------------------------------------------------------------------+
+| m_axi_gmem_in  | input    | VITIS_LOOP_145_7 | Access load is in the conditional branch                                                               | 214-232    | /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:145:39 |
+| m_axi_gmem_in  | tables   |                  | Access is clobbered by load                                                                            | 214-231    | /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:131:27 |
+| m_axi_gmem_out | output   | VITIS_LOOP_171_8 | Could not widen since type i256 size is greater than or equal to the max_widen_bitwidth threshold of 0 | 214-353    | /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:171:27 |
+| m_axi_gmem_in  | tables   | VITIS_LOOP_132_3 | Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0  | 214-353    | /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:132:31 |
++----------------+----------+------------------+--------------------------------------------------------------------------------------------------------+------------+-------------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------------------------------------------------+-----+--------+-----------------+-----+--------+---------+
+| Name                                                                    | DSP | Pragma | Variable        | Op  | Impl   | Latency |
++-------------------------------------------------------------------------+-----+--------+-----------------+-----+--------+---------+
+| + yolo_postprocess                                                      | 22  |        |                 |     |        |         |
+|   add_ln119_fu_917_p2                                                   | -   |        | add_ln119       | add | fabric | 0       |
+|   add_ln130_fu_1040_p2                                                  | -   |        | add_ln130       | add | fabric | 0       |
+|   empty_68_fu_1070_p2                                                   | -   |        | empty_68        | sub | fabric | 0       |
+|   sub_ln138_fu_1184_p2                                                  | -   |        | sub_ln138       | sub | fabric | 0       |
+|   mul_8ns_6ns_14_1_1_U84                                                | -   |        | mul_ln138       | mul | auto   | 0       |
+|   add_ln138_fu_1207_p2                                                  | -   |        | add_ln138       | add | fabric | 0       |
+|   sub_ln138_1_fu_1127_p2                                                | -   |        | sub_ln138_1     | sub | fabric | 0       |
+|   mac_muladd_14ns_6ns_21ns_21_4_1_U91                                   | 1   |        | mul_ln138_1     | mul | dsp48  | 3       |
+|   mac_muladd_14ns_6ns_21ns_21_4_1_U91                                   | 1   |        | add_ln138_1     | add | dsp48  | 3       |
+|   mul_6ns_6ns_11_1_1_U85                                                | -   |        | mul1031920      | mul | auto   | 0       |
+|   add_ln138_2_fu_1241_p2                                                | -   |        | add_ln138_2     | add | fabric | 0       |
+|   add_ln139_fu_1251_p2                                                  | -   |        | add_ln139       | add | fabric | 0       |
+|   add_ln139_1_fu_1256_p2                                                | -   |        | add_ln139_1     | add | fabric | 0       |
+|   y_2_fu_1395_p2                                                        | -   |        | y_2             | add | fabric | 0       |
+|   mul_6ns_6ns_11_1_1_U86                                                | -   |        | mul_ln127       | mul | auto   | 0       |
+|   add_ln140_fu_1332_p2                                                  | -   |        | add_ln140       | add | fabric | 0       |
+|   add_ln140_1_fu_1338_p2                                                | -   |        | add_ln140_1     | add | fabric | 0       |
+|   x_2_fu_1430_p2                                                        | -   |        | x_2             | add | fabric | 0       |
+|   mul_6ns_6ns_11_1_1_U87                                                | -   |        | mul1031920_mid1 | mul | auto   | 0       |
+|   add_ln145_fu_1377_p2                                                  | -   |        | add_ln145       | add | fabric | 0       |
+|   mul_32s_32s_32_1_1_U88                                                | 3   |        | b_score         | mul | auto   | 0       |
+|   mul_32s_6ns_32_1_1_U89                                                | 1   |        | mul_ln159       | mul | auto   | 0       |
+|   add_ln159_fu_1641_p2                                                  | -   |        | add_ln159       | add | fabric | 0       |
+|   cx_fu_1660_p2                                                         | -   |        | cx              | add | fabric | 0       |
+|   mul_32s_6ns_32_1_1_U90                                                | 1   |        | mul_ln160       | mul | auto   | 0       |
+|   add_ln160_fu_1669_p2                                                  | -   |        | add_ln160       | add | fabric | 0       |
+|   cy_fu_1688_p2                                                         | -   |        | cy              | add | fabric | 0       |
+|   add_ln161_fu_1607_p2                                                  | -   |        | add_ln161       | add | fabric | 0       |
+|   add_ln162_fu_1617_p2                                                  | -   |        | add_ln162       | add | fabric | 0       |
+|   add_ln162_1_fu_1631_p2                                                | -   |        | add_ln162_1     | add | fabric | 0       |
+|   boxes_x1_d1                                                           | -   |        | b_x1            | sub | fabric | 0       |
+|   boxes_y1_d1                                                           | -   |        | b_y1            | sub | fabric | 0       |
+|   boxes_x2_d1                                                           | -   |        | b_x2            | add | fabric | 0       |
+|   boxes_y2_d1                                                           | -   |        | b_y2            | add | fabric | 0       |
+|   count_2_fu_1549_p2                                                    | -   |        | count_2         | add | fabric | 0       |
+|   add_ln140_2_fu_1725_p2                                                | -   |        | add_ln140_2     | add | fabric | 0       |
+|   id_6_fu_1730_p2                                                       | -   |        | id_6            | add | fabric | 0       |
+|   add_ln139_3_fu_1735_p2                                                | -   |        | add_ln139_3     | add | fabric | 0       |
+|   written_2_fu_1760_p2                                                  | -   |        | written_2       | add | fabric | 0       |
+|   add_ln181_fu_1800_p2                                                  | -   |        | add_ln181       | add | fabric | 0       |
+|  + yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3          | 0   |        |                 |     |        |         |
+|    add_ln131_1_fu_189_p2                                                | -   |        | add_ln131_1     | add | fabric | 0       |
+|    add_ln131_fu_201_p2                                                  | -   |        | add_ln131       | add | fabric | 0       |
+|    add_ln134_3_fu_241_p2                                                | -   |        | add_ln134_3     | add | fabric | 0       |
+|    add_ln134_2_fu_333_p2                                                | -   |        | add_ln134_2     | add | fabric | 0       |
+|    add_ln132_fu_291_p2                                                  | -   |        | add_ln132       | add | fabric | 0       |
+|  + yolo_postprocess_Pipeline_VITIS_LOOP_145_7                           | 0   |        |                 |     |        |         |
+|    add_ln145_fu_322_p2                                                  | -   |        | add_ln145       | add | fabric | 0       |
+|    add_ln147_fu_363_p2                                                  | -   |        | add_ln147       | add | fabric | 0       |
+|    add_ln153_fu_547_p2                                                  | -   |        | add_ln153       | add | fabric | 0       |
+|    byte_index_1_fu_382_p2                                               | -   |        | byte_index_1    | add | fabric | 0       |
+|  + yolo_postprocess_Pipeline_VITIS_LOOP_175_10                          | 0   |        |                 |     |        |         |
+|    add_ln175_fu_105_p2                                                  | -   |        | add_ln175       | add | fabric | 0       |
+|  + yolo_postprocess_Pipeline_VITIS_LOOP_183_11                          | 16  |        |                 |     |        |         |
+|    add_ln183_fu_212_p2                                                  | -   |        | add_ln183       | add | fabric | 0       |
+|   + p_anonymous_namespace_suppress                                      | 16  |        |                 |     |        |         |
+|     sub_ln74_fu_227_p2                                                  | -   |        | sub_ln74        | sub | fabric | 0       |
+|     sub_ln74_1_fu_233_p2                                                | -   |        | sub_ln74_1      | sub | fabric | 0       |
+|     grp_p_anonymous_namespace_area_fu_117_w                             | -   |        | sub_ln75        | sub | fabric | 0       |
+|     grp_p_anonymous_namespace_area_fu_117_h                             | -   |        | sub_ln75_1      | sub | fabric | 0       |
+|     grp_p_anonymous_namespace_area_fu_123_w                             | -   |        | sub_ln76        | sub | fabric | 0       |
+|     grp_p_anonymous_namespace_area_fu_123_h                             | -   |        | sub_ln76_1      | sub | fabric | 0       |
+|     add_65ns_65ns_65_3_1_U48                                            | -   | yes    | ret_V           | add | fabric | 0       |
+|     sub_65ns_65ns_65_3_1_U49                                            | -   | yes    | ret_V_7         | sub | fabric | 0       |
+|    + p_anonymous_namespace_area (grp_p_anonymous_namespace_area_fu_117) | 4   |        |                 |     |        |         |
+|      mul_mul_16ns_16ns_32_4_0_U26                                       | 1   | yes    | ret_V           | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U27                                       | 1   | yes    | ret_V_8         | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U28                                       | 1   | yes    | ret_V_9         | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U29                                       | 1   | yes    | ret_V_10        | mul | dsp48  | 3       |
+|      add_33ns_33ns_33_2_0_U23                                           | -   | yes    | ret_V_11        | add | fabric | 0       |
+|      add_33ns_33ns_33_2_0_U24                                           | -   | yes    | ret_V_12        | add | fabric | 0       |
+|      add_32ns_32ns_32_2_0_U25                                           | -   | yes    | ret_V_13        | add | fabric | 0       |
+|    + p_anonymous_namespace_area (grp_p_anonymous_namespace_area_fu_123) | 4   |        |                 |     |        |         |
+|      mul_mul_16ns_16ns_32_4_0_U26                                       | 1   | yes    | ret_V           | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U27                                       | 1   | yes    | ret_V_8         | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U28                                       | 1   | yes    | ret_V_9         | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U29                                       | 1   | yes    | ret_V_10        | mul | dsp48  | 3       |
+|      add_33ns_33ns_33_2_0_U23                                           | -   | yes    | ret_V_11        | add | fabric | 0       |
+|      add_33ns_33ns_33_2_0_U24                                           | -   | yes    | ret_V_12        | add | fabric | 0       |
+|      add_32ns_32ns_32_2_0_U25                                           | -   | yes    | ret_V_13        | add | fabric | 0       |
+|    + p_anonymous_namespace_area (grp_p_anonymous_namespace_area_fu_129) | 4   |        |                 |     |        |         |
+|      mul_mul_16ns_16ns_32_4_0_U26                                       | 1   | yes    | ret_V           | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U27                                       | 1   | yes    | ret_V_8         | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U28                                       | 1   | yes    | ret_V_9         | mul | dsp48  | 3       |
+|      mul_mul_16ns_16ns_32_4_0_U29                                       | 1   | yes    | ret_V_10        | mul | dsp48  | 3       |
+|      add_33ns_33ns_33_2_0_U23                                           | -   | yes    | ret_V_11        | add | fabric | 0       |
+|      add_33ns_33ns_33_2_0_U24                                           | -   | yes    | ret_V_12        | add | fabric | 0       |
+|      add_32ns_32ns_32_2_0_U25                                           | -   | yes    | ret_V_13        | add | fabric | 0       |
+|    + p_anonymous_namespace_threshold_product                            | 4   |        |                 |     |        |         |
+|      mul_mul_17ns_16ns_33_4_0_U39                                       | 1   | yes    | ret_V           | mul | dsp48  | 3       |
+|      mul_mul_17ns_16ns_33_4_0_U40                                       | 1   | yes    | ret_V_1         | mul | dsp48  | 3       |
+|      mul_mul_17ns_16ns_33_4_0_U41                                       | 1   | yes    | ret_V_2         | mul | dsp48  | 3       |
+|      mul_mul_17ns_16ns_33_4_0_U42                                       | 1   | yes    | ret_V_3         | mul | dsp48  | 3       |
+|      add_16ns_16ns_16_2_0_U35                                           | -   | yes    | add_ln1541      | add | fabric | 0       |
+|      s1_V_fu_191_p2                                                     | -   |        | s1_V            | add | fabric | 0       |
+|      add_33ns_33ns_33_2_0_U36                                           | -   | yes    | ret_V_4         | add | fabric | 0       |
+|      add_33ns_33ns_33_2_0_U37                                           | -   | yes    | ret_V_5         | add | fabric | 0       |
+|      add_18ns_18ns_18_2_0_U38                                           | -   | yes    | ret_V_6         | add | fabric | 0       |
+|  + yolo_postprocess_Pipeline_VITIS_LOOP_171_8                           | 0   |        |                 |     |        |         |
+|    add_ln171_fu_203_p2                                                  | -   |        | add_ln171       | add | fabric | 0       |
++-------------------------------------------------------------------------+-----+--------+-----------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------+------+------+--------+-------------+---------+------+---------+
+| Name               | BRAM | URAM | Pragma | Variable    | Storage | Impl | Latency |
++--------------------+------+------+--------+-------------+---------+------+---------+
+| + yolo_postprocess | 12   | 0    |        |             |         |      |         |
+|   boxes_x1_U       | 1    | -    | yes    | boxes_x1    | ram_2p  | bram | 1       |
+|   boxes_y1_U       | 1    | -    | yes    | boxes_y1    | ram_2p  | bram | 1       |
+|   boxes_x2_U       | 1    | -    | yes    | boxes_x2    | ram_2p  | bram | 1       |
+|   boxes_y2_U       | 1    | -    | yes    | boxes_y2    | ram_2p  | bram | 1       |
+|   boxes_score_U    | 2    | -    | yes    | boxes_score | ram_2p  | bram | 1       |
+|   boxes_cls_U      | 1    | -    | yes    | boxes_cls   | ram_2p  | bram | 1       |
+|   boxes_id_U       | 1    | -    | yes    | boxes_id    | ram_2p  | bram | 1       |
+|   lut_U            | 4    | -    | yes    | lut         | ram_2p  | bram | 1       |
++--------------------+------+------+--------+-------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| Type            | Options                                                                                                    | Location                                                                                      |
++-----------------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+| inline          | off                                                                                                        | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:11 in area                               |
+| pipeline        | II=1                                                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:12 in area                               |
+| bind_op         | variable=p00 op=mul impl=dsp latency=3                                                                     | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:20 in area, p00                          |
+| bind_op         | variable=p01 op=mul impl=dsp latency=3                                                                     | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:21 in area, p01                          |
+| bind_op         | variable=p10 op=mul impl=dsp latency=3                                                                     | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:22 in area, p10                          |
+| bind_op         | variable=p11 op=mul impl=dsp latency=3                                                                     | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:23 in area, p11                          |
+| bind_op         | variable=cross op=add impl=fabric latency=1                                                                | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:27 in area, cross                        |
+| bind_op         | variable=middle op=add impl=fabric latency=1                                                               | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:28 in area, middle                       |
+| bind_op         | variable=high op=add impl=fabric latency=1                                                                 | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:29 in area, high                         |
+| inline          | off                                                                                                        | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:38 in threshold_product                  |
+| pipeline        | II=1                                                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:39 in threshold_product                  |
+| bind_op         | variable=p0 op=mul impl=dsp latency=3                                                                      | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:46 in threshold_product, p0              |
+| bind_op         | variable=p1 op=mul impl=dsp latency=3                                                                      | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:47 in threshold_product, p1              |
+| bind_op         | variable=p2 op=mul impl=dsp latency=3                                                                      | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:48 in threshold_product, p2              |
+| bind_op         | variable=p3 op=mul impl=dsp latency=3                                                                      | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:49 in threshold_product, p3              |
+| bind_op         | variable=s1 op=add impl=fabric latency=1                                                                   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:54 in threshold_product, s1              |
+| bind_op         | variable=s2 op=add impl=fabric latency=1                                                                   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:55 in threshold_product, s2              |
+| bind_op         | variable=s3 op=add impl=fabric latency=1                                                                   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:56 in threshold_product, s3              |
+| bind_op         | variable=high op=add impl=fabric latency=1                                                                 | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:57 in threshold_product, high            |
+| inline          | off                                                                                                        | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:68 in suppress                           |
+| bind_op         | variable=sum op=add impl=fabric latency=2                                                                  | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:78 in suppress, sum                      |
+| bind_op         | variable=total op=sub impl=fabric latency=2                                                                | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:79 in suppress, total                    |
+| interface       | m_axi port=input offset=slave bundle=gmem_in depth=56563 max_read_burst_length=32 num_read_outstanding=2   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:103 in yolo_postprocess, input           |
+| interface       | m_axi port=tables offset=slave bundle=gmem_in depth=5376                                                   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:104 in yolo_postprocess, tables          |
+| interface       | m_axi port=output offset=slave bundle=gmem_out depth=256 max_write_burst_length=16 num_write_outstanding=2 | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:105 in yolo_postprocess, output          |
+| interface       | s_axilite port=input bundle=control                                                                        | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:106 in yolo_postprocess, input           |
+| interface       | s_axilite port=tables bundle=control                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:107 in yolo_postprocess, tables          |
+| interface       | s_axilite port=output bundle=control                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:108 in yolo_postprocess, output          |
+| interface       | s_axilite port=input_words bundle=control                                                                  | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:109 in yolo_postprocess, input_words     |
+| interface       | s_axilite port=table_words bundle=control                                                                  | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:110 in yolo_postprocess, table_words     |
+| interface       | s_axilite port=output_capacity bundle=control                                                              | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:111 in yolo_postprocess, output_capacity |
+| interface       | s_axilite port=confidence_q30 bundle=control                                                               | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:112 in yolo_postprocess, confidence_q30  |
+| interface       | s_axilite port=nms_q16 bundle=control                                                                      | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:113 in yolo_postprocess, nms_q16         |
+| interface       | s_axilite port=enable_nms bundle=control                                                                   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:114 in yolo_postprocess, enable_nms      |
+| interface       | s_axilite port=candidate_count bundle=control                                                              | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:115 in yolo_postprocess, candidate_count |
+| interface       | s_axilite port=detection_count bundle=control                                                              | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:116 in yolo_postprocess, detection_count |
+| interface       | s_axilite port=return bundle=control                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:117 in yolo_postprocess, return          |
+| bind_storage    | variable=boxes type=ram_2p impl=bram                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:124 in yolo_postprocess, boxes           |
+| bind_storage    | variable=lut type=ram_2p impl=bram                                                                         | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:126 in yolo_postprocess, lut             |
+| pipeline        | II=1                                                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:133 in yolo_postprocess                  |
+| array_partition | variable=coords complete                                                                                   | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:142 in yolo_postprocess, coords          |
+| pipeline        | II=1                                                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:146 in yolo_postprocess                  |
+| pipeline        | II=1                                                                                                       | ../sources/yolo_postprocess/src/yolo_postprocess.cpp:176 in yolo_postprocess                  |
++-----------------+------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+
+
+

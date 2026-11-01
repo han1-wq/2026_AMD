@@ -1,0 +1,1 @@
+../../../../../../../../../../../src/kv260/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_zynq_ultra_ps_e_0_0/psu_init.tcl

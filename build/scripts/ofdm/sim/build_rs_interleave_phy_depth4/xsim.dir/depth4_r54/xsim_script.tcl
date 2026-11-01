@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_depth4/xsim.dir/depth4_r54/xsim_script.tcl

@@ -1,0 +1,1 @@
+../../../../../src/kv260/HLS_IP/image_preprocess/scripts/check_lut_arithmetic.sh

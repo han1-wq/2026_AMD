@@ -1,0 +1,11 @@
+Loading new overlay
+IPs {"DPUCZDX8G_1": 2147483648, "sfm_xrt_top_1": 2147487744, "axi_intc_0": 2231369728, "image_preprocess_1": 2248146944, "yolo_postprocess_1": 2248212480, "zynq_ultra_ps_e_0": null}
+Loading B3136 model
+input image_input/aquant [1, 416, 416, 3] xint8 6
+output conv2d_101/BiasAdd/aquant [1, 26, 26, 255] xint8 2
+output conv2d_109/BiasAdd/aquant [1, 13, 13, 255] xint8 2
+output conv2d_93/BiasAdd/aquant [1, 52, 52, 255] xint8 2
+CMA allocation 0x83ed000 64
+image_preprocess_1 CTRL 0x4
+yolo_postprocess_1 CTRL 0x4
+PROBE_OK

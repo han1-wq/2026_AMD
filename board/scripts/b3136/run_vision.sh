@@ -1,0 +1,1 @@
+../../../src/ps/kv260_B3136/run_vision.sh

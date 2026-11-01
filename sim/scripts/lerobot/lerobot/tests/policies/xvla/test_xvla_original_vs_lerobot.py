@@ -1,0 +1,1 @@
+../../../../../../../src/ps/lerobot-deploy/lerobot/tests/policies/xvla/test_xvla_original_vs_lerobot.py

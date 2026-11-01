@@ -1,0 +1,3 @@
+session.key
+__pycache__/
+*.log

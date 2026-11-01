@@ -1,0 +1,9 @@
+case 0 status=0 candidates=0 detections=0
+case 1 status=0 candidates=50 detections=50
+case 2 status=2 candidates=256 detections=0
+case 3 status=0 candidates=256 detections=256
+case 4 status=0 candidates=2 detections=1
+case 5 status=0 candidates=100 detections=100
+case 6 status=0 candidates=100 detections=100
+case 7 status=0 candidates=100 detections=100
+PASS independent floating reference and guards

@@ -1,0 +1,15 @@
+{
+  "kernel": "yolo_postprocess",
+  "completed": [
+    "test_nms_arithmetic_compile",
+    "test_nms_arithmetic",
+    "csim",
+    "synth",
+    "mapped",
+    "cosim",
+    "export"
+  ],
+  "status": "passed",
+  "stage": "export",
+  "updated": "2026-10-14 00:21:18"
+}

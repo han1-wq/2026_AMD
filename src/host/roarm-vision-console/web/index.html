@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RoArm 视觉控制台</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div><small>KV260 × ROARM</small><h1>视觉任务控制台</h1></div><button id="stop" class="stop">停止后续动作</button></header>
+<main>
+  <section class="camera card">
+    <div class="row"><h2>实时视觉</h2><span id="connection">连接中…</span></div>
+    <img id="camera" alt="KV260 实时 YOLO 图像">
+    <p id="freshness">等待同步图像、深度和检测</p>
+    <div class="depth-row"><img id="depth" alt="原始深度伪彩图"><div><h3>原始深度 · 毫米</h3><p>红→绿→蓝：0–2 米；黑色为无效值。</p><p>RGB 与深度未配准，检测框深度仅供参考。</p></div></div>
+    <div id="detections" class="tags"></div>
+  </section>
+  <section class="card task">
+    <h2>输入任务</h2><label for="task">任务描述</label><textarea id="task" rows="3">把瓶子远离相机推一点</textarea>
+    <p>当前方向：<strong>远离相机</strong>（相机光轴方向，尚未映射到机械臂坐标）。</p>
+    <div class="buttons"><button id="servo" disabled>启动模型实机闭环</button><button id="observe" disabled>分析当前画面</button><button id="watch" class="secondary" disabled>连续观察</button></div>
+    <p class="muted">闭环最多 20 次决策，每步 ≤0.012 rad；每步后重新看图和读取编码器。停止按钮取消后续动作，已发出的小步可能完成。</p>
+    <div class="notice" id="motion"></div>
+    <h3>任务状态 <span id="phase"></span></h3><p id="error" role="alert"></p>
+    <p id="reason">等待首次模型观察。</p><dl id="decision"></dl>
+    <h3>实机反馈</h3><button id="feedback" class="secondary">读取编码器</button>
+    <p id="feedback-age" class="muted">尚未读取</p><pre id="feedback-data">—</pre>
+  </section>
+  <section class="card config">
+    <h2>模型 API</h2><p id="model-status">配置只保存在本机进程内存。</p>
+    <form id="config">
+      <label for="base">API 地址</label><input id="base" type="url" value="https://code.rayinai.com/v1" required>
+      <label for="model">模型</label><input id="model" value="gpt-6-astra" required>
+      <label for="mode">接口</label><select id="mode"><option value="responses">Responses</option><option value="chat">Chat Completions</option></select>
+      <label for="key">API 密钥（留空保留当前值）</label><input id="key" type="password" autocomplete="off" spellcheck="false">
+      <p>推理强度：Medium</p><button type="submit">应用配置</button>
+    </form>
+  </section>
+  <section class="card"><h2>运行记录</h2><ol id="events"></ol><p class="muted">模型观察是建议，未验证的动作不会下发。此按钮用于停止本机任务，不是机械臂硬件急停。</p></section>
+</main>
+<footer>本机上位机 · 通过 SSH 临时读取 KV260 · 不修改 roarm_ws 功能包</footer>
+<script src="/app.js"></script>
+</body></html>

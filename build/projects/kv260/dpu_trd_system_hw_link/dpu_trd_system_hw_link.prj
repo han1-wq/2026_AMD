@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="dpu_trd_system_hw_link" platform="/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm" systemProject="dpu_trd_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.568654924">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="dpu" xoccOptions="" traceMemory="FIFO:8K">
+        <kernels name="DPUCZDX8G" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="DPUCZDX8G_1" slr=""/>
+        </kernels>
+        <kernels name="sfm_xrt_top" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="sfm_xrt_top_1" slr=""/>
+        </kernels>
+        <configSettings>[clock]</configSettings>
+        <configSettings>freqHz=300000000:DPUCZDX8G_1.aclk</configSettings>
+        <configSettings>freqHz=600000000:DPUCZDX8G_1.ap_clk_2</configSettings>
+        <configSettings>#freqHz=300000000:DPUCZDX8G_2.aclk</configSettings>
+        <configSettings>#freqHz=600000000:DPUCZDX8G_2.ap_clk_2</configSettings>
+        <configSettings></configSettings>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP0:HP0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP2:HP1</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP0:HP2</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP2:HP3</configSettings>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.517969306">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="dpu" xoccOptions="" traceMemory="FIFO:8K">
+        <kernels name="DPUCZDX8G" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="DPUCZDX8G_1" slr=""/>
+        </kernels>
+        <kernels name="sfm_xrt_top" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="sfm_xrt_top_1" slr=""/>
+        </kernels>
+        <configSettings>[clock]</configSettings>
+        <configSettings>freqHz=300000000:DPUCZDX8G_1.aclk</configSettings>
+        <configSettings>freqHz=600000000:DPUCZDX8G_1.ap_clk_2</configSettings>
+        <configSettings>#freqHz=300000000:DPUCZDX8G_2.aclk</configSettings>
+        <configSettings>#freqHz=600000000:DPUCZDX8G_2.ap_clk_2</configSettings>
+        <configSettings></configSettings>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP0:HP0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP2:HP1</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP0:HP2</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP2:HP3</configSettings>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.1976929423">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="dpu" xoccOptions="" traceMemory="FIFO:8K">
+        <kernels name="DPUCZDX8G" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="DPUCZDX8G_1" slr=""/>
+        </kernels>
+        <kernels name="sfm_xrt_top" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="sfm_xrt_top_1" slr=""/>
+        </kernels>
+        <configSettings>[clock]</configSettings>
+        <configSettings>freqHz=300000000:DPUCZDX8G_1.aclk</configSettings>
+        <configSettings>freqHz=600000000:DPUCZDX8G_1.ap_clk_2</configSettings>
+        <configSettings>#freqHz=300000000:DPUCZDX8G_2.aclk</configSettings>
+        <configSettings>#freqHz=600000000:DPUCZDX8G_2.ap_clk_2</configSettings>
+        <configSettings></configSettings>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP0:HP0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP2:HP1</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP0:HP2</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP2:HP3</configSettings>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="dpu" xoccOptions="" traceMemory="FIFO:8K">
+        <kernels name="DPUCZDX8G" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="DPUCZDX8G_1" slr=""/>
+        </kernels>
+        <kernels name="sfm_xrt_top" projectName="dpu_trd_kernels" kernelType="USER_MANAGED_KERNEL">
+          <computeUnits name="sfm_xrt_top_1" slr=""/>
+        </kernels>
+        <configSettings>[clock]</configSettings>
+        <configSettings>freqHz=300000000:DPUCZDX8G_1.aclk</configSettings>
+        <configSettings>freqHz=600000000:DPUCZDX8G_1.ap_clk_2</configSettings>
+        <configSettings>#freqHz=300000000:DPUCZDX8G_2.aclk</configSettings>
+        <configSettings>#freqHz=600000000:DPUCZDX8G_2.ap_clk_2</configSettings>
+        <configSettings></configSettings>
+        <configSettings>[connectivity]</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP0:HP0</configSettings>
+        <configSettings>sp=DPUCZDX8G_1.M_AXI_HP2:HP1</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_GP0:HPC0</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP0:HP2</configSettings>
+        <configSettings>#sp=DPUCZDX8G_2.M_AXI_HP2:HP3</configSettings>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>

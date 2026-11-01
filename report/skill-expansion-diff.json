@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-10-30T21:07:08.996198+00:00",
+  "ok": true,
+  "baseline_files_checked": 31605,
+  "changed_existing_files": [
+    "README.md",
+    "report/COLLABORATION_LOG.md",
+    "report/PACKAGING_SUMMARY.md",
+    "skill/README.md",
+    "skill/SKILL.md"
+  ],
+  "new_files_before_this_diff_report": [
+    "report/skill-expansion-validation.json",
+    "skill/catalog.json",
+    "skill/delivery-audit/SKILL.md",
+    "skill/hls-postprocess/SKILL.md",
+    "skill/hls-preprocess/SKILL.md",
+    "skill/host-integration/SKILL.md",
+    "skill/kv260-vision/SKILL.md",
+    "skill/lerobot-act/SKILL.md",
+    "skill/ofdm-firmware/SKILL.md",
+    "skill/ofdm-link-dma/SKILL.md",
+    "skill/references/EXECUTION_CONTRACT.md",
+    "skill/references/TROUBLESHOOTING.md",
+    "skill/references/VALIDATION_MATRIX.md",
+    "skill/roarm-servo/SKILL.md",
+    "skill/so101-teleop/SKILL.md",
+    "skill/templates/GAP_RECORD.md",
+    "skill/templates/INTEGRATION_HANDOFF.md",
+    "skill/templates/RUN_RECORD.md",
+    "skill/tools/check_skills.py",
+    "skill/tools/test_check_skills.py",
+    "skill/vivado-platform/SKILL.md",
+    "skill/x3plus-navigation/SKILL.md"
+  ],
+  "missing": [],
+  "unexpected_changes": [],
+  "note": "Verifier mutable outputs are excluded; this diff report is added after the comparison."
+}

@@ -1,0 +1,16 @@
+{
+  "pc_probe_verified_fresh_localization_and_guard": true, 
+  "scan_loss_cancelled_real_goal": true, 
+  "guard": {
+    "ready": false, 
+    "stamp": 1792502061.033978, 
+    "reason": "stale_scan_initial_pose_required", 
+    "scan_match": 1.0
+  }, 
+  "kinematic_endpoint_error_m": 0.018476606788737686, 
+  "scope": "Real AMCL, guard and move_base, ideal kinematics/raycast scan/odom; no physics or hardware.", 
+  "public_cmd_vel_publishers": [
+    "/navigation_guard"
+  ], 
+  "real_move_base_goal_succeeded": true
+}

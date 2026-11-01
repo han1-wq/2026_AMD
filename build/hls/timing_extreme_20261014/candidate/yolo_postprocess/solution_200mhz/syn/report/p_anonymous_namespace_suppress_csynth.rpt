@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vitis HLS Report for 'p_anonymous_namespace_suppress'
+================================================================
+* Date:           Wed Oct 14 00:10:50 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        yolo_postprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.253 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |       18|       18|  90.000 ns|  90.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                    |                                         |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                      Instance                      |                  Module                 |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_p_anonymous_namespace_area_fu_117               |p_anonymous_namespace_area               |        6|        6|  30.000 ns|  30.000 ns|    1|    1|      yes|
+        |grp_p_anonymous_namespace_area_fu_123               |p_anonymous_namespace_area               |        6|        6|  30.000 ns|  30.000 ns|    1|    1|      yes|
+        |grp_p_anonymous_namespace_area_fu_129               |p_anonymous_namespace_area               |        6|        6|  30.000 ns|  30.000 ns|    1|    1|      yes|
+        |grp_p_anonymous_namespace_threshold_product_fu_135  |p_anonymous_namespace_threshold_product  |        6|        6|  30.000 ns|  30.000 ns|    1|    1|      yes|
+        +----------------------------------------------------+-----------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     522|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|    16|    1450|     992|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      18|    -|
+|Register         |        -|     -|     757|     160|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|    16|    2207|    1692|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     1|      ~0|       1|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |                      Instance                      |                  Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |add_65ns_65ns_65_3_1_U48                            |add_65ns_65ns_65_3_1                     |        0|   0|    0|   71|    0|
+    |grp_p_anonymous_namespace_area_fu_117               |p_anonymous_namespace_area               |        0|   4|  337|  196|    0|
+    |grp_p_anonymous_namespace_area_fu_123               |p_anonymous_namespace_area               |        0|   4|  337|  196|    0|
+    |grp_p_anonymous_namespace_area_fu_129               |p_anonymous_namespace_area               |        0|   4|  337|  196|    0|
+    |grp_p_anonymous_namespace_threshold_product_fu_135  |p_anonymous_namespace_threshold_product  |        0|   4|  439|  261|    0|
+    |sub_65ns_65ns_65_3_1_U49                            |sub_65ns_65ns_65_3_1                     |        0|   0|    0|   72|    0|
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+    |Total                                               |                                         |        0|  16| 1450|  992|    0|
+    +----------------------------------------------------+-----------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------------------+----------+----+---+----+------------+------------+
+    |              Variable Name              | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------------------+----------+----+---+----+------------+------------+
+    |grp_p_anonymous_namespace_area_fu_117_h  |         -|   0|  0|  39|          32|          32|
+    |grp_p_anonymous_namespace_area_fu_117_w  |         -|   0|  0|  39|          32|          32|
+    |grp_p_anonymous_namespace_area_fu_123_h  |         -|   0|  0|  39|          32|          32|
+    |grp_p_anonymous_namespace_area_fu_123_w  |         -|   0|  0|  39|          32|          32|
+    |sub_ln74_1_fu_233_p2                     |         -|   0|  0|  39|          32|          32|
+    |sub_ln74_fu_227_p2                       |         -|   0|  0|  39|          32|          32|
+    |icmp_ln1081_fu_303_p2                    |      icmp|   0|  0|  34|          82|          82|
+    |icmp_ln69_fu_141_p2                      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln70_fu_155_p2                      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln71_fu_169_p2                      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln72_fu_183_p2                      |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln73_1_fu_209_p2                    |      icmp|   0|  0|  20|          32|          32|
+    |icmp_ln73_fu_197_p2                      |      icmp|   0|  0|  20|          32|          32|
+    |or_ln73_fu_221_p2                        |        or|   0|  0|   2|           1|           1|
+    |bottom_fu_189_p3                         |    select|   0|  0|  32|           1|          32|
+    |left_fu_147_p3                           |    select|   0|  0|  32|           1|          32|
+    |right_fu_175_p3                          |    select|   0|  0|  32|           1|          32|
+    |top_fu_161_p3                            |    select|   0|  0|  32|           1|          32|
+    |xor_ln73_1_fu_215_p2                     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln73_fu_203_p2                       |       xor|   0|  0|   2|           1|           2|
+    +-----------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                    |          |   0|  0| 522|         473|         599|
+    +-----------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------------+----+-----------+-----+-----------+
+    |                  Name                 | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |ap_phi_mux_retval_0_phi_fu_110_p4      |   9|          2|    1|          2|
+    |ap_phi_reg_pp0_iter1_retval_0_reg_106  |   9|          2|    1|          2|
+    +---------------------------------------+----+-----------+-----+-----------+
+    |Total                                  |  18|          4|    2|          4|
+    +---------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |ap_phi_reg_pp0_iter10_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter11_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter12_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter13_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter14_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter15_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter16_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter17_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter18_retval_0_reg_106  |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter1_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter2_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter3_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter4_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter5_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter6_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter7_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter8_retval_0_reg_106   |   1|   0|    1|          0|
+    |ap_phi_reg_pp0_iter9_retval_0_reg_106   |   1|   0|    1|          0|
+    |intersection_V_reg_359                  |  64|   0|   64|          0|
+    |or_ln73_reg_315                         |   1|   0|    1|          0|
+    |p_read1_int_reg                         |  32|   0|   32|          0|
+    |p_read2_int_reg                         |  32|   0|   32|          0|
+    |p_read3_int_reg                         |  32|   0|   32|          0|
+    |p_read4_int_reg                         |  32|   0|   32|          0|
+    |p_read5_int_reg                         |  32|   0|   32|          0|
+    |p_read6_int_reg                         |  32|   0|   32|          0|
+    |p_read7_int_reg                         |  32|   0|   32|          0|
+    |p_read_int_reg                          |  32|   0|   32|          0|
+    |sub_ln74_1_reg_324                      |  32|   0|   32|          0|
+    |sub_ln74_reg_319                        |  32|   0|   32|          0|
+    |threshold_int_reg                       |  17|   0|   17|          0|
+    |threshold_read_reg_310                  |  17|   0|   17|          0|
+    |intersection_V_reg_359                  |  64|  32|   64|          0|
+    |or_ln73_reg_315                         |  64|  32|    1|          0|
+    |sub_ln74_1_reg_324                      |  64|  32|   32|          0|
+    |sub_ln74_reg_319                        |  64|  32|   32|          0|
+    |threshold_read_reg_310                  |  64|  32|   17|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   | 757| 160|  583|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+-------------------------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  |         Source Object         |    C Type    |
++-----------+-----+-----+------------+-------------------------------+--------------+
+|ap_clk     |   in|    1|  ap_ctrl_hs|  (anonymous namespace)suppress|  return value|
+|ap_rst     |   in|    1|  ap_ctrl_hs|  (anonymous namespace)suppress|  return value|
+|ap_return  |  out|    1|  ap_ctrl_hs|  (anonymous namespace)suppress|  return value|
+|p_read     |   in|   32|     ap_none|                         p_read|        scalar|
+|p_read1    |   in|   32|     ap_none|                        p_read1|        scalar|
+|p_read2    |   in|   32|     ap_none|                        p_read2|        scalar|
+|p_read3    |   in|   32|     ap_none|                        p_read3|        scalar|
+|p_read4    |   in|   32|     ap_none|                        p_read4|        scalar|
+|p_read5    |   in|   32|     ap_none|                        p_read5|        scalar|
+|p_read6    |   in|   32|     ap_none|                        p_read6|        scalar|
+|p_read7    |   in|   32|     ap_none|                        p_read7|        scalar|
+|threshold  |   in|   17|     ap_none|                      threshold|        scalar|
++-----------+-----+-----+------------+-------------------------------+--------------+
+

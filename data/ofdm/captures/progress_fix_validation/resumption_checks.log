@@ -1,0 +1,14 @@
+ARTIFACT_HASHES_PASS 14
+RAW_RESULTS_AND_IMAGE_PASS mss1440_nodelay_20 20
+RAW_RESULTS_AND_IMAGE_PASS mss1440_nagle_20 20
+RAW_RESULTS_AND_IMAGE_PASS final_nodelay_20 20
+RAW_RESULTS_AND_IMAGE_PASS final_nagle_20 20
+RAW_RESULTS_AND_IMAGE_PASS final_nodelay_200 200
+BSP_CONFIG_PASS build_dma_sw_mss1440 1440 2048
+BSP_CONFIG_PASS build_dma_sw_tcp_fix 1440 32768
+PYTHON_SYNTAX_PASS program_and_capture.py
+PYTHON_SYNTAX_PASS run_mss_experiment.py
+PYTHON_SYNTAX_PASS run_final_benchmark.py
+DMA_XSA_PASS: SG TX/RX enabled; external status/control stream disabled
+CONSISTENCY_CHECKS_PASS
+REGRESSION_EXIT 0

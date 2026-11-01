@@ -1,0 +1,9 @@
+/ 200 text/html; charset=utf-8 2969
+/app.js 200 text/javascript; charset=utf-8 4516
+/style.css 200 text/css; charset=utf-8 2096
+/image.jpg 200 image/jpeg 83205
+/depth.png 200 image/png 17010
+feedback operation 200
+vision connected True phase idle feedback True model_key_configured False
+error 
+previous model probe: {"latency_s": 12.414, "requested_effort": "medium", "decision": {"action": "observe", "tip": [307, 166], "target": [385, 368], "goal_tip": null, "confidence": 0.82, "target_label": "瓶子", "reason": "仅观察：请明确“往前”的图像方向，并补拍瓶底及支撑面；深度未配准，暂不能确认安全推触条件。", "completion_evidence": "", "contact_ready": false}, "model": "gpt-6-astra"}

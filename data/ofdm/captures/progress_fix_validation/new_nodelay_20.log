@@ -1,0 +1,146 @@
+001/20 PASS 0.432s fragments=74 bit_differences=0 
+002/20 PASS 0.422s fragments=74 bit_differences=0 
+003/20 PASS 0.426s fragments=74 bit_differences=0 
+004/20 PASS 0.357s fragments=74 bit_differences=0 
+005/20 PASS 0.218s fragments=74 bit_differences=0 
+006/20 PASS 0.451s fragments=74 bit_differences=0 
+007/20 FAIL 30.001s fragments=50 bit_differences=0 transfer deadline exceeded
+008/20 FAIL 30.000s fragments=22 bit_differences=0 transfer deadline exceeded
+009/20 PASS 0.442s fragments=74 bit_differences=0 
+010/20 PASS 0.216s fragments=74 bit_differences=0 
+011/20 PASS 0.366s fragments=74 bit_differences=0 
+012/20 PASS 0.426s fragments=74 bit_differences=0 
+013/20 FAIL 30.001s fragments=31 bit_differences=0 transfer deadline exceeded
+014/20 PASS 0.360s fragments=74 bit_differences=0 
+015/20 PASS 0.361s fragments=74 bit_differences=0 
+016/20 FAIL 30.000s fragments=21 bit_differences=0 transfer deadline exceeded
+017/20 PASS 0.448s fragments=74 bit_differences=0 
+018/20 PASS 0.366s fragments=74 bit_differences=0 
+019/20 PASS 0.161s fragments=74 bit_differences=0 
+020/20 PASS 0.422s fragments=74 bit_differences=0 
+{
+  "attempts": 20,
+  "successes": 16,
+  "failures": 4,
+  "failure_rate": 0.2,
+  "compared_bits": 10456832,
+  "differing_bits": 0,
+  "delivered_bit_difference_rate": 0.0,
+  "raw_rf_ber": null,
+  "raw_rf_packet_loss_rate": null,
+  "wall_s": 125.88869759800036,
+  "successful_bytes": 1183104,
+  "application_goodput_Bps": 9398.016045713643,
+  "success_timings": {
+    "elapsed_s": {
+      "n": 16,
+      "min": 0.16148037199855025,
+      "mean": 0.36727507018747474,
+      "median": 0.39412276900020515,
+      "p90": 0.44484835250023025,
+      "p95": 0.4484041650002837,
+      "p99": 0.45029386020050877,
+      "max": 0.45076628400056507,
+      "stdev": 0.08801633716802222
+    },
+    "upload_s": {
+      "n": 16,
+      "min": 0.013162657000066247,
+      "mean": 0.1861934438126127,
+      "median": 0.2236738890005654,
+      "p90": 0.23148511199997301,
+      "p95": 0.23307484775023113,
+      "p99": 0.2353979367507236,
+      "max": 0.23597870900084672,
+      "stdev": 0.0822716001455529
+    },
+    "metadata_s": {
+      "n": 16,
+      "min": 0.0006757040009688353,
+      "mean": 0.001264660125229966,
+      "median": 0.0011627715011854889,
+      "p90": 0.0017996449996644515,
+      "p95": 0.0021475297489814693,
+      "p99": 0.002628563548569218,
+      "max": 0.0027488219984661555,
+      "stdev": 0.0005398315950705224
+    },
+    "first_data_s": {
+      "n": 16,
+      "min": 0.002104885999870021,
+      "mean": 0.17040416862494112,
+      "median": 0.20823611249943497,
+      "p90": 0.21118199150078,
+      "p95": 0.21123227125053745,
+      "p99": 0.21131447425022998,
+      "max": 0.2113350250001531,
+      "stdev": 0.08053419544450732
+    },
+    "image_s": {
+      "n": 16,
+      "min": 0.16116535799847043,
+      "mean": 0.3668311396251056,
+      "median": 0.39374373050031863,
+      "p90": 0.44409732800068014,
+      "p95": 0.4474037855006827,
+      "p99": 0.4498864859002424,
+      "max": 0.45050716100013233,
+      "stdev": 0.08795697659961821
+    },
+    "crc_s": {
+      "n": 16,
+      "min": 0.1611826199987263,
+      "mean": 0.3668466653124369,
+      "median": 0.3937568069995905,
+      "p90": 0.44412347200068325,
+      "p95": 0.4474265482504052,
+      "p99": 0.4499018920500021,
+      "max": 0.4505207279999013,
+      "stdev": 0.0879577704882838
+    },
+    "ack_s": {
+      "n": 16,
+      "min": 0.16134225799942215,
+      "mean": 0.36700453856281,
+      "median": 0.393984024501151,
+      "p90": 0.4442574850008896,
+      "p95": 0.44755765275112935,
+      "p99": 0.45005032815024604,
+      "max": 0.45067349700002524,
+      "stdev": 0.08795724499735456
+    },
+    "gap_s": {
+      "n": 16,
+      "min": 3.5121000109938905e-05,
+      "mean": 0.00015452593754616828,
+      "median": 0.00010429150006530108,
+      "p90": 0.0002969155002574553,
+      "p95": 0.0003535665000526933,
+      "p99": 0.00047206769922922823,
+      "max": 0.0005016929990233621,
+      "stdev": 0.00011739847207821844
+    }
+  },
+  "failure_elapsed": {
+    "n": 4,
+    "min": 30.00049005800065,
+    "mean": 30.000589407999996,
+    "median": 30.000520121499903,
+    "p90": 30.00074183129964,
+    "p95": 30.00078458114958,
+    "p99": 30.000818781029537,
+    "max": 30.000827330999527,
+    "stdev": 0.00013880348238243546
+  },
+  "post_image_wait": {
+    "n": 16,
+    "min": 0.0002167209986509988,
+    "mean": 0.00044393056236913253,
+    "median": 0.0002870685002562823,
+    "p90": 0.0007411265005430323,
+    "p95": 0.0008733522504371649,
+    "p99": 0.0011726424495464014,
+    "max": 0.0012474649993237108,
+    "stdev": 0.00027661062581181735
+  }
+}

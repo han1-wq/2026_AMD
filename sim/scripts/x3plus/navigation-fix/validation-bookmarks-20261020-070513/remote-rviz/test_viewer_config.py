@@ -1,0 +1,1 @@
+../../../../../../src/ps/x3plus-kv260-docker/navigation-fix/validation-bookmarks-20261020-070513/remote-rviz/test_viewer_config.py

@@ -1,0 +1,268 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.625 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 1.225 GB.
+INFO: [HLS 200-10] Analyzing design file '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.44 seconds. CPU system time: 0.7 seconds. Elapsed time: 4.9 seconds; current allocated memory: 220.590 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function '(anonymous namespace)::pack((anonymous namespace)::Box const&)' into 'yolo_postprocess(ap_uint<128> const*, unsigned int const*, ap_uint<256>*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int&, unsigned int&)' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:102:0)
+INFO: [HLS 214-248] Applying array_partition to 'coords': Complete partitioning on dimension 1. (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:141:30)
+INFO: [HLS 214-241] Aggregating maxi variable 'output' with compact=none mode in 256-bits
+INFO: [HLS 214-241] Aggregating maxi variable 'input' with compact=none mode in 128-bits
+INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 256 in loop 'VITIS_LOOP_171_8'(/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:171:27) has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:171:27)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.69 seconds. CPU system time: 0.56 seconds. Elapsed time: 4.22 seconds; current allocated memory: 221.020 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 221.020 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.3 seconds; current allocated memory: 230.562 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:714: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 242.309 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_171_8' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:169) in function 'yolo_postprocess' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_183_11' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:183) in function 'yolo_postprocess' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:148:64) to (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:145:39) in function 'yolo_postprocess'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'yolo_postprocess' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:86:17)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 277.898 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_131_2' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:131:41) in function 'yolo_postprocess'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_140_6' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:127:15) in function 'yolo_postprocess' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_139_5' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:127:15) in function 'yolo_postprocess'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_138_4' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:127:15) in function 'yolo_postprocess'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_130_1' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:127:15) in function 'yolo_postprocess' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_173_9' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:169:14) in function 'yolo_postprocess' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'lut' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:134:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'boxes.x1' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:164:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'boxes.score' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:182:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'boxes.score' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/yolo_postprocess/src/yolo_postprocess.cpp:186:36)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.16 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.36 seconds; current allocated memory: 351.691 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'yolo_postprocess' ...
+WARNING: [SYN 201-103] Legalizing function name '(anonymous namespace)area' to 'p_anonymous_namespace_area'.
+WARNING: [SYN 201-103] Legalizing function name '(anonymous namespace)threshold_product' to 'p_anonymous_namespace_threshold_product'.
+WARNING: [SYN 201-103] Legalizing function name '(anonymous namespace)suppress' to 'p_anonymous_namespace_suppress'.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Adder' on 'total', which is not an operation.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_131_2_VITIS_LOOP_132_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 10, loop 'VITIS_LOOP_131_2_VITIS_LOOP_132_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 353.445 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 353.445 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_postprocess_Pipeline_VITIS_LOOP_145_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_145_7'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 12, loop 'VITIS_LOOP_145_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 354.770 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 354.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_postprocess_Pipeline_VITIS_LOOP_175_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_175_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_175_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 354.770 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 354.770 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_anonymous_namespace_area' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function '(anonymous namespace)area'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function '(anonymous namespace)area'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 355.051 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 355.051 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_anonymous_namespace_threshold_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function '(anonymous namespace)threshold_product'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 7, function '(anonymous namespace)threshold_product'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 355.516 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 355.516 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_anonymous_namespace_suppress' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function '(anonymous namespace)suppress'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 19, function '(anonymous namespace)suppress'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 356.094 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 356.094 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_postprocess_Pipeline_VITIS_LOOP_183_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_183_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 22, loop 'VITIS_LOOP_183_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 356.629 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 356.629 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_postprocess_Pipeline_VITIS_LOOP_171_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_171_8'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_171_8'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.12 seconds; current allocated memory: 357.117 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 357.117 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'yolo_postprocess' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln138_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 361.855 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'lut' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_score' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_cls' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_id' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_x1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_y1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_x2' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'boxes_y2' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 361.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3' pipeline 'VITIS_LOOP_131_2_VITIS_LOOP_132_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.47 seconds; current allocated memory: 361.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_postprocess_Pipeline_VITIS_LOOP_145_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_postprocess_Pipeline_VITIS_LOOP_145_7' pipeline 'VITIS_LOOP_145_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_postprocess_Pipeline_VITIS_LOOP_145_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0 seconds. Elapsed time: 0.23 seconds; current allocated memory: 362.062 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_postprocess_Pipeline_VITIS_LOOP_175_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_postprocess_Pipeline_VITIS_LOOP_175_10' pipeline 'VITIS_LOOP_175_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_postprocess_Pipeline_VITIS_LOOP_175_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.19 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.43 seconds; current allocated memory: 364.438 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_anonymous_namespace_area' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'add_32ns_32ns_32_2_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_33ns_33ns_33_2_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_16ns_32_4_0': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_anonymous_namespace_area'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 365.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_anonymous_namespace_threshold_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'add_16ns_16ns_16_2_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_18ns_18ns_18_2_0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'add_33ns_33ns_33_2_0': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_17ns_16ns_33_4_0': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_anonymous_namespace_threshold_product'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 366.477 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_anonymous_namespace_suppress' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'add_65ns_65ns_65_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sub_65ns_65ns_65_3_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_anonymous_namespace_suppress'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 368.070 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_postprocess_Pipeline_VITIS_LOOP_183_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_postprocess_Pipeline_VITIS_LOOP_183_11' pipeline 'VITIS_LOOP_183_11' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'yolo_postprocess_Pipeline_VITIS_LOOP_183_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 370.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'yolo_postprocess_Pipeline_VITIS_LOOP_171_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'yolo_postprocess_Pipeline_VITIS_LOOP_171_8' pipeline 'VITIS_LOOP_171_8' pipeline type 'loop pipeline'
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_postprocess_Pipeline_VITIS_LOOP_171_8/m_axi_gmem_out_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_postprocess_Pipeline_VITIS_LOOP_171_8/m_axi_gmem_out_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'yolo_postprocess_Pipeline_VITIS_LOOP_171_8/m_axi_gmem_out_AWID' to 0.
+WARNING==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+Tool Version Limit: 2022.04
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+==============================================================

@@ -1,0 +1,6 @@
+PHY_TX_PASS
+PHY_PHASE_PASS phase=0 words=24
+PHY_PHASE_PASS phase=1 words=24
+PHY_TX_2T2R_PASS
+PHY_IDLE_PASS phase=0 words=8 idle=8
+PHY_IDLE_PASS phase=1 words=8 idle=8

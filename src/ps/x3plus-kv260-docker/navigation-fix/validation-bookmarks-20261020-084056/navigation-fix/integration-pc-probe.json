@@ -1,0 +1,97 @@
+{
+  "tf": {
+    "map -> base_footprint": {
+      "age_seconds": 0.01, 
+      "ok": true
+    }, 
+    "map -> laser": {
+      "age_seconds": 0.01, 
+      "ok": true
+    }
+  }, 
+  "received": {
+    "move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "age_seconds": 0.015757083892822266, 
+      "stamp": 1792510876.32281
+    }, 
+    "map": {
+      "count": 1, 
+      "age_seconds": 15.677316188812256, 
+      "stamp": 1792510860.66127, 
+      "height": 200, 
+      "width": 240, 
+      "fresh": false
+    }, 
+    "scan": {
+      "count": 107, 
+      "fresh": true, 
+      "frame": "laser", 
+      "age_seconds": 0.034837961196899414, 
+      "stamp": 1792510876.303765
+    }, 
+    "navigation": {
+      "count": 59, 
+      "fresh": true, 
+      "status": {
+        "scan_match": 1.0, 
+        "stamp": 1792510876.322035, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "ray_conflict": 0.0, 
+        "latched_reason": ""
+      }, 
+      "age_seconds": -1.9073486328125e-06
+    }, 
+    "localization": {
+      "count": 13, 
+      "age_seconds": 0.25669002532958984, 
+      "stamp": 1792510876.081902, 
+      "covariance": [
+        0.0015850543812652163, 
+        -0.00027279973210880826, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        -0.00027279973210880826, 
+        0.0010770726310644907, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.00016363380756781194
+      ], 
+      "fresh": true, 
+      "y": 1.2872944306221197, 
+      "x": 2.642220625557335
+    }
+  }
+}

@@ -1,0 +1,1 @@
+../../../../../../../../../../src/kv260/dpu_platform2/kv260_vitis_platform/dpu_trd/src/dpu_ip/Vitis/dpu/bd/bd.tcl

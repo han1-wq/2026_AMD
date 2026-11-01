@@ -1,0 +1,7 @@
+......<string>:257: RuntimeWarning: invalid value encountered in greater
+<string>:257: RuntimeWarning: invalid value encountered in less
+......
+----------------------------------------------------------------------
+Ran 12 tests in 0.169s
+
+OK

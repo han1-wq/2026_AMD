@@ -1,0 +1,54 @@
+{
+  "decision": {
+    "action": "observe",
+    "tip": [
+      351,
+      170
+    ],
+    "target": [
+      415,
+      333
+    ],
+    "goal_tip": null,
+    "confidence": 0.97,
+    "target_label": "指定瓶子",
+    "reason": "前后图未见可辨腕部位移，编码器亦未变化；历史无execution，需核验首个0.009步是否发送，暂不重复。",
+    "completion_evidence": "",
+    "contact_ready": false,
+    "step": null,
+    "clearance_verified": true,
+    "mapping_verified": false
+  },
+  "feedback": {
+    "id": 22,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.006,
+    "source": "serial_encoder",
+    "time": 1791807236.2373438
+  },
+  "observed_stamp": 1791807235.600688
+}

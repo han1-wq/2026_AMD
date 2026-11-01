@@ -1,0 +1,61 @@
+{
+  "image_preprocess": {
+    "opencv_source.bgr": {
+      "paths": [
+        "/home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/csim/build/opencv_source.bgr",
+        "/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/image_preprocess/solution_200mhz/csim/build/opencv_source.bgr"
+      ],
+      "sha256": [
+        "cb572c6c2a3f5cb53d5251456bbf628a2293c8a8bed9135bdcfbb339a9cfb9fb",
+        "cb572c6c2a3f5cb53d5251456bbf628a2293c8a8bed9135bdcfbb339a9cfb9fb"
+      ],
+      "identical": true
+    },
+    "opencv_tensor.int8": {
+      "paths": [
+        "/home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/csim/build/opencv_tensor.int8",
+        "/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/image_preprocess/solution_200mhz/csim/build/opencv_tensor.int8"
+      ],
+      "sha256": [
+        "dee52a6b3e81d0b43b5e4daee2e911a7a0eec7fc803cee8b1489516027c35adc",
+        "dee52a6b3e81d0b43b5e4daee2e911a7a0eec7fc803cee8b1489516027c35adc"
+      ],
+      "identical": true
+    }
+  },
+  "yolo_postprocess": {
+    "fixture_input.bin": {
+      "paths": [
+        "/home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/yolo_postprocess/solution_200mhz/csim/build/fixture_input.bin",
+        "/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/yolo_postprocess/solution_200mhz/csim/build/fixture_input.bin"
+      ],
+      "sha256": [
+        "8c03ea8750f0a22ae7bed1bae9d9ca9c888cb248a9065cc55bec103e95658f8d",
+        "8c03ea8750f0a22ae7bed1bae9d9ca9c888cb248a9065cc55bec103e95658f8d"
+      ],
+      "identical": true
+    },
+    "fixture_output.bin": {
+      "paths": [
+        "/home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/yolo_postprocess/solution_200mhz/csim/build/fixture_output.bin",
+        "/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/yolo_postprocess/solution_200mhz/csim/build/fixture_output.bin"
+      ],
+      "sha256": [
+        "a70808ff28be59a02cfc83b327eb3838a24ccdd9c8f01100653b88977814d677",
+        "a70808ff28be59a02cfc83b327eb3838a24ccdd9c8f01100653b88977814d677"
+      ],
+      "identical": true
+    },
+    "fixture_tables.bin": {
+      "paths": [
+        "/home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/yolo_postprocess/solution_200mhz/csim/build/fixture_tables.bin",
+        "/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/yolo_postprocess/solution_200mhz/csim/build/fixture_tables.bin"
+      ],
+      "sha256": [
+        "ab0e5f3932fcac3fda502631f8525d7d6da446bf05c70d7af612d0bb861c4396",
+        "ab0e5f3932fcac3fda502631f8525d7d6da446bf05c70d7af612d0bb861c4396"
+      ],
+      "identical": true
+    }
+  }
+}

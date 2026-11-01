@@ -1,0 +1,28 @@
+Wed Oct 14 01:20:28 2026: Server was asked to start on port: '38579'
+Wed Oct 14 01:20:28 2026: Server is using token UUID: 'cdd62f28-4108-4cc0-9f13-d13530ad3bba'
+Wed Oct 14 01:20:28 2026: Attempting to start server on port '38579'
+Wed Oct 14 01:20:28 2026: XRC main fifo: created main fifo '/tmp/xrcmaincdd62f28-4108-4cc0-9f13-d13530ad3bba', fd read = 11
+Wed Oct 14 01:20:28 2026: Running Rule Check Server
+Wed Oct 14 01:20:28 2026: Version 1.6.1
+Wed Oct 14 01:20:28 2026: Rule Check Server: Accepted socket connection from client
+Wed Oct 14 01:20:28 2026: EXCHANGE_TOKEN received, server token: cdd62f28-4108-4cc0-9f13-d13530ad3bba, passed token: cdd62f28-4108-4cc0-9f13-d13530ad3bba
+Wed Oct 14 01:22:33 2026: SESSION_MGR: creating session with session uuid: '955890f7-e2cc-4e0c-804b-f7a6cc3b057b' and name 'Emulation-SW'
+Wed Oct 14 01:22:34 2026: SESSION_MGR: closing session for UUID '955890f7-e2cc-4e0c-804b-f7a6cc3b057b' with name 'Emulation-SW'
+Wed Oct 14 01:22:34 2026: SESSION_MGR: creating session with session uuid: '24894f63-0575-402a-a611-fd60c3cff9c4' and name 'Emulation-HW'
+Wed Oct 14 01:22:34 2026: SESSION_MGR: closing session for UUID '24894f63-0575-402a-a611-fd60c3cff9c4' with name 'Emulation-HW'
+Wed Oct 14 01:22:34 2026: SESSION_MGR: creating session with session uuid: 'fd498d1b-0257-490b-b1b6-73f149a475ac' and name 'Hardware'
+Wed Oct 14 01:22:34 2026: SESSION_MGR: closing session for UUID 'fd498d1b-0257-490b-b1b6-73f149a475ac' with name 'Hardware'
+Wed Oct 14 01:27:37 2026: SESSION_MGR: creating session with session uuid: 'c457c534-4b98-4141-8335-46aa7b74ac99' and name 'Hardware'
+Wed Oct 14 01:28:02 2026: SESSION_MGR: creating session with session uuid: '6af6e8bb-d30d-4029-a16b-a61f87053b77' and name 'Hardware'
+Wed Oct 14 01:28:03 2026: SESSION_MGR: closing session for UUID 'c457c534-4b98-4141-8335-46aa7b74ac99' with name 'Hardware'
+Wed Oct 14 01:28:15 2026: Rule Check Server: Accepted socket connection from client
+Wed Oct 14 01:28:16 2026: Rule Check Server: Accepted socket connection from client
+Wed Oct 14 01:28:34 2026: Rule Check Server: Accepted socket connection from client
+Wed Oct 14 01:47:16 2026: Rule Check Server: Accepted socket connection from client
+Wed Oct 14 02:33:08 2026: SESSION_MGR: closing session for UUID '6af6e8bb-d30d-4029-a16b-a61f87053b77' with name 'Hardware'
+Wed Oct 14 05:53:42 2026: STOP_SERVER received, server token: cdd62f28-4108-4cc0-9f13-d13530ad3bba, passed token: cdd62f28-4108-4cc0-9f13-d13530ad3bba
+Wed Oct 14 05:53:42 2026: Socket received request to stop server.
+Wed Oct 14 05:53:42 2026: SERVER: destructor for server bound to port 38579
+Wed Oct 14 05:53:42 2026: XRC main fifo: Good unlink of /tmp/xrcmaincdd62f28-4108-4cc0-9f13-d13530ad3bba
+Wed Oct 14 05:53:42 2026: Server exiting with status 0.
+Wed Oct 14 05:53:42 2026: Closing log file.

@@ -1,0 +1,16 @@
+{
+  "verified_local": "2026-10-16T20:51:24-0700",
+  "capture_verified": true,
+  "artifact_hashes_verified": true,
+  "source_matches_850mhz_workspace": true,
+  "bulk_packets": 2000,
+  "length_check_packets": 27,
+  "length_check_bytes": 9297,
+  "bulk_bytes": 2000000,
+  "compared_bits": 16000000,
+  "differing_bits": 0,
+  "sha256": "df9c9ec93ee577e1c7c8b1598a173185e62c36b06a010973c6faee5623de60bc",
+  "tcp_target": "192.168.137.10:5001",
+  "post_test_tcp_connected": true,
+  "tcp_connect_s": 0.0013531180011341348
+}

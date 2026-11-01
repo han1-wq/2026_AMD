@@ -1,0 +1,166 @@
+001/50 PASS 0.128s fragments=74 bit_differences=0 
+002/50 PASS 0.125s fragments=74 bit_differences=0 
+003/50 PASS 0.125s fragments=74 bit_differences=0 
+004/50 PASS 0.130s fragments=74 bit_differences=0 
+005/50 PASS 0.125s fragments=74 bit_differences=0 
+006/50 PASS 0.128s fragments=74 bit_differences=0 
+007/50 PASS 0.124s fragments=74 bit_differences=0 
+008/50 PASS 0.125s fragments=74 bit_differences=0 
+009/50 PASS 0.126s fragments=74 bit_differences=0 
+010/50 PASS 0.125s fragments=74 bit_differences=0 
+011/50 PASS 0.125s fragments=74 bit_differences=0 
+012/50 PASS 0.125s fragments=74 bit_differences=0 
+013/50 PASS 0.125s fragments=74 bit_differences=0 
+014/50 PASS 0.125s fragments=74 bit_differences=0 
+015/50 PASS 0.126s fragments=74 bit_differences=0 
+016/50 PASS 0.125s fragments=74 bit_differences=0 
+017/50 PASS 0.125s fragments=74 bit_differences=0 
+018/50 PASS 0.125s fragments=74 bit_differences=0 
+019/50 PASS 0.125s fragments=74 bit_differences=0 
+020/50 PASS 0.125s fragments=74 bit_differences=0 
+021/50 PASS 0.125s fragments=74 bit_differences=0 
+022/50 PASS 0.125s fragments=74 bit_differences=0 
+023/50 PASS 0.125s fragments=74 bit_differences=0 
+024/50 PASS 0.125s fragments=74 bit_differences=0 
+025/50 PASS 0.125s fragments=74 bit_differences=0 
+026/50 PASS 0.125s fragments=74 bit_differences=0 
+027/50 PASS 0.125s fragments=74 bit_differences=0 
+028/50 PASS 0.125s fragments=74 bit_differences=0 
+029/50 PASS 0.125s fragments=74 bit_differences=0 
+030/50 PASS 0.125s fragments=74 bit_differences=0 
+031/50 PASS 0.125s fragments=74 bit_differences=0 
+032/50 PASS 0.125s fragments=74 bit_differences=0 
+033/50 PASS 0.125s fragments=74 bit_differences=0 
+034/50 PASS 0.125s fragments=74 bit_differences=0 
+035/50 PASS 0.125s fragments=74 bit_differences=0 
+036/50 PASS 0.125s fragments=74 bit_differences=0 
+037/50 PASS 0.125s fragments=74 bit_differences=0 
+038/50 PASS 0.125s fragments=74 bit_differences=0 
+039/50 PASS 0.125s fragments=74 bit_differences=0 
+040/50 PASS 0.125s fragments=74 bit_differences=0 
+041/50 PASS 0.125s fragments=74 bit_differences=0 
+042/50 PASS 0.125s fragments=74 bit_differences=0 
+043/50 PASS 0.125s fragments=74 bit_differences=0 
+044/50 PASS 0.125s fragments=74 bit_differences=0 
+045/50 PASS 0.123s fragments=74 bit_differences=0 
+046/50 PASS 0.125s fragments=74 bit_differences=0 
+047/50 PASS 0.125s fragments=74 bit_differences=0 
+048/50 PASS 0.125s fragments=74 bit_differences=0 
+049/50 PASS 0.125s fragments=74 bit_differences=0 
+050/50 PASS 0.125s fragments=74 bit_differences=0 
+{
+  "attempts": 50,
+  "successes": 50,
+  "failures": 0,
+  "failure_rate": 0.0,
+  "compared_bits": 29577600,
+  "differing_bits": 0,
+  "delivered_bit_difference_rate": 0.0,
+  "raw_rf_ber": null,
+  "raw_rf_packet_loss_rate": null,
+  "wall_s": 6.263048715998593,
+  "successful_bytes": 3697200,
+  "application_goodput_Bps": 590319.5340882018,
+  "success_timings": {
+    "elapsed_s": {
+      "n": 50,
+      "min": 0.12290027599738096,
+      "mean": 0.12498676760005764,
+      "median": 0.12473745250099455,
+      "p90": 0.12520069620113644,
+      "p95": 0.12704273764920798,
+      "p99": 0.12887557899914098,
+      "max": 0.1299730319988157,
+      "stdev": 0.001006770872209979
+    },
+    "upload_s": {
+      "n": 50,
+      "min": 0.0007735680010227952,
+      "mean": 0.001940507479957887,
+      "median": 0.0013735060001636157,
+      "p90": 0.002963141501459177,
+      "p95": 0.003526850349044252,
+      "p99": 0.00895013097022455,
+      "max": 0.01192793299924233,
+      "stdev": 0.0016835410329805811
+    },
+    "metadata_s": {
+      "n": 50,
+      "min": 0.0008276619992102496,
+      "mean": 0.0013903211199794896,
+      "median": 0.0010844469998119166,
+      "p90": 0.002362682900275104,
+      "p95": 0.0026629806981873115,
+      "p99": 0.004352833168413777,
+      "max": 0.005306454997480614,
+      "stdev": 0.000785225668902042
+    },
+    "first_data_s": {
+      "n": 50,
+      "min": 0.0026681980016292073,
+      "mean": 0.003228849039951456,
+      "median": 0.00292338449980889,
+      "p90": 0.0037690038010623544,
+      "p95": 0.004885023898896178,
+      "p99": 0.0074629018508494405,
+      "max": 0.009492548000707757,
+      "stdev": 0.0010577351723409332
+    },
+    "image_s": {
+      "n": 50,
+      "min": 0.12240746099996613,
+      "mean": 0.12462757180015614,
+      "median": 0.12442684850066144,
+      "p90": 0.12478327699900546,
+      "p95": 0.1258687004490639,
+      "p99": 0.1285954010502246,
+      "max": 0.12970165200022166,
+      "stdev": 0.0009489357616109662
+    },
+    "crc_s": {
+      "n": 50,
+      "min": 0.12242056299874093,
+      "mean": 0.12464322869993338,
+      "median": 0.12444111150034587,
+      "p90": 0.12479620749727474,
+      "p95": 0.1258820963990729,
+      "p99": 0.12860987686883163,
+      "max": 0.1297172459999274,
+      "stdev": 0.0009487914807459294
+    },
+    "ack_s": {
+      "n": 50,
+      "min": 0.12280679299874464,
+      "mean": 0.12480362859998423,
+      "median": 0.12457945350070077,
+      "p90": 0.12494281529761793,
+      "p95": 0.12602930309822113,
+      "p99": 0.12874547947889367,
+      "max": 0.1298532949986111,
+      "stdev": 0.0009300758864298793
+    },
+    "gap_s": {
+      "n": 50,
+      "min": 5.682399932993576e-05,
+      "mean": 0.0001581136199820321,
+      "median": 0.0001150819989561569,
+      "p90": 0.00020950100079062395,
+      "p95": 0.00031857105059316363,
+      "p99": 0.0007645618587412158,
+      "max": 0.0011322020000079647,
+      "stdev": 0.00015329254402732988
+    }
+  },
+  "failure_elapsed": null,
+  "post_image_wait": {
+    "n": 50,
+    "min": 0.0002217939982074313,
+    "mean": 0.0003591957999014994,
+    "median": 0.00028643149926210754,
+    "p90": 0.0003613840010075364,
+    "p95": 0.0004366203480458349,
+    "p99": 0.0018597069395036617,
+    "max": 0.0031353209997178055,
+    "stdev": 0.00040063062512639137
+  }
+}

@@ -1,0 +1,1 @@
+../../../../../../src/ps/lerobot-deploy/lerobot/tests/training/test_multi_gpu.py

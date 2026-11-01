@@ -1,0 +1,8 @@
+{
+  "remote": "/home/ubuntu/x3plus-kv260-docker/navigation-fix/qps-advisory-20261021-035524",
+  "expected": {
+    "scripts/navigation_guard.py": "31ecd828e6bada689927ea2762a4c86dff3527f31672e1ad4aa0a81ce37eda44",
+    "launch/yahboomcar_navigation.launch": "c6bc369b23016a323aeec93cb3bb6c69010216fd1c5ad44ea45885546738979f",
+    "param/common/costmap_common_params_X3plus.yaml": "89d9d9eda170cac7e2d6058f9832d1d8d51d992aab28eaf7302f6633639fb389"
+  }
+}

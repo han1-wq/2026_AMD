@@ -1,0 +1,13 @@
+{
+  "count": 2000,
+  "payload_bytes": 1000,
+  "seed": 850,
+  "timeout_s": 10.0,
+  "baudrate": 115200,
+  "framing": "8N1",
+  "scheduled_sleep_s": 0,
+  "mode": "sequential, one outstanding request, no host retry, fail-fast",
+  "payload_generator": "SHAKE256 ASCII seed:index; zero-based index",
+  "success_requires": "local enqueue acceptance AND matching RF RX payload",
+  "start_local": "2026-10-16T20:41:58-0700"
+}

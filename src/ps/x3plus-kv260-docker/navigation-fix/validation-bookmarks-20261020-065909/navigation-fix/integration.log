@@ -1,0 +1,4 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+{"guard": {"ready": false, "stamp": 1792504776.059451, "reason": "stale_scan_initial_pose_required", "scan_match": 1.0, "ray_conflict": 0.0}, "heading_change_endpoint": {"position_error_m": 0.10159531490795373, "yaw_error_rad": 0.09242558492854669}, "scan_loss_cancelled_real_goal": true, "heading_change_goal_succeeded": true, "scope": "Real AMCL, guard and move_base, ideal kinematics/raycast scan/odom; no physics or hardware.", "kinematic_endpoint_error_m": 0.018686479905105677, "pc_probe_verified_fresh_localization_and_guard": true, "public_cmd_vel_publishers": ["/navigation_guard"], "first_endpoint": {"position_error_m": 0.018686479905105677, "yaw_error_rad": 0.08908360870746268}, "real_move_base_goal_succeeded": true}
+NAVIGATION_MOVE_BASE_INTEGRATION_PASS

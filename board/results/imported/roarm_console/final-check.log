@@ -1,0 +1,5 @@
+PASS: fresh vision, serial encoder feedback, motion disabled, no persisted API key
+Frame age: 0.321 s; sync: 8.26 ms
+PASS: RGB JPEG bytes 74837
+PASS: task stop endpoint
+PASS: final Python syntax

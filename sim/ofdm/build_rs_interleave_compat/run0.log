@@ -1,0 +1,12 @@
+RS_PACKET_PASS case=0 payload=1 encoded=21 errors=0 expected_ok=1 failed=0 decode_cycles=58
+RS_PACKET_PASS case=1 payload=64 encoded=84 errors=0 expected_ok=1 failed=0 decode_cycles=310
+RS_PACKET_PASS case=2 payload=235 encoded=255 errors=0 expected_ok=1 failed=0 decode_cycles=994
+RS_PACKET_PASS case=3 payload=236 encoded=272 errors=0 expected_ok=0 failed=1 decode_cycles=2623
+RS_PACKET_PASS case=4 payload=474 encoded=510 errors=0 expected_ok=0 failed=1 decode_cycles=4051
+RS_PACKET_PASS case=5 payload=475 encoded=527 errors=0 expected_ok=0 failed=1 decode_cycles=4647
+RS_PACKET_PASS case=6 payload=713 encoded=765 errors=0 expected_ok=0 failed=1 decode_cycles=6211
+RS_PACKET_PASS case=7 payload=714 encoded=782 errors=0 expected_ok=0 failed=1 decode_cycles=6807
+RS_PACKET_PASS case=8 payload=952 encoded=1020 errors=0 expected_ok=0 failed=1 decode_cycles=8235
+RS_PACKET_PASS case=9 payload=953 encoded=1037 errors=0 expected_ok=0 failed=1 decode_cycles=8899
+RS_PACKET_PASS case=10 payload=1024 encoded=1108 errors=0 expected_ok=0 failed=1 decode_cycles=9223
+RS_REGRESSION_PASS cases=11 accepted=3 rejected=8 max_decode_cycles=9223

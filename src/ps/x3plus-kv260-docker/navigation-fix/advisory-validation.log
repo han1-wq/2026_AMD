@@ -1,0 +1,9 @@
+......................................../home/amd/x3plus-kv260-docker/context/src/yahboomcar_nav/scripts/navigation_quality.py:16: DeprecationWarning: tostring() is deprecated. Use tobytes() instead.
+  digest.update(np.asarray(data, dtype=np.int8).tostring())
+.................................................
+----------------------------------------------------------------------
+Ran 89 tests in 2.408s
+
+OK
+
+EXIT 0

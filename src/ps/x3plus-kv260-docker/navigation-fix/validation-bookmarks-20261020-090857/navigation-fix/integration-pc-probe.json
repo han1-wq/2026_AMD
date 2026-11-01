@@ -1,0 +1,127 @@
+{
+  "tf": {
+    "map -> base_footprint": {
+      "age_seconds": 0.0, 
+      "ok": true
+    }, 
+    "map -> laser": {
+      "age_seconds": 0.0, 
+      "ok": true
+    }
+  }, 
+  "received": {
+    "move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "goals": [], 
+      "age_seconds": 0.08029699325561523, 
+      "stamp": 1792512560.823088
+    }, 
+    "map": {
+      "count": 1, 
+      "age_seconds": 19.0938618183136, 
+      "stamp": 1792512541.8095603, 
+      "height": 200, 
+      "width": 240, 
+      "fresh": false
+    }, 
+    "localization": {
+      "count": 13, 
+      "age_seconds": 0.2341170310974121, 
+      "stamp": 1792512560.669317, 
+      "covariance": [
+        0.0013421626736995762, 
+        7.44207017384646e-05, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        7.44207017384646e-05, 
+        0.0012041228941188642, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.00010706146772658962
+      ], 
+      "fresh": true, 
+      "y": 1.2839315925385903, 
+      "x": 2.6380650630462674
+    }, 
+    "scan": {
+      "count": 106, 
+      "fresh": true, 
+      "frame": "laser", 
+      "age_seconds": 0.05919814109802246, 
+      "stamp": 1792512560.84423
+    }, 
+    "cmd_vel": {
+      "count": 59, 
+      "fresh": true, 
+      "nonzero_seen": false, 
+      "velocity_xy_yaw": [
+        0.0, 
+        0.0, 
+        0.0
+      ], 
+      "age_seconds": -1.9073486328125e-06
+    }, 
+    "navigation": {
+      "count": 59, 
+      "fresh": true, 
+      "status": {
+        "scan_match": 1.0, 
+        "task_state": "cancelled", 
+        "stamp": 1792512560.874198, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "goal_retained": false, 
+        "reason": "ready", 
+        "task_reason": "cancelled", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "ray_conflict": 0.008333333333333333, 
+        "latched_reason": "", 
+        "resume_count": 1
+      }, 
+      "age_seconds": -3.0994415283203125e-06
+    }, 
+    "internal_move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "goals": [
+        {
+          "status": 3, 
+          "text": "Goal reached.", 
+          "id": "/navigation_guard-2-1792512551.317"
+        }
+      ], 
+      "age_seconds": 0.16810345649719238, 
+      "stamp": 1792512560.7353466
+    }
+  }
+}

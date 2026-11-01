@@ -1,0 +1,61 @@
+{
+  "decision": {
+    "action": "calibrate",
+    "tip": [
+      367,
+      112
+    ],
+    "target": [
+      415,
+      332
+    ],
+    "goal_tip": null,
+    "confidence": 0.86,
+    "target_label": "饮料瓶",
+    "reason": "中央夹爪尖端可见，腕部局部微扫区与瓶子分离；仅试探J4正向，位移及图像方向待核验。",
+    "completion_evidence": "",
+    "contact_ready": false,
+    "step": {
+      "joint": 4,
+      "delta_rad": 0.012
+    },
+    "clearance_verified": true,
+    "mapping_verified": false
+  },
+  "feedback": {
+    "id": 7,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.0,
+    "dispatch": "not_sent",
+    "motion_verified": false,
+    "source": "serial_encoder",
+    "time": 1791808075.0651193
+  },
+  "observed_stamp": 1791808074.4835298,
+  "dispatch": "unknown",
+  "motion_verified": false
+}

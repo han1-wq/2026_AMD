@@ -1,0 +1,11 @@
+{
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/host/dma_uart_benchmark.py": "c375f477a5e7f2dffb800791aaa0854a8d546d98aa41699c6e73ac9405882be6",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/host/test_dma_uart_benchmark.py": "a6aa2e1da7c708ac0bc80c4faa08654dc25d0a81738e5468b7128d298227eab1",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_850mhz_uart_bulk_20261016/program_and_capture.py": "a49045a0c3f324123c1272e79a5c71e6e308f67fc4e6f560e34f21a22cf2a5f7",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_850mhz_uart_bulk_20261016/run_test.py": "55f2fa49ae262c6605d4affdb430eb87accd80ad060e93a9f3d9a7599dfd7043",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_850mhz_uart_bulk_20261016/verify_results.py": "5cbedd9539b84e7d8e89f7059f2d72c24aed2531eca94f41c590076c29aedec3",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/README.md": "41ce084f3b4e5f8d44b1bac313c4fdc0dd4f31e24a22cdc729591ce09b2c61fc",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_850mhz_uart_bulk_20261016/README.md": "f78cc09bfdef3a6687a4788024a27e429e034e206c1201ea468bf8b99c2b4f54",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/firmware/radio/main.c": "d15ee631923f439bae6d06b406084ab96ef4b3f92cfed844f626b43e12499e99",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c": "73d35fb81d0abca69f6b0fd1a0737dfb060701de56233b8cd847e7864216ffcb"
+}

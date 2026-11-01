@@ -1,0 +1,64 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 30
+      Reference Frame: map
+    - Class: rviz/Map
+      Name: SLAM Map
+      Enabled: true
+      Topic: /map
+      Alpha: 0.85
+      Color Scheme: map
+      Draw Behind: true
+    - Class: rviz/LaserScan
+      Name: Laser Scan
+      Enabled: true
+      Topic: /scan
+      Queue Size: 10
+      Style: Points
+      Size (Pixels): 3
+      Color Transformer: FlatColor
+      Color: 255; 30; 30
+      Position Transformer: XYZ
+      Decay Time: 0
+      Use Fixed Frame: true
+    - Class: rviz/Axes
+      Name: Robot Position
+      Enabled: true
+      Reference Frame: base_footprint
+      Length: 0.5
+      Radius: 0.03
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 20
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/Measure
+  Views:
+    Current:
+      Class: rviz/TopDownOrtho
+      Name: Current View
+      Target Frame: base_footprint
+      Scale: 45
+      Angle: 0
+      X: 0
+      Y: 0
+Window Geometry:
+  Width: 1200
+  Height: 850
+  X: 100
+  Y: 60

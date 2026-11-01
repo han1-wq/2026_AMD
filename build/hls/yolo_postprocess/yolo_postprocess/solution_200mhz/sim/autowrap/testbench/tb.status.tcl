@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess/solution_200mhz/./sim/autowrap/testbench/yolo_postprocess.cpp_pre.cpp.tb.cpp

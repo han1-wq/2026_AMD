@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 14 01:04:24 2026
+# Process ID: 488816
+# Current directory: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform
+# Command line: vivado
+# Log file: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/vivado.log
+# Journal file: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xpr
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_pc_0/kv260_hardware_platform_auto_pc_0.xci' referenced by design 'kv260_hardware_platform' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_0/kv260_hardware_platform_auto_cc_0.xci' referenced by design 'kv260_hardware_platform' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_auto_cc_1/kv260_hardware_platform_auto_cc_1.xci' referenced by design 'kv260_hardware_platform' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/ip_repo/vision/image_preprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/ip_repo/vision/yolo_postprocess'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_0/bd_5d58_one_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_1/bd_5d58_psr_aclk_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_2/bd_5d58_arsw_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_3/bd_5d58_rsw_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_4/bd_5d58_awsw_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_5/bd_5d58_wsw_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_6/bd_5d58_bsw_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_7/bd_5d58_s00mmu_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_8/bd_5d58_s00tr_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_9/bd_5d58_s00sic_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_10/bd_5d58_s00a2s_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_11/bd_5d58_sarn_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_12/bd_5d58_srn_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_13/bd_5d58_s01mmu_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_14/bd_5d58_s01tr_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_15/bd_5d58_s01sic_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_16/bd_5d58_s01a2s_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_17/bd_5d58_sarn_1.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_18/bd_5d58_srn_1.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_19/bd_5d58_m00s2a_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_20/bd_5d58_m00arn_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_21/bd_5d58_m00rn_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/ip/ip_22/bd_5d58_m00e_0.xci' referenced by design 'bd_5d58' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_0/bd_c9ca_one_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_1/bd_c9ca_psr_aclk_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_2/bd_c9ca_arsw_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_3/bd_c9ca_rsw_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_4/bd_c9ca_awsw_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_5/bd_c9ca_wsw_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_6/bd_c9ca_bsw_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_7/bd_c9ca_s00mmu_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_8/bd_c9ca_s00tr_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_9/bd_c9ca_s00sic_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_10/bd_c9ca_s00a2s_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_11/bd_c9ca_sawn_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_12/bd_c9ca_swn_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_13/bd_c9ca_sbn_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_14/bd_c9ca_s01mmu_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_15/bd_c9ca_s01tr_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_16/bd_c9ca_s01sic_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_17/bd_c9ca_s01a2s_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_18/bd_c9ca_sawn_1.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_19/bd_c9ca_swn_1.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_20/bd_c9ca_sbn_1.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_21/bd_c9ca_s02mmu_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_22/bd_c9ca_s02tr_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_23/bd_c9ca_s02sic_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_24/bd_c9ca_s02a2s_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_25/bd_c9ca_sawn_2.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_26/bd_c9ca_swn_2.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_27/bd_c9ca_sbn_2.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_28/bd_c9ca_m00s2a_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_29/bd_c9ca_m00awn_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_30/bd_c9ca_m00wn_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_31/bd_c9ca_m00bn_0.xci' referenced by design 'bd_c9ca' could not be found.
+WARNING: [BD 41-2576] File '/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/ip/ip_32/bd_c9ca_m00e_0.xci' referenced by design 'bd_c9ca' could not be found.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 7661.441 ; gain = 76.336 ; free physical = 11427 ; free virtual = 17889
+update_compile_order -fileset sources_1
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+Reading block design file </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_3
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_4
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_5
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: kv260_hardware_platform_auto_pc_0 
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: kv260_hardware_platform_auto_cc_0 
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: kv260_hardware_platform_auto_cc_1 
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_read_sc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_write_sc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - vision_irq_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - vision_irq_zero
+Adding component instance block -- local:vision:image_preprocess:1.0 - image_preprocess_1
+Adding component instance block -- local:vision:yolo_postprocess:1.0 - yolo_postprocess_1
+Successfully read diagram <kv260_hardware_platform> from block design file </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 7914.711 ; gain = 0.000 ; free physical = 9069 ; free virtual = 15586
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+generate_target all [get_files  /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd]
+INFO: [xilinx.com:ip:smartconnect:1.0-1] kv260_hardware_platform_vision_read_sc_0: SmartConnect kv260_hardware_platform_vision_read_sc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:smartconnect:1.0-1] kv260_hardware_platform_vision_write_sc_0: SmartConnect kv260_hardware_platform_vision_write_sc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /vision_read_sc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /vision_read_sc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /vision_write_sc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP3_FPD(1) and /vision_write_sc/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /image_preprocess_1/ap_clk have been updated from connected ip, but BD cell '/image_preprocess_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 199998000 
+Please resolve any mismatches by directly setting properties on BD cell </image_preprocess_1> to completely resolve these warnings.
+WARNING: [BD 41-927] Following properties on pin /yolo_postprocess_1/ap_clk have been updated from connected ip, but BD cell '/yolo_postprocess_1' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 199998000 
+Please resolve any mismatches by directly setting properties on BD cell </yolo_postprocess_1> to completely resolve these warnings.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi_intc_0/intr
+
+Wrote  : </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd> 
+Wrote  : </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/ui/bd_ea899fec.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_read_sc/S00_AXI_arlock'(1) to pin: '/image_preprocess_1/m_axi_gmem_in_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_write_sc/S00_AXI_awlock'(1) to pin: '/image_preprocess_1/m_axi_gmem_out_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_write_sc/S01_AXI_awlock'(1) to pin: '/image_preprocess_1/m_axi_gmem_preview_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_read_sc/S01_AXI_arlock'(1) to pin: '/yolo_postprocess_1/m_axi_gmem_in_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_write_sc/S02_AXI_awlock'(1) to pin: '/yolo_postprocess_1/m_axi_gmem_out_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/synth/kv260_hardware_platform.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_read_sc/S00_AXI_arlock'(1) to pin: '/image_preprocess_1/m_axi_gmem_in_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_write_sc/S00_AXI_awlock'(1) to pin: '/image_preprocess_1/m_axi_gmem_out_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_write_sc/S01_AXI_awlock'(1) to pin: '/image_preprocess_1/m_axi_gmem_preview_AWLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_read_sc/S01_AXI_arlock'(1) to pin: '/yolo_postprocess_1/m_axi_gmem_in_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/vision_write_sc/S02_AXI_awlock'(1) to pin: '/yolo_postprocess_1/m_axi_gmem_out_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/sim/kv260_hardware_platform.v
+Verilog Output written to : /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/hdl/kv260_hardware_platform_wrapper.v
+Exporting to file /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/hw_handoff/kv260_hardware_platform_vision_read_sc_0.hwh
+Generated Hardware Definition File /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_read_sc_0/bd_0/synth/kv260_hardware_platform_vision_read_sc_0.hwdef
+Exporting to file /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/hw_handoff/kv260_hardware_platform_vision_write_sc_0.hwh
+Generated Hardware Definition File /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_vision_write_sc_0/bd_0/synth/kv260_hardware_platform_vision_write_sc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/s00_couplers/auto_pc .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_cc .
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m02_couplers/auto_cc .
+Exporting to file /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/hw_handoff/kv260_hardware_platform.hwh
+Generated Hardware Definition File /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.gen/sources_1/bd/kv260_hardware_platform/synth/kv260_hardware_platform.hwdef
+generate_target: Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 9567.332 ; gain = 0.000 ; free physical = 8880 ; free virtual = 15366
+export_ip_user_files -of_objects [get_files /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd] -directory /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.ip_user_files/sim_scripts -ip_user_files_dir /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.ip_user_files -ipstatic_source_dir /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.cache/compile_simlib/modelsim} {questa=/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.cache/compile_simlib/questa} {xcelium=/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.cache/compile_simlib/xcelium} {vcs=/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.cache/compile_simlib/vcs} {riviera=/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+regenerate_bd_layout
+make_wrapper -files [get_files /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Oct 14 01:06:15 2026] Launched synth_1...
+Run output will be captured here: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.runs/synth_1/runme.log
+[Wed Oct 14 01:06:15 2026] Launched impl_1...
+Run output will be captured here: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.runs/impl_1/runme.log
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+WARNING: [IP_Flow 19-4052] Unable to find the parameter 'PARAM_VALUE.AXIMM_DATA_WIDTH' for the proc 'update_PARAM_VALUE.C_M_AXI_MM_VIDEO_DATA_WIDTH'.The proc 'update_PARAM_VALUE.C_M_AXI_MM_VIDEO_DATA_WIDTH' will never be called.Please check and correct the proc
+WARNING: [IP_Flow 19-4052] Unable to find the parameter 'PARAM_VALUE.AXIMM_DATA_WIDTH' for the proc 'update_PARAM_VALUE.C_M_AXI_MM_VIDEO_DATA_WIDTH'.The proc 'update_PARAM_VALUE.C_M_AXI_MM_VIDEO_DATA_WIDTH' will never be called.Please check and correct the proc
+create_bd_cell -type ip -vlnv xilinx.com:ip:fast_adapter:1.0 fast_adapter_0
+close_bd_design [get_bd_designs kv260_hardware_platform]
+Wrote  : </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/ui/bd_ea899fec.ui> 
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+Reading block design file </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_3
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_4
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_5
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_read_sc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_write_sc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - vision_irq_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - vision_irq_zero
+Adding component instance block -- local:vision:image_preprocess:1.0 - image_preprocess_1
+Adding component instance block -- local:vision:yolo_postprocess:1.0 - yolo_postprocess_1
+Successfully read diagram <kv260_hardware_platform> from block design file </home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+set_property pfm_name {xilinx:kv260:kv260_hardware_platform:0.0} [get_files -all {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}]
+set_property platform.extensible {true} [current_project]
+set_property platform.uses_pr {false} [current_project]
+WARNING: [Common 17-599] Property 'platform.ocl_inst_path' is deprecated for object type 'project'. Property platform.ocl_inst_path has been deprecated, please use platform.dr_inst_path instead.
+write_hw_platform -include_bit -force -file /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa ...
+INFO: [Project 1-1906] Skipping semantic label enumeration.
+WARNING: [BD 41-2589] Platform should have atleast one axi memory mapped master interface. Enable a master AXI interface as platform AXI_PORT.
+INFO: [PFM-62] PFM.AXI_PORT for ps8_0_axi_periph/M03_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [PFM-62] PFM.AXI_PORT for ps8_0_axi_periph/M04_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [PFM-62] PFM.AXI_PORT for ps8_0_axi_periph/M05_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [PFM-62] PFM.AXI_PORT for ps8_0_axi_periph/M06_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [PFM-62] PFM.AXI_PORT for ps8_0_axi_periph/M07_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [PFM-62] PFM.AXI_PORT for zynq_ultra_ps_e_0/M_AXI_HPM0_FPD does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [PFM-62] PFM.AXI_PORT for zynq_ultra_ps_e_0/M_AXI_HPM1_FPD does not have an sptag specified, so is being assigned an auto generated name of GP
+INFO: [Project 1-1042] Successfully generated hpfm file
+INFO: [Project 1-1945] The Hardware Platform can be used for Hardware and Hardware Emulation
+INFO: [Project 1-1941] Successfully created Hardware Platform: /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (/tools/Xilinx/Vivado/2022.1/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 9611.211 ; gain = 0.000 ; free physical = 10170 ; free virtual = 14325
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+report_ip_status -name ip_status 
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+regenerate_bd_layout
+open_bd_design {/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd}
+regenerate_bd_layout
+regenerate_bd_layout
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 02:33:50 2026...

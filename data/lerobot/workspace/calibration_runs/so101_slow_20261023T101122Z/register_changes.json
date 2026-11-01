@@ -1,0 +1,174 @@
+{
+  "shoulder_pan": {
+    "Torque_Enable": {
+      "before": 0,
+      "after": 1
+    },
+    "Operating_Mode": {
+      "before": 0,
+      "after": 1
+    },
+    "Homing_Offset": {
+      "before": 85,
+      "after": 0
+    },
+    "Max_Torque_Limit": {
+      "before": 1000,
+      "after": 600
+    },
+    "Torque_Limit": {
+      "before": 1000,
+      "after": 400
+    },
+    "Present_Position": {
+      "before": 3411,
+      "after": 3578
+    }
+  },
+  "shoulder_lift": {
+    "Present_Position": {
+      "before": 2852,
+      "after": 2842
+    }
+  },
+  "elbow_flex": {
+    "Torque_Enable": {
+      "before": 0,
+      "after": 1
+    },
+    "Operating_Mode": {
+      "before": 0,
+      "after": 1
+    },
+    "Homing_Offset": {
+      "before": 85,
+      "after": 0
+    },
+    "Max_Torque_Limit": {
+      "before": 1000,
+      "after": 600
+    },
+    "Torque_Limit": {
+      "before": 1000,
+      "after": 600
+    },
+    "Present_Position": {
+      "before": 152,
+      "after": 249
+    }
+  },
+  "wrist_flex": {
+    "Torque_Enable": {
+      "before": 0,
+      "after": 1
+    },
+    "Operating_Mode": {
+      "before": 0,
+      "after": 1
+    },
+    "Homing_Offset": {
+      "before": 85,
+      "after": 0
+    },
+    "Max_Torque_Limit": {
+      "before": 1000,
+      "after": 600
+    },
+    "Torque_Limit": {
+      "before": 1000,
+      "after": 600
+    },
+    "Present_Position": {
+      "before": 1056,
+      "after": 1162
+    },
+    "Present_Velocity": {
+      "before": 0,
+      "after": -150
+    },
+    "Present_Temperature": {
+      "before": 32,
+      "after": 33
+    },
+    "Present_Current": {
+      "before": 0,
+      "after": 2
+    },
+    "Present_Load": {
+      "before": 0,
+      "after": 1068
+    }
+  },
+  "wrist_roll": {
+    "Torque_Enable": {
+      "before": 0,
+      "after": 1
+    },
+    "Operating_Mode": {
+      "before": 0,
+      "after": 1
+    },
+    "Homing_Offset": {
+      "before": 85,
+      "after": 0
+    },
+    "Max_Torque_Limit": {
+      "before": 1000,
+      "after": 300
+    },
+    "Torque_Limit": {
+      "before": 1000,
+      "after": 300
+    },
+    "Present_Position": {
+      "before": 1546,
+      "after": 1641
+    },
+    "Present_Voltage": {
+      "before": 122,
+      "after": 121
+    },
+    "Present_Load": {
+      "before": 0,
+      "after": 1044
+    }
+  },
+  "gripper": {
+    "Torque_Enable": {
+      "before": 0,
+      "after": 1
+    },
+    "Operating_Mode": {
+      "before": 0,
+      "after": 1
+    },
+    "Homing_Offset": {
+      "before": 85,
+      "after": 0
+    },
+    "Max_Torque_Limit": {
+      "before": 500,
+      "after": 300
+    },
+    "Torque_Limit": {
+      "before": 500,
+      "after": 300
+    },
+    "Present_Position": {
+      "before": 3246,
+      "after": 250
+    },
+    "Present_Velocity": {
+      "before": 0,
+      "after": -50
+    },
+    "Present_Current": {
+      "before": 0,
+      "after": 1
+    },
+    "Present_Load": {
+      "before": 0,
+      "after": 1058
+    }
+  }
+}

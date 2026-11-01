@@ -1,0 +1,47 @@
+Validation only: imports succeeded; no device constructed or connected.
+test_acceleration_change_blocked (__main__.GuardTests) ... ok
+test_acknowledged_but_ignored_write_latches_fault (__main__.GuardTests) ... ok
+test_cleanup_never_switches_mode_if_torque_off_failed (__main__.GuardTests) ... ok
+test_cleanup_operation_times_out (__main__.GuardTests) ... ok
+test_default_entrypoint_is_no_hardware (__main__.GuardTests) ... ok
+test_hardware_execution_entrypoints_locked (__main__.GuardTests) ... usage: calibrate_slow.py [-h] [--execute] [--stop-only]
+calibrate_slow.py: error: OFFLINE_ONLY: prior shutdown failed; no device may be opened until separately reviewed
+usage: calibrate_slow.py [-h] [--execute] [--stop-only]
+calibrate_slow.py: error: OFFLINE_ONLY: prior shutdown failed; no device may be opened until separately reviewed
+ok
+test_ignored_homing_offset_write_aborts (__main__.GuardTests) ... ok
+test_ignored_torque_off_rejected_and_no_mode_switch (__main__.GuardTests) ... ok
+test_incomplete_calibration_rejected (__main__.GuardTests) ... ok
+test_invalid_complete_calibration_never_written (__main__.GuardTests) ... ok
+test_invalid_joint_never_enters_provisional_results (__main__.GuardTests) ... ok
+test_invalid_ranges_and_identity_rejected (__main__.GuardTests) ... ok
+test_negative_speed_limit (__main__.GuardTests) ... ok
+test_phase_and_overall_watchdogs (__main__.GuardTests) ... ok
+test_position_command_blocked (__main__.GuardTests) ... ok
+test_protections_preserved (__main__.GuardTests) ... ok
+test_read_overload_latches_and_not_runtimeerror (__main__.GuardTests) ... ok
+test_readonly_health_checks (__main__.GuardTests) ... ok
+test_recovery_uses_same_speed (__main__.GuardTests) ... ok
+test_shutdown_bypasses_fault_and_verifies (__main__.GuardTests) ... ok
+test_shutdown_rejects_fault_status (__main__.GuardTests) ... ok
+test_shutdown_rejects_ignored_torque_off (__main__.GuardTests) ... ok
+test_shutdown_rejects_remaining_motion (__main__.GuardTests) ... ok
+test_speed_is_exactly_requested_400 (__main__.GuardTests) ... ok
+test_speed_limit_latches (__main__.GuardTests) ... ok
+test_stale_velocity_enable_blocked (__main__.GuardTests) ... ok
+test_stop_continues_after_one_motor_error (__main__.GuardTests) ... ok
+test_temperature_voltage_status_trip (__main__.GuardTests) ... ok
+test_torque_caps (__main__.GuardTests) ... ok
+test_unexpected_position_mode_enable_blocked (__main__.GuardTests) ... ok
+test_upstream_exploration_aborts_overload (__main__.GuardTests) ... ok
+test_upstream_joint_stops_before_midpoint_for_zero_span (__main__.GuardTests) ... ok
+test_valid_complete_calibration_requires_torque_off (__main__.GuardTests) ... ok
+test_valid_range_passes (__main__.GuardTests) ... ok
+test_velocity_mode_enable_allowed (__main__.GuardTests) ... ok
+test_write_overload_latches (__main__.GuardTests) ... ok
+test_zero_span_rejected_before_midpoint (__main__.GuardTests) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.893s
+
+OK

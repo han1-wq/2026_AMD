@@ -1,0 +1,62 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'amd' on host 'ubuntu' (Linux_x86_64 version 5.15.0-139-generic) on Tue Oct 13 04:55:39 PDT 2026
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/amd/Workspace/HLS_IP/yolo_postprocess/build'
+Sourcing Tcl script '/home/amd/Workspace/HLS_IP/yolo_postprocess/scripts/build.tcl'
+INFO: [HLS 200-1510] Running: open_project yolo_postprocess 
+INFO: [HLS 200-10] Opening project '/home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess'.
+INFO: [HLS 200-1510] Running: set_top yolo_postprocess 
+INFO: [HLS 200-1510] Running: add_files /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp -cflags -std=c++14 -O2 
+INFO: [HLS 200-10] Adding design file '/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/amd/Workspace/HLS_IP/yolo_postprocess/tb/test_yolo_postprocess.cpp -cflags -std=c++14 -O2 -I/home/amd/Workspace/HLS_IP/yolo_postprocess/src 
+INFO: [HLS 200-10] Adding test bench file '/home/amd/Workspace/HLS_IP/yolo_postprocess/tb/test_yolo_postprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_200mhz -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess/solution_200mhz'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.625 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim -argv --smoke -trace_level none 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/usr/bin/g++"
+   Compiling test_yolo_postprocess.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_postprocess.cpp
+   Compiling yolo_postprocess.cpp_pre.cpp.tb.cpp
+   Compiling apatb_yolo_postprocess_ir.ll
+   Generating cosim.tv.exe
+e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024/tools/Xilinx/Vivado/2022.1/tps/lnx64/binutils-2.37/bin/ld: obj/apatb_yolo_postprocess_ir.o: warning: relocation against `free@@GLIBC_2.2.5' in read-only section `.text'
+/tools/Xilinx/Vivado/2022.1/tps/lnx64/binutils-2.37/bin/ld: obj/apatb_yolo_postprocess_ir.o: relocation R_X86_64_PC32 against symbol `malloc@@GLIBC_2.2.5' can not be used when making a PIE object; recompile with -fPIE
+/tools/Xilinx/Vivado/2022.1/tps/lnx64/binutils-2.37/bin/ld: final link failed: bad value
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:393: cosim.tv.exe] Error 1
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 9.42 seconds. CPU system time: 1.23 seconds. Elapsed time: 10.65 seconds; current allocated memory: -1023.328 MB.
+command 'ap_source' returned error code
+    while executing
+"source /home/amd/Workspace/HLS_IP/yolo_postprocess/scripts/build.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 10.84 seconds. Total CPU system time: 1.9 seconds. Total elapsed time: 12.05 seconds; peak allocated memory: 230.914 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Oct 13 04:55:50 2026...

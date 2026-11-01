@@ -1,0 +1,1 @@
+../../../../../../src/kv260/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/vision_integration/README.md

@@ -1,0 +1,1 @@
+../../../../../../../../src/ps/roarm_ws/src/roarm_else/moveit_task_constructor/core/test/test_pruning.cpp

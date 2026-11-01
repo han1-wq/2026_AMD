@@ -1,0 +1,1 @@
+../../../src/kv260/dpu_platform2/AI_VISION_PROJECT_OVERVIEW_CN.md

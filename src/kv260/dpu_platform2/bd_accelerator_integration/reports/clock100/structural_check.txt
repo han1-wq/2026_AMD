@@ -1,0 +1,1 @@
+PASS: exactly 8 clock and 6 reset endpoints migrated; other connections, all interface nets/address maps, DPU configuration and clock wizard configuration preserved.

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 13 03:58:39 2026
+# Process ID: 62144
+# Current directory: /home/amd/Workspace/HLS_IP/image_preprocess
+# Command line: vivado -mode batch -source /home/amd/Workspace/HLS_IP/image_preprocess/scripts/validate_integration.tcl
+# Log file: /home/amd/Workspace/HLS_IP/image_preprocess/vivado.log
+# Journal file: /home/amd/Workspace/HLS_IP/image_preprocess/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source /home/amd/Workspace/HLS_IP/image_preprocess/scripts/validate_integration.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set source_bd /home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd
+# set check_dir [file join $root build integration_check]
+# file mkdir $check_dir
+# file copy -force $source_bd [file join $check_dir platform_copy.bd]
+# create_project -force image_integration_check [file join $check_dir project] -part xck26-sfvc784-2LV-c
+# add_files [file join $check_dir platform_copy.bd]
+ERROR: [BD 41-2002] Block design name 'kv260_hardware_platform' found in BD file does not match with actual file name 'platform_copy.bd'. BD file on disk must be named 'kv260_hardware_platform.bd'
+CRITICAL WARNING: [filemgmt 20-1381] The sub-design source file can not be added to the current project since there is an overlap between the sub-design directory structure and the project directory structure. Sources representing Embedded/DSP/IP sub-designs need to be located in their own directory structure. Allowing the project directory structure to overlap with the sub-design directory structure will cause errors later in the flows for any operation that requires the sub-design to be local to the project. Examples of these operations are: copying the sub-design to the project locally, project archive, project save as etc.
+
+ Please move either the project or the Embedded/DSP/IP sub-design directory structure to a different location so that there are no more overlaps, and then try adding the sub-design source to this project again. If a remote sub-design is being added to an existing project, it is recommended that the sub-design directory tree be placed completely outside the project directory structure, the sub-design root file added to the project, and then imported into the project.
+
+project location: /home/amd/Workspace/HLS_IP/image_preprocess/build/integration_check/project
+sub-design source location: /home/amd/Workspace/HLS_IP/image_preprocess/build/integration_check/platform_copy.bd
+
+CRITICAL WARNING: [Vivado 12-1464] The source file '/home/amd/Workspace/HLS_IP/image_preprocess/build/integration_check/platform_copy.bd' cannot be added to the fileset 'sources_1'.
+ERROR: [Common 17-39] 'add_files' failed due to earlier errors.
+
+    while executing
+"add_files [file join $check_dir platform_copy.bd]"
+    (file "/home/amd/Workspace/HLS_IP/image_preprocess/scripts/validate_integration.tcl" line 8)
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 03:58:47 2026...

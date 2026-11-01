@@ -1,0 +1,12 @@
+{"project": "ofdm", "source": "/home/amd/eeSDR_ofdm_loopback", "destination": "src/ofdm/eeSDR_ofdm_loopback", "git_commit": null, "status": "copied", "files": 7227, "bytes": 1631109340}
+{"project": "hls", "source": "/home/amd/Workspace/HLS_IP", "destination": "src/kv260/HLS_IP", "git_commit": null, "status": "copied", "files": 13926, "bytes": 1951633392}
+{"project": "dpu_platform", "source": "/home/amd/Workspace/dpu_platform2", "destination": "src/kv260/dpu_platform2", "git_commit": null, "status": "copied", "files": 5289, "bytes": 683104363}
+{"project": "b3136", "source": "/home/amd/kv260_B3136", "destination": "src/ps/kv260_B3136", "git_commit": null, "status": "copied", "files": 70, "bytes": 87185733}
+{"project": "x3plus", "source": "/home/amd/x3plus-kv260-docker", "destination": "src/ps/x3plus-kv260-docker", "git_commit": null, "status": "copied", "files": 2887, "bytes": 228140746}
+{"project": "lerobot", "source": "/home/amd/lerobot-deploy", "destination": "src/ps/lerobot-deploy", "git_commit": null, "status": "copied", "files": 882, "bytes": 401993555, "recorded_lerobot_commit": "072e8355fbb9a7b520915d44877aa876794efb31"}
+{"project": "roarm", "source": "/home/amd/roarm_ws", "destination": "src/ps/roarm_ws", "git_commit": null, "status": "copied", "files": 728, "bytes": 10696334}
+{"project": "roarm_console", "source": "/home/amd/roarm-vision-console", "destination": "src/host/roarm-vision-console", "git_commit": null, "status": "copied", "files": 161, "bytes": 19473164}
+{"project": "launcher", "source": "/home/amd/kv260-launcher-ai", "destination": "src/host/kv260-launcher-ai", "git_commit": null, "status": "copied", "files": 23, "bytes": 262876}
+{"project": "ofa_legacy", "source": "/home/amd/kv260_ofa_yolo_deploy", "destination": "src/ps/kv260_ofa_yolo_deploy", "git_commit": null, "status": "copied", "files": 22, "bytes": 34990984}
+{"project": "ros_legacy", "source": "/home/amd/kv260_yolo_ros", "destination": "src/ps/kv260_yolo_ros", "git_commit": null, "status": "copied", "files": 312, "bytes": 222406471}
+PACKAGING_COPY_COMPLETE 31527 5270996958

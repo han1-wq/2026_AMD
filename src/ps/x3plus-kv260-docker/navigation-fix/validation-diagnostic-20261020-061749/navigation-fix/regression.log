@@ -1,0 +1,8 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+{"phase": "cold_start_rejects_all_goal_and_speed_inputs", "guard": {"ready": false, "stamp": 1792502275.263283, "reason": "map_changed_initial_pose_required", "scan_match": 0.0}, "forwarded": 0, "output_zero": true}
+{"phase": "explicit_wrong_initial_pose_rejected", "guard": {"ready": false, "stamp": 1792502281.719903, "reason": "initial_pose_disagreement", "scan_match": 0.0}, "forwarded": 0, "output_zero": true}
+{"estimated_pose": [1.9764632469774126, 0.9799878611480733, -2.5427793654590927], "guard": {"ready": true, "stamp": 1792502287.69042, "reason": "ready", "scan_match": 0.7666666666666667}, "truth_pose": [2.0, 1.0, 0.6], "phase": "reversed_heading_diagnostic", "position_error_m": 0.03089440797741671, "yaw_error_rad": 3.140405941720494}
+Traceback (most recent call last):
+  File "/project/navigation-fix/regression.py", line 135, in <module>
+    assert not state.get('ready'), 'Reversed initial heading accepted'
+AssertionError: Reversed initial heading accepted

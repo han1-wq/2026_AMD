@@ -1,0 +1,25 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGINT, Interrupt.
+0x00007ffff7e40b1f in ap_fixed_base<79, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 32, true>::mult ap_fixed_base<79, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/lib/csim/libhlsm-GCC46.so
+#0  0x00007ffff7e40b1f in ap_fixed_base<79, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 32, true>::mult ap_fixed_base<79, 0, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/lib/csim/libhlsm-GCC46.so
+#1  0x00007ffff7e64d08 in double pow_reduce::pow_generic<double>(double, double) () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/lib/csim/libhlsm-GCC46.so
+#2  0x00007ffff7655ad3 in xip_fpo_exp_clear_cache(xil_fpo_exp_cache*) () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/fpo_v7_0/libIp_floating_point_v7_0_bitacc_cmodel.so
+#3  0x00007ffff7655537 in xip_fpo_exp () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/fpo_v7_0/libIp_floating_point_v7_0_bitacc_cmodel.so
+#4  0x00007ffff765560b in xip_fpo_exp_d () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/tools/fpo_v7_0/libIp_floating_point_v7_0_bitacc_cmodel.so
+#5  0x00007ffff7e24f47 in exp_reduce_::exp(double) () from /tools/Xilinx/Vitis_HLS/2022.1/lnx64/lib/csim/libhlsm-GCC46.so
+#6  0x0000000000404dc7 in sigmoid(double) ()
+#7  0x000000000040237b in main ()
+=> 0x7ffff7e40b1f <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+95>:	movq   0x8(%rsp),%xmm0
+   0x7ffff7e40b25 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+101>:	mov    $0x1,%r13d
+   0x7ffff7e40b2b <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+107>:	movaps %xmm0,0x20(%rsp)
+   0x7ffff7e40b30 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+112>:	lea    (%rbx,%r13,1),%edi
+   0x7ffff7e40b34 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+116>:	mov    %rdi,%r14
+   0x7ffff7e40b37 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+119>:	shl    $0x3,%rdi
+   0x7ffff7e40b3b <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+123>:	callq  0x7ffff7cb7120 <malloc@plt>
+   0x7ffff7e40b40 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+128>:	lea    0x20(%rsp),%rcx
+   0x7ffff7e40b45 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+133>:	mov    %r14d,%r9d
+   0x7ffff7e40b48 <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+136>:	mov    %r13d,%r8d
+   0x7ffff7e40b4b <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+139>:	mov    %rax,%r12
+   0x7ffff7e40b4e <_ZNK13ap_fixed_baseILi79ELi0ELb0EL9ap_q_mode5EL9ap_o_mode3ELi0EEmlILi32ELi32ELb1ELS0_5ELS1_3ELi0EEENS2_5RTypeIXT_EXT0_EXT1_EE4multERKS_IXT_EXT0_EXT1_EXT2_EXT3_EXT4_EE+142>:	lea    0x10(%rsp),%rsi

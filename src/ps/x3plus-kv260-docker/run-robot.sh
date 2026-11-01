@@ -1,0 +1,135 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/launcher-env.sh"
+
+IMAGE="${IMAGE:-x3plus:melodic-arm64}"
+NAME="${ROBOT_NAME:-x3plus-robot}"
+ROS_MASTER_URI="${ROS_MASTER_URI:-http://127.0.0.1:11311}"
+ROS_HOSTNAME="${ROS_HOSTNAME:-127.0.0.1}"
+ROS_IP="${ROS_IP:-${ROS_HOSTNAME}}"
+ROBOT_TYPE="${ROBOT_TYPE:-X3plus}"
+# These must be stable udev paths, not /dev/ttyUSB0 or /dev/ttyUSB1.
+ROBOT_SERIAL="${ROBOT_SERIAL:-/dev/myserial}"
+LIDAR_SERIAL="${LIDAR_SERIAL:-/dev/ydlidar}"
+LIDAR_BAUDRATE="${LIDAR_BAUDRATE:-512000}"
+LIDAR_DEVICE_TYPE="${LIDAR_DEVICE_TYPE:-0}"
+LIDAR_TYPE="${LIDAR_TYPE:-0}"
+RPLIDAR_TYPE="${RPLIDAR_TYPE:-4ROS}"
+MAP_DIR="${MAP_DIR:-/opt/x3plus-maps}"
+RUN_IMAGE="${IMAGE}"
+
+# USB enumeration can lag behind Docker/container startup after a reboot.
+if command -v udevadm >/dev/null 2>&1; then
+  udevadm settle --timeout=10 >/dev/null 2>&1 || true
+fi
+
+require_stable_serial() {
+  local label="$1"
+  local path="$2"
+  case "${path}" in
+    /dev/ttyUSB[0-9]*|/dev/ttyACM[0-9]*)
+      echo "${label} must use a stable udev path, not ${path}." >&2
+      echo "Use /dev/serial/by-id/* or a configured udev alias such as /dev/myserial or /dev/ydlidar." >&2
+      exit 1
+      ;;
+    /dev/*)
+      ;;
+    *)
+      echo "${label} must be an absolute /dev path: ${path}" >&2
+      exit 1
+      ;;
+  esac
+  [[ -e "${path}" ]] || { echo "${label} device not found: ${path}" >&2; exit 1; }
+  [[ -c "${path}" ]] || { echo "${label} path is not a character device: ${path}" >&2; exit 1; }
+}
+
+require_stable_serial "Robot" "${ROBOT_SERIAL}"
+require_stable_serial "Lidar" "${LIDAR_SERIAL}"
+/usr/bin/python3 "${SCRIPT_DIR}/launcher_core.py" --check
+[[ -d "${MAP_DIR}" ]] || { echo "Map directory not found: ${MAP_DIR}" >&2; exit 1; }
+
+# Keep the stable source path for Docker. Only resolve it for identity checks and
+# diagnostics; resolving it here would reintroduce ttyUSB-number instability.
+ROBOT_DEVICE="${ROBOT_SERIAL}"
+LIDAR_DEVICE="${LIDAR_SERIAL}"
+ROBOT_REAL="$(readlink -f -- "${ROBOT_DEVICE}")"
+LIDAR_REAL="$(readlink -f -- "${LIDAR_DEVICE}")"
+[[ -n "${ROBOT_REAL}" && -n "${LIDAR_REAL}" ]] || { echo "Unable to resolve serial device identities." >&2; exit 1; }
+[[ "${ROBOT_REAL}" != "${LIDAR_REAL}" ]] || { echo "Robot and lidar resolve to the same device: ${ROBOT_REAL}" >&2; exit 1; }
+/usr/bin/python3 "${SCRIPT_DIR}/launcher_network.py" "${NAME}"
+
+if docker inspect "${NAME}" >/dev/null 2>&1 && [[ "${FORCE_RECREATE:-0}" != 1 ]]; then
+  mapped_robot="$(docker inspect "${NAME}" --format '{{range .HostConfig.Devices}}{{if eq .PathInContainer "/dev/robot"}}{{.PathOnHost}}{{end}}{{end}}')"
+  mapped_lidar="$(docker inspect "${NAME}" --format '{{range .HostConfig.Devices}}{{if eq .PathInContainer "/dev/lidar"}}{{.PathOnHost}}{{end}}{{end}}')"
+  if [[ "${mapped_robot}" != "${ROBOT_DEVICE}" || "${mapped_lidar}" != "${LIDAR_DEVICE}" ]]; then
+    echo "Existing ${NAME} does not use the required stable serial paths; refusing to reuse it." >&2
+    echo "Required stable paths: robot=${ROBOT_DEVICE} -> /dev/robot, lidar=${LIDAR_DEVICE} -> /dev/lidar" >&2
+    echo "Existing paths: robot=${mapped_robot:-missing} -> /dev/robot, lidar=${mapped_lidar:-missing} -> /dev/lidar" >&2
+    echo "This is a one-time migration. Run FORCE_RECREATE=1 ./run-robot.sh; it will save a container snapshot before rebuilding." >&2
+    exit 1
+  fi
+  state="$(docker inspect "${NAME}" --format '{{.State.Status}}')"
+  if [[ "${state}" == running ]]; then
+    echo "Robot container ${NAME} is already running; reusing it with stable serial paths."
+  else
+    echo "Starting existing robot container ${NAME} (state: ${state}) with stable serial paths."
+    docker start "${NAME}" >/dev/null
+  fi
+  /usr/bin/python3 "${SCRIPT_DIR}/launcher_core.py" --container "${NAME}"
+  /usr/bin/python3 "${SCRIPT_DIR}/navigation-fix/sync-runtime.py" --container "${NAME}"
+  echo "Resolved now: robot=${ROBOT_REAL}, lidar=${LIDAR_REAL}"
+  echo "Next: ./start-hardware.sh, ./start-slam.sh and ./start-keyboard.sh"
+  exit 0
+fi
+
+if [[ "${FORCE_RECREATE:-0}" == 1 ]]; then
+  if docker inspect "${NAME}" >/dev/null 2>&1; then
+    stamp="$(date +%Y%m%d-%H%M%S)"
+    snapshot_tag="${NAME}:before-recreate-${stamp}"
+    inspect_file="${SCRIPT_DIR}/${NAME}.inspect.before-recreate-${stamp}.json"
+    diff_file="${SCRIPT_DIR}/${NAME}.diff.before-recreate-${stamp}.txt"
+    log_file="${SCRIPT_DIR}/${NAME}.logs.before-recreate-${stamp}.txt"
+
+    echo "FORCE_RECREATE=1: preparing a protected snapshot of ${NAME}." >&2
+    if [[ "$(docker inspect "${NAME}" --format '{{.State.Running}}')" == true ]]; then
+      # Stop any possible motion before stopping the old container.
+      docker exec "${NAME}" bash -lc \
+        'source /opt/ros/melodic/setup.bash 2>/dev/null || true; if command -v rostopic >/dev/null 2>&1; then timeout --kill-after=2s 5 rostopic pub -1 /cmd_vel geometry_msgs/Twist "{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}" >/dev/null 2>&1 || true; fi' \
+        >/dev/null 2>&1 || true
+      docker stop -t 10 "${NAME}" >/dev/null 2>&1 || docker kill "${NAME}" >/dev/null 2>&1 || true
+    fi
+    docker inspect "${NAME}" >"${inspect_file}"
+    docker diff "${NAME}" >"${diff_file}" || true
+    docker logs "${NAME}" >"${log_file}" 2>&1 || true
+    if ! docker commit "${NAME}" "${snapshot_tag}" >/dev/null; then
+      echo "Container snapshot failed; keeping ${NAME} and aborting before removal." >&2
+      exit 1
+    fi
+    echo "Saved container snapshot: ${snapshot_tag}" >&2
+    echo "Saved metadata: ${inspect_file}, ${diff_file}, ${log_file}" >&2
+    # Recreate from the snapshot, not the base image, so writable-layer fixes
+    # already validated on this robot are retained.
+    RUN_IMAGE="${snapshot_tag}"
+    docker rm "${NAME}" >/dev/null
+  fi
+fi
+
+docker run -d --name "${NAME}" --restart unless-stopped \
+  --privileged --net=host --ipc=host \
+  --device="${ROBOT_DEVICE}:/dev/robot" --device="${LIDAR_DEVICE}:/dev/lidar" \
+  -e "ROS_MASTER_URI=${ROS_MASTER_URI}" -e "ROS_HOSTNAME=${ROS_HOSTNAME}" -e "ROS_IP=${ROS_IP}" \
+  -e "ROBOT_TYPE=${ROBOT_TYPE}" -e ROBOT_SERIAL=/dev/robot -e LIDAR_SERIAL=/dev/lidar \
+  -e "LIDAR_BAUDRATE=${LIDAR_BAUDRATE}" -e "LIDAR_DEVICE_TYPE=${LIDAR_DEVICE_TYPE}" \
+  -e "LIDAR_TYPE=${LIDAR_TYPE}" -e "RPLIDAR_TYPE=${RPLIDAR_TYPE}" \
+  -v "${MAP_DIR}:/maps" "${RUN_IMAGE}" bash -lc 'exec tail -f /dev/null'
+
+/usr/bin/python3 "${SCRIPT_DIR}/launcher_core.py" --container "${NAME}"
+/usr/bin/python3 "${SCRIPT_DIR}/navigation-fix/sync-runtime.py" --container "${NAME}"
+echo "Robot container is running: ${NAME}"
+echo "Container image: ${RUN_IMAGE}"
+echo "Stable robot path: ${ROBOT_SERIAL} -> ${ROBOT_REAL} -> /dev/robot"
+echo "Stable lidar path: ${LIDAR_SERIAL} -> ${LIDAR_REAL} -> /dev/lidar"
+echo "Stable paths and device numbers verified. Hotplug does not automatically recover a running driver."
+echo "Next: ./start-hardware.sh, ./start-slam.sh and ./start-keyboard.sh"

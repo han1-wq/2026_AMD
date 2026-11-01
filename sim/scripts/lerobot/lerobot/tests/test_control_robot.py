@@ -1,0 +1,1 @@
+../../../../../src/ps/lerobot-deploy/lerobot/tests/test_control_robot.py

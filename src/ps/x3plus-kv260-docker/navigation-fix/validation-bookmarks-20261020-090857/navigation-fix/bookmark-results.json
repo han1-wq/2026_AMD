@@ -1,0 +1,158 @@
+{
+  "scope": "Real AMCL/guard; synthetic map/scan/TF/odom; inert stationary planner; no hardware", 
+  "results": [
+    {
+      "phase": "saved_map_snapshot_ready_stationary", 
+      "guard": {
+        "scan_match": 1.0, 
+        "task_state": "failed", 
+        "stamp": 1792512547.074326, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.008333333333333333, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "preview_marker_only_no_initialpose_goal_or_motion", 
+      "guard": {
+        "scan_match": 0.9916666666666667, 
+        "task_state": "failed", 
+        "stamp": 1792512547.687671, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.008333333333333333, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "unconfirmed_stale_wrong_session_map_and_invalid_pose_rejected", 
+      "guard": {
+        "scan_match": 1.0, 
+        "task_state": "failed", 
+        "stamp": 1792512548.101442, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.008333333333333333, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "moving_stale_and_missing_odometry_rejected", 
+      "guard": {
+        "scan_match": 0.9833333333333333, 
+        "task_state": "failed", 
+        "stamp": 1792512556.677397, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.016666666666666666, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "active_slam_or_multiple_map_publishers_rejected", 
+      "guard": {
+        "scan_match": 0.975, 
+        "task_state": "failed", 
+        "stamp": 1792512558.410752, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.016666666666666666, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "restore_cancels_active_goal_once_rechecks_and_never_auto_moves", 
+      "guard": {
+        "scan_match": 1.0, 
+        "task_state": "failed", 
+        "stamp": 1792512561.768852, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.0, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "actual_console_ros_client_snapshot_preview_restore_acknowledged", 
+      "guard": {
+        "scan_match": 1.0, 
+        "task_state": "failed", 
+        "stamp": 1792512564.826894, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": false, 
+        "ray_conflict": 0.008333333333333333, 
+        "reason": "ready", 
+        "task_reason": "checking_initial_pose", 
+        "recovery_remaining_s": 0.0, 
+        "ready": true, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "", 
+        "resume_count": 0
+      }
+    }, 
+    {
+      "phase": "changed_map_clears_marker_and_rejects_old_bookmark", 
+      "guard": {
+        "scan_match": 1.0, 
+        "task_state": "failed", 
+        "stamp": 1792512564.929027, 
+        "max_auto_resumes": 2, 
+        "initial_pose_required": true, 
+        "ray_conflict": 0.008333333333333333, 
+        "reason": "map_changed_initial_pose_required", 
+        "task_reason": "map_changed_initial_pose_required", 
+        "recovery_remaining_s": 0.0, 
+        "ready": false, 
+        "current_fault": "", 
+        "goal_retained": false, 
+        "latched_reason": "map_changed_initial_pose_required", 
+        "resume_count": 0
+      }
+    }
+  ], 
+  "passed": true
+}

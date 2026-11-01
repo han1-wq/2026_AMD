@@ -1,0 +1,15 @@
+{
+  "Config": {
+    "Env": [
+      "ROS_MASTER_URI=http://old:11311"
+    ]
+  },
+  "HostConfig": {
+    "NetworkMode": "host",
+    "IpcMode": "host",
+    "Binds": []
+  },
+  "State": {
+    "Running": false
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "vision": {
+    "connected": true,
+    "error": "",
+    "age_s": 0.422,
+    "frames": 1307,
+    "stamp": 1791806765.6019611,
+    "width": 640,
+    "height": 480,
+    "depth_sync_ms": 9.99,
+    "detections": {
+      "stamp": {
+        "sec": 1791806765,
+        "nanosec": 601961171
+      },
+      "frame_id": "camera_color_optical_frame",
+      "image_width": 640,
+      "image_height": 480,
+      "sync_delta_ms": 9.987,
+      "dpu_ms": 118.485,
+      "depth": {
+        "topic": "/camera/depth/image_raw",
+        "encoding": "16UC1",
+        "unit": "mm",
+        "width": 320,
+        "height": 240,
+        "mapping": "normalized_rgb_coordinates_without_calibration"
+      },
+      "detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.995331,
+          "bbox": {
+            "x1": 382,
+            "y1": 172,
+            "x2": 466,
+            "y2": 400
+          },
+          "depth_valid": true,
+          "depth_mm": 967.0,
+          "depth_m": 0.967,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 199,
+            "y1": 108,
+            "x2": 225,
+            "y2": 178
+          },
+          "valid_depth_pixels": 21
+        },
+        {
+          "class_id": 67,
+          "class_name": "cell phone",
+          "confidence": 0.318069,
+          "bbox": {
+            "x1": 282,
+            "y1": 153,
+            "x2": 322,
+            "y2": 198
+          },
+          "depth_valid": true,
+          "depth_mm": 972.0,
+          "depth_m": 0.972,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 145,
+            "y1": 80,
+            "x2": 157,
+            "y2": 95
+          },
+          "valid_depth_pixels": 25
+        }
+      ],
+      "tracked_detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.995182,
+          "bbox": {
+            "x1": 382,
+            "y1": 171,
+            "x2": 466,
+            "y2": 399
+          },
+          "depth_valid": true,
+          "depth_mm": 967.0,
+          "depth_m": 0.967,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 199,
+            "y1": 108,
+            "x2": 225,
+            "y2": 178
+          },
+          "valid_depth_pixels": 21,
+          "track_id": 1,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 67,
+          "class_name": "cell phone",
+          "confidence": 0.318503,
+          "bbox": {
+            "x1": 282,
+            "y1": 153,
+            "x2": 322,
+            "y2": 198
+          },
+          "depth_valid": true,
+          "depth_mm": 972.0,
+          "depth_m": 0.972,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 145,
+            "y1": 80,
+            "x2": 157,
+            "y2": 95
+          },
+          "valid_depth_pixels": 25,
+          "track_id": 2354,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 67,
+          "class_name": "cell phone",
+          "confidence": 0.315051,
+          "bbox": {
+            "x1": 364,
+            "y1": 161,
+            "x2": 404,
+            "y2": 207
+          },
+          "depth_unit": "mm",
+          "depth_image_size": null,
+          "depth_sample_roi": null,
+          "valid_depth_pixels": 0,
+          "track_id": 2355,
+          "tracking_state": "held",
+          "held": true,
+          "depth_valid": false,
+          "depth_mm": null,
+          "depth_m": null,
+          "depth_stale": true
+        }
+      ],
+      "tracking": {
+        "enabled": true,
+        "held_count": 1,
+        "iou_threshold": 0.35,
+        "max_age_ms": 500,
+        "depth_stale_ms": 300
+      }
+    }
+  },
+  "model": {
+    "base_url": "https://code.rayinai.com/v1",
+    "model": "gpt-6-astra",
+    "mode": "responses",
+    "effort": "medium",
+    "key_configured": true
+  },
+  "task": "目标仍是把指定瓶子推向远离相机。上一轮没有发送任何动作：你提出底座+0.006 rad，confidence=0.71，因未满足0.85门槛被拒绝。请基于当前新图像重新评估一个自由空间标定动作；confidence应如实表示对这个单步本身的把握，不能为通过门槛虚报。你可选择更小的更明确动作；仍不确定时明确缺少的可见信息。操作者已授权运动并说明线缆很远，但并不代替局部图像判断。每步后继续用新图和编码器修正，不能盲推。",
+  "direction": "away_from_camera",
+  "phase": "stopped",
+  "busy": false,
+  "error": "连续三次无可执行动作：夹爪上缘仍被裁切，无法核实微小标定的完整扫掠空隙；需补拍完整夹爪及周边，缩小步长不能消除盲区。",
+  "result": {
+    "decision": {
+      "action": "observe",
+      "tip": null,
+      "target": [
+        424,
+        286
+      ],
+      "goal_tip": null,
+      "confidence": 0.94,
+      "target_label": "指定饮料瓶",
+      "reason": "夹爪上缘仍被裁切，无法核实微小标定的完整扫掠空隙；需补拍完整夹爪及周边，缩小步长不能消除盲区。",
+      "completion_evidence": "",
+      "contact_ready": false,
+      "step": null,
+      "clearance_verified": false,
+      "mapping_verified": false
+    },
+    "latency_s": 14.155,
+    "usage": {
+      "input_tokens": 3735,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 113,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 3848,
+      "attribution": {
+        "items": {
+          "msg_08d40146a2243344016acccce892d4819483351437e2fe9207": {
+            "input_tokens": 2817,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "content": [
+              {
+                "input_tokens": 2077,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              },
+              {
+                "input_tokens": 361,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              },
+              {
+                "input_tokens": 17,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              },
+              {
+                "input_tokens": 362,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              }
+            ]
+          },
+          "msg_08d40146a2243344016accccf18cac8194ae1ca59504e86612": {
+            "input_tokens": 2,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 113,
+            "content": [
+              {
+                "input_tokens": 2,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 113
+              }
+            ]
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "input_tokens": 916,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "model": "gpt-6-astra",
+    "requested_effort": "medium",
+    "observed_stamp": 1791806693.19397,
+    "observation_only": false
+  },
+  "feedback": {
+    "id": 6,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.0,
+    "source": "serial_encoder",
+    "time": 1791806693.7824466
+  },
+  "feedback_age_s": 72.25,
+  "events": [
+    {
+      "time": "05:03:07",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:03:07",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:03:22",
+      "text": "夹爪下缘尖端可见且与瓶子分离，局部短步空间清楚，先微动底座并比较图像与编码器。"
+    },
+    {
+      "time": "05:03:22",
+      "text": "操作结束：缺少可信短步或局部运动空间证据"
+    },
+    {
+      "time": "05:04:34",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:04:34",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:04:46",
+      "text": "夹爪上部被画面裁切，接触尖端及局部扫掠空间不明确；需补拍完整夹爪与周边空隙。"
+    },
+    {
+      "time": "05:04:46",
+      "text": "模型正在选择第 2 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:04:53",
+      "text": "新图仍裁切夹爪上缘，无法确认完整接触尖端及标定扫掠空隙；需补拍完整夹爪周边。"
+    },
+    {
+      "time": "05:04:53",
+      "text": "模型正在选择第 3 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:05:07",
+      "text": "夹爪上缘仍被裁切，无法核实微小标定的完整扫掠空隙；需补拍完整夹爪及周边，缩小步长不能消除盲区。"
+    },
+    {
+      "time": "05:05:07",
+      "text": "操作结束：连续三次无可执行动作：夹爪上缘仍被裁切，无法核实微小标定的完整扫掠空隙；需补拍完整夹爪及周边，缩小步长不能消除盲区。"
+    },
+    {
+      "time": "05:06:06",
+      "text": "已取消后续动作与在途模型结果；已发出的单个 ≤0.012 rad 短步可能完成；不是硬件急停"
+    }
+  ],
+  "motion_enabled": true,
+  "motion_block": "实机闭环可执行模型选择的低速单关节短步；先标定局部视觉方向，再接近与推动"
+}

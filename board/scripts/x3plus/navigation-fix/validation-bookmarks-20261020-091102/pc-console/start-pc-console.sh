@@ -1,0 +1,1 @@
+../../../../../../src/ps/x3plus-kv260-docker/navigation-fix/validation-bookmarks-20261020-091102/pc-console/start-pc-console.sh

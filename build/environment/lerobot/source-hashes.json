@@ -1,0 +1,12 @@
+{
+  "Dockerfile": "63093aaabeb914743d20709079e7a55b0a293e645ef3df3d298dd17f15deef2b",
+  "constraints.txt": "ebfba2c68e9e5230d0b4f96d43c827db177e4b39a19e6eab9dcc7390b702ad10",
+  "install-board.sh": "2fae5de46edcda51ec9b154fd195f9ee9785b8cbf82468f570ef53d28e69ca7a",
+  "run-local.sh": "fd90bed8a7d07d7a439adb936f1c5e59e67aba62a7a43f95323b113d91755893",
+  "run-board.sh": "d04d4fa089aa8b6a851064a717f3d36adfb206704cbf385a23f2ac58d7802ad6",
+  "validate_environment.py": "9334547ff30bcd1e68d8751f945c63ef54d7e5fda1319a236f5b57ae22706f21",
+  "README.md": "04a6e7af729968193f3ead45b2137f68b241a949f48636e570fd6b03609db96c",
+  "STATUS.md": "79a75a7b5a3a56fe1b6f4dd4c85859fedc1d3a349c148f09b84721340a229b6e",
+  ".dockerignore": "8b5c356bb471ddce50a7d50f06ebf054fa12508a65bc1b6de7257f56d3a66dd8",
+  "lerobot/pyproject.toml": "2481ea9390b44385651aed4cb3d347bba5c3cba6d8193351c069f6e23f5d79c5"
+}

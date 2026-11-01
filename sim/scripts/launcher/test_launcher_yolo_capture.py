@@ -1,0 +1,1 @@
+../../../src/host/kv260-launcher-ai/test_launcher_yolo_capture.py

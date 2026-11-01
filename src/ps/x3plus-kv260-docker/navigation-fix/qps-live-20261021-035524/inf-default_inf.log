@@ -1,0 +1,1 @@
+[33m[ WARN] [1792582186.997712946]: Trajectory Rollout planner initialized with param meter_scoring not set. Set it to true to make your settings robust against changes of costmap resolution.[0m

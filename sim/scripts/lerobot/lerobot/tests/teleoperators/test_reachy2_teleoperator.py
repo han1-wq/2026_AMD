@@ -1,0 +1,1 @@
+../../../../../../src/ps/lerobot-deploy/lerobot/tests/teleoperators/test_reachy2_teleoperator.py

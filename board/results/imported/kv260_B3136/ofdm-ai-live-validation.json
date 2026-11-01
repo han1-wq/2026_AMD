@@ -1,0 +1,79 @@
+{
+  "invoked": true,
+  "passed": true,
+  "source": "/home/ubuntu/.local/state/kv260-launcher/ofdm-images/ai-vision-1791986834801077827.png",
+  "returned": "/home/ubuntu/.local/state/kv260-launcher/ofdm-images/ai-vision-1791986834801077827-returned.png",
+  "elapsed_s": 9.061343212000793,
+  "status": "回环 PASS：实际 RX 与发送数据一致\nSHA256: 404416798121903a7320d8c3ee3c9abca15eb528ca7259782bf46fddb71323bc",
+  "log": "[capture] {\"source\": \"B3136 HLS RGB-D annotated desktop image\", \"control_dir\": \"/run/user/1000/kv260-b3136-ui\", \"captured_at\": 1791986840.457141, \"frame_updated\": 1791986840.316796, \"width\": 640, \"height\": 480, \"bytes\": 528833, \"sha256\": \"404416798121903a7320d8c3ee3c9abca15eb528ca7259782bf46fddb71323bc\", \"display_mode\": \"enhanced\", \"message\": {\"sequence\": 1235, \"rgb_stamp_ns\": 1791986839846995541, \"depth_stamp_ns\": 1791986839821967368, \"depth_skew_ms\": 25.028173, \"depth_registration\": \"uncalibrated_normalized_roi\", \"rgb_timestamp\": \"host_after_v4l2_read\", \"depth_unit\": \"m\", \"hls_post_used\": true, \"candidates\": 9, \"latency_ms\": 391.7899620009848, \"timings\": {\"pre_ms\": 151.8334140000661, \"pre_submit_ms\": 0.9049759992194595, \"pre_kernel_wait_ms\": 123.10350300140271, \"pre_tensor_sync_ms\": 0.2453519991831854, \"pre_preview_copy_ms\": 27.579583000260754, \"dpu_ms\": 156.79426499991678, \"post_ms\": 33.819812999354326}, \"detections\": [{\"bbox\": [393.86419677734375, 19.861780166625977, 633.8641967773438, 257.09735107421875], \"score\": 0.9857207536697388, \"class_id\": 0, \"class_name\": \"person\", \"depth_m\": 0.529, \"valid_depth_pixels\": 419}, {\"bbox\": [581.97119140625, 315.29449462890625, 639.0, 429.4411315917969], \"score\": 0.340335488319397, \"class_id\": 45, \"class_name\": \"bowl\", \"depth_m\": null, \"valid_depth_pixels\": 0}], \"preprocessing\": {\"contrast\": 1.0, \"brightness\": -2, \"saturation\": 1.0, \"eq_mode\": 0, \"enhance_tensor\": false, \"config_id\": 1}}}\n[image] LOOPBACK PASS: 528833 bytes, CRC32=9f33879f, 0.778s\n[image] SHA256=404416798121903a7320d8c3ee3c9abca15eb528ca7259782bf46fddb71323bc\n[image] Saved /home/ubuntu/.local/state/kv260-launcher/ofdm-images/ai-vision-1791986834801077827-returned.png\n",
+  "bytes": 528833,
+  "sha256": "404416798121903a7320d8c3ee3c9abca15eb528ca7259782bf46fddb71323bc",
+  "capture": {
+    "source": "B3136 HLS RGB-D annotated desktop image",
+    "control_dir": "/run/user/1000/kv260-b3136-ui",
+    "captured_at": 1791986840.457141,
+    "frame_updated": 1791986840.316796,
+    "width": 640,
+    "height": 480,
+    "bytes": 528833,
+    "sha256": "404416798121903a7320d8c3ee3c9abca15eb528ca7259782bf46fddb71323bc",
+    "display_mode": "enhanced",
+    "message": {
+      "sequence": 1235,
+      "rgb_stamp_ns": 1791986839846995541,
+      "depth_stamp_ns": 1791986839821967368,
+      "depth_skew_ms": 25.028173,
+      "depth_registration": "uncalibrated_normalized_roi",
+      "rgb_timestamp": "host_after_v4l2_read",
+      "depth_unit": "m",
+      "hls_post_used": true,
+      "candidates": 9,
+      "latency_ms": 391.7899620009848,
+      "timings": {
+        "pre_ms": 151.8334140000661,
+        "pre_submit_ms": 0.9049759992194595,
+        "pre_kernel_wait_ms": 123.10350300140271,
+        "pre_tensor_sync_ms": 0.2453519991831854,
+        "pre_preview_copy_ms": 27.579583000260754,
+        "dpu_ms": 156.79426499991678,
+        "post_ms": 33.819812999354326
+      },
+      "detections": [
+        {
+          "bbox": [
+            393.86419677734375,
+            19.861780166625977,
+            633.8641967773438,
+            257.09735107421875
+          ],
+          "score": 0.9857207536697388,
+          "class_id": 0,
+          "class_name": "person",
+          "depth_m": 0.529,
+          "valid_depth_pixels": 419
+        },
+        {
+          "bbox": [
+            581.97119140625,
+            315.29449462890625,
+            639.0,
+            429.4411315917969
+          ],
+          "score": 0.340335488319397,
+          "class_id": 45,
+          "class_name": "bowl",
+          "depth_m": null,
+          "valid_depth_pixels": 0
+        }
+      ],
+      "preprocessing": {
+        "contrast": 1.0,
+        "brightness": -2,
+        "saturation": 1.0,
+        "eq_mode": 0,
+        "enhance_tensor": false,
+        "config_id": 1
+      }
+    }
+  }
+}

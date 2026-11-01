@@ -1,0 +1,7 @@
+Running: xsim.dir/rs_initial_r54/xsimk -runall -simmode gui -testplusarg GAIN=0.75 -testplusarg CFO_HZ=0 -testplusarg INTERFERENCE=0 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -wdb rs_initial_r54.wdb -simrunnum 0 -socket 59689
+Design successfully loaded
+Design Loading Memory Usage: 114456 KB (Peak: 115416 KB)
+Design Loading CPU Usage: 180 ms
+Simulation completed
+Simulation Memory Usage: 194332 KB (Peak: 253724 KB)
+Simulation CPU Usage: 178550 ms

@@ -1,0 +1,24 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--network",
+    "none",
+    "--memory",
+    "512m",
+    "--cpus",
+    "2",
+    "--entrypoint",
+    "/bin/bash",
+    "--name",
+    "x3plus-qps-inf-clearing-20261021",
+    "-v",
+    "/home/amd/x3plus-kv260-docker/navigation-fix/qps-live-20261021-035524:/evidence",
+    "x3plus:nav-test-amd64",
+    "-c",
+    "source /opt/ros/melodic/setup.bash; source /opt/x3plus_ws/devel/setup.bash; timeout --kill-after=3s 55s python /evidence/reproduce_inf_clearing.py > /evidence/inf-clearing-run.log 2>&1; result=$?; echo \"$result\" > /evidence/inf-clearing.exit; exit \"$result\""
+  ],
+  "id": "9933c1c2ebe411109f7667ce9b6624e4163144ce24d45301a1071a03822f3dc0",
+  "submission_returncode": 0
+}

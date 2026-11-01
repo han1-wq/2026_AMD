@@ -1,0 +1,38 @@
+test_configuration_change_rebuilds_viewer (test_board_viewer.BoardViewerTests) ... ok
+test_invalid_mode_never_contacts_docker (test_board_viewer.BoardViewerTests) ... ok
+test_legacy_unlabelled_container_is_replaced (test_board_viewer.BoardViewerTests) ... ok
+test_missing_image_does_not_stop_existing_viewer (test_board_viewer.BoardViewerTests) ... ok
+test_modes_switch_both_directions (test_board_viewer.BoardViewerTests) ... ok
+test_network_change_rebuilds_viewer (test_board_viewer.BoardViewerTests) ... ok
+test_new_viewer_detaches_and_uses_shared_slam_config (test_board_viewer.BoardViewerTests) ... ok
+test_stop_failure_does_not_launch_duplicate (test_board_viewer.BoardViewerTests) ... ok
+test_stopped_container_is_removed_before_start (test_board_viewer.BoardViewerTests) ... ok
+test_unchanged_viewer_is_reused (test_board_viewer.BoardViewerTests) ... ok
+test_viewer_early_exit_is_failure (test_board_viewer.BoardViewerTests) ... ok
+test_both_modes_enable_robot_visuals (test_viewer_config.ViewerConfigTests) ... ok
+test_launchers_only_start_viewer_with_matching_config (test_viewer_config.ViewerConfigTests) ... ok
+test_navigation_pose_and_goal_topics_are_unchanged (test_viewer_config.ViewerConfigTests) ... ok
+test_navigation_start_pose_marker_is_observation_only (test_viewer_config.ViewerConfigTests) ... ok
+test_slam_preserves_map_scan_and_position_axes (test_viewer_config.ViewerConfigTests) ... ok
+test_slam_tools_remain_observation_only (test_viewer_config.ViewerConfigTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 20.351s
+
+OK
+test_missing_map_does_not_change_robot_mode (test_navigation_start.NavigationStartTests) ... ok
+test_runtime_mismatch_blocks_mode_switch_and_navigation (test_navigation_start.NavigationStartTests) ... ok
+test_same_map_reuse_cancels_goal_but_preserves_localization_without_relaunch (test_navigation_start.NavigationStartTests) ... ok
+test_active_nodes_block_installation (test_runtime_sync.RuntimeSyncTests) ... ok
+test_matching_runtime_never_copies_or_queries_ros (test_runtime_sync.RuntimeSyncTests) ... ok
+test_read_only_check_fails_without_installation (test_runtime_sync.RuntimeSyncTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 3.638s
+
+OK
+Navigation runtime source checksums verified (12 files).
+Navigation runtime source checksums verified (12 files).
+x3plus-robot Up About an hour
+x3plus-master Up About an hour
+/rosout

@@ -1,0 +1,581 @@
+
+
+================================================================
+== Vitis HLS Report for 'image_preprocess'
+================================================================
+* Date:           Wed Oct 14 00:09:48 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        image_preprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.375 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+----------+-----------+-----------+-----+----------+---------+
+    |  Latency (cycles)  |   Latency (absolute)  |    Interval    | Pipeline|
+    |   min   |    max   |    min    |    max    | min |    max   |   Type  |
+    +---------+----------+-----------+-----------+-----+----------+---------+
+    |        5|  10425286|  25.000 ns|  52.126 ms|    6|  10425287|       no|
+    +---------+----------+-----------+-----------+-----+----------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_555_1  |      704|      704|        22|          -|          -|    32|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 26
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 26 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 17 
+14 --> 15 
+15 --> 16 
+16 --> 13 
+17 --> 18 22 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 25 
+24 --> 25 
+25 --> 26 
+26 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.29>
+ST_1 : Operation 27 [1/1] (1.00ns)   --->   "%config_id_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %config_id"   --->   Operation 27 'read' 'config_id_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 28 [1/1] (1.00ns)   --->   "%frame_id_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %frame_id"   --->   Operation 28 'read' 'frame_id_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 29 [1/1] (1.00ns)   --->   "%saturation_q12_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %saturation_q12"   --->   Operation 29 'read' 'saturation_q12_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 30 [1/1] (1.00ns)   --->   "%eq_mode_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %eq_mode"   --->   Operation 30 'read' 'eq_mode_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 31 [1/1] (1.00ns)   --->   "%flags_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %flags"   --->   Operation 31 'read' 'flags_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 32 [1/1] (1.00ns)   --->   "%output_mode_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %output_mode"   --->   Operation 32 'read' 'output_mode_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 33 [1/1] (1.00ns)   --->   "%pad_y_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %pad_y"   --->   Operation 33 'read' 'pad_y_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 34 [1/1] (1.00ns)   --->   "%pad_x_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %pad_x"   --->   Operation 34 'read' 'pad_x_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 35 [1/1] (1.00ns)   --->   "%resized_h_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %resized_h"   --->   Operation 35 'read' 'resized_h_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 36 [1/1] (1.00ns)   --->   "%resized_w_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %resized_w"   --->   Operation 36 'read' 'resized_w_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 37 [1/1] (1.00ns)   --->   "%preview_capacity_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %preview_capacity"   --->   Operation 37 'read' 'preview_capacity_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 38 [1/1] (1.00ns)   --->   "%preview_stride_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %preview_stride"   --->   Operation 38 'read' 'preview_stride_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 39 [1/1] (1.00ns)   --->   "%tensor_capacity_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %tensor_capacity"   --->   Operation 39 'read' 'tensor_capacity_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 40 [1/1] (1.00ns)   --->   "%src_capacity_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %src_capacity"   --->   Operation 40 'read' 'src_capacity_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 41 [1/1] (1.00ns)   --->   "%src_stride_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %src_stride"   --->   Operation 41 'read' 'src_stride_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 42 [1/1] (1.00ns)   --->   "%height_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %height"   --->   Operation 42 'read' 'height_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 43 [1/1] (1.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %width"   --->   Operation 43 'read' 'width_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 44 [1/1] (1.00ns)   --->   "%luts_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %luts"   --->   Operation 44 'read' 'luts_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 45 [1/1] (1.00ns)   --->   "%preview_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %preview"   --->   Operation 45 'read' 'preview_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 46 [1/1] (1.00ns)   --->   "%tensor_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %tensor"   --->   Operation 46 'read' 'tensor_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 47 [1/1] (1.00ns)   --->   "%src_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %src"   --->   Operation 47 'read' 'src_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%empty = trunc i32 %flags_read"   --->   Operation 48 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%empty_108 = trunc i32 %pad_y_read"   --->   Operation 49 'trunc' 'empty_108' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%empty_109 = trunc i32 %pad_x_read"   --->   Operation 50 'trunc' 'empty_109' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%empty_110 = trunc i32 %resized_h_read"   --->   Operation 51 'trunc' 'empty_110' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%empty_111 = trunc i32 %resized_w_read"   --->   Operation 52 'trunc' 'empty_111' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%empty_112 = trunc i32 %preview_stride_read"   --->   Operation 53 'trunc' 'empty_112' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%empty_113 = trunc i32 %saturation_q12_read"   --->   Operation 54 'trunc' 'empty_113' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%empty_114 = trunc i32 %src_stride_read"   --->   Operation 55 'trunc' 'empty_114' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%empty_115 = trunc i32 %flags_read"   --->   Operation 56 'trunc' 'empty_115' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%color_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 57 'alloca' 'color_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%color_V_1 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 58 'alloca' 'color_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%color_V_2 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 59 'alloca' 'color_V_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%quant_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 60 'alloca' 'quant_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%quant_V_1 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 61 'alloca' 'quant_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%quant_V_2 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 62 'alloca' 'quant_V_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%eq_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:539]   --->   Operation 63 'alloca' 'eq_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%hist_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:545]   --->   Operation 64 'alloca' 'hist_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%xc_index_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:572]   --->   Operation 65 'alloca' 'xc_index_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 11> <Depth = 416> <RAM>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%xc_weight_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:572]   --->   Operation 66 'alloca' 'xc_weight_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 416> <RAM>
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%yc_index_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:572]   --->   Operation 67 'alloca' 'yc_index_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 11> <Depth = 416> <RAM>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%yc_weight_V = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:572]   --->   Operation 68 'alloca' 'yc_weight_V' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 416> <RAM>
+ST_1 : Operation 69 [1/1] (1.00ns)   --->   "%write_ln530 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %abi_version, i32 65536" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:530]   --->   Operation 69 'write' 'write_ln530' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 70 [1/1] (1.00ns)   --->   "%write_ln531 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %preview_bytes, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:531]   --->   Operation 70 'write' 'write_ln531' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 71 [1/1] (1.00ns)   --->   "%write_ln531 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %tensor_bytes, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:531]   --->   Operation 71 'write' 'write_ln531' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 72 [1/1] (1.00ns)   --->   "%write_ln532 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %completed_frame_id, i32 %frame_id_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:532]   --->   Operation 72 'write' 'write_ln532' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 73 [1/1] (1.00ns)   --->   "%write_ln533 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %completed_config_id, i32 %config_id_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:533]   --->   Operation 73 'write' 'write_ln533' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 74 [5/5] (2.29ns)   --->   "%status = call i3 @(anonymous namespace)validate_settings, i32 %width_read, i32 %height_read, i32 %src_stride_read, i32 %src_capacity_read, i32 %tensor_capacity_read, i32 %preview_stride_read, i32 %preview_capacity_read, i32 %resized_w_read, i32 %resized_h_read, i32 %pad_x_read, i32 %pad_y_read, i32 %output_mode_read, i32 %flags_read, i32 %eq_mode_read, i32 %saturation_q12_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534]   --->   Operation 74 'call' 'status' <Predicate = true> <Delay = 2.29> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 4.23>
+ST_2 : Operation 75 [4/5] (4.23ns)   --->   "%status = call i3 @(anonymous namespace)validate_settings, i32 %width_read, i32 %height_read, i32 %src_stride_read, i32 %src_capacity_read, i32 %tensor_capacity_read, i32 %preview_stride_read, i32 %preview_capacity_read, i32 %resized_w_read, i32 %resized_h_read, i32 %pad_x_read, i32 %pad_y_read, i32 %output_mode_read, i32 %flags_read, i32 %eq_mode_read, i32 %saturation_q12_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534]   --->   Operation 75 'call' 'status' <Predicate = true> <Delay = 4.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 4.23>
+ST_3 : Operation 76 [3/5] (4.23ns)   --->   "%status = call i3 @(anonymous namespace)validate_settings, i32 %width_read, i32 %height_read, i32 %src_stride_read, i32 %src_capacity_read, i32 %tensor_capacity_read, i32 %preview_stride_read, i32 %preview_capacity_read, i32 %resized_w_read, i32 %resized_h_read, i32 %pad_x_read, i32 %pad_y_read, i32 %output_mode_read, i32 %flags_read, i32 %eq_mode_read, i32 %saturation_q12_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534]   --->   Operation 76 'call' 'status' <Predicate = true> <Delay = 4.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 4.23>
+ST_4 : Operation 77 [2/5] (4.23ns)   --->   "%status = call i3 @(anonymous namespace)validate_settings, i32 %width_read, i32 %height_read, i32 %src_stride_read, i32 %src_capacity_read, i32 %tensor_capacity_read, i32 %preview_stride_read, i32 %preview_capacity_read, i32 %resized_w_read, i32 %resized_h_read, i32 %pad_x_read, i32 %pad_y_read, i32 %output_mode_read, i32 %flags_read, i32 %eq_mode_read, i32 %saturation_q12_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534]   --->   Operation 77 'call' 'status' <Predicate = true> <Delay = 4.23> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 2.07>
+ST_5 : Operation 78 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 78 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%spectopmodule_ln489 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:489]   --->   Operation 79 'spectopmodule' 'spectopmodule_ln489' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem_in, void @empty_37, i32 0, i32 0, void @empty_8, i32 0, i32 388800, void @empty_9, void @empty_10, void @empty_8, i32 2, i32 16, i32 32, i32 16, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 80 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 81 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %gmem_in"   --->   Operation 81 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem_out, void @empty_37, i32 0, i32 0, void @empty_8, i32 0, i32 32448, void @empty_1, void @empty_10, void @empty_8, i32 16, i32 2, i32 16, i32 32, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %gmem_out"   --->   Operation 83 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem_preview, void @empty_37, i32 0, i32 0, void @empty_8, i32 0, i32 388800, void @empty_25, void @empty_10, void @empty_8, i32 16, i32 2, i32 16, i32 32, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 84 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 85 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i128 %gmem_preview"   --->   Operation 85 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %src, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_31, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 86 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 87 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %src, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 87 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 88 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tensor, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_29, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 88 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 89 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %tensor, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 89 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 90 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %preview, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_28, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 90 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %preview, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 92 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %luts, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_36, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 92 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 93 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %luts, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_30, i32 4294967295, i32 0"   --->   Operation 93 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 94 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %width"   --->   Operation 94 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 95 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %width, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_12, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 95 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 96 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %width, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 96 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 97 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %height"   --->   Operation 97 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 98 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %height, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_19, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 98 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 99 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %height, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 99 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 100 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %src_stride"   --->   Operation 100 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 101 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %src_stride, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_39, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 101 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 102 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %src_stride, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 102 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 103 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %src_capacity"   --->   Operation 103 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 104 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %src_capacity, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_38, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 104 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 105 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %src_capacity, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 105 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 106 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %tensor_capacity"   --->   Operation 106 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 107 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %tensor_capacity, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_27, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 107 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 108 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %tensor_capacity, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 108 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 109 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %preview_stride"   --->   Operation 109 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 110 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preview_stride, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_3, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 110 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preview_stride, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 111 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 112 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %preview_capacity"   --->   Operation 112 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preview_capacity, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_23, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 113 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 114 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preview_capacity, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 114 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %resized_w"   --->   Operation 115 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %resized_w, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_2, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %resized_w, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 118 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %resized_h"   --->   Operation 118 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %resized_h, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_0, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 119 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 120 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %resized_h, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 120 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 121 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %pad_x"   --->   Operation 121 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 122 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pad_x, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_47, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 122 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pad_x, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 124 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %pad_y"   --->   Operation 124 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 125 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pad_y, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_48, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 125 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 126 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pad_y, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 126 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 127 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %output_mode"   --->   Operation 127 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 128 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %output_mode, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_45, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 128 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 129 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %output_mode, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 129 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 130 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %flags"   --->   Operation 130 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 131 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flags, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_44, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 131 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 132 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %flags, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 132 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 133 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %eq_mode"   --->   Operation 133 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 134 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %eq_mode, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_34, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 134 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 135 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %eq_mode, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 135 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 136 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %saturation_q12"   --->   Operation 136 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %saturation_q12, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_65, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 137 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 138 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %saturation_q12, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 138 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %frame_id"   --->   Operation 139 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frame_id, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_6, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 140 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 141 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %frame_id, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 141 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 142 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %config_id"   --->   Operation 142 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 143 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %config_id, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_7, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 143 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 144 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %config_id, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 144 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 145 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %completed_frame_id"   --->   Operation 145 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 146 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %completed_frame_id, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_41, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 146 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 147 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %completed_frame_id, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 147 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 148 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %completed_config_id"   --->   Operation 148 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 149 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %completed_config_id, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_40, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 149 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 150 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %completed_config_id, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 150 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 151 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %tensor_bytes"   --->   Operation 151 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 152 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %tensor_bytes, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_53, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 152 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 153 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %tensor_bytes, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 153 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 154 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %preview_bytes"   --->   Operation 154 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 155 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preview_bytes, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_52, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 155 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 156 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %preview_bytes, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 156 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 157 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %abi_version"   --->   Operation 157 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 158 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %abi_version, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_14, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 158 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 159 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %abi_version, void @empty_42, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 159 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 160 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_43, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_61, void @empty_56, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 160 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 161 [1/5] (1.06ns)   --->   "%status = call i3 @(anonymous namespace)validate_settings, i32 %width_read, i32 %height_read, i32 %src_stride_read, i32 %src_capacity_read, i32 %tensor_capacity_read, i32 %preview_stride_read, i32 %preview_capacity_read, i32 %resized_w_read, i32 %resized_h_read, i32 %pad_x_read, i32 %pad_y_read, i32 %output_mode_read, i32 %flags_read, i32 %eq_mode_read, i32 %saturation_q12_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534]   --->   Operation 161 'call' 'status' <Predicate = true> <Delay = 1.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 162 [1/1] (0.58ns)   --->   "%icmp_ln537 = icmp_eq  i3 %status, i3 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:537]   --->   Operation 162 'icmp' 'icmp_ln537' <Predicate = true> <Delay = 0.58> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 163 [1/1] (0.42ns)   --->   "%br_ln537 = br i1 %icmp_ln537, void %cleanup, void %if.end_ifconv" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:537]   --->   Operation 163 'br' 'br_ln537' <Predicate = true> <Delay = 0.42>
+ST_5 : Operation 164 [1/1] (0.00ns)   --->   "%word = alloca i32 1"   --->   Operation 164 'alloca' 'word' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_5 : Operation 165 [1/1] (0.99ns)   --->   "%icmp_ln552 = icmp_eq  i32 %eq_mode_read, i32 2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:552]   --->   Operation 165 'icmp' 'icmp_ln552' <Predicate = (icmp_ln537)> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 166 [1/1] (0.00ns) (grouped into LUT with out node and_ln554_5)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %flags_read, i32 3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:552]   --->   Operation 166 'bitselect' 'tmp' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_5 : Operation 167 [1/1] (0.00ns) (grouped into LUT with out node and_ln554_5)   --->   "%xor_ln552 = xor i1 %tmp, i1 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:552]   --->   Operation 167 'xor' 'xor_ln552' <Predicate = (icmp_ln537)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 168 [1/1] (0.00ns)   --->   "%previous_width_load = load i32 %previous_width" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:553]   --->   Operation 168 'load' 'previous_width_load' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_5 : Operation 169 [1/1] (0.99ns)   --->   "%icmp_ln553 = icmp_eq  i32 %previous_width_load, i32 %width_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:553]   --->   Operation 169 'icmp' 'icmp_ln553' <Predicate = (icmp_ln537)> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 170 [1/1] (0.00ns)   --->   "%previous_saturation_load = load i32 %previous_saturation" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 170 'load' 'previous_saturation_load' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_5 : Operation 171 [1/1] (0.99ns)   --->   "%icmp_ln554_1 = icmp_eq  i32 %previous_saturation_load, i32 %saturation_q12_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 171 'icmp' 'icmp_ln554_1' <Predicate = (icmp_ln537)> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 172 [1/1] (0.00ns) (grouped into LUT with out node and_ln554_5)   --->   "%and_ln554_3 = and i1 %icmp_ln553, i1 %xor_ln552" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 172 'and' 'and_ln554_3' <Predicate = (icmp_ln537)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 173 [1/1] (0.00ns) (grouped into LUT with out node and_ln554_5)   --->   "%and_ln554_4 = and i1 %icmp_ln552, i1 %icmp_ln554_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 173 'and' 'and_ln554_4' <Predicate = (icmp_ln537)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 174 [1/1] (0.28ns) (out node of the LUT)   --->   "%and_ln554_5 = and i1 %and_ln554_4, i1 %and_ln554_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 174 'and' 'and_ln554_5' <Predicate = (icmp_ln537)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 175 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i60 @_ssdm_op_PartSelect.i60.i64.i32.i32, i64 %luts_read, i32 4, i32 63" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 175 'partselect' 'trunc_ln' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_5 : Operation 176 [1/1] (0.42ns)   --->   "%store_ln555 = store i6 0, i6 %word" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 176 'store' 'store_ln555' <Predicate = (icmp_ln537)> <Delay = 0.42>
+
+State 6 <SV = 5> <Delay = 4.37>
+ST_6 : Operation 177 [1/1] (0.00ns)   --->   "%sext_ln555 = sext i60 %trunc_ln" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 177 'sext' 'sext_ln555' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 178 [1/1] (0.00ns)   --->   "%gmem_in_addr = getelementptr i128 %gmem_in, i64 %sext_ln555" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 178 'getelementptr' 'gmem_in_addr' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 179 [7/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 179 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 4.37>
+ST_7 : Operation 180 [6/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 180 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 4.37>
+ST_8 : Operation 181 [5/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 181 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 4.37>
+ST_9 : Operation 182 [4/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 182 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 4.37>
+ST_10 : Operation 183 [3/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 183 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 11 <SV = 10> <Delay = 4.37>
+ST_11 : Operation 184 [2/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 184 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 12 <SV = 11> <Delay = 4.37>
+ST_12 : Operation 185 [1/1] (0.00ns)   --->   "%specmemcore_ln542 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_V_2, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:542]   --->   Operation 185 'specmemcore' 'specmemcore_ln542' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 186 [1/1] (0.00ns)   --->   "%specmemcore_ln542 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_V_1, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:542]   --->   Operation 186 'specmemcore' 'specmemcore_ln542' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 187 [1/1] (0.00ns)   --->   "%specmemcore_ln542 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_V, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:542]   --->   Operation 187 'specmemcore' 'specmemcore_ln542' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 188 [1/1] (0.00ns)   --->   "%specmemcore_ln543 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_V_2, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:543]   --->   Operation 188 'specmemcore' 'specmemcore_ln543' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 189 [1/1] (0.00ns)   --->   "%specmemcore_ln543 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_V_1, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:543]   --->   Operation 189 'specmemcore' 'specmemcore_ln543' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 190 [1/1] (0.00ns)   --->   "%specmemcore_ln543 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_V, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:543]   --->   Operation 190 'specmemcore' 'specmemcore_ln543' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 191 [1/1] (0.00ns)   --->   "%specmemcore_ln544 = specmemcore void @_ssdm_op_SpecMemCore, i8 %eq_V, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:544]   --->   Operation 191 'specmemcore' 'specmemcore_ln544' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 192 [1/1] (0.00ns)   --->   "%specmemcore_ln546 = specmemcore void @_ssdm_op_SpecMemCore, i32 %hist_V, i64 666, i64 22, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:546]   --->   Operation 192 'specmemcore' 'specmemcore_ln546' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 193 [1/1] (0.00ns)   --->   "%specmemcore_ln551 = specmemcore void @_ssdm_op_SpecMemCore, i8 %previous_V, i64 666, i64 23, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:551]   --->   Operation 193 'specmemcore' 'specmemcore_ln551' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 194 [1/1] (0.00ns)   --->   "%history_valid_load = load i1 %history_valid" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:552]   --->   Operation 194 'load' 'history_valid_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 195 [1/1] (0.00ns)   --->   "%previous_height_load = load i32 %previous_height" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:553]   --->   Operation 195 'load' 'previous_height_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 196 [1/1] (0.99ns)   --->   "%icmp_ln553_1 = icmp_eq  i32 %previous_height_load, i32 %height_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:553]   --->   Operation 196 'icmp' 'icmp_ln553_1' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 197 [1/1] (0.00ns)   --->   "%previous_config_load = load i32 %previous_config" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:553]   --->   Operation 197 'load' 'previous_config_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 198 [1/1] (0.99ns)   --->   "%icmp_ln553_2 = icmp_eq  i32 %previous_config_load, i32 %config_id_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:553]   --->   Operation 198 'icmp' 'icmp_ln553_2' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 199 [1/1] (0.00ns)   --->   "%previous_flags_load = load i2 %previous_flags" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 199 'load' 'previous_flags_load' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 200 [1/1] (0.44ns)   --->   "%icmp_ln554 = icmp_eq  i2 %previous_flags_load, i2 %empty_115" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 200 'icmp' 'icmp_ln554' <Predicate = true> <Delay = 0.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 201 [1/1] (0.00ns) (grouped into LUT with out node use_history)   --->   "%and_ln554 = and i1 %history_valid_load, i1 %icmp_ln553_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 201 'and' 'and_ln554' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 202 [1/1] (0.00ns) (grouped into LUT with out node use_history)   --->   "%and_ln554_1 = and i1 %icmp_ln554, i1 %icmp_ln553_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 202 'and' 'and_ln554_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 203 [1/1] (0.00ns) (grouped into LUT with out node use_history)   --->   "%and_ln554_2 = and i1 %and_ln554_1, i1 %and_ln554" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 203 'and' 'and_ln554_2' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 204 [1/1] (0.28ns) (out node of the LUT)   --->   "%use_history = and i1 %and_ln554_5, i1 %and_ln554_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 204 'and' 'use_history' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 205 [1/7] (4.37ns)   --->   "%empty_116 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i128, i128 %gmem_in_addr, i32 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 205 'readreq' 'empty_116' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 206 [1/1] (0.00ns)   --->   "%br_ln555 = br void %VITIS_LOOP_557_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 206 'br' 'br_ln555' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 2.01>
+ST_13 : Operation 207 [1/1] (0.00ns)   --->   "%word_1 = load i6 %word"   --->   Operation 207 'load' 'word_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 208 [1/1] (0.78ns)   --->   "%icmp_ln555 = icmp_eq  i6 %word_1, i6 32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 208 'icmp' 'icmp_ln555' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 209 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32"   --->   Operation 209 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 210 [1/1] (0.78ns)   --->   "%add_ln555 = add i6 %word_1, i6 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 210 'add' 'add_ln555' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 211 [1/1] (0.00ns)   --->   "%br_ln555 = br i1 %icmp_ln555, void %VITIS_LOOP_557_2.split, void %for.body94.preheader" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 211 'br' 'br_ln555' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 212 [1/1] (0.00ns)   --->   "%empty_117 = trunc i6 %word_1"   --->   Operation 212 'trunc' 'empty_117' <Predicate = (!icmp_ln555)> <Delay = 0.00>
+ST_13 : Operation 213 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i2 @_ssdm_op_PartSelect.i2.i6.i32.i32, i6 %word_1, i32 4, i32 5"   --->   Operation 213 'partselect' 'tmp_1' <Predicate = (!icmp_ln555)> <Delay = 0.00>
+ST_13 : Operation 214 [1/1] (0.44ns)   --->   "%icmp = icmp_eq  i2 %tmp_1, i2 0"   --->   Operation 214 'icmp' 'icmp' <Predicate = (!icmp_ln555)> <Delay = 0.44> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 215 [1/1] (0.42ns)   --->   "%store_ln555 = store i6 %add_ln555, i6 %word" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 215 'store' 'store_ln555' <Predicate = (!icmp_ln555)> <Delay = 0.42>
+ST_13 : Operation 216 [2/2] (0.00ns)   --->   "%call_ln554 = call void @image_preprocess_Pipeline_VITIS_LOOP_567_4, i32 %hist_V, i1 %use_history, i8 %eq_V, i8 %previous_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 216 'call' 'call_ln554' <Predicate = (icmp_ln555)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 217 [2/2] (1.22ns)   --->   "%call_ln575 = call void @(anonymous namespace)make_coordinates, i11 %xc_index_V, i12 %xc_weight_V, i32 %width_read, i32 %resized_w_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:575]   --->   Operation 217 'call' 'call_ln575' <Predicate = (icmp_ln555)> <Delay = 1.22> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 218 [2/2] (1.22ns)   --->   "%call_ln576 = call void @(anonymous namespace)make_coordinates, i11 %yc_index_V, i12 %yc_weight_V, i32 %height_read, i32 %resized_h_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:576]   --->   Operation 218 'call' 'call_ln576' <Predicate = (icmp_ln555)> <Delay = 1.22> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 219 [1/1] (0.99ns)   --->   "%icmp_ln577 = icmp_eq  i32 %eq_mode_read, i32 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:577]   --->   Operation 219 'icmp' 'icmp_ln577' <Predicate = (icmp_ln555)> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 4.37>
+ST_14 : Operation 220 [1/1] (4.37ns)   --->   "%v_V = read i128 @_ssdm_op_Read.m_axi.p1i128, i128 %gmem_in_addr" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:556]   --->   Operation 220 'read' 'v_V' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 2.19>
+ST_15 : Operation 221 [1/1] (0.00ns)   --->   "%and = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i4.i4, i4 %empty_117, i4 0"   --->   Operation 221 'bitconcatenate' 'and' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 222 [2/2] (2.19ns)   --->   "%call_ln556 = call void @image_preprocess_Pipeline_VITIS_LOOP_557_2, i8 %quant_V, i8 %quant_V_1, i8 %quant_V_2, i8 %color_V_2, i8 %color_V_1, i8 %color_V, i8 %and, i128 %v_V, i1 %icmp" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:556]   --->   Operation 222 'call' 'call_ln556' <Predicate = true> <Delay = 2.19> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 223 [1/1] (0.00ns)   --->   "%specloopname_ln555 = specloopname void @_ssdm_op_SpecLoopName, void @empty_24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 223 'specloopname' 'specloopname_ln555' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 224 [1/2] (0.00ns)   --->   "%call_ln556 = call void @image_preprocess_Pipeline_VITIS_LOOP_557_2, i8 %quant_V, i8 %quant_V_1, i8 %quant_V_2, i8 %color_V_2, i8 %color_V_1, i8 %color_V, i8 %and, i128 %v_V, i1 %icmp" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:556]   --->   Operation 224 'call' 'call_ln556' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_16 : Operation 225 [1/1] (0.00ns)   --->   "%br_ln555 = br void %VITIS_LOOP_557_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555]   --->   Operation 225 'br' 'br_ln555' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 13> <Delay = 0.42>
+ST_17 : Operation 226 [1/2] (0.00ns)   --->   "%call_ln554 = call void @image_preprocess_Pipeline_VITIS_LOOP_567_4, i32 %hist_V, i1 %use_history, i8 %eq_V, i8 %previous_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554]   --->   Operation 226 'call' 'call_ln554' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 227 [1/1] (0.00ns)   --->   "%specmemcore_ln573 = specmemcore void @_ssdm_op_SpecMemCore, i11 %xc_index_V, i64 666, i64 18, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:573]   --->   Operation 227 'specmemcore' 'specmemcore_ln573' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 228 [1/1] (0.00ns)   --->   "%specmemcore_ln573 = specmemcore void @_ssdm_op_SpecMemCore, i12 %xc_weight_V, i64 666, i64 18, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:573]   --->   Operation 228 'specmemcore' 'specmemcore_ln573' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 229 [1/1] (0.00ns)   --->   "%specmemcore_ln574 = specmemcore void @_ssdm_op_SpecMemCore, i11 %yc_index_V, i64 666, i64 18, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:574]   --->   Operation 229 'specmemcore' 'specmemcore_ln574' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 230 [1/1] (0.00ns)   --->   "%specmemcore_ln574 = specmemcore void @_ssdm_op_SpecMemCore, i12 %yc_weight_V, i64 666, i64 18, i64 18446744073709551615" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:574]   --->   Operation 230 'specmemcore' 'specmemcore_ln574' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 231 [1/2] (0.00ns)   --->   "%call_ln575 = call void @(anonymous namespace)make_coordinates, i11 %xc_index_V, i12 %xc_weight_V, i32 %width_read, i32 %resized_w_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:575]   --->   Operation 231 'call' 'call_ln575' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 232 [1/2] (0.00ns)   --->   "%call_ln576 = call void @(anonymous namespace)make_coordinates, i11 %yc_index_V, i12 %yc_weight_V, i32 %height_read, i32 %resized_h_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:576]   --->   Operation 232 'call' 'call_ln576' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 233 [1/1] (0.42ns)   --->   "%br_ln577 = br i1 %icmp_ln577, void %lor.end, void %fpga_resource_hint.if.then122.2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:577]   --->   Operation 233 'br' 'br_ln577' <Predicate = true> <Delay = 0.42>
+
+State 18 <SV = 14> <Delay = 3.32>
+ST_18 : Operation 234 [2/2] (3.32ns)   --->   "%call_ln578 = call void @(anonymous namespace)statistics_pass, i128 %gmem_in, i64 %src_read, i32 %width_read, i32 %height_read, i13 %empty_114, i8 %color_V, i8 %color_V_1, i8 %color_V_2, i2 %empty_115, i14 %empty_113, i32 %hist_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:578]   --->   Operation 234 'call' 'call_ln578' <Predicate = true> <Delay = 3.32> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 15> <Delay = 0.00>
+ST_19 : Operation 235 [1/2] (0.00ns)   --->   "%call_ln578 = call void @(anonymous namespace)statistics_pass, i128 %gmem_in, i64 %src_read, i32 %width_read, i32 %height_read, i13 %empty_114, i8 %color_V, i8 %color_V_1, i8 %color_V_2, i2 %empty_115, i14 %empty_113, i32 %hist_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:578]   --->   Operation 235 'call' 'call_ln578' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 20 <SV = 16> <Delay = 2.89>
+ST_20 : Operation 236 [1/1] (0.00ns)   --->   "%w = trunc i32 %width_read"   --->   Operation 236 'trunc' 'w' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 237 [1/1] (0.00ns)   --->   "%h = trunc i32 %height_read"   --->   Operation 237 'trunc' 'h' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 238 [1/1] (0.00ns)   --->   "%zext_ln1540 = zext i11 %w"   --->   Operation 238 'zext' 'zext_ln1540' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 239 [1/1] (0.00ns)   --->   "%zext_ln1540_1 = zext i11 %h"   --->   Operation 239 'zext' 'zext_ln1540_1' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 240 [1/1] (1.83ns)   --->   "%ret_V = mul i22 %zext_ln1540_1, i22 %zext_ln1540"   --->   Operation 240 'mul' 'ret_V' <Predicate = true> <Delay = 1.83> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 241 [1/1] (0.00ns)   --->   "%specfucore_ln1540 = specfucore void @_ssdm_op_SpecFUCore, i22 %ret_V, i64 12, i64 4, i64 18446744073709551615"   --->   Operation 241 'specfucore' 'specfucore_ln1540' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 242 [2/2] (1.06ns)   --->   "%call_ln579 = call void @(anonymous namespace)build_lut, i32 %hist_V, i8 %eq_V, i22 %ret_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:579]   --->   Operation 242 'call' 'call_ln579' <Predicate = true> <Delay = 1.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 17> <Delay = 0.42>
+ST_21 : Operation 243 [1/1] (0.00ns)   --->   "%rbegin1 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_64" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:51]   --->   Operation 243 'specregionbegin' 'rbegin1' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 244 [1/1] (0.00ns)   --->   "%rend2 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_64, i32 %rbegin1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:51]   --->   Operation 244 'specregionend' 'rend2' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 245 [1/2] (0.00ns)   --->   "%call_ln579 = call void @(anonymous namespace)build_lut, i32 %hist_V, i8 %eq_V, i22 %ret_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:579]   --->   Operation 245 'call' 'call_ln579' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_21 : Operation 246 [1/1] (0.42ns)   --->   "%br_ln583 = br void %lor.end" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:583]   --->   Operation 246 'br' 'br_ln583' <Predicate = true> <Delay = 0.42>
+
+State 22 <SV = 18> <Delay = 3.67>
+ST_22 : Operation 247 [1/1] (0.00ns)   --->   "%empty_118 = phi i1 1, void %fpga_resource_hint.if.then122.2, i1 %use_history, void %for.body94.preheader"   --->   Operation 247 'phi' 'empty_118' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 248 [2/2] (3.67ns)   --->   "%call_ln581 = call void @(anonymous namespace)output_pass, i128 %gmem_in, i64 %src_read, i128 %gmem_out, i64 %tensor_read, i128 %gmem_preview, i64 %preview_read, i32 %width_read, i32 %height_read, i13 %empty_114, i13 %empty_112, i9 %empty_111, i9 %empty_110, i9 %empty_109, i9 %empty_108, i32 %output_mode_read, i3 %empty, i14 %empty_113, i1 %empty_118, i1 %icmp_ln552, i8 %color_V, i8 %color_V_1, i8 %color_V_2, i8 %quant_V, i8 %quant_V_1, i8 %quant_V_2, i8 %eq_V, i32 %hist_V, i11 %xc_index_V, i12 %xc_weight_V, i11 %yc_index_V, i12 %yc_weight_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:581]   --->   Operation 248 'call' 'call_ln581' <Predicate = true> <Delay = 3.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_22 : Operation 249 [1/1] (0.00ns)   --->   "%store_ln585 = store i1 %icmp_ln552, i1 %history_valid" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:585]   --->   Operation 249 'store' 'store_ln585' <Predicate = true> <Delay = 0.00>
+
+State 23 <SV = 19> <Delay = 0.00>
+ST_23 : Operation 250 [1/2] (0.00ns)   --->   "%call_ln581 = call void @(anonymous namespace)output_pass, i128 %gmem_in, i64 %src_read, i128 %gmem_out, i64 %tensor_read, i128 %gmem_preview, i64 %preview_read, i32 %width_read, i32 %height_read, i13 %empty_114, i13 %empty_112, i9 %empty_111, i9 %empty_110, i9 %empty_109, i9 %empty_108, i32 %output_mode_read, i3 %empty, i14 %empty_113, i1 %empty_118, i1 %icmp_ln552, i8 %color_V, i8 %color_V_1, i8 %color_V_2, i8 %quant_V, i8 %quant_V_1, i8 %quant_V_2, i8 %eq_V, i32 %hist_V, i11 %xc_index_V, i12 %xc_weight_V, i11 %yc_index_V, i12 %yc_weight_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:581]   --->   Operation 250 'call' 'call_ln581' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_23 : Operation 251 [1/1] (0.00ns)   --->   "%br_ln586 = br i1 %icmp_ln552, void %fpga_resource_hint.cond.true146.0, void %fpga_resource_hint.if.then139.1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:586]   --->   Operation 251 'br' 'br_ln586' <Predicate = true> <Delay = 0.00>
+
+State 24 <SV = 20> <Delay = 2.89>
+ST_24 : Operation 252 [1/1] (0.00ns)   --->   "%w_1 = trunc i32 %width_read"   --->   Operation 252 'trunc' 'w_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 253 [1/1] (0.00ns)   --->   "%h_1 = trunc i32 %height_read"   --->   Operation 253 'trunc' 'h_1' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 254 [1/1] (0.00ns)   --->   "%zext_ln1540_2 = zext i11 %w_1"   --->   Operation 254 'zext' 'zext_ln1540_2' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 255 [1/1] (0.00ns)   --->   "%zext_ln1540_3 = zext i11 %h_1"   --->   Operation 255 'zext' 'zext_ln1540_3' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 256 [1/1] (1.83ns)   --->   "%ret_V_1 = mul i22 %zext_ln1540_3, i22 %zext_ln1540_2"   --->   Operation 256 'mul' 'ret_V_1' <Predicate = true> <Delay = 1.83> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 257 [1/1] (0.00ns)   --->   "%specfucore_ln1540 = specfucore void @_ssdm_op_SpecFUCore, i22 %ret_V_1, i64 12, i64 4, i64 18446744073709551615"   --->   Operation 257 'specfucore' 'specfucore_ln1540' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 258 [2/2] (1.06ns)   --->   "%call_ln586 = call void @(anonymous namespace)build_lut, i32 %hist_V, i8 %previous_V, i22 %ret_V_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:586]   --->   Operation 258 'call' 'call_ln586' <Predicate = true> <Delay = 1.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 25 <SV = 21> <Delay = 0.99>
+ST_25 : Operation 259 [1/1] (0.00ns)   --->   "%rbegin3 = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_11" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:51]   --->   Operation 259 'specregionbegin' 'rbegin3' <Predicate = (icmp_ln552)> <Delay = 0.00>
+ST_25 : Operation 260 [1/1] (0.00ns)   --->   "%rend4 = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_11, i32 %rbegin3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:51]   --->   Operation 260 'specregionend' 'rend4' <Predicate = (icmp_ln552)> <Delay = 0.00>
+ST_25 : Operation 261 [1/2] (0.00ns)   --->   "%call_ln586 = call void @(anonymous namespace)build_lut, i32 %hist_V, i8 %previous_V, i22 %ret_V_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:586]   --->   Operation 261 'call' 'call_ln586' <Predicate = (icmp_ln552)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_25 : Operation 262 [1/1] (0.00ns)   --->   "%br_ln586 = br void %fpga_resource_hint.cond.true146.0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:586]   --->   Operation 262 'br' 'br_ln586' <Predicate = (icmp_ln552)> <Delay = 0.00>
+ST_25 : Operation 263 [1/1] (0.00ns)   --->   "%store_ln587 = store i32 %width_read, i32 %previous_width" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:587]   --->   Operation 263 'store' 'store_ln587' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 264 [1/1] (0.00ns)   --->   "%store_ln587 = store i32 %height_read, i32 %previous_height" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:587]   --->   Operation 264 'store' 'store_ln587' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 265 [1/1] (0.00ns)   --->   "%store_ln587 = store i32 %config_id_read, i32 %previous_config" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:587]   --->   Operation 265 'store' 'store_ln587' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 266 [1/1] (0.00ns)   --->   "%store_ln588 = store i2 %empty_115, i2 %previous_flags" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:588]   --->   Operation 266 'store' 'store_ln588' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 267 [1/1] (0.00ns)   --->   "%store_ln588 = store i32 %saturation_q12_read, i32 %previous_saturation" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:588]   --->   Operation 267 'store' 'store_ln588' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 268 [1/1] (0.99ns)   --->   "%icmp_ln589 = icmp_ne  i32 %output_mode_read, i32 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:589]   --->   Operation 268 'icmp' 'icmp_ln589' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 269 [1/1] (0.99ns)   --->   "%icmp_ln590 = icmp_eq  i32 %output_mode_read, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 269 'icmp' 'icmp_ln590' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 270 [1/1] (0.00ns)   --->   "%w_2 = trunc i32 %width_read"   --->   Operation 270 'trunc' 'w_2' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 271 [1/1] (0.00ns)   --->   "%h_2 = trunc i32 %height_read"   --->   Operation 271 'trunc' 'h_2' <Predicate = true> <Delay = 0.00>
+
+State 26 <SV = 22> <Delay = 4.09>
+ST_26 : Operation 272 [1/1] (0.36ns)   --->   "%select_ln589 = select i1 %icmp_ln589, i32 519168, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:589]   --->   Operation 272 'select' 'select_ln589' <Predicate = (icmp_ln537)> <Delay = 0.36> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_26 : Operation 273 [1/1] (1.00ns)   --->   "%write_ln589 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %tensor_bytes, i32 %select_ln589" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:589]   --->   Operation 273 'write' 'write_ln589' <Predicate = (icmp_ln537)> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_26 : Operation 274 [1/1] (0.00ns)   --->   "%rbegin = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_58" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:51]   --->   Operation 274 'specregionbegin' 'rbegin' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_26 : Operation 275 [1/1] (0.00ns)   --->   "%zext_ln1540_4 = zext i11 %w_2"   --->   Operation 275 'zext' 'zext_ln1540_4' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 0.00>
+ST_26 : Operation 276 [1/1] (0.00ns)   --->   "%zext_ln1540_5 = zext i11 %h_2"   --->   Operation 276 'zext' 'zext_ln1540_5' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 0.00>
+ST_26 : Operation 277 [1/1] (1.83ns)   --->   "%ret_V_2 = mul i22 %zext_ln1540_5, i22 %zext_ln1540_4"   --->   Operation 277 'mul' 'ret_V_2' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 1.83> <CoreInst = "Mul_LUT">   --->   Core 4 'Mul_LUT' <Latency = 0> <II = 1> <Delay = 1.83> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 278 [1/1] (0.00ns)   --->   "%specfucore_ln1540 = specfucore void @_ssdm_op_SpecFUCore, i22 %ret_V_2, i64 12, i64 4, i64 18446744073709551615"   --->   Operation 278 'specfucore' 'specfucore_ln1540' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_26 : Operation 279 [1/1] (0.00ns)   --->   "%rend = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_58, i32 %rbegin" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:51]   --->   Operation 279 'specregionend' 'rend' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_26 : Operation 280 [1/1] (0.00ns)   --->   "%zext_ln590 = zext i22 %ret_V_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 280 'zext' 'zext_ln590' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 0.00>
+ST_26 : Operation 281 [1/1] (0.00ns)   --->   "%shl_ln1 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i22.i2, i22 %ret_V_2, i2 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 281 'bitconcatenate' 'shl_ln1' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 0.00>
+ST_26 : Operation 282 [1/1] (0.00ns)   --->   "%zext_ln590_1 = zext i24 %shl_ln1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 282 'zext' 'zext_ln590_1' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 0.00>
+ST_26 : Operation 283 [1/1] (0.93ns)   --->   "%sub_ln590 = sub i25 %zext_ln590_1, i25 %zext_ln590" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 283 'sub' 'sub_ln590' <Predicate = (icmp_ln537 & !icmp_ln590)> <Delay = 0.93> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 284 [1/1] (0.32ns)   --->   "%select_ln590 = select i1 %icmp_ln590, i25 0, i25 %sub_ln590" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 284 'select' 'select_ln590' <Predicate = (icmp_ln537)> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_26 : Operation 285 [1/1] (0.00ns)   --->   "%sext_ln590 = sext i25 %select_ln590" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 285 'sext' 'sext_ln590' <Predicate = (icmp_ln537)> <Delay = 0.00>
+ST_26 : Operation 286 [1/1] (1.00ns)   --->   "%write_ln590 = write void @_ssdm_op_Write.s_axilite.i32P0A, i32 %preview_bytes, i32 %sext_ln590" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590]   --->   Operation 286 'write' 'write_ln590' <Predicate = (icmp_ln537)> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_26 : Operation 287 [1/1] (0.42ns)   --->   "%br_ln0 = br void %cleanup"   --->   Operation 287 'br' 'br_ln0' <Predicate = (icmp_ln537)> <Delay = 0.42>
+ST_26 : Operation 288 [1/1] (0.00ns)   --->   "%retval_0 = phi i3 0, void %fpga_resource_hint.cond.true146.0, i3 %status, void %entry"   --->   Operation 288 'phi' 'retval_0' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 289 [1/1] (0.00ns)   --->   "%zext_ln592 = zext i3 %retval_0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:592]   --->   Operation 289 'zext' 'zext_ln592' <Predicate = true> <Delay = 0.00>
+ST_26 : Operation 290 [1/1] (0.00ns)   --->   "%ret_ln592 = ret i32 %zext_ln592" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:592]   --->   Operation 290 'ret' 'ret_ln592' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 3.29ns
+The critical path consists of the following:
+	s_axi read operation ('saturation_q12_read') on port 'saturation_q12' [39]  (1 ns)
+	'call' operation ('status', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534) to '(anonymous namespace)validate_settings' [167]  (2.29 ns)
+
+ <State 2>: 4.23ns
+The critical path consists of the following:
+	'call' operation ('status', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534) to '(anonymous namespace)validate_settings' [167]  (4.23 ns)
+
+ <State 3>: 4.23ns
+The critical path consists of the following:
+	'call' operation ('status', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534) to '(anonymous namespace)validate_settings' [167]  (4.23 ns)
+
+ <State 4>: 4.23ns
+The critical path consists of the following:
+	'call' operation ('status', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534) to '(anonymous namespace)validate_settings' [167]  (4.23 ns)
+
+ <State 5>: 2.08ns
+The critical path consists of the following:
+	'call' operation ('status', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534) to '(anonymous namespace)validate_settings' [167]  (1.07 ns)
+	'icmp' operation ('icmp_ln537', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:537) [168]  (0.584 ns)
+	multiplexor before 'phi' operation ('status') with incoming values : ('status', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:534) [289]  (0.427 ns)
+
+ <State 6>: 4.38ns
+The critical path consists of the following:
+	'getelementptr' operation ('gmem_in_addr', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [204]  (0 ns)
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 7>: 4.38ns
+The critical path consists of the following:
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 8>: 4.38ns
+The critical path consists of the following:
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 9>: 4.38ns
+The critical path consists of the following:
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 10>: 4.38ns
+The critical path consists of the following:
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 11>: 4.38ns
+The critical path consists of the following:
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 12>: 4.38ns
+The critical path consists of the following:
+	bus request operation ('empty_116', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:555) [205]  (4.38 ns)
+
+ <State 13>: 2.01ns
+The critical path consists of the following:
+	'call' operation ('call_ln575', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:575) to '(anonymous namespace)make_coordinates' [230]  (1.23 ns)
+	blocking operation 0.785 ns on control path)
+
+ <State 14>: 4.38ns
+The critical path consists of the following:
+	bus read operation ('v.V', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:556) on port 'gmem_in' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:556) [216]  (4.38 ns)
+
+ <State 15>: 2.2ns
+The critical path consists of the following:
+	'call' operation ('call_ln556', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:556) to 'image_preprocess_Pipeline_VITIS_LOOP_557_2' [221]  (2.2 ns)
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0.427ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('use_history') with incoming values : ('use_history', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554) [247]  (0.427 ns)
+
+ <State 18>: 3.33ns
+The critical path consists of the following:
+	'call' operation ('call_ln578', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:578) to '(anonymous namespace)statistics_pass' [235]  (3.33 ns)
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+ <State 20>: 2.9ns
+The critical path consists of the following:
+	'mul' operation ('ret.V') [241]  (1.84 ns)
+	'call' operation ('call_ln579', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:579) to '(anonymous namespace)build_lut' [244]  (1.06 ns)
+
+ <State 21>: 0.427ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('use_history') with incoming values : ('use_history', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554) [247]  (0.427 ns)
+
+ <State 22>: 3.68ns
+The critical path consists of the following:
+	'phi' operation ('use_history') with incoming values : ('use_history', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:554) [247]  (0 ns)
+	'call' operation ('call_ln581', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:581) to '(anonymous namespace)output_pass' [248]  (3.68 ns)
+
+ <State 23>: 0ns
+The critical path consists of the following:
+
+ <State 24>: 2.9ns
+The critical path consists of the following:
+	'mul' operation ('ret.V') [257]  (1.84 ns)
+	'call' operation ('call_ln586', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:586) to '(anonymous namespace)build_lut' [260]  (1.06 ns)
+
+ <State 25>: 0.991ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln589', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:589) [268]  (0.991 ns)
+
+ <State 26>: 4.09ns
+The critical path consists of the following:
+	'mul' operation ('ret.V') [277]  (1.84 ns)
+	'sub' operation ('sub_ln590', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590) [283]  (0.934 ns)
+	'select' operation ('select_ln590', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590) [284]  (0.322 ns)
+	s_axi write operation ('write_ln590', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590) on port 'preview_bytes' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:590) [286]  (1 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

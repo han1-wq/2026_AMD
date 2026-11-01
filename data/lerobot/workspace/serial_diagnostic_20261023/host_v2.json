@@ -1,0 +1,103 @@
+{
+  "python": "3.8.10",
+  "serial": "3.5",
+  "write_timeout_s": 1.0,
+  "profiles": [
+    {
+      "name": "unicast",
+      "success": 399,
+      "failures": 0,
+      "errors": [],
+      "max_call_ms": 53.40114500722848
+    },
+    {
+      "name": "sync_fast",
+      "success": 8077,
+      "failures": 3,
+      "errors": [
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        }
+      ],
+      "max_call_ms": 263.1258300098125
+    },
+    {
+      "name": "sync_50hz",
+      "success": 420,
+      "failures": 0,
+      "errors": [],
+      "max_call_ms": 295.84717699617613
+    },
+    {
+      "name": "sync_50hz_200ms",
+      "success": 141,
+      "failures": 29,
+      "errors": [
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        },
+        {
+          "comm": -6,
+          "error": 0,
+          "exception": null
+        }
+      ],
+      "max_call_ms": 305.461366995587
+    }
+  ],
+  "read_only_packets": 11082
+}

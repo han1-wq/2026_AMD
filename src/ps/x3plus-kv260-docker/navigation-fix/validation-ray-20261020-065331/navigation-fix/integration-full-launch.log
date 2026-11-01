@@ -1,0 +1,308 @@
+... logging to /root/.ros/log/c75159a4-cc8d-11f1-bfb9-dfb6065a0368/roslaunch-6042315951bc-131.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/project/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch
+[1mstarted roslaunch server http://127.0.0.1:38513/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /amcl/
+
+PARAMETERS
+ * /amcl/base_frame_id: base_footprint
+ * /amcl/global_frame_id: map
+ * /amcl/gui_publish_rate: 10.0
+ * /amcl/initial_pose_a: 0.0
+ * /amcl/initial_pose_x: 0.0
+ * /amcl/initial_pose_y: 0.0
+ * /amcl/kld_err: 0.05
+ * /amcl/kld_z: 0.99
+ * /amcl/laser_lambda_short: 0.1
+ * /amcl/laser_likelihood_max_dist: 2.0
+ * /amcl/laser_max_beams: 60
+ * /amcl/laser_max_range: 12.0
+ * /amcl/laser_model_type: likelihood_field
+ * /amcl/laser_sigma_hit: 0.2
+ * /amcl/laser_z_hit: 0.5
+ * /amcl/laser_z_max: 0.05
+ * /amcl/laser_z_rand: 0.5
+ * /amcl/laser_z_short: 0.05
+ * /amcl/max_particles: 5000
+ * /amcl/min_particles: 2000
+ * /amcl/odom_alpha1: 0.2
+ * /amcl/odom_alpha2: 0.2
+ * /amcl/odom_alpha3: 0.8
+ * /amcl/odom_alpha4: 0.2
+ * /amcl/odom_alpha5: 0.1
+ * /amcl/odom_frame_id: odom
+ * /amcl/odom_model_type: omni
+ * /amcl/recovery_alpha_fast: 0.0
+ * /amcl/recovery_alpha_slow: 0.0
+ * /amcl/resample_interval: 1
+ * /amcl/transform_tolerance: 1.0
+ * /amcl/update_min_a: 0.2
+ * /amcl/update_min_d: 0.25
+ * /amcl/use_map_topic: True
+ * /move_base/DWAPlannerROS/acc_lim_theta: 20.0
+ * /move_base/DWAPlannerROS/acc_lim_x: 10.0
+ * /move_base/DWAPlannerROS/acc_lim_y: 10.0
+ * /move_base/DWAPlannerROS/controller_frequency: 10.0
+ * /move_base/DWAPlannerROS/forward_point_distance: 0.325
+ * /move_base/DWAPlannerROS/global_frame_id: /map
+ * /move_base/DWAPlannerROS/goal_distance_bias: 20.0
+ * /move_base/DWAPlannerROS/latch_xy_goal_tolerance: False
+ * /move_base/DWAPlannerROS/max_rot_vel: 3.2
+ * /move_base/DWAPlannerROS/max_scaling_factor: 0.2
+ * /move_base/DWAPlannerROS/max_vel_theta: 3.2
+ * /move_base/DWAPlannerROS/max_vel_trans: 1.0
+ * /move_base/DWAPlannerROS/max_vel_x: 0.7
+ * /move_base/DWAPlannerROS/max_vel_y: 0.3
+ * /move_base/DWAPlannerROS/min_rot_vel: -3.2
+ * /move_base/DWAPlannerROS/min_vel_theta: 0.1
+ * /move_base/DWAPlannerROS/min_vel_trans: 0.01
+ * /move_base/DWAPlannerROS/min_vel_x: 0.01
+ * /move_base/DWAPlannerROS/min_vel_y: -0.3
+ * /move_base/DWAPlannerROS/occdist_scale: 0.5
+ * /move_base/DWAPlannerROS/oscillation_reset_angle: 0.05
+ * /move_base/DWAPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/DWAPlannerROS/path_distance_bias: 10.0
+ * /move_base/DWAPlannerROS/publish_cost_grid_pc: True
+ * /move_base/DWAPlannerROS/publish_traj_pc: True
+ * /move_base/DWAPlannerROS/scaling_speed: 0.25
+ * /move_base/DWAPlannerROS/sim_time: 1.0
+ * /move_base/DWAPlannerROS/stop_time_buffer: 0.1
+ * /move_base/DWAPlannerROS/theta_stopped_vel: 0.4
+ * /move_base/DWAPlannerROS/trans_stopped_vel: 0.1
+ * /move_base/DWAPlannerROS/vtheta_samples: 10
+ * /move_base/DWAPlannerROS/vx_samples: 10
+ * /move_base/DWAPlannerROS/vy_samples: 0
+ * /move_base/DWAPlannerROS/xy_goal_tolerance: 0.1
+ * /move_base/DWAPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/aggressive_reset/layer_names: ['obstacle_layer']
+ * /move_base/aggressive_reset/reset_distance: 3.0
+ * /move_base/base_local_planner: dwa_local_planner...
+ * /move_base/clearing_rotation_allowed: False
+ * /move_base/conservative_reset/layer_names: ['obstacle_layer']
+ * /move_base/conservative_reset/reset_distance: 1.0
+ * /move_base/conservative_reset_dist: 5.0
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 5.0
+ * /move_base/global_costmap/cost_scaling_factor: 3.0
+ * /move_base/global_costmap/footprint: [[-0.1525, -0.122...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/inflation_layer/cost_scaling_factor: 1.0
+ * /move_base/global_costmap/inflation_layer/enabled: True
+ * /move_base/global_costmap/inflation_radius: 0.3
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/obstacle_layer/combination_method: 1
+ * /move_base/global_costmap/obstacle_layer/enabled: True
+ * /move_base/global_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacle_layer/min_obstacle_height: 0.0
+ * /move_base/global_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/publish_voxel_map: False
+ * /move_base/global_costmap/obstacle_layer/raytrace_range: 3.5
+ * /move_base/global_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacle_layer/scan/expected_update_rate: 0
+ * /move_base/global_costmap/obstacle_layer/scan/marking: True
+ * /move_base/global_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/global_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/global_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/global_costmap/obstacle_range: 3.0
+ * /move_base/global_costmap/publish_frequency: 10.0
+ * /move_base/global_costmap/raytrace_range: 3.5
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_footprint
+ * /move_base/global_costmap/static_layer/enabled: True
+ * /move_base/global_costmap/static_layer/map_topic: /map
+ * /move_base/global_costmap/static_map: True
+ * /move_base/global_costmap/transform_tolerance: 0.5
+ * /move_base/global_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/cost_scaling_factor: 3.0
+ * /move_base/local_costmap/footprint: [[-0.1525, -0.122...
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 2.5
+ * /move_base/local_costmap/inflation_layer/cost_scaling_factor: 1.0
+ * /move_base/local_costmap/inflation_layer/enabled: True
+ * /move_base/local_costmap/inflation_radius: 0.3
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/obstacle_layer/combination_method: 1
+ * /move_base/local_costmap/obstacle_layer/enabled: True
+ * /move_base/local_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacle_layer/min_obstacle_height: 0.0
+ * /move_base/local_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/publish_voxel_map: False
+ * /move_base/local_costmap/obstacle_layer/raytrace_range: 3.5
+ * /move_base/local_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacle_layer/scan/expected_update_rate: 0
+ * /move_base/local_costmap/obstacle_layer/scan/marking: True
+ * /move_base/local_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/local_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/local_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/local_costmap/obstacle_range: 3.0
+ * /move_base/local_costmap/publish_frequency: 10.0
+ * /move_base/local_costmap/raytrace_range: 3.5
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_footprint
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_layer/enabled: True
+ * /move_base/local_costmap/static_layer/map_topic: /map
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/width: 2.5
+ * /move_base/max_planning_retries: -1.0
+ * /move_base/move_slow_and_clear/clearing_distance: 0.1
+ * /move_base/move_slow_and_clear/limited_distance: 0.3
+ * /move_base/move_slow_and_clear/limited_rot_speed: 0.4
+ * /move_base/move_slow_and_clear/limited_trans_speed: 0.1
+ * /move_base/oscillation_distance: 0.3
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 10.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: False
+ * /move_base/recovery_behaviors: [{'type': 'clear_...
+ * /move_base/shutdown_costmaps: False
+ * /move_base/super_reset/layer_names: ['obstacle_layer']
+ * /move_base/super_reset/reset_dithe rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[33m[ WARN] [1792504479.567018194]: global_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1792504479.924356482]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1792504479.968895468]: Parameter max_rot_vel is deprecated (and will not load properly). Use max_vel_theta instead.[0m
+[33m[ WARN] [1792504479.969158573]: Parameter min_rot_vel is deprecated (and will not load properly). Use min_vel_theta instead.[0m
+[0m[ INFO] [1792504479.573882944]: global_costmap: Using plugin "static_layer"[0m
+[0m[ INFO] [1792504479.578266413]: Requesting the map...[0m
+[0m[ INFO] [1792504479.780206717]: Resizing costmap to 240 X 200 at 0.050000 m/pix[0m
+[0m[ INFO] [1792504479.880115406]: Received a 240 X 200 map at 0.050000 m/pix[0m
+[0m[ INFO] [1792504479.882448168]: global_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1792504479.884137420]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1792504479.894362322]: global_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1792504479.931746091]: local_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1792504479.934440980]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1792504479.944234202]: local_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1792504479.964482821]: Created local_planner dwa_local_planner/DWAPlannerROS[0m
+[0m[ INFO] [1792504479.966003165]: Sim period is set to 0.10[0m
+[0m[ INFO] [1792504480.061161621]: Recovery behavior will clear layer 'obstacle_layer'[0m
+[0m[ INFO] [1792504480.168325166]: odom received![0m
+[0m[ INFO] [1792504482.479351151]: Got new plan[0m
+[0m[ INFO] [1792504482.579307858]: Got new plan[0m
+[0m[ INFO] [1792504482.681104744]: Got new plan[0m
+[0m[ INFO] [1792504482.781268117]: Got new plan[0m
+[0m[ INFO] [1792504482.881249716]: Got new plan[0m
+[0m[ INFO] [1792504482.981291431]: Got new plan[0m
+[0m[ INFO] [1792504483.081219991]: Got new plan[0m
+[0m[ INFO] [1792504483.181248109]: Got new plan[0m
+[0m[ INFO] [1792504483.281234316]: Got new plan[0m
+[0m[ INFO] [1792504483.381234714]: Got new plan[0m
+[0m[ INFO] [1792504483.481211934]: Got new plan[0m
+[0m[ INFO] [1792504483.581189273]: Got new plan[0m
+[0m[ INFO] [1792504483.681483073]: Got new plan[0m
+[0m[ INFO] [1792504483.781292832]: Got new plan[0m
+[0m[ INFO] [1792504483.881253905]: Got new plan[0m
+[0m[ INFO] [1792504483.981205802]: Got new plan[0m
+[0m[ INFO] [1792504484.081238516]: Got new plan[0m
+[0m[ INFO] [1792504484.181197696]: Got new plan[0m
+[0m[ INFO] [1792504484.281243404]: Got new plan[0m
+[0m[ INFO] [1792504484.381216064]: Got new plan[0m
+[0m[ INFO] [1792504484.481248432]: Got new plan[0m
+[0m[ INFO] [1792504484.581211098]: Got new plan[0m
+[0m[ INFO] [1792504484.681221130]: Got new plan[0m
+[0m[ INFO] [1792504484.781205997]: Got new plan[0m
+[0m[ INFO] [1792504484.881208865]: Got new plan[0m
+[0m[ INFO] [1792504484.981213818]: Got new plan[0m
+[0m[ INFO] [1792504485.081225031]: Got new plan[0m
+[0m[ INFO] [1792504485.181226008]: Got new plan[0m
+[0m[ INFO] [1792504485.281206480]: Got new plan[0m
+[0m[ INFO] [1792504485.381224024]: Got new plan[0m
+[0m[ INFO] [1792504485.481353072]: Got new plan[0m
+[0m[ INFO] [1792504485.581283614]: Got new plan[0m
+[0m[ INFO] [1792504485.681187753]: Got new plan[0m
+[0m[ INFO] [1792504485.781282081]: Got new plan[0m
+[0m[ INFO] [1792504485.781338502]: Goal reached[0m
+[0m[ INFO] [1792504493.073158977]: Got new plan[0m
+[0m[ INFO] [1792504493.173137908]: Got new plan[0m
+[0m[ INFO] [1792504493.273143374]: Got new plan[0m
+[0m[ INFO] [1792504493.373108128]: Got new plan[0m
+[0m[ INFO] [1792504493.473072510]: Got new plan[0m
+[0m[ INFO] [1792504493.573202253]: Got new plan[0m
+[0m[ INFO] [1792504493.673130012]: Got new plan[0m
+[0m[ INFO] [1792504493.773108859]: Got new plan[0m
+[0m[ INFO] [1792504493.873163034]: Got new plan[0m
+[0m[ INFO] [1792504493.973799226]: Got new plan[0m
+[0m[ INFO] [1792504494.073169404]: Got new plan[0m
+[0m[ INFO] [1792504494.173101301]: Got new plan[0m
+[0m[ INFO] [1792504494.273165774]: Got new plan[0m
+[0m[ INFO] [1792504494.373137050]: Got new plan[0m
+[0m[ INFO] [1792504494.473114507]: Got new plan[0m
+[0m[ INFO] [1792504494.573141847]: Got new plan[0m
+[0m[ INFO] [1792504494.673162291]: Got new plan[0m
+[0m[ INFO] [1792504494.773101978]: Got new plan[0m
+[0m[ INFO] [1792504494.873138560]: Got new plan[0m
+[0m[ INFO] [1792504494.973152496]: Got new plan[0m
+[0m[ INFO] [1792504495.073366469]: Got new plan[0m
+[0m[ INFO] [1792504495.173093928]: Got new plan[0m
+[0m[ INFO] [1792504495.273163315]: Got new plan[0m
+[0m[ INFO] [1792504495.373157047]: Got new plan[0m
+[0m[ INFO] [1792504495.473100741]: Got new plan[0m
+[0m[ INFO] [1792504495.573142787]: Got new plan[0m
+[0m[ INFO] [1792504495.673096967]: Got new plan[0m
+[0m[ INFO] [1792504495.773080128]: Got new plan[0m
+[0m[ INFO] [1792504495.873297036]: Got new plan[0m
+[0m[ INFO] [1792504495.973101716]: Got new plan[0m
+[0m[ INFO] [1792504496.073212362]: Got new plan[0m
+[0m[ INFO] [1792504496.173093233]: Got new plan[0m
+[0m[ INFO] [1792504496.273203948]: Got new plan[0m
+[0m[ INFO] [1792504496.373149827]: Got new plan[0m
+[0m[ INFO] [1792504496.473141761]: Got new plan[0m
+[0m[ INFO] [1792504496.573116468]: Got new plan[0m
+[0m[ INFO] [1792504496.673190242]: Got new plan[0m
+[0m[ INFO] [1792504496.773169247]: Got new plan[0m
+[0m[ INFO] [1792504496.873113217]: Got new plan[0m
+[0m[ INFO] [1792504496.973122552]: Got new plan[0m
+[0m[ INFO] [1792504497.073229858]: Got new plan[0m
+[0m[ INFO] [1792504497.173077707]: Got new plan[0m
+[0m[ INFO] [1792504497.273090496]: Got new plan[0m
+[0m[ INFO] [1792504497.373068792]: Got new plan[0m
+[0m[ INFO] [1792504497.473077594]: Got new plan[0m
+[0m[ INFO] [1792504497.573163297]: Got new plan[0m
+[0m[ INFO] [1792504497.673146840]: Got new plan[0m
+[0m[ INFO] [1792504497.673181974]: Goal reached[0m
+[0m[ INFO] [1792504497.809311406]: Got new plan[0m
+[0m[ INFO] [1792504497.909429432]: Got new plan[0m
+[0m[ INFO] [1792504498.009219657]: Got new plan[0m
+[0m[ INFO] [1792504498.109234124]: Got new plan[0m
+[0m[ INFO] [1792504498.209206792]: Got new plan[0m
+[0m[ INFO] [1792504498.309403826]: Got new plan[0m
+[0m[ INFO] [1792504498.409252145]: Got new plan[0m
+[0m[ INFO] [1792504498.509245651]: Got new plan[0m
+[0m[ INFO] [1792504498.609208045]: Got new plan[0m
+[0m[ INFO] [1792504498.709314952]: Got new plan[0m
+stance: 5.0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    amcl (amcl/amcl)
+    map_server (map_server/map_server)
+    move_base (move_base/move_base)
+    navigation_guard (yahboomcar_nav/navigation_guard.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/project/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch http://127.0.0.1:11311
+[1mprocess[navigation_guard-1]: started with pid [156][0m
+[1mprocess[map_server-2]: started with pid [157][0m
+[1mprocess[amcl-3]: started with pid [242][0m
+[1mprocess[move_base-4]: started with pid [252][0m
+[move_base-4] killing on exit
+[amcl-3] killing on exit
+[navigation_guard-1] killing on exit
+[map_server-2] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

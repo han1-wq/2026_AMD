@@ -1,0 +1,1 @@
+../../../../../../src/kv260/dpu_platform2/bd_accelerator_integration/reports/check/integrated_bd.tcl

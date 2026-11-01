@@ -1,0 +1,1375 @@
+12:34:37 [INFO] [1791808477.214283320] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 22884: detections=5 depths=[0.631, 2.834, 1.104, 2.658, 3.431]
+12:34:37 YOLO frame 22885: detections=6 depths=[0.716, 2.858, 1.104, 2.658, 3.431, None]
+12:34:37 YOLO frame 22886: detections=6 depths=[0.714, 2.858, 1.101, 2.658, None, None]
+12:34:37 YOLO frame 22887: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:34:37 YOLO frame 22888: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:34:38 YOLO frame 22889: detections=5 depths=[0.716, 2.834, 1.104, 2.658, 3.771]
+12:34:38 YOLO frame 22890: detections=5 depths=[0.713, 2.858, 1.101, 2.658, 3.771]
+12:34:38 YOLO frame 22891: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:34:38 YOLO frame 22892: detections=4 depths=[0.716, 2.858, 1.101, 2.658]
+12:34:39 YOLO frame 22893: detections=4 depths=[0.717, 2.834, 1.101, 2.658]
+12:34:39 YOLO frame 22894: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:34:39 YOLO frame 22895: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:34:39 YOLO frame 22896: detections=5 depths=[0.716, 2.834, 1.101, 2.658, None]
+12:34:39 YOLO frame 22897: detections=5 depths=[0.631, 2.858, 1.101, 2.679, None]
+12:34:40 YOLO frame 22898: detections=5 depths=[0.716, 2.834, 1.104, 2.658, None]
+12:34:40 YOLO frame 22899: detections=5 depths=[0.716, 2.834, 1.101, 2.658, None]
+12:34:40 YOLO frame 22900: detections=5 depths=[0.714, 2.834, 1.101, 2.679, None]
+12:34:40 YOLO frame 22901: detections=5 depths=[0.635, 2.834, 1.104, 2.658, None]
+12:34:40 YOLO frame 22902: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:34:41 YOLO frame 22903: detections=5 depths=[0.714, 2.834, 1.101, 2.679, None]
+12:34:41 YOLO frame 22904: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:34:41 YOLO frame 22905: detections=5 depths=[0.717, 2.858, 1.101, 2.658, None]
+12:34:41 YOLO frame 22906: detections=5 depths=[0.63, 2.858, 1.101, 2.658, None]
+12:34:41 YOLO frame 22907: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.431]
+12:34:41 YOLO frame 22908: detections=5 depths=[0.714, 2.834, 1.104, 2.658, 3.431]
+12:34:42 YOLO frame 22909: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:34:42 [INFO] [1791808482.193775186] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+12:34:42 [INFO] [1791808482.244730295] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:34:42 YOLO frame 22910: detections=4 depths=[0.716, 2.858, 1.104, 2.679]
+12:34:42 YOLO frame 22911: detections=4 depths=[0.717, 2.858, 1.103, 2.658]
+12:34:42 YOLO frame 22912: detections=4 depths=[0.63, 2.834, 1.104, 2.658]
+12:34:42 YOLO frame 22913: detections=4 depths=[0.714, 2.858, 1.101, 2.679]
+12:34:43 YOLO frame 22914: detections=4 depths=[0.632, 2.834, 1.101, 2.658]
+12:34:43 YOLO frame 22915: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:34:43 YOLO frame 22916: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:34:43 YOLO frame 22917: detections=5 depths=[0.714, 2.858, 1.104, 2.679, None]
+12:34:43 YOLO frame 22918: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:34:44 YOLO frame 22919: detections=4 depths=[0.714, 2.834, 1.097, 2.658]
+12:34:44 YOLO frame 22920: detections=4 depths=[0.711, 2.858, 1.103, 2.658]
+12:34:44 YOLO frame 22921: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:34:44 YOLO frame 22922: detections=5 depths=[0.716, 2.858, 1.101, 2.658, 3.431]
+12:34:44 YOLO frame 22923: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.431]
+12:34:45 YOLO frame 22924: detections=5 depths=[0.63, 2.858, 1.101, 2.679, None]
+12:34:45 YOLO frame 22925: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:34:45 YOLO frame 22926: detections=4 depths=[0.716, 2.858, 1.101, 2.658]
+12:34:45 YOLO frame 22927: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:34:45 YOLO frame 22928: detections=6 depths=[0.714, 2.834, 1.101, 2.658, None, 3.465]
+12:34:45 YOLO frame 22929: detections=6 depths=[0.714, 2.858, 1.101, 2.679, None, 3.465]
+12:34:46 YOLO frame 22930: detections=6 depths=[0.714, 2.858, 1.104, 2.679, None, None]
+12:34:46 YOLO frame 22931: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:34:46 YOLO frame 22932: detections=4 depths=[0.631, 2.858, 1.104, 2.658]
+12:34:46 YOLO frame 22933: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:34:46 YOLO frame 22934: detections=5 depths=[0.716, 2.834, 1.101, 2.658, 3.465]
+12:34:47 YOLO frame 22935: detections=6 depths=[0.714, 2.858, 1.104, 2.658, 3.465, None]
+12:34:47 [INFO] [1791808487.198673730] [astra_openni2]: Depth interval: 148 frames (29.57 FPS)
+12:34:47 [INFO] [1791808487.224720192] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:34:47 YOLO frame 22936: detections=6 depths=[0.631, 2.834, 1.104, 2.679, None, None]
+12:34:47 YOLO frame 22937: detections=5 depths=[0.716, 2.858, 1.101, 2.658, None]
+12:34:47 YOLO frame 22938: detections=4 depths=[0.712, 2.858, 1.101, 2.679]
+12:34:48 YOLO frame 22939: detections=4 depths=[0.631, 2.834, 1.104, 2.679]
+12:34:48 YOLO frame 22940: detections=5 depths=[0.717, 2.858, 1.101, 2.658, 3.431]
+12:34:48 YOLO frame 22941: detections=5 depths=[0.716, 2.858, 1.104, 2.658, 3.431]
+12:34:48 YOLO frame 22942: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:34:48 YOLO frame 22943: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:34:49 YOLO frame 22944: detections=5 depths=[0.716, 2.834, 1.101, 2.658, 3.465]
+12:34:49 YOLO frame 22945: detections=5 depths=[0.714, 2.834, 1.104, 2.658, 3.465]
+12:34:49 YOLO frame 22946: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:34:49 YOLO frame 22947: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:34:49 YOLO frame 22948: detections=4 depths=[0.631, 2.858, 1.104, 2.658]
+12:34:50 YOLO frame 22949: detections=4 depths=[0.712, 2.834, 1.104, 2.658]
+12:34:50 YOLO frame 22950: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:34:50 YOLO frame 22951: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:34:50 YOLO frame 22952: detections=6 depths=[0.716, 2.858, 1.104, 2.658, None, 3.771]
+12:34:50 YOLO frame 22953: detections=6 depths=[0.631, 2.834, 1.101, 2.658, None, 3.771]
+12:34:51 YOLO frame 22954: detections=5 depths=[0.713, 2.858, 1.104, 2.658, None]
+12:34:51 YOLO frame 22955: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.465]
+12:34:51 YOLO frame 22956: detections=5 depths=[0.714, 2.834, 1.101, 2.679, 3.465]
+12:34:51 YOLO frame 22957: detections=5 depths=[0.629, 2.834, 1.104, 2.658, None]
+12:34:51 YOLO frame 22958: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:34:51 YOLO frame 22959: detections=6 depths=[0.713, 2.858, 1.104, 2.658, None, 3.431]
+12:34:52 YOLO frame 22960: detections=6 depths=[0.714, 2.858, 1.101, 2.658, None, 3.431]
+12:34:52 [INFO] [1791808492.203422926] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+12:34:52 [INFO] [1791808492.231246953] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:34:52 YOLO frame 22961: detections=6 depths=[0.714, 2.834, 1.104, 2.658, None, None]
+12:34:52 YOLO frame 22962: detections=4 depths=[0.714, 2.858, 1.104, 2.679]
+12:34:52 YOLO frame 22963: detections=4 depths=[0.713, 2.834, 1.101, 2.658]
+12:34:52 YOLO frame 22964: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:34:53 YOLO frame 22965: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:34:53 YOLO frame 22966: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:34:53 YOLO frame 22967: detections=5 depths=[0.716, 2.858, 1.104, 2.679, 3.465]
+12:34:53 YOLO frame 22968: detections=5 depths=[0.714, 2.858, 1.101, 2.658, 3.465]
+12:34:53 YOLO frame 22969: detections=5 depths=[0.714, 2.858, 1.104, 2.658, 3.465]
+12:34:54 YOLO frame 22970: detections=5 depths=[0.71, 2.834, 1.104, 2.658, None]
+12:34:54 YOLO frame 22971: detections=4 depths=[0.72, 2.834, 1.101, 2.658]
+12:34:54 YOLO frame 22972: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:34:54 YOLO frame 22973: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:34:54 YOLO frame 22974: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:34:55 YOLO frame 22975: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:34:55 YOLO frame 22976: detections=4 depths=[0.717, 2.834, 1.104, 2.679]
+12:34:55 YOLO frame 22977: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:34:55 YOLO frame 22978: detections=5 depths=[0.714, 2.858, 1.104, 2.679, 3.431]
+12:34:55 YOLO frame 22979: detections=6 depths=[0.714, 2.858, 1.101, 2.658, 3.431, None]
+12:34:56 YOLO frame 22980: detections=6 depths=[0.714, 2.858, 1.101, 2.658, None, None]
+12:34:56 YOLO frame 22981: detections=5 depths=[0.714, 2.858, 1.101, 2.658, None]
+12:34:56 YOLO frame 22982: detections=5 depths=[0.716, 2.846, 1.104, 2.658, None]
+12:34:56 YOLO frame 22983: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:34:56 YOLO frame 22984: detections=5 depths=[0.714, 2.858, 1.104, 2.658, 3.465]
+12:34:57 YOLO frame 22985: detections=5 depths=[0.714, 2.834, 1.104, 2.658, 3.465]
+12:34:57 [INFO] [1791808497.234359510] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+12:34:57 [INFO] [1791808497.260785189] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:34:57 YOLO frame 22986: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.465]
+12:34:57 YOLO frame 22987: detections=5 depths=[0.716, 2.858, 1.101, 2.679, 3.465]
+12:34:57 YOLO frame 22988: detections=5 depths=[0.711, 2.858, 1.101, 2.679, None]
+12:34:57 YOLO frame 22989: detections=4 depths=[0.631, 2.858, 1.099, 2.679]
+12:34:58 YOLO frame 22990: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:34:58 YOLO frame 22991: detections=4 depths=[0.631, 2.858, 1.101, 2.658]
+12:34:58 YOLO frame 22992: detections=4 depths=[0.713, 2.858, 1.104, 2.679]
+12:34:58 YOLO frame 22993: detections=4 depths=[0.714, 2.858, 1.104, 2.679]
+12:34:58 YOLO frame 22994: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:34:59 YOLO frame 22995: detections=5 depths=[0.714, 2.834, 1.101, 2.679, None]
+12:34:59 YOLO frame 22996: detections=5 depths=[0.714, 2.858, 1.101, 2.679, None]
+12:34:59 YOLO frame 22997: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:34:59 YOLO frame 22998: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:34:59 YOLO frame 22999: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:00 YOLO frame 23000: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:00 YOLO frame 23001: detections=4 depths=[0.715, 2.858, 1.101, 2.658]
+12:35:00 YOLO frame 23002: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:00 YOLO frame 23003: detections=4 depths=[0.715, 2.858, 1.104, 2.658]
+12:35:00 YOLO frame 23004: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:01 YOLO frame 23005: detections=4 depths=[0.716, 2.858, 1.101, 2.658]
+12:35:01 YOLO frame 23006: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:01 YOLO frame 23007: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:01 YOLO frame 23008: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:01 YOLO frame 23009: detections=5 depths=[0.714, 2.858, 1.101, 2.658, 3.465]
+12:35:02 YOLO frame 23010: detections=5 depths=[0.711, 2.834, 1.101, 2.658, 3.465]
+12:35:02 [INFO] [1791808502.241651377] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:35:02 YOLO frame 23011: detections=5 depths=[0.716, 2.834, 1.104, 2.658, 3.465]
+12:35:02 [INFO] [1791808502.290990737] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:02 YOLO frame 23012: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:35:02 YOLO frame 23013: detections=4 depths=[0.712, 2.834, 1.104, 2.658]
+12:35:02 YOLO frame 23014: detections=4 depths=[0.716, 2.858, 1.104, 2.658]
+12:35:03 YOLO frame 23015: detections=5 depths=[0.715, 2.858, 1.101, 2.658, 3.465]
+12:35:03 YOLO frame 23016: detections=5 depths=[0.714, 2.834, 1.104, 2.679, 3.465]
+12:35:03 YOLO frame 23017: detections=5 depths=[0.716, 2.834, 1.097, 2.658, None]
+12:35:03 YOLO frame 23018: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:03 YOLO frame 23019: detections=4 depths=[0.631, 2.858, 1.101, 2.679]
+12:35:03 YOLO frame 23020: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:04 YOLO frame 23021: detections=4 depths=[0.716, 2.834, 1.101, 2.679]
+12:35:04 YOLO frame 23022: detections=4 depths=[0.714, 2.834, 1.103, 2.679]
+12:35:04 YOLO frame 23023: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:04 YOLO frame 23024: detections=5 depths=[0.711, 2.858, 1.104, 2.658, None]
+12:35:04 YOLO frame 23025: detections=5 depths=[0.716, 2.858, 1.101, 2.658, None]
+12:35:05 YOLO frame 23026: detections=5 depths=[0.716, 2.834, 1.101, 2.679, None]
+12:35:05 YOLO frame 23027: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:05 YOLO frame 23028: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:35:05 YOLO frame 23029: detections=5 depths=[0.714, 2.834, 1.104, 2.658, 3.431]
+12:35:06 YOLO frame 23030: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.431]
+12:35:06 YOLO frame 23031: detections=5 depths=[0.632, 2.834, 1.101, 2.658, None]
+12:35:06 YOLO frame 23032: detections=4 depths=[0.715, 2.858, 1.104, 2.658]
+12:35:06 YOLO frame 23033: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:06 YOLO frame 23034: detections=5 depths=[0.714, 2.858, 1.097, 2.658, None]
+12:35:07 YOLO frame 23035: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:35:07 YOLO frame 23036: detections=5 depths=[0.714, 2.858, 1.101, 2.679, None]
+12:35:07 [INFO] [1791808507.271730109] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+12:35:07 [INFO] [1791808507.299307374] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:07 YOLO frame 23037: detections=5 depths=[0.714, 2.834, 1.099, 2.658, 3.465]
+12:35:07 YOLO frame 23038: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.465]
+12:35:07 YOLO frame 23039: detections=5 depths=[0.632, 2.858, 1.101, 2.658, None]
+12:35:08 YOLO frame 23040: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:08 YOLO frame 23041: detections=4 depths=[0.715, 2.858, 1.101, 2.679]
+12:35:08 YOLO frame 23042: detections=4 depths=[0.716, 2.858, 1.101, 2.658]
+12:35:08 YOLO frame 23043: detections=4 depths=[0.711, 2.834, 1.104, 2.658]
+12:35:08 YOLO frame 23044: detections=4 depths=[0.716, 2.858, 1.104, 2.679]
+12:35:08 YOLO frame 23045: detections=4 depths=[0.717, 2.858, 1.104, 2.658]
+12:35:09 YOLO frame 23046: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:09 YOLO frame 23047: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:09 YOLO frame 23048: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:09 YOLO frame 23049: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:35:09 YOLO frame 23050: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:10 YOLO frame 23051: detections=4 depths=[0.714, 2.834, 1.101, 2.679]
+12:35:10 YOLO frame 23052: detections=4 depths=[0.714, 2.858, 1.097, 2.679]
+12:35:10 YOLO frame 23053: detections=4 depths=[0.717, 2.834, 1.101, 2.679]
+12:35:10 YOLO frame 23054: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:11 YOLO frame 23055: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:35:11 YOLO frame 23056: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:35:11 YOLO frame 23057: detections=4 depths=[0.716, 2.858, 1.104, 2.658]
+12:35:11 YOLO frame 23058: detections=4 depths=[0.714, 2.858, 1.104, 2.679]
+12:35:11 YOLO frame 23059: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:11 YOLO frame 23060: detections=4 depths=[0.713, 2.834, 1.097, 2.658]
+12:35:12 YOLO frame 23061: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:12 [INFO] [1791808512.276211892] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+12:35:12 [INFO] [1791808512.326733702] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:12 YOLO frame 23062: detections=4 depths=[0.715, 2.834, 1.101, 2.658]
+12:35:12 YOLO frame 23063: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:12 YOLO frame 23064: detections=5 depths=[0.716, 2.858, 1.101, 2.658, None]
+12:35:12 YOLO frame 23065: detections=5 depths=[0.716, 2.834, 1.104, 2.658, None]
+12:35:13 YOLO frame 23066: detections=4 depths=[0.717, 2.858, 1.104, 2.658]
+12:35:13 YOLO frame 23067: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:13 YOLO frame 23068: detections=4 depths=[0.714, 2.834, 1.104, None]
+12:35:13 YOLO frame 23069: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:13 YOLO frame 23070: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.465]
+12:35:14 YOLO frame 23071: detections=5 depths=[0.717, 2.858, 1.104, 2.658, 3.465]
+12:35:14 YOLO frame 23072: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:35:14 YOLO frame 23073: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:14 YOLO frame 23074: detections=5 depths=[0.716, 2.858, 1.101, 2.658, 3.465]
+12:35:14 YOLO frame 23075: detections=6 depths=[0.713, 2.834, 1.104, 2.658, 3.465, None]
+12:35:15 YOLO frame 23076: detections=6 depths=[0.632, 2.834, 1.101, 2.679, None, None]
+12:35:15 YOLO frame 23077: detections=5 depths=[0.714, 2.858, 1.097, 2.658, None]
+12:35:15 YOLO frame 23078: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:35:15 YOLO frame 23079: detections=4 depths=[0.716, 2.858, 1.097, 2.658]
+12:35:15 YOLO frame 23080: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:16 YOLO frame 23081: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:16 YOLO frame 23082: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:16 YOLO frame 23083: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:16 YOLO frame 23084: detections=4 depths=[0.715, 2.834, 1.104, 2.658]
+12:35:16 YOLO frame 23085: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:35:17 YOLO frame 23086: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:17 YOLO frame 23087: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:35:17 [INFO] [1791808517.280195009] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+12:35:17 [INFO] [1791808517.306444748] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:17 YOLO frame 23088: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:17 YOLO frame 23089: detections=4 depths=[0.717, 2.858, 1.101, 2.658]
+12:35:17 YOLO frame 23090: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:18 YOLO frame 23091: detections=5 depths=[0.716, 2.834, 1.104, 2.658, None]
+12:35:18 YOLO frame 23092: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:35:18 YOLO frame 23093: detections=4 depths=[0.715, 2.834, 1.101, 2.658]
+12:35:18 YOLO frame 23094: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:18 YOLO frame 23095: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:18 YOLO frame 23096: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:19 YOLO frame 23097: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:19 YOLO frame 23098: detections=4 depths=[0.716, 2.858, 1.101, 2.658]
+12:35:19 YOLO frame 23099: detections=4 depths=[0.716, 2.858, 1.101, 2.658]
+12:35:19 YOLO frame 23100: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:19 YOLO frame 23101: detections=4 depths=[0.715, 2.858, 1.101, 2.679]
+12:35:20 YOLO frame 23102: detections=5 depths=[0.714, 2.858, 1.101, 2.679, None]
+12:35:20 YOLO frame 23103: detections=5 depths=[0.712, 2.858, 1.104, 2.658, None]
+12:35:20 YOLO frame 23104: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:35:20 YOLO frame 23105: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.465]
+12:35:20 YOLO frame 23106: detections=5 depths=[0.716, 2.834, 1.104, 2.658, 3.465]
+12:35:21 YOLO frame 23107: detections=5 depths=[0.715, 2.858, 1.101, 2.658, None]
+12:35:21 YOLO frame 23108: detections=4 depths=[0.715, 2.834, 1.104, 2.679]
+12:35:21 YOLO frame 23109: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:21 YOLO frame 23110: detections=5 depths=[0.717, 2.834, 1.101, 2.658, 3.465]
+12:35:21 YOLO frame 23111: detections=5 depths=[0.714, 2.858, 1.101, 2.658, 3.465]
+12:35:22 YOLO frame 23112: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:22 YOLO frame 23113: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:22 [INFO] [1791808522.287233940] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:35:22 [INFO] [1791808522.312265600] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:22 YOLO frame 23114: detections=5 depths=[0.714, 2.858, 1.101, 2.658, 3.465]
+12:35:22 YOLO frame 23115: detections=5 depths=[0.716, 2.858, 1.104, 2.679, 3.465]
+12:35:22 YOLO frame 23116: detections=5 depths=[0.715, 2.858, 1.104, 2.679, None]
+12:35:22 YOLO frame 23117: detections=4 depths=[0.716, 2.858, 1.104, 2.658]
+12:35:23 YOLO frame 23118: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:23 YOLO frame 23119: detections=5 depths=[0.714, 2.858, 1.104, 2.658, None]
+12:35:23 YOLO frame 23120: detections=5 depths=[0.716, 2.858, 1.101, 2.658, None]
+12:35:23 YOLO frame 23121: detections=5 depths=[0.716, 2.834, 1.104, 2.658, None]
+12:35:24 YOLO frame 23122: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:24 YOLO frame 23123: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:24 YOLO frame 23124: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:24 YOLO frame 23125: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:24 YOLO frame 23126: detections=5 depths=[0.714, 2.834, 1.104, 2.658, 3.431]
+12:35:25 YOLO frame 23127: detections=6 depths=[0.717, 2.858, 1.104, 2.658, 3.431, None]
+12:35:25 YOLO frame 23128: detections=6 depths=[0.716, 2.834, 1.104, 2.658, None, None]
+12:35:25 YOLO frame 23129: detections=5 depths=[0.715, 2.834, 1.104, 2.679, None]
+12:35:25 YOLO frame 23130: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:25 YOLO frame 23131: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:25 YOLO frame 23132: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:26 YOLO frame 23133: detections=5 depths=[0.716, 2.834, 1.104, 2.658, 3.465]
+12:35:26 YOLO frame 23134: detections=5 depths=[0.714, 2.858, 1.104, 2.658, 3.465]
+12:35:26 YOLO frame 23135: detections=5 depths=[0.711, 2.858, 1.104, 2.658, None]
+12:35:26 YOLO frame 23136: detections=4 depths=[0.713, 2.834, 1.104, 2.658]
+12:35:26 YOLO frame 23137: detections=4 depths=[0.716, 2.834, 1.104, 2.658]
+12:35:27 YOLO frame 23138: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:27 [INFO] [1791808527.316562151] [astra_openni2]: Depth interval: 149 frames (29.63 FPS)
+12:35:27 [INFO] [1791808527.348145480] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:27 YOLO frame 23139: detections=4 depths=[0.712, 2.834, 1.101, 2.658]
+12:35:27 YOLO frame 23140: detections=4 depths=[0.713, 2.858, 1.097, 2.658]
+12:35:27 YOLO frame 23141: detections=4 depths=[0.719, 2.858, 1.104, 2.679]
+12:35:27 YOLO frame 23142: detections=4 depths=[0.719, 2.858, 1.097, 2.658]
+12:35:28 YOLO frame 23143: detections=4 depths=[0.631, 2.858, 1.104, 2.658]
+12:35:28 YOLO frame 23144: detections=4 depths=[0.719, 2.834, 1.101, 2.658]
+12:35:28 YOLO frame 23145: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:35:28 YOLO frame 23146: detections=4 depths=[0.714, 2.858, 1.101, 2.658]
+12:35:28 YOLO frame 23147: detections=5 depths=[0.714, 2.834, 1.101, 2.658, 3.813]
+12:35:29 YOLO frame 23148: detections=5 depths=[0.716, 2.858, 1.097, 2.679, 3.813]
+12:35:29 YOLO frame 23149: detections=5 depths=[0.714, 2.858, 1.101, 2.679, None]
+12:35:29 YOLO frame 23150: detections=4 depths=[0.714, 2.834, 1.097, 2.679]
+12:35:29 YOLO frame 23151: detections=4 depths=[0.714, 2.858, 1.101, 2.679]
+12:35:29 YOLO frame 23152: detections=4 depths=[0.631, 2.858, 1.097, 2.679]
+12:35:30 YOLO frame 23153: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:30 YOLO frame 23154: detections=4 depths=[0.714, 2.834, 1.097, 2.658]
+12:35:30 YOLO frame 23155: detections=4 depths=[0.714, 2.834, 1.097, 2.658]
+12:35:30 YOLO frame 23156: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:30 YOLO frame 23157: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:30 YOLO frame 23158: detections=4 depths=[0.716, 2.834, 1.101, 2.658]
+12:35:31 YOLO frame 23159: detections=4 depths=[0.627, 2.858, 1.104, 2.658]
+12:35:31 YOLO frame 23160: detections=5 depths=[0.714, 2.882, 1.104, 2.679, 3.465]
+12:35:31 YOLO frame 23161: detections=6 depths=[0.714, 2.834, 1.101, 2.658, 3.465, None]
+12:35:31 YOLO frame 23162: detections=6 depths=[0.716, 2.834, 1.097, 2.658, None, None]
+12:35:31 YOLO frame 23163: detections=5 depths=[0.716, 2.834, 1.104, 2.679, None]
+12:35:32 YOLO frame 23164: detections=5 depths=[0.715, 2.858, 1.101, 2.679, None]
+12:35:32 [INFO] [1791808532.322747434] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:35:32 [INFO] [1791808532.373651982] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:32 YOLO frame 23165: detections=5 depths=[0.72, 2.834, 1.104, 2.679, None]
+12:35:32 YOLO frame 23166: detections=5 depths=[0.716, 2.834, 1.101, 2.679, None]
+12:35:32 YOLO frame 23167: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:33 YOLO frame 23168: detections=4 depths=[0.714, 2.858, 1.101, 2.679]
+12:35:33 YOLO frame 23169: detections=4 depths=[0.714, 2.834, 1.101, 2.658]
+12:35:33 YOLO frame 23170: detections=4 depths=[0.714, 2.834, 1.097, 2.658]
+12:35:33 YOLO frame 23171: detections=4 depths=[0.631, 2.834, 1.104, 2.679]
+12:35:33 YOLO frame 23172: detections=4 depths=[0.714, 2.858, 1.104, 2.658]
+12:35:34 YOLO frame 23173: detections=4 depths=[0.716, 2.834, 1.104, 2.679]
+12:35:34 YOLO frame 23174: detections=4 depths=[0.714, 2.858, 1.101, 2.679]
+12:35:34 YOLO frame 23175: detections=4 depths=[0.714, 2.858, 1.104, 2.679]
+12:35:34 YOLO frame 23176: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:35:34 YOLO frame 23177: detections=4 depths=[0.716, 2.858, 1.101, 2.679]
+12:35:34 YOLO frame 23178: detections=4 depths=[0.716, 2.858, 1.104, 2.679]
+12:35:35 YOLO frame 23179: detections=4 depths=[0.717, 2.834, 1.104, 2.658]
+12:35:35 YOLO frame 23180: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:35 YOLO frame 23181: detections=4 depths=[0.714, 2.834, 1.104, 2.679]
+12:35:35 YOLO frame 23182: detections=5 depths=[0.717, 2.834, 1.104, 2.658, None]
+12:35:36 YOLO frame 23183: detections=5 depths=[0.713, 2.834, 1.101, 2.658, None]
+12:35:36 YOLO frame 23184: detections=5 depths=[0.715, 2.834, 1.104, 2.658, None]
+12:35:36 YOLO frame 23185: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:36 YOLO frame 23186: detections=4 depths=[0.715, 2.834, 1.104, 2.658]
+12:35:36 YOLO frame 23187: detections=5 depths=[0.714, 2.834, 1.101, 2.679, None]
+12:35:36 YOLO frame 23188: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:35:37 YOLO frame 23189: detections=5 depths=[0.714, 2.834, 1.104, 2.679, None]
+12:35:37 [INFO] [1791808537.326761995] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+12:35:37 YOLO frame 23190: detections=4 depths=[0.716, 2.834, 1.101, 2.679]
+12:35:37 [INFO] [1791808537.352953638] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:37 YOLO frame 23191: detections=4 depths=[0.717, 2.834, 1.101, 2.679]
+12:35:37 YOLO frame 23192: detections=5 depths=[0.714, 2.858, 1.101, 2.679, 2.448]
+12:35:37 YOLO frame 23193: detections=5 depths=[0.714, 2.834, 1.104, 2.679, 2.448]
+12:35:38 YOLO frame 23194: detections=5 depths=[0.714, 2.834, 1.104, 2.679, None]
+12:35:38 YOLO frame 23195: detections=5 depths=[0.714, 2.834, 1.101, 2.679, None]
+12:35:38 YOLO frame 23196: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:38 YOLO frame 23197: detections=5 depths=[0.714, 2.834, 1.104, 2.658, None]
+12:35:38 YOLO frame 23198: detections=4 depths=[0.714, 2.834, 1.104, 2.658]
+12:35:39 YOLO frame 23199: detections=4 depths=[0.714, 2.858, 1.101, 2.679]
+12:35:39 YOLO frame 23200: detections=4 depths=[0.714, 2.858, 1.104, 2.679]
+12:35:39 YOLO frame 23201: detections=4 depths=[0.714, 2.834, 1.101, 2.679]
+12:35:39 YOLO frame 23202: detections=4 depths=[0.714, 2.834, 1.101, 2.679]
+12:35:39 YOLO frame 23203: detections=5 depths=[0.715, 2.834, 1.101, 2.679, None]
+12:35:39 YOLO frame 23204: detections=5 depths=[0.714, 2.858, 1.101, 2.658, None]
+12:35:40 YOLO frame 23205: detections=5 depths=[0.714, 2.834, 1.101, 2.658, None]
+12:35:40 YOLO frame 23206: detections=4 depths=[0.716, 2.858, 1.104, 2.658]
+12:35:40 YOLO frame 23207: detections=4 depths=[0.714, 2.858, 1.101, 2.679]
+12:35:40 YOLO frame 23208: detections=4 depths=[0.716, 2.834, 1.101, 2.679]
+12:35:40 YOLO frame 23209: detections=4 depths=[0.631, 2.858, 1.101, 2.679]
+12:35:41 YOLO frame 23210: detections=4 depths=[0.717, 2.882, 1.101, None]
+12:35:41 YOLO frame 23211: detections=3 depths=[0.715, 2.858, 1.104]
+12:35:41 YOLO frame 23212: detections=3 depths=[0.714, 2.858, 1.104]
+12:35:41 YOLO frame 23213: detections=3 depths=[0.716, 2.858, 1.104]
+12:35:41 YOLO frame 23214: detections=3 depths=[0.714, 2.858, 1.104]
+12:35:42 YOLO frame 23215: detections=3 depths=[0.717, None, 1.108]
+12:35:42 [INFO] [1791808542.332674942] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:35:42 [INFO] [1791808542.359081039] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:42 YOLO frame 23216: detections=2 depths=[0.715, 1.104]
+12:35:42 YOLO frame 23217: detections=3 depths=[0.714, 1.104, 2.834]
+12:35:42 YOLO frame 23218: detections=3 depths=[0.631, 1.104, 2.834]
+12:35:42 YOLO frame 23219: detections=3 depths=[0.714, 1.104, None]
+12:35:43 YOLO frame 23220: detections=2 depths=[0.717, 1.108]
+12:35:43 YOLO frame 23221: detections=2 depths=[0.715, 1.106]
+12:35:43 YOLO frame 23222: detections=2 depths=[0.714, 1.104]
+12:35:43 YOLO frame 23223: detections=2 depths=[0.716, 1.108]
+12:35:43 YOLO frame 23224: detections=2 depths=[0.714, 1.104]
+12:35:44 YOLO frame 23225: detections=2 depths=[0.715, 1.104]
+12:35:44 YOLO frame 23226: detections=2 depths=[0.714, 1.104]
+12:35:44 YOLO frame 23227: detections=2 depths=[0.717, 1.104]
+12:35:44 YOLO frame 23228: detections=2 depths=[0.716, 1.101]
+12:35:44 YOLO frame 23229: detections=2 depths=[0.714, 1.104]
+12:35:45 YOLO frame 23230: detections=2 depths=[0.631, 1.104]
+12:35:45 YOLO frame 23231: detections=2 depths=[0.716, 1.108]
+12:35:45 YOLO frame 23232: detections=2 depths=[0.714, 1.108]
+12:35:45 YOLO frame 23233: detections=2 depths=[0.632, 1.104]
+12:35:45 YOLO frame 23234: detections=2 depths=[0.718, 1.108]
+12:35:45 YOLO frame 23235: detections=2 depths=[0.716, 1.104]
+12:35:46 YOLO frame 23236: detections=2 depths=[0.716, 1.104]
+12:35:46 YOLO frame 23237: detections=2 depths=[0.716, 1.104]
+12:35:46 YOLO frame 23238: detections=2 depths=[0.717, 1.104]
+12:35:46 YOLO frame 23239: detections=2 depths=[0.714, 1.104]
+12:35:46 YOLO frame 23240: detections=2 depths=[0.714, 1.104]
+12:35:47 YOLO frame 23241: detections=2 depths=[0.716, 1.104]
+12:35:47 YOLO frame 23242: detections=2 depths=[0.718, 1.101]
+12:35:47 [INFO] [1791808547.363350923] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+12:35:47 [INFO] [1791808547.388912407] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:47 YOLO frame 23243: detections=2 depths=[0.714, 1.101]
+12:35:47 YOLO frame 23244: detections=2 depths=[0.714, 1.104]
+12:35:47 YOLO frame 23245: detections=2 depths=[0.631, 1.104]
+12:35:47 YOLO frame 23246: detections=2 depths=[0.714, 1.104]
+12:35:48 YOLO frame 23247: detections=3 depths=[0.717, 1.104, 2.834]
+12:35:48 YOLO frame 23248: detections=3 depths=[0.717, 1.101, 2.834]
+12:35:48 YOLO frame 23249: detections=4 depths=[0.714, 1.104, 2.834, None]
+12:35:48 YOLO frame 23250: detections=4 depths=[0.714, 1.104, 2.834, None]
+12:35:48 YOLO frame 23251: detections=4 depths=[0.717, 1.104, None, None]
+12:35:49 YOLO frame 23252: detections=3 depths=[0.716, 1.104, None]
+12:35:49 YOLO frame 23253: detections=3 depths=[0.717, 1.104, None]
+12:35:49 YOLO frame 23254: detections=3 depths=[0.716, 1.104, 3.236]
+12:35:49 YOLO frame 23255: detections=3 depths=[0.714, 1.104, 3.236]
+12:35:49 YOLO frame 23256: detections=3 depths=[0.711, 1.104, None]
+12:35:49 YOLO frame 23257: detections=2 depths=[0.713, 1.104]
+12:35:50 YOLO frame 23258: detections=2 depths=[0.715, 1.108]
+12:35:50 YOLO frame 23259: detections=2 depths=[0.716, 1.104]
+12:35:50 YOLO frame 23260: detections=3 depths=[0.714, 1.104, None]
+12:35:50 YOLO frame 23261: detections=3 depths=[0.716, 1.108, None]
+12:35:50 YOLO frame 23262: detections=3 depths=[0.714, 1.104, None]
+12:35:51 YOLO frame 23263: detections=2 depths=[0.716, 1.108]
+12:35:51 YOLO frame 23264: detections=2 depths=[0.631, 1.104]
+12:35:51 YOLO frame 23265: detections=2 depths=[0.716, 1.104]
+12:35:51 YOLO frame 23266: detections=2 depths=[0.716, 1.104]
+12:35:51 YOLO frame 23267: detections=2 depths=[0.714, 1.104]
+12:35:52 YOLO frame 23268: detections=3 depths=[0.714, 1.104, 2.834]
+12:35:52 YOLO frame 23269: detections=3 depths=[0.714, 1.104, 2.834]
+12:35:52 [INFO] [1791808552.369189353] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+12:35:52 [INFO] [1791808552.419477352] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:52 YOLO frame 23270: detections=4 depths=[0.716, 1.104, None, None]
+12:35:52 YOLO frame 23271: detections=3 depths=[0.716, 1.104, None]
+12:35:52 YOLO frame 23272: detections=4 depths=[0.714, 1.104, None, 2.834]
+12:35:53 YOLO frame 23273: detections=3 depths=[0.714, 1.101, 2.834]
+12:35:53 YOLO frame 23274: detections=3 depths=[0.712, 1.104, 2.834]
+12:35:53 YOLO frame 23275: detections=3 depths=[0.714, 1.101, 2.858]
+12:35:53 YOLO frame 23276: detections=3 depths=[0.714, 1.101, 2.858]
+12:35:53 YOLO frame 23277: detections=4 depths=[0.714, 1.101, 2.858, 3.771]
+12:35:54 YOLO frame 23278: detections=4 depths=[0.714, 1.097, 2.834, 3.771]
+12:35:54 YOLO frame 23279: detections=5 depths=[0.714, 1.097, 2.834, 3.69, 1.097]
+12:35:54 YOLO frame 23280: detections=5 depths=[0.714, 1.097, 2.834, 3.69, 1.097]
+12:35:54 YOLO frame 23281: detections=5 depths=[0.716, None, 2.834, None, None]
+12:35:54 YOLO frame 23282: detections=3 depths=[0.714, 2.834, 2.679]
+12:35:54 YOLO frame 23283: detections=3 depths=[0.631, 2.834, 2.679]
+12:35:55 YOLO frame 23284: detections=7 depths=[0.714, 2.834, None, 1.104, 1.104, None, None]
+12:35:55 YOLO frame 23285: detections=7 depths=[0.714, 2.834, 2.658, 1.104, 1.104, None, None]
+12:35:55 YOLO frame 23286: detections=7 depths=[0.713, 2.858, 2.679, 1.104, None, None, None]
+12:35:55 YOLO frame 23287: detections=4 depths=[0.716, 2.834, 2.679, None]
+12:35:55 YOLO frame 23288: detections=3 depths=[0.716, 2.858, 2.658]
+12:35:56 YOLO frame 23289: detections=4 depths=[0.717, 2.858, 2.658, None]
+12:35:56 YOLO frame 23290: detections=4 depths=[0.716, 2.858, 2.658, None]
+12:35:56 YOLO frame 23291: detections=4 depths=[0.716, 2.858, 2.658, None]
+12:35:56 YOLO frame 23292: detections=4 depths=[0.631, 2.858, 2.637, None]
+12:35:56 YOLO frame 23293: detections=6 depths=[0.714, 2.834, 2.617, None, 1.101, 1.097]
+12:35:57 YOLO frame 23294: detections=7 depths=[0.716, 2.858, 2.617, None, 1.101, 1.097, 3.501]
+12:35:57 YOLO frame 23295: detections=7 depths=[0.714, 2.858, None, None, 1.097, 1.097, 3.501]
+12:35:57 [INFO] [1791808557.399594356] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+12:35:57 [INFO] [1791808557.425394102] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:35:57 YOLO frame 23296: detections=7 depths=[0.632, 2.834, 2.617, None, 1.097, 1.097, 3.813]
+12:35:57 YOLO frame 23297: detections=7 depths=[0.637, 2.834, 2.617, None, None, None, 3.813]
+12:35:57 YOLO frame 23298: detections=6 depths=[0.716, 2.834, 2.597, None, 1.101, 3.813]
+12:35:58 YOLO frame 23299: detections=6 depths=[0.714, 2.834, 2.597, None, 1.097, 3.771]
+12:35:58 YOLO frame 23300: detections=7 depths=[0.714, 2.834, None, None, 1.097, 3.813, None]
+12:35:58 YOLO frame 23301: detections=5 depths=[0.716, 2.834, 1.097, 3.771, None]
+12:35:58 YOLO frame 23302: detections=5 depths=[0.715, 2.834, 1.097, 3.771, None]
+12:35:58 YOLO frame 23303: detections=4 depths=[0.712, 2.834, None, 3.813]
+12:35:59 YOLO frame 23304: detections=5 depths=[0.711, 2.834, 3.771, 2.658, 1.101]
+12:35:59 YOLO frame 23305: detections=5 depths=[0.714, 2.834, 3.574, 2.658, 1.101]
+12:35:59 YOLO frame 23306: detections=5 depths=[0.712, 2.858, 3.574, None, None]
+12:35:59 YOLO frame 23307: detections=4 depths=[0.712, 2.834, None, 1.101]
+12:35:59 YOLO frame 23308: detections=3 depths=[0.714, 2.858, 1.101]
+12:36:00 YOLO frame 23309: detections=3 depths=[0.714, 2.834, None]
+12:36:00 YOLO frame 23310: detections=2 depths=[0.714, 2.834]
+12:36:00 YOLO frame 23311: detections=2 depths=[0.714, 2.834]
+12:36:00 YOLO frame 23312: detections=2 depths=[0.713, 2.765]
+12:36:00 YOLO frame 23313: detections=4 depths=[0.716, 1.739, 1.115, 1.168]
+12:36:00 YOLO frame 23314: detections=4 depths=[0.714, 1.721, 1.119, 1.173]
+12:36:01 YOLO frame 23315: detections=4 depths=[0.717, 1.721, 1.119, 1.173]
+12:36:01 YOLO frame 23316: detections=5 depths=[0.716, 1.704, 1.119, None, None]
+12:36:01 YOLO frame 23317: detections=4 depths=[0.714, 1.687, 1.121, None]
+12:36:01 YOLO frame 23318: detections=4 depths=[0.714, 1.704, 1.119, None]
+12:36:01 YOLO frame 23319: detections=3 depths=[0.714, 1.679, 1.119]
+12:36:02 YOLO frame 23320: detections=4 depths=[0.716, 1.679, 1.122, 1.757]
+12:36:02 YOLO frame 23321: detections=5 depths=[0.713, 1.704, 1.122, 1.757, None]
+12:36:02 [INFO] [1791808562.405890752] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:36:02 YOLO frame 23322: detections=5 depths=[0.716, 1.679, 1.122, None, None]
+12:36:02 [INFO] [1791808562.455640610] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:02 YOLO frame 23323: detections=6 depths=[0.715, 1.679, 1.119, 1.748, None, None]
+12:36:02 YOLO frame 23324: detections=7 depths=[0.714, 1.704, 1.119, 1.748, None, None, 0.989]
+12:36:02 YOLO frame 23325: detections=6 depths=[0.714, 1.739, 1.119, None, None, 0.989]
+12:36:03 YOLO frame 23326: detections=4 depths=[0.71, 2.721, 1.119, None]
+12:36:03 YOLO frame 23327: detections=4 depths=[0.633, 2.743, 1.119, 1.173]
+12:36:03 YOLO frame 23328: detections=4 depths=[0.71, 1.721, 1.119, 1.173]
+12:36:03 YOLO frame 23329: detections=5 depths=[0.716, 1.679, 1.108, None, 1.149]
+12:36:03 YOLO frame 23330: detections=4 depths=[0.711, 1.687, 1.122, 1.149]
+12:36:04 YOLO frame 23331: detections=5 depths=[0.712, 1.696, 1.168, None, 2.679]
+12:36:04 YOLO frame 23332: detections=4 depths=[0.715, 1.704, 1.161, 2.658]
+12:36:04 YOLO frame 23333: detections=5 depths=[0.714, 2.834, 0.811, 2.658, 1.104]
+12:36:04 YOLO frame 23334: detections=7 depths=[0.711, 2.858, 0.807, 2.679, 1.104, None, None]
+12:36:04 YOLO frame 23335: detections=7 depths=[0.714, 2.834, 0.807, 2.679, 1.101, None, None]
+12:36:05 YOLO frame 23336: detections=8 depths=[0.716, 2.834, None, 2.658, 1.101, None, None, 2.431]
+12:36:05 YOLO frame 23337: detections=6 depths=[0.715, 2.858, 2.658, 1.104, None, 2.431]
+12:36:05 YOLO frame 23338: detections=7 depths=[0.716, 2.858, 2.679, 1.101, None, None, None]
+12:36:05 YOLO frame 23339: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, None]
+12:36:05 YOLO frame 23340: detections=6 depths=[0.715, 2.858, 2.679, 1.104, None, None]
+12:36:06 YOLO frame 23341: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:06 YOLO frame 23342: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:36:06 YOLO frame 23343: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:06 YOLO frame 23344: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:06 YOLO frame 23345: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:07 YOLO frame 23346: detections=5 depths=[0.631, 2.834, 2.679, 1.097, None]
+12:36:07 YOLO frame 23347: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:07 [INFO] [1791808567.409920862] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+12:36:07 [INFO] [1791808567.435505264] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:07 YOLO frame 23348: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:07 YOLO frame 23349: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:07 YOLO frame 23350: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:08 YOLO frame 23351: detections=4 depths=[0.711, 2.858, 2.679, 1.104]
+12:36:08 YOLO frame 23352: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:08 YOLO frame 23353: detections=5 depths=[0.715, 2.834, 2.679, 1.104, None]
+12:36:08 YOLO frame 23354: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:09 YOLO frame 23355: detections=5 depths=[0.718, 2.834, 2.679, 1.104, None]
+12:36:09 YOLO frame 23356: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:09 YOLO frame 23357: detections=5 depths=[0.631, 2.834, 2.679, 1.104, None]
+12:36:09 YOLO frame 23358: detections=5 depths=[0.717, 2.858, 2.679, 1.101, None]
+12:36:09 YOLO frame 23359: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:10 YOLO frame 23360: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:10 YOLO frame 23361: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:10 YOLO frame 23362: detections=6 depths=[0.716, 2.834, 2.658, 1.101, None, None]
+12:36:10 YOLO frame 23363: detections=6 depths=[0.713, 2.834, 2.658, 1.101, None, None]
+12:36:10 YOLO frame 23364: detections=6 depths=[0.716, 2.834, None, 1.104, None, None]
+12:36:11 YOLO frame 23365: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:11 YOLO frame 23366: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:11 YOLO frame 23367: detections=5 depths=[0.715, 2.834, 2.658, 1.101, None]
+12:36:11 YOLO frame 23368: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:11 YOLO frame 23369: detections=5 depths=[0.715, 2.858, 2.679, 1.104, None]
+12:36:11 YOLO frame 23370: detections=5 depths=[0.711, 2.834, 2.679, 1.104, None]
+12:36:12 YOLO frame 23371: detections=5 depths=[0.631, 2.834, 2.679, 1.104, None]
+12:36:12 YOLO frame 23372: detections=5 depths=[0.712, 2.858, 2.679, 1.104, None]
+12:36:12 [INFO] [1791808572.417133409] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:36:12 [INFO] [1791808572.458418681] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:12 YOLO frame 23373: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:12 YOLO frame 23374: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:12 YOLO frame 23375: detections=5 depths=[0.719, 2.834, 2.679, 1.104, None]
+12:36:13 YOLO frame 23376: detections=5 depths=[0.714, 2.834, 2.658, 1.103, None]
+12:36:13 YOLO frame 23377: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:13 YOLO frame 23378: detections=5 depths=[0.716, 2.834, 2.679, 1.104, None]
+12:36:13 YOLO frame 23379: detections=5 depths=[0.716, 2.834, 2.679, 1.101, None]
+12:36:13 YOLO frame 23380: detections=5 depths=[0.715, 2.858, 2.679, 1.104, None]
+12:36:14 YOLO frame 23381: detections=5 depths=[0.631, 2.834, 2.658, 1.101, None]
+12:36:14 YOLO frame 23382: detections=5 depths=[0.719, 2.834, 2.658, 1.104, None]
+12:36:14 YOLO frame 23383: detections=5 depths=[0.63, 2.858, 2.679, 1.101, None]
+12:36:14 YOLO frame 23384: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:14 YOLO frame 23385: detections=5 depths=[0.712, 2.858, 2.679, 1.101, None]
+12:36:15 YOLO frame 23386: detections=5 depths=[0.717, 2.834, 2.658, 1.104, None]
+12:36:15 YOLO frame 23387: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:15 YOLO frame 23388: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:15 YOLO frame 23389: detections=5 depths=[0.712, 2.858, 2.679, 1.104, None]
+12:36:15 YOLO frame 23390: detections=5 depths=[0.717, 2.858, 2.679, 1.104, None]
+12:36:16 YOLO frame 23391: detections=5 depths=[0.716, 2.834, 2.658, 1.104, None]
+12:36:16 YOLO frame 23392: detections=5 depths=[0.716, 2.834, 2.658, 1.104, None]
+12:36:16 YOLO frame 23393: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:16 YOLO frame 23394: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:16 YOLO frame 23395: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:16 YOLO frame 23396: detections=5 depths=[0.711, 2.858, 2.679, 1.104, None]
+12:36:17 YOLO frame 23397: detections=5 depths=[0.717, 2.834, 2.658, 1.101, None]
+12:36:17 [INFO] [1791808577.451132642] [astra_openni2]: Depth interval: 149 frames (29.60 FPS)
+12:36:17 [INFO] [1791808577.475518224] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:17 YOLO frame 23398: detections=5 depths=[0.715, 2.834, 2.679, 1.101, None]
+12:36:17 YOLO frame 23399: detections=5 depths=[0.716, 2.858, 2.679, 1.104, None]
+12:36:17 YOLO frame 23400: detections=5 depths=[0.716, 2.834, 2.679, 1.101, None]
+12:36:18 YOLO frame 23401: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:18 YOLO frame 23402: detections=5 depths=[0.71, 2.858, 2.658, 1.104, None]
+12:36:18 YOLO frame 23403: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:18 YOLO frame 23404: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:18 YOLO frame 23405: detections=6 depths=[0.716, 2.858, 2.679, 1.104, None, 2.466]
+12:36:19 YOLO frame 23406: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, 2.466]
+12:36:19 YOLO frame 23407: detections=6 depths=[0.715, 2.858, 2.658, 1.104, None, None]
+12:36:19 YOLO frame 23408: detections=5 depths=[0.713, 2.834, 2.679, 1.104, None]
+12:36:19 YOLO frame 23409: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:19 YOLO frame 23410: detections=5 depths=[0.715, 2.834, 2.658, 1.101, None]
+12:36:19 YOLO frame 23411: detections=6 depths=[0.714, 2.834, 2.658, 1.101, None, None]
+12:36:20 YOLO frame 23412: detections=6 depths=[0.711, 2.846, 2.658, 1.104, None, None]
+12:36:20 YOLO frame 23413: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, None]
+12:36:20 YOLO frame 23414: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:20 YOLO frame 23415: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:20 YOLO frame 23416: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:21 YOLO frame 23417: detections=5 depths=[0.716, 2.834, 2.658, 1.101, None]
+12:36:21 YOLO frame 23418: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:21 YOLO frame 23419: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:36:21 YOLO frame 23420: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:21 YOLO frame 23421: detections=5 depths=[0.711, 2.858, 2.658, 1.101, None]
+12:36:22 YOLO frame 23422: detections=5 depths=[0.714, 2.858, 2.658, 1.103, None]
+12:36:22 YOLO frame 23423: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, 2.448]
+12:36:22 [INFO] [1791808582.452510058] [astra_openni2]: Depth interval: 149 frames (29.79 FPS)
+12:36:22 [INFO] [1791808582.502842113] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:22 YOLO frame 23424: detections=6 depths=[0.716, 2.858, 2.679, 1.104, None, 2.448]
+12:36:22 YOLO frame 23425: detections=6 depths=[0.714, 2.834, 2.658, 1.101, None, None]
+12:36:23 YOLO frame 23426: detections=6 depths=[0.716, 2.858, 2.658, 1.101, None, None]
+12:36:23 YOLO frame 23427: detections=6 depths=[0.715, 2.834, 2.658, 1.104, None, None]
+12:36:23 YOLO frame 23428: detections=6 depths=[0.715, 2.858, 2.679, 1.101, None, None]
+12:36:23 YOLO frame 23429: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:23 YOLO frame 23430: detections=6 depths=[0.714, 2.858, 2.679, 1.104, None, None]
+12:36:23 YOLO frame 23431: detections=6 depths=[0.712, 2.858, 2.679, 1.104, None, None]
+12:36:24 YOLO frame 23432: detections=6 depths=[0.714, 2.834, 2.679, 1.104, None, None]
+12:36:24 YOLO frame 23433: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:24 YOLO frame 23434: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:24 YOLO frame 23435: detections=5 depths=[0.63, 2.834, 2.679, 1.104, None]
+12:36:24 YOLO frame 23436: detections=5 depths=[0.713, 2.858, 2.679, 1.104, None]
+12:36:25 YOLO frame 23437: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:25 YOLO frame 23438: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:25 YOLO frame 23439: detections=6 depths=[0.714, 2.858, 2.679, 1.104, None, 2.448]
+12:36:25 YOLO frame 23440: detections=6 depths=[0.714, 2.858, 2.679, 1.104, None, 2.448]
+12:36:25 YOLO frame 23441: detections=6 depths=[0.714, 2.834, 2.658, 1.104, None, None]
+12:36:26 YOLO frame 23442: detections=5 depths=[0.717, 2.858, 2.658, 1.101, None]
+12:36:26 YOLO frame 23443: detections=5 depths=[0.713, 2.834, 2.658, 1.104, None]
+12:36:26 YOLO frame 23444: detections=5 depths=[0.716, 2.834, 2.658, 1.101, None]
+12:36:26 YOLO frame 23445: detections=5 depths=[0.713, 2.834, 2.658, 1.101, None]
+12:36:27 YOLO frame 23446: detections=5 depths=[0.716, 2.858, 2.679, 1.104, None]
+12:36:27 YOLO frame 23447: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:27 YOLO frame 23448: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:27 [INFO] [1791808587.456933923] [astra_openni2]: Depth interval: 148 frames (29.57 FPS)
+12:36:27 [INFO] [1791808587.482014865] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:27 YOLO frame 23449: detections=5 depths=[0.715, 2.834, 2.679, 1.104, None]
+12:36:27 YOLO frame 23450: detections=5 depths=[0.716, 2.834, 2.679, 1.104, None]
+12:36:27 YOLO frame 23451: detections=5 depths=[0.716, 2.834, 2.658, 1.104, None]
+12:36:28 YOLO frame 23452: detections=5 depths=[0.719, 2.834, 2.679, 1.104, None]
+12:36:28 YOLO frame 23453: detections=5 depths=[0.711, 2.834, 2.679, 1.103, None]
+12:36:28 YOLO frame 23454: detections=6 depths=[0.716, 2.858, 2.658, 1.104, None, 3.465]
+12:36:28 YOLO frame 23455: detections=6 depths=[0.716, 2.858, 2.658, 1.101, None, 3.465]
+12:36:28 YOLO frame 23456: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:36:29 YOLO frame 23457: detections=5 depths=[0.713, 2.858, 2.658, 1.104, None]
+12:36:29 YOLO frame 23458: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:29 YOLO frame 23459: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:29 YOLO frame 23460: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:29 YOLO frame 23461: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:30 YOLO frame 23462: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:30 YOLO frame 23463: detections=5 depths=[0.717, 2.882, 2.668, 1.101, None]
+12:36:30 YOLO frame 23464: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:30 YOLO frame 23465: detections=5 depths=[0.714, 2.846, 2.658, 1.104, None]
+12:36:30 YOLO frame 23466: detections=5 depths=[0.715, 2.858, 2.658, 1.101, None]
+12:36:30 YOLO frame 23467: detections=5 depths=[0.716, 2.834, 2.679, 1.104, None]
+12:36:31 YOLO frame 23468: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:31 YOLO frame 23469: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:31 YOLO frame 23470: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:31 YOLO frame 23471: detections=5 depths=[0.713, 2.834, 2.658, 1.101, None]
+12:36:31 YOLO frame 23472: detections=6 depths=[0.716, 2.858, 2.658, 1.104, None, 2.466]
+12:36:32 YOLO frame 23473: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, 2.466]
+12:36:32 YOLO frame 23474: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, 2.466]
+12:36:32 [INFO] [1791808592.463007342] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:36:32 [INFO] [1791808592.488146433] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:32 YOLO frame 23475: detections=6 depths=[0.712, 2.834, 2.679, 1.101, None, 2.466]
+12:36:32 YOLO frame 23476: detections=6 depths=[0.716, 2.834, 2.679, 1.101, None, None]
+12:36:32 YOLO frame 23477: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:33 YOLO frame 23478: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:33 YOLO frame 23479: detections=5 depths=[0.715, 2.834, 2.679, 1.104, None]
+12:36:33 YOLO frame 23480: detections=5 depths=[0.713, 2.858, 2.679, 1.104, None]
+12:36:33 YOLO frame 23481: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:33 YOLO frame 23482: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:34 YOLO frame 23483: detections=5 depths=[0.632, 2.858, 2.679, 1.104, None]
+12:36:34 YOLO frame 23484: detections=6 depths=[0.716, 2.858, 2.658, 1.101, None, 2.448]
+12:36:34 YOLO frame 23485: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, 2.448]
+12:36:34 YOLO frame 23486: detections=6 depths=[0.716, 2.858, 2.658, 1.104, None, None]
+12:36:35 YOLO frame 23487: detections=5 depths=[0.72, 2.834, 2.679, 1.104, None]
+12:36:35 YOLO frame 23488: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:35 YOLO frame 23489: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:35 YOLO frame 23490: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:36 YOLO frame 23491: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:36 YOLO frame 23492: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:36 YOLO frame 23493: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:36 YOLO frame 23494: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:36 YOLO frame 23495: detections=5 depths=[0.716, 2.834, 2.679, 1.104, None]
+12:36:37 YOLO frame 23496: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:36:37 YOLO frame 23497: detections=5 depths=[0.63, 2.858, 2.658, 1.101, None]
+12:36:37 YOLO frame 23498: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:36:37 [INFO] [1791808597.497615860] [astra_openni2]: Depth interval: 149 frames (29.60 FPS)
+12:36:37 [INFO] [1791808597.518848509] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:37 YOLO frame 23499: detections=5 depths=[0.631, 2.834, 2.679, 1.101, None]
+12:36:37 YOLO frame 23500: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:38 YOLO frame 23501: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:38 YOLO frame 23502: detections=5 depths=[0.716, 2.834, 2.679, 1.101, None]
+12:36:38 YOLO frame 23503: detections=5 depths=[0.718, 2.858, 2.679, 1.101, None]
+12:36:38 YOLO frame 23504: detections=5 depths=[0.631, 2.834, 2.679, 1.104, None]
+12:36:38 YOLO frame 23505: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:39 YOLO frame 23506: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:39 YOLO frame 23507: detections=7 depths=[0.716, 2.858, 2.679, 1.104, None, None, 2.466]
+12:36:39 YOLO frame 23508: detections=7 depths=[0.719, 2.834, 2.679, 1.104, None, None, 2.466]
+12:36:39 YOLO frame 23509: detections=7 depths=[0.714, 2.834, 2.679, 1.104, None, None, None]
+12:36:39 YOLO frame 23510: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:40 YOLO frame 23511: detections=5 depths=[0.716, 2.834, 2.679, 1.101, None]
+12:36:40 YOLO frame 23512: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:40 YOLO frame 23513: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:40 YOLO frame 23514: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:40 YOLO frame 23515: detections=5 depths=[0.711, 2.834, 2.658, 1.104, None]
+12:36:41 YOLO frame 23516: detections=5 depths=[0.63, 2.834, 2.679, 1.101, None]
+12:36:41 YOLO frame 23517: detections=5 depths=[0.716, 2.834, 2.679, 1.101, None]
+12:36:41 YOLO frame 23518: detections=6 depths=[0.716, 2.858, 2.658, 1.104, None, None]
+12:36:41 YOLO frame 23519: detections=6 depths=[0.716, 2.858, 2.658, 1.104, None, None]
+12:36:41 YOLO frame 23520: detections=6 depths=[0.632, 2.834, 2.658, 1.101, None, None]
+12:36:41 YOLO frame 23521: detections=5 depths=[0.713, 2.834, 2.658, 1.104, None]
+12:36:42 YOLO frame 23522: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:36:42 YOLO frame 23523: detections=5 depths=[0.717, 2.858, 2.658, 1.104, None]
+12:36:42 [INFO] [1791808602.497744403] [astra_openni2]: Depth interval: 149 frames (29.80 FPS)
+12:36:42 [INFO] [1791808602.547553396] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:42 YOLO frame 23524: detections=5 depths=[0.716, 2.834, 2.679, 1.104, None]
+12:36:42 YOLO frame 23525: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:42 YOLO frame 23526: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:43 YOLO frame 23527: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:43 YOLO frame 23528: detections=5 depths=[0.717, 2.858, 2.679, 1.104, None]
+12:36:43 YOLO frame 23529: detections=5 depths=[0.715, 2.834, 2.658, 1.101, None]
+12:36:43 YOLO frame 23530: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:44 YOLO frame 23531: detections=5 depths=[0.711, 2.858, 2.679, 1.101, None]
+12:36:44 YOLO frame 23532: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:44 YOLO frame 23533: detections=5 depths=[0.632, 2.834, 2.658, 1.104, None]
+12:36:44 YOLO frame 23534: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:44 YOLO frame 23535: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:45 YOLO frame 23536: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:45 YOLO frame 23537: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:45 YOLO frame 23538: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:45 YOLO frame 23539: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:45 YOLO frame 23540: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:46 YOLO frame 23541: detections=5 depths=[0.713, 2.858, 2.679, 1.101, None]
+12:36:46 YOLO frame 23542: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:46 YOLO frame 23543: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:36:46 YOLO frame 23544: detections=5 depths=[0.711, 2.834, 2.658, 1.103, None]
+12:36:47 YOLO frame 23545: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:47 YOLO frame 23546: detections=5 depths=[0.712, 2.858, 2.658, 1.104, None]
+12:36:47 YOLO frame 23547: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:47 [INFO] [1791808607.530101541] [astra_openni2]: Depth interval: 149 frames (29.61 FPS)
+12:36:47 YOLO frame 23548: detections=5 depths=[0.714, 2.858, None, 1.104, None]
+12:36:47 [INFO] [1791808607.554179926] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:47 YOLO frame 23549: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, None]
+12:36:47 YOLO frame 23550: detections=6 depths=[0.71, 2.858, 2.679, 1.101, None, None]
+12:36:48 YOLO frame 23551: detections=6 depths=[0.714, 2.834, 2.658, 1.101, None, None]
+12:36:48 YOLO frame 23552: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:48 YOLO frame 23553: detections=5 depths=[0.716, 2.858, 2.679, 1.104, None]
+12:36:48 YOLO frame 23554: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:48 YOLO frame 23555: detections=5 depths=[0.715, 2.858, 2.679, 1.101, None]
+12:36:49 YOLO frame 23556: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:49 YOLO frame 23557: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:49 YOLO frame 23558: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:49 YOLO frame 23559: detections=5 depths=[0.711, 2.858, 2.679, 1.101, None]
+12:36:49 YOLO frame 23560: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:50 YOLO frame 23561: detections=5 depths=[0.716, 2.834, 2.658, 1.101, None]
+12:36:50 YOLO frame 23562: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:50 YOLO frame 23563: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:50 YOLO frame 23564: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:36:50 YOLO frame 23565: detections=6 depths=[0.713, 2.858, 2.658, 1.101, None, None]
+12:36:51 YOLO frame 23566: detections=6 depths=[0.714, 2.858, 2.679, 1.101, None, None]
+12:36:51 YOLO frame 23567: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, None]
+12:36:51 YOLO frame 23568: detections=6 depths=[0.714, 2.858, 2.679, 1.101, None, None]
+12:36:51 YOLO frame 23569: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:51 YOLO frame 23570: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:52 YOLO frame 23571: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:52 YOLO frame 23572: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:52 YOLO frame 23573: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:52 [INFO] [1791808612.535105794] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+12:36:52 [INFO] [1791808612.590137858] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:52 YOLO frame 23574: detections=5 depths=[0.713, 2.834, None, 1.101, None]
+12:36:52 YOLO frame 23575: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:53 YOLO frame 23576: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:53 YOLO frame 23577: detections=5 depths=[0.711, 2.834, 2.658, 1.104, None]
+12:36:53 YOLO frame 23578: detections=6 depths=[0.713, 2.834, 2.679, 1.101, None, None]
+12:36:53 YOLO frame 23579: detections=6 depths=[0.715, 2.834, 2.679, 1.104, None, None]
+12:36:53 YOLO frame 23580: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, None]
+12:36:54 YOLO frame 23581: detections=6 depths=[0.716, 2.834, 2.658, 1.101, None, None]
+12:36:54 YOLO frame 23582: detections=6 depths=[0.713, 2.858, 2.658, 1.101, None, None]
+12:36:54 YOLO frame 23583: detections=6 depths=[0.714, 2.846, 2.658, 1.101, None, None]
+12:36:54 YOLO frame 23584: detections=5 depths=[0.711, 2.858, 2.679, 1.101, None]
+12:36:54 YOLO frame 23585: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:36:55 YOLO frame 23586: detections=6 depths=[0.714, 2.834, None, 1.104, None, None]
+12:36:55 YOLO frame 23587: detections=6 depths=[0.716, 2.858, 2.679, 1.101, None, None]
+12:36:55 YOLO frame 23588: detections=6 depths=[0.716, 2.834, 2.679, 1.104, None, None]
+12:36:55 YOLO frame 23589: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:36:55 YOLO frame 23590: detections=5 depths=[0.711, 2.834, 2.658, 1.104, None]
+12:36:56 YOLO frame 23591: detections=5 depths=[0.711, 2.834, 2.679, 1.101, None]
+12:36:56 YOLO frame 23592: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:36:56 YOLO frame 23593: detections=6 depths=[0.715, 2.858, 2.658, 1.104, None, 2.466]
+12:36:56 YOLO frame 23594: detections=5 depths=[0.714, 2.834, 2.679, 1.101, 2.466]
+12:36:56 YOLO frame 23595: detections=6 depths=[0.631, 2.858, 2.658, 1.104, None, None]
+12:36:57 YOLO frame 23596: detections=5 depths=[0.716, 2.834, 2.658, 1.101, None]
+12:36:57 YOLO frame 23597: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:57 YOLO frame 23598: detections=5 depths=[0.711, 2.834, 2.679, 1.101, None]
+12:36:57 [INFO] [1791808617.537805330] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+12:36:57 [INFO] [1791808617.564468639] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:36:57 YOLO frame 23599: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:36:57 YOLO frame 23600: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:36:58 YOLO frame 23601: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:36:58 YOLO frame 23602: detections=5 depths=[0.714, 2.858, 2.668, 1.104, None]
+12:36:58 YOLO frame 23603: detections=6 depths=[0.71, 2.858, 2.679, 1.097, None, None]
+12:36:58 YOLO frame 23604: detections=7 depths=[0.711, 2.834, 2.679, 1.101, None, None, None]
+12:36:58 YOLO frame 23605: detections=7 depths=[0.714, 2.834, 2.679, 1.101, None, None, None]
+12:36:59 YOLO frame 23606: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, None]
+12:36:59 YOLO frame 23607: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:36:59 YOLO frame 23608: detections=5 depths=[0.715, 2.858, 2.679, 1.099, None]
+12:36:59 YOLO frame 23609: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:36:59 YOLO frame 23610: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:00 YOLO frame 23611: detections=5 depths=[0.631, 2.834, 2.658, 1.104, None]
+12:37:00 YOLO frame 23612: detections=5 depths=[0.714, 2.834, 2.679, 1.101, None]
+12:37:00 YOLO frame 23613: detections=5 depths=[0.632, 2.858, 2.679, 1.101, None]
+12:37:00 YOLO frame 23614: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:37:00 YOLO frame 23615: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:37:00 YOLO frame 23616: detections=5 depths=[0.716, 2.834, 2.679, 1.104, None]
+12:37:01 YOLO frame 23617: detections=5 depths=[0.716, 2.834, 2.679, 1.101, None]
+12:37:01 YOLO frame 23618: detections=5 depths=[0.716, 2.858, 2.658, 1.104, None]
+12:37:01 YOLO frame 23619: detections=5 depths=[0.716, 2.858, 2.679, 1.104, None]
+12:37:01 YOLO frame 23620: detections=5 depths=[0.715, 2.858, 2.658, 1.101, None]
+12:37:01 YOLO frame 23621: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:02 YOLO frame 23622: detections=5 depths=[0.711, 2.858, 2.679, 1.104, None]
+12:37:02 YOLO frame 23623: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:37:02 [INFO] [1791808622.544531885] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:37:02 [INFO] [1791808622.570776547] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:37:02 YOLO frame 23624: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:37:02 YOLO frame 23625: detections=5 depths=[0.713, 2.834, 2.679, 1.104, None]
+12:37:02 YOLO frame 23626: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:37:03 YOLO frame 23627: detections=5 depths=[0.717, 2.858, 2.658, 1.104, None]
+12:37:03 YOLO frame 23628: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:37:03 YOLO frame 23629: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:37:03 YOLO frame 23630: detections=5 depths=[0.713, 2.834, 2.679, 1.104, None]
+12:37:03 YOLO frame 23631: detections=4 depths=[0.711, 2.834, 2.679, 1.101]
+12:37:04 YOLO frame 23632: detections=5 depths=[0.711, 2.858, 2.658, 1.104, None]
+12:37:04 YOLO frame 23633: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:37:04 YOLO frame 23634: detections=5 depths=[0.716, 2.858, 2.679, 1.101, None]
+12:37:04 YOLO frame 23635: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:37:04 YOLO frame 23636: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:05 YOLO frame 23637: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:05 YOLO frame 23638: detections=5 depths=[0.716, 2.858, 2.679, 1.101, None]
+12:37:05 YOLO frame 23639: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:37:05 YOLO frame 23640: detections=6 depths=[0.714, 2.834, 2.658, 1.101, None, 2.466]
+12:37:05 YOLO frame 23641: detections=6 depths=[0.714, 2.834, 2.679, 1.104, None, 2.466]
+12:37:06 YOLO frame 23642: detections=6 depths=[0.716, 2.834, 2.658, 1.104, None, None]
+12:37:06 YOLO frame 23643: detections=6 depths=[0.716, 2.858, 2.679, 1.104, None, None]
+12:37:06 YOLO frame 23644: detections=6 depths=[0.714, 2.858, 2.679, 1.101, None, None]
+12:37:06 YOLO frame 23645: detections=7 depths=[0.713, 2.858, 2.679, 1.104, None, None, 2.466]
+12:37:06 YOLO frame 23646: detections=6 depths=[0.717, 2.834, 2.658, 1.104, None, 2.466]
+12:37:07 YOLO frame 23647: detections=6 depths=[0.714, 2.834, 2.679, 1.104, None, None]
+12:37:07 YOLO frame 23648: detections=6 depths=[0.714, 2.834, 2.658, 1.104, None, None]
+12:37:07 [INFO] [1791808627.579302375] [astra_openni2]: Depth interval: 149 frames (29.59 FPS)
+12:37:07 YOLO frame 23649: detections=6 depths=[0.715, 2.834, 2.679, 1.104, None, None]
+12:37:07 [INFO] [1791808627.601387670] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:37:07 YOLO frame 23650: detections=6 depths=[0.714, 2.834, 2.679, 1.101, None, None]
+12:37:08 YOLO frame 23651: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:37:08 YOLO frame 23652: detections=5 depths=[0.632, 2.834, 2.679, 1.101, None]
+12:37:08 YOLO frame 23653: detections=5 depths=[0.715, 2.858, 2.679, 1.101, None]
+12:37:08 YOLO frame 23654: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:08 YOLO frame 23655: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:09 YOLO frame 23656: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:37:09 YOLO frame 23657: detections=6 depths=[0.716, 2.858, 2.658, 1.101, None, None]
+12:37:09 YOLO frame 23658: detections=6 depths=[0.716, 2.846, 2.658, 1.103, None, 0.792]
+12:37:09 YOLO frame 23659: detections=6 depths=[0.714, 2.834, 2.658, 1.104, None, 0.792]
+12:37:09 YOLO frame 23660: detections=6 depths=[0.714, 2.858, 2.637, 1.104, None, None]
+12:37:09 YOLO frame 23661: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:37:10 YOLO frame 23662: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, None]
+12:37:10 YOLO frame 23663: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:37:10 YOLO frame 23664: detections=6 depths=[0.714, 2.834, 2.658, 1.104, None, None]
+12:37:10 YOLO frame 23665: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:10 YOLO frame 23666: detections=5 depths=[0.712, 2.858, 2.658, 1.104, None]
+12:37:11 YOLO frame 23667: detections=5 depths=[0.713, 2.858, 2.658, 1.104, None]
+12:37:11 YOLO frame 23668: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, 3.431]
+12:37:11 YOLO frame 23669: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, 3.431]
+12:37:11 YOLO frame 23670: detections=6 depths=[0.714, 2.858, 2.637, 1.104, None, None]
+12:37:12 YOLO frame 23671: detections=5 depths=[0.714, 2.834, 2.637, 1.104, None]
+12:37:12 YOLO frame 23672: detections=5 depths=[0.716, 2.834, 2.658, 1.104, None]
+12:37:12 YOLO frame 23673: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:12 [INFO] [1791808632.581418900] [astra_openni2]: Depth interval: 149 frames (29.79 FPS)
+12:37:12 YOLO frame 23674: detections=5 depths=[0.714, 2.858, 2.679, 1.104, None]
+12:37:12 [INFO] [1791808632.631365485] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:37:12 YOLO frame 23675: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:12 YOLO frame 23676: detections=5 depths=[0.716, 2.834, 2.658, 1.104, None]
+12:37:13 YOLO frame 23677: detections=6 depths=[0.713, 2.858, 2.658, 1.101, None, None]
+12:37:13 YOLO frame 23678: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:37:13 YOLO frame 23679: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:37:13 YOLO frame 23680: detections=5 depths=[0.716, 2.858, 2.679, 1.104, None]
+12:37:13 YOLO frame 23681: detections=5 depths=[0.713, 2.834, 2.658, 1.101, None]
+12:37:14 YOLO frame 23682: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:37:14 YOLO frame 23683: detections=5 depths=[0.716, 2.858, 2.679, 1.101, None]
+12:37:14 YOLO frame 23684: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:14 YOLO frame 23685: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:37:14 YOLO frame 23686: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:37:15 YOLO frame 23687: detections=6 depths=[0.716, 2.858, 2.658, 1.104, None, None]
+12:37:15 YOLO frame 23688: detections=6 depths=[0.714, 2.834, 2.658, 1.104, None, None]
+12:37:15 YOLO frame 23689: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:15 YOLO frame 23690: detections=5 depths=[0.713, 2.834, 2.658, 1.104, None]
+12:37:15 YOLO frame 23691: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:16 YOLO frame 23692: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:37:16 YOLO frame 23693: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:16 YOLO frame 23694: detections=5 depths=[0.714, 2.834, 2.658, 1.104, None]
+12:37:16 YOLO frame 23695: detections=5 depths=[0.711, 2.858, 2.658, 1.101, None]
+12:37:17 YOLO frame 23696: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, 3.465]
+12:37:17 YOLO frame 23697: detections=6 depths=[0.714, 2.858, 2.658, 1.104, None, 3.465]
+12:37:17 YOLO frame 23698: detections=6 depths=[0.714, 2.834, 2.658, 1.104, None, None]
+12:37:17 [INFO] [1791808637.584054839] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+12:37:17 [INFO] [1791808637.610576452] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:37:17 YOLO frame 23699: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:17 YOLO frame 23700: detections=5 depths=[0.711, 2.858, 2.658, 1.104, None]
+12:37:18 YOLO frame 23701: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:18 YOLO frame 23702: detections=5 depths=[0.714, 2.834, 2.679, 1.104, None]
+12:37:18 YOLO frame 23703: detections=5 depths=[0.711, 2.858, 2.658, 1.101, None]
+12:37:18 YOLO frame 23704: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:18 YOLO frame 23705: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:18 YOLO frame 23706: detections=5 depths=[0.713, 2.834, 2.679, 1.104, None]
+12:37:19 YOLO frame 23707: detections=5 depths=[0.714, 2.858, 2.658, 1.104, None]
+12:37:19 YOLO frame 23708: detections=5 depths=[0.715, 2.858, 2.658, 1.104, None]
+12:37:19 YOLO frame 23709: detections=6 depths=[0.631, 2.834, 2.679, 1.104, None, None]
+12:37:19 YOLO frame 23710: detections=6 depths=[0.714, 2.858, 2.679, 1.101, None, None]
+12:37:20 YOLO frame 23711: detections=6 depths=[0.714, 2.858, 2.658, 1.101, None, None]
+12:37:20 YOLO frame 23712: detections=5 depths=[0.711, 2.834, 2.658, 1.097, None]
+12:37:20 YOLO frame 23713: detections=5 depths=[0.714, 2.834, 2.658, 1.101, None]
+12:37:20 YOLO frame 23714: detections=5 depths=[0.714, 2.858, 2.658, 1.101, None]
+12:37:20 YOLO frame 23715: detections=5 depths=[0.716, 2.858, 2.658, 1.101, None]
+12:37:21 YOLO frame 23716: detections=5 depths=[0.716, 2.858, 2.679, 1.104, None]
+12:37:21 YOLO frame 23717: detections=5 depths=[0.631, 2.834, 2.658, 1.104, None]
+12:37:21 YOLO frame 23718: detections=5 depths=[0.714, 2.858, 2.679, 1.101, None]
+12:37:21 YOLO frame 23719: detections=7 depths=[0.713, 2.858, 2.658, 1.101, None, 2.448, 3.431]
+12:37:21 YOLO frame 23720: detections=7 depths=[0.716, 2.858, 2.658, 1.104, None, 2.448, 3.431]
+12:37:22 YOLO frame 23721: detections=7 depths=[0.714, 2.834, 2.658, 1.104, None, None, None]
+12:37:22 Stop requested from the desktop launcher
+12:37:22 YOLO frame 23722: detections=5 depths=[0.713, 2.858, 2.658, 1.104, None]
+12:37:22 [INFO] [1791808642.499303449] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+12:37:25 Astra camera, ROS2 subscriptions, and display closed
+12:37:27 ■ 操作结束，返回码 0；后台服务状态请查看总览。
+12:02:58 ▶ Astra RGB-D YOLOv4 
+12:02:59 启动 Astra 深度相机 + DPU YOLOv4...
+12:03:02 启动 Astra RGB-D YOLOv4：/home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+RGB=/dev/v4l/by-id/usb-Astra_Pro_HD_Camera_Astra_Pro_HD_Camera-video-index0 depth_uri=<auto>
+显示：:0；XAUTHORITY=/run/user/1000/gdm/Xauthority
+结果主题：/yolov4/detections；深度单位：16UC1 毫米
+12:03:09 Starting Astra ROS2 node in the application ROS2 context:
+  /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node
+  OPENNI2_REDIST=/home/ubuntu/x3plus-kv260-docker/context/src/astra_camera/include/openni2_redist/arm64
+  device_uri=<auto>
+  depth start attempt 1/5
+12:03:10 [INFO] [1791979390.569757752] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+12:03:10 [INFO] [1791979390.606809810] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+12:03:10 [INFO] [1791979390.759478449] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:15 [INFO] [1791979395.662480160] [astra_openni2]: Depth interval: 147 frames (29.35 FPS)
+12:03:15 [INFO] [1791979395.712052195] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:20 [INFO] [1791979400.666963936] [astra_openni2]: Depth interval: 148 frames (29.57 FPS)
+12:03:20 [INFO] [1791979400.693594354] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:26 [INFO] [1791979406.854480792] [astra_openni2]: Depth interval: 147 frames (23.76 FPS)
+12:03:26 [INFO] [1791979406.859094047] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:31 [INFO] [1791979411.886147182] [astra_openni2]: Depth interval: 153 frames (30.41 FPS)
+12:03:31 [INFO] [1791979411.912395444] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:36 Loading custom DPU Overlay:
+/home/ubuntu/kv260_yolov4_deploy/overlay/dpu.bit
+DPU Overlay loaded
+XModel loaded: /home/ubuntu/kv260_yolov4_deploy/compiled/yolov4_leaky_416_tf.xmodel
+Input tensor: image_input/aquant [1, 416, 416, 3]
+Input fix_point: 6
+Output tensor: conv2d_101/BiasAdd/aquant [1, 26, 26, 255] fix_point= 2
+Output tensor: conv2d_109/BiasAdd/aquant [1, 13, 13, 255] fix_point= 2
+Output tensor: conv2d_93/BiasAdd/aquant [1, 52, 52, 255] fix_point= 2
+Opening Astra HD UVC RGB /dev/v4l/by-id/usb-Astra_Pro_HD_Camera_Astra_Pro_HD_Camera-video-index0...
+Astra UVC opened: device=/dev/v4l/by-id/usb-Astra_Pro_HD_Camera_Astra_Pro_HD_Camera-video-index0 requested=640x480@30 actual=640x480@30.00
+Astra depth ready: 320x240 16UC1
+12:03:36 [INFO] [1791979416.893272330] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+12:03:36 [INFO] [1791979416.943535697] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:41 [INFO] [1791979421.897768559] [astra_openni2]: Depth interval: 148 frames (29.57 FPS)
+12:03:41 [INFO] [1791979421.924691693] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:46 [INFO] [1791979426.905632355] [astra_openni2]: Depth interval: 149 frames (29.75 FPS)
+12:03:46 [INFO] [1791979426.932171405] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:47 Controls:
+  q / ESC : exit
+  s       : save current annotated frame
+  Ctrl+C  : exit from terminal
+YOLO frame 1: detections=2 depths=[1.287, 0.571]
+12:03:47 YOLO frame 2: detections=2 depths=[1.287, 0.572]
+12:03:47 YOLO frame 3: detections=2 depths=[1.287, 0.572]
+12:03:47 YOLO frame 4: detections=2 depths=[2.324, 0.572]
+12:03:47 YOLO frame 5: detections=2 depths=[2.364, None]
+12:03:48 YOLO frame 6: detections=2 depths=[2.332, 0.571]
+12:03:48 YOLO frame 7: detections=2 depths=[1.287, 0.572]
+12:03:48 YOLO frame 8: detections=2 depths=[1.287, 0.572]
+12:03:48 YOLO frame 9: detections=2 depths=[2.364, 0.572]
+12:03:48 YOLO frame 10: detections=2 depths=[2.364, 0.573]
+12:03:49 YOLO frame 11: detections=2 depths=[None, 0.573]
+12:03:49 YOLO frame 12: detections=2 depths=[None, 0.572]
+12:03:49 YOLO frame 13: detections=2 depths=[2.364, 0.571]
+12:03:49 YOLO frame 14: detections=2 depths=[2.324, 0.572]
+12:03:49 YOLO frame 15: detections=2 depths=[1.287, 0.573]
+12:03:49 YOLO frame 16: detections=2 depths=[2.364, 0.572]
+12:03:50 YOLO frame 17: detections=2 depths=[2.364, 0.572]
+12:03:50 YOLO frame 18: detections=2 depths=[2.364, 0.572]
+12:03:50 YOLO frame 19: detections=2 depths=[2.364, 0.571]
+12:03:50 YOLO frame 20: detections=2 depths=[2.364, 0.571]
+12:03:50 YOLO frame 21: detections=2 depths=[None, 0.572]
+12:03:50 YOLO frame 22: detections=1 depths=[0.571]
+12:03:51 YOLO frame 23: detections=1 depths=[0.572]
+12:03:51 YOLO frame 24: detections=2 depths=[0.571, 1.282]
+12:03:51 YOLO frame 25: detections=2 depths=[0.572, 1.273]
+12:03:51 YOLO frame 26: detections=2 depths=[0.571, 2.364]
+12:03:51 YOLO frame 27: detections=2 depths=[0.572, 1.282]
+12:03:51 [INFO] [1791979431.945152781] [astra_openni2]: Depth interval: 149 frames (29.57 FPS)
+12:03:51 [INFO] [1791979431.975934271] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:52 YOLO frame 28: detections=2 depths=[0.572, 1.282]
+12:03:52 YOLO frame 29: detections=2 depths=[0.571, 2.364]
+12:03:52 YOLO frame 30: detections=2 depths=[0.571, 1.273]
+12:03:52 YOLO frame 31: detections=2 depths=[0.571, 2.364]
+12:03:52 YOLO frame 32: detections=2 depths=[0.572, 1.287]
+12:03:52 YOLO frame 33: detections=2 depths=[0.571, 2.332]
+12:03:53 YOLO frame 34: detections=2 depths=[0.572, 1.287]
+12:03:53 YOLO frame 35: detections=2 depths=[0.572, 2.332]
+12:03:53 YOLO frame 36: detections=2 depths=[0.572, 2.332]
+12:03:53 YOLO frame 37: detections=2 depths=[0.572, 2.316]
+12:03:53 YOLO frame 38: detections=2 depths=[0.571, 1.287]
+12:03:53 YOLO frame 39: detections=2 depths=[0.572, 1.287]
+12:03:54 YOLO frame 40: detections=2 depths=[0.572, None]
+12:03:54 YOLO frame 41: detections=1 depths=[0.571]
+12:03:54 YOLO frame 42: detections=1 depths=[0.571]
+12:03:54 YOLO frame 43: detections=1 depths=[0.572]
+12:03:54 YOLO frame 44: detections=2 depths=[0.571, 2.38]
+12:03:55 YOLO frame 45: detections=2 depths=[0.571, 2.38]
+12:03:55 YOLO frame 46: detections=2 depths=[0.571, None]
+12:03:55 YOLO frame 47: detections=1 depths=[0.572]
+12:03:55 YOLO frame 48: detections=1 depths=[0.572]
+12:03:55 YOLO frame 49: detections=2 depths=[0.572, 2.364]
+12:03:55 YOLO frame 50: detections=2 depths=[0.571, 2.364]
+12:03:56 YOLO frame 51: detections=2 depths=[0.572, 1.287]
+12:03:56 YOLO frame 52: detections=2 depths=[0.572, 1.287]
+12:03:56 YOLO frame 53: detections=2 depths=[0.571, None]
+12:03:56 YOLO frame 54: detections=1 depths=[0.572]
+12:03:56 YOLO frame 55: detections=2 depths=[0.572, 2.364]
+12:03:56 [INFO] [1791979436.994030041] [astra_openni2]: Depth interval: 150 frames (29.71 FPS)
+12:03:57 [INFO] [1791979437.020502286] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:03:57 YOLO frame 56: detections=2 depths=[0.572, 1.287]
+12:03:57 YOLO frame 57: detections=2 depths=[0.572, 1.282]
+12:03:57 YOLO frame 58: detections=2 depths=[0.571, 2.364]
+12:03:57 YOLO frame 59: detections=2 depths=[0.572, 2.364]
+12:03:57 YOLO frame 60: detections=2 depths=[0.571, 2.364]
+12:03:57 YOLO frame 61: detections=2 depths=[0.572, None]
+12:03:58 YOLO frame 62: detections=2 depths=[0.571, 1.287]
+12:03:58 YOLO frame 63: detections=2 depths=[0.572, 1.287]
+12:03:58 YOLO frame 64: detections=2 depths=[0.572, 1.287]
+12:03:58 YOLO frame 65: detections=2 depths=[0.571, 1.287]
+12:03:58 YOLO frame 66: detections=2 depths=[0.571, 1.287]
+12:03:58 YOLO frame 67: detections=2 depths=[0.571, 2.332]
+12:03:59 YOLO frame 68: detections=2 depths=[0.572, 1.287]
+12:03:59 YOLO frame 69: detections=2 depths=[0.572, 1.287]
+12:03:59 YOLO frame 70: detections=2 depths=[0.572, None]
+12:03:59 YOLO frame 71: detections=2 depths=[0.572, None]
+12:03:59 YOLO frame 72: detections=1 depths=[0.572]
+12:04:00 YOLO frame 73: detections=2 depths=[0.572, 1.287]
+12:04:00 YOLO frame 74: detections=2 depths=[0.571, 1.287]
+12:04:00 YOLO frame 75: detections=2 depths=[0.572, 1.287]
+12:04:00 YOLO frame 76: detections=2 depths=[0.572, 1.287]
+12:04:00 YOLO frame 77: detections=2 depths=[0.571, None]
+12:04:01 YOLO frame 78: detections=2 depths=[0.572, 1.282]
+12:04:01 YOLO frame 79: detections=2 depths=[0.572, 2.316]
+12:04:01 YOLO frame 80: detections=2 depths=[0.572, 2.316]
+12:04:01 YOLO frame 81: detections=2 depths=[0.572, None]
+12:04:02 [INFO] [1791979442.002020784] [astra_openni2]: Depth interval: 149 frames (29.75 FPS)
+12:04:02 [INFO] [1791979442.026820031] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+12:04:02 YOLO frame 82: detections=2 depths=[0.572, 1.287]
+12:04:02 Stop requested from the desktop launcher
+12:04:02 YOLO frame 83: detections=2 depths=[0.572, 1.287]
+12:04:02 [INFO] [1791979442.472421026] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+12:04:05 Astra camera, ROS2 subscriptions, and display closed
+12:04:08 ■ 操作结束，返回码 0；后台服务状态请查看总览。
+13:25:14 ▶ B3136 HLS RGB-D YOLOv4 
+13:25:15 启动 B3136 + HLS RGB-D 视觉；结果主题 /yolov4_b3136/detections
+13:25:20   File "/home/ubuntu/kv260_B3136/vision_hls.py", line 250
+    from test_enhancement_board import run_checks
+IndentationError: unexpected indent
+13:25:20 ■ 操作结束，返回码 1；后台服务状态请查看总览。
+13:25:56 ▶ B3136 HLS RGB-D YOLOv4 
+13:25:56 启动 B3136 + HLS RGB-D 视觉；结果主题 /yolov4_b3136/detections
+13:26:06 BEFORE_LOAD {"MemAvailable": 1970840, "CmaTotal": 1024000, "CmaFree": 192636, "VmHWM": 114896, "VmRSS": 114896}
+13:26:11 HARDWARE_READY {"model_target": "DPUCZDX8G_ISA1_B3136", "input_fix": 6, "output_fix": {"26": 2, "13": 2, "52": 2}, "workers": 1, "slots": 2, "application_cma_bytes": 4721760, "memory_kib": {"MemAvailable": 1738056, "CmaTotal": 1024000, "CmaFree": 70704, "VmHWM": 391816, "VmRSS": 268488}}
+13:26:11 
+13:26:12 [INFO] [1791984372.662701309] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+13:26:12 [INFO] [1791984372.675485175] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+13:26:12 [INFO] [1791984372.802479525] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:16 CAMERA_READY RGB=640x480 MJPG depth=320x240 16UC1/mm ROS2
+13:26:17 [INFO] [1791984377.729290254] [astra_openni2]: Depth interval: 147 frames (29.16 FPS)
+13:26:17 [INFO] [1791984377.755701213] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:21 STATS {"elapsed_s": 5.022740397000234, "frames": 28, "fps": 5.574646067059853, "rgb_frames": 69, "depth_frames": 162, "invalid_depth": 0, "paired_frames": 28, "published_frames": 28, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.26758782154373, "dpu_ms": 158.60040489285763, "post_ms": 34.814160928557875}, "recent_latency_p50_ms": 354.11264900039896, "recent_latency_p95_ms": 386.615403000269, "memory_kib": {"MemAvailable": 1672440, "CmaTotal": 1024000, "CmaFree": 66324, "VmHWM": 391816, "VmRSS": 287188}, "peak_rss_kib": 391816, "min_cma_free_kib": 66324, "min_mem_available_kib": 1672440, "workers": 1, "slots": 2, "interval_fps": 5.574646067059853}
+13:26:22 [INFO] [1791984382.735683674] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:26:22 [INFO] [1791984382.761802794] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:27 STATS {"elapsed_s": 10.096618151000257, "frames": 60, "fps": 5.942583853590214, "rgb_frames": 144, "depth_frames": 281, "invalid_depth": 0, "paired_frames": 60, "published_frames": 60, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 70.9099809166825, "dpu_ms": 158.53726304996295, "post_ms": 35.35353908334097}, "recent_latency_p50_ms": 352.33835950020875, "recent_latency_p95_ms": 380.47867390000647, "memory_kib": {"MemAvailable": 1671404, "CmaTotal": 1024000, "CmaFree": 66556, "VmHWM": 391816, "VmRSS": 287188}, "peak_rss_kib": 391816, "min_cma_free_kib": 66324, "min_mem_available_kib": 1671404, "workers": 1, "slots": 2, "interval_fps": 6.306813358830453}
+13:26:27 [INFO] [1791984387.766143785] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:26:27 [INFO] [1791984387.791797273] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:32 STATS {"elapsed_s": 15.107052778999787, "frames": 92, "fps": 6.0898708269483635, "rgb_frames": 220, "depth_frames": 405, "invalid_depth": 0, "paired_frames": 92, "published_frames": 92, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.50643964128801, "dpu_ms": 158.87461139125307, "post_ms": 35.232640217402704}, "recent_latency_p50_ms": 351.4900714999385, "recent_latency_p95_ms": 383.54768609979146, "memory_kib": {"MemAvailable": 1670968, "CmaTotal": 1024000, "CmaFree": 66132, "VmHWM": 391816, "VmRSS": 287256}, "peak_rss_kib": 391816, "min_cma_free_kib": 66132, "min_mem_available_kib": 1670968, "workers": 1, "slots": 2, "interval_fps": 6.386671491765645}
+13:26:32 
+13:26:32 [INFO] [1791984392.771438522] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:26:32 [INFO] [1791984392.822027718] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:37 STATS {"elapsed_s": 20.12075773000015, "frames": 123, "fps": 6.113089857277412, "rgb_frames": 295, "depth_frames": 523, "invalid_depth": 0, "paired_frames": 123, "published_frames": 123, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.19665156907972, "dpu_ms": 158.7388386991423, "post_ms": 35.324249756082665}, "recent_latency_p50_ms": 350.9829240001636, "recent_latency_p95_ms": 382.09309109979586, "memory_kib": {"MemAvailable": 1670248, "CmaTotal": 1024000, "CmaFree": 65824, "VmHWM": 391816, "VmRSS": 287256}, "peak_rss_kib": 391816, "min_cma_free_kib": 65824, "min_mem_available_kib": 1670248, "workers": 1, "slots": 2, "interval_fps": 6.18305231420024}
+13:26:37 
+13:26:37 [INFO] [1791984397.775174158] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:26:37 [INFO] [1791984397.801547158] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:42 STATS {"elapsed_s": 25.201485696999953, "frames": 155, "fps": 6.1504310445654236, "rgb_frames": 369, "depth_frames": 645, "invalid_depth": 0, "paired_frames": 155, "published_frames": 155, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 72.67104647739137, "dpu_ms": 158.72593155480928, "post_ms": 35.317292038669095}, "recent_latency_p50_ms": 352.57079300026817, "recent_latency_p95_ms": 382.84942289983513, "memory_kib": {"MemAvailable": 1671748, "CmaTotal": 1024000, "CmaFree": 67328, "VmHWM": 391816, "VmRSS": 287256}, "peak_rss_kib": 391816, "min_cma_free_kib": 65824, "min_mem_available_kib": 1670248, "workers": 1, "slots": 2, "interval_fps": 6.29831004687625}
+13:26:42 [INFO] [1791984402.781874278] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:26:42 [INFO] [1791984402.809302279] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:26:46 SUMMARY {"elapsed_s": 29.760157693999645, "frames": 183, "fps": 6.149160964859307, "rgb_frames": 430, "depth_frames": 752, "invalid_depth": 0, "paired_frames": 183, "published_frames": 182, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 74.5449041912446, "dpu_ms": 158.95025318029377, "post_ms": 35.47671760105779}, "recent_latency_p50_ms": 355.22341700016113, "recent_latency_p95_ms": 385.0412564997896, "memory_kib": {"MemAvailable": 1651192, "CmaTotal": 1024000, "CmaFree": 55992, "VmHWM": 391816, "VmRSS": 287828}, "peak_rss_kib": 391816, "min_cma_free_kib": 55992, "min_mem_available_kib": 1651192, "workers": 1, "slots": 2, "success": true, "stop_reason": "SIGINT", "last_detections": [{"bbox": [313.3894348144531, 173.15505981445312, 452.37982177734375, 466.2800598144531], "score": 0.8794812560081482, "class_id": 39, "class_name": "bottle", "depth_m": 0.636, "valid_depth_pixels": 800}]}
+13:26:46 
+13:26:46 [INFO] [1791984406.642668294] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:26:51 [INFO] [1791984411.643086143] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:26:54 CLEANUP_OK {"MemAvailable": 1775592, "CmaTotal": 1024000, "CmaFree": 151776, "VmHWM": 391816, "VmRSS": 280196}
+13:26:56 ■ 操作结束，返回码 0；后台服务状态请查看总览。
+13:28:01 ▶ B3136 HLS RGB-D YOLOv4 
+13:28:02 启动 B3136 + HLS RGB-D 视觉；结果主题 /yolov4_b3136/detections
+13:28:12 BEFORE_LOAD {"MemAvailable": 1942924, "CmaTotal": 1024000, "CmaFree": 193096, "VmHWM": 114896, "VmRSS": 114896}
+13:28:17 HARDWARE_READY {"model_target": "DPUCZDX8G_ISA1_B3136", "input_fix": 6, "output_fix": {"26": 2, "13": 2, "52": 2}, "workers": 1, "slots": 2, "application_cma_bytes": 4721760, "memory_kib": {"MemAvailable": 1703364, "CmaTotal": 1024000, "CmaFree": 58036, "VmHWM": 391816, "VmRSS": 267500}}
+13:28:18 [INFO] [1791984498.840142953] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+13:28:18 [INFO] [1791984498.852967720] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+13:28:18 [INFO] [1791984498.980988546] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:20 CAMERA_READY RGB=640x480 MJPG depth=320x240 16UC1/mm ROS2
+13:28:23 [INFO] [1791984503.907736208] [astra_openni2]: Depth interval: 139 frames (27.57 FPS)
+13:28:23 [INFO] [1791984503.933377361] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:25 STATS {"elapsed_s": 5.076323363000483, "frames": 28, "fps": 5.515803071979623, "rgb_frames": 69, "depth_frames": 157, "invalid_depth": 0, "paired_frames": 28, "published_frames": 28, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 59.968312321448785, "dpu_ms": 159.82270528564055, "post_ms": 36.906788107216926}, "recent_latency_p50_ms": 358.81117200005974, "recent_latency_p95_ms": 384.38479769956757, "memory_kib": {"MemAvailable": 1643824, "CmaTotal": 1024000, "CmaFree": 49236, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 5.712796038836038}
+13:28:25 
+13:28:28 [INFO] [1791984508.913532655] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:28:28 [INFO] [1791984508.940468554] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:30 STATS {"elapsed_s": 10.156070031000127, "frames": 60, "fps": 5.907796994000391, "rgb_frames": 144, "depth_frames": 281, "invalid_depth": 0, "paired_frames": 60, "published_frames": 60, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.79324698332796, "dpu_ms": 159.5261212666325, "post_ms": 35.86388588334254}, "recent_latency_p50_ms": 354.1256319999775, "recent_latency_p95_ms": 382.82323904968507, "memory_kib": {"MemAvailable": 1645820, "CmaTotal": 1024000, "CmaFree": 50108, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.102666535574993}
+13:28:30 
+13:28:33 [INFO] [1791984513.943650009] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:28:33 [INFO] [1791984513.970931853] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:35 STATS {"elapsed_s": 15.166122976000224, "frames": 91, "fps": 6.000215094128131, "rgb_frames": 216, "depth_frames": 399, "invalid_depth": 0, "paired_frames": 91, "published_frames": 91, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.8950126043862, "dpu_ms": 159.77812396701395, "post_ms": 35.70734846154345}, "recent_latency_p50_ms": 353.58948200064333, "recent_latency_p95_ms": 383.3840204997614, "memory_kib": {"MemAvailable": 1675564, "CmaTotal": 1024000, "CmaFree": 51064, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.18755936121138}
+13:28:38 [INFO] [1791984518.949627039] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:28:38 [INFO] [1791984518.998985668] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:40 STATS {"elapsed_s": 20.225575348999882, "frames": 123, "fps": 6.081409199866451, "rgb_frames": 289, "depth_frames": 519, "invalid_depth": 0, "paired_frames": 123, "published_frames": 123, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.82276435771928, "dpu_ms": 159.39749586177493, "post_ms": 35.55467246343046}, "recent_latency_p50_ms": 354.29246300009254, "recent_latency_p95_ms": 385.1339802995426, "memory_kib": {"MemAvailable": 1675676, "CmaTotal": 1024000, "CmaFree": 51228, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.324795183520579}
+13:28:40 
+13:28:43 [INFO] [1791984523.980642957] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:28:44 [INFO] [1791984524.005371396] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:45 STATS {"elapsed_s": 25.347219000999758, "frames": 156, "fps": 6.1545213300854416, "rgb_frames": 368, "depth_frames": 643, "invalid_depth": 0, "paired_frames": 156, "published_frames": 156, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.21001355127429, "dpu_ms": 159.23871395512506, "post_ms": 35.413628480787686}, "recent_latency_p50_ms": 351.4743985001587, "recent_latency_p95_ms": 385.88940399949934, "memory_kib": {"MemAvailable": 1673188, "CmaTotal": 1024000, "CmaFree": 50644, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.443244052544404}
+13:28:48 [INFO] [1791984528.985620393] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:28:49 [INFO] [1791984529.035924537] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:50 STATS {"elapsed_s": 30.403217791000316, "frames": 187, "fps": 6.150664751523572, "rgb_frames": 441, "depth_frames": 763, "invalid_depth": 0, "paired_frames": 187, "published_frames": 187, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.411289513366, "dpu_ms": 159.13428894116728, "post_ms": 35.524101679161284}, "recent_latency_p50_ms": 351.8704309999521, "recent_latency_p95_ms": 388.50869459975, "memory_kib": {"MemAvailable": 1673832, "CmaTotal": 1024000, "CmaFree": 50644, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.13133058127108}
+13:28:50 
+13:28:53 [INFO] [1791984533.989840825] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:28:54 [INFO] [1791984534.015927300] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:28:55 STATS {"elapsed_s": 35.49532935000025, "frames": 219, "fps": 6.169825833719119, "rgb_frames": 516, "depth_frames": 884, "invalid_depth": 0, "paired_frames": 219, "published_frames": 219, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.85680705024188, "dpu_ms": 159.08605646573508, "post_ms": 35.43747528769034}, "recent_latency_p50_ms": 351.8704309999521, "recent_latency_p95_ms": 385.51127439950506, "memory_kib": {"MemAvailable": 1676884, "CmaTotal": 1024000, "CmaFree": 50720, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.284229956321825}
+13:28:58 [INFO] [1791984538.995738115] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:28:59 [INFO] [1791984539.018810587] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:01 STATS {"elapsed_s": 40.59313776300041, "frames": 252, "fps": 6.207945822549629, "rgb_frames": 594, "depth_frames": 1010, "invalid_depth": 0, "paired_frames": 252, "published_frames": 252, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.81745998016629, "dpu_ms": 159.01963628568902, "post_ms": 35.39362602382714}, "recent_latency_p50_ms": 351.839506000033, "recent_latency_p95_ms": 384.5705456496944, "memory_kib": {"MemAvailable": 1678684, "CmaTotal": 1024000, "CmaFree": 50720, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.473369990885714}
+13:29:01 
+13:29:04 [INFO] [1791984544.026911885] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:29:04 [INFO] [1791984544.051346555] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:06 STATS {"elapsed_s": 45.658110047000264, "frames": 283, "fps": 6.198241664157386, "rgb_frames": 668, "depth_frames": 1131, "invalid_depth": 0, "paired_frames": 283, "published_frames": 283, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.54308995703207, "dpu_ms": 158.84968392967735, "post_ms": 35.17097314843909}, "recent_latency_p50_ms": 350.0530430001163, "recent_latency_p95_ms": 382.4808125002619, "memory_kib": {"MemAvailable": 1675736, "CmaTotal": 1024000, "CmaFree": 50720, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.120467844992637}
+13:29:06 
+13:29:09 [INFO] [1791984549.030671595] [astra_openni2]: Depth interval: 149 frames (29.78 FPS)
+13:29:09 [INFO] [1791984549.080940544] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:11 STATS {"elapsed_s": 50.77014775299995, "frames": 315, "fps": 6.204433391301033, "rgb_frames": 743, "depth_frames": 1255, "invalid_depth": 0, "paired_frames": 315, "published_frames": 315, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 67.041145355482, "dpu_ms": 158.9015990077911, "post_ms": 35.102990125015054}, "recent_latency_p50_ms": 350.53058650009916, "recent_latency_p95_ms": 384.15507750028155, "memory_kib": {"MemAvailable": 1677624, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.06411802550228}
+13:29:11 
+13:29:14 [INFO] [1791984554.034264326] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:29:14 [INFO] [1791984554.061992683] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:16 STATS {"elapsed_s": 55.84375795100004, "frames": 347, "fps": 6.213765203704131, "rgb_frames": 820, "depth_frames": 1374, "invalid_depth": 0, "paired_frames": 347, "published_frames": 347, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.14732647658172, "dpu_ms": 158.6829215976273, "post_ms": 35.02022024611762}, "recent_latency_p50_ms": 350.0530430001163, "recent_latency_p95_ms": 387.8582535003261, "memory_kib": {"MemAvailable": 1676652, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.307145947596385}
+13:29:19 [INFO] [1791984559.042414018] [astra_openni2]: Depth interval: 149 frames (29.75 FPS)
+13:29:19 [INFO] [1791984559.069141879] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:21 STATS {"elapsed_s": 60.92666596500021, "frames": 379, "fps": 6.220593134338246, "rgb_frames": 895, "depth_frames": 1500, "invalid_depth": 0, "paired_frames": 379, "published_frames": 379, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.33415855861335, "dpu_ms": 158.76455322262117, "post_ms": 35.031042910169674}, "recent_latency_p50_ms": 349.2117440000584, "recent_latency_p95_ms": 386.4204997496472, "memory_kib": {"MemAvailable": 1673092, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.295608716872393}
+13:29:21 
+13:29:24 [INFO] [1791984564.069345024] [astra_openni2]: Depth interval: 149 frames (29.64 FPS)
+13:29:24 [INFO] [1791984564.095965495] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:26 STATS {"elapsed_s": 66.05164196100031, "frames": 412, "fps": 6.237543651727269, "rgb_frames": 972, "depth_frames": 1630, "invalid_depth": 0, "paired_frames": 412, "published_frames": 412, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.07993616018604, "dpu_ms": 158.80758696870245, "post_ms": 35.04252675783093}, "recent_latency_p50_ms": 349.31880149997596, "recent_latency_p95_ms": 386.4204997496472, "memory_kib": {"MemAvailable": 1679324, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.24393168377278}
+13:29:26 
+13:29:29 [INFO] [1791984569.074907866] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:29:29 [INFO] [1791984569.125239622] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:31 STATS {"elapsed_s": 71.10240400500061, "frames": 443, "fps": 6.230450379270495, "rgb_frames": 1046, "depth_frames": 1753, "invalid_depth": 0, "paired_frames": 443, "published_frames": 443, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.558731304724, "dpu_ms": 158.80750590229908, "post_ms": 34.88688849219912}, "recent_latency_p50_ms": 348.4923364999304, "recent_latency_p95_ms": 383.01253249983347, "memory_kib": {"MemAvailable": 1678820, "CmaTotal": 1024000, "CmaFree": 51240, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.137687685529419}
+13:29:31 
+13:29:34 [INFO] [1791984574.104567921] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:29:34 [INFO] [1791984574.131339766] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:36 STATS {"elapsed_s": 76.10304673500013, "frames": 475, "fps": 6.241537236400095, "rgb_frames": 1122, "depth_frames": 1873, "invalid_depth": 0, "paired_frames": 475, "published_frames": 475, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.18560696879072, "dpu_ms": 158.82586159761303, "post_ms": 34.96793075780502}, "recent_latency_p50_ms": 348.09991549991537, "recent_latency_p95_ms": 383.5201747499468, "memory_kib": {"MemAvailable": 1681072, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.199203117236679}
+13:29:36 
+13:29:39 [INFO] [1791984579.110186293] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:29:39 [INFO] [1791984579.162171926] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:41 STATS {"elapsed_s": 81.13038803000018, "frames": 506, "fps": 6.236873904915784, "rgb_frames": 1197, "depth_frames": 1988, "invalid_depth": 0, "paired_frames": 506, "published_frames": 506, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.32252908987957, "dpu_ms": 158.88014376560022, "post_ms": 34.953907531242834}, "recent_latency_p50_ms": 348.09991549991537, "recent_latency_p95_ms": 384.4761577495319, "memory_kib": {"MemAvailable": 1681684, "CmaTotal": 1024000, "CmaFree": 51344, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.166281177454801}
+13:29:41 
+13:29:44 [INFO] [1791984584.114423172] [astra_openni2]: Depth interval: 148 frames (29.57 FPS)
+13:29:44 [INFO] [1791984584.140469165] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:46 STATS {"elapsed_s": 86.20381789099974, "frames": 538, "fps": 6.241022882307522, "rgb_frames": 1272, "depth_frames": 2111, "invalid_depth": 0, "paired_frames": 538, "published_frames": 538, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.47520684769859, "dpu_ms": 158.85951696871103, "post_ms": 35.094829222654056}, "recent_latency_p50_ms": 349.35061750002205, "recent_latency_p95_ms": 385.3244542497123, "memory_kib": {"MemAvailable": 1679064, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.307370137506022}
+13:29:46 
+13:29:49 [INFO] [1791984589.117703032] [astra_openni2]: Depth interval: 149 frames (29.78 FPS)
+13:29:49 [INFO] [1791984589.140504930] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:51 STATS {"elapsed_s": 91.27334366600007, "frames": 570, "fps": 6.244977746030891, "rgb_frames": 1348, "depth_frames": 2237, "invalid_depth": 0, "paired_frames": 570, "published_frames": 570, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 67.029679125028, "dpu_ms": 158.61060179292963, "post_ms": 35.181414171880476}, "recent_latency_p50_ms": 348.0359340001087, "recent_latency_p95_ms": 383.5201747499468, "memory_kib": {"MemAvailable": 1675776, "CmaTotal": 1024000, "CmaFree": 50744, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.312227498241277}
+13:29:54 [INFO] [1791984594.147460274] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:29:54 [INFO] [1791984594.172913883] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:29:56 STATS {"elapsed_s": 96.33563425100056, "frames": 602, "fps": 6.248985691333086, "rgb_frames": 1423, "depth_frames": 2359, "invalid_depth": 0, "paired_frames": 602, "published_frames": 602, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.45596739065596, "dpu_ms": 158.59778706245464, "post_ms": 35.15864277733627}, "recent_latency_p50_ms": 347.21881200039206, "recent_latency_p95_ms": 383.04603699975814, "memory_kib": {"MemAvailable": 1674464, "CmaTotal": 1024000, "CmaFree": 51320, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.3212491386440135}
+13:29:56 
+13:29:59 [INFO] [1791984599.153022375] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:29:59 [INFO] [1791984599.202456072] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:01 STATS {"elapsed_s": 101.43216421299985, "frames": 634, "fps": 6.250482821885256, "rgb_frames": 1498, "depth_frames": 2486, "invalid_depth": 0, "paired_frames": 634, "published_frames": 634, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.14882717972037, "dpu_ms": 158.66646924605377, "post_ms": 35.08603275779265}, "recent_latency_p50_ms": 349.6818179996808, "recent_latency_p95_ms": 383.1683304999842, "memory_kib": {"MemAvailable": 1674492, "CmaTotal": 1024000, "CmaFree": 50720, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.278781884654489}
+13:30:01 
+13:30:04 [INFO] [1791984604.157575863] [astra_openni2]: Depth interval: 148 frames (29.57 FPS)
+13:30:04 [INFO] [1791984604.194023473] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:06 STATS {"elapsed_s": 106.440877559, "frames": 666, "fps": 6.256994636584402, "rgb_frames": 1571, "depth_frames": 2601, "invalid_depth": 0, "paired_frames": 666, "published_frames": 666, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.24212571095356, "dpu_ms": 158.60449393747444, "post_ms": 35.06422597653369}, "recent_latency_p50_ms": 350.468289499986, "recent_latency_p95_ms": 383.27085574997, "memory_kib": {"MemAvailable": 1675224, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.388866319442}
+13:30:09 [INFO] [1791984609.162429054] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:30:09 [INFO] [1791984609.189389285] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:11 STATS {"elapsed_s": 111.46457048100001, "frames": 697, "fps": 6.253108023403804, "rgb_frames": 1646, "depth_frames": 2724, "invalid_depth": 0, "paired_frames": 696, "published_frames": 697, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.67859691407918, "dpu_ms": 158.64992878904616, "post_ms": 35.07419148824198}, "recent_latency_p50_ms": 351.60136100012096, "recent_latency_p95_ms": 383.3071407495936, "memory_kib": {"MemAvailable": 1675264, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.170759336073914}
+13:30:11 
+13:30:14 [INFO] [1791984614.192151762] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:30:14 [INFO] [1791984614.218927607] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:16 STATS {"elapsed_s": 116.52465516200027, "frames": 729, "fps": 6.256186718480274, "rgb_frames": 1722, "depth_frames": 2848, "invalid_depth": 0, "paired_frames": 728, "published_frames": 729, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.04245437890432, "dpu_ms": 158.56436429686482, "post_ms": 34.947740988254594}, "recent_latency_p50_ms": 351.60136100012096, "recent_latency_p95_ms": 383.1683304999842, "memory_kib": {"MemAvailable": 1672700, "CmaTotal": 1024000, "CmaFree": 51320, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.324004837340852}
+13:30:19 [INFO] [1791984619.198968409] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:30:19 [INFO] [1791984619.252879964] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:22 STATS {"elapsed_s": 121.6066458080004, "frames": 761, "fps": 6.257881672038803, "rgb_frames": 1798, "depth_frames": 2969, "invalid_depth": 0, "paired_frames": 760, "published_frames": 761, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.8314853476547, "dpu_ms": 158.48517971873477, "post_ms": 34.92746229684229}, "recent_latency_p50_ms": 351.60136100012096, "recent_latency_p95_ms": 383.020897750157, "memory_kib": {"MemAvailable": 1672620, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.296745159337554}
+13:30:22 
+13:30:24 [INFO] [1791984624.228038688] [astra_openni2]: Depth interval: 149 frames (29.63 FPS)
+13:30:24 [INFO] [1791984624.253655634] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:27 STATS {"elapsed_s": 126.67877132300055, "frames": 793, "fps": 6.259928097802905, "rgb_frames": 1874, "depth_frames": 3091, "invalid_depth": 0, "paired_frames": 792, "published_frames": 793, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.96264876952773, "dpu_ms": 158.53176569530092, "post_ms": 34.86519680074096}, "recent_latency_p50_ms": 351.3329209999938, "recent_latency_p95_ms": 383.03299275003155, "memory_kib": {"MemAvailable": 1672024, "CmaTotal": 1024000, "CmaFree": 50720, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.308992138574678}
+13:30:27 
+13:30:29 [INFO] [1791984629.233277440] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:30:29 [INFO] [1791984629.283474302] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:32 STATS {"elapsed_s": 131.7362024690001, "frames": 825, "fps": 6.262515425052862, "rgb_frames": 1950, "depth_frames": 3218, "invalid_depth": 0, "paired_frames": 824, "published_frames": 825, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.13778564454265, "dpu_ms": 158.57669913280859, "post_ms": 34.85834834369683}, "recent_latency_p50_ms": 351.4994924998973, "recent_latency_p95_ms": 383.03299275003155, "memory_kib": {"MemAvailable": 1673100, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.327322918733589}
+13:30:34 [INFO] [1791984634.236831944] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:30:34 [INFO] [1791984634.263180388] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:37 STATS {"elapsed_s": 136.7487668370004, "frames": 856, "fps": 6.259654253557702, "rgb_frames": 2019, "depth_frames": 3329, "invalid_depth": 0, "paired_frames": 855, "published_frames": 856, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.16861227735416, "dpu_ms": 158.69142958204208, "post_ms": 34.94809383589015}, "recent_latency_p50_ms": 352.97701899980893, "recent_latency_p95_ms": 383.5055772492524, "memory_kib": {"MemAvailable": 1658008, "CmaTotal": 1024000, "CmaFree": 51424, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.184459235656058}
+13:30:37 
+13:30:39 [INFO] [1791984639.242391651] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:30:39 [INFO] [1791984639.265974691] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:42 STATS {"elapsed_s": 141.87761363699974, "frames": 889, "fps": 6.26596386287231, "rgb_frames": 2091, "depth_frames": 3441, "invalid_depth": 0, "paired_frames": 888, "published_frames": 889, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 70.36065947657022, "dpu_ms": 158.623477773439, "post_ms": 34.93789683980353}, "recent_latency_p50_ms": 353.5414849998233, "recent_latency_p95_ms": 383.3028314995772, "memory_kib": {"MemAvailable": 1655376, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.4341949149279065}
+13:30:42 
+13:30:44 [INFO] [1791984644.272001971] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:30:44 [INFO] [1791984644.298110769] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:47 STATS {"elapsed_s": 146.9591009679998, "frames": 920, "fps": 6.260245156237919, "rgb_frames": 2161, "depth_frames": 3551, "invalid_depth": 0, "paired_frames": 919, "published_frames": 920, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 70.9730020859567, "dpu_ms": 158.91620951173024, "post_ms": 34.93518757416325}, "recent_latency_p50_ms": 354.65349349988173, "recent_latency_p95_ms": 382.1963895004501, "memory_kib": {"MemAvailable": 1653848, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.100576067735476}
+13:30:49 [INFO] [1791984649.278060218] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:30:49 [INFO] [1791984649.328683389] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:52 STATS {"elapsed_s": 152.11033397499978, "frames": 952, "fps": 6.258614882513286, "rgb_frames": 2229, "depth_frames": 3660, "invalid_depth": 0, "paired_frames": 949, "published_frames": 952, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.00558803907009, "dpu_ms": 159.07288385547602, "post_ms": 34.99786386323933}, "recent_latency_p50_ms": 355.3860500001065, "recent_latency_p95_ms": 382.7391837501182, "memory_kib": {"MemAvailable": 1655208, "CmaTotal": 1024000, "CmaFree": 51424, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.212104938082868}
+13:30:52 
+13:30:54 [INFO] [1791984654.281431397] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:30:54 [INFO] [1791984654.307229223] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:30:57 STATS {"elapsed_s": 157.1337917259998, "frames": 982, "fps": 6.249451433796946, "rgb_frames": 2297, "depth_frames": 3769, "invalid_depth": 0, "paired_frames": 979, "published_frames": 982, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 75.42549535939358, "dpu_ms": 159.49583131249057, "post_ms": 35.110076437451454}, "recent_latency_p50_ms": 355.63159549974444, "recent_latency_p95_ms": 384.524736499543, "memory_kib": {"MemAvailable": 1653388, "CmaTotal": 1024000, "CmaFree": 50824, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 5.971982145968656}
+13:30:57 
+13:30:59 [INFO] [1791984659.286688660] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:30:59 [INFO] [1791984659.314414770] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:02 STATS {"elapsed_s": 162.17486800000006, "frames": 1014, "fps": 6.252510099160368, "rgb_frames": 2367, "depth_frames": 3885, "invalid_depth": 0, "paired_frames": 1011, "published_frames": 1014, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 78.0236852343883, "dpu_ms": 159.86462199219176, "post_ms": 35.238437640568776}, "recent_latency_p50_ms": 356.38102199982313, "recent_latency_p95_ms": 384.6272554999359, "memory_kib": {"MemAvailable": 1666288, "CmaTotal": 1024000, "CmaFree": 50760, "VmHWM": 391816, "VmRSS": 285164}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "interval_fps": 6.149480451205408}
+13:31:03 SUMMARY {"elapsed_s": 163.14424057799988, "frames": 1019, "fps": 6.246006579146214, "rgb_frames": 2378, "depth_frames": 3904, "invalid_depth": 0, "paired_frames": 1016, "published_frames": 1019, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 78.72955170314455, "dpu_ms": 159.90913572656495, "post_ms": 35.30843625775404}, "recent_latency_p50_ms": 356.8758380001782, "recent_latency_p95_ms": 384.6272554999359, "memory_kib": {"MemAvailable": 1676848, "CmaTotal": 1024000, "CmaFree": 50760, "VmHWM": 391816, "VmRSS": 285936}, "peak_rss_kib": 391816, "min_cma_free_kib": 49236, "min_mem_available_kib": 1643824, "workers": 1, "slots": 2, "success": true, "stop_reason": "SIGINT", "last_detections": [{"bbox": [331.328125, 173.70193481445312, 480.9795837402344, 475.5408935546875], "score": 0.8801801204681396, "class_id": 39, "class_name": "bottle", "depth_m": 0.617, "valid_depth_pixels": 885}]}
+13:31:03 
+13:31:03 [INFO] [1791984663.538614881] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:31:08 [INFO] [1791984668.538999339] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:31:11 CLEANUP_OK {"MemAvailable": 1803368, "CmaTotal": 1024000, "CmaFree": 150444, "VmHWM": 391816, "VmRSS": 279336}
+13:31:13 ■ 操作结束，返回码 0；后台服务状态请查看总览。
+13:31:15 ▶ B3136 HLS RGB-D YOLOv4 
+13:31:15 启动 B3136 + HLS RGB-D 视觉；结果主题 /yolov4_b3136/detections
+13:31:25 BEFORE_LOAD {"MemAvailable": 1963896, "CmaTotal": 1024000, "CmaFree": 187912, "VmHWM": 114900, "VmRSS": 114900}
+13:31:25 
+13:31:30 HARDWARE_READY {"model_target": "DPUCZDX8G_ISA1_B3136", "input_fix": 6, "output_fix": {"26": 2, "13": 2, "52": 2}, "workers": 1, "slots": 2, "application_cma_bytes": 4721760, "memory_kib": {"MemAvailable": 1737756, "CmaTotal": 1024000, "CmaFree": 67916, "VmHWM": 391812, "VmRSS": 268460}}
+13:31:31 [INFO] [1791984691.884564211] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+13:31:31 [INFO] [1791984691.908855178] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+13:31:32 [INFO] [1791984692.039443100] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:33 CAMERA_READY RGB=640x480 MJPG depth=320x240 16UC1/mm ROS2
+13:31:36 [INFO] [1791984696.966463283] [astra_openni2]: Depth interval: 147 frames (29.27 FPS)
+13:31:36 [INFO] [1791984696.992073198] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:38 STATS {"elapsed_s": 5.043813551000312, "frames": 29, "fps": 5.749617765757536, "rgb_frames": 72, "depth_frames": 175, "invalid_depth": 0, "paired_frames": 29, "published_frames": 29, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 59.36695975868071, "dpu_ms": 158.4315531034259, "post_ms": 34.324582724021354}, "recent_latency_p50_ms": 343.65918899948156, "recent_latency_p95_ms": 377.91193240009306, "memory_kib": {"MemAvailable": 1679884, "CmaTotal": 1024000, "CmaFree": 62100, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62100, "min_mem_available_kib": 1679884, "workers": 1, "slots": 2, "interval_fps": 5.749617765757536}
+13:31:38 
+13:31:41 [INFO] [1791984701.971661788] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:31:41 [INFO] [1791984701.998493408] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:43 STATS {"elapsed_s": 10.064389078999739, "frames": 60, "fps": 5.961613718332437, "rgb_frames": 145, "depth_frames": 293, "invalid_depth": 0, "paired_frames": 60, "published_frames": 60, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 62.93467395010642, "dpu_ms": 158.4444888000386, "post_ms": 34.77804278327312}, "recent_latency_p50_ms": 349.169676499514, "recent_latency_p95_ms": 380.71807094993346, "memory_kib": {"MemAvailable": 1683932, "CmaTotal": 1024000, "CmaFree": 62840, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62100, "min_mem_available_kib": 1679884, "workers": 1, "slots": 2, "interval_fps": 6.174590906384138}
+13:31:43 
+13:31:47 [INFO] [1791984707.001129143] [astra_openni2]: Depth interval: 149 frames (29.63 FPS)
+13:31:47 [INFO] [1791984707.027391426] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:48 STATS {"elapsed_s": 15.164060070000232, "frames": 92, "fps": 6.066976757894008, "rgb_frames": 220, "depth_frames": 413, "invalid_depth": 0, "paired_frames": 92, "published_frames": 92, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 62.51392072833725, "dpu_ms": 158.63761520653418, "post_ms": 34.82761298908807}, "recent_latency_p50_ms": 349.9964155002999, "recent_latency_p95_ms": 380.8056945500539, "memory_kib": {"MemAvailable": 1679660, "CmaTotal": 1024000, "CmaFree": 62120, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62100, "min_mem_available_kib": 1679660, "workers": 1, "slots": 2, "interval_fps": 6.274914608505359}
+13:31:48 
+13:31:52 [INFO] [1791984712.006774283] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:31:52 [INFO] [1791984712.057236442] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:53 STATS {"elapsed_s": 20.165135497999472, "frames": 124, "fps": 6.149227215076324, "rgb_frames": 295, "depth_frames": 536, "invalid_depth": 0, "paired_frames": 124, "published_frames": 124, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 64.35734308874706, "dpu_ms": 158.68523516939692, "post_ms": 34.94076462899073}, "recent_latency_p50_ms": 350.3878110000187, "recent_latency_p95_ms": 381.0681031998229, "memory_kib": {"MemAvailable": 1678944, "CmaTotal": 1024000, "CmaFree": 62016, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62016, "min_mem_available_kib": 1678944, "workers": 1, "slots": 2, "interval_fps": 6.3986237481729225}
+13:31:53 
+13:31:57 [INFO] [1791984717.010822606] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:31:57 [INFO] [1791984717.038077606] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:31:58 STATS {"elapsed_s": 25.20435090599949, "frames": 155, "fps": 6.149731868837961, "rgb_frames": 368, "depth_frames": 657, "invalid_depth": 0, "paired_frames": 155, "published_frames": 155, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.37966668389755, "dpu_ms": 158.7057054903785, "post_ms": 35.01018367740237}, "recent_latency_p50_ms": 353.20851800042874, "recent_latency_p95_ms": 385.8240721998299, "memory_kib": {"MemAvailable": 1680392, "CmaTotal": 1024000, "CmaFree": 62512, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62016, "min_mem_available_kib": 1678944, "workers": 1, "slots": 2, "interval_fps": 6.151751312473342}
+13:31:58 
+13:32:02 [INFO] [1791984722.021954659] [astra_openni2]: Depth interval: 149 frames (29.73 FPS)
+13:32:02 [INFO] [1791984722.042579439] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:03 STATS {"elapsed_s": 30.249014690999502, "frames": 187, "fps": 6.182019543785049, "rgb_frames": 443, "depth_frames": 781, "invalid_depth": 0, "paired_frames": 187, "published_frames": 187, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.77827450270406, "dpu_ms": 158.64064295724614, "post_ms": 35.039762155085}, "recent_latency_p50_ms": 354.63971700028196, "recent_latency_p95_ms": 386.8623452000974, "memory_kib": {"MemAvailable": 1680248, "CmaTotal": 1024000, "CmaFree": 62680, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62016, "min_mem_available_kib": 1678944, "workers": 1, "slots": 2, "interval_fps": 6.343336516330379}
+13:32:03 
+13:32:07 [INFO] [1791984727.045470850] [astra_openni2]: Depth interval: 149 frames (29.66 FPS)
+13:32:07 [INFO] [1791984727.071881711] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:09 STATS {"elapsed_s": 35.33256232399981, "frames": 219, "fps": 6.198248459643789, "rgb_frames": 519, "depth_frames": 902, "invalid_depth": 0, "paired_frames": 218, "published_frames": 219, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.24084669865168, "dpu_ms": 158.6156688036768, "post_ms": 34.96705846119771}, "recent_latency_p50_ms": 354.2194620004011, "recent_latency_p95_ms": 385.16038759971707, "memory_kib": {"MemAvailable": 1679992, "CmaTotal": 1024000, "CmaFree": 62720, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 62016, "min_mem_available_kib": 1678944, "workers": 1, "slots": 2, "interval_fps": 6.2948165946688714}
+13:32:09 
+13:32:12 [INFO] [1791984732.051026779] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:32:12 [INFO] [1791984732.101076795] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:14 STATS {"elapsed_s": 40.42957206000028, "frames": 251, "fps": 6.208326905550686, "rgb_frames": 595, "depth_frames": 1024, "invalid_depth": 0, "paired_frames": 250, "published_frames": 251, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.94932921118479, "dpu_ms": 158.67188613150668, "post_ms": 35.090986709176384}, "recent_latency_p50_ms": 351.98781799954304, "recent_latency_p95_ms": 384.4822554997336, "memory_kib": {"MemAvailable": 1678428, "CmaTotal": 1024000, "CmaFree": 61976, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 61976, "min_mem_available_kib": 1678428, "workers": 1, "slots": 2, "interval_fps": 6.2781908721857365}
+13:32:14 
+13:32:17 [INFO] [1791984737.081034026] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:32:17 [INFO] [1791984737.107472698] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:19 STATS {"elapsed_s": 45.523636603999876, "frames": 283, "fps": 6.216550809895854, "rgb_frames": 671, "depth_frames": 1146, "invalid_depth": 0, "paired_frames": 282, "published_frames": 283, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.8349473711155, "dpu_ms": 158.7400535586383, "post_ms": 35.16893443752522}, "recent_latency_p50_ms": 354.28872050033533, "recent_latency_p95_ms": 384.6718257498196, "memory_kib": {"MemAvailable": 1679044, "CmaTotal": 1024000, "CmaFree": 62120, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 61976, "min_mem_available_kib": 1678428, "workers": 1, "slots": 2, "interval_fps": 6.281820680441412}
+13:32:19 
+13:32:22 [INFO] [1791984742.086918831] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:32:22 [INFO] [1791984742.137066322] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:24 STATS {"elapsed_s": 50.53095735700026, "frames": 315, "fps": 6.23380233575491, "rgb_frames": 746, "depth_frames": 1265, "invalid_depth": 0, "paired_frames": 314, "published_frames": 315, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.66140419140376, "dpu_ms": 158.83512847268833, "post_ms": 35.25876503517722}, "recent_latency_p50_ms": 353.61782749941995, "recent_latency_p95_ms": 384.6718257498196, "memory_kib": {"MemAvailable": 1676624, "CmaTotal": 1024000, "CmaFree": 59872, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1676624, "workers": 1, "slots": 2, "interval_fps": 6.3906431360175215}
+13:32:24 
+13:32:27 [INFO] [1791984747.089965086] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:32:27 [INFO] [1791984747.115986411] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:29 STATS {"elapsed_s": 55.53565181900012, "frames": 346, "fps": 6.230232088166917, "rgb_frames": 819, "depth_frames": 1386, "invalid_depth": 0, "paired_frames": 344, "published_frames": 346, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 67.4842896406318, "dpu_ms": 158.73772014455767, "post_ms": 35.310457500028036}, "recent_latency_p50_ms": 354.28827600026125, "recent_latency_p95_ms": 385.24531099983506, "memory_kib": {"MemAvailable": 1677904, "CmaTotal": 1024000, "CmaFree": 62572, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1676624, "workers": 1, "slots": 2, "interval_fps": 6.194184327410967}
+13:32:29 
+13:32:32 [INFO] [1791984752.095679779] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:32:32 [INFO] [1791984752.121665941] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:34 STATS {"elapsed_s": 60.54118418500002, "frames": 378, "fps": 6.2436836194832, "rgb_frames": 893, "depth_frames": 1508, "invalid_depth": 0, "paired_frames": 376, "published_frames": 378, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 69.01691863672355, "dpu_ms": 158.82653970313854, "post_ms": 35.34711439454341}, "recent_latency_p50_ms": 354.3375254998864, "recent_latency_p95_ms": 383.70296324956144, "memory_kib": {"MemAvailable": 1678812, "CmaTotal": 1024000, "CmaFree": 62532, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1676624, "workers": 1, "slots": 2, "interval_fps": 6.3929263982708715}
+13:32:34 
+13:32:37 [INFO] [1791984757.126055490] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:32:37 [INFO] [1791984757.152131803] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:39 STATS {"elapsed_s": 65.58190275699963, "frames": 409, "fps": 6.236476570609215, "rgb_frames": 967, "depth_frames": 1623, "invalid_depth": 0, "paired_frames": 407, "published_frames": 409, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 69.59945098829223, "dpu_ms": 158.8321360507905, "post_ms": 35.27259917970582}, "recent_latency_p50_ms": 353.2967359997201, "recent_latency_p95_ms": 382.3029380000662, "memory_kib": {"MemAvailable": 1679356, "CmaTotal": 1024000, "CmaFree": 62572, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1676624, "workers": 1, "slots": 2, "interval_fps": 6.149916833722894}
+13:32:39 
+13:32:42 [INFO] [1791984762.131820530] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:32:42 [INFO] [1791984762.181188059] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:44 STATS {"elapsed_s": 70.67980030000035, "frames": 441, "fps": 6.239406423450206, "rgb_frames": 1042, "depth_frames": 1742, "invalid_depth": 0, "paired_frames": 439, "published_frames": 441, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 70.09915856249904, "dpu_ms": 158.91322141408892, "post_ms": 35.22747807030413}, "recent_latency_p50_ms": 351.7568690003827, "recent_latency_p95_ms": 383.17781724958877, "memory_kib": {"MemAvailable": 1675844, "CmaTotal": 1024000, "CmaFree": 62092, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.277097515216861}
+13:32:44 
+13:32:47 [INFO] [1791984767.134463334] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:32:47 [INFO] [1791984767.161755505] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:49 STATS {"elapsed_s": 75.79406697099967, "frames": 473, "fps": 6.240594005609691, "rgb_frames": 1118, "depth_frames": 1858, "invalid_depth": 0, "paired_frames": 471, "published_frames": 473, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 70.54841087109054, "dpu_ms": 159.00943101174647, "post_ms": 35.29069788670469}, "recent_latency_p50_ms": 352.02679050007646, "recent_latency_p95_ms": 381.7371289997027, "memory_kib": {"MemAvailable": 1678564, "CmaTotal": 1024000, "CmaFree": 62996, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.25700653848527}
+13:32:49 
+13:32:52 [INFO] [1791984772.140179697] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:32:52 [INFO] [1791984772.169453304] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:54 STATS {"elapsed_s": 80.81990667100035, "frames": 505, "fps": 6.248460568702972, "rgb_frames": 1193, "depth_frames": 1978, "invalid_depth": 0, "paired_frames": 503, "published_frames": 505, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 71.12844542577079, "dpu_ms": 159.07935257423844, "post_ms": 35.24170616404021}, "recent_latency_p50_ms": 353.89599349946366, "recent_latency_p95_ms": 385.46683549998306, "memory_kib": {"MemAvailable": 1676576, "CmaTotal": 1024000, "CmaFree": 62996, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.3670952338562685}
+13:32:54 
+13:32:57 [INFO] [1791984777.170303115] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:32:57 [INFO] [1791984777.196573017] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:32:59 STATS {"elapsed_s": 85.8798430199995, "frames": 536, "fps": 6.241278292453068, "rgb_frames": 1266, "depth_frames": 2101, "invalid_depth": 0, "paired_frames": 534, "published_frames": 536, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 71.85934353122292, "dpu_ms": 159.1660260312615, "post_ms": 35.22947706639812}, "recent_latency_p50_ms": 353.8578929992582, "recent_latency_p95_ms": 385.46683549998306, "memory_kib": {"MemAvailable": 1676448, "CmaTotal": 1024000, "CmaFree": 62240, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.324190225501473}
+13:32:59 
+13:33:02 [INFO] [1791984782.176821423] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:33:02 [INFO] [1791984782.225931625] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:04 STATS {"elapsed_s": 90.94597977400008, "frames": 568, "fps": 6.245465730442124, "rgb_frames": 1342, "depth_frames": 2217, "invalid_depth": 0, "paired_frames": 566, "published_frames": 568, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 72.07295152340976, "dpu_ms": 159.20146332423357, "post_ms": 35.09439732420461}, "recent_latency_p50_ms": 353.8802889993349, "recent_latency_p95_ms": 385.667961499621, "memory_kib": {"MemAvailable": 1678772, "CmaTotal": 1024000, "CmaFree": 62996, "VmHWM": 391812, "VmRSS": 287284}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.11906103314724}
+13:33:04 
+13:33:07 [INFO] [1791984787.205988665] [astra_openni2]: Depth interval: 149 frames (29.63 FPS)
+13:33:07 [INFO] [1791984787.231767560] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:09 STATS {"elapsed_s": 95.94951601100001, "frames": 600, "fps": 6.253288447345724, "rgb_frames": 1417, "depth_frames": 2339, "invalid_depth": 0, "paired_frames": 598, "published_frames": 600, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 71.10199610152179, "dpu_ms": 159.21580623830422, "post_ms": 35.01173211716235}, "recent_latency_p50_ms": 352.5012849995619, "recent_latency_p95_ms": 385.667961499621, "memory_kib": {"MemAvailable": 1676996, "CmaTotal": 1024000, "CmaFree": 62996, "VmHWM": 391812, "VmRSS": 287548}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.395476815650454}
+13:33:12 [INFO] [1791984792.212597946] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:33:12 [INFO] [1791984792.260887601] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:14 STATS {"elapsed_s": 101.05650533100015, "frames": 632, "fps": 6.253926928602461, "rgb_frames": 1491, "depth_frames": 2463, "invalid_depth": 0, "paired_frames": 630, "published_frames": 632, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 70.84030744528391, "dpu_ms": 159.26477213283974, "post_ms": 34.97625423826989}, "recent_latency_p50_ms": 352.5012849995619, "recent_latency_p95_ms": 385.7880372497675, "memory_kib": {"MemAvailable": 1677212, "CmaTotal": 1024000, "CmaFree": 62996, "VmHWM": 391812, "VmRSS": 287548}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.265922639524755}
+13:33:14 
+13:33:17 [INFO] [1791984797.214153828] [astra_openni2]: Depth interval: 148 frames (29.59 FPS)
+13:33:17 [INFO] [1791984797.240146581] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:19 STATS {"elapsed_s": 106.10332506800023, "frames": 663, "fps": 6.248626040466611, "rgb_frames": 1566, "depth_frames": 2586, "invalid_depth": 0, "paired_frames": 661, "published_frames": 663, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 69.01848945699385, "dpu_ms": 159.21601061329937, "post_ms": 35.01045739452735}, "recent_latency_p50_ms": 351.9750605000809, "recent_latency_p95_ms": 385.4824190000272, "memory_kib": {"MemAvailable": 1676620, "CmaTotal": 1024000, "CmaFree": 62996, "VmHWM": 391812, "VmRSS": 287548}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.142482120517934}
+13:33:19 
+13:33:22 [INFO] [1791984802.220423839] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+13:33:22 [INFO] [1791984802.246574368] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:24 STATS {"elapsed_s": 111.1616368519999, "frames": 695, "fps": 6.252156946243242, "rgb_frames": 1641, "depth_frames": 2708, "invalid_depth": 0, "paired_frames": 693, "published_frames": 695, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.50100403121573, "dpu_ms": 159.12258849610694, "post_ms": 35.033378308607865}, "recent_latency_p50_ms": 352.237352499742, "recent_latency_p95_ms": 384.79306825001913, "memory_kib": {"MemAvailable": 1677188, "CmaTotal": 1024000, "CmaFree": 62992, "VmHWM": 391812, "VmRSS": 287548}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.326221349427615}
+13:33:24 
+13:33:27 [INFO] [1791984807.251257505] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:33:27 [INFO] [1791984807.276209274] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:29 STATS {"elapsed_s": 116.16562522299955, "frames": 727, "fps": 6.258305747542792, "rgb_frames": 1715, "depth_frames": 2829, "invalid_depth": 0, "paired_frames": 725, "published_frames": 727, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 68.46326912106804, "dpu_ms": 159.097203527363, "post_ms": 35.039082375035946}, "recent_latency_p50_ms": 352.87314049992347, "recent_latency_p95_ms": 385.4824190000272, "memory_kib": {"MemAvailable": 1677132, "CmaTotal": 1024000, "CmaFree": 62900, "VmHWM": 391812, "VmRSS": 287548}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "interval_fps": 6.3948989540931604}
+13:33:32 [INFO] [1791984812.256098626] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:33:32 [INFO] [1791984812.306172802] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:33:34 SUMMARY {"elapsed_s": 121.28507867200005, "frames": 758, "fps": 6.249738288498899, "rgb_frames": 1788, "depth_frames": 2942, "invalid_depth": 0, "paired_frames": 756, "published_frames": 758, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 69.78840034371103, "dpu_ms": 159.17814919141549, "post_ms": 34.92161244533776}, "recent_latency_p50_ms": 351.3482779999322, "recent_latency_p95_ms": 384.79306825001913, "memory_kib": {"MemAvailable": 1676904, "CmaTotal": 1024000, "CmaFree": 63284, "VmHWM": 391812, "VmRSS": 288236}, "peak_rss_kib": 391812, "min_cma_free_kib": 59872, "min_mem_available_kib": 1675844, "workers": 1, "slots": 2, "success": true, "stop_reason": "SIGINT", "last_detections": [{"bbox": [331.328125, 170.8233184814453, 480.9795837402344, 472.6622619628906], "score": 0.9038348197937012, "class_id": 39, "class_name": "bottle", "depth_m": 0.621, "valid_depth_pixels": 990}]}
+13:33:34 
+13:33:34 [INFO] [1791984814.984229771] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:33:39 [INFO] [1791984819.984510454] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:33:43 CLEANUP_OK {"MemAvailable": 1796564, "CmaTotal": 1024000, "CmaFree": 157088, "VmHWM": 391812, "VmRSS": 280432}
+13:33:43 
+13:33:45 ■ 操作结束，返回码 0；后台服务状态请查看总览。
+13:33:47 ▶ B3136 HLS RGB-D YOLOv4 
+13:33:48 启动 B3136 + HLS RGB-D 视觉；结果主题 /yolov4_b3136/detections
+13:33:57 BEFORE_LOAD {"MemAvailable": 1967336, "CmaTotal": 1024000, "CmaFree": 190108, "VmHWM": 114896, "VmRSS": 114896}
+13:34:02 HARDWARE_READY {"model_target": "DPUCZDX8G_ISA1_B3136", "input_fix": 6, "output_fix": {"26": 2, "13": 2, "52": 2}, "workers": 1, "slots": 2, "application_cma_bytes": 4721760, "memory_kib": {"MemAvailable": 1737312, "CmaTotal": 1024000, "CmaFree": 66296, "VmHWM": 391812, "VmRSS": 268444}}
+13:34:04 [INFO] [1791984844.007212321] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+13:34:04 [INFO] [1791984844.020060411] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+13:34:04 [INFO] [1791984844.147614233] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:05 CAMERA_READY RGB=640x480 MJPG depth=320x240 16UC1/mm ROS2
+13:34:09 [INFO] [1791984849.075311662] [astra_openni2]: Depth interval: 147 frames (29.15 FPS)
+13:34:09 [INFO] [1791984849.102747971] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:10 STATS {"elapsed_s": 5.017820819999542, "frames": 28, "fps": 5.580111567236583, "rgb_frames": 69, "depth_frames": 166, "invalid_depth": 0, "paired_frames": 28, "published_frames": 28, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 66.75450117846334, "dpu_ms": 158.666016785641, "post_ms": 34.911044357256415}, "recent_latency_p50_ms": 354.4620934994782, "recent_latency_p95_ms": 383.59595144993364, "memory_kib": {"MemAvailable": 1685212, "CmaTotal": 1024000, "CmaFree": 61032, "VmHWM": 391812, "VmRSS": 282364}, "peak_rss_kib": 391812, "min_cma_free_kib": 61032, "min_mem_available_kib": 1685212, "workers": 1, "slots": 2, "interval_fps": 5.580111567236583}
+13:34:10 
+13:34:14 [INFO] [1791984854.080970890] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:34:14 [INFO] [1791984854.106702644] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:15 STATS {"elapsed_s": 10.028400481999597, "frames": 59, "fps": 5.8832911695042105, "rgb_frames": 140, "depth_frames": 282, "invalid_depth": 0, "paired_frames": 58, "published_frames": 59, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 65.63223957625068, "dpu_ms": 160.02030023731604, "post_ms": 35.151471339088594}, "recent_latency_p50_ms": 358.9661440000782, "recent_latency_p95_ms": 388.35625710071326, "memory_kib": {"MemAvailable": 1682396, "CmaTotal": 1024000, "CmaFree": 60768, "VmHWM": 391812, "VmRSS": 282892}, "peak_rss_kib": 391812, "min_cma_free_kib": 60768, "min_mem_available_kib": 1682396, "workers": 1, "slots": 2, "interval_fps": 5.9873312118991455}
+13:34:19 [INFO] [1791984859.114376664] [astra_openni2]: Depth interval: 149 frames (29.60 FPS)
+13:34:19 [INFO] [1791984859.142368277] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:20 STATS {"elapsed_s": 15.105053458999464, "frames": 90, "fps": 5.958270869036796, "rgb_frames": 208, "depth_frames": 389, "invalid_depth": 0, "paired_frames": 88, "published_frames": 90, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 72.7441436888916, "dpu_ms": 160.12420246669433, "post_ms": 35.180935877825604}, "recent_latency_p50_ms": 360.67554500004917, "recent_latency_p95_ms": 387.89914545063766, "memory_kib": {"MemAvailable": 1645200, "CmaTotal": 1024000, "CmaFree": 50376, "VmHWM": 391812, "VmRSS": 282832}, "peak_rss_kib": 391812, "min_cma_free_kib": 50376, "min_mem_available_kib": 1645200, "workers": 1, "slots": 2, "interval_fps": 6.1063854749276105}
+13:34:20 
+13:34:24 [INFO] [1791984864.115795280] [astra_openni2]: Depth interval: 149 frames (29.79 FPS)
+13:34:24 [INFO] [1791984864.166202490] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:25 STATS {"elapsed_s": 20.206631428000037, "frames": 121, "fps": 5.988133174554372, "rgb_frames": 276, "depth_frames": 498, "invalid_depth": 0, "paired_frames": 119, "published_frames": 121, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 78.06166189258258, "dpu_ms": 160.548666049594, "post_ms": 35.24793829752931}, "recent_latency_p50_ms": 360.7006290003483, "recent_latency_p95_ms": 391.7923770004563, "memory_kib": {"MemAvailable": 1651524, "CmaTotal": 1024000, "CmaFree": 47228, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 47228, "min_mem_available_kib": 1645200, "workers": 1, "slots": 2, "interval_fps": 6.076551253037708}
+13:34:29 [INFO] [1791984869.146172817] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:34:29 [INFO] [1791984869.172200905] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:30 STATS {"elapsed_s": 25.219074406999425, "frames": 153, "fps": 6.066836456041211, "rgb_frames": 350, "depth_frames": 616, "invalid_depth": 0, "paired_frames": 149, "published_frames": 153, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 76.99237343793808, "dpu_ms": 160.32482332025953, "post_ms": 35.384096895392396}, "recent_latency_p50_ms": 360.22675200001686, "recent_latency_p95_ms": 390.5815080002867, "memory_kib": {"MemAvailable": 1670112, "CmaTotal": 1024000, "CmaFree": 49428, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 47228, "min_mem_available_kib": 1645200, "workers": 1, "slots": 2, "interval_fps": 6.384112524385867}
+13:34:30 
+13:34:34 [INFO] [1791984874.151571226] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:34:34 [INFO] [1791984874.201505722] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:35 STATS {"elapsed_s": 30.245739531000254, "frames": 184, "fps": 6.083501440307317, "rgb_frames": 424, "depth_frames": 735, "invalid_depth": 0, "paired_frames": 180, "published_frames": 184, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 75.59313034784796, "dpu_ms": 160.0700011630401, "post_ms": 35.192028048878335}, "recent_latency_p50_ms": 359.4950114998028, "recent_latency_p95_ms": 391.4896597504139, "memory_kib": {"MemAvailable": 1645064, "CmaTotal": 1024000, "CmaFree": 48588, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 47228, "min_mem_available_kib": 1645064, "workers": 1, "slots": 2, "interval_fps": 6.1671106459796246}
+13:34:35 
+13:34:39 [INFO] [1791984879.155331920] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+13:34:39 [INFO] [1791984879.181174279] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:40 STATS {"elapsed_s": 35.310307572000056, "frames": 216, "fps": 6.1171939541892035, "rgb_frames": 499, "depth_frames": 856, "invalid_depth": 0, "paired_frames": 212, "published_frames": 216, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 74.2597293518488, "dpu_ms": 159.70797644907483, "post_ms": 35.037171486065006}, "recent_latency_p50_ms": 358.08228499990946, "recent_latency_p95_ms": 389.44022550003865, "memory_kib": {"MemAvailable": 1649152, "CmaTotal": 1024000, "CmaFree": 49556, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 47228, "min_mem_available_kib": 1645064, "workers": 1, "slots": 2, "interval_fps": 6.318406573067353}
+13:34:40 
+13:34:44 [INFO] [1791984884.160047041] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:34:44 [INFO] [1791984884.187453431] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:45 STATS {"elapsed_s": 40.33710048800003, "frames": 248, "fps": 6.1481860867460725, "rgb_frames": 575, "depth_frames": 982, "invalid_depth": 0, "paired_frames": 244, "published_frames": 248, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.82755162096132, "dpu_ms": 159.39582079840142, "post_ms": 34.92283324591529}, "recent_latency_p50_ms": 357.45486950008853, "recent_latency_p95_ms": 388.8743603995863, "memory_kib": {"MemAvailable": 1640660, "CmaTotal": 1024000, "CmaFree": 48048, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 47228, "min_mem_available_kib": 1640660, "workers": 1, "slots": 2, "interval_fps": 6.365887860258962}
+13:34:49 [INFO] [1791984889.190346459] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+13:34:49 [INFO] [1791984889.216798719] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:51 STATS {"elapsed_s": 45.4213212300001, "frames": 280, "fps": 6.16450584037754, "rgb_frames": 651, "depth_frames": 1107, "invalid_depth": 0, "paired_frames": 276, "published_frames": 280, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.39222980859006, "dpu_ms": 159.27008269144238, "post_ms": 34.74653692962448}, "recent_latency_p50_ms": 358.00010050024866, "recent_latency_p95_ms": 389.1753827494995, "memory_kib": {"MemAvailable": 1642888, "CmaTotal": 1024000, "CmaFree": 46376, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 46376, "min_mem_available_kib": 1640660, "workers": 1, "slots": 2, "interval_fps": 6.293983212737453}
+13:34:51 
+13:34:54 [INFO] [1791984894.196092069] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+13:34:54 [INFO] [1791984894.246461058] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+13:34:56 STATS {"elapsed_s": 50.46091739500025, "frames": 312, "fps": 6.183002927943467, "rgb_frames": 727, "depth_frames": 1230, "invalid_depth": 0, "paired_frames": 308, "published_frames": 312, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.58600166014995, "dpu_ms": 158.9269133515785, "post_ms": 34.52170336318616}, "recent_latency_p50_ms": 355.6006674998571, "recent_latency_p95_ms": 388.49409299996296, "memory_kib": {"MemAvailable": 1627120, "CmaTotal": 1024000, "CmaFree": 39748, "VmHWM": 391812, "VmRSS": 284100}, "peak_rss_kib": 391812, "min_cma_free_kib": 39748, "min_mem_available_kib": 1627120, "workers": 1, "slots": 2, "interval_fps": 6.349715126429988}
+13:34:56 
+13:34:58 SUMMARY {"elapsed_s": 53.38103615, "frames": 329, "fps": 6.163237429028436, "rgb_frames": 766, "depth_frames": 1296, "invalid_depth": 0, "paired_frames": 325, "published_frames": 329, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 73.67334119140523, "dpu_ms": 159.0692140039316, "post_ms": 34.54741437099429}, "recent_latency_p50_ms": 355.6006674998571, "recent_latency_p95_ms": 389.09387049966426, "memory_kib": {"MemAvailable": 1654540, "CmaTotal": 1024000, "CmaFree": 47104, "VmHWM": 391812, "VmRSS": 285692}, "peak_rss_kib": 391812, "min_cma_free_kib": 39748, "min_mem_available_kib": 1627120, "workers": 1, "slots": 2, "success": true, "stop_reason": "SIGINT", "last_detections": []}
+13:34:58 [INFO] [1791984898.939343709] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:35:03 [INFO] [1791984903.938859236] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+13:35:07 CLEANUP_OK {"MemAvailable": 1777056, "CmaTotal": 1024000, "CmaFree": 144692, "VmHWM": 391812, "VmRSS": 278000}
+13:35:08 ■ 操作结束，返回码 0；后台服务状态请查看总览。

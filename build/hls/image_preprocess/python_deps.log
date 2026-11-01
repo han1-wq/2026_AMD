@@ -1,0 +1,7 @@
+nohup: ignoring input
+Collecting numpy==1.24.4
+  Downloading numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+Collecting opencv-python-headless==4.10.0.84
+  Downloading opencv_python_headless-4.10.0.84-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.9 MB)
+Installing collected packages: numpy, opencv-python-headless
+Successfully installed numpy-1.24.4 opencv-python-headless-4.10.0.84

@@ -1,0 +1,1 @@
+../../../../../projects/ofdm/build_sw/dma_platform/hw/ps7_init.tcl

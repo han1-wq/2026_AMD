@@ -1,0 +1,1 @@
+../../../../../../src/ps/lerobot-deploy/lerobot/tests/configs/test_plugin_loading.py

@@ -1,0 +1,15 @@
+{
+  "board": "192.168.137.10",
+  "port": 5001,
+  "source": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/demo_source.png",
+  "source_bytes": 73944,
+  "source_sha256": "67baf57173fcc1a933e11441bed11528fb98cdf33ac62937fede91ed2609f4b6",
+  "count": 200,
+  "timeout_s": 30,
+  "persistent_connection": true,
+  "tcp_nodelay": true,
+  "scheduled_sleep_s": 0,
+  "start_local": "2026-10-09T04:31:36-0700",
+  "timeout_policy": "30s default whole-transfer deadline, not only socket idle timeout",
+  "measurement": "application records after RF FCS/ARQ; raw BER unavailable; counter deltas when supported"
+}

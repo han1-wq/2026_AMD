@@ -1,0 +1,61 @@
+nohup: ignoring input
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'amd' on host 'ubuntu' (Linux_x86_64 version 5.15.0-139-generic) on Tue Oct 13 03:44:01 PDT 2026
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/amd/Workspace/HLS_IP/image_preprocess'
+Sourcing Tcl script '/home/amd/Workspace/HLS_IP/image_preprocess/scripts/build.tcl'
+INFO: [HLS 200-1510] Running: open_project image_preprocess 
+INFO: [HLS 200-10] Creating and opening project '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess'.
+INFO: [HLS 200-1510] Running: set_top image_preprocess 
+INFO: [HLS 200-1510] Running: add_files /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp -cflags -std=c++14 -I/home/amd/Workspace/HLS_IP/image_preprocess/src 
+INFO: [HLS 200-10] Adding design file '/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp -cflags -std=c++14 -I/home/amd/Workspace/HLS_IP/image_preprocess/src 
+INFO: [HLS 200-10] Adding test bench file '/home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_200mhz -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.625 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: csim_design -clean 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../tb/test_image_preprocess.cpp in debug mode
+   Compiling ../../../../../src/image_preprocess.cpp in debug mode
+   Generating csim.exe
+CASE baseline_random_640x480 completed
+CASE quantization_clip completed
+CASE odd_stride completed
+CASE enhanced_tensor_preview completed
+CASE raw_tensor_enhanced_preview completed
+CASE gray_equalize completed
+CASE constant_histogram completed
+CASE two_bin_histogram completed
+CASE previous_first completed
+CASE previous_second completed
+CASE previous_config_reset completed
+CASE previous_leave_mode completed
+CASE previous_reenter completed
+CASE preview_only_limits completed
+CASE preview_black completed
+CASE identity_resize completed
+CASE maximum_geometry completed
+PASS: 0 failures
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 34.07 seconds. CPU system time: 1.76 seconds. Elapsed time: 34.11 seconds; current allocated memory: -1033.656 MB.
+INFO: [HLS 200-112] Total CPU user time: 35.14 seconds. Total CPU system time: 3.92 seconds. Total elapsed time: 36.07 seconds; peak allocated memory: 217.555 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Oct 13 03:44:36 2026...

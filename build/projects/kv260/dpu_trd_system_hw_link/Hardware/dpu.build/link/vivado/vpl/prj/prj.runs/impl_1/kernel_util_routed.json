@@ -1,0 +1,96 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "design_state": "Routed",
+    "user_budget": {
+        "actual_resources": {
+            "LUT": "71444",
+            "LUTAsMem": "7605",
+            "REG": "108644",
+            "BRAM": "105",
+            "URAM": "40",
+            "DSP": "642"
+        },
+        "supply_resources": {
+            "LUT": "107593",
+            "LUTAsMem": "55719",
+            "REG": "214733",
+            "BRAM": "131",
+            "URAM": "64",
+            "DSP": "1248"
+        }
+    },
+    "kernels": [
+        {
+            "name": "DPUCZDX8G",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "DPUCZDX8G_1",
+                    "actual_resources": {
+                        "LUT": "45041",
+                        "LUTAsMem": "4864",
+                        "REG": "80467",
+                        "BRAM": "78",
+                        "URAM": "40",
+                        "DSP": "566"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "image_preprocess",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "image_preprocess_1",
+                    "actual_resources": {
+                        "LUT": "12416",
+                        "LUTAsMem": "1861",
+                        "REG": "12827",
+                        "BRAM": "11",
+                        "URAM": "0",
+                        "DSP": "37"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "sfm_xrt_top",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "sfm_xrt_top_1",
+                    "actual_resources": {
+                        "LUT": "9616",
+                        "LUTAsMem": "528",
+                        "REG": "8146",
+                        "BRAM": "4",
+                        "URAM": "0",
+                        "DSP": "14"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "yolo_postprocess",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "yolo_postprocess_1",
+                    "actual_resources": {
+                        "LUT": "4371",
+                        "LUTAsMem": "352",
+                        "REG": "7204",
+                        "BRAM": "12",
+                        "URAM": "0",
+                        "DSP": "25"
+                    }
+                }
+            ]
+        }
+    ]
+}

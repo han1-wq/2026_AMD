@@ -1,0 +1,73 @@
+{
+  "checked_at_utc": "2026-10-30T21:06:02.945940+00:00",
+  "ok": true,
+  "scope": "Skill expansion and checker only; business regression not rerun",
+  "hardware_actions": false,
+  "network_actions": false,
+  "business_regression_rerun": false,
+  "checks": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools/check_skills.py"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"package_root\": \"/home/amd/kv260-ofdm-reproduction\",\n  \"modules\": 12,\n  \"documents_checked\": 21,\n  \"imported_documents\": 1,\n  \"hardware_actions\": false,\n  \"documented_commands_executed\": false,\n  \"errors\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/skill/tools",
+        "-p",
+        "test_check_skills.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_documented_command_is_not_executed (test_check_skills.SkillChecks) ... ok\ntest_duplicate_module (test_check_skills.SkillChecks) ... ok\ntest_duplicate_skill_name (test_check_skills.SkillChecks) ... ok\ntest_empty_section (test_check_skills.SkillChecks) ... ok\ntest_imported_hash_changed (test_check_skills.SkillChecks) ... ok\ntest_malformed_json (test_check_skills.SkillChecks) ... ok\ntest_missing_frontmatter (test_check_skills.SkillChecks) ... ok\ntest_missing_reference (test_check_skills.SkillChecks) ... ok\ntest_missing_section (test_check_skills.SkillChecks) ... ok\ntest_relative_reference (test_check_skills.SkillChecks) ... ok\ntest_symlink_escape (test_check_skills.SkillChecks) ... ok\ntest_unclosed_code_fence (test_check_skills.SkillChecks) ... ok\ntest_unregistered_skill (test_check_skills.SkillChecks) ... ok\ntest_unsafe_default_scope (test_check_skills.SkillChecks) ... ok\ntest_valid_catalog (test_check_skills.SkillChecks) ... ok\ntest_wrong_catalog_root (test_check_skills.SkillChecks) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.059s\n\nOK\n"
+    }
+  ],
+  "shell_blocks_syntax_checked": 16,
+  "python_files_ast_checked": 2,
+  "source_manifest_rows": 31528,
+  "source_manifest_destinations_unique": true,
+  "protected_hashes": {
+    "/home/amd/kv260-ofdm-reproduction/report/source_manifest.csv": "b715424460ba9a87bf419dd5a53ac4fe4e3c13cbed5fb1a678102a247447090b",
+    "/home/amd/kv260-ofdm-reproduction/report/source_inventory.json": "23f0ce2a83ce20b1588c80100b89caf257a77de8219dc837b91cd1e43482bd97",
+    "/home/amd/kv260-ofdm-reproduction/report/excluded_files.json": "702fc66f34362cc919bdefbb9eac34e2421c877324ff2d150b6cb3b4de201dd1",
+    "/home/amd/kv260-ofdm-reproduction/skill/imported/roarm_console/visual-servo/SKILL.md": "55a9b64903b774fb9310a2529a114f7cb257871932f469d36d348840088bb5f8"
+  },
+  "new_skill_files": [
+    "/home/amd/kv260-ofdm-reproduction/skill/catalog.json",
+    "/home/amd/kv260-ofdm-reproduction/skill/delivery-audit/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/hls-postprocess/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/hls-preprocess/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/host-integration/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/kv260-vision/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/lerobot-act/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/ofdm-firmware/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/ofdm-link-dma/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/EXECUTION_CONTRACT.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/TROUBLESHOOTING.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/VALIDATION_MATRIX.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/roarm-servo/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/so101-teleop/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/GAP_RECORD.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/INTEGRATION_HANDOFF.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/RUN_RECORD.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/check_skills.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/tools/test_check_skills.py",
+    "/home/amd/kv260-ofdm-reproduction/skill/vivado-platform/SKILL.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/x3plus-navigation/SKILL.md"
+  ],
+  "next_gate": "Compare all package changes against saved baseline, then source comparison and seal; final result in report/verification.json."
+}

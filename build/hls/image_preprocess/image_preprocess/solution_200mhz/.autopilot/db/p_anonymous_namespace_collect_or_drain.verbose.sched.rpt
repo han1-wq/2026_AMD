@@ -1,0 +1,134 @@
+
+
+================================================================
+== Vitis HLS Report for 'p_anonymous_namespace_collect_or_drain'
+================================================================
+* Date:           Tue Oct 13 19:40:18 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        image_preprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.490 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |   173060|  4147204|  0.865 ms|  20.736 ms|  173060|  4147204|       no|
+    +---------+---------+----------+-----------+--------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.86>
+ST_1 : Operation 4 [1/1] (1.83ns)   --->   "%mul_ln1540_loc_read = read i22 @_ssdm_op_Read.ap_fifo.i22P0A, i22 %mul_ln1540_loc"   --->   Operation 4 'read' 'mul_ln1540_loc_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 22> <Depth = 2> <FIFO>
+ST_1 : Operation 5 [1/1] (1.86ns)   --->   "%collect_read = read i1 @_ssdm_op_Read.ap_fifo.i1P0A, i1 %collect" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:250->/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423]   --->   Operation 5 'read' 'collect_read' <Predicate = true> <Delay = 1.86> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 5> <FIFO>
+
+State 2 <SV = 1> <Delay = 1.48>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i22 %mul_ln1540_loc, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %collect, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %hist, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 8 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hist_pixels, void @empty_3, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 10 'wait' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln253 = br i1 %collect_read, void %for.inc10.i.preheader, void %for.inc.i.preheader" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:253->/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423]   --->   Operation 11 'br' 'br_ln253' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [2/2] (1.48ns)   --->   "%call_ln0 = call void @(anonymous namespace)collect_or_drain_Pipeline_VITIS_LOOP_261_2, i22 %mul_ln1540_loc_read, i8 %hist_pixels"   --->   Operation 12 'call' 'call_ln0' <Predicate = (!collect_read)> <Delay = 1.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 13 [2/2] (1.48ns)   --->   "%call_ln0 = call void @(anonymous namespace)collect_or_drain_Pipeline_VITIS_LOOP_254_1, i22 %mul_ln1540_loc_read, i8 %hist_pixels, i32 %hist"   --->   Operation 13 'call' 'call_ln0' <Predicate = (collect_read)> <Delay = 1.48> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 14 [1/2] (0.00ns)   --->   "%call_ln0 = call void @(anonymous namespace)collect_or_drain_Pipeline_VITIS_LOOP_261_2, i22 %mul_ln1540_loc_read, i8 %hist_pixels"   --->   Operation 14 'call' 'call_ln0' <Predicate = (!collect_read)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln0 = br void %(anonymous namespace)collect_or_drain.exit"   --->   Operation 15 'br' 'br_ln0' <Predicate = (!collect_read)> <Delay = 0.00>
+ST_3 : Operation 16 [1/2] (0.00ns)   --->   "%call_ln0 = call void @(anonymous namespace)collect_or_drain_Pipeline_VITIS_LOOP_254_1, i22 %mul_ln1540_loc_read, i8 %hist_pixels, i32 %hist"   --->   Operation 16 'call' 'call_ln0' <Predicate = (collect_read)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln0 = br void %(anonymous namespace)collect_or_drain.exit"   --->   Operation 17 'br' 'br_ln0' <Predicate = (collect_read)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln423 = ret" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423]   --->   Operation 18 'ret' 'ret_ln423' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.86ns
+The critical path consists of the following:
+	fifo read operation ('collect_read', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:250->/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423) on port 'collect' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:250->/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423) [8]  (1.86 ns)
+
+ <State 2>: 1.49ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to '(anonymous namespace)collect_or_drain_Pipeline_VITIS_LOOP_261_2' [14]  (1.49 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

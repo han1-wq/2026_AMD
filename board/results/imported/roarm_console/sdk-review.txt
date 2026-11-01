@@ -1,0 +1,16 @@
+    def _mesg(self, genre, *args):
+        """
+        Args:
+            genre: command type (Command)
+            *args: other data.
+                   It is converted to octal by default.
+                   If the data needs to be encapsulated into hexadecimal,
+                   the array is used to include them. (Data cannot be nested)
+        """
+        real_command = super(roarm, self)._mesg(genre, *args)  
+        if self.thread_lock:
+            with self.lock:
+                return self._res(real_command, genre)
+        else:
+            return self._res(real_command, genre)
+

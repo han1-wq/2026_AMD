@@ -1,0 +1,26 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tmp/ofdm_capture_residual.tcl -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2022.1.0
+  ****** Build date   : Apr 12 2022-12:12:08
+    **** Build number : 2022.1.1649790728
+      ** Copyright 2017-2026 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0ABC01A
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 20:25:54
+{"seq": 223, "status": 0, "flags": 3, "length": 64, "tx": "cc4053323d31d2f01d4a79f38eff9c3c258ea1a98000d94707d5f57f2ccad03081ffd5632e54521e168dc74288783439311214d833b28fe67098b4891319d6cd", "rx": "cc4053323d31d2f01d4a79f38eff9c3c258ea1a98000d94707d5f57f2ccad03081ffd5632e54521e168dc74288783439311214d833b28fe67098b4891319d6cd"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 20:25:54
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 20:25:55 2026...

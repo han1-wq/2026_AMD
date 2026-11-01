@@ -1,0 +1,345 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "build_metadata": {
+        "dsa": {
+            "vendor": "xilinx",
+            "board_id": "kv260",
+            "name": "kv260_hardware_platform",
+            "version_major": "0",
+            "version_minor": "0",
+            "description": "",
+            "generated_by": {
+                "name": "Vivado",
+                "version": "2022.1",
+                "cl": "3526262",
+                "time_stamp": "Wed Oct 14 01:19:18 2026"
+            },
+            "board": {
+                "name": "xilinx.com:kv260_som:1.3",
+                "vendor": "xilinx.com",
+                "part": "XCK26-SFVC784-2LV-C",
+                "board_part": "xilinx.com:kv260_som:part0:1.3"
+            },
+            "feature_roms": [
+                {
+                    "time_epoch": "0"
+                }
+            ]
+        },
+        "xclbin": {
+            "generated_by": {
+                "name": "v++",
+                "version": "2022.1",
+                "cl": "3524075",
+                "time_stamp": "2022-04-13-17:42:45",
+                "options": "\/tools\/Xilinx\/Vitis\/2022.1\/bin\/unwrapped\/lnx64.o\/v++ --advanced.misc solution_name=link --clock.freqHz 300000000:DPUCZDX8G_1.aclk --clock.freqHz 600000000:DPUCZDX8G_1.ap_clk_2 --config dpu-link.cfg --connectivity.nk DPUCZDX8G:1:DPUCZDX8G_1 --connectivity.nk sfm_xrt_top:1:sfm_xrt_top_1 --connectivity.sp DPUCZDX8G_1.M_AXI_GP0:HPC0 --connectivity.sp DPUCZDX8G_1.M_AXI_HP0:HP0 --connectivity.sp DPUCZDX8G_1.M_AXI_HP2:HP1 --input_files ..\/..\/dpu_trd_kernels\/Hardware\/DPUCZDX8G.xo --input_files ..\/..\/dpu_trd_kernels\/Hardware\/sfm_xrt_top.xo --link --log_dir dpu.build\/logs --messageDb dpu.mdb --optimize 0 --output dpu.xclbin --platform \/home\/amd\/Workspace\/dpu_platform2\/kv260_vitis_platform\/dpu_base\/export\/dpu_base\/dpu_base.xpfm --remote_ip_cache \/home\/amd\/Workspace\/dpu_platform2\/kv260_vitis_platform\/ip_cache --report_dir dpu.build\/reports --report_level 0 --save-temps --target hw --temp_dir dpu.build "
+            },
+            "user_regions": [
+                {
+                    "name": "OCL_REGION_0",
+                    "type": "clc_region",
+                    "instance_path": "",
+                    "base_address": "",
+                    "kernels": [
+                        {
+                            "name": "sfm_xrt_top",
+                            "ports": [
+                                {
+                                    "name": "s_axi_control",
+                                    "mode": "slave",
+                                    "range": "0x00001000",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "name": "sm_doneclr",
+                                    "address_qualifier": "0",
+                                    "id": "0",
+                                    "port": "s_axi_control",
+                                    "size": "0x4",
+                                    "offset": "0x40",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "sm_cmd_x_len",
+                                    "address_qualifier": "0",
+                                    "id": "1",
+                                    "port": "s_axi_control",
+                                    "size": "0x4",
+                                    "offset": "0x44",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "sm_cmd_y_len",
+                                    "address_qualifier": "0",
+                                    "id": "2",
+                                    "port": "s_axi_control",
+                                    "size": "0x4",
+                                    "offset": "0x48",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "sm_src_addr",
+                                    "address_qualifier": "1",
+                                    "id": "3",
+                                    "port": "M_AXI",
+                                    "size": "0x8",
+                                    "offset": "0x4c",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "sm_dst_addr",
+                                    "address_qualifier": "1",
+                                    "id": "4",
+                                    "port": "M_AXI",
+                                    "size": "0x8",
+                                    "offset": "0x54",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "sm_cmd_scale",
+                                    "address_qualifier": "0",
+                                    "id": "5",
+                                    "port": "s_axi_control",
+                                    "size": "0x4",
+                                    "offset": "0x5c",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "sm_cmd_offset",
+                                    "address_qualifier": "0",
+                                    "id": "6",
+                                    "port": "s_axi_control",
+                                    "size": "0x4",
+                                    "offset": "0x60",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                }
+                            ],
+                            "instances": [
+                                {
+                                    "name": "sfm_xrt_top_1"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "DPUCZDX8G",
+                            "ports": [
+                                {
+                                    "name": "S_AXI_CONTROL",
+                                    "mode": "slave",
+                                    "range": "0x00001000",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI_GP0",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI_HP0",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "128",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI_HP2",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "128",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "name": "dpu_doneclr",
+                                    "address_qualifier": "0",
+                                    "id": "0",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x40",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_prof_en",
+                                    "address_qualifier": "0",
+                                    "id": "1",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x44",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_cmd",
+                                    "address_qualifier": "0",
+                                    "id": "2",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x48",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_instr_addr",
+                                    "address_qualifier": "1",
+                                    "id": "3",
+                                    "port": "M_AXI_GP0",
+                                    "size": "0x8",
+                                    "offset": "0x50",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_prof_addr",
+                                    "address_qualifier": "1",
+                                    "id": "4",
+                                    "port": "M_AXI_GP0",
+                                    "size": "0x8",
+                                    "offset": "0x58",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base0_addr",
+                                    "address_qualifier": "1",
+                                    "id": "5",
+                                    "port": "M_AXI_HP0",
+                                    "size": "0x8",
+                                    "offset": "0x60",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base1_addr",
+                                    "address_qualifier": "1",
+                                    "id": "6",
+                                    "port": "M_AXI_HP0",
+                                    "size": "0x8",
+                                    "offset": "0x68",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base2_addr",
+                                    "address_qualifier": "1",
+                                    "id": "7",
+                                    "port": "M_AXI_HP0",
+                                    "size": "0x8",
+                                    "offset": "0x70",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base3_addr",
+                                    "address_qualifier": "1",
+                                    "id": "8",
+                                    "port": "M_AXI_HP0",
+                                    "size": "0x8",
+                                    "offset": "0x78",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base4_addr",
+                                    "address_qualifier": "1",
+                                    "id": "9",
+                                    "port": "M_AXI_HP2",
+                                    "size": "0x8",
+                                    "offset": "0x80",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base5_addr",
+                                    "address_qualifier": "1",
+                                    "id": "10",
+                                    "port": "M_AXI_HP2",
+                                    "size": "0x8",
+                                    "offset": "0x88",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base6_addr",
+                                    "address_qualifier": "1",
+                                    "id": "11",
+                                    "port": "M_AXI_HP2",
+                                    "size": "0x8",
+                                    "offset": "0x90",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                },
+                                {
+                                    "name": "dpu_base7_addr",
+                                    "address_qualifier": "1",
+                                    "id": "12",
+                                    "port": "M_AXI_HP2",
+                                    "size": "0x8",
+                                    "offset": "0x98",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "int*"
+                                }
+                            ],
+                            "instances": [
+                                {
+                                    "name": "DPUCZDX8G_1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

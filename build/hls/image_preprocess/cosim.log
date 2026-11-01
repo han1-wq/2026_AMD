@@ -1,0 +1,57 @@
+nohup: ignoring input
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'amd' on host 'ubuntu' (Linux_x86_64 version 5.15.0-139-generic) on Tue Oct 13 03:47:49 PDT 2026
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/amd/Workspace/HLS_IP/image_preprocess'
+Sourcing Tcl script '/home/amd/Workspace/HLS_IP/image_preprocess/scripts/build.tcl'
+INFO: [HLS 200-1510] Running: open_project image_preprocess 
+INFO: [HLS 200-10] Opening project '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess'.
+INFO: [HLS 200-1510] Running: set_top image_preprocess 
+INFO: [HLS 200-1510] Running: add_files /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp -cflags -std=c++14 -I/home/amd/Workspace/HLS_IP/image_preprocess/src 
+INFO: [HLS 200-10] Adding design file '/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp -cflags -std=c++14 -I/home/amd/Workspace/HLS_IP/image_preprocess/src 
+INFO: [HLS 200-10] Adding test bench file '/home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_200mhz -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.625 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: cosim_design -rtl verilog -tool xsim -argv --smoke -trace_level none 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling test_image_preprocess.cpp_pre.cpp.tb.cpp
+   Compiling apatb_image_preprocess.cpp
+   Compiling image_preprocess.cpp_pre.cpp.tb.cpp
+   Compiling apatb_image_preprocess_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 9 seconds. CPU system time: 1.7 seconds. Elapsed time: 10.08 seconds; current allocated memory: -1022.039 MB.
+command 'ap_source' returned error code
+    while executing
+"source /home/amd/Workspace/HLS_IP/image_preprocess/scripts/build.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [HLS 200-112] Total CPU user time: 10.31 seconds. Total CPU system time: 2.83 seconds. Total elapsed time: 11.76 seconds; peak allocated memory: 232.113 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Oct 13 03:48:00 2026...

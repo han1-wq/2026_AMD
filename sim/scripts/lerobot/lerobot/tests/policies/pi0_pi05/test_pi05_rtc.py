@@ -1,0 +1,1 @@
+../../../../../../../src/ps/lerobot-deploy/lerobot/tests/policies/pi0_pi05/test_pi05_rtc.py

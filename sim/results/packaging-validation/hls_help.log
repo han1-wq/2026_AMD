@@ -1,0 +1,2 @@
+Usage: bash build_hls.sh {image_preprocess|yolo_postprocess} {csim|synth|cosim|export|all}
+Set VITIS_HLS to the 2022.1 executable if installed elsewhere.

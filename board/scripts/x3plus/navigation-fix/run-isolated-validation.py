@@ -1,0 +1,1 @@
+../../../../src/ps/x3plus-kv260-docker/navigation-fix/run-isolated-validation.py

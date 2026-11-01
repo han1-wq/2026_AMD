@@ -1,0 +1,343 @@
+{
+  "vision": {
+    "connected": true,
+    "error": "",
+    "age_s": 0.483,
+    "frames": 57,
+    "stamp": 1791807820.3005996,
+    "width": 640,
+    "height": 480,
+    "depth_sync_ms": 18.97,
+    "detections": {
+      "stamp": {
+        "sec": 1791807820,
+        "nanosec": 300599498
+      },
+      "frame_id": "camera_color_optical_frame",
+      "image_width": 640,
+      "image_height": 480,
+      "sync_delta_ms": 18.965,
+      "dpu_ms": 116.622,
+      "depth": {
+        "topic": "/camera/depth/image_raw",
+        "encoding": "16UC1",
+        "unit": "mm",
+        "width": 320,
+        "height": 240,
+        "mapping": "normalized_rgb_coordinates_without_calibration"
+      },
+      "detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.973923,
+          "bbox": {
+            "x1": 373,
+            "y1": 218,
+            "x2": 457,
+            "y2": 446
+          },
+          "depth_valid": true,
+          "depth_mm": 711.0,
+          "depth_m": 0.711,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 194,
+            "y1": 131,
+            "x2": 221,
+            "y2": 201
+          },
+          "valid_depth_pixels": 109
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.687132,
+          "bbox": {
+            "x1": 394,
+            "y1": 29,
+            "x2": 516,
+            "y2": 83
+          },
+          "depth_valid": true,
+          "depth_mm": 1104.0,
+          "depth_m": 1.104,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 209,
+            "y1": 19,
+            "x2": 246,
+            "y2": 37
+          },
+          "valid_depth_pixels": 537
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.552065,
+          "bbox": {
+            "x1": 50,
+            "y1": 1,
+            "x2": 189,
+            "y2": 85
+          },
+          "depth_valid": true,
+          "depth_mm": 2834.0,
+          "depth_m": 2.834,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 39,
+            "y1": 8,
+            "x2": 81,
+            "y2": 35
+          },
+          "valid_depth_pixels": 1088
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.311417,
+          "bbox": {
+            "x1": 187,
+            "y1": 53,
+            "x2": 244,
+            "y2": 95
+          },
+          "depth_valid": true,
+          "depth_mm": 2658.0,
+          "depth_m": 2.658,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 98,
+            "y1": 30,
+            "x2": 117,
+            "y2": 44
+          },
+          "valid_depth_pixels": 266
+        }
+      ],
+      "tracked_detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.974797,
+          "bbox": {
+            "x1": 373,
+            "y1": 218,
+            "x2": 457,
+            "y2": 446
+          },
+          "depth_valid": true,
+          "depth_mm": 711.0,
+          "depth_m": 0.711,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 194,
+            "y1": 131,
+            "x2": 221,
+            "y2": 201
+          },
+          "valid_depth_pixels": 109,
+          "track_id": 1,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.547312,
+          "bbox": {
+            "x1": 52,
+            "y1": 1,
+            "x2": 191,
+            "y2": 84
+          },
+          "depth_valid": true,
+          "depth_mm": 2834.0,
+          "depth_m": 2.834,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 39,
+            "y1": 8,
+            "x2": 81,
+            "y2": 35
+          },
+          "valid_depth_pixels": 1088,
+          "track_id": 2564,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.689038,
+          "bbox": {
+            "x1": 394,
+            "y1": 29,
+            "x2": 516,
+            "y2": 83
+          },
+          "depth_valid": true,
+          "depth_mm": 1104.0,
+          "depth_m": 1.104,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 209,
+            "y1": 19,
+            "x2": 246,
+            "y2": 37
+          },
+          "valid_depth_pixels": 537,
+          "track_id": 3260,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.31064,
+          "bbox": {
+            "x1": 186,
+            "y1": 53,
+            "x2": 243,
+            "y2": 95
+          },
+          "depth_valid": true,
+          "depth_mm": 2658.0,
+          "depth_m": 2.658,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 98,
+            "y1": 30,
+            "x2": 117,
+            "y2": 44
+          },
+          "valid_depth_pixels": 266,
+          "track_id": 3397,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.316309,
+          "bbox": {
+            "x1": 270,
+            "y1": 0,
+            "x2": 344,
+            "y2": 54
+          },
+          "depth_unit": "mm",
+          "depth_image_size": null,
+          "depth_sample_roi": null,
+          "valid_depth_pixels": 0,
+          "track_id": 3401,
+          "tracking_state": "held",
+          "held": true,
+          "depth_valid": true,
+          "depth_mm": 3465.0,
+          "depth_m": 3.465,
+          "depth_stale": false
+        }
+      ],
+      "tracking": {
+        "enabled": true,
+        "held_count": 1,
+        "iou_threshold": 0.35,
+        "max_age_ms": 500,
+        "depth_stale_ms": 300
+      }
+    }
+  },
+  "model": {
+    "base_url": "https://code.rayinai.com/v1",
+    "model": "gpt-6-astra",
+    "mode": "responses",
+    "effort": "medium",
+    "key_configured": false
+  },
+  "task": "把瓶子远离相机推一点",
+  "direction": "away_from_camera",
+  "phase": "idle",
+  "busy": false,
+  "error": "",
+  "result": null,
+  "feedback": {
+    "id": 1,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.0,
+    "dispatch": "not_sent",
+    "motion_verified": false,
+    "source": "serial_encoder",
+    "time": 1791807820.3192675
+  },
+  "feedback_age_s": 0.56,
+  "events": [
+    {
+      "time": "05:23:40",
+      "text": "已读取串口编码器反馈；未发送运动命令"
+    }
+  ],
+  "motion_enabled": true,
+  "motion_block": "实机闭环可执行模型选择的低速单关节短步；先标定局部视觉方向，再接近与推动"
+}

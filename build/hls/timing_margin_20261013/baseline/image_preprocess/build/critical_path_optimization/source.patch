@@ -1,0 +1,41 @@
+--- image_preprocess/src/image_preprocess.cpp.before
++++ image_preprocess/src/image_preprocess.cpp
+@@ -178,17 +178,32 @@
+ #pragma HLS PIPELINE II=1
+         if (!first && hist[i]) first = hist[i];
+     }
+-    unsigned denominator = n - first;
+-    unsigned cdf = 0;
++    // The validated frame has at most 1920*1080 pixels. The quotient is
++    // always in [0,255], so a 32-bit general-purpose divider is unnecessary.
++    ap_uint<22> denominator = n - first;
++    ap_uint<22> cdf = 0;
+     for (unsigned i = 0; i < 256; ++i) {
+ #pragma HLS PIPELINE off
+         cdf += hist[i];
+         if (!denominator) lut[i] = i;
+         else {
+-            ap_uint<40> numerator = ap_uint<40>(cdf >= first ? cdf-first : 0) * 255;
+-            unsigned q = numerator / denominator;
+-            unsigned rem = numerator - ap_uint<40>(q) * denominator;
+-            if (2*rem > denominator || (2*rem == denominator && (q & 1))) ++q;
++            ap_uint<22> normalized = cdf >= first
++                ? ap_uint<22>(cdf - first) : ap_uint<22>(0);
++            ap_uint<30> remainder = normalized * 255;
++            ap_uint<8> q = 0;
++            // Restoring division for exactly eight quotient bits. Keep the
++            // remainder for nearest-even rounding instead of multiplying q
++            // back by the denominator.
++            for (int bit = 7; bit >= 0; --bit) {
++#pragma HLS PIPELINE off
++                ap_uint<30> step = ap_uint<30>(denominator) << bit;
++                if (remainder >= step) {
++                    remainder -= step;
++                    q[bit] = 1;
++                }
++            }
++            ap_uint<23> twice = ap_uint<23>(remainder) << 1;
++            if (twice > denominator || (twice == denominator && q[0])) ++q;
+             lut[i] = q;
+         }
+     }

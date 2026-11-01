@@ -1,0 +1,13 @@
+[
+  "/usr/bin/python3",
+  "-u",
+  "-B",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/host/dma_image_benchmark.py",
+  "192.168.137.10",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/demo_source.png",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/images_400",
+  "--count",
+  "400",
+  "--timeout",
+  "30"
+]

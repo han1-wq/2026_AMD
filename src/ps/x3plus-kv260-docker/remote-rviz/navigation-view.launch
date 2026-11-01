@@ -1,0 +1,5 @@
+<launch>
+    <arg name="viewer_name" default="pc_navigation_rviz"/>
+    <node pkg="rviz" type="rviz" name="$(arg viewer_name)" required="true"
+          args="-d /pc-rviz/navigation.rviz"/>
+</launch>

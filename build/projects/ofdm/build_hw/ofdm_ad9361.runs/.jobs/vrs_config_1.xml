@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="cordic_arctan_coarse_synth_1" LaunchDir="/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/cordic_arctan_coarse_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_for_bpsk_param_gain_synth_1" LaunchDir="/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/ila_for_bpsk_param_gain_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="viterbi_0_synth_1" LaunchDir="/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ila_0_synth_1" LaunchDir="/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/ila_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="cordic_arctan_coarse_synth_1"/>
+		<Parent Id="ila_for_bpsk_param_gain_synth_1"/>
+		<Parent Id="viterbi_0_synth_1"/>
+		<Parent Id="ila_0_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

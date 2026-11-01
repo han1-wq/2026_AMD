@@ -1,0 +1,2 @@
+FATAL: /home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_rs_control.sv:68: Recovery failed
+       Time: 385360000 Scope: tb_rs_control.recover

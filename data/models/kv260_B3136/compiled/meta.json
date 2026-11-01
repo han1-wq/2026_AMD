@@ -1,0 +1,8 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "yolov4_leaky_416_tf.xmodel",
+    "kernel": [
+        "subgraph_add\/add"
+    ],
+    "target": "DPUCZDX8G_ISA1_B3136"
+}

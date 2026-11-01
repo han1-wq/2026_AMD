@@ -1,0 +1,45 @@
+{
+  "elapsed_s": 30.314895080000042,
+  "frames": 197,
+  "fps": 6.498455610026796,
+  "rgb_frames": 450,
+  "depth_frames": 951,
+  "invalid_depth": 0,
+  "paired_frames": 197,
+  "overflow_fallback_frames": 0,
+  "recent_mean_ms": {
+    "pre_ms": 5.918169609122479,
+    "dpu_ms": 299.01851999998627,
+    "post_ms": 33.61149290862999
+  },
+  "recent_latency_p50_ms": 485.77941099983946,
+  "recent_latency_p95_ms": 515.8333812000819,
+  "memory_kib": {
+    "MemAvailable": 1632280,
+    "CmaTotal": 1024000,
+    "CmaFree": 54396,
+    "VmHWM": 393796,
+    "VmRSS": 287272
+  },
+  "peak_rss_kib": 393796,
+  "min_cma_free_kib": 54396,
+  "min_mem_available_kib": 1632060,
+  "workers": 2,
+  "slots": 3,
+  "success": true,
+  "last_detections": [
+    {
+      "bbox": [
+        333.8581848144531,
+        66.29808044433594,
+        442.1033935546875,
+        244.0865478515625
+      ],
+      "score": 0.923625648021698,
+      "class_id": 0,
+      "class_name": "person",
+      "depth_m": 1.057,
+      "valid_depth_pixels": 383
+    }
+  ]
+}

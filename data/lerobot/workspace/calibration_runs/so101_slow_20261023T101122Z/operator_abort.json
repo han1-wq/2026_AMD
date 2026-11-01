@@ -1,0 +1,16 @@
+{
+  "reason": "Observed zero-width provisional ranges for elbow_flex and wrist_flex; abort invalid calibration without retry",
+  "state_at_abort": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 315308,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-23T10:22:11.660216529Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  }
+}

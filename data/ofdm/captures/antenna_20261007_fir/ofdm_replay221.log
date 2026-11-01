@@ -1,0 +1,95 @@
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/antenna_replay/xsim_script.tcl
+# xsim {antenna_replay} -testplusarg INPUT=/tmp/ofdm_new_capture_221.csv.txt -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module ofdm_rx_replay.rx.u_bpsk_deinterleaver.u_rom_pattern_store.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Note: file_written romlifo is true
+Time: 0 ps  Iteration: 0  Process: /ofdm_rx_replay/rx/u_bpsk_data_viterbi_decoders/data_decoder.u_core/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17391  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written romwe is true
+Time: 0 ps  Iteration: 0  Process: /ofdm_rx_replay/rx/u_bpsk_data_viterbi_decoders/data_decoder.u_core/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17387  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written rombram is true
+Time: 0 ps  Iteration: 0  Process: /ofdm_rx_replay/rx/u_bpsk_data_viterbi_decoders/data_decoder.u_core/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17383  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written romlifo is true
+Time: 0 ps  Iteration: 0  Process: /ofdm_rx_replay/rx/u_viterbi_decoders/signal_decoder.u_impl/u_viterbi_0/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17391  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written romwe is true
+Time: 0 ps  Iteration: 0  Process: /ofdm_rx_replay/rx/u_viterbi_decoders/signal_decoder.u_impl/u_viterbi_0/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17387  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written rombram is true
+Time: 0 ps  Iteration: 0  Process: /ofdm_rx_replay/rx/u_viterbi_decoders/signal_decoder.u_impl/u_viterbi_0/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17383  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+BYTE 0 c0
+BYTE 1 1d
+BYTE 2 a3
+BYTE 3 1c
+BYTE 4 0d
+BYTE 5 2f
+BYTE 6 60
+BYTE 7 8a
+BYTE 8 08
+BYTE 9 09
+BYTE 10 0a
+BYTE 11 0b
+BYTE 12 0c
+BYTE 13 0d
+BYTE 14 f6
+BYTE 15 39
+BYTE 16 a2
+BYTE 17 8f
+BYTE 18 b2
+BYTE 19 d1
+BYTE 20 e8
+BYTE 21 bb
+BYTE 22 87
+BYTE 23 e2
+BYTE 24 1c
+BYTE 25 19
+BYTE 26 1a
+BYTE 27 1b
+BYTE 28 1c
+BYTE 29 1d
+BYTE 30 1e
+BYTE 31 1f
+BYTE 32 20
+BYTE 33 21
+BYTE 34 22
+BYTE 35 23
+BYTE 36 24
+BYTE 37 25
+BYTE 38 26
+BYTE 39 e7
+BYTE 40 34
+BYTE 41 88
+BYTE 42 1f
+BYTE 43 99
+BYTE 44 e0
+BYTE 45 3c
+BYTE 46 2e
+BYTE 47 2f
+BYTE 48 30
+BYTE 49 31
+BYTE 50 32
+BYTE 51 33
+BYTE 52 34
+BYTE 53 f9
+BYTE 54 a7
+BYTE 55 e7
+BYTE 56 08
+BYTE 57 86
+BYTE 58 b1
+BYTE 59 28
+BYTE 60 c8
+BYTE 61 73
+BYTE 62 0e
+BYTE 63 f0
+REPLAY_FCS ok=0 len=64 bytes=64
+$finish called at time : 80968750 ps : File "/tmp/ofdm_rx_replay.v" Line 29
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2707.516 ; gain = 0.000 ; free physical = 3913 ; free virtual = 12299
+exit
+INFO: xsimkernel Simulation Memory Usage: 167392 KB (Peak: 226784 KB), Simulation CPU Usage: 10750 ms
+INFO: [Common 17-206] Exiting xsim at Wed Oct  7 20:08:34 2026...

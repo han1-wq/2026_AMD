@@ -1,0 +1,45 @@
+{
+  "image_preprocess": {
+    "baseline_ooc": {
+      "lut": 13318.0,
+      "ff": 13002.0,
+      "bram_tiles": 11.5,
+      "dsp": 49.0,
+      "setup_wns_ns": 0.231
+    },
+    "candidate_ooc": {
+      "lut": 13758.0,
+      "ff": 14334.0,
+      "bram_tiles": 11.5,
+      "dsp": 55.0,
+      "setup_wns_ns": 0.927
+    },
+    "source_sha256": "1d91c7df1f387e6e7fc2e355e15bbf0624d6a4eaa6791834eccd932c20a00323",
+    "fixtures_identical_to_previous": {
+      "opencv_source.bgr": true,
+      "opencv_tensor.int8": true
+    }
+  },
+  "yolo_postprocess": {
+    "baseline_ooc": {
+      "lut": 7834.0,
+      "ff": 6436.0,
+      "bram_tiles": 12.0,
+      "dsp": 8.0,
+      "setup_wns_ns": 1.535
+    },
+    "candidate_ooc": {
+      "lut": 8180.0,
+      "ff": 7147.0,
+      "bram_tiles": 12.0,
+      "dsp": 8.0,
+      "setup_wns_ns": 1.736
+    },
+    "source_sha256": "62d63e6c944c813b495d9d129e96786d0a2b079582194fceac1995a0433a3423",
+    "fixtures_identical_to_previous": {
+      "fixture_input.bin": true,
+      "fixture_output.bin": true,
+      "fixture_tables.bin": true
+    }
+  }
+}

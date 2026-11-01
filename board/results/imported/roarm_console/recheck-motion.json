@@ -1,0 +1,494 @@
+{
+  "vision": {
+    "connected": true,
+    "error": "",
+    "age_s": 0.762,
+    "frames": 3220,
+    "stamp": 1791807286.390494,
+    "width": 640,
+    "height": 480,
+    "depth_sync_ms": 13.51,
+    "detections": {
+      "stamp": {
+        "sec": 1791807286,
+        "nanosec": 390494111
+      },
+      "frame_id": "camera_color_optical_frame",
+      "image_width": 640,
+      "image_height": 480,
+      "sync_delta_ms": 36.917,
+      "dpu_ms": 116.946,
+      "depth": {
+        "topic": "/camera/depth/image_raw",
+        "encoding": "16UC1",
+        "unit": "mm",
+        "width": 320,
+        "height": 240,
+        "mapping": "normalized_rgb_coordinates_without_calibration"
+      },
+      "detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.973923,
+          "bbox": {
+            "x1": 373,
+            "y1": 218,
+            "x2": 457,
+            "y2": 446
+          },
+          "depth_valid": true,
+          "depth_mm": 601.0,
+          "depth_m": 0.601,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 194,
+            "y1": 131,
+            "x2": 221,
+            "y2": 201
+          },
+          "valid_depth_pixels": 222
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.421481,
+          "bbox": {
+            "x1": 56,
+            "y1": 1,
+            "x2": 195,
+            "y2": 85
+          },
+          "depth_valid": true,
+          "depth_mm": 2858.0,
+          "depth_m": 2.858,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 42,
+            "y1": 8,
+            "x2": 84,
+            "y2": 35
+          },
+          "valid_depth_pixels": 1098
+        }
+      ],
+      "tracked_detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.975822,
+          "bbox": {
+            "x1": 373,
+            "y1": 218,
+            "x2": 457,
+            "y2": 446
+          },
+          "depth_valid": true,
+          "depth_mm": 601.0,
+          "depth_m": 0.601,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 194,
+            "y1": 131,
+            "x2": 221,
+            "y2": 201
+          },
+          "valid_depth_pixels": 222,
+          "track_id": 1,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.421777,
+          "bbox": {
+            "x1": 55,
+            "y1": 1,
+            "x2": 194,
+            "y2": 85
+          },
+          "depth_valid": true,
+          "depth_mm": 2858.0,
+          "depth_m": 2.858,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 42,
+            "y1": 8,
+            "x2": 84,
+            "y2": 35
+          },
+          "valid_depth_pixels": 1098,
+          "track_id": 2564,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 56,
+          "class_name": "chair",
+          "confidence": 0.372231,
+          "bbox": {
+            "x1": 189,
+            "y1": 0,
+            "x2": 328,
+            "y2": 178
+          },
+          "depth_unit": "mm",
+          "depth_image_size": null,
+          "depth_sample_roi": null,
+          "valid_depth_pixels": 0,
+          "track_id": 2922,
+          "tracking_state": "held",
+          "held": true,
+          "depth_valid": true,
+          "depth_mm": 1832.0,
+          "depth_m": 1.832,
+          "depth_stale": false
+        }
+      ],
+      "tracking": {
+        "enabled": true,
+        "held_count": 1,
+        "iou_threshold": 0.35,
+        "max_age_ms": 500,
+        "depth_stale_ms": 300
+      }
+    }
+  },
+  "model": {
+    "base_url": "https://code.rayinai.com/v1",
+    "model": "gpt-6-astra",
+    "mode": "responses",
+    "effort": "medium",
+    "key_configured": true
+  },
+  "task": "本轮仅一次自由空间腕部标定。上一轮你选J4 +0.009rad，但控制器因scene_change大于5在串口发送之前丢弃，确认没有发送0.009命令。累计已发送仅J4 +0.003和J1 +0.003，编码器均零变化。本轮请根据新图重新评估J4 +0.009是否有局部空隙，若有则实际选择它，诚实报告置信度。history有execution即表示已发送，此后blocked并step=null等待核验；history只有decision没有execution表示未发送（例如画面变化被丢弃），不要误认为执行未知。不要接近瓶子，不要执行第二步。末端位于上方中央，上游连杆从左侧伸入画面。",
+  "direction": "away_from_camera",
+  "phase": "error",
+  "busy": false,
+  "error": "编码器未到位或其他关节偏移；停止后续运动",
+  "result": {
+    "decision": {
+      "action": "calibrate",
+      "tip": [
+        350,
+        166
+      ],
+      "target": [
+        415,
+        333
+      ],
+      "goal_tip": null,
+      "confidence": 0.86,
+      "target_label": "指定饮料瓶",
+      "reason": "末端局部有空隙且与瓶子分离，仅选一次J4正向0.009弧度标定，发送后等待图像与编码器核验。",
+      "completion_evidence": "",
+      "contact_ready": false,
+      "step": {
+        "joint": 4,
+        "delta_rad": 0.009
+      },
+      "clearance_verified": true,
+      "mapping_verified": false
+    },
+    "latency_s": 10.042,
+    "usage": {
+      "input_tokens": 3234,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 65
+      },
+      "total_tokens": 3419,
+      "attribution": {
+        "items": {
+          "msg_0083321e6cbcec49016acccf2a389c81a1814d80343a8ccb4c": {
+            "input_tokens": 2316,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "content": [
+              {
+                "input_tokens": 1954,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              },
+              {
+                "input_tokens": 362,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 0
+              }
+            ]
+          },
+          "msg_0083321e6cbcec49016acccf2ec44881a1bc1c63e3ef94518f": {
+            "input_tokens": 0,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 120,
+            "content": [
+              {
+                "input_tokens": 0,
+                "cached_tokens": 0,
+                "cache_write_tokens": 0,
+                "output_tokens": 120
+              }
+            ]
+          },
+          "rs_0083321e6cbcec49016acccf2ec44c81a18517d114255fb03f": {
+            "input_tokens": 2,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 65
+          }
+        },
+        "request_fields": {
+          "instructions": {
+            "input_tokens": 916,
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0
+          }
+        }
+      }
+    },
+    "model": "gpt-6-astra",
+    "requested_effort": "medium",
+    "observed_stamp": 1791807271.6625667,
+    "observation_only": false
+  },
+  "feedback": {
+    "id": 25,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.006,
+    "source": "serial_encoder",
+    "time": 1791807282.6745145
+  },
+  "feedback_age_s": 4.51,
+  "events": [
+    {
+      "time": "05:03:07",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:03:07",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:03:22",
+      "text": "夹爪下缘尖端可见且与瓶子分离，局部短步空间清楚，先微动底座并比较图像与编码器。"
+    },
+    {
+      "time": "05:03:22",
+      "text": "操作结束：缺少可信短步或局部运动空间证据"
+    },
+    {
+      "time": "05:04:34",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:04:34",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:04:46",
+      "text": "夹爪上部被画面裁切，接触尖端及局部扫掠空间不明确；需补拍完整夹爪与周边空隙。"
+    },
+    {
+      "time": "05:04:46",
+      "text": "模型正在选择第 2 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:04:53",
+      "text": "新图仍裁切夹爪上缘，无法确认完整接触尖端及标定扫掠空隙；需补拍完整夹爪周边。"
+    },
+    {
+      "time": "05:04:53",
+      "text": "模型正在选择第 3 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:05:07",
+      "text": "夹爪上缘仍被裁切，无法核实微小标定的完整扫掠空隙；需补拍完整夹爪及周边，缩小步长不能消除盲区。"
+    },
+    {
+      "time": "05:05:07",
+      "text": "操作结束：连续三次无可执行动作：夹爪上缘仍被裁切，无法核实微小标定的完整扫掠空隙；需补拍完整夹爪及周边，缩小步长不能消除盲区。"
+    },
+    {
+      "time": "05:06:06",
+      "text": "已取消后续动作与在途模型结果；已发出的单个 ≤0.012 rad 短步可能完成；不是硬件急停"
+    },
+    {
+      "time": "05:11:17",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:11:17",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:11:34",
+      "text": "上方中央夹爪末端可见，左侧为上游连杆；末端局部留有间隙，可试J4正向最小标定步。"
+    },
+    {
+      "time": "05:11:34",
+      "text": "实机已执行 J4 +0.0030 rad；编码器 -0.0046 → -0.0046"
+    },
+    {
+      "time": "05:11:35",
+      "text": "模型正在选择第 2 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:11:42",
+      "text": "中央夹爪与左侧上游连杆可区分，但前后末端无可辨位移且J4编码器未变，需复核反馈并重观测。"
+    },
+    {
+      "time": "05:11:42",
+      "text": "模型正在选择第 3 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:11:51",
+      "text": "中央夹爪区别于左侧连杆，但标定后J4编码器仍未变、末端无可辨位移，需复核实际响应再标定。"
+    },
+    {
+      "time": "05:11:52",
+      "text": "模型正在选择第 4 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:12:03",
+      "text": "中央夹爪与左侧上游连杆可区分，末端局部有间隙；但J4编码器及前后图均无可辨变化，需核实实际响应。"
+    },
+    {
+      "time": "05:12:03",
+      "text": "操作结束：连续三次无可执行动作：中央夹爪与左侧上游连杆可区分，末端局部有间隙；但J4编码器及前后图均无可辨变化，需核实实际响应。"
+    },
+    {
+      "time": "05:12:11",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:12:11",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:12:20",
+      "text": "夹爪末端与瓶子分离，微动底座校准图像方向，尚未验证远离相机的运动映射。"
+    },
+    {
+      "time": "05:12:21",
+      "text": "实机已执行 J1 +0.0030 rad；编码器 0.0061 → 0.0061"
+    },
+    {
+      "time": "05:12:22",
+      "text": "模型正在选择第 2 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:12:31",
+      "text": "已取消后续动作与在途模型结果；已发出的单个 ≤0.012 rad 短步可能完成；不是硬件急停"
+    },
+    {
+      "time": "05:13:05",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:13:05",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:13:47",
+      "text": "夹爪末端可见且局部微动空隙清楚，试J4正向0.009弧度；执行后须核验编码器与图像变化。"
+    },
+    {
+      "time": "05:13:47",
+      "text": "模型推理期间画面改变，丢弃本次动作并重新观察"
+    },
+    {
+      "time": "05:13:48",
+      "text": "模型正在选择第 2 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:13:56",
+      "text": "历史已有标定提议但无execution记录，编码器仍未变化；需核验是否执行及前后图像，暂不重复发步。"
+    },
+    {
+      "time": "05:13:56",
+      "text": "模型正在选择第 3 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:14:04",
+      "text": "前后图未见可辨腕部位移，编码器亦未变化；历史无execution，需核验首个0.009步是否发送，暂不重复。"
+    },
+    {
+      "time": "05:14:04",
+      "text": "操作结束：连续三次无可执行动作：前后图未见可辨腕部位移，编码器亦未变化；历史无execution，需核验首个0.009步是否发送，暂不重复。"
+    },
+    {
+      "time": "05:14:04",
+      "text": "已取消后续动作与在途模型结果；已发出的单个 ≤0.012 rad 短步可能完成；不是硬件急停"
+    },
+    {
+      "time": "05:14:32",
+      "text": "模型实机闭环开始；单步 ≤0.012 rad，累计 ≤0.18 rad；夹爪开合禁用"
+    },
+    {
+      "time": "05:14:32",
+      "text": "模型正在选择第 1 步（读取当前图像、上一步图像和实机反馈）"
+    },
+    {
+      "time": "05:14:42",
+      "text": "末端局部有空隙且与瓶子分离，仅选一次J4正向0.009弧度标定，发送后等待图像与编码器核验。"
+    },
+    {
+      "time": "05:14:43",
+      "text": "操作结束：编码器未到位或其他关节偏移；停止后续运动"
+    }
+  ],
+  "motion_enabled": true,
+  "motion_block": "实机闭环可执行模型选择的低速单关节短步；先标定局部视觉方向，再接近与推动"
+}

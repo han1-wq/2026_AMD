@@ -1,0 +1,71 @@
+{
+  "elapsed_s": 30.155535481999777,
+  "frames": 188,
+  "fps": 6.23434460688717,
+  "rgb_frames": 447,
+  "depth_frames": 937,
+  "invalid_depth": 0,
+  "paired_frames": 188,
+  "overflow_fallback_frames": 0,
+  "recent_mean_ms": {
+    "pre_ms": 6.104105127667239,
+    "dpu_ms": 157.25298086169673,
+    "post_ms": 33.987655691497764
+  },
+  "recent_latency_p50_ms": 505.12079550003364,
+  "recent_latency_p95_ms": 538.2462405998695,
+  "memory_kib": {
+    "MemAvailable": 1640088,
+    "CmaTotal": 1024000,
+    "CmaFree": 56228,
+    "VmHWM": 391480,
+    "VmRSS": 286200
+  },
+  "peak_rss_kib": 391480,
+  "min_cma_free_kib": 55892,
+  "min_mem_available_kib": 1632156,
+  "workers": 1,
+  "slots": 3,
+  "success": true,
+  "last_detections": [
+    {
+      "bbox": [
+        340.9014587402344,
+        64.7956771850586,
+        454.266845703125,
+        249.5552978515625
+      ],
+      "score": 0.9238230586051941,
+      "class_id": 0,
+      "class_name": "person",
+      "depth_m": 1.077,
+      "valid_depth_pixels": 276
+    },
+    {
+      "bbox": [
+        603.3233642578125,
+        83.25120544433594,
+        638.407470703125,
+        172.1454315185547
+      ],
+      "score": 0.4910125732421875,
+      "class_id": 63,
+      "class_name": "laptop",
+      "depth_m": null,
+      "valid_depth_pixels": 0
+    },
+    {
+      "bbox": [
+        229.89183044433594,
+        136.14784240722656,
+        375.4567565917969,
+        280.0420837402344
+      ],
+      "score": 0.3216426968574524,
+      "class_id": 63,
+      "class_name": "laptop",
+      "depth_m": 0.813,
+      "valid_depth_pixels": 54
+    }
+  ]
+}

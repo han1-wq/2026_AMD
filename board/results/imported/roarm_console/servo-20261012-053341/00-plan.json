@@ -1,0 +1,55 @@
+{
+  "decision": {
+    "action": "observe",
+    "tip": null,
+    "target": [
+      415,
+      332
+    ],
+    "goal_tip": null,
+    "confidence": 0.96,
+    "target_label": "瓶子",
+    "reason": "瓶子清晰可见，但夹爪接触尖端未出现在图像中，无法安全接近推动。",
+    "completion_evidence": "",
+    "contact_ready": false,
+    "step": null,
+    "clearance_verified": false,
+    "mapping_verified": false
+  },
+  "feedback": {
+    "id": 12,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.012,
+    "dispatch": "not_sent",
+    "motion_verified": false,
+    "source": "serial_encoder",
+    "time": 1791808421.90363
+  },
+  "observed_stamp": 1791808421.3569677,
+  "dispatch": "not_sent",
+  "motion_verified": false
+}

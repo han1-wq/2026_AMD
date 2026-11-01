@@ -1,0 +1,1 @@
+../../../../sim/ofdm/synth_rs.tcl

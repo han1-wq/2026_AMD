@@ -1,0 +1,12 @@
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/fcs_for_data_field.v:2: warning: timescale for fcs_for_data_field inherited from another file.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:1: ...: The inherited timescale is here.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:101: warning: @* is sensitive to all 16 words in array 'synd'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:102: warning: @* is sensitive to all 9 words in array 'terms'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:105: warning: @* is sensitive to all 17 words in array 'locator'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:105: warning: @* is sensitive to all 16 words in array 'synd'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:106: warning: @* is sensitive to all 256 words in array 'inverse'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:107: warning: @* is sensitive to all 17 words in array 'backup'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:108: warning: @* is sensitive to all 17 words in array 'locator'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:108: warning: @* is sensitive to all 16 words in array 'synd'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:111: warning: @* is sensitive to all 256 words in array 'inverse'.
+/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v:112: warning: @* is sensitive to all 256 words in array 'inverse'.

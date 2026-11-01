@@ -1,0 +1,7 @@
+Running: xsim.dir/bypass54_r54/xsimk -runall -simmode gui -testplusarg GAIN=0.75 -testplusarg CFO_HZ=0 -testplusarg INTERFERENCE=0 -testplusarg TIMEOUT_NS=10000000 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -wdb bypass54_r54.wdb -simrunnum 0 -socket 58015
+Design successfully loaded
+Design Loading Memory Usage: 114320 KB (Peak: 115280 KB)
+Design Loading CPU Usage: 180 ms
+Simulation completed
+Simulation Memory Usage: 194196 KB (Peak: 253588 KB)
+Simulation CPU Usage: 32010 ms

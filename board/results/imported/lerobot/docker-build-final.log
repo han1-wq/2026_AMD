@@ -1,0 +1,378 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  4.173MB
+Step 1/14 : FROM ubuntu:22.04
+ ---> cee13550f97b
+Step 2/14 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Using cache
+ ---> 8749a9f876fa
+Step 3/14 : RUN apt-get update && apt-get install -y --no-install-recommends python3 python3-venv python3-pip ca-certificates ffmpeg libglib2.0-0 libgl1 libgomp1 build-essential && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> d20f9b8a694e
+Step 4/14 : RUN python3 -m venv /opt/venv
+ ---> Using cache
+ ---> bb80647dc886
+Step 5/14 : ENV PATH=/opt/venv/bin:$PATH PIP_NO_CACHE_DIR=1 PIP_DISABLE_PIP_VERSION_CHECK=1
+ ---> Using cache
+ ---> 5f25c5ef3176
+Step 6/14 : RUN python -m pip install --upgrade 'pip<26' 'setuptools>=71,<81' wheel
+ ---> Using cache
+ ---> 35735d07c8cf
+Step 7/14 : COPY constraints.txt /opt/constraints.txt
+ ---> Using cache
+ ---> 6818d21efccf
+Step 8/14 : RUN python -m pip install --only-binary=:all: torch==2.8.0 torchvision==0.23.0 torchcodec==0.6.0 --index-url https://download.pytorch.org/whl/cpu
+ ---> Using cache
+ ---> f2e892537d1b
+Step 9/14 : COPY lerobot /opt/lerobot
+ ---> Using cache
+ ---> b1c1f9709233
+Step 10/14 : RUN apt-get update && apt-get install -y --no-install-recommends python3-dev && rm -rf /var/lib/apt/lists/*
+ ---> Running in 6ef48ac5835e
+Get:1 http://archive.ubuntu.com/ubuntu jammy InRelease [270 kB]
+Get:2 http://security.ubuntu.com/ubuntu jammy-security InRelease [129 kB]
+Get:3 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [1325 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy-updates InRelease [128 kB]
+Get:5 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [96.8 kB]
+Get:6 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [4430 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-backports InRelease [127 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy/universe amd64 Packages [17.5 MB]
+Get:9 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [7955 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy/restricted amd64 Packages [164 kB]
+Get:11 http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages [1792 kB]
+Get:12 http://archive.ubuntu.com/ubuntu jammy/multiverse amd64 Packages [266 kB]
+Get:13 http://archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [8243 kB]
+Get:14 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1628 kB]
+Get:15 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [4759 kB]
+Get:16 http://archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [104 kB]
+Get:17 http://archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [82.9 kB]
+Get:18 http://archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [35.6 kB]
+Fetched 49.0 MB in 36s (1379 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libexpat1-dev libjs-jquery libjs-sphinxdoc libjs-underscore libpython3-dev
+  libpython3.10 libpython3.10-dev python3.10-dev zlib1g-dev
+Recommended packages:
+  javascript-common
+The following NEW packages will be installed:
+  libexpat1-dev libjs-jquery libjs-sphinxdoc libjs-underscore libpython3-dev
+  libpython3.10 libpython3.10-dev python3-dev python3.10-dev zlib1g-dev
+0 upgraded, 10 newly installed, 0 to remove and 3 not upgraded.
+Need to get 8149 kB of archives.
+After this operation, 30.4 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libexpat1-dev amd64 2.4.7-1ubuntu0.9 [151 kB]
+Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjs-jquery all 3.6.0+dfsg+~3.5.13-1 [321 kB]
+Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjs-underscore all 1.13.2~dfsg-2 [118 kB]
+Get:4 http://archive.ubuntu.com/ubuntu jammy/main amd64 libjs-sphinxdoc all 4.3.2-1 [139 kB]
+Get:5 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10 amd64 3.10.12-1~22.04.18 [1950 kB]
+Get:6 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu9.2 [164 kB]
+Get:7 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3.10-dev amd64 3.10.12-1~22.04.18 [4765 kB]
+Get:8 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpython3-dev amd64 3.10.6-1~22.04.1 [7064 B]
+Get:9 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3.10-dev amd64 3.10.12-1~22.04.18 [508 kB]
+Get:10 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 python3-dev amd64 3.10.6-1~22.04.1 [26.0 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 8149 kB in 8s (968 kB/s)
+Selecting previously unselected package libexpat1-dev:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 14515 files and directories currently installed.)
+Preparing to unpack .../0-libexpat1-dev_2.4.7-1ubuntu0.9_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.4.7-1ubuntu0.9) ...
+Selecting previously unselected package libjs-jquery.
+Preparing to unpack .../1-libjs-jquery_3.6.0+dfsg+~3.5.13-1_all.deb ...
+Unpacking libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+Selecting previously unselected package libjs-underscore.
+Preparing to unpack .../2-libjs-underscore_1.13.2~dfsg-2_all.deb ...
+Unpacking libjs-underscore (1.13.2~dfsg-2) ...
+Selecting previously unselected package libjs-sphinxdoc.
+Preparing to unpack .../3-libjs-sphinxdoc_4.3.2-1_all.deb ...
+Unpacking libjs-sphinxdoc (4.3.2-1) ...
+Selecting previously unselected package libpython3.10:amd64.
+Preparing to unpack .../4-libpython3.10_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking libpython3.10:amd64 (3.10.12-1~22.04.18) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../5-zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu9.2_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Selecting previously unselected package libpython3.10-dev:amd64.
+Preparing to unpack .../6-libpython3.10-dev_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking libpython3.10-dev:amd64 (3.10.12-1~22.04.18) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../7-libpython3-dev_3.10.6-1~22.04.1_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.10.6-1~22.04.1) ...
+Selecting previously unselected package python3.10-dev.
+Preparing to unpack .../8-python3.10-dev_3.10.12-1~22.04.18_amd64.deb ...
+Unpacking python3.10-dev (3.10.12-1~22.04.18) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../9-python3-dev_3.10.6-1~22.04.1_amd64.deb ...
+Unpacking python3-dev (3.10.6-1~22.04.1) ...
+Setting up libpython3.10:amd64 (3.10.12-1~22.04.18) ...
+Setting up libexpat1-dev:amd64 (2.4.7-1ubuntu0.9) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu9.2) ...
+Setting up libjs-jquery (3.6.0+dfsg+~3.5.13-1) ...
+Setting up libjs-underscore (1.13.2~dfsg-2) ...
+Setting up libpython3.10-dev:amd64 (3.10.12-1~22.04.18) ...
+Setting up libjs-sphinxdoc (4.3.2-1) ...
+Setting up python3.10-dev (3.10.12-1~22.04.18) ...
+Setting up libpython3-dev:amd64 (3.10.6-1~22.04.1) ...
+Setting up python3-dev (3.10.6-1~22.04.1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.15) ...
+ ---> Removed intermediate container 6ef48ac5835e
+ ---> 05b27f7e885d
+Step 11/14 : RUN python -m pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple -c /opt/constraints.txt -e '/opt/lerobot[feetech]' && python -m pip check
+ ---> Running in 998ebcea5bcc
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///opt/lerobot
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting datasets<4.2.0,>=4.0.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f4/c8/09012ac195a0aab58755800d2efdc0e7d5905053509f12cb5d136c911cda/datasets-4.1.1-py3-none-any.whl (503 kB)
+Collecting diffusers<0.36.0,>=0.27.2 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2a/2e/38d9824f8c6bb048c5ba21c6d4da54c29c162a46b58b3ef907a360a76d3e/diffusers-0.35.2-py3-none-any.whl (4.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 2.5 MB/s  0:00:01
+Collecting huggingface-hub<0.36.0,>=0.34.2 (from huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/31/a0/651f93d154cb72323358bf2bbae3e642bdb5d2f1bfc874d096f7cb159fa0/huggingface_hub-0.35.3-py3-none-any.whl (564 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 564.3/564.3 kB 2.3 MB/s  0:00:00
+Collecting accelerate<2.0.0,>=1.10.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8a/4c/34f0450479d01195027260da68d8a3880683f1640c3ca5adf64acb3185f1/accelerate-1.15.0-py3-none-any.whl (394 kB)
+Requirement already satisfied: setuptools<81.0.0,>=71.0.0 in /opt/venv/lib/python3.10/site-packages (from lerobot==0.4.3) (80.10.2)
+Collecting cmake<4.2.0,>=3.29.0.1 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/e0/6c/323c40671c6f1b3e02bb4a7404fbe2bf653190a56e63cf4b6a4f06e876bc/cmake-4.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (29.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.7/29.7 MB 2.3 MB/s  0:00:13
+Collecting einops<0.9.0,>=0.8.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2a/09/f8d8f8f31e4483c10a906437b4ce31bdf3d6d417b73fe33f1a8b59e34228/einops-0.8.2-py3-none-any.whl (65 kB)
+Collecting opencv-python-headless<4.13.0,>=4.9.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/89/53/e19c21e0c4eb1275c3e2c97b081103b6dfb3938172264d283a519bf728b9/opencv_python_headless-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (54.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 MB 1.5 MB/s  0:00:33
+Collecting av<16.0.0,>=15.0.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/25/c0/5c967b0872fce1add80a8f50fa7ce11e3e3e5257c2b079263570bc854699/av-15.1.0-cp310-cp310-manylinux_2_28_x86_64.whl (39.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.1/39.1 MB 1.2 MB/s  0:00:31
+Collecting jsonlines<5.0.0,>=4.0.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f8/62/d9ba6323b9202dd2fe166beab8a86d29465c41a0288cbe229fac60c1ab8d/jsonlines-4.0.0-py3-none-any.whl (8.7 kB)
+Collecting packaging<26.0,>=24.2 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl (66 kB)
+Collecting pynput<1.9.0,>=1.7.7 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6d/98/bbeb760852adb27f166ce1617f0e51aabb15f21b1e60ea703f2aed3c78ac/pynput-1.8.2-py2.py3-none-any.whl (92 kB)
+Collecting pyserial<4.0,>=3.5 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/07/bc/587a445451b253b285629263eb51c2d8e9bcea4fc97826266d186f96f558/pyserial-3.5-py2.py3-none-any.whl (90 kB)
+Collecting wandb<0.22.0,>=0.20.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f7/56/d9f845ecfd5e078cf637cb29d8abe3350b8a174924c54086168783454a8f/wandb-0.21.4-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (19.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.6/19.6 MB 1.6 MB/s  0:00:12
+Requirement already satisfied: torch<=2.8.0,>=2.2.1 in /opt/venv/lib/python3.10/site-packages (from lerobot==0.4.3) (2.8.0+cpu)
+Requirement already satisfied: torchcodec<=0.6.0,>=0.2.1 in /opt/venv/lib/python3.10/site-packages (from lerobot==0.4.3) (0.6.0)
+Requirement already satisfied: torchvision<=0.23.0,>=0.21.0 in /opt/venv/lib/python3.10/site-packages (from lerobot==0.4.3) (0.23.0+cpu)
+Collecting draccus==0.10.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c4/9a/a83083b230d352ee5d205757b74006dbe084448ca45e3bc5ca99215b1e55/draccus-0.10.0-py3-none-any.whl (71 kB)
+Collecting gymnasium<2.0.0,>=1.1.1 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/38/4e/6a51be94ae8e9dc8eaddd6ea74a6dde754448c4c746b51a232681f81e41c/gymnasium-1.4.0-py3-none-any.whl (476 kB)
+Collecting rerun-sdk<0.27.0,>=0.24.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f5/86/0b9c8f56398b4fc85f8e99279907c258413a297e5603f8f2537fe5806e51/rerun_sdk-0.26.2-cp39-abi3-manylinux_2_28_x86_64.whl (98.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.8/98.8 MB 2.5 MB/s  0:00:46
+Collecting deepdiff<9.0.0,>=7.0.1 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2b/5f/c52bd1255db763d0cdcb7084d2e90c42119cb229302c56bdf1d0aa78abd2/deepdiff-8.6.2-py3-none-any.whl (91 kB)
+Collecting imageio<3.0.0,>=2.34.0 (from imageio[ffmpeg]<3.0.0,>=2.34.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ba/4b/87a794e51d150f62a55715c453c9afbf6103fe24afef6db26a929a8480b7/imageio-2.38.0-py3-none-any.whl (328 kB)
+Collecting termcolor<4.0.0,>=2.4.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/33/d1/8bb87d21e9aeb323cc03034f5eaf2c8f69841e40e4853c2627edf8111ed3/termcolor-3.3.0-py3-none-any.whl (7.7 kB)
+Collecting feetech-servo-sdk<2.0.0,>=1.0.0 (from lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5f/8e/c53d6f9a8bf3a86a635b58eeb675723f1b040f1665a0681467756c8989aa/feetech-servo-sdk-1.0.0.tar.gz (8.4 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting mergedeep~=1.3 (from draccus==0.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2c/19/04f9b178c2d8a15b076c8b5140708fa6ffc5601fb6f1e975537072df5b2a/mergedeep-1.3.4-py3-none-any.whl (6.4 kB)
+Collecting pyyaml~=6.0 (from draccus==0.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7a/1e/7acc4f0e74c4b3d9531e24739e0ab832a5edf40e64fbae1a9c01941cabd7/pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.3/770.3 kB 2.5 MB/s  0:00:00
+Collecting pyyaml-include~=1.4 (from draccus==0.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d5/ca/6a2cc3a73170d10b5af1f1613baa2ed1f8f46f62dd0bfab2bffd2c2fe260/pyyaml_include-1.4.1-py3-none-any.whl (19 kB)
+Collecting toml~=0.10 (from draccus==0.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Collecting typing-inspect~=0.9.0 (from draccus==0.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/65/f3/107a22063bf27bdccf2024833d3445f4eea42b2e598abfbd46f6a63b6cb0/typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Requirement already satisfied: numpy>=1.17 in /opt/venv/lib/python3.10/site-packages (from accelerate<2.0.0,>=1.10.0->lerobot==0.4.3) (2.2.6)
+Collecting psutil (from accelerate<2.0.0,>=1.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Collecting safetensors>=0.4.3 (from accelerate<2.0.0,>=1.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/28/50/f203ff3a3ddfe19308efc83c5a3a29ed02bf786732ec35e68bf9162f3365/safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+Requirement already satisfied: filelock in /opt/venv/lib/python3.10/site-packages (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3) (3.32.3)
+Collecting pyarrow>=21.0.0 (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/57/5c/f8fc0eb2de03464a557d5a4d0c15e972d73362414696618833b771f7eddd/pyarrow-25.0.1-cp310-cp310-manylinux_2_28_x86_64.whl (50.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 2.6 MB/s  0:00:19
+Collecting dill<0.4.1,>=0.3.0 (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/50/3d/9373ad9c56321fdab5b41197068e1d8c25883b3fea29dd361f9b55116869/dill-0.4.0-py3-none-any.whl (119 kB)
+Collecting pandas (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/40/a8/4dac1f8f8235e5d25b9955d02ff6f29396191d4e665d71122c3722ca83c5/pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.8/12.8 MB 2.6 MB/s  0:00:04
+Collecting requests>=2.32.2 (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl (73 kB)
+Collecting tqdm>=4.66.3 (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+Collecting xxhash (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f3/66/6f6fdd7fae8161edeb927b8050e90949931faadf105509d9a1c5d9ccfd00/xxhash-4.0.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (249 kB)
+Collecting multiprocess<0.70.17 (from datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/bc/f7/7ec7fddc92e50714ea3745631f79bd9c96424cb2702632521028e57d3a36/multiprocess-0.70.16-py310-none-any.whl (134 kB)
+Collecting fsspec<=2025.9.0,>=2023.1.0 (from fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/47/71/70db47e4f6ce3e5c37a607355f80da8860a33226be640226ac52cb05ef2e/fsspec-2025.9.0-py3-none-any.whl (199 kB)
+Collecting orderly-set<6,>=5.4.1 (from deepdiff<9.0.0,>=7.0.1->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/12/27/fb8d7338b4d551900fa3e580acbe7a0cf655d940e164cb5c00ec31961094/orderly_set-5.5.0-py3-none-any.whl (13 kB)
+Collecting importlib_metadata (from diffusers<0.36.0,>=0.27.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b3/55/ecca97ae19075f1fac62def77731e7f535e6c1fb8f92ff08160c5e6dade8/importlib_metadata-9.0.1-py3-none-any.whl (27 kB)
+Collecting regex!=2019.12.17 (from diffusers<0.36.0,>=0.27.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ec/99/eae371ca63f7ea1f1eac025021527adb57ce3a4b67ff608b896fd31ea447/regex-2026.9.29-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (797 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 797.6/797.6 kB 3.0 MB/s  0:00:00
+Requirement already satisfied: Pillow in /opt/venv/lib/python3.10/site-packages (from diffusers<0.36.0,>=0.27.2->lerobot==0.4.3) (12.3.0)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5d/38/01f5fc732d5373d6c099db0343279cd4e6607287d336bab6ff6ae9085a0d/aiohttp-3.14.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 2.5 MB/s  0:00:00
+Collecting cloudpickle>=1.2.0 (from gymnasium<2.0.0,>=1.1.1->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Requirement already satisfied: typing-extensions>=4.12.0 in /opt/venv/lib/python3.10/site-packages (from gymnasium<2.0.0,>=1.1.1->lerobot==0.4.3) (4.16.0)
+Collecting farama-notifications>=0.0.1 (from gymnasium<2.0.0,>=1.1.1->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7c/f0/21f81892e4ed10f4ec3ef2e7cf8635fb76e7c0907c55d0da66be50094760/farama_notifications-0.0.6-py3-none-any.whl (2.9 kB)
+Collecting hf-xet<2.0.0,>=1.1.3 (from huggingface-hub<0.36.0,>=0.34.2->huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a3/4c/2bf3b66c215d409655f28de1622393dde04c9461280d48c7924bb3b2decd/hf_xet-1.7.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 2.7 MB/s  0:00:01
+Collecting InquirerPy==0.3.4 (from huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/ce/ff/3b59672c47c6284e8005b42e84ceba13864aa0f39f067c973d1af02f5d91/InquirerPy-0.3.4-py3-none-any.whl (67 kB)
+Collecting hf-transfer>=0.1.4 (from huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d6/d8/f87ea6f42456254b48915970ed98e993110521e9263472840174d32c880d/hf_transfer-0.1.9-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 1.9 MB/s  0:00:01
+Collecting pfzy<0.4.0,>=0.3.1 (from InquirerPy==0.3.4->huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/8c/d7/8ff98376b1acc4503253b685ea09981697385ce344d4e3935c2af49e044d/pfzy-0.3.4-py3-none-any.whl (8.5 kB)
+Collecting prompt-toolkit<4.0.0,>=3.0.1 (from InquirerPy==0.3.4->huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/54/6f/84908cad2d6aa5144abcf7b42709fe4fdb459bc640ec7ac5786e7693dabc/prompt_toolkit-3.0.53-py3-none-any.whl (392 kB)
+Collecting imageio-ffmpeg (from imageio[ffmpeg]<3.0.0,>=2.34.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/2d/43c8522a2038e9d0e7dbdf3a61195ecc31ca576fb1527a528c877e87d973/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 2.4 MB/s  0:00:12
+Collecting attrs>=19.2.0 (from jsonlines<5.0.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl (67 kB)
+Collecting wcwidth>=0.1.4 (from prompt-toolkit<4.0.0,>=3.0.1->InquirerPy==0.3.4->huggingface-hub[cli,hf-transfer]<0.36.0,>=0.34.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b8/d6/48dad66d577417ef8594000506fa8619d45d7282e20b4cdc916fcc68f95a/wcwidth-0.9.3-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (770 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 770.0/770.0 kB 2.7 MB/s  0:00:00
+Collecting six (from pynput<1.9.0,>=1.7.7->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl (11 kB)
+Collecting evdev>=1.3 (from pynput<1.9.0,>=1.7.7->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a5/f5/397b61091120a9ca5001041dd7bf76c385b3bfd67a0e5bcb74b852bd22a4/evdev-1.9.3.tar.gz (32 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting python-xlib>=0.17 (from pynput<1.9.0,>=1.7.7->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fc/b8/ff33610932e0ee81ae7f1269c890f697d56ff74b9f5b2ee5d9b7fa2c5355/python_xlib-0.33-py2.py3-none-any.whl (182 kB)
+Requirement already satisfied: sympy>=1.13.3 in /opt/venv/lib/python3.10/site-packages (from torch<=2.8.0,>=2.2.1->lerobot==0.4.3) (1.14.0)
+Requirement already satisfied: networkx in /opt/venv/lib/python3.10/site-packages (from torch<=2.8.0,>=2.2.1->lerobot==0.4.3) (3.4.2)
+Requirement already satisfied: jinja2 in /opt/venv/lib/python3.10/site-packages (from torch<=2.8.0,>=2.2.1->lerobot==0.4.3) (3.1.6)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect~=0.9.0->draccus==0.10.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/79/7b/2c79738432f5c924bef5071f933bcc9efd0473bac3b4aa584a6f7c1c8df8/mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Collecting click>=8.0.1 (from wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/58/50/6c0d534c5f134586a8e1ba4e330569e32f057e33372ae556463212fb4cd3/click-8.5.0-py3-none-any.whl (125 kB)
+Collecting gitpython!=3.1.29,>=1.0.0 (from wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/6b/50/2a923c4dc02522ff9567f07c67ed1deca6d5fa9474f4708168b8088dfa37/gitpython-3.2.1-py3-none-any.whl (231 kB)
+Collecting platformdirs (from wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f4/ba/223e00b885e960edd5d4b4d178c88acce019bd5b83786093681b8c393492/platformdirs-4.12.4-py3-none-any.whl (32 kB)
+Collecting protobuf!=4.21.0,!=5.28.0,<7,>=3.19.0 (from wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/16/92/d1e32e3e0d894fe00b15ce28ad4944ab692713f2e7f0a99787405e43533a/protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Collecting pydantic<3 (from wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/35/ea/a56b9fe5066f3537b7882f77e9c5dfb26d8c2eefdaed9b5fc73d57b4dc22/pydantic-2.14.1-py3-none-any.whl (488 kB)
+Collecting sentry-sdk>=2.0.0 (from wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d0/0b/0dd9686842d9dc49c3ee84cced31c54bceb0fb52a826be7d3d4fe30d882a/sentry_sdk-2.72.0-py3-none-any.whl (544 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 544.8/544.8 kB 2.2 MB/s  0:00:00
+Collecting annotated-types>=0.6.0 (from pydantic<3->wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/99/91/8acff4f5e50511b911bbccb72b8628a49c68ce14148cd9f6431094859a90/annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Collecting pydantic-core==2.50.1 (from pydantic<3->wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1b/1a/21a58791021397d9ca35295e3f4291c16e319155c5904334b89eb07e97e1/pydantic_core-2.50.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 2.3 MB/s  0:00:00
+Collecting typing-inspection>=0.4.4 (from pydantic<3->wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/67/81/4add07e5172b7ac40d8ed5ff580409a7801a4fe26d529bdd915401dabfbe/typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.32.2->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c4/9f/9f52d2886d52645987d603425482c63c5045a3005db1354a7097e5ed1ae9/charset_normalizer-3.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (271 kB)
+Collecting idna<4,>=2.5 (from requests>=2.32.2->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl (69 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.32.2->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl (135 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.32.2->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl (136 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/71/43/1947f06babed6b3f1d7f38b0c767f52df66bfb2bc10b468c4a7de9eceff2/aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fb/76/641ae371508676492379f16e2fa48f4e2c11741bd63c48be4b12a6b09cba/aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Collecting async-timeout<6.0,>=4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/fe/ba/e2081de779ca30d473f21f5b30e0e737c438205440784c7dfc81efc2b029/async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5d/ed/c7895fd2fde7f3ee70d248175f9b6cdf792fb741ab92dc59cd9ef3bd241b/frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+Collecting multidict<8.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5a/9c/598d765e98aa02ff7204b6f11cf790e5840f5e8252d7b1d955ed0043bb94/multidict-7.1.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (464 kB)
+Collecting propcache>=0.2.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/f0/51/5adee15e12a7e314cece4543fbf295b0fe1b504dc78b32dff4c8eb1e29b0/propcache-0.5.4-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (224 kB)
+Collecting yarl<2.0,>=1.25.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2025.9.0,>=2023.1.0->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/28/b9/7818ac6dec7fbcd16be2d19495807c01e2c38834e57d41c63356a75e786b/yarl-1.25.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (118 kB)
+Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.29,>=1.0.0->wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a0/61/5c78b91c3143ed5c14207f463aecfc8f9dbb5092fb2869baf37c273b2705/gitdb-4.0.12-py3-none-any.whl (62 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.29,>=1.0.0->wandb<0.22.0,>=0.20.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/c1/d4/59e74daffcb57a07668852eeeb6035af9f32cbfd7a1d2511f17d2fe6a738/smmap-5.0.3-py3-none-any.whl (24 kB)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /opt/venv/lib/python3.10/site-packages (from sympy>=1.13.3->torch<=2.8.0,>=2.2.1->lerobot==0.4.3) (1.3.0)
+Collecting zipp>=3.20 (from importlib_metadata->diffusers<0.36.0,>=0.27.2->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/b8/44/7bd2007260da11cccca29ba2d4c345f1287aa663db38ee7cefeabf6386a5/zipp-4.1.2-py3-none-any.whl (10 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /opt/venv/lib/python3.10/site-packages (from jinja2->torch<=2.8.0,>=2.2.1->lerobot==0.4.3) (3.0.3)
+Collecting python-dateutil>=2.8.2 (from pandas->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+Collecting pytz>=2020.1 (from pandas->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/4f/ef/c66110d46fb800dda0bf33164182dfadabe26a90e4476844d502a23dca8e/pytz-2026.5-py2.py3-none-any.whl (506 kB)
+Collecting tzdata>=2022.7 (from pandas->datasets<4.2.0,>=4.0.0->lerobot==0.4.3)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+Building wheels for collected packages: lerobot, feetech-servo-sdk, evdev
+  Building editable for lerobot (pyproject.toml): started
+  Building editable for lerobot (pyproject.toml): finished with status 'done'
+  Created wheel for lerobot: filename=lerobot-0.4.3-0.editable-py3-none-any.whl size=12196 sha256=f83becd933e43f592f67bce2a456f4c9002e4dd16c4df8bfc3c9f4473e1d1eb5
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qr7xws4f/wheels/2c/7a/93/e777ef1c7250acfc5e67c3aeaf005c1c995978b68f05f589c4
+  Building wheel for feetech-servo-sdk (pyproject.toml): started
+  Building wheel for feetech-servo-sdk (pyproject.toml): finished with status 'done'
+  Created wheel for feetech-servo-sdk: filename=feetech_servo_sdk-1.0.0-py3-none-any.whl size=10234 sha256=46e44b9b64187b494d8c2e79f094c6827d41b3f534e827a63425a91bd4c44f3e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qr7xws4f/wheels/6e/a4/56/5f366d97eb8332333895007703711e5c9e32f1760fcb6b1d67
+  Building wheel for evdev (pyproject.toml): started
+  Building wheel for evdev (pyproject.toml): finished with status 'done'
+  Created wheel for evdev: filename=evdev-1.9.3-cp310-cp310-linux_x86_64.whl size=112127 sha256=529768a458c36289e239dfaf3be9d2dbfa1d06b3e1aeff2832835c9607f22ef2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qr7xws4f/wheels/7e/f9/99/7b44cc5d5efb7b6c2cbee0cda2976509ff805e76d88d4d279f
+Successfully built lerobot feetech-servo-sdk evdev
+Installing collected packages: pytz, pyserial, farama-notifications, zipp, xxhash, wcwidth, urllib3, tzdata, typing-inspection, tqdm, toml, termcolor, smmap, six, safetensors, regex, pyyaml, pydantic-core, pyarrow, psutil, protobuf, propcache, platformdirs, pfzy, packaging, orderly-set, opencv-python-headless, mypy-extensions, multidict, mergedeep, imageio-ffmpeg, imageio, idna, hf-xet, hf-transfer, fsspec, frozenlist, feetech-servo-sdk, evdev, einops, dill, cmake, cloudpickle, click, charset_normalizer, certifi, av, attrs, async-timeout, annotated-types, aiohappyeyeballs, yarl, typing-inspect, sentry-sdk, rerun-sdk, requests, pyyaml-include, python-xlib, python-dateutil, pydantic, prompt-toolkit, multiprocess, jsonlines, importlib_metadata, gymnasium, gitdb, deepdiff, aiosignal, pynput, pandas, InquirerPy, huggingface-hub, gitpython, draccus, aiohttp, wandb, diffusers, accelerate, datasets, lerobot
+  Attempting uninstall: packaging
+    Found existing installation: packaging 26.3
+    Uninstalling packaging-26.3:
+      Successfully uninstalled packaging-26.3
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2026.7.0
+    Uninstalling fsspec-2026.7.0:
+      Successfully uninstalled fsspec-2026.7.0
+
+Successfully installed InquirerPy-0.3.4 accelerate-1.15.0 aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 annotated-types-0.8.0 async-timeout-5.0.1 attrs-26.1.0 av-15.1.0 certifi-2026.10.19 charset_normalizer-3.5.2 click-8.5.0 cloudpickle-3.1.2 cmake-4.1.3 datasets-4.1.1 deepdiff-8.6.2 diffusers-0.35.2 dill-0.4.0 draccus-0.10.0 einops-0.8.2 evdev-1.9.3 farama-notifications-0.0.6 feetech-servo-sdk-1.0.0 frozenlist-1.8.0 fsspec-2025.9.0 gitdb-4.0.12 gitpython-3.2.1 gymnasium-1.4.0 hf-transfer-0.1.9 hf-xet-1.7.0 huggingface-hub-0.35.3 idna-3.20 imageio-2.38.0 imageio-ffmpeg-0.6.0 importlib_metadata-9.0.1 jsonlines-4.0.0 lerobot-0.4.3 mergedeep-1.3.4 multidict-7.1.0 multiprocess-0.70.16 mypy-extensions-1.1.0 opencv-python-headless-4.12.0.88 orderly-set-5.5.0 packaging-25.0 pandas-2.3.3 pfzy-0.3.4 platformdirs-4.12.4 prompt-toolkit-3.0.53 propcache-0.5.4 protobuf-6.33.6 psutil-7.2.2 pyarrow-25.0.1 pydantic-2.14.1 pydantic-core-2.50.1 pynput-1.8.2 pyserial-3.5 python-dateutil-3.0.0 python-xlib-0.33 pytz-2026.5 pyyaml-6.0.3 pyyaml-include-1.4.1 regex-2026.9.29 requests-2.34.2 rerun-sdk-0.26.2 safetensors-0.8.0 sentry-sdk-2.72.0 six-1.17.0 smmap-5.0.3 termcolor-3.3.0 toml-0.10.2 tqdm-4.70.1 typing-inspect-0.9.0 typing-inspection-0.4.4 tzdata-2026.5 urllib3-2.8.0 wandb-0.21.4 wcwidth-0.9.3 xxhash-4.0.2 yarl-1.25.1 zipp-4.1.2
+No broken requirements found.
+ ---> Removed intermediate container 998ebcea5bcc
+ ---> bb8adf711a01
+Step 12/14 : ENV HF_HOME=/workspace/cache/huggingface OMP_NUM_THREADS=2 MKL_NUM_THREADS=2
+ ---> Running in 0905a7f5af8a
+ ---> Removed intermediate container 0905a7f5af8a
+ ---> a03c4d73b36d
+Step 13/14 : WORKDIR /workspace
+ ---> Running in 7cba0416fec6
+ ---> Removed intermediate container 7cba0416fec6
+ ---> 83527cf296f5
+Step 14/14 : CMD ["/bin/bash"]
+ ---> Running in b34a14e3a4e6
+ ---> Removed intermediate container b34a14e3a4e6
+ ---> 09776d4086e7
+Successfully built 09776d4086e7
+Successfully tagged lerobot-cpu:joyandai-0.4.3

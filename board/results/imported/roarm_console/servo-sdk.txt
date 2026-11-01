@@ -1,0 +1,115 @@
+__init__     def __init__(self, roarm_type=None, port=None, baudrate=115200, host=None, timeout=0.1, debug=False, thread_lock=True):
+        """
+        Args:
+            roarm_type    : port string
+            port          : port string
+            baudrate      : baud rate string, default '115200'
+            host          : host string
+            timeout       : default 0.1
+            debug         : whether show debug info
+        """
+        self.type = roarm_type
+        super(roarm, self).__init__(self.type,debug)
+        self.calibration_parameters = calibration_parameters
+        self.thread_lock = thread_lock
+        self.host =None            
+        self.stop_flag = False
+        self.base_controller = None
+
+        if thread_lock:
+            self.lock = threading.Lock()
+        if host:
+            self.host = host
+        else:    
+            self._serial_port = serial.Serial()
+            self._serial_port.port = port
+            self._serial_port.baudrate = baudrate
+            self._serial_port.timeout = timeout
+            self._serial_port.rts = False
+            self._serial_port.open() 
+
+joint_radian_ctrl     def joint_radian_ctrl(self, joint, radian, speed, acc):
+        """Send one radian of joint to robot arm
+        Args:
+            joint : id, type : int
+            radian : value, type : float
+            speed : [1,4096], type : int
+            acc : [1,254], type : int
+        """
+        self.calibration_parameters(roarm_type=self.type, joint=joint, radian=radian, speed=speed, acc=acc)
+        return self._mesg(JsonCmd.JOINT_RADIAN_CTRL, joint, radian, speed, acc)
+
+joints_radian_ctrl     def joints_radian_ctrl(self, radians, speed, acc):
+        """Send the radians of all joints to robot arm
+        Args:
+            radians: a list of radians, type : List[float]
+            speed : [1,4096], type : int
+            acc : [1,254], type : int
+        """
+        self.calibration_parameters(roarm_type=self.type, radians=radians, speed=speed, acc=acc)
+        return self._mesg(JsonCmd.JOINTS_RADIAN_CTRL, radians, speed, acc)
+
+feedback_get     def feedback_get(self):
+        """Get feedback
+        Return:
+            list: a list of roarm feedback, type : List[float]
+        """
+        return self._mesg(JsonCmd.FEEDBACK_GET)
+
+_process_received     def _process_received(self, data, genre): 
+        if not data:
+            return None
+        print(data)  
+        switch_dict = {
+            "roarm_m2": handle_m2_feedback,
+            "roarm_m3": handle_m3_feedback
+        }                
+        res = []      
+        valid_data = []      
+        if genre == JsonCmd.FEEDBACK_GET:   
+            valid_data.append(data['x'])    
+            valid_data.append(data['y'])
+            valid_data.append(data['z'])             
+            if self.type in switch_dict:
+                valid_data = switch_dict[self.type](valid_data,data)                                   
+        else: 
+            valid_data = data  
+        res.append(valid_data)            
+        return res
+
+_read def read(self, genre):
+    if genre != JsonCmd.FEEDBACK_GET:
+        request_data = json.dumps({'T': 105}) + "\n"      
+        self._serial_port.write(request_data.encode())    
+
+    if self.base_controller is None:
+        self.base_controller = BaseController(port=self._serial_port, roarm_type=self.type)  
+
+    data = self.base_controller.feedback_data()
+    if data:
+        # self.log.debug("_read : {}".format(data))
+        return data
+
+_write def write(self, command, method=None):
+    if method == "http":
+        log_command = ""
+        for i in command:
+            if isinstance(i, str):
+                log_command += i
+            else:
+                log_command += hex(i)[2:] + " "
+        # self.log.debug("_write: {}".format(log_command))
+
+        self.sock.sendall(command)
+    else:
+        self._serial_port.reset_input_buffer()
+        command_log = ""
+        for i in command:
+            if isinstance(i, str):
+                command_log += i[2:] + " "
+            else:
+                command_log += hex(i)[2:] + " "
+        #self.log.debug("_write: {}".format(command_log))
+        self._serial_port.write(command)
+        self._serial_port.flush()
+

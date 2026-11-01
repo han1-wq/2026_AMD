@@ -1,0 +1,17 @@
+{
+  "dma": {
+    "passed": true,
+    "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_interleave/dma_regression.log",
+    "sha256": "ab96abcea1bfae65036ca6c79260ab9365ffd8cdf856af5a56e5f41b09eb23c8"
+  },
+  "host": {
+    "passed": true,
+    "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_interleave/host_regression.log",
+    "sha256": "6a0bfcb035cff177dc8dba876bf90339cf75517558155845489395eb9322fce7"
+  },
+  "interface": {
+    "passed": true,
+    "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_interleave/interface_regression.log",
+    "sha256": "d1467713e4f52ce2f7de112213f8df76bcb7afe2ec08cccf8beedcf017380a37"
+  }
+}

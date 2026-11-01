@@ -1,0 +1,86 @@
+{
+  "scope": "Real AMCL/guard; synthetic map/scan/TF/odom; inert stationary planner; no hardware", 
+  "results": [
+    {
+      "phase": "saved_map_snapshot_ready_stationary", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505123.766919, 
+        "reason": "ready", 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333
+      }
+    }, 
+    {
+      "phase": "preview_marker_only_no_initialpose_goal_or_motion", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505124.378973, 
+        "reason": "ready", 
+        "scan_match": 0.9916666666666667, 
+        "ray_conflict": 0.008333333333333333
+      }
+    }, 
+    {
+      "phase": "unconfirmed_stale_wrong_session_map_and_invalid_pose_rejected", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505124.788186, 
+        "reason": "ready", 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333
+      }
+    }, 
+    {
+      "phase": "moving_stale_and_missing_odometry_rejected", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505133.362433, 
+        "reason": "ready", 
+        "scan_match": 0.9833333333333333, 
+        "ray_conflict": 0.016666666666666666
+      }
+    }, 
+    {
+      "phase": "active_slam_or_multiple_map_publishers_rejected", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505135.099823, 
+        "reason": "ready", 
+        "scan_match": 0.975, 
+        "ray_conflict": 0.016666666666666666
+      }
+    }, 
+    {
+      "phase": "restore_cancels_active_goal_once_rechecks_and_never_auto_moves", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505138.458979, 
+        "reason": "ready", 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.0
+      }
+    }, 
+    {
+      "phase": "actual_console_ros_client_snapshot_preview_restore_acknowledged", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792505141.516652, 
+        "reason": "ready", 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333
+      }
+    }, 
+    {
+      "phase": "changed_map_clears_marker_and_rejects_old_bookmark", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792505141.618397, 
+        "reason": "map_changed_initial_pose_required", 
+        "scan_match": 1.0, 
+        "ray_conflict": 0.008333333333333333
+      }
+    }
+  ], 
+  "passed": true
+}

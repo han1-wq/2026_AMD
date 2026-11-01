@@ -1,0 +1,8 @@
+PROGRAM restore_1000ms
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_ack_compare400_20261016/run_comparison.py", line 24, in program
+    subprocess.run([sys.executable, '-u', str(directory / 'program_and_capture.py')],
+  File "/usr/lib/python3.8/subprocess.py", line 516, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/usr/bin/python3', '-u', '/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_ack_compare400_20261016/restore_1000ms/program_and_capture.py']' returned non-zero exit status 1.

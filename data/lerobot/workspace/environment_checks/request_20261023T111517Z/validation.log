@@ -1,0 +1,25 @@
+Loading weights from local directory
+{
+  "passed": true,
+  "architecture": "x86_64",
+  "python": "3.10.12",
+  "versions": {
+    "lerobot": "0.4.3",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0+cpu",
+    "av": "15.1.0",
+    "numpy": "2.2.6",
+    "feetech-servo-sdk": "1.0.0"
+  },
+  "video_backend": "torchcodec",
+  "torch_cuda": null,
+  "synthetic_reduced_act_chunk_seconds": [
+    0.008441336001851596,
+    0.012928965006722137,
+    0.010161400001379661
+  ],
+  "training_loss": null,
+  "max_rss_kib": 555464,
+  "note": "Random reduced ACT, one 64x64 image. Not a trained model or real-robot performance guarantee."
+}
+ENVIRONMENT_PASS

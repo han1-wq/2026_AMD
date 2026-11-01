@@ -1,0 +1,14 @@
+{
+  "lerobot.motors.auto_calibrate": {
+    "path": "/opt/lerobot/src/lerobot/motors/auto_calibrate.py",
+    "sha256": "09258889dd89ddabec5b6411cfb4eeb669d50bfacdd69123fb30711c201cbbe3"
+  },
+  "lerobot.motors.feetech.feetech": {
+    "path": "/opt/lerobot/src/lerobot/motors/feetech/feetech.py",
+    "sha256": "9774a028b3897162221982a633da61058d16a6abc04c59433c194e20ae0bb311"
+  },
+  "lerobot.motors.motors_bus": {
+    "path": "/opt/lerobot/src/lerobot/motors/motors_bus.py",
+    "sha256": "7847b824c03ad62ca85b99757ecc095bbe476e9adf49467cc4f7aa4aec8cf3d2"
+  }
+}

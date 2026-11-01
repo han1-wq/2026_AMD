@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="rviz" type="rviz" name="pc_slam_rviz" required="true"
+        args="-d /pc-rviz/slam.rviz" output="screen"/>
+</launch>

@@ -1,0 +1,216 @@
+{
+    "Used Resources": [
+        {
+            "ip_instance": "kv260_hardware_platform_DPUCZDX8G_1_0",
+            "resources": [
+                {
+                    "LUT": "46126"
+                },
+                {
+                    "LUTAsLogic": "40923"
+                },
+                {
+                    "LUTAsMem": "5203"
+                },
+                {
+                    "REG": "80756"
+                },
+                {
+                    "CARRY8": "1018"
+                },
+                {
+                    "F7MUX": "2233"
+                },
+                {
+                    "F8MUX": "0"
+                },
+                {
+                    "F9MUX": "0"
+                },
+                {
+                    "BRAM": "78"
+                },
+                {
+                    "URAM": "40"
+                },
+                {
+                    "DSP": "566"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "GTHE4_CHANNEL": "0"
+                },
+                {
+                    "GTHE4_COMMON": "0"
+                }
+            ]
+        },
+        {
+            "ip_instance": "kv260_hardware_platform_image_preprocess_1_0",
+            "resources": [
+                {
+                    "LUT": "12884"
+                },
+                {
+                    "LUTAsLogic": "10747"
+                },
+                {
+                    "LUTAsMem": "2137"
+                },
+                {
+                    "REG": "12851"
+                },
+                {
+                    "CARRY8": "647"
+                },
+                {
+                    "F7MUX": "153"
+                },
+                {
+                    "F8MUX": "8"
+                },
+                {
+                    "F9MUX": "0"
+                },
+                {
+                    "BRAM": "11"
+                },
+                {
+                    "URAM": "0"
+                },
+                {
+                    "DSP": "37"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "GTHE4_CHANNEL": "0"
+                },
+                {
+                    "GTHE4_COMMON": "0"
+                }
+            ]
+        },
+        {
+            "ip_instance": "kv260_hardware_platform_sfm_xrt_top_1_0",
+            "resources": [
+                {
+                    "LUT": "10204"
+                },
+                {
+                    "LUTAsLogic": "9567"
+                },
+                {
+                    "LUTAsMem": "637"
+                },
+                {
+                    "REG": "8423"
+                },
+                {
+                    "CARRY8": "815"
+                },
+                {
+                    "F7MUX": "784"
+                },
+                {
+                    "F8MUX": "8"
+                },
+                {
+                    "F9MUX": "0"
+                },
+                {
+                    "BRAM": "4"
+                },
+                {
+                    "URAM": "0"
+                },
+                {
+                    "DSP": "14"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "GTHE4_CHANNEL": "0"
+                },
+                {
+                    "GTHE4_COMMON": "0"
+                }
+            ]
+        },
+        {
+            "ip_instance": "kv260_hardware_platform_yolo_postprocess_1_0",
+            "resources": [
+                {
+                    "LUT": "4750"
+                },
+                {
+                    "LUTAsLogic": "4115"
+                },
+                {
+                    "LUTAsMem": "635"
+                },
+                {
+                    "REG": "7223"
+                },
+                {
+                    "CARRY8": "319"
+                },
+                {
+                    "F7MUX": "19"
+                },
+                {
+                    "F8MUX": "8"
+                },
+                {
+                    "F9MUX": "0"
+                },
+                {
+                    "BRAM": "12"
+                },
+                {
+                    "URAM": "0"
+                },
+                {
+                    "DSP": "25"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "GTHE4_CHANNEL": "0"
+                },
+                {
+                    "GTHE4_COMMON": "0"
+                }
+            ]
+        }
+    ]
+}

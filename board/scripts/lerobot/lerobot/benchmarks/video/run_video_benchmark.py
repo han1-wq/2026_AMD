@@ -1,0 +1,1 @@
+../../../../../../src/ps/lerobot-deploy/lerobot/benchmarks/video/run_video_benchmark.py

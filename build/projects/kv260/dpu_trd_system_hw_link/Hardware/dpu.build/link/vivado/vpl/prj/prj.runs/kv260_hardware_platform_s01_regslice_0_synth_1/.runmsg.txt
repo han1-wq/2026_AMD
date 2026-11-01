@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: kv260_hardware_platform_s01_regslice_0
+Log file: /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.runs/kv260_hardware_platform_s01_regslice_0_synth_1/runme.log

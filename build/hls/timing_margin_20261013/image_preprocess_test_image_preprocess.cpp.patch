@@ -1,0 +1,13 @@
+--- /home/amd/Workspace/HLS_IP/timing_margin_20261013/baseline/image_preprocess/tb/test_image_preprocess.cpp
++++ /home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp
+@@ -264,8 +264,8 @@
+         s=Settings(); s.w=1280; s.h=720; s.pattern=3; s.mode=TENSOR_ONLY; run_case("hd_geometry",s);
+         s.w=1920; s.h=416; run_case("wide_geometry",s);
+         s.w=416; s.h=1080; run_case("tall_geometry",s);
+-        invalid_cases();
+-    }
++    }
++    invalid_cases(); // Exercise the new startup pipeline in RTL smoke tests too.
+     std::cout << (failures ? "FAIL" : "PASS") << ": " << failures << " failures\n";
+     return failures ? EXIT_FAILURE : EXIT_SUCCESS;
+ }

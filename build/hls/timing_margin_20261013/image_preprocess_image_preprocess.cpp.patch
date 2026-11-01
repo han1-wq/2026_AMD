@@ -1,0 +1,66 @@
+--- /home/amd/Workspace/HLS_IP/timing_margin_20261013/baseline/image_preprocess/src/image_preprocess.cpp
++++ /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp
+@@ -6,6 +6,35 @@
+ namespace {
+ struct Pair { Pixel original; Pixel enhanced; };
+ struct Coordinate { ap_uint<11> index; ap_uint<12> weight; };
++
++// Keep startup validation out of the top-level datapath register enables.
++// This runs once per frame; extra validation cycles do not change pixel II.
++static unsigned validate_settings(
++    unsigned width, unsigned height, unsigned src_stride, unsigned src_capacity,
++    unsigned tensor_capacity, unsigned preview_stride, unsigned preview_capacity,
++    unsigned resized_w, unsigned resized_h, unsigned pad_x, unsigned pad_y,
++    unsigned output_mode, unsigned flags, unsigned eq_mode, unsigned saturation_q12) {
++#pragma HLS INLINE off
++#pragma HLS PIPELINE II=1
++    if (width < TARGET || height < TARGET || width > MAX_WIDTH || height > MAX_HEIGHT) return BAD_SIZE;
++    if (output_mode > TENSOR_AND_PREVIEW || eq_mode > EQ_PREVIOUS || (flags & ~15u)) return BAD_MODE;
++    if (src_stride % 16 || src_stride < width*3 || src_stride > MAX_WIDTH*3) return BAD_STRIDE;
++    if (output_mode != TENSOR_ONLY && (preview_stride % 16 || preview_stride < width*3 || preview_stride > MAX_WIDTH*3)) return BAD_STRIDE;
++    ap_uint<13> source_stride = src_stride, destination_stride = preview_stride;
++    ap_uint<11> frame_height = height;
++    ap_uint<24> source_required = source_stride*frame_height;
++    ap_uint<24> preview_required = destination_stride*frame_height;
++#pragma HLS BIND_OP variable=source_required op=mul impl=fabric latency=2
++#pragma HLS BIND_OP variable=preview_required op=mul impl=fabric latency=2
++    if (src_capacity < source_required ||
++        (output_mode != PREVIEW_ONLY && tensor_capacity < TENSOR_BYTES) ||
++        (output_mode != TENSOR_ONLY && preview_capacity < preview_required)) return BAD_CAPACITY;
++    if (saturation_q12 > 8192) return BAD_SATURATION;
++    if (!resized_w || !resized_h || resized_w > TARGET || resized_h > TARGET ||
++        resized_w > width || resized_h > height || pad_x != (TARGET-resized_w)/2 ||
++        pad_y != (TARGET-resized_h)/2) return BAD_GEOMETRY;
++    return OK;
++}
+ 
+ static unsigned word_address(unsigned row, unsigned stride_words, unsigned column) {
+ #pragma HLS INLINE
+@@ -475,23 +504,10 @@
+     tensor_bytes = preview_bytes = 0;
+     completed_frame_id = frame_id;
+     completed_config_id = config_id;
+-    if (width < TARGET || height < TARGET || width > MAX_WIDTH || height > MAX_HEIGHT) return BAD_SIZE;
+-    if (output_mode > TENSOR_AND_PREVIEW || eq_mode > EQ_PREVIOUS || (flags & ~15u)) return BAD_MODE;
+-    if (src_stride % 16 || src_stride < width*3 || src_stride > MAX_WIDTH*3) return BAD_STRIDE;
+-    if (output_mode != TENSOR_ONLY && (preview_stride % 16 || preview_stride < width*3 || preview_stride > MAX_WIDTH*3)) return BAD_STRIDE;
+-    ap_uint<13> source_stride = src_stride, destination_stride = preview_stride;
+-    ap_uint<11> frame_height = height;
+-    ap_uint<24> source_required = source_stride*frame_height;
+-    ap_uint<24> preview_required = destination_stride*frame_height;
+-#pragma HLS BIND_OP variable=source_required op=mul impl=fabric
+-#pragma HLS BIND_OP variable=preview_required op=mul impl=fabric
+-    if (src_capacity < source_required ||
+-        (output_mode != PREVIEW_ONLY && tensor_capacity < TENSOR_BYTES) ||
+-        (output_mode != TENSOR_ONLY && preview_capacity < preview_required)) return BAD_CAPACITY;
+-    if (saturation_q12 > 8192) return BAD_SATURATION;
+-    if (!resized_w || !resized_h || resized_w > TARGET || resized_h > TARGET ||
+-        resized_w > width || resized_h > height || pad_x != (TARGET-resized_w)/2 ||
+-        pad_y != (TARGET-resized_h)/2) return BAD_GEOMETRY;
++    unsigned status = validate_settings(width, height, src_stride, src_capacity,
++        tensor_capacity, preview_stride, preview_capacity, resized_w, resized_h,
++        pad_x, pad_y, output_mode, flags, eq_mode, saturation_q12);
++    if (status != OK) return status;
+ 
+     ap_uint<8> color[3][256], quant[3][256], eq[256];
+ #pragma HLS ARRAY_PARTITION variable=color complete dim=1

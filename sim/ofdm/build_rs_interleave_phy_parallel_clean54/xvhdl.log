@@ -1,0 +1,28 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/complex_multiplier/sim/complex_multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'complex_multiplier'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/cordic_arctan/sim/cordic_arctan.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cordic_arctan'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/cordic_arctan_coarse/sim/cordic_arctan_coarse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cordic_arctan_coarse'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/dds_cfo/sim/dds_cfo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_cfo'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/dds_pilot/sim/dds_pilot.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'dds_pilot'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/div_atan2_s32in/sim/div_atan2_s32in.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'div_atan2_s32in'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/mult_atan2_s32/sim/mult_atan2_s32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_atan2_s32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/mult_atan2_s32_for_ls/sim/mult_atan2_s32_for_ls.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_atan2_s32_for_ls'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/mult_atan2_s32_for_pilot/sim/mult_atan2_s32_for_pilot.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_atan2_s32_for_pilot'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/mult_s16x16/sim/mult_s16x16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_s16x16'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/ofdm_signal_nums_cal_div/sim/ofdm_signal_nums_cal_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ofdm_signal_nums_cal_div'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/sim/viterbi_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'viterbi_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/xfft_64/sim/xfft_64.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xfft_64'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/xfft_tx_freqd_to_timed/sim/xfft_tx_freqd_to_timed.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xfft_tx_freqd_to_timed'

@@ -1,0 +1,2 @@
+FATAL: /home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_phy_tx_idle.v:46: PHY_IDLE_NOT_ZERO phase=0 i=9a4 q=552
+       Time: 588500 Scope: tb_phy_tx_idle

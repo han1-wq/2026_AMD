@@ -1,0 +1,55 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'amd' on host 'ubuntu' (Linux_x86_64 version 5.15.0-139-generic) on Tue Oct 13 19:42:38 PDT 2026
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/amd/Workspace'
+Sourcing Tcl script '/home/amd/Workspace/HLS_IP/image_preprocess/scripts/build.tcl'
+INFO: [HLS 200-1510] Running: open_project image_preprocess 
+INFO: [HLS 200-10] Opening project '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess'.
+INFO: [HLS 200-1510] Running: set_top image_preprocess 
+INFO: [HLS 200-1510] Running: add_files /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp -cflags -std=c++14 -I/home/amd/Workspace/HLS_IP/image_preprocess/src 
+INFO: [HLS 200-10] Adding design file '/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp -cflags -std=c++14 -I/home/amd/Workspace/HLS_IP/image_preprocess/src 
+INFO: [HLS 200-10] Adding test bench file '/home/amd/Workspace/HLS_IP/image_preprocess/tb/test_image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_200mhz -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=0
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=1
+INFO: [HLS 200-1464] Running solution command: config_export -display_name {KV260 Image Preprocess}
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -library=vision
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vendor=local
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.625 
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog -rtl verilog -vendor local -library vision -version 1.0 -display_name KV260 Image Preprocess 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 19:42:59 2026...
+INFO: [HLS 200-802] Generated output file image_preprocess/solution_200mhz/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 17.14 seconds. CPU system time: 5.16 seconds. Elapsed time: 22.09 seconds; current allocated memory: -1018.559 MB.
+INFO: [HLS 200-112] Total CPU user time: 18.59 seconds. Total CPU system time: 7.21 seconds. Total elapsed time: 24.69 seconds; peak allocated memory: 235.809 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue Oct 13 19:43:02 2026...

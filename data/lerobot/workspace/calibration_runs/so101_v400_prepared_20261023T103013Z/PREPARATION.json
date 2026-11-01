@@ -1,0 +1,19 @@
+{
+  "status": "OFFLINE_TESTS_PASSED_HARDWARE_BLOCKED",
+  "requested_velocity": 400,
+  "previous_run": "/home/amd/lerobot-deploy/workspace/calibration_runs/so101_slow_20261023T101122Z",
+  "original_sha256": "071cb4cc1c5f626ebc0ea52511206fb3d8ff1eecab54c9b58658fc7e25ebe176",
+  "fresh_hardware_snapshot_available": false,
+  "offline_tests_passed": 37,
+  "hardware_execution_blocked": true,
+  "hardware_root_cause_resolved": false,
+  "hardware_motion_performed_for_v400": false,
+  "verified_utc": "2026-10-23T10:35:37.880937+00:00",
+  "sha256": {
+    "calibrate_slow.py": "3ab97449d56db69bf5b2c889de3b1d8b47fda87f4151324aee1eba4fdc0315e6",
+    "preflight.py": "3682b9a9d5070faefd27a9f1cdd496355460064ebc131a476899cea75ea87a1a",
+    "test_slow.py": "461f6dbfbd40f82ec7aa66f0a15a83b2d58238c086f2bb82c6f2a66469c828a7",
+    "offline_before_fixture.json": "3ae44d2b932d63f3a79dc1eee1aa20f5b9c490af77f9900ef94f433006deb20d",
+    "original_before.json": "071cb4cc1c5f626ebc0ea52511206fb3d8ff1eecab54c9b58658fc7e25ebe176"
+  }
+}

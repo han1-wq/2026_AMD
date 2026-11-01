@@ -1,0 +1,389 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 16 02:51:09 2026
+# Process ID: 218149
+# Current directory: /home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1
+# Command line: vivado -log viterbi_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source viterbi_0.tcl
+# Log file: /home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/viterbi_0.vds
+# Journal file: /home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source viterbi_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top viterbi_0 -part xc7z020clg400-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 218183
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2723.629 ; gain = 0.000 ; free physical = 12446 ; free virtual = 16649
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'viterbi_0' [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/synth/viterbi_0.vhd:72]
+	Parameter C_HAS_S_AXIS_DATA_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_M_AXIS_DATA_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_M_AXIS_DATA_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_M_AXIS_DSTAT_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_DSTAT bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_DATA_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_DSTAT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_DSTAT_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_SERIAL bound to: 0 - type: integer 
+	Parameter C_CHANNEL_COUNT bound to: 1 - type: integer 
+	Parameter C_DUAL_DECODER bound to: 0 - type: integer 
+	Parameter C_TRELLIS_MODE bound to: 0 - type: integer 
+	Parameter C_CONSTRAINT_LENGTH bound to: 7 - type: integer 
+	Parameter C_TRACEBACK_LENGTH bound to: 84 - type: integer 
+	Parameter C_RED_LATENCY bound to: 1 - type: integer 
+	Parameter C_HAS_BEST_STATE bound to: 1 - type: integer 
+	Parameter C_BEST_STATE_WIDTH bound to: 3 - type: integer 
+	Parameter C_OUTPUT_RATE0 bound to: 2 - type: integer 
+	Parameter C_CONVOLUTION0_CODE0 bound to: 91 - type: integer 
+	Parameter C_CONVOLUTION0_CODE1 bound to: 121 - type: integer 
+	Parameter C_CONVOLUTION0_CODE2 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION0_CODE3 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION0_CODE4 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION0_CODE5 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION0_CODE6 bound to: 0 - type: integer 
+	Parameter C_OUTPUT_RATE1 bound to: 2 - type: integer 
+	Parameter C_CONVOLUTION1_CODE0 bound to: 121 - type: integer 
+	Parameter C_CONVOLUTION1_CODE1 bound to: 91 - type: integer 
+	Parameter C_CONVOLUTION1_CODE2 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION1_CODE3 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION1_CODE4 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION1_CODE5 bound to: 0 - type: integer 
+	Parameter C_CONVOLUTION1_CODE6 bound to: 0 - type: integer 
+	Parameter C_SOFT_CODING bound to: 1 - type: integer 
+	Parameter C_SOFT_CODE bound to: 1 - type: integer 
+	Parameter C_SOFT_WIDTH bound to: 3 - type: integer 
+	Parameter C_HAS_ERASED bound to: 1 - type: integer 
+	Parameter C_HAS_BLOCK_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_BER bound to: 0 - type: integer 
+	Parameter C_HAS_NORM bound to: 0 - type: integer 
+	Parameter C_COMPONENT_NAME bound to: viterbi_0 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+INFO: [Synth 8-3491] module 'viterbi_v9_1_13' declared at '/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/hdl/viterbi_v9_1_vh_rfs.vhd:26733' bound to instance 'U0' of component 'viterbi_v9_1_13' [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/synth/viterbi_0.vhd:168]
+INFO: [Synth 8-256] done synthesizing module 'viterbi_0' (0#1) [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/synth/viterbi_0.vhd:72]
+WARNING: [Synth 8-7129] Port sclr in module c_mux_bit_4to1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_mux_bit_4to1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_mux_bit_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_6_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[1] in module c_compare_v12_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[0] in module c_compare_v12_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_6_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[1] in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b[0] in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_14_lut6_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_14_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_14_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_14_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_14_legacy__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port load in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[1] in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port l[0] in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[1] in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[0] in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_counter_binary_v12_0_15_legacy__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh0 in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port q_thresh0 in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port thresh1 in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port q_thresh1 in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[1] in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iv[0] in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module vit_counter_binary__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count_to_v[1] in module vit_counter__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port count_to_v[0] in module vit_counter__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module vit_counter__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[2] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[1] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[0] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[2] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[1] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qspo[0] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[2] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[1] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[0] in module vit_distributed_mem__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[0] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[0] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[0] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[5] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[4] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[3] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[2] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[1] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[0] in module vit_distributed_mem__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[3] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[2] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[1] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port spo[0] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[3] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[2] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[1] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dpo[0] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[3] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[2] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[1] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port qdpo[0] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[3] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[2] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[1] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port din[0] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[5] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[4] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[3] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[2] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[1] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addrb[0] in module vit_distributed_mem__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[5] in module c_compare_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[4] in module c_compare_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[3] in module c_compare_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[2] in module c_compare_v12_0_6_viv__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[1] in module c_compare_v12_0_6_viv__parameterized2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2723.629 ; gain = 0.000 ; free physical = 11377 ; free virtual = 15591
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2723.629 ; gain = 0.000 ; free physical = 11194 ; free virtual = 15408
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2723.629 ; gain = 0.000 ; free physical = 11193 ; free virtual = 15407
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2723.629 ; gain = 0.000 ; free physical = 11323 ; free virtual = 15537
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/viterbi_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ip/viterbi_0/viterbi_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2827.457 ; gain = 0.000 ; free physical = 11194 ; free virtual = 15421
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2827.457 ; gain = 0.000 ; free physical = 11322 ; free virtual = 15550
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12384 ; free virtual = 16614
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12383 ; free virtual = 16613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12382 ; free virtual = 16612
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3971] The signal "vit_block_mem:/ram_tdp.ram_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12317 ; free virtual = 16626
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3971] The signal "U0/a1/\a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I /\tbr.TRACE_LAT_I /bk1.gen_dp_blocks[0].MEM_RAM_I/ram_tdp.ram_mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/a1/\a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I /\tbr.TRACE_LAT_I /bk1.gen_dp_blocks[1].MEM_RAM_I/ram_tdp.ram_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12088 ; free virtual = 16437
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 11852 ; free virtual = 16224
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 11970 ; free virtual = 16342
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[0].MEM_RAM_I/ram_tdp.ram_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[0].MEM_RAM_I/ram_tdp.ram_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[0].MEM_RAM_I/ram_tdp.ram_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[0].MEM_RAM_I/ram_tdp.ram_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[1].MEM_RAM_I/ram_tdp.ram_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[1].MEM_RAM_I/ram_tdp.ram_mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[1].MEM_RAM_I/ram_tdp.ram_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/a1/a1/viterbi_main_i/ntm.A1_NT_I/PAR_DEC.DPAR_I/tbr.TRACE_LAT_I/bk1.gen_dp_blocks[1].MEM_RAM_I/ram_tdp.ram_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12060 ; free virtual = 16411
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12397 ; free virtual = 16736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12397 ; free virtual = 16736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12386 ; free virtual = 16738
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12380 ; free virtual = 16733
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12348 ; free virtual = 16708
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12346 ; free virtual = 16706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    77|
+|2     |LUT2     |   290|
+|3     |LUT3     |   337|
+|4     |LUT4     |   647|
+|5     |LUT5     |    32|
+|6     |LUT6     |  1113|
+|7     |MUXCY    |    35|
+|8     |MUXF7    |    24|
+|9     |MUXF8    |    12|
+|10    |RAM16X1D |     6|
+|11    |RAMB36E1 |     4|
+|12    |SRL16E   |     5|
+|13    |XORCY    |    44|
+|14    |FDRE     |  1706|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2827.457 ; gain = 103.828 ; free physical = 12339 ; free virtual = 16699
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4738 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 2827.457 ; gain = 0.000 ; free physical = 12386 ; free virtual = 16747
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 2827.465 ; gain = 103.828 ; free physical = 12392 ; free virtual = 16753
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2827.465 ; gain = 0.000 ; free physical = 12463 ; free virtual = 16824
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2827.465 ; gain = 0.000 ; free physical = 12399 ; free virtual = 16774
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 12 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+Synth Design complete, checksum: b1087be6
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2827.465 ; gain = 103.836 ; free physical = 12628 ; free virtual = 16991
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/viterbi_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP viterbi_0, cache-ID = 4e94882b1f4cd4eb
+INFO: [Coretcl 2-1174] Renamed 710 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/ofdm_ad9361.runs/viterbi_0_synth_1/viterbi_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file viterbi_0_utilization_synth.rpt -pb viterbi_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 16 02:52:08 2026...

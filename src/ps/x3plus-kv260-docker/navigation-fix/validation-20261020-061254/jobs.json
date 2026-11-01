@@ -1,0 +1,30 @@
+{
+  "directory": "/home/amd/x3plus-kv260-docker/navigation-fix/validation-20261020-061254",
+  "image": "sha256:dbd61011ab231b6c6eeb9634183b9df81f106d39789e3a13d3c244e35c3f03f5",
+  "scope": "Isolated synthetic kinematics/raycast scan; no host network or hardware devices",
+  "setup_attempts": [
+    {
+      "test": "regression",
+      "container": "x3plus-recheck-regression-20261020-061254",
+      "id": "29a0e69b62ce20068ef6da1f969c4892358cab92b266919cd2b0119051839337"
+    },
+    {
+      "test": "integration",
+      "container": "x3plus-recheck-integration-20261020-061254",
+      "id": "644a2ac0acfabfa7a84fed176360d13a8a5afb47c26638b10b175357acbf4218"
+    }
+  ],
+  "setup_error": "Dropping all capabilities prevented container root from writing amd-owned snapshot; tests did not start.",
+  "jobs": [
+    {
+      "test": "regression",
+      "container": "x3plus-recheck-regression-20261020-061254-r2",
+      "id": "1b0121585d3ed4b9549ca1a27a8c3633acee0001bcd8d09674d9bd16b2232bf0"
+    },
+    {
+      "test": "integration",
+      "container": "x3plus-recheck-integration-20261020-061254-r2",
+      "id": "97959d2466c76651f0a3784f2505f8c7d3efc221e5cbef297e761f080b63d486"
+    }
+  ]
+}

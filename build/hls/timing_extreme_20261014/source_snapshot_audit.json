@@ -1,0 +1,22 @@
+{
+  "image_preprocess": {
+    "source_sha256": "1b464ca10c6a23ae549ccb0c12f3446f0d5e9e63758ef2ac600354da02f98f07",
+    "preprocessed_sha256": "e2eb7446017f93f59ff960c09e27b5793d5c2f8c75ff0be98f0c51f0eeb0bcd1",
+    "header_sha256": "548117d65110ea42024d4bf8ea3a900892f1a3cd7de4f0a0f9ff35d5b81b6f01",
+    "normalized_header_match": true,
+    "normalized_source_and_pragmas_match": true,
+    "method": "Suffix comparison after removing comments, include/line directives, whitespace, generated loop labels, sdx_kernel attributes and generated DIRECTIVE TOP; source HLS pragmas retained.",
+    "build_time_hashes_available": false,
+    "build_time_hashes_match": null
+  },
+  "yolo_postprocess": {
+    "source_sha256": "a8957c7a7c01cf74b4e408c705a8ef949bcca513c07bdce4682e2b075893c65f",
+    "preprocessed_sha256": "33364d997976270726ba3efefd7342dcca1a0fab405cf58be15b55b8172142fa",
+    "header_sha256": "10eaaaa08055fef6d1d2ae18bc28c2a2723cc1baef5c8b6d11166218af4a06eb",
+    "normalized_header_match": true,
+    "normalized_source_and_pragmas_match": true,
+    "method": "Suffix comparison after removing comments, include/line directives, whitespace, generated loop labels, sdx_kernel attributes and generated DIRECTIVE TOP; source HLS pragmas retained.",
+    "build_time_hashes_available": false,
+    "build_time_hashes_match": null
+  }
+}

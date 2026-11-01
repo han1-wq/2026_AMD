@@ -1,0 +1,1 @@
+../../../../../sim/ofdm/build_rs_phy_max8/run_rate_snapshot.sh

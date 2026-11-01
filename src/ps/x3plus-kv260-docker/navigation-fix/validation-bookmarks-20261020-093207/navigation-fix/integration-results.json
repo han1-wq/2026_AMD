@@ -1,0 +1,57 @@
+{
+  "initialpose_submissions": 1, 
+  "public_cmd_vel_publishers": [
+    "/navigation_guard"
+  ], 
+  "internal_attempts_with_distinct_ids": 2, 
+  "scan_loss_cancelled_real_goal": true, 
+  "single_initialpose_single_accepted_goal_transient_auto_resume": true, 
+  "first_endpoint": {
+    "position_error_m": 0.029249874723197528, 
+    "yaw_error_rad": 0.09555872253475384
+  }, 
+  "paused_velocity_zero": true, 
+  "paused_public_action_remained_active": true, 
+  "automatic_resume_count": 1, 
+  "same_session_reuse_preserved_localization": true, 
+  "guard": {
+    "valid_scan_returns": null, 
+    "guard_check_ms": 0.48995018005371094, 
+    "tf_age_s": null, 
+    "position_std_m": null, 
+    "quality_warning": false, 
+    "ready": false, 
+    "reason": "stale_scan_initial_pose_required", 
+    "quality_pending_s": 0.0, 
+    "task_reason": "stale_scan_initial_pose_required", 
+    "yaw_std_rad": null, 
+    "task_state": "idle", 
+    "goal_retained": false, 
+    "pose_age_s": 16.98650288581848, 
+    "stamp": 1792513974.620755, 
+    "max_auto_resumes": 5, 
+    "ray_conflict": null, 
+    "current_fault": "stale_scan", 
+    "scan_age_s": 16.876458883285522, 
+    "resume_count": 0, 
+    "recovery_remaining_s": 0.0, 
+    "initial_pose_required": true, 
+    "scan_match": null, 
+    "latched_reason": "stale_scan_initial_pose_required"
+  }, 
+  "heading_change_endpoint": {
+    "position_error_m": 0.10962058594997695, 
+    "yaw_error_rad": 0.0920402696623428
+  }, 
+  "consecutive_goals_without_initialpose": true, 
+  "heading_change_goal_succeeded": true, 
+  "scope": "Real AMCL, guard and move_base, ideal kinematics/raycast scan/odom; no physics or hardware.", 
+  "kinematic_endpoint_error_m": 0.029249874723197528, 
+  "pc_probe_verified_fresh_localization_and_guard": true, 
+  "rviz_simple_goal_submissions": 1, 
+  "orientation_only_simple_goal_endpoint": {
+    "position_error_m": 0.0, 
+    "yaw_error_rad": 0.09866251995919373
+  }, 
+  "real_move_base_goal_succeeded": true
+}

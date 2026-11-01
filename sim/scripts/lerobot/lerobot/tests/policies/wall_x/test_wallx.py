@@ -1,0 +1,1 @@
+../../../../../../../src/ps/lerobot-deploy/lerobot/tests/policies/wall_x/test_wallx.py

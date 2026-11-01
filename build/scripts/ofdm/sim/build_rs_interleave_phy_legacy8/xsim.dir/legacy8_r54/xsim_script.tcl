@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_legacy8/xsim.dir/legacy8_r54/xsim_script.tcl

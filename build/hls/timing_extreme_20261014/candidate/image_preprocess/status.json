@@ -1,0 +1,19 @@
+{
+  "kernel": "image_preprocess",
+  "completed": [
+    "test_lut_arithmetic_compile",
+    "test_lut_arithmetic",
+    "test_validation_compile",
+    "test_validation",
+    "test_coordinates_compile",
+    "test_coordinates",
+    "csim",
+    "synth",
+    "mapped",
+    "cosim",
+    "export"
+  ],
+  "status": "passed",
+  "stage": "export",
+  "updated": "2026-10-14 00:26:22"
+}

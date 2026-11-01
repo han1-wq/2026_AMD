@@ -1,0 +1,196 @@
+//Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+//--------------------------------------------------------------------------------
+//Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+//Date        : Fri Oct 16 02:23:39 2026
+//Host        : ubuntu running 64-bit Ubuntu 20.04.1 LTS
+//Command     : generate_target ZYNQ_bd_wrapper.bd
+//Design      : ZYNQ_bd_wrapper
+//Purpose     : IP block netlist
+//--------------------------------------------------------------------------------
+`timescale 1 ps / 1 ps
+
+module ZYNQ_bd_wrapper
+   (DDR_addr,
+    DDR_ba,
+    DDR_cas_n,
+    DDR_ck_n,
+    DDR_ck_p,
+    DDR_cke,
+    DDR_cs_n,
+    DDR_dm,
+    DDR_dq,
+    DDR_dqs_n,
+    DDR_dqs_p,
+    DDR_odt,
+    DDR_ras_n,
+    DDR_reset_n,
+    DDR_we_n,
+    FIXED_IO_ddr_vrn,
+    FIXED_IO_ddr_vrp,
+    FIXED_IO_mio,
+    FIXED_IO_ps_clk,
+    FIXED_IO_ps_porb,
+    FIXED_IO_ps_srstb,
+    GPIO_O,
+    SPI0_MISO_I,
+    SPI0_MOSI_O,
+    SPI0_SCLK_O,
+    SPI0_SS_O,
+    data_clk_n,
+    data_clk_p,
+    fb_clk_n,
+    fb_clk_p,
+    ofdm_status,
+    rx_data_ch1_i,
+    rx_data_ch1_q,
+    rx_data_ch1_vaild,
+    rx_data_ch2_i,
+    rx_data_ch2_q,
+    rx_data_ch2_vaild,
+    rx_data_n,
+    rx_data_p,
+    rx_frame_n,
+    rx_frame_p,
+    tx_data_n,
+    tx_data_p,
+    tx_frame_n,
+    tx_frame_p);
+  inout [14:0]DDR_addr;
+  inout [2:0]DDR_ba;
+  inout DDR_cas_n;
+  inout DDR_ck_n;
+  inout DDR_ck_p;
+  inout DDR_cke;
+  inout DDR_cs_n;
+  inout [3:0]DDR_dm;
+  inout [31:0]DDR_dq;
+  inout [3:0]DDR_dqs_n;
+  inout [3:0]DDR_dqs_p;
+  inout DDR_odt;
+  inout DDR_ras_n;
+  inout DDR_reset_n;
+  inout DDR_we_n;
+  inout FIXED_IO_ddr_vrn;
+  inout FIXED_IO_ddr_vrp;
+  inout [53:0]FIXED_IO_mio;
+  inout FIXED_IO_ps_clk;
+  inout FIXED_IO_ps_porb;
+  inout FIXED_IO_ps_srstb;
+  output [31:0]GPIO_O;
+  input SPI0_MISO_I;
+  output SPI0_MOSI_O;
+  output SPI0_SCLK_O;
+  output SPI0_SS_O;
+  input data_clk_n;
+  input data_clk_p;
+  output fb_clk_n;
+  output fb_clk_p;
+  output [2:0]ofdm_status;
+  output [11:0]rx_data_ch1_i;
+  output [11:0]rx_data_ch1_q;
+  output rx_data_ch1_vaild;
+  output [11:0]rx_data_ch2_i;
+  output [11:0]rx_data_ch2_q;
+  output rx_data_ch2_vaild;
+  input [5:0]rx_data_n;
+  input [5:0]rx_data_p;
+  input rx_frame_n;
+  input rx_frame_p;
+  output [5:0]tx_data_n;
+  output [5:0]tx_data_p;
+  output tx_frame_n;
+  output tx_frame_p;
+
+  wire [14:0]DDR_addr;
+  wire [2:0]DDR_ba;
+  wire DDR_cas_n;
+  wire DDR_ck_n;
+  wire DDR_ck_p;
+  wire DDR_cke;
+  wire DDR_cs_n;
+  wire [3:0]DDR_dm;
+  wire [31:0]DDR_dq;
+  wire [3:0]DDR_dqs_n;
+  wire [3:0]DDR_dqs_p;
+  wire DDR_odt;
+  wire DDR_ras_n;
+  wire DDR_reset_n;
+  wire DDR_we_n;
+  wire FIXED_IO_ddr_vrn;
+  wire FIXED_IO_ddr_vrp;
+  wire [53:0]FIXED_IO_mio;
+  wire FIXED_IO_ps_clk;
+  wire FIXED_IO_ps_porb;
+  wire FIXED_IO_ps_srstb;
+  wire [31:0]GPIO_O;
+  wire SPI0_MISO_I;
+  wire SPI0_MOSI_O;
+  wire SPI0_SCLK_O;
+  wire SPI0_SS_O;
+  wire data_clk_n;
+  wire data_clk_p;
+  wire fb_clk_n;
+  wire fb_clk_p;
+  wire [2:0]ofdm_status;
+  wire [11:0]rx_data_ch1_i;
+  wire [11:0]rx_data_ch1_q;
+  wire rx_data_ch1_vaild;
+  wire [11:0]rx_data_ch2_i;
+  wire [11:0]rx_data_ch2_q;
+  wire rx_data_ch2_vaild;
+  wire [5:0]rx_data_n;
+  wire [5:0]rx_data_p;
+  wire rx_frame_n;
+  wire rx_frame_p;
+  wire [5:0]tx_data_n;
+  wire [5:0]tx_data_p;
+  wire tx_frame_n;
+  wire tx_frame_p;
+
+  ZYNQ_bd ZYNQ_bd_i
+       (.DDR_addr(DDR_addr),
+        .DDR_ba(DDR_ba),
+        .DDR_cas_n(DDR_cas_n),
+        .DDR_ck_n(DDR_ck_n),
+        .DDR_ck_p(DDR_ck_p),
+        .DDR_cke(DDR_cke),
+        .DDR_cs_n(DDR_cs_n),
+        .DDR_dm(DDR_dm),
+        .DDR_dq(DDR_dq),
+        .DDR_dqs_n(DDR_dqs_n),
+        .DDR_dqs_p(DDR_dqs_p),
+        .DDR_odt(DDR_odt),
+        .DDR_ras_n(DDR_ras_n),
+        .DDR_reset_n(DDR_reset_n),
+        .DDR_we_n(DDR_we_n),
+        .FIXED_IO_ddr_vrn(FIXED_IO_ddr_vrn),
+        .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
+        .FIXED_IO_mio(FIXED_IO_mio),
+        .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
+        .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
+        .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .GPIO_O(GPIO_O),
+        .SPI0_MISO_I(SPI0_MISO_I),
+        .SPI0_MOSI_O(SPI0_MOSI_O),
+        .SPI0_SCLK_O(SPI0_SCLK_O),
+        .SPI0_SS_O(SPI0_SS_O),
+        .data_clk_n(data_clk_n),
+        .data_clk_p(data_clk_p),
+        .fb_clk_n(fb_clk_n),
+        .fb_clk_p(fb_clk_p),
+        .ofdm_status(ofdm_status),
+        .rx_data_ch1_i(rx_data_ch1_i),
+        .rx_data_ch1_q(rx_data_ch1_q),
+        .rx_data_ch1_vaild(rx_data_ch1_vaild),
+        .rx_data_ch2_i(rx_data_ch2_i),
+        .rx_data_ch2_q(rx_data_ch2_q),
+        .rx_data_ch2_vaild(rx_data_ch2_vaild),
+        .rx_data_n(rx_data_n),
+        .rx_data_p(rx_data_p),
+        .rx_frame_n(rx_frame_n),
+        .rx_frame_p(rx_frame_p),
+        .tx_data_n(tx_data_n),
+        .tx_data_p(tx_data_p),
+        .tx_frame_n(tx_frame_n),
+        .tx_frame_p(tx_frame_p));
+endmodule

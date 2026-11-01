@@ -1,0 +1,24 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Fri Oct  9 04:06:50 2026
+| Host         : ubuntu running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_cdc -file /home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_progress_fix/routed_cdc.rpt
+| Design       : TOP
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+-----------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+Severity  Source Clock                                                                                Destination Clock                                                                           CDC Type                 Exceptions               Endpoints  Safe  Unsafe  Unknown  No ASYNC_REG  
+--------  ------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------  -----------------------  -----------------------  ---------  ----  ------  -------  ------------  
+Critical  clk_out1_clk_wiz_0                                                                          board_50m                                                                                   No Common Primary Clock  False Path                       3     1       2        0             0  
+Info      clk_fpga_0                                                                                  ad9361_data_clk                                                                             No Common Primary Clock  None                             1     1       0        0             0  
+Info      clk_out1_clk_wiz_0                                                                          ad9361_data_clk                                                                             Safely Timed             None                           206   206       0        0             0  
+Info      clk_out1_clk_wiz_0                                                                          clk_fpga_0                                                                                  No Common Primary Clock  Max Delay Datapath Only          7     7       0        0             0  
+Info      ad9361_data_clk                                                                             clk_out1_clk_wiz_0                                                                          Safely Timed             None                            99    99       0        0             0  
+Info      clk_fpga_0                                                                                  clk_out1_clk_wiz_0                                                                          No Common Primary Clock  Max Delay Datapath Only          7     7       0        0             0  
+Info      dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  clk_out1_clk_wiz_0                                                                          No Common Primary Clock  Max Delay Datapath Only          9     9       0        0             0  
+Info      clk_out1_clk_wiz_0                                                                          dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK  No Common Primary Clock  Max Delay Datapath Only          2     2       0        0             0  
+

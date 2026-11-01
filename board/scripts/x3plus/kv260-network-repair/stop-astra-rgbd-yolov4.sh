@@ -1,0 +1,1 @@
+../../../../src/ps/x3plus-kv260-docker/kv260-network-repair/stop-astra-rgbd-yolov4.sh

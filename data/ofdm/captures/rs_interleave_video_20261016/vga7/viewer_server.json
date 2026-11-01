@@ -1,0 +1,15 @@
+{
+  "pid": 568503,
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "http.server",
+    "8765",
+    "--bind",
+    "127.0.0.1",
+    "--directory",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/vga7"
+  ],
+  "url": "http://127.0.0.1:8765/live_receiver.html"
+}

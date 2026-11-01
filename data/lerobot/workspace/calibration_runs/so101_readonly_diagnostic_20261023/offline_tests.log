@@ -1,0 +1,12 @@
+test_blocked_write_never_reaches_serial (__main__.ReadOnlyTests) ... ok
+test_broadcast_bad_ids_checksum_and_length_blocked (__main__.ReadOnlyTests) ... ok
+test_every_allowed_read_passes (__main__.ReadOnlyTests) ... ok
+test_every_other_instruction_blocked (__main__.ReadOnlyTests) ... ok
+test_fault_or_missing_data_rejected (__main__.ReadOnlyTests) ... ok
+test_sdk_generates_only_allowed_read_packet (__main__.ReadOnlyTests) ... ok
+test_signed_velocity (__main__.ReadOnlyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.009s
+
+OK

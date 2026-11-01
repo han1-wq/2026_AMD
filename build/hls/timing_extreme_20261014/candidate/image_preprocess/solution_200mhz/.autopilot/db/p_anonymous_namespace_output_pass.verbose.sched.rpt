@@ -1,0 +1,315 @@
+
+
+================================================================
+== Vitis HLS Report for 'p_anonymous_namespace_output_pass'
+================================================================
+* Date:           Wed Oct 14 00:09:48 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        image_preprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.375 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+--------+---------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |     Interval     | Pipeline |
+    |   min   |   max   |    min    |    max    |   min  |   max   |   Type   |
+    +---------+---------+-----------+-----------+--------+---------+----------+
+    |  4011007|  6250276|  20.055 ms|  31.251 ms|  173077|  6250249|  dataflow|
+    +---------+---------+-----------+-----------+--------+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 12, States = { 1 2 3 4 5 6 7 8 9 10 11 12 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.90>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%collect_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %collect" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 13 'read' 'collect_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%preview_stride_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %preview_stride" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 14 'read' 'preview_stride_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%stride_read = read i13 @_ssdm_op_Read.ap_auto.i13, i13 %stride" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 15 'read' 'stride_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%height_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %height" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 16 'read' 'height_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %width" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 17 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%preview_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %preview" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 18 'read' 'preview_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tensor_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %tensor" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 19 'read' 'tensor_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%src_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %src" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 20 'read' 'src_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%trunc_ln463_1 = trunc i32 %height_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 21 'trunc' 'trunc_ln463_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln463_2 = trunc i32 %width_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 22 'trunc' 'trunc_ln463_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mul_ln1540_loc_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 23 'alloca' 'mul_ln1540_loc_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 22> <Depth = 2> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%icmp_ln482_loc_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 24 'alloca' 'icmp_ln482_loc_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%icmp_ln483_loc_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 25 'alloca' 'icmp_ln483_loc_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%collect_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 26 'alloca' 'collect_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.86> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 5> <FIFO>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%preview_stride_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 27 'alloca' 'preview_stride_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 13> <Depth = 7> <FIFO>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%height_c33 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 28 'alloca' 'height_c33' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%height_c32 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 29 'alloca' 'height_c32' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 4> <FIFO>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%height_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 30 'alloca' 'height_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%width_c31 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 31 'alloca' 'width_c31' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%width_c30 = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 32 'alloca' 'width_c30' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 4> <FIFO>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%width_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 33 'alloca' 'width_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%preview_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 34 'alloca' 'preview_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 7> <FIFO>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tensor_c = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 35 'alloca' 'tensor_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.90> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 7> <FIFO>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%in_words = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:464]   --->   Operation 36 'alloca' 'in_words' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 64> <FIFO>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%tensor_words = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:464]   --->   Operation 37 'alloca' 'tensor_words' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 64> <FIFO>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%preview_words = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:464]   --->   Operation 38 'alloca' 'preview_words' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 64> <FIFO>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%in_pixels = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:465]   --->   Operation 39 'alloca' 'in_pixels' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 64> <FIFO>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%tensor_pixels = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:465]   --->   Operation 40 'alloca' 'tensor_pixels' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 64> <FIFO>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%preview_pixels = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:465]   --->   Operation 41 'alloca' 'preview_pixels' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 64> <FIFO>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%pairs = alloca i64 1"   --->   Operation 42 'alloca' 'pairs' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 48> <Depth = 64> <FIFO>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%hist_pixels = alloca i64 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:467]   --->   Operation 43 'alloca' 'hist_pixels' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.16> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 64> <FIFO>
+ST_1 : Operation 44 [1/1] (1.90ns)   --->   "%call_ln463 = call void @entry_proc, i64 %tensor_read, i64 %tensor_c, i64 %preview_read, i64 %preview_c, i13 %preview_stride_read, i13 %preview_stride_c, i1 %collect_read, i1 %collect_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 44 'call' 'call_ln463' <Predicate = true> <Delay = 1.90> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 45 [2/2] (1.83ns)   --->   "%call_ln476 = call void @(anonymous namespace)read_words.1, i128 %gmem_in, i64 %src_read, i128 %in_words, i32 %width_read, i32 %height_read, i13 %stride_read, i32 %width_c31, i32 %height_c33" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:476]   --->   Operation 45 'call' 'call_ln476' <Predicate = true> <Delay = 1.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 46 [1/2] (0.00ns)   --->   "%call_ln476 = call void @(anonymous namespace)read_words.1, i128 %gmem_in, i64 %src_read, i128 %in_words, i32 %width_read, i32 %height_read, i13 %stride_read, i32 %width_c31, i32 %height_c33" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:476]   --->   Operation 46 'call' 'call_ln476' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln477 = call void @(anonymous namespace)unpack.2, i128 %in_words, i24 %in_pixels, i32 %width_c31, i32 %height_c33, i32 %width_c30, i32 %height_c32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:477]   --->   Operation 47 'call' 'call_ln477' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 3.67>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%flags_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %flags" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 48 'read' 'flags_read' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "%trunc_ln463 = trunc i3 %flags_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 49 'trunc' 'trunc_ln463' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 50 [1/2] (0.00ns)   --->   "%call_ln477 = call void @(anonymous namespace)unpack.2, i128 %in_words, i24 %in_pixels, i32 %width_c31, i32 %height_c33, i32 %width_c30, i32 %height_c32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:477]   --->   Operation 50 'call' 'call_ln477' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 51 [1/1] (3.67ns)   --->   "%tmp = call i46 @(anonymous namespace)output_pass_Block_entry47_proc, i11 %trunc_ln463_2, i11 %trunc_ln463_1, i2 %trunc_ln463" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 51 'call' 'tmp' <Predicate = true> <Delay = 3.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%w_V_loc_channel = extractvalue i46 %tmp" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 52 'extractvalue' 'w_V_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_4 : Operation 53 [1/1] (0.00ns)   --->   "%h_V_loc_channel = extractvalue i46 %tmp" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 53 'extractvalue' 'h_V_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_4 : Operation 54 [1/1] (0.00ns)   --->   "%flags_cast_loc_channel = extractvalue i46 %tmp" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 54 'extractvalue' 'flags_cast_loc_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 2> <Depth = 2> <FIFO>
+ST_4 : Operation 55 [1/1] (0.00ns)   --->   "%mul_ln1540_loc_c36_channel = extractvalue i46 %tmp" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 55 'extractvalue' 'mul_ln1540_loc_c36_channel' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 22> <Depth = 2> <FIFO>
+
+State 5 <SV = 4> <Delay = 3.67>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%eq_enabled_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %eq_enabled" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 56 'read' 'eq_enabled_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%saturation_read = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %saturation" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 57 'read' 'saturation_read' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [2/2] (3.67ns)   --->   "%call_ln478 = call void @(anonymous namespace)color_stage, i24 %in_pixels, i48 %pairs, i8 %hist_pixels, i8 %color_0, i8 %color_1, i8 %color_2, i8 %eq, i2 %flags_cast_loc_channel, i14 %saturation_read, i1 %eq_enabled_read, i22 %mul_ln1540_loc_c36_channel, i22 %mul_ln1540_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:478]   --->   Operation 58 'call' 'call_ln478' <Predicate = true> <Delay = 3.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 59 [1/2] (0.00ns)   --->   "%call_ln478 = call void @(anonymous namespace)color_stage, i24 %in_pixels, i48 %pairs, i8 %hist_pixels, i8 %color_0, i8 %color_1, i8 %color_2, i8 %eq, i2 %flags_cast_loc_channel, i14 %saturation_read, i1 %eq_enabled_read, i22 %mul_ln1540_loc_c36_channel, i22 %mul_ln1540_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:478]   --->   Operation 59 'call' 'call_ln478' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 1.83>
+ST_7 : Operation 60 [1/1] (0.00ns)   --->   "%mode_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %mode" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 60 'read' 'mode_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 61 [1/1] (0.00ns)   --->   "%py_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %py" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 61 'read' 'py_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 62 [1/1] (0.00ns)   --->   "%px_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %px" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 62 'read' 'px_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 63 [1/1] (0.00ns)   --->   "%rh_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %rh" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 63 'read' 'rh_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 64 [1/1] (0.00ns)   --->   "%rw_read = read i9 @_ssdm_op_Read.ap_auto.i9, i9 %rw" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 64 'read' 'rw_read' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 65 [2/2] (0.00ns)   --->   "%call_ln479 = call void @(anonymous namespace)collect_or_drain, i8 %hist_pixels, i32 %hist, i1 %collect_c, i22 %mul_ln1540_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:479]   --->   Operation 65 'call' 'call_ln479' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 66 [2/2] (1.83ns)   --->   "%call_ln480 = call void @(anonymous namespace)resize_and_split, i48 %pairs, i24 %tensor_pixels, i24 %preview_pixels, i11 %w_V_loc_channel, i11 %h_V_loc_channel, i9 %rw_read, i9 %rh_read, i9 %px_read, i9 %py_read, i32 %mode_read, i3 %flags_read, i11 %xc_index, i12 %xc_weight, i11 %yc_index, i12 %yc_weight, i8 %quant_0, i8 %quant_1, i8 %quant_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:480]   --->   Operation 66 'call' 'call_ln480' <Predicate = true> <Delay = 1.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 67 [1/1] (0.99ns)   --->   "%icmp_ln482_loc_c35_channel = call i1 @(anonymous namespace)output_pass_Block_entry412_proc, i32 %mode_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 67 'call' 'icmp_ln482_loc_c35_channel' <Predicate = true> <Delay = 0.99> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_7 : Operation 68 [1/1] (0.99ns)   --->   "%icmp_ln483_loc_c34_channel = call i1 @(anonymous namespace)output_pass_Block_entry414_proc, i32 %mode_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 68 'call' 'icmp_ln483_loc_c34_channel' <Predicate = true> <Delay = 0.99> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 69 [1/2] (0.00ns)   --->   "%call_ln479 = call void @(anonymous namespace)collect_or_drain, i8 %hist_pixels, i32 %hist, i1 %collect_c, i22 %mul_ln1540_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:479]   --->   Operation 69 'call' 'call_ln479' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 70 [1/2] (0.00ns)   --->   "%call_ln480 = call void @(anonymous namespace)resize_and_split, i48 %pairs, i24 %tensor_pixels, i24 %preview_pixels, i11 %w_V_loc_channel, i11 %h_V_loc_channel, i9 %rw_read, i9 %rh_read, i9 %px_read, i9 %py_read, i32 %mode_read, i3 %flags_read, i11 %xc_index, i12 %xc_weight, i11 %yc_index, i12 %yc_weight, i8 %quant_0, i8 %quant_1, i8 %quant_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:480]   --->   Operation 70 'call' 'call_ln480' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 3.67>
+ST_9 : Operation 71 [2/2] (3.67ns)   --->   "%call_ln482 = call void @(anonymous namespace)pack, i24 %tensor_pixels, i128 %tensor_words, i1 %icmp_ln482_loc_c35_channel, i1 %icmp_ln482_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:482]   --->   Operation 71 'call' 'call_ln482' <Predicate = true> <Delay = 3.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_9 : Operation 72 [2/2] (3.67ns)   --->   "%call_ln483 = call void @(anonymous namespace)pack.3, i24 %preview_pixels, i128 %preview_words, i32 %width_c30, i32 %height_c32, i1 %icmp_ln483_loc_c34_channel, i32 %width_c, i32 %height_c, i1 %icmp_ln483_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:483]   --->   Operation 72 'call' 'call_ln483' <Predicate = true> <Delay = 3.67> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 73 [1/2] (0.00ns)   --->   "%call_ln482 = call void @(anonymous namespace)pack, i24 %tensor_pixels, i128 %tensor_words, i1 %icmp_ln482_loc_c35_channel, i1 %icmp_ln482_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:482]   --->   Operation 73 'call' 'call_ln482' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln483 = call void @(anonymous namespace)pack.3, i24 %preview_pixels, i128 %preview_words, i32 %width_c30, i32 %height_c32, i1 %icmp_ln483_loc_c34_channel, i32 %width_c, i32 %height_c, i1 %icmp_ln483_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:483]   --->   Operation 74 'call' 'call_ln483' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 75 [2/2] (0.00ns)   --->   "%call_ln484 = call void @(anonymous namespace)write_words, i128 %gmem_out, i64 %tensor_c, i128 %tensor_words, i1 %icmp_ln482_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:484]   --->   Operation 75 'call' 'call_ln484' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 76 [2/2] (0.00ns)   --->   "%call_ln485 = call void @(anonymous namespace)write_words.4, i128 %gmem_preview, i64 %preview_c, i128 %preview_words, i32 %width_c, i32 %height_c, i13 %preview_stride_c, i1 %icmp_ln483_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:485]   --->   Operation 76 'call' 'call_ln485' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 77 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @mul_OC_ln1540_OC_loc_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i22 %mul_ln1540_loc_c, i22 %mul_ln1540_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 77 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i22 %mul_ln1540_loc_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 78 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 79 [1/1] (0.00ns)   --->   "%empty_295 = specchannel i32 @_ssdm_op_SpecChannel, void @icmp_OC_ln482_OC_loc_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i1 %icmp_ln482_loc_c, i1 %icmp_ln482_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 79 'specchannel' 'empty_295' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i1 %icmp_ln482_loc_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 80 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 81 [1/1] (0.00ns)   --->   "%empty_296 = specchannel i32 @_ssdm_op_SpecChannel, void @icmp_OC_ln483_OC_loc_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i1 %icmp_ln483_loc_c, i1 %icmp_ln483_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 81 'specchannel' 'empty_296' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i1 %icmp_ln483_loc_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 82 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 83 [1/1] (0.00ns)   --->   "%empty_297 = specchannel i32 @_ssdm_op_SpecChannel, void @collect_c_str, i32 1, void @p_str, void @p_str, i32 5, i32 0, i1 %collect_c, i1 %collect_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 83 'specchannel' 'empty_297' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i1 %collect_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 84 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 85 [1/1] (0.00ns)   --->   "%empty_298 = specchannel i32 @_ssdm_op_SpecChannel, void @preview_stride_c_str, i32 1, void @p_str, void @p_str, i32 7, i32 0, i13 %preview_stride_c, i13 %preview_stride_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 85 'specchannel' 'empty_298' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i13 %preview_stride_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 86 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 87 [1/1] (0.00ns)   --->   "%empty_299 = specchannel i32 @_ssdm_op_SpecChannel, void @height_c33_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %height_c33, i32 %height_c33" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 87 'specchannel' 'empty_299' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 88 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i32 %height_c33, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 88 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 89 [1/1] (0.00ns)   --->   "%empty_300 = specchannel i32 @_ssdm_op_SpecChannel, void @height_c32_str, i32 1, void @p_str, void @p_str, i32 4, i32 0, i32 %height_c32, i32 %height_c32" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 89 'specchannel' 'empty_300' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 90 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i32 %height_c32, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 90 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 91 [1/1] (0.00ns)   --->   "%empty_301 = specchannel i32 @_ssdm_op_SpecChannel, void @height_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %height_c, i32 %height_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 91 'specchannel' 'empty_301' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 92 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i32 %height_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 92 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 93 [1/1] (0.00ns)   --->   "%empty_302 = specchannel i32 @_ssdm_op_SpecChannel, void @width_c31_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %width_c31, i32 %width_c31" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 93 'specchannel' 'empty_302' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 94 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i32 %width_c31, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 94 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 95 [1/1] (0.00ns)   --->   "%empty_303 = specchannel i32 @_ssdm_op_SpecChannel, void @width_c30_str, i32 1, void @p_str, void @p_str, i32 4, i32 0, i32 %width_c30, i32 %width_c30" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 95 'specchannel' 'empty_303' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 96 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i32 %width_c30, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 96 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 97 [1/1] (0.00ns)   --->   "%empty_304 = specchannel i32 @_ssdm_op_SpecChannel, void @width_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %width_c, i32 %width_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 97 'specchannel' 'empty_304' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 98 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i32 %width_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 98 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 99 [1/1] (0.00ns)   --->   "%empty_305 = specchannel i32 @_ssdm_op_SpecChannel, void @preview_c_str, i32 1, void @p_str, void @p_str, i32 7, i32 0, i64 %preview_c, i64 %preview_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 99 'specchannel' 'empty_305' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 100 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i64 %preview_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 100 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 101 [1/1] (0.00ns)   --->   "%empty_306 = specchannel i32 @_ssdm_op_SpecChannel, void @tensor_c_str, i32 1, void @p_str, void @p_str, i32 7, i32 0, i64 %tensor_c, i64 %tensor_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 101 'specchannel' 'empty_306' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 102 [1/1] (0.00ns)   --->   "%specinterface_ln463 = specinterface void @_ssdm_op_SpecInterface, i64 %tensor_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 102 'specinterface' 'specinterface_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 103 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln463 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_8" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463]   --->   Operation 103 'specdataflowpipeline' 'specdataflowpipeline_ln463' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 104 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %yc_weight, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 104 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 105 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i11 %yc_index, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 105 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 106 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %xc_weight, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 106 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 107 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i11 %xc_index, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 107 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 108 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %hist, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 108 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 109 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %eq, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 109 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 110 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_0, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 110 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 111 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_1, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 111 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 112 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_2, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 112 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 113 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_0, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 113 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 114 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_1, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 114 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 115 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_2, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 115 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem_preview, void @empty_37, i32 0, i32 0, void @empty_8, i32 0, i32 388800, void @empty_25, void @empty_10, void @empty_8, i32 16, i32 2, i32 16, i32 32, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 117 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem_out, void @empty_37, i32 0, i32 0, void @empty_8, i32 0, i32 32448, void @empty_1, void @empty_10, void @empty_8, i32 16, i32 2, i32 16, i32 32, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 117 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %gmem_in, void @empty_37, i32 0, i32 0, void @empty_8, i32 0, i32 388800, void @empty_9, void @empty_10, void @empty_8, i32 2, i32 16, i32 32, i32 16, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%empty_307 = specchannel i32 @_ssdm_op_SpecChannel, void @in_words_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i128 %in_words, i128 %in_words"   --->   Operation 119 'specchannel' 'empty_307' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 120 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %in_words, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 120 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 121 [1/1] (0.00ns)   --->   "%empty_308 = specchannel i32 @_ssdm_op_SpecChannel, void @tensor_words_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i128 %tensor_words, i128 %tensor_words"   --->   Operation 121 'specchannel' 'empty_308' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 122 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %tensor_words, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 122 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 123 [1/1] (0.00ns)   --->   "%empty_309 = specchannel i32 @_ssdm_op_SpecChannel, void @preview_words_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i128 %preview_words, i128 %preview_words"   --->   Operation 123 'specchannel' 'empty_309' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 124 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %preview_words, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 124 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 125 [1/1] (0.00ns)   --->   "%empty_310 = specchannel i32 @_ssdm_op_SpecChannel, void @in_pixels_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i24 %in_pixels, i24 %in_pixels"   --->   Operation 125 'specchannel' 'empty_310' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 126 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %in_pixels, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 126 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 127 [1/1] (0.00ns)   --->   "%empty_311 = specchannel i32 @_ssdm_op_SpecChannel, void @tensor_pixels_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i24 %tensor_pixels, i24 %tensor_pixels"   --->   Operation 127 'specchannel' 'empty_311' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 128 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %tensor_pixels, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 128 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 129 [1/1] (0.00ns)   --->   "%empty_312 = specchannel i32 @_ssdm_op_SpecChannel, void @preview_pixels_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i24 %preview_pixels, i24 %preview_pixels"   --->   Operation 129 'specchannel' 'empty_312' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 130 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %preview_pixels, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 130 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 131 [1/1] (0.00ns)   --->   "%empty_313 = specchannel i32 @_ssdm_op_SpecChannel, void @pairs_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i48 %pairs, i48 %pairs"   --->   Operation 131 'specchannel' 'empty_313' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 132 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i48 %pairs, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 132 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 133 [1/1] (0.00ns)   --->   "%empty_314 = specchannel i32 @_ssdm_op_SpecChannel, void @hist_pixels_str, i32 1, void @p_str, void @p_str, i32 64, i32 64, i8 %hist_pixels, i8 %hist_pixels"   --->   Operation 133 'specchannel' 'empty_314' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 134 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hist_pixels, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 134 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 135 [1/2] (0.00ns)   --->   "%call_ln484 = call void @(anonymous namespace)write_words, i128 %gmem_out, i64 %tensor_c, i128 %tensor_words, i1 %icmp_ln482_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:484]   --->   Operation 135 'call' 'call_ln484' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 136 [1/2] (0.00ns)   --->   "%call_ln485 = call void @(anonymous namespace)write_words.4, i128 %gmem_preview, i64 %preview_c, i128 %preview_words, i32 %width_c, i32 %height_c, i13 %preview_stride_c, i1 %icmp_ln483_loc_c" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:485]   --->   Operation 136 'call' 'call_ln485' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_12 : Operation 137 [1/1] (0.00ns)   --->   "%ret_ln486 = ret" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:486]   --->   Operation 137 'ret' 'ret_ln486' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 1.91ns
+The critical path consists of the following:
+	wire read operation ('collect_read', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) on port 'collect' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) [32]  (0 ns)
+	'call' operation ('call_ln463', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) to 'entry_proc' [130]  (1.91 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 3.67ns
+The critical path consists of the following:
+	wire read operation ('flags_read', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) on port 'flags' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) [35]  (0 ns)
+	'call' operation ('tmp', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) to '(anonymous namespace)output_pass_Block_entry47_proc' [133]  (3.67 ns)
+
+ <State 5>: 3.68ns
+The critical path consists of the following:
+	wire read operation ('eq_enabled_read', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) on port 'eq_enabled' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) [33]  (0 ns)
+	'call' operation ('call_ln478', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:478) to '(anonymous namespace)color_stage' [138]  (3.68 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 1.84ns
+The critical path consists of the following:
+	wire read operation ('mode_read', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) on port 'mode' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:463) [36]  (0 ns)
+	'call' operation ('call_ln480', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:480) to '(anonymous namespace)resize_and_split' [140]  (1.84 ns)
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 3.68ns
+The critical path consists of the following:
+	'call' operation ('call_ln482', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:482) to '(anonymous namespace)pack' [142]  (3.68 ns)
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

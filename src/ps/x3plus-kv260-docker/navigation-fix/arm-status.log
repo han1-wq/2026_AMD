@@ -1,0 +1,9 @@
+ 
+arm-integration.log the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+{"scan_loss_cancelled_real_goal": true, "guard": {"ready": false, "stamp": 1792500352.214737, "reason": "stale_scan_initial_pose_required", "scan_match": 1.0}, "kinematic_endpoint_error_m": 0.024369009427852778, "scope": "Real AMCL, guard and move_base, ideal kinematics/raycast scan/odom; no physics or hardware.", "public_cmd_vel_publishers": ["/navigation_guard"], "real_move_base_goal_succeeded": true}
+NAVIGATION_MOVE_BASE_INTEGRATION_PASS
+
+arm-integration.exit 0
+
+exited 0
+

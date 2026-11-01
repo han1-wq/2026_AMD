@@ -1,0 +1,12 @@
+{
+  "tx_submitted": 30000,
+  "tx_completed": 30000,
+  "tx_rejected": 0,
+  "tx_failed": 0,
+  "rx_accepted": 30000,
+  "rx_dropped": 0,
+  "rx_overflow": 0,
+  "rx_timeout": 0,
+  "link_retries": 0,
+  "link_failures": 0
+}

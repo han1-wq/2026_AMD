@@ -1,0 +1,1 @@
+../../../../../../../../../../../../src/kv260/dpu_platform2/kv260_vitis_platform/dpu_trd/src/prj/Vitis/platforms/xilinx_zcu102_base/hw/xsa_scripts/project.tcl

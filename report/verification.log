@@ -1,0 +1,19 @@
+{
+  "checked_at_utc": "2026-10-31T02:20:28.912495+00:00",
+  "files": 31643,
+  "bytes": 5287438100,
+  "source_files": 31528,
+  "links": 5010,
+  "compared_originals": true,
+  "hardware_actions": false,
+  "ok": true,
+  "problems": [],
+  "credential_scan_scope": "filename rules and recognizable credential patterns; not a guarantee of publishability",
+  "seal_exclusions": [
+    "report/SHA256SUMS",
+    "report/package_files.json",
+    "report/verification.json",
+    "report/verification.log",
+    "report/verification.pid"
+  ]
+}

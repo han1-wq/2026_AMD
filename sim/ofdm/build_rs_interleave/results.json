@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "smoke": false,
+  "cases": 6693,
+  "categories": {
+    "clean": 1024,
+    "burst_limit": 4625,
+    "burst_over_limit": 10,
+    "random_limit": 1024,
+    "one_lane_over_limit": 10
+  },
+  "mapping_payload_lengths": 1024,
+  "burst_windows_checked": 551888,
+  "max_decode_cycles": 12702,
+  "elapsed_s": 991.5644265059964,
+  "scope": "balanced RS interleave/deinterleave + FCS + DMA/backpressure; not raw RF BER",
+  "source_sha256": {
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_gf.v": "dafd3b250bb410a3740ad03c1f15ea604e6da52672e3cd468cfcaa623829ee68",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_block_layout.v": "a938eaf71a0d669aee5e02794b45db10afd5e99fb1b1afe82906bc4c2cebfa1a",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_packet_encoder.v": "0d3d48ea4194a5d785adf070fc4c189965519b91d21d698b17fb5f396be7f27d",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v": "7a062ad21ebdbc8f8e38ac4bafcfc9a6e7cce1aa664c446a3ea813b464f62221",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/fcs_for_data_field.v": "2fac20f09e7b10ed39cc7618ce5f9aab51b2691c9331242e9c33c1f4069b8a3b",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_rx.v": "ba6a0ecdf1d15839c73e0d1fe26fdbc316882764111b217f70124b9553656c86",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_rs_packets.sv": "a3c0db84d98e11d20e134220b25faaeefbeb67e6087dadfe106bba494cf3f6a7",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_rs_control.sv": "c3faf0a4ec4342b51b6fa24ef0e23c36c64a600d802cd63c1cba3d0d394b61d5",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/run_rs_interleave_regression.py": "a76ef59a24a45d1071ed98c655f2adb06dc326bb8bab51848674c974383360b2",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/run_rs_regression.py": "77decfe92ae4b1205af867908e2740ddf76a096218474172d1145735678b05e5"
+  }
+}

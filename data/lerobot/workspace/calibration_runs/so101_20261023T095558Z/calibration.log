@@ -1,0 +1,252 @@
+Try to load calibration params from:  /workspace/calibration/robots/so101_follower/follower_so101.json
+Calibration file not found!
+MOTION_START: speed=600; sweep/midpoint deadline=20s; total=300s
+CLEANUP_ERRORS ["shoulder_lift/Goal_Velocity: Failed to write 'Goal_Velocity' on id_=2 with '0' after 3 tries. [RxPacketError] Overload error!", "shoulder_lift/Torque_Enable: Failed to write 'Torque_Enable' on id_=2 with '0' after 3 tries. [RxPacketError] Overload error!"]
+2026-10-23 09:58:35,284 INFO follower_so101 SO101Follower connected.
+2026-10-23 09:58:35,284 INFO Motors selected for calibration: ['shoulder_pan', 'shoulder_lift', 'elbow_flex', 'wrist_flex', 'wrist_roll', 'gripper']
+2026-10-23 09:58:35,284 INFO Calibration order: ['elbow_flex', 'wrist_flex', 'wrist_roll', 'gripper', 'shoulder_pan', 'shoulder_lift']
+2026-10-23 09:58:35,284 INFO 
+Starting auto calibration for motor elbow_flex
+2026-10-23 09:58:35,285 INFO ============================================================
+2026-10-23 09:58:35,287 INFO Current position: logical=152, physical=237, offset=85
+2026-10-23 09:58:35,288 INFO After resetting offset: logical=152, physical=152, offset=0
+2026-10-23 09:58:35,288 INFO Exploring elbow_flex clockwise limit...
+2026-10-23 09:58:36,299 INFO Motor appears stationary: pos=262, velocity=0, still_count=1
+2026-10-23 09:58:36,299 INFO Velocity near zero and position stable. Limit found at 262.
+2026-10-23 09:58:36,300 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 09:58:36,300 INFO clockwise limit position: 262
+2026-10-23 09:58:36,300 INFO clockwise traveled offset: 25
+2026-10-23 09:58:36,300 INFO Exploring elbow_flex anti_clockwise limit...
+2026-10-23 09:58:41,343 INFO Motor appears stationary: pos=2103, velocity=0, still_count=1
+2026-10-23 09:58:41,343 INFO Velocity near zero and position stable. Limit found at 2103.
+2026-10-23 09:58:41,344 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 09:58:41,344 INFO anti_clockwise limit position: 2103
+2026-10-23 09:58:41,344 INFO anti_clockwise traveled offset: 2255
+2026-10-23 09:58:41,345 INFO Using physical limit range: motor_id=3, motor_name=elbow_flex, first_limit=262, second_limit=2103, unwrapped_range=[2103, 4358]
+2026-10-23 09:58:41,345 INFO 
+Step 3: total offset: 2255
+2026-10-23 09:58:41,347 INFO Step 3: half offset: 1127
+2026-10-23 09:58:41,347 INFO Step 3: computed midpoint: 3230
+2026-10-23 09:58:41,347 INFO Step 4: moving toward midpoint...
+2026-10-23 09:58:43,538 INFO Actual midpoint position: logical=3229, physical=3229
+2026-10-23 09:58:43,539 INFO Step 5: raw midpoint offset = 1183
+2026-10-23 09:58:43,539 INFO Step 5: final homing offset = 1183
+2026-10-23 09:58:43,539 INFO Step 6: logical range = [920, 3175]
+2026-10-23 09:58:43,542 INFO 
+Calibration complete.
+2026-10-23 09:58:43,542 INFO   Motor ID: 3
+2026-10-23 09:58:43,542 INFO   Homing Offset: 1183
+2026-10-23 09:58:43,542 INFO   Range Min: 920
+2026-10-23 09:58:43,542 INFO   Range Max: 3175
+2026-10-23 09:58:43,542 INFO ============================================================
+2026-10-23 09:58:44,549 INFO 
+Starting auto calibration for motor wrist_flex
+2026-10-23 09:58:44,549 INFO ============================================================
+2026-10-23 09:58:44,553 INFO Current position: logical=767, physical=852, offset=85
+2026-10-23 09:58:44,555 INFO After resetting offset: logical=853, physical=853, offset=0
+2026-10-23 09:58:44,555 INFO Exploring wrist_flex clockwise limit...
+2026-10-23 09:58:46,580 INFO Motor appears stationary: pos=1495, velocity=0, still_count=1
+2026-10-23 09:58:46,580 INFO Velocity near zero and position stable. Limit found at 1495.
+2026-10-23 09:58:46,581 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 09:58:46,581 INFO clockwise limit position: 1495
+2026-10-23 09:58:46,581 INFO clockwise traveled offset: 642
+2026-10-23 09:58:46,581 INFO Exploring wrist_flex anti_clockwise limit...
+2026-10-23 09:58:52,650 INFO Motor appears stationary: pos=3266, velocity=0, still_count=1
+2026-10-23 09:58:52,650 INFO Velocity near zero and position stable. Limit found at 3266.
+2026-10-23 09:58:52,651 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 09:58:52,652 INFO anti_clockwise limit position: 3266
+2026-10-23 09:58:52,652 INFO anti_clockwise traveled offset: 2325
+2026-10-23 09:58:52,653 INFO Using physical limit range: motor_id=4, motor_name=wrist_flex, first_limit=1495, second_limit=3266, unwrapped_range=[3266, 5591]
+2026-10-23 09:58:52,653 INFO 
+Step 3: total offset: 2325
+2026-10-23 09:58:52,654 INFO Step 3: half offset: 1162
+2026-10-23 09:58:52,654 INFO Step 3: computed midpoint: 332
+2026-10-23 09:58:52,654 INFO Step 4: moving toward midpoint...
+2026-10-23 09:58:54,917 INFO Actual midpoint position: logical=332, physical=332
+2026-10-23 09:58:54,918 INFO Step 5: raw midpoint offset = 2381
+2026-10-23 09:58:54,918 INFO Step 5: final homing offset = -1715
+2026-10-23 09:58:54,918 INFO Step 6: logical range = [885, 3210]
+2026-10-23 09:58:54,920 INFO 
+Calibration complete.
+2026-10-23 09:58:54,920 INFO   Motor ID: 4
+2026-10-23 09:58:54,920 INFO   Homing Offset: -1715
+2026-10-23 09:58:54,920 INFO   Range Min: 885
+2026-10-23 09:58:54,920 INFO   Range Max: 3210
+2026-10-23 09:58:54,920 INFO ============================================================
+2026-10-23 09:58:55,925 INFO 
+Starting auto calibration for motor wrist_roll
+2026-10-23 09:58:55,925 INFO ============================================================
+2026-10-23 09:58:55,928 INFO Current position: logical=447, physical=532, offset=85
+2026-10-23 09:58:55,929 INFO After resetting offset: logical=447, physical=447, offset=0
+2026-10-23 09:58:55,929 INFO Exploring wrist_roll clockwise limit...
+2026-10-23 09:58:58,963 INFO Motor appears stationary: pos=1362, velocity=0, still_count=1
+2026-10-23 09:58:58,963 INFO Velocity near zero and position stable. Limit found at 1362.
+2026-10-23 09:58:58,965 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 09:58:58,965 INFO clockwise limit position: 1362
+2026-10-23 09:58:58,965 INFO clockwise traveled offset: 830
+2026-10-23 09:58:58,965 INFO Exploring wrist_roll anti_clockwise limit...
+2026-10-23 09:59:06,034 INFO Motor appears stationary: pos=1622, velocity=0, still_count=1
+2026-10-23 09:59:06,034 INFO Velocity near zero and position stable. Limit found at 1622.
+2026-10-23 09:59:06,035 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 09:59:06,035 INFO anti_clockwise limit position: 1622
+2026-10-23 09:59:06,035 INFO anti_clockwise traveled offset: 3836
+2026-10-23 09:59:06,037 INFO Using physical limit range: motor_id=5, motor_name=wrist_roll, first_limit=1362, second_limit=1622, unwrapped_range=[1622, 5458]
+2026-10-23 09:59:06,037 INFO 
+Step 3: total offset: 3836
+2026-10-23 09:59:06,038 INFO Step 3: half offset: 1918
+2026-10-23 09:59:06,038 INFO Step 3: computed midpoint: 3540
+2026-10-23 09:59:06,038 INFO Step 4: moving toward midpoint...
+2026-10-23 09:59:06,042 INFO Actual midpoint position: logical=1622, physical=1622
+2026-10-23 09:59:06,043 INFO Step 5: raw midpoint offset = 1493
+2026-10-23 09:59:06,043 INFO Step 5: final homing offset = 1493
+2026-10-23 09:59:06,043 INFO Step 6: logical range = [129, 3965]
+2026-10-23 09:59:06,046 INFO 
+Calibration complete.
+2026-10-23 09:59:06,046 INFO   Motor ID: 5
+2026-10-23 09:59:06,046 INFO   Homing Offset: 1493
+2026-10-23 09:59:06,046 INFO   Range Min: 129
+2026-10-23 09:59:06,046 INFO   Range Max: 3965
+2026-10-23 09:59:06,046 INFO ============================================================
+2026-10-23 09:59:07,054 INFO 
+Starting auto calibration for motor gripper
+2026-10-23 09:59:07,055 INFO ============================================================
+2026-10-23 09:59:07,057 INFO Current position: logical=3255, physical=3340, offset=85
+2026-10-23 09:59:07,058 INFO After resetting offset: logical=3340, physical=3340, offset=0
+2026-10-23 09:59:07,058 INFO Exploring gripper clockwise limit...
+2026-10-23 09:59:10,606 INFO Motor appears stationary: pos=713, velocity=0, still_count=1
+2026-10-23 09:59:10,606 INFO Velocity near zero and position stable. Limit found at 713.
+2026-10-23 09:59:10,610 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 09:59:10,610 INFO clockwise limit position: 713
+2026-10-23 09:59:10,610 INFO clockwise traveled offset: 1469
+2026-10-23 09:59:10,610 INFO Exploring gripper anti_clockwise limit...
+2026-10-23 09:59:14,165 INFO Motor appears stationary: pos=3298, velocity=0, still_count=1
+2026-10-23 09:59:14,165 INFO Velocity near zero and position stable. Limit found at 3298.
+2026-10-23 09:59:14,166 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 09:59:14,166 INFO anti_clockwise limit position: 3298
+2026-10-23 09:59:14,166 INFO anti_clockwise traveled offset: 1511
+2026-10-23 09:59:14,166 INFO Using physical limit range: motor_id=6, motor_name=gripper, first_limit=713, second_limit=3298, unwrapped_range=[3298, 4809]
+2026-10-23 09:59:14,166 INFO 
+Step 3: total offset: 1511
+2026-10-23 09:59:14,166 INFO Step 3: gripper maps physical open/closed limits directly and skips midpoint motion.
+2026-10-23 09:59:14,167 INFO Gripper closed position: logical=713, physical=713
+2026-10-23 09:59:14,167 INFO Step 5: gripper logical range maps open to 0 and closed to 100: open_physical=3298, closed_physical=4809
+2026-10-23 09:59:14,167 INFO Step 5: raw midpoint offset = 3298
+2026-10-23 09:59:14,167 INFO Step 5: final homing offset = -798
+2026-10-23 09:59:14,167 INFO Step 6: logical range = [0, 1511]
+2026-10-23 09:59:14,170 INFO 
+Calibration complete.
+2026-10-23 09:59:14,170 INFO   Motor ID: 6
+2026-10-23 09:59:14,170 INFO   Homing Offset: -798
+2026-10-23 09:59:14,170 INFO   Range Min: 0
+2026-10-23 09:59:14,170 INFO   Range Max: 1511
+2026-10-23 09:59:14,170 INFO ============================================================
+2026-10-23 09:59:15,174 INFO 
+Starting auto calibration for motor shoulder_pan
+2026-10-23 09:59:15,175 INFO ============================================================
+2026-10-23 09:59:15,178 INFO Current position: logical=3411, physical=3496, offset=85
+2026-10-23 09:59:15,179 INFO After resetting offset: logical=3497, physical=3497, offset=0
+2026-10-23 09:59:15,179 INFO Exploring shoulder_pan clockwise limit...
+2026-10-23 09:59:18,713 INFO Motor appears stationary: pos=826, velocity=0, still_count=1
+2026-10-23 09:59:18,713 INFO Velocity near zero and position stable. Limit found at 826.
+2026-10-23 09:59:18,726 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 09:59:18,726 INFO clockwise limit position: 826
+2026-10-23 09:59:18,726 INFO clockwise traveled offset: 1425
+2026-10-23 09:59:18,726 INFO Exploring shoulder_pan anti_clockwise limit...
+2026-10-23 09:59:24,783 INFO Motor appears stationary: pos=2174, velocity=0, still_count=1
+2026-10-23 09:59:24,783 INFO Velocity near zero and position stable. Limit found at 2174.
+2026-10-23 09:59:24,784 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 09:59:24,784 INFO anti_clockwise limit position: 2174
+2026-10-23 09:59:24,784 INFO anti_clockwise traveled offset: 2748
+2026-10-23 09:59:24,785 INFO Using physical limit range: motor_id=1, motor_name=shoulder_pan, first_limit=826, second_limit=2174, unwrapped_range=[2174, 4922]
+2026-10-23 09:59:24,785 INFO 
+Step 3: total offset: 2748
+2026-10-23 09:59:24,785 INFO Step 3: half offset: 1224
+2026-10-23 09:59:24,786 INFO Step 3: computed midpoint: 3398
+2026-10-23 09:59:24,786 INFO Step 4: moving toward midpoint...
+2026-10-23 09:59:27,148 INFO Actual midpoint position: logical=3399, physical=3399
+2026-10-23 09:59:27,149 INFO Step 5: raw midpoint offset = 1351
+2026-10-23 09:59:27,149 INFO Step 5: final homing offset = 1351
+2026-10-23 09:59:27,149 INFO Step 6: logical range = [823, 3571]
+2026-10-23 09:59:27,155 INFO 
+Calibration complete.
+2026-10-23 09:59:27,155 INFO   Motor ID: 1
+2026-10-23 09:59:27,155 INFO   Homing Offset: 1351
+2026-10-23 09:59:27,155 INFO   Range Min: 823
+2026-10-23 09:59:27,155 INFO   Range Max: 3571
+2026-10-23 09:59:27,155 INFO ============================================================
+2026-10-23 09:59:28,160 INFO Exploring wrist_roll anti_clockwise limit...
+2026-10-23 09:59:29,182 INFO Motor appears stationary: pos=1621, velocity=0, still_count=1
+2026-10-23 09:59:29,182 INFO Velocity near zero and position stable. Limit found at 1621.
+2026-10-23 09:59:29,183 INFO Exploring elbow_flex anti_clockwise limit...
+2026-10-23 09:59:32,221 INFO Motor appears stationary: pos=2103, velocity=0, still_count=1
+2026-10-23 09:59:32,221 INFO Velocity near zero and position stable. Limit found at 2103.
+2026-10-23 09:59:32,222 INFO 
+Starting auto calibration for motor shoulder_lift
+2026-10-23 09:59:32,222 INFO ============================================================
+2026-10-23 09:59:32,226 INFO Current position: logical=2841, physical=2926, offset=85
+2026-10-23 09:59:32,227 INFO After resetting offset: logical=2927, physical=2927, offset=0
+2026-10-23 09:59:32,227 INFO Exploring shoulder_lift anti_clockwise limit...
+2026-10-23 09:59:33,237 INFO Motor appears stationary: pos=2910, velocity=0, still_count=1
+2026-10-23 09:59:33,237 INFO Velocity near zero and position stable. Limit found at 2910.
+2026-10-23 09:59:33,237 INFO 
+Step 1: explore anti_clockwise limit...
+2026-10-23 09:59:33,238 INFO anti_clockwise limit position: 2910
+2026-10-23 09:59:33,238 INFO anti_clockwise traveled offset: 17
+2026-10-23 09:59:33,238 INFO Exploring shoulder_lift clockwise limit...
+2026-10-23 09:59:38,792 INFO Motor appears stationary: pos=1225, velocity=0, still_count=1
+2026-10-23 09:59:38,792 INFO Velocity near zero and position stable. Limit found at 1225.
+2026-10-23 09:59:38,793 INFO 
+Step 2: explore clockwise limit...
+2026-10-23 09:59:38,793 INFO clockwise limit position: 1225
+2026-10-23 09:59:38,793 INFO clockwise traveled offset: 2411
+2026-10-23 09:59:38,793 INFO Using physical limit range: motor_id=2, motor_name=shoulder_lift, first_limit=2910, second_limit=1225, unwrapped_range=[2910, 5321]
+2026-10-23 09:59:38,793 INFO 
+Step 3: total offset: 2411
+2026-10-23 09:59:38,794 INFO Step 3: half offset: 1205
+2026-10-23 09:59:38,794 INFO Step 3: computed midpoint: 2430
+2026-10-23 09:59:38,794 INFO Step 4: moving toward midpoint...
+2026-10-23 09:59:38,799 INFO Actual midpoint position: logical=1225, physical=1225
+2026-10-23 09:59:38,799 INFO Step 5: raw midpoint offset = 2068
+2026-10-23 09:59:38,799 INFO Step 5: final homing offset = -2028
+2026-10-23 09:59:38,800 INFO Step 6: logical range = [842, 3253]
+2026-10-23 09:59:38,804 INFO 
+Calibration complete.
+2026-10-23 09:59:38,804 INFO   Motor ID: 2
+2026-10-23 09:59:38,804 INFO   Homing Offset: -2028
+2026-10-23 09:59:38,804 INFO   Range Min: 842
+2026-10-23 09:59:38,804 INFO   Range Max: 3253
+2026-10-23 09:59:38,804 INFO ============================================================
+2026-10-23 09:59:39,808 INFO Exploring shoulder_lift anti_clockwise limit...
+2026-10-23 09:59:39,809 ERROR Failed while recovering motor shoulder_lift: Failed to read 'Present_Position' on id_=2 after 1 tries. [RxPacketError] Overload error!
+Traceback (most recent call last):
+  File "/run_artifacts/calibrate_guarded.py", line 136, in <module>
+    main()
+  File "/run_artifacts/calibrate_guarded.py", line 90, in main
+    result = auto.auto_calibrate_connected_device(device, settings, save=False)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 759, in auto_calibrate_connected_device
+    calibration_dict = auto_calibrate_robot(device, config)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 738, in auto_calibrate_robot
+    run_matching_actions(bus, motor_name, plan.post_actions, config)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 362, in run_matching_actions
+    run_motor_actions(bus, actions, config)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 349, in run_motor_actions
+    explore_literal_limit(bus, action.motor_name, action.direction, config)
+  File "/run_artifacts/calibrate_guarded.py", line 35, in wrapped
+    return function(*args, **kwargs)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 405, in explore_literal_limit
+    previous_position = bus.read("Present_Position", motor_name, normalize=False)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 940, in read
+    value, _, _ = self._read(addr, length, id_, num_retry=num_retry, raise_on_error=True, err_msg=err_msg)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 980, in _read
+    raise RuntimeError(f"{err_msg} {self.packet_handler.getRxPacketError(error)}")
+RuntimeError: Failed to read 'Present_Position' on id_=2 after 1 tries. [RxPacketError] Overload error!

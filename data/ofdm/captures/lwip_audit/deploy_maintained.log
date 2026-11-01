@@ -1,0 +1,54 @@
+
+
+
+                  1                10                
+                 01                100                
+                001                1000               
+               00001              000101              
+              001 001            1001  00             
+             001   10000000000001     100             
+          1000                        000             
+        1001                            0001          
+       001         0001         0001        100       
+      001          0001         0001          00      
+      00                    11                 00     
+      00                    00                 10     
+      100                 0000001              00     
+       100             010    0001          100       
+         100              00001            1001       
+           00000111                    10001          
+                 1110100000000000000111               
+  ______  ______  ______  _____   _____   _____   _____  
+ |  ____||  ____|/  ____||  __ \ |  __ \ |  __ \ |  __ \ 
+ | |__   | |__   | (___  | |  | || |__) || |__) || |__) |
+ |  __|  |  __|   \___ \ | |  | ||  _  / |  _  / |  _  / 
+ | |____ | |____  ____) || |__| || | \ \ | | \ \ | | \ \ 
+ |______||______||_____/ |_____/ |_|  \_\|_|  \_\|_|  \_\
+
+
+ad9361_init : AD936x Rev 2 successfully initialized
+ad936x Set TX_LO Successful!
+ad936x Set RX_LO Successful!
+ad936x Bypass TRX FIR Successful!
+ad936x Set TX_SamplingRate Successful!
+ad936x Set RX_SamplingRate Successful!
+ad936x Set TX_BandWidth Successful!
+ad936x Set RX_BandWidth Successful!
+ad936x Set CH1 TX_Att  Successful!
+ad936x Set CH1 RX_Gain Successful!
+ad936x Set CH1 RX_Gain Mode Successful!
+
+Get ad936x Some Important Register...
+ad936x TR_mode:1T1R Port:TX1 & RX1
+ad936x Get TX_LO_Freq       :433.00 MHz
+ad936x Get RX_LO_Freq       :433.00 MHz
+ad936x Get TX_BandWidth     :40000.00 KHz
+ad936x Get RX_BandWidth     :40000.00 KHz
+ad936x Get TX_SamplingRate  :40.00 MSPS
+ad936x Get RX_SamplingRate  :40.00 MSPS
+ad936x Get RX_CH1_Gain      :12 dB
+ad936x Get RX_CH1_Gain Mode :0
+RTL8211F PHY 1: 1000 Mbps full duplex
+DMA ready: 192.168.137.10:5001; UART business protocol v1
+
+PROGRAM_AND_BOOT_PASS

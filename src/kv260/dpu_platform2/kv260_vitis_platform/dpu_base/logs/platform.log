@@ -1,0 +1,383 @@
+TRACE::2026-10-14.01:21:09::SCWPlatform::Trying to open the hw design at /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:09::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:09::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:09::SCWPlatform::DSA directory /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:09::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:09::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:09::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-10-14.01:21:15::SCWPlatform::Opened new HwDB with name kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2026-10-14.01:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dpu_base",
+	"systems":	[{
+			"systemName":	"dpu_base",
+			"systemDesc":	"dpu_base",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dpu_base"
+		}]
+}
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to open the hw design at /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA directory /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to set the existing hwdb with name kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Opened existing hwdb kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to open the hw design at /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA directory /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to set the existing hwdb with name kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Opened existing hwdb kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-10-14.01:21:15::SCWDomain::checking for install qemu data   : 
+TRACE::2026-10-14.01:21:15::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2022.1/data/emulation/platforms/zynqmp/sw/a53_linux/qemu/
+TRACE::2026-10-14.01:21:15::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2022.1/data/emulation/platforms/zynqmp/sw/a53_linux/qemu/qemu_args.txt
+TRACE::2026-10-14.01:21:15::SCWDomain:: Using the PMUQEMU args from install at  : /tools/Xilinx/Vitis/2022.1/data/emulation/platforms/zynqmp/sw/a53_linux/qemu/pmu_args.txt
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to open the hw design at /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA directory /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to set the existing hwdb with name kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Opened existing hwdb kv260_hardware_platform_wrapper_0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-10-14.01:21:15::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2026-10-14.01:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dpu_base",
+	"systems":	[{
+			"systemName":	"dpu_base",
+			"systemDesc":	"dpu_base",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dpu_base",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux_domain",
+					"domainDesc":	"linux_domain",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dpu_base/linux_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"64-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-10-14.01:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dpu_base",
+	"systems":	[{
+			"systemName":	"dpu_base",
+			"systemDesc":	"dpu_base",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"dpu_base",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on psu_cortexa53",
+					"domainDesc":	"linux_domain",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dpu_base/linux_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"64-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-10-14.01:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dpu_base",
+	"systems":	[{
+			"systemName":	"dpu_base",
+			"systemDesc":	"dpu_base",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"dpu_base",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on psu_cortexa53",
+					"domainDesc":	"linux_domain",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dpu_base/linux_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"64-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-10-14.01:21:15::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dpu_base",
+	"systems":	[{
+			"systemName":	"dpu_base",
+			"systemDesc":	"dpu_base",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"dpu_base",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on psu_cortexa53",
+					"domainDesc":	"linux_domain",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dpu_base/linux_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"64-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-10-14.01:21:15::SCWPlatform::Clearing the existing platform
+TRACE::2026-10-14.01:21:15::SCWSystem::Clearing the existing sysconfig
+TRACE::2026-10-14.01:21:15::SCWSystem::Clearing the domains completed.
+TRACE::2026-10-14.01:21:15::SCWPlatform::Clearing the opened hw db.
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Platform location is /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Removing the HwDB with name /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::Trying to open the hw design at /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform::DSA directory /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:15::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:15::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-10-14.01:21:19::SCWPlatform::Opened new HwDB with name kv260_hardware_platform_wrapper_1
+TRACE::2026-10-14.01:21:19::SCWReader::Active system found as  dpu_base
+TRACE::2026-10-14.01:21:19::SCWReader::Handling sysconfig dpu_base
+TRACE::2026-10-14.01:21:19::SCWDomain::checking for install qemu data   : 
+TRACE::2026-10-14.01:21:19::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2022.1/data/emulation/platforms/zynqmp/sw/a53_linux/qemu/
+TRACE::2026-10-14.01:21:19::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2022.1/data/emulation/platforms/zynqmp/sw/a53_linux/qemu/qemu_args.txt
+TRACE::2026-10-14.01:21:19::SCWDomain:: Using the PMUQEMU args from install at  : /tools/Xilinx/Vitis/2022.1/data/emulation/platforms/zynqmp/sw/a53_linux/qemu/pmu_args.txt
+TRACE::2026-10-14.01:21:19::SCWPlatform::Trying to open the hw design at /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:19::SCWPlatform::DSA given /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:19::SCWPlatform::DSA absoulate path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:19::SCWPlatform::DSA directory /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw
+TRACE::2026-10-14.01:21:19::SCWPlatform:: Platform Path /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/hw/kv260_hardware_platform.xsa
+TRACE::2026-10-14.01:21:19::SCWPlatform:: Unique name xilinx:kv260:kv260_hardware_platform:0.0
+TRACE::2026-10-14.01:21:19::SCWPlatform::Trying to set the existing hwdb with name kv260_hardware_platform_wrapper_1
+TRACE::2026-10-14.01:21:19::SCWPlatform::Opened existing hwdb kv260_hardware_platform_wrapper_1
+TRACE::2026-10-14.01:21:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-10-14.01:21:19::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2026-10-14.01:21:19::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2026-10-14.01:21:19::SCWReader::No isolation master present  
+LOG::2026-10-14.01:21:35::SCWPlatform::Started generating the artifacts platform dpu_base
+TRACE::2026-10-14.01:21:35::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-10-14.01:21:35::SCWPlatform::Started generating the artifacts for system configuration dpu_base
+LOG::2026-10-14.01:21:35::SCWSystem::Checking the domain linux_domain
+LOG::2026-10-14.01:21:35::SCWSystem::Not a boot domain 
+LOG::2026-10-14.01:21:35::SCWSystem::Started Processing the domain linux_domain
+TRACE::2026-10-14.01:21:35::SCWDomain::Generating domain artifcats
+LOG::2026-10-14.01:21:35::SCWSystem::Completed Processing the domain linux_domain
+LOG::2026-10-14.01:21:35::SCWSystem::Completed Processing the sysconfig dpu_base
+LOG::2026-10-14.01:21:35::SCWPlatform::Completed generating the artifacts for system configuration dpu_base
+TRACE::2026-10-14.01:21:35::SCWPlatform::Started preparing the platform 
+TRACE::2026-10-14.01:21:35::SCWSystem::Writing the bif file for system config dpu_base
+TRACE::2026-10-14.01:21:35::SCWSystem::dir created 
+TRACE::2026-10-14.01:21:35::SCWSystem::Writing the bif 
+TRACE::2026-10-14.01:21:35::SCWPlatform::Started writing the spfm file 
+TRACE::2026-10-14.01:21:35::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-10-14.01:21:35::SCWPlatform::Completed generating the platform
+TRACE::2026-10-14.01:21:35::SCWWriter::formatted JSON is {
+	"platformName":	"dpu_base",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Expandable",
+	"platformDesc":	"dpu_base",
+	"platHandOff":	"/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/kv260_hardware_platform.xsa",
+	"platIntHandOff":	"<platformDir>/hw/kv260_hardware_platform.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"dpu_base",
+	"systems":	[{
+			"systemName":	"dpu_base",
+			"systemDesc":	"dpu_base",
+			"sysIsBootAutoGen":	"false",
+			"systemDispName":	"dpu_base",
+			"sysActiveDom":	"linux_domain",
+			"sysDefaultDom":	"linux_domain",
+			"domains":	[{
+					"domainName":	"linux_domain",
+					"domainDispName":	"linux on psu_cortexa53",
+					"domainDesc":	"linux_domain",
+					"processors":	"psu_cortexa53",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/dpu_base/linux_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/dpu_base/linux_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["ocl"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"64-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-10-14.01:21:35::SCWPlatform::updated the xpfm file.

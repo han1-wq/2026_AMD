@@ -1,0 +1,307 @@
+{
+  "utc": "2026-10-23T10:51:29.670116+00:00",
+  "port": "/dev/follower",
+  "read_only": true,
+  "motion_authorized": false,
+  "status": "READBACK_QUIESCENT_NOT_STOP_PROOF",
+  "snapshot": {
+    "shoulder_pan": {
+      "Firmware": 2563,
+      "Model_Number": 777,
+      "ID": 1,
+      "Response_Status_Level": 1,
+      "Max_Temperature_Limit": 70,
+      "Max_Voltage_Limit": 140,
+      "Min_Voltage_Limit": 40,
+      "Max_Torque_Limit": 1000,
+      "Unloading_Condition": 44,
+      "Homing_Offset": 85,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Torque_Limit": 1000,
+      "Lock": 1,
+      "Present_Position": 3375,
+      "Present_Velocity": 0,
+      "Present_Voltage": 121,
+      "Present_Temperature": 31,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Current": 0
+    },
+    "shoulder_lift": {
+      "Firmware": 2563,
+      "Model_Number": 777,
+      "ID": 2,
+      "Response_Status_Level": 1,
+      "Max_Temperature_Limit": 70,
+      "Max_Voltage_Limit": 140,
+      "Min_Voltage_Limit": 40,
+      "Max_Torque_Limit": 1000,
+      "Unloading_Condition": 44,
+      "Homing_Offset": 85,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Torque_Limit": 1000,
+      "Lock": 1,
+      "Present_Position": 2847,
+      "Present_Velocity": 0,
+      "Present_Voltage": 122,
+      "Present_Temperature": 31,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Current": 0
+    },
+    "elbow_flex": {
+      "Firmware": 2563,
+      "Model_Number": 777,
+      "ID": 3,
+      "Response_Status_Level": 1,
+      "Max_Temperature_Limit": 70,
+      "Max_Voltage_Limit": 140,
+      "Min_Voltage_Limit": 40,
+      "Max_Torque_Limit": 1000,
+      "Unloading_Condition": 44,
+      "Homing_Offset": 85,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Torque_Limit": 1000,
+      "Lock": 1,
+      "Present_Position": 154,
+      "Present_Velocity": 0,
+      "Present_Voltage": 121,
+      "Present_Temperature": 30,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Current": 0
+    },
+    "wrist_flex": {
+      "Firmware": 2563,
+      "Model_Number": 777,
+      "ID": 4,
+      "Response_Status_Level": 1,
+      "Max_Temperature_Limit": 70,
+      "Max_Voltage_Limit": 140,
+      "Min_Voltage_Limit": 40,
+      "Max_Torque_Limit": 1000,
+      "Unloading_Condition": 44,
+      "Homing_Offset": 85,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Torque_Limit": 1000,
+      "Lock": 1,
+      "Present_Position": 846,
+      "Present_Velocity": 0,
+      "Present_Voltage": 121,
+      "Present_Temperature": 32,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Current": 0
+    },
+    "wrist_roll": {
+      "Firmware": 2563,
+      "Model_Number": 777,
+      "ID": 5,
+      "Response_Status_Level": 1,
+      "Max_Temperature_Limit": 70,
+      "Max_Voltage_Limit": 140,
+      "Min_Voltage_Limit": 40,
+      "Max_Torque_Limit": 1000,
+      "Unloading_Condition": 44,
+      "Homing_Offset": 85,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Torque_Limit": 1000,
+      "Lock": 1,
+      "Present_Position": 3397,
+      "Present_Velocity": 0,
+      "Present_Voltage": 122,
+      "Present_Temperature": 32,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Current": 0
+    },
+    "gripper": {
+      "Firmware": 2563,
+      "Model_Number": 777,
+      "ID": 6,
+      "Response_Status_Level": 1,
+      "Max_Temperature_Limit": 70,
+      "Max_Voltage_Limit": 140,
+      "Min_Voltage_Limit": 40,
+      "Max_Torque_Limit": 500,
+      "Unloading_Condition": 44,
+      "Homing_Offset": 85,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Torque_Limit": 500,
+      "Lock": 1,
+      "Present_Position": 3269,
+      "Present_Velocity": 0,
+      "Present_Voltage": 122,
+      "Present_Temperature": 33,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Current": 0
+    }
+  },
+  "samples": [
+    {
+      "shoulder_pan": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3375
+      },
+      "shoulder_lift": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 2847
+      },
+      "elbow_flex": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 154
+      },
+      "wrist_flex": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 846
+      },
+      "wrist_roll": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3397
+      },
+      "gripper": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3269
+      }
+    },
+    {
+      "shoulder_pan": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3375
+      },
+      "shoulder_lift": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 2847
+      },
+      "elbow_flex": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 154
+      },
+      "wrist_flex": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 846
+      },
+      "wrist_roll": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3397
+      },
+      "gripper": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3269
+      }
+    },
+    {
+      "shoulder_pan": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3375
+      },
+      "shoulder_lift": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 2847
+      },
+      "elbow_flex": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 154
+      },
+      "wrist_flex": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 846
+      },
+      "wrist_roll": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3397
+      },
+      "gripper": {
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3269
+      }
+    }
+  ],
+  "issues": [],
+  "all_transmitted_packets_read_only": true
+}

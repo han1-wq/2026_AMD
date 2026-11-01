@@ -1,0 +1,9 @@
+*
+!Dockerfile
+!constraints.txt
+!lerobot/
+!lerobot/**
+lerobot/.git
+lerobot/media
+lerobot/tests
+lerobot/docs

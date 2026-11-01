@@ -1,0 +1,47 @@
+class BaseController:
+    def __init__(self, roarm_type, port):
+        self.log = logging.getLogger('BaseController')
+        self.ser = port
+        self.type = roarm_type
+        self.rl = ReadLine(self.ser)
+        self.data_buffer = None
+        
+        feedback_data_m2 = {"T": 1051, "x": 0, "y": 0, "z": 0, "b": 0, "s": 0, "e": 0, "t": 0, "torB": 0, "torS": 0, "torE": 0, "torH": 0}
+        feedback_data_m3 = {"T": 1051, "x": 0, "y": 0, "z": 0, "tit": 0, "b": 0, "s": 0, "e": 0, "t": 0, "r": 0, "g": 0, "tB": 0, "tS": 0, "tE": 0, "tT": 0, "tR": 0, "tG": 0}
+
+        switch_dict = {
+            "roarm_m2": feedback_data_m2,
+            "roarm_m3": feedback_data_m3,
+        }
+        self.base_data = switch_dict[self.type]
+        
+    def feedback_data(self):
+        try:
+            line = self.rl.readline().decode('utf-8')
+            self.data_buffer = json.loads(line)
+            self.base_data = self.data_buffer
+            self.rl.clear_buffer()   
+            return self.base_data                  
+        except json.JSONDecodeError as e:
+            self.log.error(f"JSON decode error: {e} with line: {line}")
+            self.rl.clear_buffer()
+        except Exception as e:
+            self.log.error(f"[base_ctrl.feedback_data] unexpected error: {e}")
+            self.rl.clear_buffer()
+
+def handle_m3_feedback(valid_data,data): 
+    valid_data.append(data['tit'])   
+    valid_data.append(data['b'])    
+    valid_data.append(data['s'])
+    valid_data.append(data['e'])  
+    valid_data.append(data['t'])
+    valid_data.append(data['r'])
+    data['g'] = math.pi - data['g']  
+    valid_data.append(data['g'])
+#    valid_data.append(data['tB'])    
+#    valid_data.append(data['tS'])
+#    valid_data.append(data['tE'])
+#    valid_data.append(data['tT'])
+#    valid_data.append(data['tR'])     
+    return valid_data
+

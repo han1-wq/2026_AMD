@@ -1,0 +1,9 @@
+<!-- Package-level compatibility entry point used by the original save_map node. -->
+<launch>
+    <arg name="map_name" default="yahboomcar"/>
+    <arg name="map_dir" default="/maps"/>
+    <include file="$(find yahboomcar_nav)/launch/library/map_saver_impl.launch">
+        <arg name="map_name" value="$(arg map_name)"/>
+        <arg name="map_dir" value="$(arg map_dir)"/>
+    </include>
+</launch>

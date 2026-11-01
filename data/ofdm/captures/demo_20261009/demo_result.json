@@ -1,0 +1,13 @@
+{
+  "board": "192.168.137.10",
+  "source": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/demo_source.png",
+  "received": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/demo_received.png",
+  "bytes": 73944,
+  "byte_equal": false,
+  "sha256": null,
+  "uart_pass": true,
+  "image_pass": false,
+  "returned_preview_loaded": false,
+  "uart_status": "回环 PASS：实际 RX 数据与发送数据一致",
+  "image_status": "回环失败，请查看日志"
+}

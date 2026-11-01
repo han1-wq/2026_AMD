@@ -1,0 +1,25 @@
+# Vivado and Vitis workspace caches
+/.Xil/
+/xsim.dir/
+/build_*/
+/generated_*/
+/.metadata/
+
+# Generated simulator outputs
+/sim/build/
+/sim/build_*/
+
+# Python bytecode caches
+__pycache__/
+*.py[cod]
+
+# Reproducible SG-DMA build products (sources and build scripts remain tracked)
+/release_dma/
+
+# Tool scratch files at the workspace root; retain release/capture evidence.
+/*.log
+/*.jou
+/*.pb
+/bootgen_log.txt
+/tight_setup_hold_pins.txt
+/NA/

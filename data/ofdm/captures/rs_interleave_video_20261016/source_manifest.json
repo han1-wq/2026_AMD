@@ -1,0 +1,133 @@
+{
+  "source": "synthetic motion over rescaled 192x128 test pattern plus seeded texture",
+  "jpeg": "Pillow JPEG, 4:2:0, quality as named, 32 preencoded frames repeated cyclically",
+  "limitations": "Not a natural camera clip; no camera/encoder timing or GUI display",
+  "profiles": [
+    {
+      "name": "320x180_q70",
+      "width": 320,
+      "height": 180,
+      "quality": 70,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/320x180_q70",
+      "frame_bytes": {
+        "n": 32,
+        "min": 16008,
+        "mean": 16391.84375,
+        "median": 16408.5,
+        "p90": 16541.6,
+        "p95": 16555.8,
+        "p99": 16560.07,
+        "max": 16561,
+        "stdev": 141.51724925229962
+      }
+    },
+    {
+      "name": "640x360_q50",
+      "width": 640,
+      "height": 360,
+      "quality": 50,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/640x360_q50",
+      "frame_bytes": {
+        "n": 32,
+        "min": 31998,
+        "mean": 32420.875,
+        "median": 32451.0,
+        "p90": 32665.9,
+        "p95": 32734.55,
+        "p99": 32767.08,
+        "max": 32777,
+        "stdev": 203.68277265149354
+      }
+    },
+    {
+      "name": "640x360_q70",
+      "width": 640,
+      "height": 360,
+      "quality": 70,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/640x360_q70",
+      "frame_bytes": {
+        "n": 32,
+        "min": 44042,
+        "mean": 44651.59375,
+        "median": 44669.5,
+        "p90": 44992.0,
+        "p95": 45066.8,
+        "p99": 45152.94,
+        "max": 45161,
+        "stdev": 265.74692606112586
+      }
+    },
+    {
+      "name": "640x360_q85",
+      "width": 640,
+      "height": 360,
+      "quality": 85,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/640x360_q85",
+      "frame_bytes": {
+        "n": 32,
+        "min": 66554,
+        "mean": 67355.25,
+        "median": 67381.5,
+        "p90": 67796.9,
+        "p95": 67830.15,
+        "p99": 67969.24,
+        "max": 68030,
+        "stdev": 337.67819369926747
+      }
+    },
+    {
+      "name": "960x540_q70",
+      "width": 960,
+      "height": 540,
+      "quality": 70,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/960x540_q70",
+      "frame_bytes": {
+        "n": 32,
+        "min": 92292,
+        "mean": 93358.21875,
+        "median": 93422.5,
+        "p90": 93686.1,
+        "p95": 93764.95,
+        "p99": 94093.84,
+        "max": 94229,
+        "stdev": 353.66100774390935
+      }
+    },
+    {
+      "name": "1280x720_q50",
+      "width": 1280,
+      "height": 720,
+      "quality": 50,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/1280x720_q50",
+      "frame_bytes": {
+        "n": 32,
+        "min": 119489,
+        "mean": 120560.53125,
+        "median": 120642.0,
+        "p90": 121027.2,
+        "p95": 121098.45,
+        "p99": 121272.68,
+        "max": 121326,
+        "stdev": 408.6859265052291
+      }
+    },
+    {
+      "name": "1280x720_q70",
+      "width": 1280,
+      "height": 720,
+      "quality": 70,
+      "directory": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/1280x720_q70",
+      "frame_bytes": {
+        "n": 32,
+        "min": 179023,
+        "mean": 180694.84375,
+        "median": 180776.0,
+        "p90": 181421.7,
+        "p95": 181465.9,
+        "p99": 181602.12,
+        "max": 181648,
+        "stdev": 611.4637718916285
+      }
+    }
+  ]
+}

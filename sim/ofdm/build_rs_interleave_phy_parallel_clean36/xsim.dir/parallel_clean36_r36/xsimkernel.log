@@ -1,0 +1,7 @@
+Running: xsim.dir/parallel_clean36_r36/xsimk -runall -simmode gui -testplusarg GAIN=0.75 -testplusarg CFO_HZ=0 -testplusarg INTERFERENCE=0 -testplusarg RF_BURST_START=0 -testplusarg RF_BURST_SAMPLES=0 -testplusarg TIMEOUT_NS=10000000 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -wdb parallel_clean36_r36.wdb -simrunnum 0 -socket 52197
+Design successfully loaded
+Design Loading Memory Usage: 114588 KB (Peak: 115548 KB)
+Design Loading CPU Usage: 170 ms
+Simulation completed
+Simulation Memory Usage: 194464 KB (Peak: 253856 KB)
+Simulation CPU Usage: 297800 ms

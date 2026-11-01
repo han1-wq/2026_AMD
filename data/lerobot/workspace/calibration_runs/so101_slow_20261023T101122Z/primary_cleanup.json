@@ -1,0 +1,23 @@
+[
+  "gripper/Torque_Enable: Failed to write 'Torque_Enable' on id_=6 with '0' after 1 tries. [RxPacketError] Overload error!",
+  "shoulder_pan/Operating_Mode: Refusing position-mode switch while torque remains 1",
+  "elbow_flex/Operating_Mode: Refusing position-mode switch while torque remains 1",
+  "wrist_flex/Operating_Mode: Refusing position-mode switch while torque remains 1",
+  "wrist_roll/Operating_Mode: Refusing position-mode switch while torque remains 1",
+  "gripper/Operating_Mode: Refusing position-mode switch while torque remains 1",
+  "Stop readback shoulder_pan/Torque_Enable=1",
+  "Stop readback shoulder_pan/Operating_Mode=1",
+  "Stop readback shoulder_pan/Present_Velocity=100",
+  "Stop readback elbow_flex/Torque_Enable=1",
+  "Stop readback elbow_flex/Operating_Mode=1",
+  "Stop readback elbow_flex/Present_Velocity=50",
+  "Stop readback wrist_flex/Torque_Enable=1",
+  "Stop readback wrist_flex/Operating_Mode=1",
+  "Stop readback wrist_flex/Present_Velocity=-50",
+  "Stop readback wrist_roll/Torque_Enable=1",
+  "Stop readback wrist_roll/Operating_Mode=1",
+  "Stop readback wrist_roll/Present_Velocity=-50",
+  "Stop readback gripper/Torque_Enable=1",
+  "Stop readback gripper/Operating_Mode=1",
+  "Stop readback gripper/Present_Velocity=-100"
+]

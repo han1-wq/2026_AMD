@@ -1,0 +1,1237 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date              : Wed Oct 14 00:43:07 2026
+| Host              : ubuntu running 64-bit Ubuntu 20.04.1 LTS
+| Command           : report_timing -from [get_cells -hier -filter {NAME =~ */yolo_postprocess_1/*}] -to [get_cells -hier -filter {NAME =~ */yolo_postprocess_1/*}] -delay_type min -max_paths 20 -nworst 1 -path_type full_clock_expanded -input_pins -file /home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate_routed/yolo_postprocess_min.rpt
+| Design            : kv260_hardware_platform_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.29 08-03-2020
+| Temperature Grade : C
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/tmp_addr_reg[50]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[50]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.243ns  (logic 0.114ns (46.855%)  route 0.129ns (53.145%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.130ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.630ns
+    Source Clock Delay      (SCD):    4.990ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.283ns (routing 0.881ns, distribution 1.402ns)
+  Clock Net Delay (Destination): 2.554ns (routing 0.962ns, distribution 1.592ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.283     4.990    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/ap_clk
+    SLICE_X10Y218        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/tmp_addr_reg[50]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y218        FDRE (Prop_GFF2_SLICEM_C_Q)
+                                                      0.114     5.104 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/tmp_addr_reg[50]/Q
+                         net (fo=2, routed)           0.129     5.233    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[95]_0[45]
+    SLICE_X9Y219         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.554     4.630    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/ap_clk
+    SLICE_X9Y219         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[50]/C
+                         clock pessimism              0.491     5.121    
+    SLICE_X9Y219         FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.103     5.224    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[50]
+  -------------------------------------------------------------------
+                         required time                         -5.224    
+                         arrival time                           5.233    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/int_enable_nms_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/enable_nms_read_reg_1876_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.227ns  (logic 0.112ns (49.416%)  route 0.115ns (50.584%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.115ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.624ns
+    Source Clock Delay      (SCD):    4.999ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.292ns (routing 0.881ns, distribution 1.411ns)
+  Clock Net Delay (Destination): 2.548ns (routing 0.962ns, distribution 1.586ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.292     4.999    kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/ap_clk
+    SLICE_X10Y202        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/int_enable_nms_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y202        FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.112     5.111 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/int_enable_nms_reg[15]/Q
+                         net (fo=4, routed)           0.115     5.226    kv260_hardware_platform_i/yolo_postprocess_1/inst/enable_nms[15]
+    SLICE_X9Y202         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/enable_nms_read_reg_1876_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.548     4.624    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X9Y202         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/enable_nms_read_reg_1876_reg[15]/C
+                         clock pessimism              0.491     5.115    
+    SLICE_X9Y202         FDRE (Hold_EFF_SLICEL_C_D)
+                                                      0.101     5.216    kv260_hardware_platform_i/yolo_postprocess_1/inst/enable_nms_read_reg_1876_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -5.216    
+                         arrival time                           5.226    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.014ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.212ns  (logic 0.111ns (52.358%)  route 0.101ns (47.641%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.096ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.408ns
+    Source Clock Delay      (SCD):    4.807ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.100ns (routing 0.881ns, distribution 1.219ns)
+  Clock Net Delay (Destination): 2.332ns (routing 0.962ns, distribution 1.370ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.100     4.807    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/ap_clk
+    SLICE_X24Y235        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y235        FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.111     4.918 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[13]/Q
+                         net (fo=1, routed)           0.101     5.019    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37_n_32
+    SLICE_X23Y235        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.332     4.408    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/ap_clk
+    SLICE_X23Y235        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[13]/C
+                         clock pessimism              0.495     4.903    
+    SLICE_X23Y235        FDRE (Hold_EFF2_SLICEL_C_D)
+                                                      0.102     5.005    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -5.005    
+                         arrival time                           5.019    
+  -------------------------------------------------------------------
+                         slack                                  0.014    
+
+Slack (MET) :             0.015ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/fifo_rreq/U_fifo_srl/dout_reg[16]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/tmp_addr_reg[20]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.252ns  (logic 0.112ns (44.444%)  route 0.140ns (55.556%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.136ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.654ns
+    Source Clock Delay      (SCD):    5.009ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.302ns (routing 0.881ns, distribution 1.421ns)
+  Clock Net Delay (Destination): 2.578ns (routing 0.962ns, distribution 1.616ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.302     5.009    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/fifo_rreq/U_fifo_srl/ap_clk
+    SLICE_X7Y187         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/fifo_rreq/U_fifo_srl/dout_reg[16]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y187         FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.112     5.121 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/fifo_rreq/U_fifo_srl/dout_reg[16]/Q
+                         net (fo=1, routed)           0.140     5.261    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/fifo_rreq_n_69
+    SLICE_X6Y186         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/tmp_addr_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.578     4.654    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/ap_clk
+    SLICE_X6Y186         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/tmp_addr_reg[20]/C
+                         clock pessimism              0.491     5.145    
+    SLICE_X6Y186         FDRE (Hold_EFF_SLICEL_C_D)
+                                                      0.101     5.246    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_in_m_axi_U/load_unit/tmp_addr_reg[20]
+  -------------------------------------------------------------------
+                         required time                         -5.246    
+                         arrival time                           5.261    
+  -------------------------------------------------------------------
+                         slack                                  0.015    
+
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[23]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.250ns  (logic 0.112ns (44.800%)  route 0.138ns (55.200%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.129ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.594ns
+    Source Clock Delay      (SCD):    4.955ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.248ns (routing 0.881ns, distribution 1.367ns)
+  Clock Net Delay (Destination): 2.518ns (routing 0.962ns, distribution 1.556ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.248     4.955    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X20Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X20Y223        FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.112     5.067 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[23]/Q
+                         net (fo=1, routed)           0.138     5.205    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1[23]
+    SLICE_X19Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.518     4.594    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X19Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[0]/C
+                         clock pessimism              0.491     5.084    
+    SLICE_X19Y223        FDRE (Hold_AFF_SLICEL_C_D)
+                                                      0.101     5.185    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -5.185    
+                         arrival time                           5.205    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.021ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_2_reg_2150_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/indvar_flatten41_reg_661_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.219ns  (logic 0.112ns (51.141%)  route 0.107ns (48.858%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.096ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.593ns
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.281ns (routing 0.881ns, distribution 1.400ns)
+  Clock Net Delay (Destination): 2.517ns (routing 0.962ns, distribution 1.555ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.281     4.988    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X16Y190        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_2_reg_2150_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X16Y190        FDRE (Prop_DFF_SLICEL_C_Q)
+                                                      0.112     5.100 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_2_reg_2150_reg[12]/Q
+                         net (fo=1, routed)           0.107     5.207    kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_2_reg_2150[12]
+    SLICE_X17Y190        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/indvar_flatten41_reg_661_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.517     4.593    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X17Y190        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/indvar_flatten41_reg_661_reg[12]/C
+                         clock pessimism              0.491     5.084    
+    SLICE_X17Y190        FDRE (Hold_AFF2_SLICEM_C_D)
+                                                      0.102     5.186    kv260_hardware_platform_i/yolo_postprocess_1/inst/indvar_flatten41_reg_661_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -5.186    
+                         arrival time                           5.207    
+  -------------------------------------------------------------------
+                         slack                                  0.021    
+
+Slack (MET) :             0.022ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_129/trunc_ln674_reg_248_pp0_iter5_reg_reg[1]__0/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/intersection_V_reg_359_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.238ns  (logic 0.111ns (46.607%)  route 0.127ns (53.393%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.114ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.424ns
+    Source Clock Delay      (SCD):    4.804ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.097ns (routing 0.881ns, distribution 1.216ns)
+  Clock Net Delay (Destination): 2.348ns (routing 0.962ns, distribution 1.386ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.097     4.804    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_129/ap_clk
+    SLICE_X24Y227        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_129/trunc_ln674_reg_248_pp0_iter5_reg_reg[1]__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y227        FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.111     4.915 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_129/trunc_ln674_reg_248_pp0_iter5_reg_reg[1]__0/Q
+                         net (fo=2, routed)           0.127     5.042    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/p_Result_s_fu_168_p4_1[1]
+    SLICE_X26Y227        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/intersection_V_reg_359_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.348     4.424    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/ap_clk
+    SLICE_X26Y227        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/intersection_V_reg_359_reg[1]/C
+                         clock pessimism              0.495     4.919    
+    SLICE_X26Y227        FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.102     5.021    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/intersection_V_reg_359_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -5.021    
+                         arrival time                           5.042    
+  -------------------------------------------------------------------
+                         slack                                  0.022    
+
+Slack (MET) :             0.022ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/scale_fu_334_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grid_reg_2057_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.242ns  (logic 0.112ns (46.298%)  route 0.130ns (53.702%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.118ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.615ns
+    Source Clock Delay      (SCD):    4.988ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.281ns (routing 0.881ns, distribution 1.400ns)
+  Clock Net Delay (Destination): 2.539ns (routing 0.962ns, distribution 1.577ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.281     4.988    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X15Y196        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/scale_fu_334_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X15Y196        FDRE (Prop_FFF_SLICEL_C_Q)
+                                                      0.112     5.100 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/scale_fu_334_reg[1]/Q
+                         net (fo=54, routed)          0.130     5.230    kv260_hardware_platform_i/yolo_postprocess_1/inst/p_shl_cast_fu_1054_p1[14]
+    SLICE_X14Y195        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grid_reg_2057_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.539     4.615    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X14Y195        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grid_reg_2057_reg[0]/C
+                         clock pessimism              0.491     5.105    
+    SLICE_X14Y195        FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.102     5.207    kv260_hardware_platform_i/yolo_postprocess_1/inst/grid_reg_2057_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -5.207    
+                         arrival time                           5.230    
+  -------------------------------------------------------------------
+                         slack                                  0.022    
+
+Slack (MET) :             0.024ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_1_reg_2130_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/byte_index_fu_342_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.112ns (43.528%)  route 0.145ns (56.472%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.132ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.621ns
+    Source Clock Delay      (SCD):    4.979ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.272ns (routing 0.881ns, distribution 1.391ns)
+  Clock Net Delay (Destination): 2.545ns (routing 0.962ns, distribution 1.583ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.272     4.979    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X17Y190        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_1_reg_2130_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y190        FDRE (Prop_GFF_SLICEM_C_Q)
+                                                      0.112     5.091 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_1_reg_2130_reg[4]/Q
+                         net (fo=2, routed)           0.145     5.237    kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_1_reg_2130[4]
+    SLICE_X15Y191        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/byte_index_fu_342_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.545     4.621    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X15Y191        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/byte_index_fu_342_reg[4]/C
+                         clock pessimism              0.491     5.111    
+    SLICE_X15Y191        FDRE (Hold_FFF_SLICEL_C_D)
+                                                      0.101     5.212    kv260_hardware_platform_i/yolo_postprocess_1/inst/byte_index_fu_342_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -5.212    
+                         arrival time                           5.237    
+  -------------------------------------------------------------------
+                         slack                                  0.024    
+
+Slack (MET) :             0.024ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/sum_s1_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.238ns  (logic 0.112ns (47.059%)  route 0.126ns (52.941%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.113ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.417ns
+    Source Clock Delay      (SCD):    4.799ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.092ns (routing 0.881ns, distribution 1.211ns)
+  Clock Net Delay (Destination): 2.341ns (routing 0.962ns, distribution 1.379ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.092     4.799    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/ap_clk
+    SLICE_X23Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/sum_s1_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y223        FDRE (Prop_CFF_SLICEL_C_Q)
+                                                      0.112     4.911 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/sum_s1_reg[2]/Q
+                         net (fo=1, routed)           0.126     5.037    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/p_Result_s_fu_168_p4_0[34]
+    SLICE_X24Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.341     4.417    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X24Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[13]/C
+                         clock pessimism              0.495     4.912    
+    SLICE_X24Y223        FDRE (Hold_BFF_SLICEM_C_D)
+                                                      0.101     5.013    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -5.013    
+                         arrival time                           5.037    
+  -------------------------------------------------------------------
+                         slack                                  0.024    
+
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/add_33ns_33ns_33_2_0_U24/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/trunc_ln674_3_reg_268_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.226ns  (logic 0.112ns (49.557%)  route 0.114ns (50.442%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.099ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.415ns
+    Source Clock Delay      (SCD):    4.810ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.103ns (routing 0.881ns, distribution 1.222ns)
+  Clock Net Delay (Destination): 2.339ns (routing 0.962ns, distribution 1.377ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.103     4.810    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/add_33ns_33ns_33_2_0_U24/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/ap_clk
+    SLICE_X25Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/add_33ns_33ns_33_2_0_U24/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X25Y223        FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.112     4.922 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/add_33ns_33ns_33_2_0_U24/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[7]/Q
+                         net (fo=1, routed)           0.114     5.036    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/sum_s1[7]
+    SLICE_X24Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/trunc_ln674_3_reg_268_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.339     4.415    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/ap_clk
+    SLICE_X24Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/trunc_ln674_3_reg_268_reg[7]/C
+                         clock pessimism              0.495     4.910    
+    SLICE_X24Y223        FDRE (Hold_GFF2_SLICEM_C_D)
+                                                      0.102     5.012    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_123/trunc_ln674_3_reg_268_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -5.012    
+                         arrival time                           5.036    
+  -------------------------------------------------------------------
+                         slack                                  0.025    
+
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/sum_s2_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/sub_65ns_65ns_65_3_1_U49/yolo_postprocess_sub_65ns_65ns_65_3_1_Adder_5_U/ain_s1_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.241ns  (logic 0.111ns (46.058%)  route 0.130ns (53.942%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.114ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.422ns
+    Source Clock Delay      (SCD):    4.802ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.095ns (routing 0.881ns, distribution 1.214ns)
+  Clock Net Delay (Destination): 2.346ns (routing 0.962ns, distribution 1.384ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.095     4.802    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X24Y224        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/sum_s2_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y224        FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.111     4.913 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/sum_s2_reg[22]/Q
+                         net (fo=1, routed)           0.130     5.043    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/sub_65ns_65ns_65_3_1_U49/yolo_postprocess_sub_65ns_65ns_65_3_1_Adder_5_U/ain_s1_reg[43]_0[1]
+    SLICE_X26Y224        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/sub_65ns_65ns_65_3_1_U49/yolo_postprocess_sub_65ns_65ns_65_3_1_Adder_5_U/ain_s1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.346     4.422    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/sub_65ns_65ns_65_3_1_U49/yolo_postprocess_sub_65ns_65ns_65_3_1_Adder_5_U/ap_clk
+    SLICE_X26Y224        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/sub_65ns_65ns_65_3_1_U49/yolo_postprocess_sub_65ns_65ns_65_3_1_Adder_5_U/ain_s1_reg[1]/C
+                         clock pessimism              0.495     4.916    
+    SLICE_X26Y224        FDRE (Hold_DFF2_SLICEL_C_D)
+                                                      0.102     5.018    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/sub_65ns_65ns_65_3_1_U49/yolo_postprocess_sub_65ns_65ns_65_3_1_Adder_5_U/ain_s1_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -5.018    
+                         arrival time                           5.043    
+  -------------------------------------------------------------------
+                         slack                                  0.025    
+
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_reg_2120_reg[13]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/id_fu_338_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.111ns (43.191%)  route 0.146ns (56.809%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.131ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.617ns
+    Source Clock Delay      (SCD):    4.976ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.269ns (routing 0.881ns, distribution 1.388ns)
+  Clock Net Delay (Destination): 2.541ns (routing 0.962ns, distribution 1.579ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.269     4.976    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X17Y195        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_reg_2120_reg[13]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y195        FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.111     5.087 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_reg_2120_reg[13]/Q
+                         net (fo=1, routed)           0.146     5.233    kv260_hardware_platform_i/yolo_postprocess_1/inst/add_ln138_reg_2120[13]
+    SLICE_X15Y196        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/id_fu_338_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.541     4.617    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X15Y196        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/id_fu_338_reg[13]/C
+                         clock pessimism              0.491     5.107    
+    SLICE_X15Y196        FDRE (Hold_EFF_SLICEL_C_D)
+                                                      0.101     5.208    kv260_hardware_platform_i/yolo_postprocess_1/inst/id_fu_338_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -5.208    
+                         arrival time                           5.233    
+  -------------------------------------------------------------------
+                         slack                                  0.025    
+
+Slack (MET) :             0.026ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[36]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.252ns  (logic 0.111ns (44.048%)  route 0.141ns (55.952%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.123ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.607ns
+    Source Clock Delay      (SCD):    4.974ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.267ns (routing 0.881ns, distribution 1.386ns)
+  Clock Net Delay (Destination): 2.531ns (routing 0.962ns, distribution 1.569ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.267     4.974    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X18Y226        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[36]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y226        FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.111     5.085 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[36]/Q
+                         net (fo=1, routed)           0.141     5.226    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1[36]
+    SLICE_X15Y226        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.531     4.607    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X15Y226        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[13]/C
+                         clock pessimism              0.491     5.097    
+    SLICE_X15Y226        FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.103     5.200    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -5.200    
+                         arrival time                           5.226    
+  -------------------------------------------------------------------
+                         slack                                  0.026    
+
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[40]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.262ns  (logic 0.111ns (42.366%)  route 0.151ns (57.634%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.132ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.616ns
+    Source Clock Delay      (SCD):    4.974ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.267ns (routing 0.881ns, distribution 1.386ns)
+  Clock Net Delay (Destination): 2.540ns (routing 0.962ns, distribution 1.578ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.267     4.974    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X18Y226        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[40]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X18Y226        FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.111     5.085 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[40]/Q
+                         net (fo=1, routed)           0.151     5.236    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1[40]
+    SLICE_X14Y226        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.540     4.616    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X14Y226        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[17]/C
+                         clock pessimism              0.491     5.106    
+    SLICE_X14Y226        FDRE (Hold_FFF2_SLICEL_C_D)
+                                                      0.103     5.209    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s2_reg[17]
+  -------------------------------------------------------------------
+                         required time                         -5.209    
+                         arrival time                           5.236    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/tmp_addr_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.271ns  (logic 0.114ns (42.006%)  route 0.157ns (57.994%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.142ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.632ns
+    Source Clock Delay      (SCD):    4.980ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.273ns (routing 0.881ns, distribution 1.392ns)
+  Clock Net Delay (Destination): 2.556ns (routing 0.962ns, distribution 1.594ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.273     4.980    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/ap_clk
+    SLICE_X10Y214        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/tmp_addr_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y214        FDRE (Prop_EFF2_SLICEM_C_Q)
+                                                      0.114     5.094 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/store_unit/tmp_addr_reg[6]/Q
+                         net (fo=2, routed)           0.157     5.251    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[95]_0[1]
+    SLICE_X8Y214         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.556     4.632    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/ap_clk
+    SLICE_X8Y214         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[6]/C
+                         clock pessimism              0.491     5.122    
+    SLICE_X8Y214         FDRE (Hold_DFF2_SLICEM_C_D)
+                                                      0.102     5.224    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/rs_wreq/data_p2_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -5.224    
+                         arrival time                           5.251    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/req_fifo/U_fifo_srl/dout_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/rs_req/data_p2_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.223ns  (logic 0.113ns (50.673%)  route 0.110ns (49.327%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.094ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.611ns
+    Source Clock Delay      (SCD):    5.008ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.301ns (routing 0.881ns, distribution 1.420ns)
+  Clock Net Delay (Destination): 2.535ns (routing 0.962ns, distribution 1.573ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.301     5.008    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/req_fifo/U_fifo_srl/ap_clk
+    SLICE_X9Y227         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/req_fifo/U_fifo_srl/dout_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y227         FDRE (Prop_BFF2_SLICEL_C_Q)
+                                                      0.113     5.121 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/req_fifo/U_fifo_srl/dout_reg[29]/Q
+                         net (fo=2, routed)           0.110     5.231    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/rs_req/D[24]
+    SLICE_X10Y227        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/rs_req/data_p2_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.535     4.611    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/rs_req/ap_clk
+    SLICE_X10Y227        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/rs_req/data_p2_reg[29]/C
+                         clock pessimism              0.491     5.102    
+    SLICE_X10Y227        FDRE (Hold_EFF2_SLICEM_C_D)
+                                                      0.102     5.204    kv260_hardware_platform_i/yolo_postprocess_1/inst/gmem_out_m_axi_U/bus_write/wreq_throttle/rs_req/data_p2_reg[29]
+  -------------------------------------------------------------------
+                         required time                         -5.204    
+                         arrival time                           5.231    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.029ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.226ns  (logic 0.112ns (49.557%)  route 0.114ns (50.442%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.096ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.408ns
+    Source Clock Delay      (SCD):    4.807ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.100ns (routing 0.881ns, distribution 1.219ns)
+  Clock Net Delay (Destination): 2.332ns (routing 0.962ns, distribution 1.370ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.100     4.807    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/ap_clk
+    SLICE_X24Y235        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y235        FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.112     4.919 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37/yolo_postprocess_add_33ns_33ns_33_2_0_Adder_0_U/sum_s1_reg[8]/Q
+                         net (fo=1, routed)           0.114     5.033    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/add_33ns_33ns_33_2_0_U37_n_37
+    SLICE_X23Y235        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.332     4.408    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/ap_clk
+    SLICE_X23Y235        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[8]/C
+                         clock pessimism              0.495     4.903    
+    SLICE_X23Y235        FDRE (Hold_FFF_SLICEL_C_D)
+                                                      0.101     5.004    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_threshold_product_fu_135/trunc_ln674_2_reg_396_reg[8]
+  -------------------------------------------------------------------
+                         required time                         -5.004    
+                         arrival time                           5.033    
+  -------------------------------------------------------------------
+                         slack                                  0.029    
+
+Slack (MET) :             0.029ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/sum_s1_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.238ns  (logic 0.112ns (47.059%)  route 0.126ns (52.941%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.108ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.415ns
+    Source Clock Delay      (SCD):    4.802ns
+    Clock Pessimism Removal (CPR):    -0.495ns
+  Clock Net Delay (Source):      2.095ns (routing 0.881ns, distribution 1.214ns)
+  Clock Net Delay (Destination): 2.339ns (routing 0.962ns, distribution 1.377ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.095     4.802    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/ap_clk
+    SLICE_X23Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/sum_s1_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y223        FDRE (Prop_GFF_SLICEL_C_Q)
+                                                      0.112     4.914 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/grp_p_anonymous_namespace_area_fu_117/add_32ns_32ns_32_2_0_U25/yolo_postprocess_add_32ns_32ns_32_2_0_Adder_1_U/sum_s1_reg[6]/Q
+                         net (fo=1, routed)           0.126     5.040    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/p_Result_s_fu_168_p4_0[38]
+    SLICE_X24Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.339     4.415    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/ap_clk
+    SLICE_X24Y223        FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[17]/C
+                         clock pessimism              0.495     4.910    
+    SLICE_X24Y223        FDRE (Hold_FFF_SLICEM_C_D)
+                                                      0.101     5.011    kv260_hardware_platform_i/yolo_postprocess_1/inst/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_p_anonymous_namespace_suppress_fu_185/add_65ns_65ns_65_3_1_U48/yolo_postprocess_add_65ns_65ns_65_3_1_Adder_4_U/bin_s1_reg[17]
+  -------------------------------------------------------------------
+                         required time                         -5.011    
+                         arrival time                           5.040    
+  -------------------------------------------------------------------
+                         slack                                  0.029    
+
+Slack (MET) :             0.030ns  (arrival time - required time)
+  Source:                 kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/int_input_r_reg[30]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            kv260_hardware_platform_i/yolo_postprocess_1/inst/input_r_read_reg_1897_reg[30]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out3_kv260_hardware_platform_clk_wiz_0_1  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             clk_out3_kv260_hardware_platform_clk_wiz_0_1
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns - clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.267ns  (logic 0.112ns (41.992%)  route 0.155ns (58.008%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.136ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.644ns
+    Source Clock Delay      (SCD):    4.999ns
+    Clock Pessimism Removal (CPR):    -0.491ns
+  Clock Net Delay (Source):      2.292ns (routing 0.881ns, distribution 1.411ns)
+  Clock Net Delay (Destination): 2.568ns (routing 0.962ns, distribution 1.606ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.619     1.619    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                      0.739     2.358 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.310     2.668    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.707 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.292     4.999    kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/ap_clk
+    SLICE_X3Y200         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/int_input_r_reg[30]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y200         FDRE (Prop_BFF_SLICEL_C_Q)
+                                                      0.112     5.111 r  kv260_hardware_platform_i/yolo_postprocess_1/inst/control_s_axi_U/int_input_r_reg[30]/Q
+                         net (fo=3, routed)           0.155     5.266    kv260_hardware_platform_i/yolo_postprocess_1/inst/input_r[30]
+    SLICE_X6Y200         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/input_r_read_reg_1897_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out3_kv260_hardware_platform_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    BUFG_PS_X0Y81        BUFG_PS                      0.000     0.000 r  kv260_hardware_platform_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1164, routed)        1.783     1.783    kv260_hardware_platform_i/clk_wiz_1/inst/clk_in1
+    MMCM_X0Y3                                                         r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKIN1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT2)
+                                                     -0.103     1.680 r  kv260_hardware_platform_i/clk_wiz_1/inst/mmcme4_adv_inst/CLKOUT2
+                         net (fo=1, routed)           0.352     2.032    kv260_hardware_platform_i/clk_wiz_1/inst/clk_out3_kv260_hardware_platform_clk_wiz_0_1
+    BUFGCE_X0Y76                                                      r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/I
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.076 r  kv260_hardware_platform_i/clk_wiz_1/inst/clkout3_buf/O
+    X1Y2 (CLOCK_ROOT)    net (fo=36233, routed)       2.568     4.644    kv260_hardware_platform_i/yolo_postprocess_1/inst/ap_clk
+    SLICE_X6Y200         FDRE                                         r  kv260_hardware_platform_i/yolo_postprocess_1/inst/input_r_read_reg_1897_reg[30]/C
+                         clock pessimism              0.491     5.135    
+    SLICE_X6Y200         FDRE (Hold_EFF_SLICEL_C_D)
+                                                      0.101     5.236    kv260_hardware_platform_i/yolo_postprocess_1/inst/input_r_read_reg_1897_reg[30]
+  -------------------------------------------------------------------
+                         required time                         -5.236    
+                         arrival time                           5.266    
+  -------------------------------------------------------------------
+                         slack                                  0.030    
+
+
+
+

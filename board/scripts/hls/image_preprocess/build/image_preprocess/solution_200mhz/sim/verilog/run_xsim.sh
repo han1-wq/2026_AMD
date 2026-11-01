@@ -1,0 +1,1 @@
+../../../../../../../../../build/hls/image_preprocess/image_preprocess/solution_200mhz/sim/verilog/run_xsim.sh

@@ -1,0 +1,458 @@
+... logging to /root/.ros/log/cac8a48c-cca3-11f1-89ae-e726ae1488bb/roslaunch-bc8599cb38cc-127.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/project/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch
+[1mstarted roslaunch server http://127.0.0.1:35161/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /amcl/
+
+PARAMETERS
+ * /amcl/base_frame_id: base_footprint
+ * /amcl/global_frame_id: map
+ * /amcl/gui_publish_rate: 10.0
+ * /amcl/initial_pose_a: 0.0
+ * /amcl/initial_pose_x: 0.0
+ * /amcl/initial_pose_y: 0.0
+ * /amcl/kld_err: 0.05
+ * /amcl/kld_z: 0.99
+ * /amcl/laser_lambda_short: 0.1
+ * /amcl/laser_likelihood_max_dist: 2.0
+ * /amcl/laser_max_beams: 60
+ * /amcl/laser_max_range: 12.0
+ * /amcl/laser_model_type: likelihood_field
+ * /amcl/laser_sigma_hit: 0.2
+ * /amcl/laser_z_hit: 0.5
+ * /amcl/laser_z_max: 0.05
+ * /amcl/laser_z_rand: 0.5
+ * /amcl/laser_z_short: 0.05
+ * /amcl/max_particles: 5000
+ * /amcl/min_particles: 2000
+ * /amcl/odom_alpha1: 0.2
+ * /amcl/odom_alpha2: 0.2
+ * /amcl/odom_alpha3: 0.8
+ * /amcl/odom_alpha4: 0.2
+ * /amcl/odom_alpha5: 0.1
+ * /amcl/odom_frame_id: odom
+ * /amcl/odom_model_type: omni
+ * /amcl/recovery_alpha_fast: 0.0
+ * /amcl/recovery_alpha_slow: 0.0
+ * /amcl/resample_interval: 1
+ * /amcl/transform_tolerance: 1.0
+ * /amcl/update_min_a: 0.2
+ * /amcl/update_min_d: 0.25
+ * /amcl/use_map_topic: True
+ * /move_base/DWAPlannerROS/acc_lim_theta: 20.0
+ * /move_base/DWAPlannerROS/acc_lim_x: 10.0
+ * /move_base/DWAPlannerROS/acc_lim_y: 10.0
+ * /move_base/DWAPlannerROS/controller_frequency: 10.0
+ * /move_base/DWAPlannerROS/forward_point_distance: 0.325
+ * /move_base/DWAPlannerROS/global_frame_id: /map
+ * /move_base/DWAPlannerROS/goal_distance_bias: 20.0
+ * /move_base/DWAPlannerROS/latch_xy_goal_tolerance: False
+ * /move_base/DWAPlannerROS/max_rot_vel: 3.2
+ * /move_base/DWAPlannerROS/max_scaling_factor: 0.2
+ * /move_base/DWAPlannerROS/max_vel_theta: 3.2
+ * /move_base/DWAPlannerROS/max_vel_trans: 1.0
+ * /move_base/DWAPlannerROS/max_vel_x: 0.7
+ * /move_base/DWAPlannerROS/max_vel_y: 0.3
+ * /move_base/DWAPlannerROS/min_rot_vel: -3.2
+ * /move_base/DWAPlannerROS/min_vel_theta: 0.1
+ * /move_base/DWAPlannerROS/min_vel_trans: 0.01
+ * /move_base/DWAPlannerROS/min_vel_x: 0.01
+ * /move_base/DWAPlannerROS/min_vel_y: -0.3
+ * /move_base/DWAPlannerROS/occdist_scale: 0.5
+ * /move_base/DWAPlannerROS/oscillation_reset_angle: 0.05
+ * /move_base/DWAPlannerROS/oscillation_reset_dist: 0.05
+ * /move_base/DWAPlannerROS/path_distance_bias: 10.0
+ * /move_base/DWAPlannerROS/publish_cost_grid_pc: True
+ * /move_base/DWAPlannerROS/publish_traj_pc: True
+ * /move_base/DWAPlannerROS/scaling_speed: 0.25
+ * /move_base/DWAPlannerROS/sim_time: 1.0
+ * /move_base/DWAPlannerROS/stop_time_buffer: 0.1
+ * /move_base/DWAPlannerROS/theta_stopped_vel: 0.4
+ * /move_base/DWAPlannerROS/trans_stopped_vel: 0.1
+ * /move_base/DWAPlannerROS/vtheta_samples: 10
+ * /move_base/DWAPlannerROS/vx_samples: 10
+ * /move_base/DWAPlannerROS/vy_samples: 0
+ * /move_base/DWAPlannerROS/xy_goal_tolerance: 0.1
+ * /move_base/DWAPlannerROS/yaw_goal_tolerance: 0.1
+ * /move_base/aggressive_reset/layer_names: ['obstacle_layer']
+ * /move_base/aggressive_reset/reset_distance: 3.0
+ * /move_base/base_local_planner: dwa_local_planner...
+ * /move_base/clearing_rotation_allowed: False
+ * /move_base/conservative_reset/layer_names: ['obstacle_layer']
+ * /move_base/conservative_reset/reset_distance: 1.0
+ * /move_base/conservative_reset_dist: 5.0
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 5.0
+ * /move_base/global_costmap/cost_scaling_factor: 3.0
+ * /move_base/global_costmap/footprint: [[-0.1525, -0.122...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/inflation_layer/cost_scaling_factor: 1.0
+ * /move_base/global_costmap/inflation_layer/enabled: True
+ * /move_base/global_costmap/inflation_radius: 0.3
+ * /move_base/global_costmap/map_type: costmap
+ * /move_base/global_costmap/obstacle_layer/combination_method: 1
+ * /move_base/global_costmap/obstacle_layer/enabled: True
+ * /move_base/global_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/global_costmap/obstacle_layer/min_obstacle_height: 0.0
+ * /move_base/global_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/publish_voxel_map: False
+ * /move_base/global_costmap/obstacle_layer/raytrace_range: 3.5
+ * /move_base/global_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/global_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/global_costmap/obstacle_layer/scan/expected_update_rate: 0
+ * /move_base/global_costmap/obstacle_layer/scan/marking: True
+ * /move_base/global_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/global_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/global_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/global_costmap/obstacle_range: 3.0
+ * /move_base/global_costmap/publish_frequency: 10.0
+ * /move_base/global_costmap/raytrace_range: 3.5
+ * /move_base/global_costmap/resolution: 0.05
+ * /move_base/global_costmap/robot_base_frame: base_footprint
+ * /move_base/global_costmap/static_layer/enabled: True
+ * /move_base/global_costmap/static_layer/map_topic: /map
+ * /move_base/global_costmap/static_map: True
+ * /move_base/global_costmap/transform_tolerance: 0.5
+ * /move_base/global_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/cost_scaling_factor: 3.0
+ * /move_base/local_costmap/footprint: [[-0.1525, -0.122...
+ * /move_base/local_costmap/global_frame: odom
+ * /move_base/local_costmap/height: 2.5
+ * /move_base/local_costmap/inflation_layer/cost_scaling_factor: 1.0
+ * /move_base/local_costmap/inflation_layer/enabled: True
+ * /move_base/local_costmap/inflation_radius: 0.3
+ * /move_base/local_costmap/map_type: costmap
+ * /move_base/local_costmap/obstacle_layer/combination_method: 1
+ * /move_base/local_costmap/obstacle_layer/enabled: True
+ * /move_base/local_costmap/obstacle_layer/max_obstacle_height: 2.0
+ * /move_base/local_costmap/obstacle_layer/min_obstacle_height: 0.0
+ * /move_base/local_costmap/obstacle_layer/observation_sources: scan
+ * /move_base/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/publish_voxel_map: False
+ * /move_base/local_costmap/obstacle_layer/raytrace_range: 3.5
+ * /move_base/local_costmap/obstacle_layer/scan/clearing: True
+ * /move_base/local_costmap/obstacle_layer/scan/data_type: LaserScan
+ * /move_base/local_costmap/obstacle_layer/scan/expected_update_rate: 0
+ * /move_base/local_costmap/obstacle_layer/scan/marking: True
+ * /move_base/local_costmap/obstacle_layer/scan/sensor_frame: laser
+ * /move_base/local_costmap/obstacle_layer/scan/topic: scan
+ * /move_base/local_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/local_costmap/obstacle_range: 3.0
+ * /move_base/local_costmap/publish_frequency: 10.0
+ * /move_base/local_costmap/raytrace_range: 3.5
+ * /move_base/local_costmap/resolution: 0.05
+ * /move_base/local_costmap/robot_base_frame: base_footprint
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_layer/enabled: True
+ * /move_base/local_costmap/static_layer/map_topic: /map
+ * /move_base/local_costmap/static_map: False
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 10.0
+ * /move_base/local_costmap/width: 2.5
+ * /move_base/max_planning_retries: -1.0
+ * /move_base/move_slow_and_clear/clearing_distance: 0.1
+ * /move_base/move_slow_and_clear/limited_distance: 0.3
+ * /move_base/move_slow_and_clear/limited_rot_speed: 0.4
+ * /move_base/move_slow_and_clear/limited_trans_speed: 0.1
+ * /move_base/oscillation_distance: 0.3
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 10.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: False
+ * /move_base/recovery_behaviors: [{'type': 'clear_...
+ * /move_base/shutdown_costmaps: False
+ * /move_base/super_reset/layer_names: ['obstacle_layer']
+ * /move_base/super_reset/reset_dithe rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[33m[ WARN] [1792513934.264824985]: global_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1792513934.625907536]: local_costmap: Parameter "plugins" not provided, loading pre-Hydro parameters[0m
+[33m[ WARN] [1792513934.677703816]: Parameter max_rot_vel is deprecated (and will not load properly). Use max_vel_theta instead.[0m
+[33m[ WARN] [1792513934.677879845]: Parameter min_rot_vel is deprecated (and will not load properly). Use min_vel_theta instead.[0m
+[31m[ERROR] [1792513938.738351463]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513938.736939907 but the latest data is at time 1792513938.715979099, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513938.738394679]: Global Frame: odom Plan Frame size 5: map
+[0m
+[33m[ WARN] [1792513938.738413449]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513938.738426170]: Could not get local plan[0m
+[31m[ERROR] [1792513938.838309887]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513938.814882993 but the latest data is at time 1792513938.715979099, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513938.838338184]: Global Frame: odom Plan Frame size 5: map
+[0m
+[33m[ WARN] [1792513938.838359884]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513938.838372180]: Could not get local plan[0m
+[31m[ERROR] [1792513938.938416902]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513938.919176101 but the latest data is at time 1792513938.715979099, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513938.938455227]: Global Frame: odom Plan Frame size 5: map
+[0m
+[33m[ WARN] [1792513938.938469441]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513938.938494498]: Could not get local plan[0m
+[31m[ERROR] [1792513939.038315893]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513939.023896932 but the latest data is at time 1792513938.715979099, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513939.038347480]: Global Frame: odom Plan Frame size 5: map
+[0m
+[33m[ WARN] [1792513939.038362537]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513939.038374487]: Could not get local plan[0m
+[31m[ERROR] [1792513939.138282425]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513939.128413915 but the latest data is at time 1792513938.715979099, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513939.138311722]: Global Frame: odom Plan Frame size 5: map
+[0m
+[33m[ WARN] [1792513939.138352811]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513939.138365153]: Could not get local plan[0m
+[33m[ WARN] [1792513939.238606718]: Transform timeout for global_costmap. Current time: 1792513939.2385, pose stamp: 1792513938.7160, tolerance: 0.5000[0m
+[33m[ WARN] [1792513939.238670196]: Unable to get starting pose of robot, unable to create global plan[0m
+[31m[ERROR] [1792513939.238967470]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513939.232610940 but the latest data is at time 1792513938.715979099, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513939.239014814]: Global Frame: odom Plan Frame size 5: map
+[0m
+[33m[ WARN] [1792513939.239034206]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513939.239049539]: Could not get local plan[0m
+[33m[ WARN] [1792513939.239099991]: Unable to get starting pose of robot, unable to create global plan[0m
+[33m[ WARN] [1792513939.306406888]: Costmap2DROS transform timeout. Current time: 1792513939.3064, global_pose stamp: 1792513938.7160, tolerance: 0.5000[0m
+[33m[ WARN] [1792513939.306474778]: Could not get robot pose, cancelling reconfiguration[0m
+[0m[ INFO] [1792513934.272380121]: global_costmap: Using plugin "static_layer"[0m
+[0m[ INFO] [1792513934.276584143]: Requesting the map...[0m
+[0m[ INFO] [1792513934.478499745]: Resizing costmap to 240 X 200 at 0.050000 m/pix[0m
+[0m[ INFO] [1792513934.578309199]: Received a 240 X 200 map at 0.050000 m/pix[0m
+[0m[ INFO] [1792513934.581226523]: global_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1792513934.582972370]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1792513934.594742140]: global_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1792513934.638076438]: local_costmap: Using plugin "obstacle_layer"[0m
+[0m[ INFO] [1792513934.640412394]:     Subscribed to Topics: scan[0m
+[0m[ INFO] [1792513934.653140759]: local_costmap: Using plugin "inflation_layer"[0m
+[0m[ INFO] [1792513934.673077271]: Created local_planner dwa_local_planner/DWAPlannerROS[0m
+[0m[ INFO] [1792513934.674836965]: Sim period is set to 0.10[0m
+[0m[ INFO] [1792513934.869558006]: Recovery behavior will clear layer 'obstacle_layer'[0m
+[0m[ INFO] [1792513934.892979342]: odom received![0m
+[0m[ INFO] [1792513937.238213655]: Got new plan[0m
+[0m[ INFO] [1792513937.338215974]: Got new plan[0m
+[0m[ INFO] [1792513937.438243795]: Got new plan[0m
+[0m[ INFO] [1792513937.538220391]: Got new plan[0m
+[0m[ INFO] [1792513937.638241304]: Got new plan[0m
+[0m[ INFO] [1792513937.738215818]: Got new plan[0m
+[0m[ INFO] [1792513937.838211996]: Got new plan[0m
+[0m[ INFO] [1792513937.938269518]: Got new plan[0m
+[0m[ INFO] [1792513938.038226497]: Got new plan[0m
+[0m[ INFO] [1792513938.138221928]: Got new plan[0m
+[0m[ INFO] [1792513938.238350009]: Got new plan[0m
+[0m[ INFO] [1792513938.338307617]: Got new plan[0m
+[0m[ INFO] [1792513938.438329291]: Got new plan[0m
+[0m[ INFO] [1792513938.538299496]: Got new plan[0m
+[0m[ INFO] [1792513938.638288531]: Got new plan[0m
+[0m[ INFO] [1792513938.738213529]: Got new plan[0m
+[0m[ INFO] [1792513938.838233237]: Got new plan[0m
+[0m[ INFO] [1792513938.938342820]: Got new plan[0m
+[0m[ INFO] [1792513939.038241602]: Got new plan[0m
+[0m[ INFO] [1792513939.138216274]: Got new plan[0m
+[0m[ INFO] [1792513939.238832186]: Got new plan[0m
+[0m[ INFO] [1792513941.014303029]: Got new plan[0m
+[0m[ INFO] [1792513941.213948902]: Got new plan[0m
+[0m[ INFO] [1792513941.313932568]: Got new plan[0m
+[0m[ INFO] [1792513941.414002074]: Got new plan[0m
+[0m[ INFO] [1792513941.513993827]: Got new plan[0m
+[0m[ INFO] [1792513941.613923344]: Got new plan[0m
+[0m[ INFO] [1792513941.713998480]: Got new plan[0m
+[0m[ INFO] [1792513941.813944752]: Got new plan[0m
+[0m[ INFO] [1792513941.913943963]: Got new plan[0m
+[0m[ INFO] [1792513942.013915534]: Got new plan[0m
+[0m[ INFO] [1792513942.113917545]: Got new plan[0m
+[0m[ INFO] [1792513942.213997835]: Got new plan[0m
+[0m[ INFO] [1792513942.313935561]: Got new plan[0m
+[0m[ INFO] [1792513942.414065895]: Got new plan[0m
+[0m[ INFO] [1792513942.513920467]: Got new plan[0m
+[0m[ INFO] [1792513942.613960231]: Got new plan[0m
+[0m[ INFO] [1792513942.713925849]: Got new plan[0m
+[0m[ INFO] [1792513942.813946632]: Got new plan[0m
+[0m[ INFO] [1792513942.913955600]: Got new plan[0m
+[0m[ INFO] [1792513943.013916639]: Got new plan[0m
+[0m[ INFO] [1792513943.114239057]: Got new plan[0m
+[0m[ INFO] [1792513943.213935172]: Got new plan[0m
+[0m[ INFO] [1792513943.313933888]: Got new plan[0m
+[0m[ INFO] [1792513943.413941491]: Got new plan[0m
+[0m[ INFO] [1792513943.513924791]: Got new plan[0m
+[0m[ INFO] [1792513943.513971819]: Goal reached[0m
+[0m[ INFO] [1792513950.245063890]: Got new plan[0m
+[0m[ INFO] [1792513950.345242343]: Got new plan[0m
+[0m[ INFO] [1792513950.445106550]: Got new plan[0m
+[0m[ INFO] [1792513950.545121621]: Got new plan[0m
+[0m[ INFO] [1792513950.645122094]: Got new plan[0m
+[0m[ INFO] [1792513950.745092804]: Got new plan[0m
+[0m[ INFO] [1792513950.845062241]: Got new plan[0m
+[0m[ INFO] [1792513950.945094309]: Got new plan[0m
+[0m[ INFO] [1792513951.045049453]: Got new plan[0m
+[0m[ INFO] [17925[31m[ERROR] [1792513958.798470529]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513958.792622089 but the latest data is at time 1792513958.744296073, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513958.798524954]: Global Frame: odom Plan Frame size 10: map
+[0m
+[33m[ WARN] [1792513958.798539198]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513958.798551133]: Could not get local plan[0m
+[31m[ERROR] [1792513958.898582347]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513958.896290063 but the latest data is at time 1792513958.744296073, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513958.898608382]: Global Frame: odom Plan Frame size 10: map
+[0m
+[33m[ WARN] [1792513958.898631991]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513958.898666695]: Could not get local plan[0m
+[31m[ERROR] [1792513958.998507226]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513958.973788976 but the latest data is at time 1792513958.744296073, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513958.998604465]: Global Frame: odom Plan Frame size 10: map
+[0m
+[33m[ WARN] [1792513958.998676132]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513958.998751184]: Could not get local plan[0m
+13951.145058176]: Got new plan[0m
+[0m[ INFO] [1792513951.245144819]: Got new plan[0m
+[0m[ INFO] [1792513951.345071680]: Got new plan[0m
+[0m[ INFO] [1792513951.445116956]: Got new plan[0m
+[0m[ INFO] [1792513951.545557954]: Got new plan[0m
+[0m[ INFO] [1792513951.645140990]: Got new plan[0m
+[0m[ INFO] [1792513951.745038617]: Got new plan[0m
+[0m[ INFO] [1792513951.845096950]: Got new plan[0m
+[0m[ INFO] [1792513951.945062100]: Got new plan[0m
+[0m[ INFO] [1792513952.045059349]: Got new plan[0m
+[0m[ INFO] [1792513952.145084594]: Got new plan[0m
+[0m[ INFO] [1792513952.245090632]: Got new plan[0m
+[0m[ INFO] [1792513952.345102067]: Got new plan[0m
+[0m[ INFO] [1792513952.445047670]: Got new plan[0m
+[0m[ INFO] [1792513952.545127557]: Got new plan[0m
+[0m[ INFO] [1792513952.645059022]: Got new plan[0m
+[0m[ INFO] [1792513952.745066960]: Got new plan[0m
+[0m[ INFO] [1792513952.845072436]: Got new plan[0m
+[0m[ INFO] [1792513952.945039393]: Got new plan[0m
+[0m[ INFO] [1792513953.045071242]: Got new plan[0m
+[0m[ INFO] [1792513953.145073313]: Got new plan[0m
+[0m[ INFO] [1792513953.245091585]: Got new plan[0m
+[0m[ INFO] [1792513953.345067794]: Got new plan[0m
+[0m[ INFO] [1792513953.445053306]: Got new plan[0m
+[0m[ INFO] [1792513953.545062765]: Got new plan[0m
+[0m[ INFO] [1792513953.645054316]: Got new plan[0m
+[0m[ INFO] [1792513953.745074803]: Got new plan[0m
+[0m[ INFO] [1792513953.845100322]: Got new plan[0m
+[0m[ INFO] [1792513953.945105934]: Got new plan[0m
+[0m[ INFO] [1792513954.045066140]: Got new plan[0m
+[0m[ INFO] [1792513954.145074131]: Got new plan[0m
+[0m[ INFO] [1792513954.245072147]: Got new plan[0m
+[0m[ INFO] [1792513954.345067698]: Got new plan[0m
+[0m[ INFO] [1792513954.445123350]: Got new plan[0m
+[0m[ INFO] [1792513954.545098695]: Got new plan[0m
+[0m[ INFO] [1792513954.645074010]: Got new plan[0m
+[0m[ INFO] [1792513954.745044217]: Got new plan[0m
+[0m[ INFO] [1792513954.845090075]: Got new plan[0m
+[0m[ INFO] [1792513954.945076895]: Got new plan[0m
+[0m[ INFO] [1792513955.045199231]: Got new plan[0m
+[0m[ INFO] [1792513955.145061131]: Got new plan[0m
+[0m[ INFO] [1792513955.145098394]: Goal reached[0m
+[0m[ INFO] [1792513955.470811827]: Got new plan[0m
+[0m[ INFO] [1792513955.570754150]: Got new plan[0m
+[0m[ INFO] [1792513955.670787155]: Got new plan[0m
+[0m[ INFO] [1792513955.770752385]: Got new plan[0m
+[0m[ INFO] [1792513955.870797880]: Got new plan[0m
+[0m[ INFO] [1792513955.970766605]: Got new plan[0m
+[0m[ INFO] [1792513956.070847611]: Got new plan[0m
+[0m[ INFO] [1792513956.170733418]: Got new plan[0m
+[0m[ INFO] [1792513956.270834175]: Got new plan[0m
+[0m[ INFO] [1792513956.370839483]: Got new plan[0m
+[0m[ INFO] [1792513956.470715806]: Got new plan[0m
+[0m[ INFO] [1792513956.570868891]: Got new plan[0m
+[0m[ INFO] [1792513956.670774981]: Got new plan[0m
+[0m[ INFO] [1792513956.770744937]: Got new plan[0m
+[0m[ INFO] [1792513956.870756805]: Got new plan[0m
+[0m[ INFO] [1792513956.970750186]: Got new plan[0m
+[0m[ INFO] [1792513957.070840229]: Got new plan[0m
+[0m[ INFO] [1792513957.170848539]: Got new plan[0m
+[0m[ INFO] [1792513957.270789086]: Got new plan[0m
+[0m[ INFO] [1792513957.370834434]: Got new plan[0m
+[0m[ INFO] [1792513957.370882190]: Goal reached[0m
+[0m[ INFO] [1792513957.598319220]: Got new plan[0m
+[0m[ INFO] [1792513957.698430103]: Got new plan[0m
+[0m[ INFO] [1792513957.798620120]: Got new plan[0m
+[0m[ INFO] [1792513957.998420292]: Got new plan[0m
+[0m[ INFO] [1792513958.098395222]: Got new plan[0m
+[0m[ INFO] [1792513958.198416178]: Got new plan[0m
+[0m[ INFO] [1792513958.298632503]: Got new plan[0m
+[0m[ INFO] [1792513958.398426741]: Got new plan[0m
+[0m[ INFO] [1792513958.498444705]: Got new plan[0m
+[0m[ INFO] [1792513958.598502329]: Got new plan[0m
+[0m[ INFO] [1792513958.698469910]: Got new plan[0m
+[0m[ INFO] [1792513958.798393588]: Got new plan[0m
+[0m[ INFO] [1792513958.898503169]: Got new plan[0m
+[0m[ INFO] [1792513958.998424254]: Got new plan[0m
+[0m[ INFO] [1792513959.098503689[31m[ERROR] [1792513959.098623153]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513959.077927112 but the latest data is at time 1792513958.744296073, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513959.098728787]: Global Frame: odom Plan Frame size 10: map
+[0m
+[33m[ WARN] [1792513959.098801403]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513959.098859063]: Could not get local plan[0m
+[31m[ERROR] [1792513959.198622193]: Extrapolation Error: Lookup would require extrapolation into the future.  Requested time 1792513959.181931972 but the latest data is at time 1792513958.744296073, when looking up transform from frame [odom] to frame [map]
+[0m
+[31m[ERROR] [1792513959.198727960]: Global Frame: odom Plan Frame size 10: map
+[0m
+[33m[ WARN] [1792513959.198803762]: Could not transform the global plan to the frame of the controller[0m
+[31m[ERROR] [1792513959.198879034]: Could not get local plan[0m
+[33m[ WARN] [1792513959.306378644]: Costmap2DROS transform timeout. Current time: 1792513959.3063, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513959.306433613]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513960.315069211]: Costmap2DROS transform timeout. Current time: 1792513960.3150, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513960.406333887]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513961.406366824]: Costmap2DROS transform timeout. Current time: 1792513961.4063, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513961.406431343]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513962.406406053]: Costmap2DROS transform timeout. Current time: 1792513962.4064, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513962.406461011]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513963.415145568]: Costmap2DROS transform timeout. Current time: 1792513963.4151, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513963.506331607]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513964.415191711]: Costmap2DROS transform timeout. Current time: 1792513964.4152, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513964.506464187]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513965.506521407]: Costmap2DROS transform timeout. Current time: 1792513965.5064, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513965.506603968]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513966.515060237]: Costmap2DROS transform timeout. Current time: 1792513966.5150, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513966.606353931]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513967.606403271]: Costmap2DROS transform timeout. Current time: 1792513967.6064, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513967.606460723]: Could not get robot pose, cancelling reconfiguration[0m
+[33m[ WARN] [1792513968.615044407]: Costmap2DROS transform timeout. Current time: 1792513968.6150, global_pose stamp: 1792513958.7443, tolerance: 0.5000[0m
+[33m[ WARN] [1792513968.706450706]: Could not get robot pose, cancelling reconfiguration[0m
+[31m[ERROR] [1792513968.806371458]: Extrapolation Error looking up robot pose: Lookup would require extrapolation into the past.  Requested time 1792513958.744296073 but the earliest data is at time 1792513958.818581104, when looking up transform from frame [base_footprint] to frame [map]
+[0m
+[31m[ERROR] [1792513969.806400527]: Extrapolation Error looking up robot pose: Lookup would require extrapolation into the past.  Requested time 1792513958.744296073 but the earliest data is at time 1792513959.805687904, when looking up transform from frame [base_footprint] to frame [map]
+[0m
+[33m[ WARN] [1792513969.806460620]: Could not get robot pose, cancelling reconfiguration[0m
+[31m[ERROR] [1792513970.806454808]: Extrapolation Error looking up robot pose: Lookup would require extrapolation into the past.  Requested time 1792513958.744296073 but the earliest data is at time 1792513960.822750091, when looking up transform from frame [base_footprint] to frame [map]
+[0m
+[33m[ WARN] [1792513970.806519453]: Could not get robot pose, cancelling reconfiguration[0m
+[31m[ERROR] [1792513971.815070507]: Extrapolation Error looking up robot pose: Lookup would require extrapolation into the past.  Requested time 1792513958.744296073 but the earliest data is at time 1792513961.814140081, when looking up transform from frame [base_footprint] to frame [map]
+[0m
+[33m[ WARN] [1792513971.906391368]: Could not get robot pose, cancelling reconfiguration[0m
+[31m[ERROR] [1792513972.815074570]: Extrapolation Error looking up robot pose: Lookup would require extrapolation into the past.  Requested time 1792513958.744296073 but the earliest data is at time 1792513962.806566953, when looking up transform from frame [base_footprint] to frame [map]
+[0m
+[33m[ WARN] [1792513973.006368263]: Could not get robot pose, cancelling reconfiguration[0m
+[31m[ERROR] [1792513973.815075321]: Extrapolation Error looking up robot pose: Lookup would require extrapolation into the past.  Requested time 1792513958.744296073 but the earliest data is at time 1792513963.817205905, when looking up transform from frame [base_footprint] to frame [map]
+[0m
+[33m[ WARN] [1792513974.006391244]: Could not get robot pose, cancelling reconfiguration[0m
+]: Got new plan[0m
+[0m[ INFO] [1792513959.198488137]: Got new plan[0m
+stance: 5.0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.13
+
+NODES
+  /
+    amcl (amcl/amcl)
+    map_server (map_server/map_server)
+    move_base (move_base/move_base)
+    navigation_guard (yahboomcar_nav/navigation_guard.py)
+
+[1mROS_MASTER_URI=http://127.0.0.1:11311[0m
+]2;/project/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch http://127.0.0.1:11311
+[1mprocess[navigation_guard-1]: started with pid [162][0m
+[1mprocess[map_server-2]: started with pid [163][0m
+[1mprocess[amcl-3]: started with pid [261][0m
+[1mprocess[move_base-4]: started with pid [272][0m
+[move_base-4] killing on exit
+[navigation_guard-1] killing on exit
+[map_server-2] killing on exit
+[amcl-3] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

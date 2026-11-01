@@ -1,0 +1,1 @@
+../../../../../../../src/ps/kv260_yolo_ros/ros2_ws_src/src/hawkbotcar_laser/test/test_copyright.py

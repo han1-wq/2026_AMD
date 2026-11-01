@@ -1,0 +1,30 @@
+ 
+{
+  "installed": {
+    "start-navigation.sh": "a4c358d87709d16b9746272869e1b0063d59c6301ec94c29e197c26777062726",
+    "stop-navigation.sh": "04ba2d929d7bdf02ea205aa34bc03a7faeb0623312e184efa8ab5c1f92dd3158",
+    "run-robot.sh": "c853610ea5d6ce3e4f9d486a0f82cdb65f15dba119a668d81a9f32bad744aa75",
+    "start-rviz.sh": "70e719d9edb394ade7f636bb7ecd4db3e95422a90c50577a0012494f14773fa2",
+    "launcher_modes.py": "585ba5a0e902d2fe8d159242c7d9ba35c1b6170847b82acb98a661e46c8ef707",
+    "navigation-fix/sync-runtime.py": "e38229c08ef11599bab9e7478c32aa42731f42a3e8c8e5075ca95735ccd9ee7d",
+    "remote-rviz/navigation-view.launch": "e523add0fe5d7030e88ec4aaa78d98f5ef3445ece47f2ada1d27da02903d4de8",
+    "remote-rviz/navigation.rviz": "31492b789460eea3a357a59b6c9736d877330abbd6c06b189785b57762c1f705",
+    "context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch": "d87a748673b05ebd395813ad0e9d876d91fe85e70ef88ea5faba3d7de24eba87",
+    "context/src/yahboomcar_nav/launch/library/amcl.launch": "6c669db10b0a08672fff0fd0ce4c5dd529cfb3cb5420e84c93b14ef7f30fd03d",
+    "context/src/yahboomcar_nav/launch/library/move_base.launch": "e14f9c3fa8bbcba60f69c5a5d7805b332b7974a4fd25bde5ab1a4bbc56159b32",
+    "context/src/yahboomcar_nav/launch/view_navigate.launch": "cab8d8a137cebeea0d54c7209eacdbe70a083ea23a32d18dfc333b495f5dbf0b",
+    "context/src/yahboomcar_nav/scripts/navigation_guard.py": "d207f3c33ac7f99a2e78572e22e5d56672a9edd81780541602a599237d18fb88",
+    "context/src/yahboomcar_nav/scripts/send_mark.py": "c5956c5f907eccc7832700c9575671099a338800f9f516faababc5f49e1c16de",
+    "context/src/yahboomcar_nav/rviz/yahboomcar_navigate.rviz": "31492b789460eea3a357a59b6c9736d877330abbd6c06b189785b57762c1f705",
+    "context/src/yahboomcar_nav/CMakeLists.txt": "751796c20f77e93c10d01261b2e4fe117e60c132cd65d6a4bc18c5ef682969b1",
+    "context/src/yahboomcar_nav/package.xml": "274b0de9b52d6810f169f9245c97656ead1563b70b5310b344de8db8992ed9e0",
+    "context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py": "c1efe72ab1fbaf699ece3bfe67b6ac94373c1e17e2ae893d408791f9ce636283"
+  },
+  "backup": "/home/ubuntu/x3plus-kv260-docker/navigation-fix/deployment-backups/20261020-124419",
+  "nodes_after": [
+    "/rosout"
+  ],
+  "hardware_started": false,
+  "navigation_started": false
+}
+NAVIGATION_FIX_DEPLOYMENT_PASS

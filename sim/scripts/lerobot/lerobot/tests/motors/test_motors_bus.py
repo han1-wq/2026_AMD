@@ -1,0 +1,1 @@
+../../../../../../src/ps/lerobot-deploy/lerobot/tests/motors/test_motors_bus.py

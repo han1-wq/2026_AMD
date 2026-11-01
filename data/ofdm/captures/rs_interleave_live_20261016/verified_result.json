@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "download": "volatile JTAG; QSPI unchanged",
+  "board_ip": "192.168.137.10",
+  "lo_hz": 850000000,
+  "length_checks": {
+    "passed": 66,
+    "bytes": 31620
+  },
+  "uart": {
+    "requested": 500,
+    "attempts": 500,
+    "successes": 500,
+    "failures": 0,
+    "not_attempted": 0,
+    "completed": true,
+    "passed": true,
+    "wall_s": 101.74847216800117,
+    "successful_bytes": 500000,
+    "compared_bits": 4000000,
+    "verified_payload_differing_bits": 0,
+    "failed_payload_differing_bits": null,
+    "raw_rf_ber": null,
+    "link_retries": null,
+    "rx_dropped": null,
+    "measurement": "Only fully verified returns are saved; failed/partial data is not bit-counted",
+    "application_goodput_Bps": 4914.078701589042,
+    "success_elapsed_s": {
+      "n": 500,
+      "min": 0.20130689600046026,
+      "mean": 0.20338673143220512,
+      "median": 0.20337871000083396,
+      "p90": 0.20413638210084173,
+      "p95": 0.204348530896641,
+      "p99": 0.20542180648015346,
+      "max": 0.2084571949999372,
+      "stdev": 0.0007419205870922913
+    },
+    "sent_sha256": "f45414fdeba82c4213779e186c5aaca6a81cf0945ccf728ead1aaafff682ec98",
+    "received_sha256": "f45414fdeba82c4213779e186c5aaca6a81cf0945ccf728ead1aaafff682ec98"
+  },
+  "images": {
+    "attempts": 200,
+    "successes": 200,
+    "failures": 0,
+    "failure_rate": 0.0,
+    "compared_bits": 118310400,
+    "differing_bits": 0,
+    "delivered_bit_difference_rate": 0.0,
+    "raw_rf_ber": null,
+    "raw_rf_packet_loss_rate": null,
+    "wall_s": 25.080399808000948,
+    "successful_bytes": 14788800,
+    "application_goodput_Bps": 589655.6718877422,
+    "success_timings": {
+      "elapsed_s": {
+        "n": 200,
+        "min": 0.12415999099903274,
+        "mean": 0.12513652184496096,
+        "median": 0.12489793349959655,
+        "p90": 0.1256184515008499,
+        "p95": 0.12607240949946572,
+        "p99": 0.12827143895181506,
+        "max": 0.1369547270005569,
+        "stdev": 0.0010048318510854394
+      },
+      "upload_s": {
+        "n": 200,
+        "min": 0.0008043699999689125,
+        "mean": 0.0017151120699054445,
+        "median": 0.0013972179986012634,
+        "p90": 0.0025171270986902527,
+        "p95": 0.003813276602340914,
+        "p99": 0.005385719379482885,
+        "max": 0.010366192000219598,
+        "stdev": 0.0011059490967352773
+      },
+      "metadata_s": {
+        "n": 200,
+        "min": 0.0007360419986071065,
+        "mean": 0.0011716032700314826,
+        "median": 0.0010469789995113388,
+        "p90": 0.0016524725015187869,
+        "p95": 0.001973346001432219,
+        "p99": 0.0028037500372738557,
+        "max": 0.0038395860028686,
+        "stdev": 0.00040331438048213364
+      },
+      "first_data_s": {
+        "n": 200,
+        "min": 0.00251290300002438,
+        "mean": 0.0030712672449044478,
+        "median": 0.0029089899981045164,
+        "p90": 0.003511575699303648,
+        "p95": 0.0039022009486870952,
+        "p99": 0.005305207031087768,
+        "max": 0.008470499997201841,
+        "stdev": 0.0005872015059991877
+      },
+      "image_s": {
+        "n": 200,
+        "min": 0.12382906200218713,
+        "mean": 0.12470371207999051,
+        "median": 0.1245815965012298,
+        "p90": 0.12518560239841464,
+        "p95": 0.12560688129797198,
+        "p99": 0.12603187080836506,
+        "max": 0.12790681500337087,
+        "stdev": 0.00043574935436841897
+      },
+      "crc_s": {
+        "n": 200,
+        "min": 0.12384438300068723,
+        "mean": 0.12475197674491938,
+        "median": 0.12459405700064963,
+        "p90": 0.1252027680980973,
+        "p95": 0.12562033239773882,
+        "p99": 0.1260716481206691,
+        "max": 0.13267972899848246,
+        "stdev": 0.0007010606389353324
+      },
+      "ack_s": {
+        "n": 200,
+        "min": 0.12404042600246612,
+        "mean": 0.12493683762995715,
+        "median": 0.1247480625006574,
+        "p90": 0.12538818449866085,
+        "p95": 0.12588885940094768,
+        "p99": 0.1280704950708605,
+        "max": 0.13286081799742533,
+        "stdev": 0.0007638952257892146
+      },
+      "gap_s": {
+        "n": 200,
+        "min": 3.601600110414438e-05,
+        "mean": 0.00013496067995220074,
+        "median": 0.00011149100100737996,
+        "p90": 0.00019138129864586516,
+        "p95": 0.0002312125508979079,
+        "p99": 0.00040575937007815676,
+        "max": 0.0010727749977377243,
+        "stdev": 8.78921581592111e-05
+      }
+    },
+    "failure_elapsed": null,
+    "post_image_wait": {
+      "n": 200,
+      "min": 0.00023741800032439642,
+      "mean": 0.0004328097649704432,
+      "median": 0.0003174444991600467,
+      "p90": 0.0005138263979461043,
+      "p95": 0.0006761511482181956,
+      "p99": 0.0021382172807716295,
+      "max": 0.010530637002375443,
+      "stdev": 0.000772717689426192
+    }
+  },
+  "image_counter_totals": {
+    "tx_submitted": 30000,
+    "tx_completed": 30000,
+    "tx_rejected": 0,
+    "tx_failed": 0,
+    "rx_accepted": 30000,
+    "rx_dropped": 0,
+    "rx_overflow": 0,
+    "rx_timeout": 0,
+    "link_retries": 0,
+    "link_failures": 0
+  },
+  "image_rows_with_counters": 200,
+  "last_image_matches": true,
+  "limitations": [
+    "Application data after FCS/ARQ; not raw RF BER or RS correction count",
+    "External antenna/cable arrangement not independently inspected",
+    "No QSPI programming; power cycling may restore older firmware"
+  ]
+}

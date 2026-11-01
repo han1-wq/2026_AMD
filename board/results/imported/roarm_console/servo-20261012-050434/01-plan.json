@@ -1,0 +1,51 @@
+{
+  "decision": {
+    "action": "observe",
+    "tip": null,
+    "target": [
+      424,
+      284
+    ],
+    "goal_tip": null,
+    "confidence": 0.94,
+    "target_label": "指定饮料瓶",
+    "reason": "新图仍裁切夹爪上缘，无法确认完整接触尖端及标定扫掠空隙；需补拍完整夹爪周边。",
+    "completion_evidence": "",
+    "contact_ready": false,
+    "step": null,
+    "clearance_verified": false,
+    "mapping_verified": false
+  },
+  "feedback": {
+    "id": 5,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "target_rad": null,
+    "travel_rad": 0.0,
+    "source": "serial_encoder",
+    "time": 1791806686.2211144
+  },
+  "observed_stamp": 1791806685.7552521
+}

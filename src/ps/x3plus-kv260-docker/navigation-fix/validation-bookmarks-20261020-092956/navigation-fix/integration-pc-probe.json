@@ -1,0 +1,136 @@
+{
+  "tf": {
+    "map -> base_footprint": {
+      "age_seconds": 0.0, 
+      "ok": true
+    }, 
+    "map -> laser": {
+      "age_seconds": 0.0, 
+      "ok": true
+    }
+  }, 
+  "received": {
+    "move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "goals": [], 
+      "age_seconds": 0.009450912475585938, 
+      "stamp": 1792513821.121915
+    }, 
+    "map": {
+      "count": 1, 
+      "age_seconds": 19.18142580986023, 
+      "stamp": 1792513801.9499543, 
+      "height": 200, 
+      "width": 240, 
+      "fresh": false
+    }, 
+    "scan": {
+      "count": 106, 
+      "fresh": true, 
+      "frame": "laser", 
+      "age_seconds": 0.031445980072021484, 
+      "stamp": 1792513821.099946
+    }, 
+    "localization": {
+      "count": 13, 
+      "age_seconds": 0.031440019607543945, 
+      "stamp": 1792513821.099946, 
+      "covariance": [
+        0.001890939509825884, 
+        0.00027539698411871427, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.00027539698411871427, 
+        0.0010020792697131853, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.0, 
+        0.00012871519187914463
+      ], 
+      "fresh": true, 
+      "y": 1.2923923341544166, 
+      "x": 2.638863431870801
+    }, 
+    "cmd_vel": {
+      "count": 58, 
+      "fresh": true, 
+      "nonzero_seen": false, 
+      "velocity_xy_yaw": [
+        0.0, 
+        0.0, 
+        0.0
+      ], 
+      "age_seconds": -3.0994415283203125e-06
+    }, 
+    "navigation": {
+      "count": 58, 
+      "fresh": true, 
+      "status": {
+        "valid_scan_returns": 120, 
+        "guard_check_ms": 1.5721321105957031, 
+        "task_state": "cancelled", 
+        "position_std_m": 0.04444549291362333, 
+        "ready": true, 
+        "task_reason": "cancelled", 
+        "yaw_std_rad": 0.011375481280052262, 
+        "ray_conflict": 0.0, 
+        "current_fault": "", 
+        "stamp": 1792513821.057086, 
+        "max_auto_resumes": 5, 
+        "goal_retained": false, 
+        "resume_count": 1, 
+        "scan_match": 1.0, 
+        "tf_age_s": 0.013247013, 
+        "quality_warning": false, 
+        "initial_pose_required": false, 
+        "reason": "ready", 
+        "quality_pending_s": 0.0, 
+        "pose_age_s": 0.45987606048583984, 
+        "scan_age_s": 0.012990951538085938, 
+        "recovery_remaining_s": 0.0, 
+        "latched_reason": ""
+      }, 
+      "age_seconds": -2.1457672119140625e-06
+    }, 
+    "internal_move_base": {
+      "count": 31, 
+      "fresh": true, 
+      "goals": [
+        {
+          "status": 3, 
+          "text": "Goal reached.", 
+          "id": "/navigation_guard-2-1792513811.942"
+        }
+      ], 
+      "age_seconds": 0.0869438648223877, 
+      "stamp": 1792513821.044465
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/*dpu_base*/
+the_ROM_image:
+{
+  [bootloader, destination_cpu=a53-0]<dpu_base/boot/fsbl.elf>
+  [pmufw_image]<dpu_base/boot/pmufw.elf>
+  [destination_device=pl] <bitstream>
+}

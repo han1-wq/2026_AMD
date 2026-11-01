@@ -1,0 +1,19 @@
+[
+  {
+    "tag": "web-alone",
+    "returncode": 0,
+    "log_tail": "Input #0, video4linux2,v4l2, from '/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0':\n  Duration: N/A, start: 5934.844995, bitrate: N/A\n  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 72:72 DAR 16:9], 30 fps, 30 tbr, 1000k tbn, 1000k tbc\nOutput #0, matroska, to '/home/ubuntu/lerobot-deploy/teleop-ui/camera-check/web-alone.mkv':\n  Metadata:\n    encoder         : Lavf58.76.100\n  Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj422p(pc, bt470bg/unknown/unknown), 1280x720 [SAR 72:72 DAR 16:9], q=2-31, 30 fps, 30 tbr, 1k tbn, 1000k tbc\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\nframe=    1 fps=0.0 q=-1.0 size=       1kB time=00:00:00.00 bitrate=4112.0kbits/s speed= 500x    \nframe=    6 fps=0.0 q=-1.0 size=     768kB time=00:00:00.16 bitrate=38597.9kbits/s speed=0.322x    \nframe=   19 fps= 19 q=-1.0 size=    4608kB time=00:00:00.99 bitrate=37862.3kbits/s speed=0.988x    \nframe=   34 fps= 22 q=-1.0 size=    8960kB time=00:00:01.49 bitrate=49097.2kbits/s speed=0.988x    \nframe=   45 fps= 24 q=-1.0 Lsize=   12727kB time=00:00:01.86 bitrate=55843.2kbits/s speed=0.996x    \nvideo:12725kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.019133%\n[video4linux2,v4l2 @ 0xaaab12b43bd0] Some buffers are still owned by the caller on close.\nioctl(VIDIOC_QBUF): Bad file descriptor\n",
+    "jpeg_ok": true
+  },
+  {
+    "tag": "integrated-low",
+    "returncode": 1,
+    "log_tail": "[video4linux2,v4l2 @ 0xaaaaf218cbd0] ioctl(VIDIOC_STREAMON): No space left on device\n/dev/v4l/by-id/usb-XHH-260202-H_Integrated_Camera-video-index0: No space left on device\n"
+  },
+  {
+    "tag": "web-low",
+    "returncode": 0,
+    "log_tail": "Input #0, video4linux2,v4l2, from '/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0':\n  Duration: N/A, start: 5939.067341, bitrate: N/A\n  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 640x360 [SAR 72:72 DAR 16:9], 30 fps, 30 tbr, 1000k tbn, 1000k tbc\nOutput #0, matroska, to '/home/ubuntu/lerobot-deploy/teleop-ui/camera-check/web-low.mkv':\n  Metadata:\n    encoder         : Lavf58.76.100\n  Stream #0:0: Video: mjpeg (Baseline) (MJPG / 0x47504A4D), yuvj422p(pc, bt470bg/unknown/unknown), 640x360 [SAR 72:72 DAR 16:9], q=2-31, 30 fps, 30 tbr, 1k tbn, 1000k tbc\nStream mapping:\n  Stream #0:0 -> #0:0 (copy)\nframe=    1 fps=0.0 q=-1.0 size=       1kB time=00:00:00.00 bitrate=4112.0kbits/s speed=1e+03x    \nframe=    6 fps=0.0 q=-1.0 size=     256kB time=00:00:00.16 bitrate=12409.2kbits/s speed=0.332x    \nframe=   19 fps= 19 q=-1.0 size=    1280kB time=00:00:01.00 bitrate=10454.4kbits/s speed=0.991x    \nframe=   30 fps= 22 q=-1.0 Lsize=    2355kB time=00:00:01.36 bitrate=14092.0kbits/s speed=0.994x    \nvideo:2353kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.076027%\n[video4linux2,v4l2 @ 0xaaaaee1a9bd0] Some buffers are still owned by the caller on close.\nioctl(VIDIOC_QBUF): Bad file descriptor\n",
+    "jpeg_ok": true
+  }
+]

@@ -1,0 +1,1 @@
+../../../../../../projects/ofdm/build_hw/ip_repo/axi_ad936x_ctrl/xgui/axi_ad936x_ctrl_v1_0.tcl

@@ -1,0 +1,1 @@
+../../../src/ps/lerobot-deploy/run-board.sh

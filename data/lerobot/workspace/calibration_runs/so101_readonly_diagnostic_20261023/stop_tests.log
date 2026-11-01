@@ -1,0 +1,9 @@
+test_broadcast_and_other_instructions_blocked (__main__.StopTests) ... ok
+test_enable_never_reaches_serial (__main__.StopTests) ... ok
+test_nonzero_and_other_writes_blocked (__main__.StopTests) ... ok
+test_zero_writes_allowed (__main__.StopTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.010s
+
+OK

@@ -1,0 +1,1 @@
+../../../src/ps/lerobot-deploy/verify_transfer.py

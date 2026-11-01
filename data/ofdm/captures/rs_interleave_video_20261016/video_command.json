@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/usr/bin/python3",
+    "-B",
+    "-u",
+    "-c",
+    "import runpy; m=runpy.run_path('/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/run_video_suite.py'); m[\"generate\"]=lambda:None; fn=m[\"main\"]; fn.__globals__[\"generate\"]=lambda:__import__(\"json\").loads(('/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/source_manifest.json' and __import__(\"pathlib\").Path('/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/source_manifest.json')).read_text())[\"profiles\"]; fn()"
+  ],
+  "pid": 554981
+}

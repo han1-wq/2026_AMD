@@ -1,0 +1,69 @@
+{
+	"version": "1.0",
+	"modules": {
+		"yolo_postprocess": {
+			"proto_instances": {
+				"/AESL_inst_yolo_postprocess_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3_fu_808/grp_yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3_fu_808_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yolo_postprocess_Pipeline_VITIS_LOOP_145_7_fu_818/grp_yolo_postprocess_Pipeline_VITIS_LOOP_145_7_fu_818_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yolo_postprocess_Pipeline_VITIS_LOOP_171_8_fu_861/grp_yolo_postprocess_Pipeline_VITIS_LOOP_171_8_fu_861_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yolo_postprocess_Pipeline_VITIS_LOOP_175_10_fu_836/grp_yolo_postprocess_Pipeline_VITIS_LOOP_175_10_fu_836_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844/grp_yolo_postprocess_Pipeline_VITIS_LOOP_183_11_fu_844_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

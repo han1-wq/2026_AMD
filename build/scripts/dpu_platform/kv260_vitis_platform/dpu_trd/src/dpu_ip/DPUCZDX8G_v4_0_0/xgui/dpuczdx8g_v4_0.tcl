@@ -1,0 +1,1 @@
+../../../../../../../../../src/kv260/dpu_platform2/kv260_vitis_platform/dpu_trd/src/dpu_ip/DPUCZDX8G_v4_0_0/xgui/dpuczdx8g_v4_0.tcl

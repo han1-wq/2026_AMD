@@ -1,0 +1,37 @@
+[
+  {
+    "camera": "integrated",
+    "device": "/dev/v4l/by-id/usb-XHH-260202-H_Integrated_Camera-video-index0",
+    "returncode": 0,
+    "elapsed_s": 10.18,
+    "decode_returncode": 0,
+    "decode_error": "[mjpeg @ 0xaaaac20acbf0] unable to decode APP fields: Invalid data found when processing input\n[mjpeg @ 0xaaaac20add90] unable to decode APP fields: Invalid data found when processing input\n    Last message repeated 119 times\n",
+    "video": {
+      "programs": [],
+      "streams": [
+        {
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "60/1",
+          "nb_read_frames": "120"
+        }
+      ]
+    },
+    "image_size": [
+      1280,
+      720
+    ],
+    "channel_stddev": [
+      76.8306928851179,
+      79.92224150161675,
+      76.84065692811524
+    ]
+  },
+  {
+    "camera": "web",
+    "device": "/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0",
+    "returncode": 1,
+    "elapsed_s": 2.88,
+    "error": "[video4linux2,v4l2 @ 0xaaaaf416dbd0] ioctl(VIDIOC_STREAMON): No space left on device\n/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0: No space left on device\n"
+  }
+]

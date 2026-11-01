@@ -1,0 +1,13 @@
+{
+  "name": "max8",
+  "rate": 54,
+  "payload": 1024,
+  "rs": 1,
+  "errors": 8,
+  "packets": 2,
+  "cfo": 0,
+  "interference": 0,
+  "passed": true,
+  "scope": "real PHY + RS + FCS + DMA with backpressure",
+  "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_max8/driver.log"
+}

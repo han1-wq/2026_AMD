@@ -1,0 +1,27 @@
+{
+  "board": "192.168.137.10",
+  "port": 5001,
+  "source": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_interleave_video_20261016/sources/320x180_q70",
+  "fps": 12.5,
+  "seconds": 12,
+  "scheduled_frames": 150,
+  "dimensions": [
+    320,
+    180
+  ],
+  "source_frames": 32,
+  "frame_bytes": {
+    "n": 32,
+    "min": 16008,
+    "mean": 16391.84375,
+    "median": 16408.5,
+    "p90": 16541.6,
+    "p95": 16555.8,
+    "p99": 16560.07,
+    "max": 16561,
+    "stdev": 141.51724925229962
+  },
+  "timeout_s": 10,
+  "policy": "one outstanding frame; skip stale source frames; no host retry",
+  "measurement": "preencoded JPEG loopback; decode included; capture/encode excluded"
+}

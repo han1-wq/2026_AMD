@@ -1,0 +1,149 @@
+{
+  "guard_status": {
+    "current_fault": "scan_ray_obstructed",
+    "goal_retained": false,
+    "guard_check_ms": 8.817911148071289,
+    "initial_pose_required": true,
+    "latched_reason": "map_changed_initial_pose_required",
+    "max_auto_resumes": 5,
+    "pose_age_s": 0.46135401725769043,
+    "position_std_m": 0.03931735806195526,
+    "quality_interlock": false,
+    "quality_pending_s": 0.0,
+    "quality_warning": false,
+    "ray_conflict": 0.12,
+    "ready": false,
+    "reason": "map_changed_initial_pose_required",
+    "recovery_remaining_s": 0.0,
+    "resume_count": 0,
+    "scan_age_s": 0.1652541160583496,
+    "scan_match": 0.98,
+    "stamp": 1792582302.659394,
+    "task_reason": "map_changed_initial_pose_required",
+    "task_state": "idle",
+    "tf_age_s": 0.034419297,
+    "valid_scan_returns": 50,
+    "yaw_std_rad": 0.009460731459386267
+  },
+  "zero_cmd_samples": 72,
+  "nonzero_cmd_samples": 0,
+  "costmap_lethal_count": 2,
+  "lethal_base_xy": [
+    [
+      0.11130605636989621,
+      0.1889066999143041
+    ],
+    [
+      0.10578355069044676,
+      0.23860078412486407
+    ]
+  ],
+  "nearest_returns": [
+    {
+      "angle_deg": 82.6077282528045,
+      "base_xy": [
+        0.12349844201845117,
+        0.14076086547319888
+      ],
+      "range": 0.1420000046491623
+    },
+    {
+      "angle_deg": 74.76226027752992,
+      "base_xy": [
+        0.1470575810900082,
+        0.15327623545571495
+      ],
+      "range": 0.1589999943971634
+    },
+    {
+      "angle_deg": 74.58395418718277,
+      "base_xy": [
+        0.1486099595809445,
+        0.1569966097061958
+      ],
+      "range": 0.16300000250339508
+    },
+    {
+      "angle_deg": 71.90936283197553,
+      "base_xy": [
+        0.1565153173483303,
+        0.1566794788813015
+      ],
+      "range": 0.16500000655651093
+    },
+    {
+      "angle_deg": 71.73105674162838,
+      "base_xy": [
+        0.1573191538852999,
+        0.1574662986527916
+      ],
+      "range": 0.16599999368190765
+    }
+  ],
+  "latest_scan_range_counts": {
+    "above_max_finite": 0,
+    "below_min": 0,
+    "nan": 0,
+    "positive_inf": 606
+  },
+  "lethal_within_8cm_recent_endpoint": 2,
+  "checksums_verified": {
+    "scripts/navigation_guard.py": "31ecd828e6bada689927ea2762a4c86dff3527f31672e1ad4aa0a81ce37eda44",
+    "launch/yahboomcar_navigation.launch": "c6bc369b23016a323aeec93cb3bb6c69010216fd1c5ad44ea45885546738979f",
+    "param/common/costmap_common_params_X3plus.yaml": "89d9d9eda170cac7e2d6058f9832d1d8d51d992aab28eaf7302f6633639fb389"
+  },
+  "watchdog_source_sha256": "c1efe72ab1fbaf699ece3bfe67b6ac94373c1e17e2ae893d408791f9ce636283",
+  "tests": {
+    "navigation": {
+      "count": 96,
+      "exit": 0
+    },
+    "console": {
+      "count": 41,
+      "exit": 0
+    },
+    "isolated_inf_clearing": {
+      "after": {
+        "default_inf": {
+          "lethal": 9,
+          "stamp": 1792582188.7450764
+        },
+        "valid_inf": {
+          "lethal": 0,
+          "stamp": 1792582188.7614062
+        }
+      },
+      "before": {
+        "default_inf": {
+          "lethal": 9,
+          "stamp": 1792582187.4455137
+        },
+        "valid_inf": {
+          "lethal": 9,
+          "stamp": 1792582187.5615067
+        }
+      },
+      "finite_obstacle_reappeared": {
+        "default_inf": {
+          "lethal": 9,
+          "stamp": 1792582188.945081
+        },
+        "valid_inf": {
+          "lethal": 9,
+          "stamp": 1792582188.961404
+        }
+      },
+      "passed": true,
+      "scope": "Network none, no devices; two real move_base costmaps; synthetic LaserScan and TF",
+      "seconds_after_inf": 1.4194228649139404,
+      "versions": "ros-melodic-costmap-2d\t1.16.7-1bionic.20221025.205213\nros-melodic-laser-geometry\t1.6.7-1bionic.20221025.204812\n"
+    }
+  },
+  "limitations": [
+    "No physical goal or motion was commanded by this session",
+    "Restart resets obstacle buffers; 100-to-2 snapshot difference alone does not isolate parameter effect",
+    "Initial pose confirmation required after final restart",
+    "Side near return physical source not established",
+    "DWA goal execution and low-speed physical navigation not yet validated"
+  ]
+}

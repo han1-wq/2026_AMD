@@ -1,0 +1,2 @@
+synth_1 STATUS=synth_design Complete! NEEDS_REFRESH=1
+impl_1 STATUS=write_bitstream ERROR NEEDS_REFRESH=1

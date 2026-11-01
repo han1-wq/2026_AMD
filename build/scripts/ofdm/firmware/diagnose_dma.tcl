@@ -1,0 +1,1 @@
+../../../../src/ofdm/eeSDR_ofdm_loopback/firmware/diagnose_dma.tcl

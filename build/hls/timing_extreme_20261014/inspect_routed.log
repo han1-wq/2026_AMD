@@ -1,0 +1,53 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /home/amd/Workspace/HLS_IP/timing_extreme_20261014/inspect_routed.tcl -notrace
+Command: open_checkpoint /home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate_routed/platform_candidate.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2705.434 ; gain = 2.969 ; free physical = 12406 ; free virtual = 18569
+WARNING: [Project 1-153] The current project device 'xc7vx485tffg1157-1' does not match with the device on the 'XILINX.COM:KV260_SOM_SOM240_1_CONNECTOR_KV260_CARRIER_SOM240_1_CONNECTOR:1.3' board part. A device change to match the device on 'XILINX.COM:KV260_SOM_SOM240_1_CONNECTOR_KV260_CARRIER_SOM240_1_CONNECTOR:1.3' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to zynquplus (xck26-sfvc784-2lv-c)
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+Netlist sorting complete. Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.52 . Memory (MB): peak = 2705.457 ; gain = 0.000 ; free physical = 12593 ; free virtual = 18730
+INFO: [Netlist 29-17] Analyzing 1580 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3378.809 ; gain = 98.953 ; free physical = 12172 ; free virtual = 18309
+Restored from archive | CPU: 2.240000 secs | Memory: 62.795357 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3378.809 ; gain = 98.953 ; free physical = 12168 ; free virtual = 18305
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3744.191 ; gain = 0.000 ; free physical = 11643 ; free virtual = 17803
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 414 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 61 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 182 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 8 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 123 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 32 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.1 (64-bit) build 3526262
+open_checkpoint: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 3744.191 ; gain = 1047.664 ; free physical = 11638 ; free virtual = 17799
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_bus_skew: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 3838.820 ; gain = 94.629 ; free physical = 11637 ; free virtual = 17784
+Command: report_methodology -file /home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate_routed/methodology.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate_routed/methodology.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 3954.078 ; gain = 115.258 ; free physical = 11722 ; free virtual = 17821
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 00:50:45 2026...

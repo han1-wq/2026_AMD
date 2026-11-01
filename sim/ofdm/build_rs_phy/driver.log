@@ -1,0 +1,2 @@
+RF_CHAIN_PASS packets=2 gain=0.750000 rx_shift=4 rate=54
+/home/amd/ofdm/eeSDR_ofdm_loopback/sim/run_rate_regression.sh: line 44: unexpected EOF while looking for matching `''

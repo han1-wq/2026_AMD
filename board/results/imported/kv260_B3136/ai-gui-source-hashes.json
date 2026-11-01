@@ -1,0 +1,98 @@
+[
+  {
+    "local": "/home/amd/kv260_B3136/vision_hls.py",
+    "remote": "/home/ubuntu/kv260_B3136/vision_hls.py",
+    "sha256": "ec1fcd3f4410b147a4c8aa086366c1061dc53725b1132402e7f31b61ddfb1d84",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260_B3136/run_vision.sh",
+    "remote": "/home/ubuntu/kv260_B3136/run_vision.sh",
+    "sha256": "87c72ce0be72a5c8c7056b8822767f82ca6aaecc8d509952be00c797467c7dcc",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260_B3136/README.md",
+    "remote": "/home/ubuntu/kv260_B3136/README.md",
+    "sha256": "9c368372e12716160c4753d192a5f33a59e54b74b702a02d53e24169c5a21082",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260_B3136/test_controls.py",
+    "remote": "/home/ubuntu/kv260_B3136/test_controls.py",
+    "sha256": "2b49732f9182879aab51412ad88bfc6cc02fdcff908b231da63bcb2aacc0cecf",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260_B3136/test_enhancement_board.py",
+    "remote": "/home/ubuntu/kv260_B3136/test_enhancement_board.py",
+    "sha256": "bb2cef38f79e42967b0311cbdf78b73f3c432ac540dea0c3f55da8868f960bef",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260_B3136/runtime/controls.py",
+    "remote": "/home/ubuntu/kv260_B3136/runtime/controls.py",
+    "sha256": "5b7a4f4ccbcb1876e605652a7dba3d544b62dceb2529386c094f12774c73703d",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260_B3136/runtime/hardware.py",
+    "remote": "/home/ubuntu/kv260_B3136/runtime/hardware.py",
+    "sha256": "fc85b243e4dd5df4db81d8e1e740ea3b47bc2f5a7836f499439f10a1a6993f44",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/kv260_launcher.py",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/kv260_launcher.py",
+    "sha256": "c69adb2aa6c29fe5081a93a41b49959df027d66b2c0cfa7ca82579253fab116d",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/launcher_tasks.py",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/launcher_tasks.py",
+    "sha256": "60ee86df2a8cf1fe1621bb4f4646412bdc29b52b8cc148386ea4b2d808124d87",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/launcher_vision_ui.py",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/launcher_vision_ui.py",
+    "sha256": "cdc55a9ae9e820d0397db98822156b59690ef5f54171ca616866c738ef80abcd",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/start-astra-rgbd-yolov4.sh",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/start-astra-rgbd-yolov4.sh",
+    "sha256": "8e13b0ee3526d78dd2c67b05c064259ea37ada8161e38b2c77bbb7f023180987",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/stop-astra-rgbd-yolov4.sh",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/stop-astra-rgbd-yolov4.sh",
+    "sha256": "067bd361bb1f36309d2d7709e8978685560996f7382c3a875afe1135fb498dd5",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/validate_vision_live.py",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/validate_vision_live.py",
+    "sha256": "ddaafb305286cfab821122731c9be26a7a1a43f43223633d455d953893104167",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/capture_desktop.py",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/capture_desktop.py",
+    "sha256": "733ce48bf1f1731fadac58f638a6caab3faaa4d3695e59cb8feb63ce1f282460",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/AI-VISION.md",
+    "remote": "/home/ubuntu/x3plus-kv260-docker/AI-VISION.md",
+    "sha256": "649c64f2f9b799c6b8553944f1d8161f89ad7be3de2d70185b247059d30bef83",
+    "matched": true
+  },
+  {
+    "local": "/home/amd/kv260-launcher-ai/remote_camera_yolov4.py",
+    "remote": "/home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py",
+    "sha256": "d48d51bb93be286f9039097831974a6006bf6933e3604a1995a39ba63b35531c",
+    "matched": true
+  }
+]

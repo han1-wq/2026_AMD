@@ -1,0 +1,9 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[WARN] [1792504477.720787]: Navigation goal refused: map_changed_initial_pose_required
+[WARN] [1792504484.133329]: Navigation goal refused: high_pose_uncertainty
+[WARN] [1792504490.555349]: Navigation goal refused: scan_ray_obstructed
+[WARN] [1792504498.598096]: Navigation goal refused: stale_scan_initial_pose_required
+[WARN] [1792504509.359333]: Navigation goal refused: initial_pose_required
+[WARN] [1792504518.642879]: Navigation goal refused: invalid_scan_or_tf: Lookup would require extrapolation into the future.  Requested time 1792504514.608747005 but the latest data is at time 1792504514.139894962, when looking up transform from frame [odom] to frame [map]_initial_pose_required
+[WARN] [1792504525.519239]: Navigation goal refused: map_changed_initial_pose_required
+[WARN] [1792504529.952453]: Navigation goal refused: invalid_initial_pose

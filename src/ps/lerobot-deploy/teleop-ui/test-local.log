@@ -1,0 +1,16 @@
+test_duplicate_operation (test_server.ControlTests) ... ok
+test_existing_process_is_adopted (test_server.ControlTests) ... ok
+test_hmac_tamper_expiry_and_replay (test_server.ControlTests) ... ok
+test_http_requires_auth_and_rejects_origin (test_server.ControlTests) ... ok
+test_invalid_action (test_server.ControlTests) ... ok
+test_mode_conflict_does_not_touch_board (test_server.ControlTests) ... ok
+test_real_process_lifecycle_without_hardware (test_server.ControlTests) ... ok
+test_start_failure_rolls_back_only_created_board (test_server.ControlTests) ... ok
+test_start_order (test_server.ControlTests) ... ok
+test_stop_board_even_if_local_stop_fails (test_server.ControlTests) ... ok
+test_tail_bounded (test_server.ControlTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.816s
+
+OK

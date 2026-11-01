@@ -1,0 +1,10 @@
+{
+  "case": {
+    "name": "parallel_clean48",
+    "RATES": 48,
+    "PAYLOAD_LENGTH": 1024
+  },
+  "passed": true,
+  "elapsed_s": 343.92691437100075,
+  "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_interleave_phy_parallel_clean48/driver.log"
+}

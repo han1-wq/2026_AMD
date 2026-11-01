@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>SO101 遥操作控制台</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="mark">SO<span>101</span></div><div><h1>遥操作控制台</h1><p id="subtitle">本机主臂 → 局域网 → KV260 从臂</p></div><span id="connection" class="pill">正在连接</span></header>
+<main>
+<section id="login" hidden><h2>连接控制台</h2><p>从桌面“SO101 遥操作”打开可自动登录，也可以输入本机服务的访问令牌。</p><form id="login-form"><input id="token" type="password" autocomplete="off" placeholder="访问令牌" aria-label="访问令牌"><button type="submit">连接</button></form></section>
+<section class="command"><div><span class="eyebrow">CONTROL</span><h2>启动与停止</h2><p id="control-hint">实机启动后，从臂会逐步跟随主臂当前位置。</p></div><div class="actions"><button id="start" disabled>启动实机遥操作</button><button id="simulate" class="secondary" disabled>模拟联调</button><button id="stop" class="danger" disabled>停止遥操作</button></div><p class="note">停止会尝试保持从臂当前位置并保留扭矩；不会自动释放机械臂。关闭页面不会停止遥操作。</p></section>
+<div id="message" role="status" aria-live="polite">等待状态同步…</div>
+<div class="grid"><section><div class="card-title"><h2 id="local-title">本机 · 主臂</h2><span id="local-badge" class="pill">未知</span></div><p id="local-detail">—</p><p id="local-device" class="muted">—</p></section><section id="board-card"><div class="card-title"><h2>KV260 · 从臂</h2><span id="board-badge" class="pill">未知</span></div><p id="board-detail">—</p><p id="board-device" class="muted">—</p></section></div>
+<section><div class="card-title"><h2>从臂关节反馈</h2><span id="sample-age" class="muted">尚无数据</span></div><p class="muted">显示从臂实际位置与限幅后的目标，单位为归一化值，不是角度。日志约每 100 次目标写入更新一次。</p><div class="table-wrap"><table><thead><tr><th>关节</th><th>实际位置</th><th>下发目标</th><th>差值</th></tr></thead><tbody id="joints"></tbody></table></div><div class="metrics"><span>目标写入次数 <strong id="applied">—</strong></span><span>本次采样耗时 <strong id="latency">—</strong></span><span>配置频率 <strong>20 Hz</strong></span><span>指令有效期 <strong>1 s</strong></span></div></section>
+<div class="grid"><section><div class="card-title"><h2 id="log-local-title">本机日志</h2><button id="refresh" class="small secondary">刷新状态</button></div><pre id="local-log">尚无日志</pre></section><section id="board-log-card"><h2>KV260 日志</h2><pre id="board-log">尚无日志</pre></section></div>
+<footer>SO101 · R07252801 主臂 / R12252801 从臂 <span id="updated"></span></footer>
+</main>
+</body></html>

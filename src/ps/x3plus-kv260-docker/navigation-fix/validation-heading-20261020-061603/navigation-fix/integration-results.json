@@ -1,0 +1,25 @@
+{
+  "guard": {
+    "ready": false, 
+    "stamp": 1792502190.287668, 
+    "reason": "stale_scan_initial_pose_required", 
+    "scan_match": 1.0
+  }, 
+  "heading_change_endpoint": {
+    "position_error_m": 0.08793696704939252, 
+    "yaw_error_rad": 0.09067964395331862
+  }, 
+  "scan_loss_cancelled_real_goal": true, 
+  "heading_change_goal_succeeded": true, 
+  "scope": "Real AMCL, guard and move_base, ideal kinematics/raycast scan/odom; no physics or hardware.", 
+  "kinematic_endpoint_error_m": 0.02759234102742122, 
+  "pc_probe_verified_fresh_localization_and_guard": true, 
+  "public_cmd_vel_publishers": [
+    "/navigation_guard"
+  ], 
+  "first_endpoint": {
+    "position_error_m": 0.02759234102742122, 
+    "yaw_error_rad": 0.08913472086209617
+  }, 
+  "real_move_base_goal_succeeded": true
+}

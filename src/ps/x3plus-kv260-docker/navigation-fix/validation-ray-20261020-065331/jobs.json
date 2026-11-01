@@ -1,0 +1,15 @@
+{
+  "directory": "/home/amd/x3plus-kv260-docker/navigation-fix/validation-ray-20261020-065331",
+  "jobs": [
+    {
+      "test": "regression",
+      "container": "x3plus-ray-regression-20261020-065331",
+      "id": "a44b9ad7fbc8050267f7753f6d17af3635ed4ca1d3d773a1cb87d40a2deec809"
+    },
+    {
+      "test": "integration",
+      "container": "x3plus-ray-integration-20261020-065331",
+      "id": "0658d2c47d3925708f0f7ee05bd27826bc9270f197aff78cc4f06a323fca9bc7"
+    }
+  ]
+}

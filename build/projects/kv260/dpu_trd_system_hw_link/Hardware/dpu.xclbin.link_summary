@@ -1,0 +1,1745 @@
+<ENTRY>
+{
+ "thisFile": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:14 2026",
+ "timestampMillis": "1791966494911",
+ "buildStep": {
+  "cmdId": "3ba20c1a-734d-48b4-b60e-154070dc0960",
+  "name": "v++",
+  "logFile": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw --link --config dpu-link.cfg -odpu.xclbin ../../dpu_trd_kernels/Hardware/DPUCZDX8G.xo ../../dpu_trd_kernels/Hardware/sfm_xrt_top.xo ",
+  "args": [
+   "--target",
+   "hw",
+   "--link",
+   "--config",
+   "dpu-link.cfg",
+   "-odpu.xclbin",
+   "../../dpu_trd_kernels/Hardware/DPUCZDX8G.xo",
+   "../../dpu_trd_kernels/Hardware/sfm_xrt_top.xo"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu-link.cfg",
+    "content": "platform=/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm\nsave-temps=1\nmessageDb=dpu.mdb\ntemp_dir=dpu.build\nreport_dir=dpu.build/reports\nlog_dir=dpu.build/logs\nremote_ip_cache=/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/ip_cache\n\n[advanced]\nmisc=solution_name=link\n\n[clock]\nfreqHz=300000000:DPUCZDX8G_1.aclk\nfreqHz=600000000:DPUCZDX8G_1.ap_clk_2\n#freqHz=300000000:DPUCZDX8G_2.aclk\n#freqHz=600000000:DPUCZDX8G_2.ap_clk_2\n\n[connectivity]\nnk=DPUCZDX8G:1:DPUCZDX8G_1\nnk=sfm_xrt_top:1:sfm_xrt_top_1\nsp=DPUCZDX8G_1.M_AXI_GP0:HPC0\nsp=DPUCZDX8G_1.M_AXI_HP0:HP0\nsp=DPUCZDX8G_1.M_AXI_HP2:HP1\n#sp=DPUCZDX8G_2.M_AXI_GP0:HPC0\n#sp=DPUCZDX8G_2.M_AXI_HP0:HP2\n#sp=DPUCZDX8G_2.M_AXI_HP2:HP3"
+   }
+  ],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:14 2026",
+ "timestampMillis": "1791966494912",
+ "status": {
+  "cmdId": "3ba20c1a-734d-48b4-b60e-154070dc0960",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Oct 14 01:28:15 2026",
+ "timestampMillis": "1791966495595",
+ "buildSummary": {
+  "hardwarePlatform": "dpu_base.xpfm",
+  "hardwareDsa": "kv260_hardware_platform.xsa",
+  "platformDirectory": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "dpu",
+    "file": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "DPUCZDX8G",
+     "file": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/Hardware/DPUCZDX8G.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [],
+    "psSources": [],
+    "cuNames": [
+     "DPUCZDX8G_1"
+    ],
+    "type": "RTL",
+    "frequency": 0,
+    "freqUnits": ""
+   },
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sfm_xrt_top",
+     "file": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/Hardware/sfm_xrt_top.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [],
+    "psSources": [],
+    "cuNames": [
+     "sfm_xrt_top_1"
+    ],
+    "type": "RTL",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1. SW Build 3524075 on 2022-04-13-17:42:45"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:15 2026",
+ "timestampMillis": "1791966495687",
+ "buildStep": {
+  "cmdId": "9ef6da63-18ef-4543-9530-0b9f6e797735",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/Hardware/DPUCZDX8G.xo --xo /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/Hardware/sfm_xrt_top.xo -keep --config /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/syslinkConfig.ini --xpfm /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm --target hw --output_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int --temp_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/Hardware/DPUCZDX8G.xo",
+   "--xo",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_kernels/Hardware/sfm_xrt_top.xo",
+   "-keep",
+   "--config",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/syslinkConfig.ini",
+   "--xpfm",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int",
+   "--temp_dir",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/sys_link"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/syslinkConfig.ini",
+    "content": "nk=DPUCZDX8G:1:DPUCZDX8G_1\nnk=sfm_xrt_top:1:sfm_xrt_top_1\nsp=DPUCZDX8G_1.M_AXI_GP0:HPC0\nsp=DPUCZDX8G_1.M_AXI_HP0:HP0\nsp=DPUCZDX8G_1.M_AXI_HP2:HP1\n\nclock.freqHz=300000000:DPUCZDX8G_1.aclk\nclock.freqHz=600000000:DPUCZDX8G_1.ap_clk_2\n\n"
+   }
+  ],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:15 2026",
+ "timestampMillis": "1791966495687",
+ "status": {
+  "cmdId": "9ef6da63-18ef-4543-9530-0b9f6e797735",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:24 2026",
+ "timestampMillis": "1791966504866",
+ "status": {
+  "cmdId": "9ef6da63-18ef-4543-9530-0b9f6e797735",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:24 2026",
+ "timestampMillis": "1791966504868",
+ "buildStep": {
+  "cmdId": "c8c5742b-7f7c-49fe-9e5e-fc6cdbe41af9",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/sdsl.dat -rtd /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/cf2sw.rtd -nofilter /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/cf2sw_full.rtd -xclbin /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xclbin_orig.xml -o /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/sdsl.dat",
+   "-rtd",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:24 2026",
+ "timestampMillis": "1791966504869",
+ "status": {
+  "cmdId": "c8c5742b-7f7c-49fe-9e5e-fc6cdbe41af9",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506263",
+ "status": {
+  "cmdId": "c8c5742b-7f7c-49fe-9e5e-fc6cdbe41af9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506270",
+ "buildStep": {
+  "cmdId": "9a6345e4-a536-4ebf-bc92-04c6f4853d89",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506271",
+ "status": {
+  "cmdId": "9a6345e4-a536-4ebf-bc92-04c6f4853d89",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506444",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506444",
+ "status": {
+  "cmdId": "9a6345e4-a536-4ebf-bc92-04c6f4853d89",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506449",
+ "buildStep": {
+  "cmdId": "c2fdf75c-eaad-46cc-bfa9-f4d53af54cee",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm --remote_ip_cache /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/ip_cache -s --output_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int --log_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/logs/link --report_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link --config /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/vplConfig.ini -k /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link --no-info --iprepo /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0 --iprepo /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0 --messageDb /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/run_link/vpl.pb /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm",
+   "--remote_ip_cache",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/ip_cache",
+   "-s",
+   "--output_dir",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int",
+   "--log_dir",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/logs/link",
+   "--report_dir",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link",
+   "--config",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/vplConfig.ini",
+   "-k",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link",
+   "--no-info",
+   "--iprepo",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0",
+   "--iprepo",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0",
+   "--messageDb",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/run_link/vpl.pb",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nmisc=solution_name=link\nparam=compiler.vppCurrentWorkingDir=/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware\nmisc=BinaryName=dpu\n\n[connectivity]\nnk=DPUCZDX8G:1:DPUCZDX8G_1\nnk=sfm_xrt_top:1:sfm_xrt_top_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:26 2026",
+ "timestampMillis": "1791966506450",
+ "status": {
+  "cmdId": "c2fdf75c-eaad-46cc-bfa9-f4d53af54cee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:27 2026",
+ "timestampMillis": "1791966507480",
+ "buildStep": {
+  "cmdId": "c254551c-3cb8-4422-be87-38bafe0125e0",
+  "name": "vpl",
+  "logFile": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/link.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/vpl -t hw -f /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/dpu_base.xpfm --remote_ip_cache /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/ip_cache -s --output_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int --log_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/logs/link --report_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link --config /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/vplConfig.ini -k /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link --no-info --iprepo /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0 --iprepo /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0 --messageDb /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/run_link/vpl.pb /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:27 2026",
+ "timestampMillis": "1791966507480",
+ "status": {
+  "cmdId": "c254551c-3cb8-4422-be87-38bafe0125e0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Wed Oct 14 01:28:28 2026",
+ "timestampMillis": "1791966508649",
+ "vivadoProject": {
+  "openDir": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 01:28:28 2026",
+ "timestampMillis": "1791966508653",
+ "buildStep": {
+  "cmdId": "9af904ad-be84-4189-bb01-c054aa0c16d2",
+  "name": "vivado",
+  "logFile": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:28:28 2026",
+ "timestampMillis": "1791966508653",
+ "status": {
+  "cmdId": "9af904ad-be84-4189-bb01-c054aa0c16d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 01:28:51 2026",
+ "timestampMillis": "1791966531989",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/automation_summary_update_bd.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 14 01:47:10 2026",
+ "timestampMillis": "1791967630618",
+ "buildStep": {
+  "cmdId": "be4ca0c4-06c7-4be6-853e-3b1910778b3a",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:47:10 2026",
+ "timestampMillis": "1791967630625",
+ "status": {
+  "cmdId": "be4ca0c4-06c7-4be6-853e-3b1910778b3a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 14 01:47:10 2026",
+ "timestampMillis": "1791967630626",
+ "buildStep": {
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 01:47:10 2026",
+ "timestampMillis": "1791967630626",
+ "status": {
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:30:51 2026",
+ "timestampMillis": "1791970251545",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:31:06 2026",
+ "timestampMillis": "1791970266627",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:31:06 2026",
+ "timestampMillis": "1791970266629",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375406",
+ "status": {
+  "cmdId": "9af904ad-be84-4189-bb01-c054aa0c16d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375623",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375625",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375625",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375626",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375626",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375627",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375627",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375627",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375628",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375628",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375628",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375629",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375629",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375629",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375660",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_zynq_ultra_ps_e_0_0_synth_1_kv260_hardware_platform_zynq_ultra_ps_e_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375662",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_clk_wiz_0_1_synth_1_kv260_hardware_platform_clk_wiz_0_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375663",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_proc_sys_reset_0_6_synth_1_kv260_hardware_platform_proc_sys_reset_0_6_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375664",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_proc_sys_reset_0_7_synth_1_kv260_hardware_platform_proc_sys_reset_0_7_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375665",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_proc_sys_reset_0_8_synth_1_kv260_hardware_platform_proc_sys_reset_0_8_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375666",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_proc_sys_reset_0_9_synth_1_kv260_hardware_platform_proc_sys_reset_0_9_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375666",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_proc_sys_reset_0_10_synth_1_kv260_hardware_platform_proc_sys_reset_0_10_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375668",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_proc_sys_reset_0_11_synth_1_kv260_hardware_platform_proc_sys_reset_0_11_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375668",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_axi_intc_0_0_synth_1_kv260_hardware_platform_axi_intc_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375669",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_rst_ps8_0_99M_0_synth_1_kv260_hardware_platform_rst_ps8_0_99M_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375670",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_vision_read_sc_0_synth_1_kv260_hardware_platform_vision_read_sc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375671",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_vision_write_sc_0_synth_1_kv260_hardware_platform_vision_write_sc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375672",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_image_preprocess_1_0_synth_1_kv260_hardware_platform_image_preprocess_1_0_utilization_synth.rpt",
+  "name": "image_preprocess",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375672",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_yolo_postprocess_1_0_synth_1_kv260_hardware_platform_yolo_postprocess_1_0_utilization_synth.rpt",
+  "name": "yolo_postprocess",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375673",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_pc_0_synth_1_kv260_hardware_platform_auto_pc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375673",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_cc_0_synth_1_kv260_hardware_platform_auto_cc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375675",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_xbar_0_synth_1_kv260_hardware_platform_xbar_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375676",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_DPUCZDX8G_1_0_synth_1_kv260_hardware_platform_DPUCZDX8G_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375676",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_sfm_xrt_top_1_0_synth_1_kv260_hardware_platform_sfm_xrt_top_1_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375681",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_xbar_1_synth_1_kv260_hardware_platform_xbar_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375682",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_cc_1_synth_1_kv260_hardware_platform_auto_cc_1_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375682",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_m03_regslice_0_synth_1_kv260_hardware_platform_m03_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375683",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_cc_2_synth_1_kv260_hardware_platform_auto_cc_2_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375683",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_m04_regslice_0_synth_1_kv260_hardware_platform_m04_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375684",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_cc_3_synth_1_kv260_hardware_platform_auto_cc_3_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375684",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_us_0_synth_1_kv260_hardware_platform_auto_us_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375684",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_cc_4_synth_1_kv260_hardware_platform_auto_cc_4_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375684",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_m00_regslice_0_synth_1_kv260_hardware_platform_m00_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375685",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_s00_regslice_0_synth_1_kv260_hardware_platform_s00_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375685",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_s00_data_fifo_0_synth_1_kv260_hardware_platform_s00_data_fifo_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375685",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_auto_cc_5_synth_1_kv260_hardware_platform_auto_cc_5_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375686",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_s01_regslice_0_synth_1_kv260_hardware_platform_s01_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375686",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_s01_data_fifo_0_synth_1_kv260_hardware_platform_s01_data_fifo_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375687",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/syn/kv260_hardware_platform_m00_data_fifo_0_synth_1_kv260_hardware_platform_m00_data_fifo_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375688",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375690",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kv260_hardware_platform_wrapper_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375692",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kv260_hardware_platform_wrapper_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375694",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kv260_hardware_platform_wrapper_timing_summary_routed.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375697",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kv260_hardware_platform_wrapper_timing_summary_postroute_physopted.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375698",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kv260_hardware_platform_wrapper_timing_summary_postroute_physopted.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375699",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/imp/impl_1_kv260_hardware_platform_wrapper_timing_summary_postroute_physopted.rpv",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY_CONCISE",
+  "cmdId": "3cf4fcd1-9b3b-458a-8422-8fc12164b6ad"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:55 2026",
+ "timestampMillis": "1791970375762",
+ "status": {
+  "cmdId": "c254551c-3cb8-4422-be87-38bafe0125e0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:56 2026",
+ "timestampMillis": "1791970376085",
+ "status": {
+  "cmdId": "c2fdf75c-eaad-46cc-bfa9-f4d53af54cee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:56 2026",
+ "timestampMillis": "1791970376122",
+ "buildStep": {
+  "cmdId": "24dad0d8-bacf-467d-becb-f18c93e88089",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:56 2026",
+ "timestampMillis": "1791970376123",
+ "status": {
+  "cmdId": "24dad0d8-bacf-467d-becb-f18c93e88089",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:56 2026",
+ "timestampMillis": "1791970376164",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:56 2026",
+ "timestampMillis": "1791970376185",
+ "buildStep": {
+  "cmdId": "b235d64b-8bc3-4dad-809d-c4e7b8a894ab",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/address_map.xml -sdsl /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/sdsl.dat -xclbin /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xclbin_orig.xml -rtd /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.rtd -o /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.xml",
+  "args": [
+   "-a",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/address_map.xml",
+   "-sdsl",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.rtd",
+   "-o",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:56 2026",
+ "timestampMillis": "1791970376186",
+ "status": {
+  "cmdId": "b235d64b-8bc3-4dad-809d-c4e7b8a894ab",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377688",
+ "status": {
+  "cmdId": "b235d64b-8bc3-4dad-809d-c4e7b8a894ab",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377690",
+ "buildStep": {
+  "cmdId": "a15c7ea7-d93f-433b-975f-f02b2a9aeee2",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.rtd",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377690",
+ "status": {
+  "cmdId": "a15c7ea7-d93f-433b-975f-f02b2a9aeee2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377695",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377695",
+ "status": {
+  "cmdId": "a15c7ea7-d93f-433b-975f-f02b2a9aeee2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377695",
+ "buildStep": {
+  "cmdId": "d9d16f8b-bd85-4880-ba3e-3f99c2ccad3e",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377696",
+ "status": {
+  "cmdId": "d9d16f8b-bd85-4880-ba3e-3f99c2ccad3e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377701",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377702",
+ "status": {
+  "cmdId": "d9d16f8b-bd85-4880-ba3e-3f99c2ccad3e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377703",
+ "status": {
+  "cmdId": "24dad0d8-bacf-467d-becb-f18c93e88089",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377708",
+ "buildStep": {
+  "cmdId": "f0211a4c-03f5-49d0-804c-20acee8bdec0",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu_xml.rtd --add-section BUILD_METADATA:JSON:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.xml --add-section SYSTEM_METADATA:RAW:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:xilinx_kv260_kv260_hardware_platform_0_0 --output /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/system.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/dpu.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:xilinx_kv260_kv260_hardware_platform_0_0",
+   "--output",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377708",
+ "status": {
+  "cmdId": "f0211a4c-03f5-49d0-804c-20acee8bdec0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377895",
+ "status": {
+  "cmdId": "f0211a4c-03f5-49d0-804c-20acee8bdec0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377900",
+ "buildStep": {
+  "cmdId": "80fa2181-5fb5-424a-944b-8168a7e105c4",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin.info --input /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin.info",
+   "--input",
+   "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:57 2026",
+ "timestampMillis": "1791970377901",
+ "status": {
+  "cmdId": "80fa2181-5fb5-424a-944b-8168a7e105c4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378038",
+ "status": {
+  "cmdId": "80fa2181-5fb5-424a-944b-8168a7e105c4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378040",
+ "buildStep": {
+  "cmdId": "31b6d73e-2b9e-4ee9-a61f-516bcf7882e7",
+  "name": "generate_sc_driver",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378040",
+ "status": {
+  "cmdId": "31b6d73e-2b9e-4ee9-a61f-516bcf7882e7",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378043",
+ "status": {
+  "cmdId": "31b6d73e-2b9e-4ee9-a61f-516bcf7882e7",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378062",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/reports/link/system_estimate_dpu.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378087",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378088",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378097",
+ "report": {
+  "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link/Hardware/dpu.build/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 14 02:32:58 2026",
+ "timestampMillis": "1791970378098",
+ "status": {
+  "cmdId": "3ba20c1a-734d-48b4-b60e-154070dc0960",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>

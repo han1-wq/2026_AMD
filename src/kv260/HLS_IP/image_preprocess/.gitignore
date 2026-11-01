@@ -1,0 +1,7 @@
+build/
+*.log
+*.jou
+.Xil/
+__pycache__/
+opencv_source.bgr
+opencv_tensor.int8

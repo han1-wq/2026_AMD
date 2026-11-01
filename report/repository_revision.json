@@ -1,0 +1,11 @@
+{
+  "source": "/home/amd/lerobot-deploy/lerobot",
+  "commit": "072e8355fbb9a7b520915d44877aa876794efb31",
+  "dirty": true,
+  "status": [
+    " M src/lerobot/motors/motors_bus.py",
+    " M src/lerobot/robots/so101_follower/so101_follower.py",
+    " M src/lerobot/teleoperators/so101_leader/so101_leader.py"
+  ],
+  "note": "Other top-level inputs are local snapshots without confirmed Git revision; file hashes are authoritative for this delivery."
+}

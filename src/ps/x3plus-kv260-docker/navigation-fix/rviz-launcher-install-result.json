@@ -1,0 +1,51 @@
+{
+  "backup": "/home/ubuntu/x3plus-kv260-docker/navigation-fix/rviz-launcher-backup-20261021-045129",
+  "files": {
+    "start-rviz.sh": {
+      "existed": true,
+      "before_sha256": "70e719d9edb394ade7f636bb7ecd4db3e95422a90c50577a0012494f14773fa2",
+      "installed_sha256": "646fe1ed13909684b0fd6c1a805cf715e7417b1651b210974c375f3b286d82dc"
+    },
+    "remote-rviz/navigation-view.launch": {
+      "existed": true,
+      "before_sha256": "e523add0fe5d7030e88ec4aaa78d98f5ef3445ece47f2ada1d27da02903d4de8",
+      "installed_sha256": "34026ddde2d9248818a7aaad0148dfb172f2ac2139934553b3d25708d192a7b1"
+    },
+    "remote-rviz/navigation.rviz": {
+      "existed": true,
+      "before_sha256": "31492b789460eea3a357a59b6c9736d877330abbd6c06b189785b57762c1f705",
+      "installed_sha256": "a22792ec19fbba3fdd4f9ecdf9e792d317865e68300209192368f3ab59c0a2ba"
+    },
+    "remote-rviz/slam-view.launch": {
+      "existed": false,
+      "before_sha256": null,
+      "installed_sha256": "3f1792c4b68b0ad49330e080cc3682e6164a363bc8886a2f703b635a7871f7cd"
+    },
+    "remote-rviz/slam.rviz": {
+      "existed": false,
+      "before_sha256": null,
+      "installed_sha256": "14f1ba9e9b2b78e2b7348ba517542030fceebdd6812a758107389ac5ee92678c"
+    },
+    "remote-rviz/test_viewer_config.py": {
+      "existed": false,
+      "before_sha256": null,
+      "installed_sha256": "f111fab40d903c3fec9412f67139c3db023a9f34f650137872517a3cf90f025f"
+    },
+    "remote-rviz/test_board_viewer.py": {
+      "existed": false,
+      "before_sha256": null,
+      "installed_sha256": "a209220b8ab2c063aa737420ba06a5c678185f59c241f2961ade08b260e31eee"
+    },
+    "remote-rviz/README.md": {
+      "existed": false,
+      "before_sha256": null,
+      "installed_sha256": "2e55f4a1d20e5129a84509795c88e19aa15a2e2f5989872e185cf7613658a6d5"
+    },
+    "navigation-fix/test_navigation_start.py": {
+      "existed": true,
+      "before_sha256": "1d5792fc0d944708428c5fe356b0f652e04b6d582dc7bf2c8c3811947cee792d",
+      "installed_sha256": "e0a1be9ac16c0937558bf9fa05564b4e83fa0f466ced5ccc994b870820a60aa5"
+    }
+  },
+  "ok": true
+}

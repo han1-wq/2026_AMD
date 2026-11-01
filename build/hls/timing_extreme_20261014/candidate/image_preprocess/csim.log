@@ -1,0 +1,115 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2022.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'amd' on host 'ubuntu' (Linux_x86_64 version 5.15.0-139-generic) on Wed Oct 14 00:09:17 PDT 2026
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/image_preprocess'
+Sourcing Tcl script '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/build_candidate.tcl'
+INFO: [HLS 200-1510] Running: open_project image_preprocess 
+INFO: [HLS 200-10] Creating and opening project '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/image_preprocess'.
+INFO: [HLS 200-1510] Running: set_top image_preprocess 
+INFO: [HLS 200-1510] Running: add_files /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp -cflags -std=c++14 -O2 -I/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src 
+INFO: [HLS 200-10] Adding design file '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/tb/test_image_preprocess.cpp -cflags -std=c++14 -O2 -I/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src 
+INFO: [HLS 200-10] Adding test bench file '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/tb/test_image_preprocess.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution_200mhz -flow_target vivado 
+INFO: [HLS 200-10] Creating and opening solution '/home/amd/Workspace/HLS_IP/timing_extreme_20261014/candidate/image_preprocess/solution_200mhz'.
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-435] Setting 'open_solution -flow_target vivado' configuration: config_interface -m_axi_latency=0
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 0.625 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1510] Running: config_interface -m_axi_addr64 
+INFO: [HLS 200-1510] Running: csim_design -clean -O 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../sources/image_preprocess/tb/test_image_preprocess.cpp in release mode
+   Compiling ../../../../../sources/image_preprocess/src/image_preprocess.cpp in release mode
+   Generating csim.exe
+In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_common.h:710,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:56,
+                 from /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.h:4,
+                 from ../../../../../sources/image_preprocess/tb/test_image_preprocess.cpp:1:
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h: In function ‘void {anonymous}::put_byte(std::vector<ap_uint<128> >&, unsigned int, unsigned char)’:
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6543:7: warning: iteration 2147483641 invokes undefined behavior [-Waggressive-loop-optimizations]
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+       ^~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6543:43: note: within this loop
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+                                    ~~~~~~~^~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h: In function ‘unsigned char {anonymous}::get_byte(const std::vector<ap_uint<128> >&, unsigned int)’:
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6795:7: warning: iteration 114 invokes undefined behavior [-Waggressive-loop-optimizations]
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+       ^~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6795:43: note: within this loop
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+                                    ~~~~~~~^~~~~~~~~~~~~~~
+In file included from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_common.h:710,
+                 from /tools/Xilinx/Vitis_HLS/2022.1/include/ap_int.h:56,
+                 from ../../../../../sources/image_preprocess/src/image_preprocess.h:4,
+                 from ../../../../../sources/image_preprocess/src/image_preprocess.cpp:1:
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h: In function ‘void {anonymous}::resize_and_split(hls::stream<{anonymous}::Pair>&, hls::stream<ap_uint<24> >&, hls::stream<ap_uint<24> >&, ap_uint<11>, ap_uint<11>, ap_uint<9>, ap_uint<9>, ap_uint<9>, ap_uint<9>, unsigned int, unsigned int, const {anonymous}::Coordinate*, const {anonymous}::Coordinate*, ap_uint<8> (*)[256])’:
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6543:7: warning: iteration 2147483641 invokes undefined behavior [-Waggressive-loop-optimizations]
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+       ^~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6543:43: note: within this loop
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+                                    ~~~~~~~^~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6543:7: warning: iteration 2147483641 invokes undefined behavior [-Waggressive-loop-optimizations]
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+       ^~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6543:43: note: within this loop
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+                                    ~~~~~~~^~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h: In function ‘unsigned int image_preprocess(const Word*, image_hls::Word*, image_hls::Word*, const Word*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int&, unsigned int&, unsigned int&, unsigned int&, unsigned int&)’:
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6795:7: warning: iteration 114 invokes undefined behavior [-Waggressive-loop-optimizations]
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+       ^~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6795:43: note: within this loop
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+                                    ~~~~~~~^~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6795:7: warning: iteration 114 invokes undefined behavior [-Waggressive-loop-optimizations]
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+       ^~~
+/tools/Xilinx/Vitis_HLS/2022.1/include/etc/ap_private.h:6795:43: note: within this loop
+       for (int i = 0, j = l_index; j >= 0 && j >= h_index; j--, i++)
+                                    ~~~~~~~^~~~~~~~~~~~~~~
+CASE baseline_random_640x480 completed
+CASE quantization_clip completed
+CASE odd_stride completed
+CASE enhanced_tensor_preview completed
+CASE raw_tensor_enhanced_preview completed
+CASE gray_equalize completed
+CASE constant_histogram completed
+CASE two_bin_histogram completed
+CASE previous_first completed
+CASE previous_second completed
+CASE previous_config_reset completed
+CASE previous_leave_mode completed
+CASE previous_reenter completed
+CASE preview_only_limits completed
+CASE preview_black completed
+CASE identity_resize completed
+CASE maximum_geometry completed
+CASE all_black completed
+CASE all_white completed
+CASE checkerboard completed
+CASE bgr_color_bars completed
+CASE hd_geometry completed
+CASE wide_geometry completed
+CASE tall_geometry completed
+PASS: 0 failures
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 7.47 seconds. CPU system time: 0.51 seconds. Elapsed time: 8.24 seconds; current allocated memory: -1033.656 MB.
+INFO: [HLS 200-112] Total CPU user time: 8.82 seconds. Total CPU system time: 1.19 seconds. Total elapsed time: 9.95 seconds; peak allocated memory: 217.617 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Wed Oct 14 00:09:27 2026...

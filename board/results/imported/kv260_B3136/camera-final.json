@@ -1,0 +1,86 @@
+{
+  "elapsed_s": 90.11174580800025,
+  "frames": 568,
+  "fps": 6.303284826045087,
+  "rgb_frames": 1347,
+  "depth_frames": 2718,
+  "invalid_depth": 0,
+  "paired_frames": 568,
+  "published_frames": 568,
+  "overflow_fallback_frames": 0,
+  "recent_mean_ms": {
+    "pre_ms": 6.314904843735647,
+    "dpu_ms": 157.34662054297922,
+    "post_ms": 34.083443777339184
+  },
+  "recent_latency_p50_ms": 348.7246639999739,
+  "recent_latency_p95_ms": 379.7084285000665,
+  "memory_kib": {
+    "MemAvailable": 1624992,
+    "CmaTotal": 1024000,
+    "CmaFree": 53132,
+    "VmHWM": 391584,
+    "VmRSS": 289252
+  },
+  "peak_rss_kib": 391584,
+  "min_cma_free_kib": 50916,
+  "min_mem_available_kib": 1624992,
+  "workers": 1,
+  "slots": 2,
+  "success": true,
+  "stop_reason": "completed",
+  "last_detections": [
+    {
+      "bbox": [
+        396.3221435546875,
+        27.397836685180664,
+        625.46875,
+        255.67909240722656
+      ],
+      "score": 0.9626182317733765,
+      "class_id": 0,
+      "class_name": "person",
+      "depth_m": 0.528,
+      "valid_depth_pixels": 412
+    },
+    {
+      "bbox": [
+        344.4050598144531,
+        58.671878814697266,
+        428.70794677734375,
+        236.46034240722656
+      ],
+      "score": 0.6217451691627502,
+      "class_id": 0,
+      "class_name": "person",
+      "depth_m": 1.066,
+      "valid_depth_pixels": 347
+    },
+    {
+      "bbox": [
+        364.93389892578125,
+        61.466346740722656,
+        449.2367858886719,
+        239.25482177734375
+      ],
+      "score": 0.43644607067108154,
+      "class_id": 0,
+      "class_name": "person",
+      "depth_m": 1.08,
+      "valid_depth_pixels": 213
+    },
+    {
+      "bbox": [
+        456.923095703125,
+        251.47837829589844,
+        503.0769348144531,
+        308.4014587402344
+      ],
+      "score": 0.3733852505683899,
+      "class_id": 41,
+      "class_name": "cup",
+      "depth_m": 0.573,
+      "valid_depth_pixels": 110
+    }
+  ]
+}

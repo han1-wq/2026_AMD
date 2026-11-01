@@ -1,0 +1,5 @@
+model-probe.json keys: mode,result
+latency: None effort: None
+decision: null
+real-feedback.json keys: ready,feedback,source
+feedback valid: 10 serial_encoder

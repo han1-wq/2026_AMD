@@ -1,0 +1,10 @@
+image_preprocess_1/ap_clk -> clk_wiz_1_clk_out1; frequency 99999000
+yolo_postprocess_1/ap_clk -> clk_wiz_1_clk_out1; frequency 99999000
+vision_read_sc/aclk -> clk_wiz_1_clk_out1; frequency 99999000
+vision_write_sc/aclk -> clk_wiz_1_clk_out1; frequency 99999000
+zynq_ultra_ps_e_0/saxihp2_fpd_aclk -> clk_wiz_1_clk_out1; frequency 99999000
+zynq_ultra_ps_e_0/saxihp3_fpd_aclk -> clk_wiz_1_clk_out1; frequency 99999000
+ps8_0_axi_periph/M03_ACLK -> clk_wiz_1_clk_out1; frequency inherited from connected clock net
+ps8_0_axi_periph/M04_ACLK -> clk_wiz_1_clk_out1; frequency inherited from connected clock net
+proc_sys_reset_0/slowest_sync_clk -> clk_wiz_1_clk_out1; frequency 99999000
+PASS: generated HWH clocks and all six resets verified.

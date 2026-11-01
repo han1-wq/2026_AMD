@@ -1,0 +1,1 @@
+../../../../../../../../hls/image_preprocess/image_preprocess/solution_200mhz/csim/build/run_sim.tcl

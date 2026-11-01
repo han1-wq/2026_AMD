@@ -1,0 +1,5 @@
+ 
+LISTENING 192.168.43.182 5101 dry-run
+{"applied": 1, "round_trip_ms": 7.34}
+STOP TimeoutError Command deadline expired
+HOLD: torque preserved; restart both processes to resume

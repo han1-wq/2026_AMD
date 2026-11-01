@@ -1,0 +1,19 @@
+{
+  "stage": "passed",
+  "candidate": "/home/amd/Workspace/HLS_IP/timing_extreme_20261014",
+  "backup": "/home/amd/Workspace/dpu_platform2/kv260_hardware_platform/kv260_hardware_platform/vision_integration/backups/before_latest_20261014_010047",
+  "file_count": 294,
+  "updated": "2026-10-14T01:03:26.823161",
+  "snapshot_hashes_match": true,
+  "generated_verilog_and_data_files_verified": {
+    "image_preprocess": 96,
+    "yolo_postprocess": 30
+  },
+  "bd_connections_verified": true,
+  "needs_rebuild": [
+    "synth_1",
+    "impl_1"
+  ],
+  "bitstream_updated": false,
+  "xsa_updated": false
+}

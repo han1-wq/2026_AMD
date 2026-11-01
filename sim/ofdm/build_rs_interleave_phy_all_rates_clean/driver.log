@@ -1,0 +1,4 @@
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_interleave_phy_all_rates_clean: 62 Verilog/SV and 14 VHDL
+
+Completed using isolated per-rate libraries; see parallel_rates.json.
+RATE_REGRESSION_PASS cases=8

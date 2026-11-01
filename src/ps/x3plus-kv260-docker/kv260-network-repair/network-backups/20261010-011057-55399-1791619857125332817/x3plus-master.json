@@ -1,0 +1,19 @@
+{
+  "Config": {
+    "Env": [
+      "ROS_MASTER_URI=http://old:11311"
+    ]
+  },
+  "HostConfig": {
+    "NetworkMode": "host",
+    "IpcMode": "host",
+    "Binds": [],
+    "RestartPolicy": {
+      "Name": "unless-stopped",
+      "MaximumRetryCount": 0
+    }
+  },
+  "State": {
+    "Running": false
+  }
+}

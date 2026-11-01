@@ -1,0 +1,4 @@
+ 192.168.43.182 5101 dry-run
+{"applied": 1, "round_trip_ms": 8.18}
+STOP EOFError Peer disconnected
+HOLD: torque preserved; restart both processes to resume

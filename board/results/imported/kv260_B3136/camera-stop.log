@@ -1,0 +1,30 @@
+BEFORE_LOAD {"MemAvailable": 1944960, "CmaTotal": 1024000, "CmaFree": 176336, "VmHWM": 114724, "VmRSS": 114724}
+HARDWARE_READY {"model_target": "DPUCZDX8G_ISA1_B3136", "input_fix": 6, "output_fix": {"26": 2, "13": 2, "52": 2}, "workers": 1, "slots": 2, "application_cma_bytes": 3800224, "memory_kib": {"MemAvailable": 1713212, "CmaTotal": 1024000, "CmaFree": 44508, "VmHWM": 391600, "VmRSS": 268296}}
+[INFO] [1791982592.749292108] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+[INFO] [1791982592.762231907] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+[INFO] [1791982592.890254112] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+CAMERA_READY RGB=640x480 MJPG depth=320x240 16UC1/mm ROS2
+[INFO] [1791982597.817359173] [astra_openni2]: Depth interval: 147 frames (29.16 FPS)
+[INFO] [1791982597.843306248] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+STATS {"elapsed_s": 5.003841765999823, "frames": 28, "fps": 5.595700525595115, "rgb_frames": 70, "depth_frames": 193, "invalid_depth": 0, "paired_frames": 28, "published_frames": 28, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 6.289574535717942, "dpu_ms": 157.79109846425854, "post_ms": 33.14281392853705}, "recent_latency_p50_ms": 347.2631165000166, "recent_latency_p95_ms": 379.27176690031956, "memory_kib": {"MemAvailable": 1650688, "CmaTotal": 1024000, "CmaFree": 43832, "VmHWM": 391600, "VmRSS": 285972}, "peak_rss_kib": 391600, "min_cma_free_kib": 43832, "min_mem_available_kib": 1650688, "workers": 1, "slots": 2, "interval_fps": 5.595700525595115}
+Exception in thread ros-depth:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 323, in spin
+    self.spin_once()
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 808, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 797, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 780, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/executors.py", line 681, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException
+SUMMARY {"elapsed_s": 5.656442725000488, "frames": 32, "fps": 5.657265803924009, "rgb_frames": 78, "depth_frames": 207, "invalid_depth": 0, "paired_frames": 32, "published_frames": 31, "overflow_fallback_frames": 0, "recent_mean_ms": {"pre_ms": 6.185925906294187, "dpu_ms": 157.75193303122137, "post_ms": 33.42665084372243}, "recent_latency_p50_ms": 346.80419899996195, "recent_latency_p95_ms": 378.8214537004478, "memory_kib": {"MemAvailable": 1650780, "CmaTotal": 1024000, "CmaFree": 43832, "VmHWM": 391600, "VmRSS": 286860}, "peak_rss_kib": 391600, "min_cma_free_kib": 43832, "min_mem_available_kib": 1650688, "workers": 1, "slots": 2, "success": true, "stop_reason": "SIGINT", "last_detections": [{"bbox": [334.3028869628906, 28.948318481445312, 479.8677978515625, 266.18389892578125], "score": 0.9045802354812622, "class_id": 0, "class_name": "person", "depth_m": 1.066, "valid_depth_pixels": 471}, {"bbox": [461.3221435546875, 16.893030166625977, 639.0, 254.1286163330078], "score": 0.8806101679801941, "class_id": 0, "class_name": "person", "depth_m": 0.538, "valid_depth_pixels": 225}]}
+[INFO] [1791982600.406712042] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1791982605.406969395] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+CLEANUP_OK {"MemAvailable": 1771524, "CmaTotal": 1024000, "CmaFree": 133040, "VmHWM": 391600, "VmRSS": 279384}

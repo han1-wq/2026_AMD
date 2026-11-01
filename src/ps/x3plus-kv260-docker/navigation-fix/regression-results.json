@@ -1,0 +1,217 @@
+{
+  "scope": "Real AMCL + production guard, synthetic scan/map/TF, inert planner, no hardware", 
+  "results": [
+    {
+      "phase": "cold_start_rejects_all_goal_and_speed_inputs", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500416.189882, 
+        "reason": "map_changed_initial_pose_required", 
+        "scan_match": 0.0
+      }, 
+      "forwarded": 0, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "explicit_wrong_initial_pose_rejected", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500422.643802, 
+        "reason": "initial_pose_disagreement", 
+        "scan_match": 0.0
+      }, 
+      "forwarded": 0, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "correct_initial_pose_converges_and_confirms", 
+      "position_error_m": 0.03556281054748428, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500425.776014, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "confirmed_action_and_speed_forwarded", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500425.877113, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "scan_loss_cancels_goal_and_stops", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500426.88653, 
+        "reason": "stale_scan_initial_pose_required", 
+        "scan_match": 1.0
+      }, 
+      "stop_latency_s": 1.005964994430542
+    }, 
+    {
+      "phase": "scan_recovery_requires_new_initial_pose", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500430.305141, 
+        "reason": "stale_scan_initial_pose_required", 
+        "scan_match": 1.0
+      }, 
+      "forwarded": 1, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "reinitialize_after_scan_loss", 
+      "position_error_m": 0.04858288057949265, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500433.536436, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "scan_map_mismatch_stops_navigation", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500433.638223, 
+        "reason": "scan_map_mismatch_initial_pose_required", 
+        "scan_match": 0.0
+      }
+    }, 
+    {
+      "phase": "reinitialize_after_scan_mismatch", 
+      "position_error_m": 0.04925936385857953, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500436.570522, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "tf_loss_stops_navigation", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500437.076872, 
+        "reason": "invalid_scan_or_tf: Lookup would require extrapolation into the future.  Requested time 1792500437.058175087 but the latest data is at time 1792500436.553052902, when looking up transform from frame [base_footprint] to frame [odom]_initial_pose_required", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "reinitialize_after_tf_loss", 
+      "position_error_m": 0.04258677648114806, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500440.013245, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "same_map_reuse_resets_confirmation", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500440.718298, 
+        "reason": "initial_pose_required", 
+        "scan_match": 1.0
+      }, 
+      "forwarded": 1, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "confirm_before_amcl_restart", 
+      "position_error_m": 0.05190563382274152, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500444.049597, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "amcl_restart_never_reuses_confirmation", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500449.988753, 
+        "reason": "invalid_scan_or_tf: Lookup would require extrapolation into the future.  Requested time 1792500445.552414894 but the latest data is at time 1792500445.083750963, when looking up transform from frame [odom] to frame [map]_initial_pose_required", 
+        "scan_match": 1.0
+      }, 
+      "forwarded": 1, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "correct_initial_pose_after_restart", 
+      "position_error_m": 0.07812840131290628, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500453.531987, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "confirm_after_second_session_reset", 
+      "position_error_m": 0.03556281054748428, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500456.559702, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "previous_session_goal_rejected", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500456.559702, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "high_covariance_rejected_by_quality_checker", 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500456.559702, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "map_replacement_revokes_confirmation", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500457.062988, 
+        "reason": "map_changed_initial_pose_required", 
+        "scan_match": 1.0
+      }, 
+      "forwarded": 1, 
+      "output_zero": true
+    }, 
+    {
+      "phase": "reinitialize_after_map_replacement", 
+      "position_error_m": 0.04258677648114806, 
+      "guard": {
+        "ready": true, 
+        "stamp": 1792500460.595584, 
+        "reason": "ready", 
+        "scan_match": 1.0
+      }
+    }, 
+    {
+      "phase": "invalid_initial_pose_revokes_confirmation", 
+      "guard": {
+        "ready": false, 
+        "stamp": 1792500461.099123, 
+        "reason": "invalid_initial_pose", 
+        "scan_match": 1.0
+      }, 
+      "forwarded": 1, 
+      "output_zero": true
+    }
+  ]
+}

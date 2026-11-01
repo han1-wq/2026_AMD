@@ -1,0 +1,1385 @@
+import argparse
+import json
+import threading
+import time
+import urllib.error
+import urllib.request
+from pathlib import Path
+
+import cv2
+import numpy as np
+
+import camera as base
+import infer_ofa_yolo as yolo
+from sort_tracker import SortLikeTracker
+
+
+# ============================================================
+# Configuration
+# ============================================================
+
+BASE_DIR = Path(__file__).resolve().parent
+
+DEFAULT_BITFILE = (
+    BASE_DIR / "overlay" / "dpu.bit"
+)
+
+DEFAULT_XMODEL = (
+    BASE_DIR
+    / "compiled"
+    / "ofa_yolo_pruned_0_30_pt.xmodel"
+)
+
+WINDOW_NAME = "KV260 YOLO + SORT + SmolLM2"
+
+OLLAMA_URL = (
+    "http://127.0.0.1:11434/api/generate"
+)
+
+OLLAMA_MODEL = "smollm2:135m"
+
+OLLAMA_NUM_CTX = 1024
+OLLAMA_NUM_PREDICT = 128
+OLLAMA_TEMPERATURE = 0.2
+OLLAMA_TIMEOUT = 1800
+
+RESULT_DIR = BASE_DIR / "smollm2_results"
+LATEST_IMAGE = RESULT_DIR / "latest_yolo.jpg"
+LATEST_TEXT = RESULT_DIR / "latest.txt"
+HISTORY_FILE = RESULT_DIR / "history.jsonl"
+
+ANSWER_PANEL_HEIGHT = 220
+
+
+# ============================================================
+# LLM request state
+# ============================================================
+
+class LLMState:
+    """
+    Ensure that only one Ollama request runs at a time.
+    """
+
+    def __init__(self):
+        self.condition = threading.Condition()
+
+        self.request_frame = None
+        self.request_sequence = -1
+        self.request_prompt = ""
+
+        self.pending = False
+        self.running = False
+        self.stopped = False
+
+        self.status = "Waiting for the first detection"
+        self.answer = "SmolLM2 has not returned an answer yet."
+        self.answer_sequence = -1
+        self.answer_elapsed = 0.0
+        self.error = ""
+
+    def submit_if_idle(
+        self,
+        frame,
+        sequence,
+        prompt,
+    ):
+        with self.condition:
+            if self.stopped:
+                return False
+
+            if self.pending or self.running:
+                return False
+
+            self.request_frame = frame.copy()
+            self.request_sequence = int(sequence)
+            self.request_prompt = str(prompt)
+
+            self.pending = True
+            self.status = "Waiting for SmolLM2"
+            self.error = ""
+
+            self.condition.notify_all()
+            return True
+
+    def get_request(self):
+        with self.condition:
+            while (
+                not self.pending
+                and not self.stopped
+            ):
+                self.condition.wait(timeout=0.5)
+
+            if self.stopped:
+                return None, -1, ""
+
+            frame = self.request_frame
+            sequence = self.request_sequence
+            prompt = self.request_prompt
+
+            self.request_frame = None
+            self.request_sequence = -1
+            self.request_prompt = ""
+
+            self.pending = False
+            self.running = True
+            self.status = (
+                "Analyzing frame {}".format(sequence)
+            )
+
+            return frame, sequence, prompt
+
+    def finish(
+        self,
+        sequence,
+        answer,
+        elapsed,
+    ):
+        with self.condition:
+            self.running = False
+            self.pending = False
+            self.status = (
+                "Finished frame {}".format(sequence)
+            )
+            self.answer = str(answer)
+            self.answer_sequence = int(sequence)
+            self.answer_elapsed = float(elapsed)
+            self.error = ""
+
+            self.condition.notify_all()
+
+    def fail(
+        self,
+        sequence,
+        error,
+        elapsed,
+    ):
+        with self.condition:
+            self.running = False
+            self.pending = False
+            self.status = "SmolLM2 error"
+            self.error = str(error)
+            self.answer = (
+                "SmolLM2 request failed: {}".format(error)
+            )
+            self.answer_sequence = int(sequence)
+            self.answer_elapsed = float(elapsed)
+
+            self.condition.notify_all()
+
+    def get_display_info(self):
+        with self.condition:
+            return {
+                "status": self.status,
+                "answer": self.answer,
+                "sequence": self.answer_sequence,
+                "elapsed": self.answer_elapsed,
+                "error": self.error,
+                "pending": self.pending,
+                "running": self.running,
+            }
+
+    def stop(self):
+        with self.condition:
+            self.stopped = True
+            self.pending = False
+            self.condition.notify_all()
+
+
+# ============================================================
+# Prompt generation
+# ============================================================
+
+def get_class_name(class_id):
+    class_id = int(class_id)
+
+    if (
+        0 <= class_id
+        < len(yolo.CLASS_NAMES)
+    ):
+        return str(yolo.CLASS_NAMES[class_id])
+
+    return "class_{}".format(class_id)
+
+
+def get_horizontal_position(
+    center_x,
+    image_width,
+):
+    if center_x < image_width / 3.0:
+        return "left"
+
+    if center_x > image_width * 2.0 / 3.0:
+        return "right"
+
+    return "center"
+
+
+def get_vertical_position(
+    center_y,
+    image_height,
+):
+    if center_y < image_height / 3.0:
+        return "top"
+
+    if center_y > image_height * 2.0 / 3.0:
+        return "bottom"
+
+    return "middle"
+
+
+def make_detection_prompt(
+    boxes,
+    classes,
+    scores,
+    track_ids,
+    image_width,
+    image_height,
+    frame_sequence,
+):
+    """
+    Convert all YOLO/SORT results into an English text prompt.
+
+    boxes are expected to use:
+        [x1, y1, x2, y2]
+    """
+
+    object_lines = []
+
+    count = min(
+        len(boxes),
+        len(classes),
+        len(scores),
+    )
+
+    for index in range(count):
+        class_name = get_class_name(
+            classes[index]
+        )
+
+        confidence = float(
+            scores[index]
+        )
+
+        box = boxes[index]
+
+        x1 = float(box[0])
+        y1 = float(box[1])
+        x2 = float(box[2])
+        y2 = float(box[3])
+
+        width = max(0.0, x2 - x1)
+        height = max(0.0, y2 - y1)
+
+        center_x = (x1 + x2) / 2.0
+        center_y = (y1 + y2) / 2.0
+
+        horizontal = get_horizontal_position(
+            center_x,
+            image_width,
+        )
+
+        vertical = get_vertical_position(
+            center_y,
+            image_height,
+        )
+
+        if (
+            track_ids is not None
+            and index < len(track_ids)
+        ):
+            track_id = int(track_ids[index])
+        else:
+            track_id = -1
+
+        line = (
+            "Object {}: "
+            "class={}, "
+            "confidence={:.3f}, "
+            "track_id={}, "
+            "bounding_box=({:.1f}, {:.1f}, {:.1f}, {:.1f}), "
+            "size=({:.1f} x {:.1f}), "
+            "center=({:.1f}, {:.1f}), "
+            "position={} horizontally and {} vertically."
+        ).format(
+            index + 1,
+            class_name,
+            confidence,
+            track_id,
+            x1,
+            y1,
+            x2,
+            y2,
+            width,
+            height,
+            center_x,
+            center_y,
+            horizontal,
+            vertical,
+        )
+
+        object_lines.append(line)
+
+    if object_lines:
+        detection_text = "\n".join(
+            object_lines
+        )
+    else:
+        detection_text = (
+            "No object was detected by YOLO."
+        )
+
+    prompt = (
+        "You are an object detection analysis assistant.\n"
+        "Analyze the YOLO and SORT results below.\n"
+        "Use only the information provided.\n"
+        "Do not invent any object.\n"
+        "Mention every detected object.\n"
+        "Answer in concise English.\n"
+        "Keep the answer within 100 words.\n"
+        "Return only the final scene description.\n\n"
+        "Frame sequence: {}\n"
+        "Image resolution: {} x {}\n"
+        "Detected object count: {}\n\n"
+        "{}\n"
+        "Final scene description:"
+    ).format(
+        frame_sequence,
+        image_width,
+        image_height,
+        len(object_lines),
+        detection_text,
+    )
+
+    return prompt
+
+
+# ============================================================
+# Ollama request
+# ============================================================
+
+def call_smollm2(
+    prompt,
+):
+    """
+    Send text only to Ollama.
+    No image is sent.
+    """
+
+    payload = {
+        "model": OLLAMA_MODEL,
+        "prompt": prompt,
+        "stream": True,
+        "keep_alive": "5m",
+        "options": {
+            "num_ctx": OLLAMA_NUM_CTX,
+            "num_predict": OLLAMA_NUM_PREDICT,
+            "temperature": OLLAMA_TEMPERATURE,
+        },
+    }
+
+    request_body = json.dumps(
+        payload,
+        ensure_ascii=False,
+    ).encode("utf-8")
+
+    request = urllib.request.Request(
+        OLLAMA_URL,
+        data=request_body,
+        headers={
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+
+    print()
+    print(
+        "[SmolLM2] Sending detection text...",
+        flush=True,
+    )
+    print(
+        "[SmolLM2] Prompt:",
+        flush=True,
+    )
+    print(prompt, flush=True)
+    print(
+        "[SmolLM2] Response:",
+        end=" ",
+        flush=True,
+    )
+
+    answer_parts = []
+
+    try:
+        with urllib.request.urlopen(
+            request,
+            timeout=OLLAMA_TIMEOUT,
+        ) as response:
+
+            for raw_line in response:
+                line = raw_line.decode(
+                    "utf-8",
+                    errors="replace",
+                ).strip()
+
+                if not line:
+                    continue
+
+                try:
+                    item = json.loads(line)
+                except json.JSONDecodeError:
+                    print(
+                        "\n[SmolLM2] Invalid JSON: {}".format(
+                            line
+                        ),
+                        flush=True,
+                    )
+                    continue
+
+                if "error" in item:
+                    raise RuntimeError(
+                        item["error"]
+                    )
+
+                chunk = item.get(
+                    "response",
+                    "",
+                )
+
+                if chunk:
+                    answer_parts.append(chunk)
+                    print(
+                        chunk,
+                        end="",
+                        flush=True,
+                    )
+
+                if item.get("done", False):
+                    break
+
+    except urllib.error.HTTPError as error:
+        body = error.read().decode(
+            "utf-8",
+            errors="replace",
+        )
+
+        raise RuntimeError(
+            "HTTP {}: {}".format(
+                error.code,
+                body,
+            )
+        )
+
+    except urllib.error.URLError as error:
+        raise RuntimeError(
+            "Cannot connect to Ollama: {}".format(
+                error
+            )
+        )
+
+    print()
+    print(
+        "[SmolLM2] Response finished.",
+        flush=True,
+    )
+
+    return "".join(answer_parts).strip()
+
+
+# ============================================================
+# Save results
+# ============================================================
+
+def save_result(
+    frame,
+    sequence,
+    prompt,
+    answer,
+    elapsed,
+):
+    RESULT_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    cv2.imwrite(
+        str(LATEST_IMAGE),
+        frame,
+    )
+
+    now = time.strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
+
+    text = (
+        "Time: {}\n"
+        "Frame sequence: {}\n"
+        "Inference time: {:.2f} seconds\n"
+        "Prompt:\n{}\n\n"
+        "SmolLM2 answer:\n{}\n"
+    ).format(
+        now,
+        sequence,
+        elapsed,
+        prompt,
+        answer,
+    )
+
+    LATEST_TEXT.write_text(
+        text,
+        encoding="utf-8",
+    )
+
+    history_item = {
+        "time": now,
+        "sequence": int(sequence),
+        "elapsed_seconds": float(elapsed),
+        "prompt": prompt,
+        "answer": answer,
+        "image": str(LATEST_IMAGE),
+    }
+
+    with HISTORY_FILE.open(
+        "a",
+        encoding="utf-8",
+    ) as file:
+        file.write(
+            json.dumps(
+                history_item,
+                ensure_ascii=False,
+            )
+            + "\n"
+        )
+
+
+# ============================================================
+# SmolLM2 worker
+# ============================================================
+
+def smollm2_worker(
+    state,
+):
+    print(
+        "[SmolLM2] Worker started. Model: {}".format(
+            OLLAMA_MODEL
+        ),
+        flush=True,
+    )
+
+    while True:
+        frame, sequence, prompt = (
+            state.get_request()
+        )
+
+        if frame is None:
+            break
+
+        start_time = time.perf_counter()
+
+        try:
+            answer = call_smollm2(
+                prompt
+            )
+
+            elapsed = (
+                time.perf_counter()
+                - start_time
+            )
+
+            if not answer:
+                answer = (
+                    "The model returned an empty answer."
+                )
+
+            save_result(
+                frame=frame,
+                sequence=sequence,
+                prompt=prompt,
+                answer=answer,
+                elapsed=elapsed,
+            )
+
+            state.finish(
+                sequence=sequence,
+                answer=answer,
+                elapsed=elapsed,
+            )
+
+            print(
+                "[SmolLM2] Frame {} completed in {:.2f} seconds.".format(
+                    sequence,
+                    elapsed,
+                ),
+                flush=True,
+            )
+
+        except Exception as error:
+            elapsed = (
+                time.perf_counter()
+                - start_time
+            )
+
+            print(
+                "[SmolLM2] Frame {} failed: {}".format(
+                    sequence,
+                    repr(error),
+                ),
+                flush=True,
+            )
+
+            state.fail(
+                sequence=sequence,
+                error=error,
+                elapsed=elapsed,
+            )
+
+
+# ============================================================
+# Display
+# ============================================================
+
+def wrap_text(
+    text,
+    max_chars,
+):
+    text = str(text)
+
+    lines = []
+    current = ""
+
+    for char in text:
+        if char == "\n":
+            lines.append(current)
+            current = ""
+            continue
+
+        current += char
+
+        if len(current) >= max_chars:
+            lines.append(current)
+            current = ""
+
+    if current:
+        lines.append(current)
+
+    if not lines:
+        lines.append("")
+
+    return lines
+
+
+def draw_answer_panel(
+    frame,
+    state_info,
+):
+    height, width = frame.shape[:2]
+
+    panel = np.zeros(
+        (
+            ANSWER_PANEL_HEIGHT,
+            width,
+            3,
+        ),
+        dtype=np.uint8,
+    )
+
+    panel[:, :] = (
+        25,
+        25,
+        25,
+    )
+
+    status = state_info["status"]
+    sequence = state_info["sequence"]
+    elapsed = state_info["elapsed"]
+    answer = state_info["answer"]
+
+    title = (
+        "SmolLM2 | {} | frame={} | {:.1f}s"
+    ).format(
+        status,
+        sequence if sequence >= 0 else "-",
+        elapsed,
+    )
+
+    cv2.putText(
+        panel,
+        title,
+        (8, 25),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.48,
+        (0, 255, 255),
+        1,
+        cv2.LINE_AA,
+    )
+
+    cv2.putText(
+        panel,
+        "Answer:",
+        (8, 55),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        0.45,
+        (0, 255, 0),
+        1,
+        cv2.LINE_AA,
+    )
+
+    answer_lines = wrap_text(
+        answer,
+        48,
+    )
+
+    for index, line in enumerate(
+        answer_lines[:6]
+    ):
+        cv2.putText(
+            panel,
+            line,
+            (8, 85 + index * 25),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.42,
+            (255, 255, 255),
+            1,
+            cv2.LINE_AA,
+        )
+
+    return np.vstack(
+        [
+            frame,
+            panel,
+        ]
+    )
+
+
+# ============================================================
+# Main
+# ============================================================
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=(
+            "KV260 OFA-YOLO + SORT + SmolLM2"
+        )
+    )
+
+    parser.add_argument(
+        "--bitfile",
+        default=str(DEFAULT_BITFILE),
+    )
+
+    parser.add_argument(
+        "--xmodel",
+        default=str(DEFAULT_XMODEL),
+    )
+
+    parser.add_argument(
+        "--camera",
+        type=int,
+        default=0,
+    )
+
+    parser.add_argument(
+        "--width",
+        type=int,
+        default=640,
+    )
+
+    parser.add_argument(
+        "--height",
+        type=int,
+        default=480,
+    )
+
+    parser.add_argument(
+        "--fps",
+        type=int,
+        default=30,
+    )
+
+    parser.add_argument(
+        "--display-fps",
+        type=float,
+        default=15.0,
+    )
+
+    parser.add_argument(
+        "--screen-width",
+        type=int,
+        default=1024,
+    )
+
+    parser.add_argument(
+        "--screen-height",
+        type=int,
+        default=768,
+    )
+
+    parser.add_argument(
+        "--windowed",
+        action="store_true",
+    )
+
+    parser.add_argument(
+        "--no-display",
+        action="store_true",
+    )
+
+    parser.add_argument(
+        "--no-tracker",
+        action="store_true",
+    )
+
+    parser.add_argument(
+        "--color-mode",
+        choices=["class", "track"],
+        default="class",
+    )
+
+    args = parser.parse_args()
+
+    bitfile_path = Path(
+        args.bitfile
+    )
+
+    xmodel_path = Path(
+        args.xmodel
+    )
+
+    if not bitfile_path.is_file():
+        raise FileNotFoundError(
+            "Bitstream not found: {}".format(
+                bitfile_path
+            )
+        )
+
+    if not xmodel_path.is_file():
+        raise FileNotFoundError(
+            "XModel not found: {}".format(
+                xmodel_path
+            )
+        )
+
+    print(
+        "Loading DPU overlay: {}".format(
+            bitfile_path
+        ),
+        flush=True,
+    )
+
+    overlay = base.DpuOverlay(
+        str(bitfile_path)
+    )
+
+    print(
+        "DPU overlay loaded.",
+        flush=True,
+    )
+
+    print(
+        "Loading XModel: {}".format(
+            xmodel_path
+        ),
+        flush=True,
+    )
+
+    overlay.load_model(
+        str(xmodel_path)
+    )
+
+    print(
+        "XModel loaded.",
+        flush=True,
+    )
+
+    runner = overlay.runner
+
+    input_tensors = (
+        runner.get_input_tensors()
+    )
+
+    output_tensors = (
+        runner.get_output_tensors()
+    )
+
+    yolo.validate_model_tensors(
+        input_tensors,
+        output_tensors,
+    )
+
+    yolo.print_tensor_information(
+        input_tensors,
+        output_tensors,
+    )
+
+    input_tensor = input_tensors[0]
+
+    output_buffers = (
+        yolo.allocate_output_buffers(
+            output_tensors
+        )
+    )
+
+    capture = base.open_camera(
+        args.camera,
+        args.width,
+        args.height,
+        args.fps,
+    )
+
+    ok, warmup_frame = capture.read()
+
+    if not ok or warmup_frame is None:
+        capture.release()
+        raise RuntimeError(
+            "Could not read warm-up frame."
+        )
+
+    print(
+        "Warming up DPU...",
+        flush=True,
+    )
+
+    yolo.infer_frame(
+        warmup_frame,
+        runner,
+        input_tensor,
+        output_tensors,
+        output_buffers,
+    )
+
+    print(
+        "DPU warm-up completed.",
+        flush=True,
+    )
+
+    stop_event = threading.Event()
+
+    latest_frame = base.LatestFrame()
+    latest_detection = base.LatestDetection()
+
+    latest_frame.update(
+        warmup_frame,
+        time.perf_counter(),
+        0.0,
+    )
+
+    tracker = SortLikeTracker(
+        iou_threshold=0.15,
+        new_track_threshold=0.45,
+        max_age_seconds=0.30,
+        max_output_age_seconds=0.12,
+        min_hits=2,
+        position_alpha=0.85,
+        velocity_alpha=0.50,
+    )
+
+    state = LLMState()
+
+    capture_thread = threading.Thread(
+        target=base.capture_worker,
+        args=(
+            capture,
+            latest_frame,
+            stop_event,
+        ),
+        name="camera-capture",
+        daemon=True,
+    )
+
+    dpu_thread = threading.Thread(
+        target=base.inference_worker,
+        args=(
+            latest_frame,
+            latest_detection,
+            stop_event,
+            runner,
+            input_tensor,
+            output_tensors,
+            output_buffers,
+        ),
+        name="dpu-inference",
+        daemon=False,
+    )
+
+    llm_thread = threading.Thread(
+        target=smollm2_worker,
+        args=(state,),
+        name="smollm2-inference",
+        daemon=True,
+    )
+
+    capture_thread.start()
+    dpu_thread.start()
+    llm_thread.start()
+
+    use_display = not args.no_display
+    use_tracker = not args.no_tracker
+
+    if use_display:
+        cv2.namedWindow(
+            WINDOW_NAME,
+            cv2.WINDOW_NORMAL,
+        )
+
+        if args.windowed:
+            cv2.resizeWindow(
+                WINDOW_NAME,
+                args.width,
+                args.height + ANSWER_PANEL_HEIGHT,
+            )
+        else:
+            cv2.resizeWindow(
+                WINDOW_NAME,
+                args.screen_width,
+                args.screen_height,
+            )
+
+        print()
+        print("Controls:", flush=True)
+        print("  q / ESC: exit", flush=True)
+        print("  s     : save current image", flush=True)
+        print("  r     : reset tracker", flush=True)
+
+    else:
+        print(
+            "Running without display. Press Ctrl+C to stop.",
+            flush=True,
+        )
+
+    display_interval = 1.0 / max(
+        1.0,
+        float(args.display_fps),
+    )
+
+    next_display_time = time.perf_counter()
+
+    previous_display_time = time.perf_counter()
+    smooth_display_fps = 0.0
+
+    last_tracker_count = -1
+
+    display_boxes = np.empty(
+        (0, 4),
+        dtype=np.float32,
+    )
+
+    display_scores = np.empty(
+        (0,),
+        dtype=np.float32,
+    )
+
+    display_classes = np.empty(
+        (0,),
+        dtype=np.int32,
+    )
+
+    track_ids = np.empty(
+        (0,),
+        dtype=np.int32,
+    )
+
+    first_submit = True
+    saved_index = 0
+
+    try:
+        while not stop_event.is_set():
+            now = time.perf_counter()
+
+            if now < next_display_time:
+                time.sleep(
+                    next_display_time - now
+                )
+
+            next_display_time = (
+                time.perf_counter()
+                + display_interval
+            )
+
+            (
+                frame,
+                frame_sequence,
+                _,
+                capture_fps,
+            ) = latest_frame.get()
+
+            if frame is None:
+                continue
+
+            (
+                boxes,
+                scores,
+                classes,
+                detection_sequence,
+                _,
+                completion_timestamp,
+                timing,
+                detection_count,
+            ) = latest_detection.get()
+
+            current_time = time.perf_counter()
+
+            if use_tracker:
+                if (
+                    detection_count
+                    != last_tracker_count
+                ):
+                    (
+                        display_boxes,
+                        display_scores,
+                        display_classes,
+                        track_ids,
+                    ) = tracker.update(
+                        boxes,
+                        scores,
+                        classes,
+                        timestamp=current_time,
+                    )
+
+                    last_tracker_count = (
+                        detection_count
+                    )
+            else:
+                display_boxes = boxes
+                display_scores = scores
+                display_classes = classes
+
+                track_ids = np.arange(
+                    1,
+                    len(display_boxes) + 1,
+                    dtype=np.int32,
+                )
+
+            object_count = base.draw_tracks(
+                frame,
+                display_boxes,
+                display_scores,
+                display_classes,
+                track_ids,
+                args.color_mode,
+            )
+
+            display_elapsed = (
+                current_time
+                - previous_display_time
+            )
+
+            previous_display_time = current_time
+
+            if display_elapsed > 0.0:
+                current_fps = (
+                    1.0 / display_elapsed
+                )
+
+                if smooth_display_fps == 0.0:
+                    smooth_display_fps = current_fps
+                else:
+                    smooth_display_fps = (
+                        smooth_display_fps * 0.90
+                        + current_fps * 0.10
+                    )
+
+            if detection_sequence >= 0:
+                frame_lag = (
+                    frame_sequence
+                    - detection_sequence
+                )
+            else:
+                frame_lag = 0
+
+            if completion_timestamp > 0.0:
+                result_age = (
+                    current_time
+                    - completion_timestamp
+                )
+            else:
+                result_age = 0.0
+
+            state_info = (
+                state.get_display_info()
+            )
+
+            # Only one request is submitted at a time.
+            if (
+                first_submit
+                or (
+                    not state_info["pending"]
+                    and not state_info["running"]
+                )
+            ):
+                prompt = make_detection_prompt(
+                    boxes=display_boxes,
+                    classes=display_classes,
+                    scores=display_scores,
+                    track_ids=track_ids,
+                    image_width=frame.shape[1],
+                    image_height=frame.shape[0],
+                    frame_sequence=frame_sequence,
+                )
+
+                submitted = (
+                    state.submit_if_idle(
+                        frame=frame,
+                        sequence=frame_sequence,
+                        prompt=prompt,
+                    )
+                )
+
+                if submitted:
+                    first_submit = False
+                    print(
+                        "[SmolLM2] Submitted frame {}.".format(
+                            frame_sequence
+                        ),
+                        flush=True,
+                    )
+
+            dpu_fps = (
+                1.0 / timing["dpu"]
+                if timing["dpu"] > 0.0
+                else 0.0
+            )
+
+            detect_fps = (
+                1.0 / timing["total"]
+                if timing["total"] > 0.0
+                else 0.0
+            )
+
+            cv2.rectangle(
+                frame,
+                (0, 0),
+                (frame.shape[1], 70),
+                (0, 0, 0),
+                -1,
+            )
+
+            cv2.putText(
+                frame,
+                (
+                    "Capture {:.1f} | Display {:.1f} | "
+                    "Detect {:.1f} | DPU {:.1f} FPS"
+                ).format(
+                    capture_fps,
+                    smooth_display_fps,
+                    detect_fps,
+                    dpu_fps,
+                ),
+                (8, 27),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.45,
+                (0, 255, 0),
+                1,
+                cv2.LINE_AA,
+            )
+
+            cv2.putText(
+                frame,
+                "Objects {} | Lag {} | Age {:.0f} ms".format(
+                    object_count,
+                    max(0, int(frame_lag)),
+                    max(0.0, result_age * 1000.0),
+                ),
+                (8, 55),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.40,
+                (0, 255, 255),
+                1,
+                cv2.LINE_AA,
+            )
+
+            display_frame = draw_answer_panel(
+                frame,
+                state_info,
+            )
+
+            if use_display:
+                if args.windowed:
+                    target_width = args.width
+                    target_height = (
+                        args.height
+                        + ANSWER_PANEL_HEIGHT
+                    )
+                else:
+                    target_width = args.screen_width
+                    target_height = args.screen_height
+
+                display_frame = cv2.resize(
+                    display_frame,
+                    (
+                        target_width,
+                        target_height,
+                    ),
+                    interpolation=cv2.INTER_LINEAR,
+                )
+
+                cv2.imshow(
+                    WINDOW_NAME,
+                    display_frame,
+                )
+
+                key = cv2.waitKey(1) & 0xFF
+
+                if key == ord("q") or key == 27:
+                    stop_event.set()
+                    break
+
+                if key == ord("s"):
+                    saved_index += 1
+
+                    save_path = (
+                        BASE_DIR
+                        / "camera_result_{:04d}.jpg".format(
+                            saved_index
+                        )
+                    )
+
+                    cv2.imwrite(
+                        str(save_path),
+                        frame,
+                    )
+
+                    print(
+                        "Saved: {}".format(save_path),
+                        flush=True,
+                    )
+
+                if key == ord("r") and use_tracker:
+                    tracker.reset()
+                    last_tracker_count = -1
+
+                    print(
+                        "Tracker reset.",
+                        flush=True,
+                    )
+
+    except KeyboardInterrupt:
+        print(
+            "\nStop requested.",
+            flush=True,
+        )
+
+    finally:
+        stop_event.set()
+        state.stop()
+
+        print(
+            "Stopping workers...",
+            flush=True,
+        )
+
+        dpu_thread.join(timeout=5.0)
+        capture_thread.join(timeout=2.0)
+        llm_thread.join(timeout=2.0)
+
+        capture.release()
+
+        if use_display:
+            cv2.destroyAllWindows()
+
+        print(
+            "Program stopped.",
+            flush=True,
+        )
+
+
+if __name__ == "__main__":
+    main()

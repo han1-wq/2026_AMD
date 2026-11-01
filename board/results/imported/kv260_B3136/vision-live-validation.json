@@ -1,0 +1,343 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "state": "running",
+      "pid": 35650,
+      "updated": 1791984851.9817474,
+      "fps": 6.317633304889716,
+      "processed": 37,
+      "depth_pairs": 37,
+      "message": {
+        "sequence": 83,
+        "rgb_stamp_ns": 1791984851557028282,
+        "depth_stamp_ns": 1791984851513736105,
+        "depth_skew_ms": 43.292177,
+        "depth_registration": "uncalibrated_normalized_roi",
+        "rgb_timestamp": "host_after_v4l2_read",
+        "depth_unit": "m",
+        "hls_post_used": true,
+        "candidates": 6,
+        "latency_ms": 345.3402479999568,
+        "timings": {
+          "pre_ms": 16.384490999371337,
+          "pre_submit_ms": 1.109973999518843,
+          "pre_kernel_wait_ms": 4.484240999772737,
+          "pre_tensor_sync_ms": 0.28033800026605604,
+          "pre_preview_copy_ms": 10.509937999813701,
+          "dpu_ms": 157.6313420000588,
+          "post_ms": 37.4601330004225
+        },
+        "detections": [
+          {
+            "bbox": [
+              337.59014892578125,
+              132.94471740722656,
+              476.5805358886719,
+              479.0
+            ],
+            "score": 0.8511792421340942,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": 0.619,
+            "valid_depth_pixels": 1114
+          }
+        ],
+        "preprocessing": {
+          "contrast": 1.4,
+          "brightness": 30,
+          "saturation": 1.2,
+          "eq_mode": 0,
+          "enhance_tensor": false,
+          "config_id": 2
+        }
+      },
+      "display_mode": "enhanced"
+    },
+    {
+      "state": "running",
+      "pid": 35650,
+      "updated": 1791984856.0592453,
+      "fps": 5.9873312118991455,
+      "processed": 62,
+      "depth_pairs": 61,
+      "message": {
+        "sequence": 140,
+        "rgb_stamp_ns": 1791984855581007632,
+        "depth_stamp_ns": 1791984855568384378,
+        "depth_skew_ms": 12.623254,
+        "depth_registration": "uncalibrated_normalized_roi",
+        "rgb_timestamp": "host_after_v4l2_read",
+        "depth_unit": "m",
+        "hls_post_used": true,
+        "candidates": 5,
+        "latency_ms": 380.76101200022094,
+        "timings": {
+          "pre_ms": 94.59748300014326,
+          "pre_submit_ms": 0.9950089997801115,
+          "pre_kernel_wait_ms": 83.42162900044059,
+          "pre_tensor_sync_ms": 0.2981869993163855,
+          "pre_preview_copy_ms": 9.88265800060617,
+          "dpu_ms": 157.10268399925553,
+          "post_ms": 33.8949759998286
+        },
+        "detections": [
+          {
+            "bbox": [
+              340.1442565917969,
+              132.94471740722656,
+              479.1346435546875,
+              479.0
+            ],
+            "score": 0.8511792421340942,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": 0.616,
+            "valid_depth_pixels": 1114
+          }
+        ],
+        "preprocessing": {
+          "contrast": 1.0,
+          "brightness": 0,
+          "saturation": 0.0,
+          "eq_mode": 0,
+          "enhance_tensor": false,
+          "config_id": 3
+        }
+      },
+      "display_mode": "enhanced"
+    },
+    {
+      "state": "running",
+      "pid": 35650,
+      "updated": 1791984860.158968,
+      "fps": 5.773597735356408,
+      "processed": 87,
+      "depth_pairs": 85,
+      "message": {
+        "sequence": 194,
+        "rgb_stamp_ns": 1791984859709135674,
+        "depth_stamp_ns": 1791984859700409775,
+        "depth_skew_ms": 8.725899,
+        "depth_registration": "uncalibrated_normalized_roi",
+        "rgb_timestamp": "host_after_v4l2_read",
+        "depth_unit": "m",
+        "hls_post_used": true,
+        "candidates": 4,
+        "latency_ms": 377.17081399932795,
+        "timings": {
+          "pre_ms": 78.84804000059376,
+          "pre_submit_ms": 4.410378000102355,
+          "pre_kernel_wait_ms": 60.579375000088476,
+          "pre_tensor_sync_ms": 0.27667900030792225,
+          "pre_preview_copy_ms": 13.581608000095002,
+          "dpu_ms": 156.55326200067066,
+          "post_ms": 34.21861800052284
+        },
+        "detections": [
+          {
+            "bbox": [
+              337.59014892578125,
+              174.5733184814453,
+              476.5805358886719,
+              467.6983337402344
+            ],
+            "score": 0.8801801204681396,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": 0.621,
+            "valid_depth_pixels": 987
+          }
+        ],
+        "preprocessing": {
+          "contrast": 1.0,
+          "brightness": 0,
+          "saturation": 1.0,
+          "eq_mode": 1,
+          "enhance_tensor": false,
+          "config_id": 4
+        }
+      },
+      "display_mode": "enhanced"
+    },
+    {
+      "state": "running",
+      "pid": 35650,
+      "updated": 1791984864.513341,
+      "fps": 6.135407842812154,
+      "processed": 113,
+      "depth_pairs": 111,
+      "message": {
+        "sequence": 253,
+        "rgb_stamp_ns": 1791984863998216787,
+        "depth_stamp_ns": 1791984863986521356,
+        "depth_skew_ms": 11.695431,
+        "depth_registration": "uncalibrated_normalized_roi",
+        "rgb_timestamp": "host_after_v4l2_read",
+        "depth_unit": "m",
+        "hls_post_used": true,
+        "candidates": 5,
+        "latency_ms": 360.2898330000244,
+        "timings": {
+          "pre_ms": 97.60223099965515,
+          "pre_submit_ms": 1.6527529996892554,
+          "pre_kernel_wait_ms": 77.25379200019233,
+          "pre_tensor_sync_ms": 0.25568000000930624,
+          "pre_preview_copy_ms": 18.440005999764253,
+          "dpu_ms": 164.23072799989313,
+          "post_ms": 33.863925999867206
+        },
+        "detections": [
+          {
+            "bbox": [
+              337.59014892578125,
+              176.26803588867188,
+              476.5805358886719,
+              469.3930358886719
+            ],
+            "score": 0.8513612151145935,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": 0.62,
+            "valid_depth_pixels": 985
+          },
+          {
+            "bbox": [
+              621.1238403320312,
+              88.83413696289062,
+              639.0,
+              131.17788696289062
+            ],
+            "score": 0.3114221394062042,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": null,
+            "valid_depth_pixels": 0
+          }
+        ],
+        "preprocessing": {
+          "contrast": 1.0,
+          "brightness": 0,
+          "saturation": 1.0,
+          "eq_mode": 2,
+          "enhance_tensor": true,
+          "config_id": 5
+        }
+      },
+      "display_mode": "enhanced"
+    },
+    {
+      "state": "running",
+      "pid": 35650,
+      "updated": 1791984868.518891,
+      "fps": 6.098293535778392,
+      "processed": 138,
+      "depth_pairs": 134,
+      "message": {
+        "sequence": 307,
+        "rgb_stamp_ns": 1791984868037747023,
+        "depth_stamp_ns": 1791984868016460945,
+        "depth_skew_ms": 21.286078,
+        "depth_registration": "uncalibrated_normalized_roi",
+        "rgb_timestamp": "host_after_v4l2_read",
+        "depth_unit": "m",
+        "hls_post_used": true,
+        "candidates": 5,
+        "latency_ms": 384.3550139999934,
+        "timings": {
+          "pre_ms": 78.40927500001271,
+          "pre_submit_ms": 1.4209330001904164,
+          "pre_kernel_wait_ms": 62.82781499976409,
+          "pre_tensor_sync_ms": 0.34544600021035876,
+          "pre_preview_copy_ms": 13.81508099984785,
+          "dpu_ms": 157.27736099961476,
+          "post_ms": 34.327180000218505
+        },
+        "detections": [
+          {
+            "bbox": [
+              337.59014892578125,
+              174.5733184814453,
+              476.5805358886719,
+              467.6983337402344
+            ],
+            "score": 0.8511792421340942,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": 0.62,
+            "valid_depth_pixels": 988
+          }
+        ],
+        "preprocessing": {
+          "contrast": 1.0,
+          "brightness": 0,
+          "saturation": 1.0,
+          "eq_mode": 0,
+          "enhance_tensor": false,
+          "config_id": 6
+        }
+      },
+      "display_mode": "original"
+    },
+    {
+      "state": "running",
+      "pid": 35650,
+      "updated": 1791984872.6312418,
+      "fps": 6.090643845186127,
+      "processed": 164,
+      "depth_pairs": 160,
+      "message": {
+        "sequence": 370,
+        "rgb_stamp_ns": 1791984872223587732,
+        "depth_stamp_ns": 1791984872199553816,
+        "depth_skew_ms": 24.033916,
+        "depth_registration": "uncalibrated_normalized_roi",
+        "rgb_timestamp": "host_after_v4l2_read",
+        "depth_unit": "m",
+        "hls_post_used": true,
+        "candidates": 4,
+        "latency_ms": 337.3079740003959,
+        "timings": {
+          "pre_ms": 86.90284300064377,
+          "pre_submit_ms": 0.9697610003058799,
+          "pre_kernel_wait_ms": 61.98097299966321,
+          "pre_tensor_sync_ms": 0.29115800043655327,
+          "pre_preview_copy_ms": 23.66095100023813,
+          "dpu_ms": 160.32458700010466,
+          "post_ms": 35.60492199994769
+        },
+        "detections": [
+          {
+            "bbox": [
+              337.59014892578125,
+              174.5733184814453,
+              476.5805358886719,
+              467.6983337402344
+            ],
+            "score": 0.8511792421340942,
+            "class_id": 39,
+            "class_name": "bottle",
+            "depth_m": 0.62,
+            "valid_depth_pixels": 1020
+          }
+        ],
+        "preprocessing": {
+          "contrast": 1.0,
+          "brightness": 0,
+          "saturation": 1.0,
+          "eq_mode": 0,
+          "enhance_tensor": false,
+          "config_id": 6
+        }
+      },
+      "display_mode": "enhanced"
+    }
+  ],
+  "stop": {
+    "state": "stopped",
+    "pid": 35650,
+    "updated": 1791984907.2183788,
+    "cleanup_ok": true,
+    "reason": "SIGINT"
+  }
+}

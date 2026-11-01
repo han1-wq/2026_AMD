@@ -1,0 +1,56 @@
+Script started on 2026-10-23 05:23:40-07:00 [TERM="xterm-256color" TTY="/dev/pts/20" COLUMNS="80" LINES="24"]
+INFO 2026-10-23 12:23:43 eoperate.py:215 {'display_data': False,
+ 'fps': 60,
+ 'robot': {'calibration_dir': None,
+           'cameras': {},
+           'disable_torque_on_disconnect': True,
+           'id': 'R12252801',
+           'max_relative_target': None,
+           'port': '/dev/ttyACM0',
+           'use_degrees': False},
+ 'teleop': {'calibration_dir': None,
+            'id': 'R07252801',
+            'port': '/dev/ttyACM1',
+            'use_degrees': False},
+ 'teleop_time_s': None}
+Try to load calibration params from:  /workspace/calibration/robots/so101_follower/R12252801.json
+INFO 2026-10-23 12:23:43 01_leader.py:83 R07252801 SO101Leader connected.
+Traceback (most recent call last):
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 595, in torque_disabled
+    yield
+  File "/opt/lerobot/src/lerobot/robots/so101_follower/so101_follower.py", line 170, in configure
+    self.bus.write("I_Coefficient", motor, 0)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 1017, in write
+    self._write(addr, length, id_, value, num_retry=num_retry, raise_on_error=True, err_msg=err_msg)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 1041, in _write
+    raise ConnectionError(f"{err_msg} {self.packet_handler.getTxRxResult(comm)}")
+ConnectionError: Failed to write 'I_Coefficient' on id_=1 with '0' after 1 tries. [TxRxResult] There is no status packet!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/venv/bin/lerobot-teleoperate", line 7, in <module>
+    sys.exit(main())
+  File "/opt/lerobot/src/lerobot/scripts/lerobot_teleoperate.py", line 248, in main
+    teleoperate()
+  File "/opt/lerobot/src/lerobot/configs/parser.py", line 233, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/opt/lerobot/src/lerobot/scripts/lerobot_teleoperate.py", line 224, in teleoperate
+    robot.connect()
+  File "/opt/lerobot/src/lerobot/robots/so101_follower/so101_follower.py", line 104, in connect
+    self.configure()
+  File "/opt/lerobot/src/lerobot/robots/so101_follower/so101_follower.py", line 163, in configure
+    with self.bus.torque_disabled():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 597, in torque_disabled
+    self.enable_torque(motors)
+  File "/opt/lerobot/src/lerobot/motors/feetech/feetech.py", line 357, in enable_torque
+    self.write("Torque_Enable", motor, TorqueMode.ENABLED.value, num_retry=num_retry)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 1017, in write
+    self._write(addr, length, id_, value, num_retry=num_retry, raise_on_error=True, err_msg=err_msg)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 1041, in _write
+    raise ConnectionError(f"{err_msg} {self.packet_handler.getTxRxResult(comm)}")
+ConnectionError: Failed to write 'Torque_Enable' on id_=2 with '1' after 1 tries. [TxRxResult] There is no status packet!
+
+Script done on 2026-10-23 05:23:44-07:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,3 @@
+{
+  "link.c": "--- /home/amd/ofdm/eeSDR_ofdm_loopback/build_sw_rs/ofdm_dma/src/link.c\n+++ /home/amd/ofdm/eeSDR_ofdm_loopback/build_sw_rs_ack1s/ofdm_dma/src/link.c\n@@ -4,7 +4,8 @@\n #define UART_RESERVE 8\n #define ACK_COUNT 64\n #define DUP_COUNT 256\n-#define RETRY_MS 100\n+// ACK deadline measured from successful DMA submission, not RF completion.\n+#define RETRY_MS 1000\n #define RETRY_LIMIT 50\n // Independent of RF retries: includes starvation behind a blocked ACK queue.\n #define SUBMIT_TIMEOUT_MS 2000\n"
+}

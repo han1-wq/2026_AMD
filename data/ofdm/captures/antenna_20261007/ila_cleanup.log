@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct  7 19:26:39 2026
+# Process ID: 27342
+# Current directory: /home/amd/ofdm/eeSDR_ofdm_loopback
+# Command line: vivado -mode batch -notrace -source /tmp/ofdm_stop_ila.tcl -log /tmp/ofdm_final_ila2.log -journal /tmp/ofdm_final_ila2.jou
+# Log file: /tmp/ofdm_final_ila2.log
+# Journal file: /tmp/ofdm_final_ila2.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.200 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source /tmp/ofdm_stop_ila.tcl -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0ABC01A
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:26:52
+CAPTURE_FINISHED hw_ila_1
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 19:26:52 2026...

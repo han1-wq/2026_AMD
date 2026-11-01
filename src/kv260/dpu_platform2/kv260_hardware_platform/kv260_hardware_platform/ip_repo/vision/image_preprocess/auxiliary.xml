@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="image_preprocess" xd:componentRef="image_preprocess" xd:initiationInterval="x" xd:clockPeriod="5" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(src)" xd:originalName="src" xd:direction="inout" xd:interfaceRef="m_axi_gmem_in" xd:busTypeRef="aximm" xd:dataWidth="128" xd:bufferDirection="in"/>
+  <xd:arg xd:name="src" xd:originalName="src" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x18" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_in"/>
+  <xd:arg xd:name="*(tensor)" xd:originalName="tensor" xd:direction="inout" xd:interfaceRef="m_axi_gmem_out" xd:busTypeRef="aximm" xd:dataWidth="128" xd:bufferDirection="out"/>
+  <xd:arg xd:name="tensor" xd:originalName="tensor" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x24" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_out"/>
+  <xd:arg xd:name="*(preview)" xd:originalName="preview" xd:direction="inout" xd:interfaceRef="m_axi_gmem_preview" xd:busTypeRef="aximm" xd:dataWidth="128" xd:bufferDirection="out"/>
+  <xd:arg xd:name="preview" xd:originalName="preview" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x30" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_preview"/>
+  <xd:arg xd:name="*(luts)" xd:originalName="luts" xd:direction="inout" xd:interfaceRef="m_axi_gmem_in" xd:busTypeRef="aximm" xd:dataWidth="128" xd:bufferDirection="in"/>
+  <xd:arg xd:name="luts" xd:originalName="luts" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x3C" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_in"/>
+  <xd:arg xd:name="width" xd:originalName="width" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x48" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="height" xd:originalName="height" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x50" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="src_stride" xd:originalName="src_stride" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x58" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="src_capacity" xd:originalName="src_capacity" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x60" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="tensor_capacity" xd:originalName="tensor_capacity" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x68" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="preview_stride" xd:originalName="preview_stride" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x70" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="preview_capacity" xd:originalName="preview_capacity" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x78" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="resized_w" xd:originalName="resized_w" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x80" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="resized_h" xd:originalName="resized_h" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x88" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="pad_x" xd:originalName="pad_x" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x90" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="pad_y" xd:originalName="pad_y" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x98" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_mode" xd:originalName="output_mode" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xA0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="flags" xd:originalName="flags" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xA8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="eq_mode" xd:originalName="eq_mode" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xB0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="saturation_q12" xd:originalName="saturation_q12" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xB8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="frame_id" xd:originalName="frame_id" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xC0" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="config_id" xd:originalName="config_id" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xC8" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(completed_frame_id)" xd:originalName="completed_frame_id" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xD0" xd:statusOffset="0xD4" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(completed_config_id)" xd:originalName="completed_config_id" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xE0" xd:statusOffset="0xE4" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(tensor_bytes)" xd:originalName="tensor_bytes" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0xF0" xd:statusOffset="0xF4" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(preview_bytes)" xd:originalName="preview_bytes" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x100" xd:statusOffset="0x104" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(abi_version)" xd:originalName="abi_version" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x110" xd:statusOffset="0x114" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="5" xd:worst-case="10425286" xd:average-case="2607935"/>
+  <xd:resourceEstimates xd:LUT="27141" xd:FF="17128" xd:BRAM="0" xd:DSP="35"/>
+</xd:acceleratorMap>

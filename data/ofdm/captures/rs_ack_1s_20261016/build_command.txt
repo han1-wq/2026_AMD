@@ -1,0 +1,1 @@
+/tools/Xilinx/Vitis/2022.1/bin/xsct /home/amd/ofdm/eeSDR_ofdm_loopback/firmware/build_dma_sw.tcl /home/amd/ofdm/eeSDR_ofdm_loopback/build_rs_board/TOP.xsa /home/amd/ofdm/eeSDR_ofdm_loopback/build_sw_rs_ack1s 10 137

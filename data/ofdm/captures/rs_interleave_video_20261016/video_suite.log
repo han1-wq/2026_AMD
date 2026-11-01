@@ -1,0 +1,30 @@
+CALIBRATION 320x180_q70 27.4 fps
+RUN 320x180_q70_12.5fps received 150 / 150 dropped 0 late 3 actual_fps 12.47
+RUN 320x180_q70_22fps received 260 / 264 dropped 4 late 7 actual_fps 21.67
+RUN 320x180_q70_30fps received 350 / 360 dropped 10 late 16 actual_fps 29.17
+CALIBRATION 640x360_q50 17.83 fps
+RUN 640x360_q50_8fps received 96 / 96 dropped 0 late 3 actual_fps 8.0
+RUN 640x360_q50_14.5fps received 174 / 174 dropped 0 late 11 actual_fps 14.5
+RUN 640x360_q50_22.5fps received 201 / 270 dropped 69 late 201 actual_fps 16.7
+CALIBRATION 640x360_q70 10.11 fps
+RUN 640x360_q70_4.5fps received 54 / 54 dropped 0 late 0 actual_fps 4.5
+RUN 640x360_q70_8fps received 96 / 96 dropped 0 late 1 actual_fps 8.0
+RUN 640x360_q70_12.5fps received 149 / 150 dropped 1 late 30 actual_fps 12.42
+CALIBRATION 640x360_q85 8.72 fps
+RUN 640x360_q85_4fps received 48 / 48 dropped 0 late 0 actual_fps 4.0
+RUN 640x360_q85_7fps received 84 / 84 dropped 0 late 10 actual_fps 7.0
+RUN 640x360_q85_11fps received 102 / 132 dropped 30 late 102 actual_fps 8.48
+CALIBRATION 960x540_q70 6.31 fps
+RUN 960x540_q70_3fps received 36 / 36 dropped 0 late 0 actual_fps 3.0
+RUN 960x540_q70_5fps received 60 / 60 dropped 0 late 2 actual_fps 5.0
+RUN 960x540_q70_8fps received 75 / 96 dropped 21 late 75 actual_fps 6.17
+CALIBRATION 1280x720_q50 4.92 fps
+RUN 1280x720_q50_2fps received 24 / 24 dropped 0 late 0 actual_fps 2.0
+RUN 1280x720_q50_4fps received 48 / 48 dropped 0 late 3 actual_fps 4.0
+RUN 1280x720_q50_6fps received 59 / 72 dropped 13 late 59 actual_fps 4.87
+CALIBRATION 1280x720_q70 3.31 fps
+RUN 1280x720_q70_1.5fps received 18 / 18 dropped 0 late 0 actual_fps 1.5
+RUN 1280x720_q70_2.5fps received 30 / 30 dropped 0 late 0 actual_fps 2.5
+RUN 1280x720_q70_4fps received 40 / 48 dropped 8 late 40 actual_fps 3.26
+ENDURANCE {"requested_fps": 8.0, "scheduled_frames": 960, "attempted": 960, "successes": 960, "failures": 0, "dropped_source_frames": 0, "unattempted_frames": 0, "late_frames": 6, "on_time_frames": 954, "wall_s": 120.00038291999954, "delivered_fps": 7.99997447208149, "successful_bytes": 42865530, "application_goodput_Bps": 357211.6101377534, "compared_bits": 342924240, "differing_bits": 0, "transfer_s": {"n": 960, "min": 0.07488440399902174, "mean": 0.07679606247612962, "median": 0.0759541995030304, "p90": 0.07701283679780317, "p95": 0.07761206979776034, "p99": 0.0976057215104083, "max": 0.1646411010005977, "stdev": 0.005531223577923499}, "capture_to_decode_s": {"n": 960, "min": 0.07593877999897813, "mean": 0.0782680702451671, "median": 0.07718362799641909, "p90": 0.07884565489803208, "p95": 0.08008084334833256, "p99": 0.10277695069722523, "max": 0.17131854199396912, "stdev": 0.00636434144714352}, "decode_s": {"n": 960, "min": 0.0007257480028783903, "mean": 0.0010041840010217129, "median": 0.0008962300016719382, "p90": 0.0013654672038683204, "p95": 0.001676302652049343, "p99": 0.0022303039523831076, "max": 0.005377903005864937, "stdev": 0.0003547679608399842}, "counter_totals": {"tx_submitted": 88573, "tx_completed": 88573, "tx_rejected": 0, "tx_failed": 0, "rx_accepted": 88562, "rx_dropped": 11, "rx_overflow": 0, "rx_timeout": 0, "link_retries": 11, "link_failures": 0}, "rows_with_counters": 960, "strict_realtime_pass": false, "raw_rf_ber": null}
+SUITE_COMPLETE

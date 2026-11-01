@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "rtl_cases": 6693,
+  "legacy_cases": 204,
+  "compatibility_cases": 22,
+  "mapping_windows": 551888,
+  "phy_scenarios": 14,
+  "phy_rate_cases": 21,
+  "phy_packets": 21,
+  "reference_degradation": [
+    {
+      "case": "rf_dropout_legacy",
+      "observation": "payload mismatch at byte 113; simulation stopped before FCS/DMA"
+    }
+  ],
+  "raw_phy_matrix_passed": false,
+  "supporting_regressions_passed": true,
+  "max_decode_cycles": 12702,
+  "timing": {
+    "rs_packet_encoder": {
+      "wns_ns": 4.551,
+      "whs_ns": 0.141
+    },
+    "rs_packet_decoder": {
+      "wns_ns": 3.515,
+      "whs_ns": 0.147
+    }
+  },
+  "limitations": "OOC timing only; no full-board rebuild/programming, RF BER/PER or over-air qualification"
+}

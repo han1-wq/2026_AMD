@@ -1,0 +1,26 @@
+failed=0 decode_cycles=662
+RS_PACKET_PASS case=190 payload=795 encoded=863 errors=16 expected_ok=1 failed=0 decode_cycles=8809
+RS_PACKET_PASS case=191 payload=663 encoded=715 errors=8 expected_ok=1 failed=0 decode_cycles=6834
+RS_PACKET_PASS case=192 payload=608 encoded=660 errors=8 expected_ok=1 failed=0 decode_cycles=5174
+RS_PACKET_PASS case=193 payload=609 encoded=661 errors=13 expected_ok=1 failed=0 decode_cycles=6785
+RS_PACKET_PASS case=194 payload=987 encoded=1071 errors=27 expected_ok=1 failed=0 decode_cycles=11455
+RS_PACKET_PASS case=195 payload=561 encoded=613 errors=8 expected_ok=1 failed=0 decode_cycles=5416
+RS_PACKET_PASS case=196 payload=847 encoded=915 errors=25 expected_ok=1 failed=0 decode_cycles=9878
+RS_PACKET_PASS case=197 payload=360 encoded=396 errors=8 expected_ok=1 failed=0 decode_cycles=4129
+RS_PACKET_PASS case=198 payload=516 encoded=568 errors=10 expected_ok=1 failed=0 decode_cycles=5828
+RS_PACKET_PASS case=199 payload=568 encoded=620 errors=9 expected_ok=1 failed=0 decode_cycles=6127
+RS_PACKET_PASS case=200 payload=875 encoded=943 errors=17 expected_ok=1 failed=0 decode_cycles=9524
+RS_PACKET_PASS case=201 payload=613 encoded=665 errors=16 expected_ok=1 failed=0 decode_cycles=7050
+RS_PACKET_PASS case=202 payload=886 encoded=954 errors=7 expected_ok=1 failed=0 decode_cycles=7888
+RS_PACKET_PASS case=203 payload=372 encoded=408 errors=0 expected_ok=1 failed=0 decode_cycles=1577
+RS_REGRESSION_PASS cases=204 accepted=186 rejected=18 max_decode_cycles=12668
+
+{
+  "cases": 204,
+  "pass": true,
+  "seed": "0x255239",
+  "correctable_cases": 186,
+  "over_limit_cases": 18,
+  "generator": "013b0d68bd44d11e08a34129e56232243b",
+  "scope": "RTL RS TX/RX + CRC32 + DMA commit/backpressure"
+}

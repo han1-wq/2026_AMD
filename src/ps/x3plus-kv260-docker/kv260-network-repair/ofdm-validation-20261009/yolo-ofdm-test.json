@@ -1,0 +1,12 @@
+{
+  "width": 640,
+  "height": 480,
+  "bytes": 546596,
+  "sha256": "b205e870672a313ef88b6fd23313fd5436a70b9ff585940573d2d37e58f4606b",
+  "stamp_sec": 1791614916,
+  "stamp_nanosec": 761887516,
+  "frame_id": "camera_depth_optical_frame",
+  "topic": "/yolov4/image",
+  "captured_at": 1791614920.5348535,
+  "source": "Astra RGB-D YOLO annotated image"
+}

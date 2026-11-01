@@ -1,0 +1,432 @@
+{
+  "utc": "2026-10-23T10:54:49.726033+00:00",
+  "status": "ZERO_WRITES_AND_STATIC_READBACK_VERIFIED",
+  "writes": [
+    {
+      "motor": "shoulder_pan",
+      "id": 1,
+      "register": "Torque_Enable",
+      "address": 40,
+      "bytes": [
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "shoulder_lift",
+      "id": 2,
+      "register": "Torque_Enable",
+      "address": 40,
+      "bytes": [
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "elbow_flex",
+      "id": 3,
+      "register": "Torque_Enable",
+      "address": 40,
+      "bytes": [
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "wrist_flex",
+      "id": 4,
+      "register": "Torque_Enable",
+      "address": 40,
+      "bytes": [
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "wrist_roll",
+      "id": 5,
+      "register": "Torque_Enable",
+      "address": 40,
+      "bytes": [
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "gripper",
+      "id": 6,
+      "register": "Torque_Enable",
+      "address": 40,
+      "bytes": [
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "shoulder_pan",
+      "id": 1,
+      "register": "Goal_Velocity",
+      "address": 46,
+      "bytes": [
+        0,
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "shoulder_lift",
+      "id": 2,
+      "register": "Goal_Velocity",
+      "address": 46,
+      "bytes": [
+        0,
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "elbow_flex",
+      "id": 3,
+      "register": "Goal_Velocity",
+      "address": 46,
+      "bytes": [
+        0,
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "wrist_flex",
+      "id": 4,
+      "register": "Goal_Velocity",
+      "address": 46,
+      "bytes": [
+        0,
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "wrist_roll",
+      "id": 5,
+      "register": "Goal_Velocity",
+      "address": 46,
+      "bytes": [
+        0,
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    },
+    {
+      "motor": "gripper",
+      "id": 6,
+      "register": "Goal_Velocity",
+      "address": 46,
+      "bytes": [
+        0,
+        0
+      ],
+      "comm": 0,
+      "error": 0,
+      "readback": 0
+    }
+  ],
+  "samples": [
+    {
+      "shoulder_pan": {
+        "Model_Number": 777,
+        "ID": 1,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3375
+      },
+      "shoulder_lift": {
+        "Model_Number": 777,
+        "ID": 2,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 2847
+      },
+      "elbow_flex": {
+        "Model_Number": 777,
+        "ID": 3,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 154
+      },
+      "wrist_flex": {
+        "Model_Number": 777,
+        "ID": 4,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 846
+      },
+      "wrist_roll": {
+        "Model_Number": 777,
+        "ID": 5,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3397
+      },
+      "gripper": {
+        "Model_Number": 777,
+        "ID": 6,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3269
+      }
+    },
+    {
+      "shoulder_pan": {
+        "Model_Number": 777,
+        "ID": 1,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3375
+      },
+      "shoulder_lift": {
+        "Model_Number": 777,
+        "ID": 2,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 2847
+      },
+      "elbow_flex": {
+        "Model_Number": 777,
+        "ID": 3,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 154
+      },
+      "wrist_flex": {
+        "Model_Number": 777,
+        "ID": 4,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 846
+      },
+      "wrist_roll": {
+        "Model_Number": 777,
+        "ID": 5,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3397
+      },
+      "gripper": {
+        "Model_Number": 777,
+        "ID": 6,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3269
+      }
+    },
+    {
+      "shoulder_pan": {
+        "Model_Number": 777,
+        "ID": 1,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3375
+      },
+      "shoulder_lift": {
+        "Model_Number": 777,
+        "ID": 2,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 2847
+      },
+      "elbow_flex": {
+        "Model_Number": 777,
+        "ID": 3,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 154
+      },
+      "wrist_flex": {
+        "Model_Number": 777,
+        "ID": 4,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 846
+      },
+      "wrist_roll": {
+        "Model_Number": 777,
+        "ID": 5,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3397
+      },
+      "gripper": {
+        "Model_Number": 777,
+        "ID": 6,
+        "Operating_Mode": 0,
+        "Torque_Enable": 0,
+        "Goal_Velocity": 0,
+        "Present_Velocity": 0,
+        "Status": 0,
+        "Moving": 0,
+        "Present_Position": 3269
+      }
+    }
+  ],
+  "issues": [],
+  "before": {
+    "shoulder_pan": {
+      "Model_Number": 777,
+      "ID": 1,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Present_Velocity": 0,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Position": 3375
+    },
+    "shoulder_lift": {
+      "Model_Number": 777,
+      "ID": 2,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Present_Velocity": 0,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Position": 2847
+    },
+    "elbow_flex": {
+      "Model_Number": 777,
+      "ID": 3,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Present_Velocity": 0,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Position": 154
+    },
+    "wrist_flex": {
+      "Model_Number": 777,
+      "ID": 4,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Present_Velocity": 0,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Position": 846
+    },
+    "wrist_roll": {
+      "Model_Number": 777,
+      "ID": 5,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Present_Velocity": 0,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Position": 3397
+    },
+    "gripper": {
+      "Model_Number": 777,
+      "ID": 6,
+      "Operating_Mode": 0,
+      "Torque_Enable": 0,
+      "Goal_Velocity": 0,
+      "Present_Velocity": 0,
+      "Status": 0,
+      "Moving": 0,
+      "Present_Position": 3269
+    }
+  },
+  "limitation": "Zero writes to already disabled motors do not establish stopping under load."
+}

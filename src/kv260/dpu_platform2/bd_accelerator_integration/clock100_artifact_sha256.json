@@ -1,0 +1,25 @@
+{
+  "scope": "100 MHz clock/reset migration using preserved IP snapshots; no new synthesis/implementation/bitstream",
+  "backup": "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/backups/clock_100mhz_20261013_201053",
+  "sha256": {
+    "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.xpr": "7e431a8432183b3ccc490b802703cc3d5133f9279aec732ad2052ae7c6d9c5c8",
+    "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd": "b8f1ec6dd6af80b127d452e7a6ab7aec3d41d31096546bdbefbba02a5daa588f",
+    "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/kv260_hardware_platform/hw_handoff/kv260_hardware_platform.hwh": "bb914d455ce5bb560ed7964e23c0dccfe0d9bdc1ed5f9b2aded1c4f56515d866",
+    "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.gen/sources_1/bd/kv260_hardware_platform/synth/kv260_hardware_platform.v": "640c59b5b74561b55ec5b32de56c158b905f94b1926b12e9fa4a0b4d2daab700",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/README.md": "023a8c71064882be852ad7b799e56ba0c7edacb7f98b60f766a2d0ef04c0271c",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo_sha256.json": "483a9dadd16c7cae74c2cf90a5b2b5d0778fb076574ff8a303959fff41429925",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/clock100.console.log": "38305d4fead1c5eda18d38df58f661cd4914c82d1d193499edfd1e21379b3c75",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/clock100.verify.console.log": "fc5942f72274f79fcfdf09d7b0ebb3221a7d6d83526be2e331626969954acc36",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/run_integration.tcl": "3a77feba13400744a41988fcddd562a7b98d78d105faf6dc157382e89c391808",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/integrate_accelerators.tcl": "35d9635880b50cd420843b452b224a3957a89e2c7de43e7efcfb483560345caa",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/connect_vision_100mhz.tcl": "2c900f277eee81ce763ef7d86b50d6687c0cfb03f88d8891d8af97df0ced2cae",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/inspect_clock_ips.tcl": "65269f9f87f2d626b65ff080a5465143cce2c0a43083794908372749e3f8ad7d",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/check_saved_bd.py": "f835ed7122e72c9a919ba66a88a07e98f79d19f5ed1bb1e1d7a60ad89b017851",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/reports/clock100/hwh_check.txt": "4c7694beb24c73b2920f1fed80a56d2033422b99be03204764267f0d50a1629b",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/reports/clock100/run_status.txt": "5656b22b953a5a1374a5ad488b971e33be2b130e85d90c1cfc8ae82fc41c3939",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/reports/clock100/addresses.txt": "0e056ce2905eb69e5798e7f775843590821964e32289d348101222db37b5ca59",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/reports/clock100/structural_check.txt": "ff0a363039be11025b35e9ccbd104b38cb0063c9becc29dde8f80a75ff381211",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/reports/clock100/saved_bd_check.txt": "a838de04f7b529b67e8542d805faa68866b8a448e993878bdc600a7fb04d631e",
+    "/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/reports/verify/ip_status.rpt": "561a65248c3fd61f42bbbbbcfd15d6f75bb74ceef18fdb125badbbd8106fce8f"
+  }
+}

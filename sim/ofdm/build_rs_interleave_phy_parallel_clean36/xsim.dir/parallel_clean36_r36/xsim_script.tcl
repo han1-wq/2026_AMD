@@ -1,0 +1,1 @@
+xsim {parallel_clean36_r36} -testplusarg GAIN=0.75 -testplusarg CFO_HZ=0 -testplusarg INTERFERENCE=0 -testplusarg RF_BURST_START=0 -testplusarg RF_BURST_SAMPLES=0 -testplusarg TIMEOUT_NS=10000000 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -autoloadwcfg -runall

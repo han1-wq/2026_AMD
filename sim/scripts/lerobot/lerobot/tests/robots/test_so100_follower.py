@@ -1,0 +1,1 @@
+../../../../../../src/ps/lerobot-deploy/lerobot/tests/robots/test_so100_follower.py

@@ -1,0 +1,1 @@
+../../../../../../../../../../../../projects/kv260/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0/xgui/DPUCZDX8G_v1_0.tcl

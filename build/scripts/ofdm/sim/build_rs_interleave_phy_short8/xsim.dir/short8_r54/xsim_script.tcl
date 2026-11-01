@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_short8/xsim.dir/short8_r54/xsim_script.tcl

@@ -1,0 +1,7 @@
+scope	type	slack_ns
+global	max	0.157
+global	min	0.010
+image_preprocess	max	0.403
+image_preprocess	min	0.010
+yolo_postprocess	max	0.157
+yolo_postprocess	min	0.010

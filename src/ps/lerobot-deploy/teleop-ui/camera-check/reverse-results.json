@@ -1,0 +1,49 @@
+{
+  "web": {
+    "pid": 32831,
+    "poll": null,
+    "usb": {
+      "1-1.1.4:1.1": {
+        "bAlternateSetting": "0"
+      },
+      "1-1.1.1:1.1": {
+        "bAlternateSetting": "7",
+        "ep_84/wMaxPacketSize": "0400",
+        "ep_84/interval": "125us"
+      }
+    },
+    "returncode": 0,
+    "diagnostics": [
+      "frame=  122 fps= 30 q=-1.0 size=N/A time=00:00:04.03 bitrate=N/A speed=0.993x    ",
+      "frame=  137 fps= 30 q=-1.0 size=N/A time=00:00:04.53 bitrate=N/A speed=0.991x    ",
+      "frame=  153 fps= 30 q=-1.0 size=N/A time=00:00:05.06 bitrate=N/A speed=0.998x    ",
+      "frame=  168 fps= 30 q=-1.0 size=N/A time=00:00:05.56 bitrate=N/A speed=0.997x    ",
+      "frame=  183 fps= 30 q=-1.0 size=N/A time=00:00:06.06 bitrate=N/A speed=0.996x    ",
+      "frame=  198 fps= 30 q=-1.0 size=N/A time=00:00:06.56 bitrate=N/A speed=0.995x    ",
+      "frame=  214 fps= 30 q=-1.0 size=N/A time=00:00:07.09 bitrate=N/A speed=0.999x    ",
+      "frame=  229 fps= 30 q=-1.0 size=N/A time=00:00:07.60 bitrate=N/A speed=0.999x    ",
+      "frame=  241 fps= 30 q=-1.0 Lsize=N/A time=00:00:07.99 bitrate=N/A speed=0.995x    ",
+      "ioctl(VIDIOC_QBUF): Bad file descriptor"
+    ]
+  },
+  "integrated": {
+    "pid": 32833,
+    "poll": 1,
+    "usb": {
+      "1-1.1.4:1.1": {
+        "bAlternateSetting": "0"
+      },
+      "1-1.1.1:1.1": {
+        "bAlternateSetting": "7",
+        "ep_84/wMaxPacketSize": "0400",
+        "ep_84/interval": "125us"
+      }
+    },
+    "returncode": 1,
+    "diagnostics": [
+      "[video4linux2,v4l2 @ 0xaaaab4a00b80] The driver changed the time per frame from 1/5 to 1/30",
+      "[video4linux2,v4l2 @ 0xaaaab4a00b80] ioctl(VIDIOC_STREAMON): No space left on device",
+      "/dev/v4l/by-id/usb-XHH-260202-H_Integrated_Camera-video-index0: No space left on device"
+    ]
+  }
+}

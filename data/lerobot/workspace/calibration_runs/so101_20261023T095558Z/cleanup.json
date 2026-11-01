@@ -1,0 +1,4 @@
+[
+  "shoulder_lift/Goal_Velocity: Failed to write 'Goal_Velocity' on id_=2 with '0' after 3 tries. [RxPacketError] Overload error!",
+  "shoulder_lift/Torque_Enable: Failed to write 'Torque_Enable' on id_=2 with '0' after 3 tries. [RxPacketError] Overload error!"
+]

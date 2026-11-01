@@ -1,0 +1,9 @@
+test_clock_reset_and_no_command_both_stop (test_motion_watchdog.WatchdogTests) ... ok
+test_invalid_command_stops_instead_of_reaching_serial (test_motion_watchdog.WatchdogTests) ... ok
+test_recent_command_passes_then_timeout_sends_zero (test_motion_watchdog.WatchdogTests) ... ok
+test_shutdown_rejects_queued_commands (test_motion_watchdog.WatchdogTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.011s
+
+OK

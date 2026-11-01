@@ -1,0 +1,7 @@
+[
+  "/tools/Xilinx/Vitis/2022.1/bin/xsct",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/firmware/program_dma.tcl",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/build_hw/TOP.bit",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/build_sw/ofdm_dma/Debug/ofdm_dma.elf",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/build_sw/dma_platform/hw/ps7_init.tcl"
+]

@@ -1,0 +1,31 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--pull",
+    "never",
+    "--network",
+    "none",
+    "--cap-drop",
+    "ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--read-only",
+    "--tmpfs",
+    "/tmp:rw,noexec,nosuid,size=64m",
+    "--user",
+    "1000:1000",
+    "--env",
+    "PYTHONDONTWRITEBYTECODE=1",
+    "--mount",
+    "type=bind,src=/home/amd/lerobot-deploy/workspace/calibration_runs/so101_readonly_diagnostic_20261023,dst=/diagnostic,readonly",
+    "--workdir",
+    "/diagnostic",
+    "lerobot-cpu:joyandai-0.4.3",
+    "python",
+    "-u",
+    "/diagnostic/test_read_only.py"
+  ],
+  "exit_code": 0
+}

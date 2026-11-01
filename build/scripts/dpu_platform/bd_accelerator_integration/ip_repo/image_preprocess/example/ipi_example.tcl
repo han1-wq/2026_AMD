@@ -1,0 +1,1 @@
+../../../../../../../src/kv260/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess/example/ipi_example.tcl

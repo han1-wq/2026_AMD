@@ -1,0 +1,157 @@
+{
+  "verified_at": "2026-10-20T07:11:18.961059",
+  "scope": "Host-only source changes and isolated synthetic ROS tests; no deployment or hardware",
+  "jobs": [
+    {
+      "test": "regression",
+      "container": "x3plus-bookmarks-regression-20261020-070513",
+      "exit_code": 0,
+      "network": "none",
+      "memory_bytes": 1073741824,
+      "cpus": 2,
+      "privileged": false,
+      "devices": []
+    },
+    {
+      "test": "integration",
+      "container": "x3plus-bookmarks-integration-20261020-070513",
+      "exit_code": 0,
+      "network": "none",
+      "memory_bytes": 1073741824,
+      "cpus": 2,
+      "privileged": false,
+      "devices": []
+    },
+    {
+      "test": "bookmark_regression",
+      "container": "x3plus-bookmarks-bookmark-regression-20261020-070513",
+      "exit_code": 0,
+      "network": "none",
+      "memory_bytes": 1073741824,
+      "cpus": 2,
+      "privileged": false,
+      "devices": []
+    },
+    {
+      "test": "quality",
+      "container": "x3plus-bookmarks-quality-20261020-070513",
+      "exit_code": 0,
+      "network": "none",
+      "memory_bytes": 1073741824,
+      "cpus": 2,
+      "privileged": false,
+      "devices": []
+    }
+  ],
+  "regression-results.json": {
+    "passed": true,
+    "recorded_stages": 23
+  },
+  "bookmark-results.json": {
+    "passed": true,
+    "recorded_stages": 8
+  },
+  "reversed_heading": {
+    "estimated_pose": [
+      1.9764632469774126,
+      0.9799878611480733,
+      -2.5427793654590927
+    ],
+    "guard": {
+      "ready": false,
+      "stamp": 1792505132.21549,
+      "reason": "scan_ray_obstructed",
+      "scan_match": 0.7666666666666667,
+      "ray_conflict": 0.16666666666666666
+    },
+    "truth_pose": [
+      2.0,
+      1.0,
+      0.6
+    ],
+    "phase": "reversed_heading_diagnostic",
+    "position_error_m": 0.03089440797741671,
+    "yaw_error_rad": 3.140405941720494
+  },
+  "integration_endpoints": {
+    "first_endpoint": {
+      "position_error_m": 0.01997885437651996,
+      "yaw_error_rad": 0.08246085934721957
+    },
+    "heading_change_endpoint": {
+      "position_error_m": 0.10504766742476478,
+      "yaw_error_rad": 0.08768535407161338
+    }
+  },
+  "current_tested_source_sha256": {
+    "context/src/yahboomcar_nav/CMakeLists.txt": "c20f375d637578e41cf91365b40accb7bb708ca40f06037c9024904de30e8869",
+    "context/src/yahboomcar_nav/maps/carto_map.sh": "72219e86989d65b9bac284e4a2fe994f2806ec1d79ff46a6985e54f41f36d476",
+    "context/src/yahboomcar_nav/maps/map.sh": "943e9a232e36573a1302df00278b0f57eff53a74c1fa6b7fd0337ab2e39b226d",
+    "context/src/yahboomcar_nav/package.xml": "0642914db6efabf2bb6ebca1b19a7d0c95f93cb43cab3f9d890f10886a0a6acb",
+    "context/src/yahboomcar_nav/rviz/rplidar.rviz": "e8afb6649aae71010ced2ec1d799d0842e20886d61f87408a09a772465f451a8",
+    "context/src/yahboomcar_nav/rviz/rrt_map.rviz": "3a820582ff172bb955b692cfe6e5c0db15242ff0db8976efcc9db5fa42f7f001",
+    "context/src/yahboomcar_nav/rviz/rtabmapping.rviz": "c64e37ff058626402ce6a9650e28d814bf86cd5860f1eeff3def94cf5c79f986",
+    "context/src/yahboomcar_nav/rviz/rtabmapping_nav.rviz": "00f8cb98f323fadad9a6ffa96ebcd8554c7c8de7cda6a160c639694a5ad49bc6",
+    "context/src/yahboomcar_nav/rviz/vision_mapping.rviz": "d7fdf25d8cefc7eb7c976410d990b1a942ded7f09c549a02246bc8a512f5c638",
+    "context/src/yahboomcar_nav/rviz/yahboomcar_cartograpther.rviz": "33b194e7c491a28144864f9c898b7c46c80b35ed607f9614d7ea3e8440eaf1c9",
+    "context/src/yahboomcar_nav/rviz/yahboomcar_map.rviz": "5a636ab02443b5cd191ccfd396ef3d0062cc40cd3686ed9b0f72ba17e0055b5a",
+    "context/src/yahboomcar_nav/rviz/yahboomcar_navigate.rviz": "31492b789460eea3a357a59b6c9736d877330abbd6c06b189785b57762c1f705",
+    "context/src/yahboomcar_nav/scripts/copy_carto.sh": "c04fabaa67105120dcefafb00852bfe2cc5f208d3be0740dc4b51d144bc561ba",
+    "context/src/yahboomcar_nav/scripts/navigation_bookmarks.py": "746f8a7a94a1ce50fe23c9ba08ebb41d1eda3a0f557024314dd06aa38854db5c",
+    "context/src/yahboomcar_nav/scripts/navigation_guard.py": "8080b1ba732322f9c2ab3667c0a9577502133680ffadce44ef8908c426801a68",
+    "context/src/yahboomcar_nav/scripts/navigation_quality.py": "6af58c0292cdf7b9c32e83edfd5022b6d759db5e092f6a135549cdf2a8bddeee",
+    "context/src/yahboomcar_nav/scripts/scan_dilute.py": "4d92a8ad90ae9a4292f4ba9da4cc9ea7f0913124c908de2b84e50b17a666b9a5",
+    "context/src/yahboomcar_nav/scripts/send_mark.py": "c5956c5f907eccc7832700c9575671099a338800f9f516faababc5f49e1c16de",
+    "navigation-fix/bookmark_regression.py": "771c6f62dad45ee6c5ac9870190546ae2881bc8ef8d05933d11d33eb2ba10453",
+    "navigation-fix/deploy-reviewed.py": "12992a4c3179cf44e8b6815e3b40f9d0c9940644bd53dac16473e96e741306c8",
+    "navigation-fix/integration.py": "c935ffa8b72c92f0b169099c98d20249ac340f1bc261a0f8e3af656b5aeb32f1",
+    "navigation-fix/regression.py": "73721d3db43764a3f43941f5cbfc00d7352389dedfbb1e28980f3d20c60b82bd",
+    "navigation-fix/run-isolated-validation.py": "eec162d5f4140bd1c6fdd96d0336b0e0b6afa9c97eb7a44210086f5f9b1e8481",
+    "navigation-fix/run-regression.sh": "85807de6ed3d095093cfe4f38d718eaa4e411f2f51af4483b90ad70387fdf3ca",
+    "navigation-fix/simulate_amcl.py": "825b5c0e177fd3eede23cb0fff4c9641ba1a708c10eb072e9d873ab4077140fd",
+    "navigation-fix/simulation_environment.py": "ad4b2156dfa73594522d4514d666d19f52ca080ef22217de04ffa79da3db9e14",
+    "navigation-fix/sync-runtime.py": "78692a3393ccc90b55d3c7cd69ecf7694c57f7510cd0362e9d5e7c5cbd1353bc",
+    "navigation-fix/test_motion_watchdog.py": "affdbd7150bd14c4429a8b80a456d301b8f58d3f02eed55136257dd48f6a5683",
+    "navigation-fix/test_navigation_quality.py": "bc9d23a065a7fd11198364cbad81bcadbcf5d38769522b7a78066a10e12ee4ea",
+    "navigation-fix/test_navigation_start.py": "1d5792fc0d944708428c5fe356b0f652e04b6d582dc7bf2c8c3811947cee792d",
+    "navigation-fix/test_runtime_sync.py": "849cfb6c35233a9bc084de142187d5fb250802d9da6cf78bc32ea1ee17ff1406",
+    "pc-console/bookmark-ros.py": "db4b98dc60c6c77d1531c691d266bd22719d4ff36f89cbf84bb414bd70ec9730",
+    "pc-console/console_backend.py": "282542c14ed65ef65c01adaa7b1c7a2b15e49aeaf70ceeb14793badaf57801cb",
+    "pc-console/pc-console.py": "c74610241625586f9d7e93f5667e4c72c6901e0455bbcecbc1ebf0707433b9de",
+    "pc-console/probe-ros.py": "317fa2a806006b50c9ff25d4969a6dc55fa8c0a123e9b4f0d395039af1f5c9f4",
+    "pc-console/probe-ros2.py": "8d0b2b7bfc1bdcc28812214cc8cbf18593bb6571df251197516415c03abde9c8",
+    "pc-console/ros-status.py": "717f958d9b4ac8a3def7939e8427f4ab3d98c329686076dd2988a60ba49350c9",
+    "pc-console/ros2-udp-profile.xml": "4336d1a43b6aba890947414b5dbf64f86d280bc0b38a8a4d37741adce96d838c",
+    "pc-console/start-pc-console.sh": "19e4596c1581515023400bae7d0f55adfc20a51467943b16a143f821b37a99d5",
+    "pc-console/test_bookmarks.py": "df44730d5d4bdde69e20453d7352fe6c8b6d78a0973e46893d5e3cfafed1707a",
+    "pc-console/test_console.py": "2882413abb63fc5a48295209142cc2056f6566addf5c71ee4488f63ee32ad3dd",
+    "remote-rviz/check-slam.py": "c13e780dc6fb8510482ff262a0234ffbf3126770e16a52736185512d1a9a5e80",
+    "remote-rviz/navigation.rviz": "a22792ec19fbba3fdd4f9ecdf9e792d317865e68300209192368f3ab59c0a2ba",
+    "remote-rviz/network-preflight.py": "be6831e17e45ef09e75db37fd8d52062ae4dd7cc6a4e879034f6ee158a70f763",
+    "remote-rviz/slam.rviz": "14f1ba9e9b2b78e2b7348ba517542030fceebdd6812a758107389ac5ee92678c",
+    "remote-rviz/start-pc-rviz.sh": "4cf18001e94dcaa0d690b2310782d5ca4c5a6370bee9c557d52fbb93385deeac",
+    "remote-rviz/test_viewer_config.py": "991acac55267ef19957e26a9eb7cba28be6f7adf56a598aa9537801e265ef063"
+  },
+  "documentation_updated_after_snapshot": [
+    "pc-console/README.md",
+    "remote-rviz/README.md"
+  ],
+  "catkin_build": {
+    "exit_code": 0,
+    "container": "x3plus-bookmarks-catkin-check-20261020-070513"
+  },
+  "host_tests": {
+    "host": {
+      "count": 36,
+      "exit_code": 0
+    },
+    "viewer": {
+      "count": 6,
+      "exit_code": 0
+    },
+    "start": {
+      "count": 10,
+      "exit_code": 0
+    }
+  }
+}

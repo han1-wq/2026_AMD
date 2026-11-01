@@ -1,0 +1,1 @@
+../../../../../../../src/ps/x3plus-kv260-docker/context/src/astra_camera/scripts/test_open_close_stream.py

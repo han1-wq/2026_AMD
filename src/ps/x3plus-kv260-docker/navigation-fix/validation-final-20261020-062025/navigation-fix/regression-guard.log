@@ -1,0 +1,3 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+[WARN] [1792502430.415189]: Navigation goal refused: map_changed_initial_pose_required
+[WARN] [1792502436.826281]: Navigation goal refused: high_pose_uncertainty

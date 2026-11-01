@@ -1,0 +1,27 @@
+{
+  "directory": "/home/amd/x3plus-kv260-docker/navigation-fix/validation-bookmarks-20261020-092956",
+  "image": "sha256:dbd61011ab231b6c6eeb9634183b9df81f106d39789e3a13d3c244e35c3f03f5",
+  "jobs": [
+    {
+      "test": "regression",
+      "container": "x3plus-bookmarks-regression-20261020-092956",
+      "id": "241e747268558a54f85622b12523f2c2ceeaf9789bb79fbf9370f7367a1514f5"
+    },
+    {
+      "test": "integration",
+      "container": "x3plus-bookmarks-integration-20261020-092956",
+      "id": "05e5775dde1fd86080a363fa393adc5eb6f58c03606af244ae808f03560e61d5"
+    },
+    {
+      "test": "bookmark_regression",
+      "container": "x3plus-bookmarks-bookmark-regression-20261020-092956",
+      "id": "dcbcbd239af199cbd666445b1777cd5cda60910926917ad37bdd471ecca14d7a"
+    },
+    {
+      "test": "quality",
+      "container": "x3plus-bookmarks-quality-20261020-092956",
+      "id": "28bd3b96b04101c523f21fc0cb2f421b02fade7fc1b0d96119d7c9073fbdb041"
+    }
+  ],
+  "scope": "Network none; no host ROS, hardware, host devices or privileged mode; synthetic sensor data"
+}

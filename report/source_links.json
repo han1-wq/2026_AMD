@@ -1,0 +1,202 @@
+[
+  {
+    "path": "src/ofdm/eeSDR_ofdm_loopback/build_hw",
+    "target": "../../../build/projects/ofdm/build_hw",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ofdm/eeSDR_ofdm_loopback/build_sw",
+    "target": "../../../build/projects/ofdm/build_sw",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ofdm/eeSDR_ofdm_loopback/sim",
+    "target": "../../../sim/ofdm",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "sim/ofdm/captures",
+    "target": "../../data/ofdm/captures",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/kv260/HLS_IP/timing_extreme_20261014",
+    "target": "../../../build/hls/timing_extreme_20261014",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/kv260/HLS_IP/timing_margin_20261013",
+    "target": "../../../build/hls/timing_margin_20261013",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/kv260/HLS_IP/image_preprocess/build",
+    "target": "../../../../build/hls/image_preprocess",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/kv260/HLS_IP/yolo_postprocess/build",
+    "target": "../../../../build/hls/yolo_postprocess",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/kv260/dpu_platform2/kv260_vitis_platform/dpu_trd_system_hw_link",
+    "target": "../../../../build/projects/kv260/dpu_trd_system_hw_link",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/kv260/dpu_platform2/bd_accelerator_integration/check_project",
+    "target": "../../../../build/projects/kv260/bd_check_project",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_B3136/overlay",
+    "target": "../../../board/artifacts/kv260_B3136/overlay",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_B3136/compiled",
+    "target": "../../../data/models/kv260_B3136/compiled",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_B3136/logs",
+    "target": "../../../board/results/imported/kv260_B3136",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/workspace",
+    "target": "../../../data/lerobot/workspace",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/artifacts",
+    "target": "../../../build/environment/lerobot",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/logs",
+    "target": "../../../board/results/imported/lerobot",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/host/roarm-vision-console/inspection",
+    "target": "../../../board/results/imported/roarm_console",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/host/roarm-vision-console/skills",
+    "target": "../../../skill/imported/roarm_console",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_ofa_yolo_deploy/overlay",
+    "target": "../../../board/artifacts/ofa_legacy/overlay",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_ofa_yolo_deploy/compiled",
+    "target": "../../../data/models/ofa_legacy/compiled",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_ofa_yolo_deploy/minicpm_results",
+    "target": "../../../board/results/imported/ofa_legacy/minicpm",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_ofa_yolo_deploy/smollm2_results",
+    "target": "../../../board/results/imported/ofa_legacy/smollm2",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_yolo_ros/kv260_ofa_yolo_deploy/overlay",
+    "target": "../../../../board/artifacts/ros_legacy/kv260_ofa_yolo_deploy/overlay",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_yolo_ros/kv260_ofa_yolo_deploy/compiled",
+    "target": "../../../../data/models/ros_legacy/kv260_ofa_yolo_deploy/compiled",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_yolo_ros/kv260_yolov4_deploy/overlay",
+    "target": "../../../../board/artifacts/ros_legacy/kv260_yolov4_deploy/overlay",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/kv260_yolo_ros/kv260_yolov4_deploy/compiled",
+    "target": "../../../../data/models/ros_legacy/kv260_yolov4_deploy/compiled",
+    "reason": "classification_directory"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/docs/source/contributing.md",
+    "target": "../../CONTRIBUTING.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/act/README.md",
+    "target": "../../../../docs/source/policy_act_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/diffusion/README.md",
+    "target": "../../../../docs/source/policy_diffusion_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/groot/README.md",
+    "target": "../../../../docs/source/policy_groot_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/smolvla/README.md",
+    "target": "../../../../docs/source/policy_smolvla_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/tdmpc/README.md",
+    "target": "../../../../docs/source/policy_tdmpc_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/vqbet/README.md",
+    "target": "../../../../docs/source/policy_vqbet_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/policies/wall_x/README.md",
+    "target": "../../../../docs/source/policy_walloss_README.md",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/robots/earthrover_mini_plus/earthrover_mini_plus.mdx",
+    "target": "../../../../docs/source/earthrover_mini_plus.mdx",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/robots/hope_jr/hope_jr.mdx",
+    "target": "../../../../docs/source/hope_jr.mdx",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/robots/koch_follower/koch.mdx",
+    "target": "../../../../docs/source/koch.mdx",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/robots/lekiwi/lekiwi.mdx",
+    "target": "../../../../docs/source/lekiwi.mdx",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/robots/so100_follower/so100.mdx",
+    "target": "../../../../docs/source/so100.mdx",
+    "reason": "translated_source_symlink"
+  },
+  {
+    "path": "src/ps/lerobot-deploy/lerobot/src/lerobot/robots/so101_follower/so101.mdx",
+    "target": "../../../../docs/source/so101.mdx",
+    "reason": "translated_source_symlink"
+  }
+]

@@ -1,0 +1,3 @@
+BEFORE_LOAD {"MemAvailable": 1943124, "CmaTotal": 1024000, "CmaFree": 171496, "VmHWM": 114628, "VmRSS": 114628}
+HARDWARE_READY {"model_target": "DPUCZDX8G_ISA1_B3136", "input_fix": 6, "output_fix": {"26": 2, "13": 2, "52": 2}, "workers": 1, "slots": 3, "application_cma_bytes": 5224400, "memory_kib": {"MemAvailable": 1715532, "CmaTotal": 1024000, "CmaFree": 51916, "VmHWM": 391488, "VmRSS": 268220}}
+SELF_TEST_OK {"checks": ["pre_dma_rgb_padding_quantization", "post_decode_nms_vs_cpu", "overflow_whole_frame_fallback", "dpu_execution"], "dpu_ms": 164.03098600039812, "detections": 0, "memory_kib": {"MemAvailable": 1715540, "CmaTotal": 1024000, "CmaFree": 51916, "VmHWM": 391488, "VmRSS": 268220}}

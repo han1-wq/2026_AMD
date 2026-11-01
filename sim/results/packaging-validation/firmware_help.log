@@ -1,0 +1,2 @@
+Usage: bash build_ofdm_firmware.sh NEW_ABSOLUTE_WORKSPACE [board_id=10] [subnet=1]
+No hardware programming is performed.

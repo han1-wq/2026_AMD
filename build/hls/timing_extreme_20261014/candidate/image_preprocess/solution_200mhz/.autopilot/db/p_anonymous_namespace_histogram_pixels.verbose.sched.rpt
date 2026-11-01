@@ -1,0 +1,499 @@
+
+
+================================================================
+== Vitis HLS Report for 'p_anonymous_namespace_histogram_pixels'
+================================================================
+* Date:           Wed Oct 14 00:09:44 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        image_preprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.999 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
+    +---------+---------+----------+-----------+--------+---------+---------+
+    |   346129|  4147217|  1.731 ms|  20.736 ms|  346129|  4147217|       no|
+    +---------+---------+----------+-----------+--------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------------------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |       Trip       |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |       Count      | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------------------+----------+
+        |- VITIS_LOOP_178_1  |   346127|  4147215|        18|          2|          2|  173056 ~ 2073600|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------------------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 18
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 18, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.32>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%reuse_addr_reg = alloca i32 1"   --->   Operation 21 'alloca' 'reuse_addr_reg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%reuse_reg = alloca i32 1"   --->   Operation 22 'alloca' 'reuse_reg' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%i = alloca i32 1"   --->   Operation 23 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.83ns)   --->   "%p_read23 = read i22 @_ssdm_op_Read.ap_auto.i22, i22 %p_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 24 'read' 'p_read23' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%saturation_read = read i14 @_ssdm_op_Read.ap_auto.i14, i14 %saturation" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 25 'read' 'saturation_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%flags_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %flags" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 26 'read' 'flags_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%empty = trunc i2 %flags_read" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 27 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %hist, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 28 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_2, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 29 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_1, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 30 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %color_0, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 31 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %pixels, void @empty_16, i32 0, i32 0, void @empty_8, i32 0, i32 0, void @empty_8, void @empty_8, void @empty_8, i32 0, i32 0, i32 0, i32 0, void @empty_8, void @empty_8, i32 4294967295, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i2.i32, i2 %flags_read, i32 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 33 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln1540 = zext i14 %saturation_read"   --->   Operation 34 'zext' 'zext_ln1540' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.42ns)   --->   "%store_ln178 = store i22 0, i22 %i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 35 'store' 'store_ln178' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln178 = br void %for.body.i.i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 38 'br' 'br_ln178' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%i_4 = load i22 %i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 39 'load' 'i_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (1.06ns)   --->   "%icmp_ln178 = icmp_eq  i22 %i_4, i22 %p_read23" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 40 'icmp' 'icmp_ln178' <Predicate = true> <Delay = 1.06> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.91ns)   --->   "%i_5 = add i22 %i_4, i22 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 41 'add' 'i_5' <Predicate = true> <Delay = 0.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%br_ln178 = br i1 %icmp_ln178, void %for.body.i.split.i_ifconv, void %(anonymous namespace)histogram_pixels.exit" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 42 'br' 'br_ln178' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.42ns)   --->   "%store_ln178 = store i22 %i_5, i22 %i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 43 'store' 'store_ln178' <Predicate = (!icmp_ln178)> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 2.23>
+ST_2 : Operation 44 [1/1] (1.55ns)   --->   "%p_Val2_s = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %pixels" [/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 44 'read' 'p_Val2_s' <Predicate = (!icmp_ln178)> <Delay = 1.55> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 64> <FIFO>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%v = trunc i24 %p_Val2_s"   --->   Operation 45 'trunc' 'v' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%v_3 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %p_Val2_s, i32 8, i32 15"   --->   Operation 46 'partselect' 'v_3' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%v_4 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %p_Val2_s, i32 16, i32 23"   --->   Operation 47 'partselect' 'v_4' <Predicate = (!icmp_ln178)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%zext_ln587_4 = zext i8 %v_3"   --->   Operation 48 'zext' 'zext_ln587_4' <Predicate = (!icmp_ln178 & empty)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln587_5 = zext i8 %v_4"   --->   Operation 49 'zext' 'zext_ln587_5' <Predicate = (!icmp_ln178 & empty)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%color_1_addr = getelementptr i8 %color_1, i64 0, i64 %zext_ln587_4"   --->   Operation 50 'getelementptr' 'color_1_addr' <Predicate = (!icmp_ln178 & empty)> <Delay = 0.00>
+ST_2 : Operation 51 [2/2] (0.67ns)   --->   "%color_1_load = load i8 %color_1_addr"   --->   Operation 51 'load' 'color_1_load' <Predicate = (!icmp_ln178 & empty)> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%color_2_addr = getelementptr i8 %color_2, i64 0, i64 %zext_ln587_5"   --->   Operation 52 'getelementptr' 'color_2_addr' <Predicate = (!icmp_ln178 & empty)> <Delay = 0.00>
+ST_2 : Operation 53 [2/2] (0.67ns)   --->   "%color_2_load = load i8 %color_2_addr"   --->   Operation 53 'load' 'color_2_load' <Predicate = (!icmp_ln178 & empty)> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+
+State 3 <SV = 2> <Delay = 2.06>
+ST_3 : Operation 54 [1/2] (0.67ns)   --->   "%color_1_load = load i8 %color_1_addr"   --->   Operation 54 'load' 'color_1_load' <Predicate = (empty)> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_3 : Operation 55 [1/2] (0.67ns)   --->   "%color_2_load = load i8 %color_2_addr"   --->   Operation 55 'load' 'color_2_load' <Predicate = (empty)> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_3 : Operation 56 [1/1] (0.39ns)   --->   "%g = select i1 %empty, i8 %color_1_load, i8 %v_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 56 'select' 'g' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 57 [1/1] (0.39ns)   --->   "%r = select i1 %empty, i8 %color_2_load, i8 %v_4" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 57 'select' 'r' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (0.00ns)   --->   "%zext_ln260 = zext i8 %g"   --->   Operation 58 'zext' 'zext_ln260' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 59 [3/3] (0.99ns) (grouped into DSP with root node add_ln79)   --->   "%tmp3_i = mul i16 %zext_ln260, i16 150"   --->   Operation 59 'mul' 'tmp3_i' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 0.99>
+ST_4 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln587 = zext i8 %v"   --->   Operation 60 'zext' 'zext_ln587' <Predicate = (empty)> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%color_0_addr = getelementptr i8 %color_0, i64 0, i64 %zext_ln587"   --->   Operation 61 'getelementptr' 'color_0_addr' <Predicate = (empty)> <Delay = 0.00>
+ST_4 : Operation 62 [2/2] (0.67ns)   --->   "%color_0_load = load i8 %color_0_addr"   --->   Operation 62 'load' 'color_0_load' <Predicate = (empty)> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln260_3 = zext i8 %r"   --->   Operation 63 'zext' 'zext_ln260_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [2/3] (0.99ns) (grouped into DSP with root node add_ln79)   --->   "%tmp3_i = mul i16 %zext_ln260, i16 150"   --->   Operation 64 'mul' 'tmp3_i' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 65 [3/3] (0.99ns) (grouped into DSP with root node add_ln79_1)   --->   "%tmp6_i = mul i15 %zext_ln260_3, i15 76"   --->   Operation 65 'mul' 'tmp6_i' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 3.99>
+ST_5 : Operation 66 [1/2] (0.67ns)   --->   "%color_0_load = load i8 %color_0_addr"   --->   Operation 66 'load' 'color_0_load' <Predicate = (empty)> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_5 : Operation 67 [1/1] (0.39ns)   --->   "%b = select i1 %empty, i8 %color_0_load, i8 %v" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 67 'select' 'b' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 68 [1/1] (0.00ns)   --->   "%zext_ln260_1 = zext i8 %b"   --->   Operation 68 'zext' 'zext_ln260_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 69 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i8.i5, i8 %b, i5 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 69 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%zext_ln78 = zext i13 %shl_ln" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 70 'zext' 'zext_ln78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%shl_ln78_1 = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i8.i1, i8 %b, i1 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 71 'bitconcatenate' 'shl_ln78_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln78_1 = zext i9 %shl_ln78_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 72 'zext' 'zext_ln78_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 73 [1/3] (0.00ns) (grouped into DSP with root node add_ln79)   --->   "%tmp3_i = mul i16 %zext_ln260, i16 150"   --->   Operation 73 'mul' 'tmp3_i' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 74 [1/1] (0.00ns) (grouped into DSP with root node add_ln79)   --->   "%tmp3_cast_i = zext i16 %tmp3_i"   --->   Operation 74 'zext' 'tmp3_cast_i' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 75 [2/3] (0.99ns) (grouped into DSP with root node add_ln79_1)   --->   "%tmp6_i = mul i15 %zext_ln260_3, i15 76"   --->   Operation 75 'mul' 'tmp6_i' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 76 [1/1] (0.77ns)   --->   "%sub_ln77 = sub i9 128, i9 %zext_ln260_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:77]   --->   Operation 76 'sub' 'sub_ln77' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 77 [1/1] (0.00ns)   --->   "%sext_ln79 = sext i9 %sub_ln77" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 77 'sext' 'sext_ln79' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 78 [1/1] (0.77ns)   --->   "%sub_ln79 = sub i11 %sext_ln79, i11 %zext_ln78_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 78 'sub' 'sub_ln79' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%sext_ln78 = sext i11 %sub_ln79" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 79 'sext' 'sext_ln78' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 80 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln78 = add i15 %zext_ln78, i15 %sext_ln78" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 80 'add' 'add_ln78' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 81 [1/1] (0.73ns) (root node of TernaryAdder)   --->   "%add_ln79_2 = add i15 %add_ln78, i15 %zext_ln260_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 81 'add' 'add_ln79_2' <Predicate = true> <Delay = 0.73> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.36> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 82 [1/1] (0.00ns)   --->   "%sext_ln79_3 = sext i15 %add_ln79_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 82 'sext' 'sext_ln79_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 83 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79 = add i17 %sext_ln79_3, i17 %tmp3_cast_i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 83 'add' 'add_ln79' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 6 <SV = 5> <Delay = 1.29>
+ST_6 : Operation 84 [1/3] (0.00ns) (grouped into DSP with root node add_ln79_1)   --->   "%tmp6_i = mul i15 %zext_ln260_3, i15 76"   --->   Operation 84 'mul' 'tmp6_i' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 85 [1/1] (0.00ns) (grouped into DSP with root node add_ln79_1)   --->   "%zext_ln77 = zext i15 %tmp6_i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:77]   --->   Operation 85 'zext' 'zext_ln77' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 86 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79 = add i17 %sext_ln79_3, i17 %tmp3_cast_i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 86 'add' 'add_ln79' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%sext_ln79_1 = sext i17 %add_ln79" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 87 'sext' 'sext_ln79_1' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 88 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79_1 = add i18 %sext_ln79_1, i18 %zext_ln77" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 88 'add' 'add_ln79_1' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 7 <SV = 6> <Delay = 2.42>
+ST_7 : Operation 89 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79_1 = add i18 %sext_ln79_1, i18 %zext_ln77" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 89 'add' 'add_ln79_1' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 90 [1/1] (0.00ns)   --->   "%tmp = partselect i10 @_ssdm_op_PartSelect.i10.i18.i32.i32, i18 %add_ln79_1, i32 8, i32 17" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 90 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln101 = zext i8 %b" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:101]   --->   Operation 91 'zext' 'zext_ln101' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_7 : Operation 92 [1/1] (0.78ns)   --->   "%delta = sub i10 %zext_ln101, i10 %tmp"   --->   Operation 92 'sub' 'delta' <Predicate = (tmp_2)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%sext_ln1540 = sext i10 %delta"   --->   Operation 93 'sext' 'sext_ln1540' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_7 : Operation 94 [3/3] (0.99ns) (grouped into DSP with root node add_ln105)   --->   "%ret_V = mul i24 %zext_ln1540, i24 %sext_ln1540"   --->   Operation 94 'mul' 'ret_V' <Predicate = (tmp_2)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln101_1 = zext i8 %g" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:101]   --->   Operation 95 'zext' 'zext_ln101_1' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_7 : Operation 96 [1/1] (0.78ns)   --->   "%delta_1 = sub i10 %zext_ln101_1, i10 %tmp"   --->   Operation 96 'sub' 'delta_1' <Predicate = (tmp_2)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 97 [1/1] (0.00ns)   --->   "%sext_ln1540_3 = sext i10 %delta_1"   --->   Operation 97 'sext' 'sext_ln1540_3' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_7 : Operation 98 [3/3] (0.99ns) (grouped into DSP with root node add_ln105_1)   --->   "%ret_V_7 = mul i24 %zext_ln1540, i24 %sext_ln1540_3"   --->   Operation 98 'mul' 'ret_V_7' <Predicate = (tmp_2)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 99 [1/1] (0.00ns)   --->   "%zext_ln101_2 = zext i8 %r" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:101]   --->   Operation 99 'zext' 'zext_ln101_2' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_7 : Operation 100 [1/1] (0.78ns)   --->   "%delta_2 = sub i10 %zext_ln101_2, i10 %tmp"   --->   Operation 100 'sub' 'delta_2' <Predicate = (tmp_2)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 101 [1/1] (0.00ns)   --->   "%sext_ln1540_4 = sext i10 %delta_2"   --->   Operation 101 'sext' 'sext_ln1540_4' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_7 : Operation 102 [3/3] (0.99ns) (grouped into DSP with root node add_ln105_2)   --->   "%ret_V_8 = mul i24 %zext_ln1540, i24 %sext_ln1540_4"   --->   Operation 102 'mul' 'ret_V_8' <Predicate = (tmp_2)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 8 <SV = 7> <Delay = 0.99>
+ST_8 : Operation 103 [2/3] (0.99ns) (grouped into DSP with root node add_ln105)   --->   "%ret_V = mul i24 %zext_ln1540, i24 %sext_ln1540"   --->   Operation 103 'mul' 'ret_V' <Predicate = (tmp_2)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 104 [2/3] (0.99ns) (grouped into DSP with root node add_ln105_1)   --->   "%ret_V_7 = mul i24 %zext_ln1540, i24 %sext_ln1540_3"   --->   Operation 104 'mul' 'ret_V_7' <Predicate = (tmp_2)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 105 [2/3] (0.99ns) (grouped into DSP with root node add_ln105_2)   --->   "%ret_V_8 = mul i24 %zext_ln1540, i24 %sext_ln1540_4"   --->   Operation 105 'mul' 'ret_V_8' <Predicate = (tmp_2)> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 9 <SV = 8> <Delay = 0.64>
+ST_9 : Operation 106 [1/1] (0.00ns)   --->   "%shl_i24_i = bitconcatenate i22 @_ssdm_op_BitConcatenate.i22.i10.i12, i10 %tmp, i12 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 106 'bitconcatenate' 'shl_i24_i' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 107 [1/1] (0.00ns)   --->   "%sext_ln101 = sext i22 %shl_i24_i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:101]   --->   Operation 107 'sext' 'sext_ln101' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 108 [1/3] (0.00ns) (grouped into DSP with root node add_ln105)   --->   "%ret_V = mul i24 %zext_ln1540, i24 %sext_ln1540"   --->   Operation 108 'mul' 'ret_V' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 109 [1/3] (0.00ns) (grouped into DSP with root node add_ln105_1)   --->   "%ret_V_7 = mul i24 %zext_ln1540, i24 %sext_ln1540_3"   --->   Operation 109 'mul' 'ret_V_7' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 110 [1/3] (0.00ns) (grouped into DSP with root node add_ln105_2)   --->   "%ret_V_8 = mul i24 %zext_ln1540, i24 %sext_ln1540_4"   --->   Operation 110 'mul' 'ret_V_8' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 111 [1/1] (0.00ns) (grouped into DSP with root node add_ln105)   --->   "%sext_ln105 = sext i24 %ret_V" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 111 'sext' 'sext_ln105' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_9 : Operation 112 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln105 = add i25 %sext_ln105, i25 %sext_ln101" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 112 'add' 'add_ln105' <Predicate = (tmp_2)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 113 [1/1] (0.00ns) (grouped into DSP with root node add_ln105_1)   --->   "%sext_ln105_1 = sext i24 %ret_V_7" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 113 'sext' 'sext_ln105_1' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_9 : Operation 114 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln105_1 = add i25 %sext_ln105_1, i25 %sext_ln101" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 114 'add' 'add_ln105_1' <Predicate = (tmp_2)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 115 [1/1] (0.00ns) (grouped into DSP with root node add_ln105_2)   --->   "%sext_ln105_2 = sext i24 %ret_V_8" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 115 'sext' 'sext_ln105_2' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_9 : Operation 116 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln105_2 = add i25 %sext_ln105_2, i25 %sext_ln101" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 116 'add' 'add_ln105_2' <Predicate = (tmp_2)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 3.17>
+ST_10 : Operation 117 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln105 = add i25 %sext_ln105, i25 %sext_ln101" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 117 'add' 'add_ln105' <Predicate = (tmp_2)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 118 [1/1] (0.00ns)   --->   "%tmp_4 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %add_ln105, i32 24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 118 'bitselect' 'tmp_4' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 119 [1/1] (0.94ns)   --->   "%sub_ln59 = sub i25 0, i25 %add_ln105" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 119 'sub' 'sub_ln59' <Predicate = (tmp_2)> <Delay = 0.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 120 [1/1] (0.32ns)   --->   "%magnitude = select i1 %tmp_4, i25 %sub_ln59, i25 %add_ln105" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 120 'select' 'magnitude' <Predicate = (tmp_2)> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 121 [1/1] (0.00ns)   --->   "%remainder = trunc i25 %magnitude" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 121 'trunc' 'remainder' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 122 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i13 @_ssdm_op_PartSelect.i13.i25.i32.i32, i25 %magnitude, i32 12, i32 24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:60]   --->   Operation 122 'partselect' 'trunc_ln' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 123 [1/1] (0.00ns) (grouped into LUT with out node q_3)   --->   "%tmp_5 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %magnitude, i32 12" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:60]   --->   Operation 123 'bitselect' 'tmp_5' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 124 [1/1] (0.00ns)   --->   "%sext_ln61 = sext i13 %trunc_ln" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:61]   --->   Operation 124 'sext' 'sext_ln61' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 125 [1/1] (0.97ns)   --->   "%icmp_ln63 = icmp_ugt  i12 %remainder, i12 2048" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 125 'icmp' 'icmp_ln63' <Predicate = (tmp_2)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 126 [1/1] (0.97ns)   --->   "%icmp_ln63_1 = icmp_eq  i12 %remainder, i12 2048" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 126 'icmp' 'icmp_ln63_1' <Predicate = (tmp_2)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node q_3)   --->   "%and_ln63 = and i1 %icmp_ln63_1, i1 %tmp_5" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 127 'and' 'and_ln63' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node q_3)   --->   "%or_ln63 = or i1 %icmp_ln63, i1 %and_ln63" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 128 'or' 'or_ln63' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 129 [1/1] (0.82ns)   --->   "%q = add i14 %sext_ln61, i14 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 129 'add' 'q' <Predicate = (tmp_2)> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 130 [1/1] (0.28ns) (out node of the LUT)   --->   "%q_3 = select i1 %or_ln63, i14 %q, i14 %sext_ln61" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 130 'select' 'q_3' <Predicate = (tmp_2)> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 131 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln105_1 = add i25 %sext_ln105_1, i25 %sext_ln101" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 131 'add' 'add_ln105_1' <Predicate = (tmp_2)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 132 [1/1] (0.00ns)   --->   "%tmp_9 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %add_ln105_1, i32 24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 132 'bitselect' 'tmp_9' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 133 [1/1] (0.94ns)   --->   "%sub_ln59_1 = sub i25 0, i25 %add_ln105_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 133 'sub' 'sub_ln59_1' <Predicate = (tmp_2)> <Delay = 0.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 134 [1/1] (0.32ns)   --->   "%magnitude_1 = select i1 %tmp_9, i25 %sub_ln59_1, i25 %add_ln105_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 134 'select' 'magnitude_1' <Predicate = (tmp_2)> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 135 [1/1] (0.00ns)   --->   "%remainder_1 = trunc i25 %magnitude_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 135 'trunc' 'remainder_1' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 136 [1/1] (0.00ns)   --->   "%trunc_ln60_4 = partselect i13 @_ssdm_op_PartSelect.i13.i25.i32.i32, i25 %magnitude_1, i32 12, i32 24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:60]   --->   Operation 136 'partselect' 'trunc_ln60_4' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 137 [1/1] (0.00ns) (grouped into LUT with out node q_5)   --->   "%tmp_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %magnitude_1, i32 12" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:60]   --->   Operation 137 'bitselect' 'tmp_10' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 138 [1/1] (0.00ns)   --->   "%sext_ln61_1 = sext i13 %trunc_ln60_4" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:61]   --->   Operation 138 'sext' 'sext_ln61_1' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 139 [1/1] (0.97ns)   --->   "%icmp_ln63_2 = icmp_ugt  i12 %remainder_1, i12 2048" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 139 'icmp' 'icmp_ln63_2' <Predicate = (tmp_2)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 140 [1/1] (0.97ns)   --->   "%icmp_ln63_3 = icmp_eq  i12 %remainder_1, i12 2048" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 140 'icmp' 'icmp_ln63_3' <Predicate = (tmp_2)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 141 [1/1] (0.00ns) (grouped into LUT with out node q_5)   --->   "%and_ln63_1 = and i1 %icmp_ln63_3, i1 %tmp_10" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 141 'and' 'and_ln63_1' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 142 [1/1] (0.00ns) (grouped into LUT with out node q_5)   --->   "%or_ln63_1 = or i1 %icmp_ln63_2, i1 %and_ln63_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 142 'or' 'or_ln63_1' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 143 [1/1] (0.82ns)   --->   "%q_4 = add i14 %sext_ln61_1, i14 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 143 'add' 'q_4' <Predicate = (tmp_2)> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 144 [1/1] (0.28ns) (out node of the LUT)   --->   "%q_5 = select i1 %or_ln63_1, i14 %q_4, i14 %sext_ln61_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 144 'select' 'q_5' <Predicate = (tmp_2)> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 145 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln105_2 = add i25 %sext_ln105_2, i25 %sext_ln101" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105]   --->   Operation 145 'add' 'add_ln105_2' <Predicate = (tmp_2)> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 146 [1/1] (0.00ns)   --->   "%tmp_14 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %add_ln105_2, i32 24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 146 'bitselect' 'tmp_14' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 147 [1/1] (0.94ns)   --->   "%sub_ln59_2 = sub i25 0, i25 %add_ln105_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 147 'sub' 'sub_ln59_2' <Predicate = (tmp_2)> <Delay = 0.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 148 [1/1] (0.32ns)   --->   "%magnitude_2 = select i1 %tmp_14, i25 %sub_ln59_2, i25 %add_ln105_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 148 'select' 'magnitude_2' <Predicate = (tmp_2)> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_10 : Operation 149 [1/1] (0.00ns)   --->   "%remainder_2 = trunc i25 %magnitude_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59]   --->   Operation 149 'trunc' 'remainder_2' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 150 [1/1] (0.00ns)   --->   "%trunc_ln60_5 = partselect i13 @_ssdm_op_PartSelect.i13.i25.i32.i32, i25 %magnitude_2, i32 12, i32 24" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:60]   --->   Operation 150 'partselect' 'trunc_ln60_5' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 151 [1/1] (0.00ns) (grouped into LUT with out node q_7)   --->   "%tmp_15 = bitselect i1 @_ssdm_op_BitSelect.i1.i25.i32, i25 %magnitude_2, i32 12" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:60]   --->   Operation 151 'bitselect' 'tmp_15' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 152 [1/1] (0.00ns)   --->   "%sext_ln61_2 = sext i13 %trunc_ln60_5" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:61]   --->   Operation 152 'sext' 'sext_ln61_2' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_10 : Operation 153 [1/1] (0.97ns)   --->   "%icmp_ln63_4 = icmp_ugt  i12 %remainder_2, i12 2048" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 153 'icmp' 'icmp_ln63_4' <Predicate = (tmp_2)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 154 [1/1] (0.97ns)   --->   "%icmp_ln63_5 = icmp_eq  i12 %remainder_2, i12 2048" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 154 'icmp' 'icmp_ln63_5' <Predicate = (tmp_2)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node q_7)   --->   "%and_ln63_2 = and i1 %icmp_ln63_5, i1 %tmp_15" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 155 'and' 'and_ln63_2' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node q_7)   --->   "%or_ln63_2 = or i1 %icmp_ln63_4, i1 %and_ln63_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 156 'or' 'or_ln63_2' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 157 [1/1] (0.82ns)   --->   "%q_6 = add i14 %sext_ln61_2, i14 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 157 'add' 'q_6' <Predicate = (tmp_2)> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 158 [1/1] (0.28ns) (out node of the LUT)   --->   "%q_7 = select i1 %or_ln63_2, i14 %q_6, i14 %sext_ln61_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63]   --->   Operation 158 'select' 'q_7' <Predicate = (tmp_2)> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 2.24>
+ST_11 : Operation 159 [1/1] (0.00ns) (grouped into LUT with out node v_5)   --->   "%zext_ln260_2 = zext i8 %r"   --->   Operation 159 'zext' 'zext_ln260_2' <Predicate = (!tmp_2)> <Delay = 0.00>
+ST_11 : Operation 160 [1/1] (0.83ns)   --->   "%sub_ln64 = sub i14 0, i14 %q_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64]   --->   Operation 160 'sub' 'sub_ln64' <Predicate = (tmp_2 & tmp_4)> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 161 [1/1] (0.23ns)   --->   "%select_ln64 = select i1 %tmp_4, i14 %sub_ln64, i14 %q_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64]   --->   Operation 161 'select' 'select_ln64' <Predicate = (tmp_2)> <Delay = 0.23> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 162 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%trunc_ln69 = trunc i14 %select_ln64" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 162 'trunc' 'trunc_ln69' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 163 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%tmp_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i14.i32, i14 %select_ln64, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 163 'bitselect' 'tmp_6' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i6 @_ssdm_op_PartSelect.i6.i14.i32.i32, i14 %select_ln64, i32 8, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 164 'partselect' 'tmp_7' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 165 [1/1] (0.78ns)   --->   "%icmp_ln69 = icmp_sgt  i6 %tmp_7, i6 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 165 'icmp' 'icmp_ln69' <Predicate = (tmp_2)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 166 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i14.i32, i14 %select_ln64, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 166 'bitselect' 'tmp_8' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 167 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%xor_ln69 = xor i1 %tmp_8, i1 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 167 'xor' 'xor_ln69' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 168 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%select_ln69_2 = select i1 %xor_ln69, i8 255, i8 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 168 'select' 'select_ln69_2' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 169 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%or_ln69 = or i1 %tmp_6, i1 %icmp_ln69" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 169 'or' 'or_ln69' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 170 [1/1] (0.00ns) (grouped into LUT with out node b_1)   --->   "%select_ln69 = select i1 %or_ln69, i8 %select_ln69_2, i8 %trunc_ln69" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 170 'select' 'select_ln69' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 171 [1/1] (0.83ns)   --->   "%sub_ln64_1 = sub i14 0, i14 %q_5" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64]   --->   Operation 171 'sub' 'sub_ln64_1' <Predicate = (tmp_2 & tmp_9)> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 172 [1/1] (0.23ns)   --->   "%select_ln64_1 = select i1 %tmp_9, i14 %sub_ln64_1, i14 %q_5" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64]   --->   Operation 172 'select' 'select_ln64_1' <Predicate = (tmp_2)> <Delay = 0.23> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 173 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%trunc_ln69_1 = trunc i14 %select_ln64_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 173 'trunc' 'trunc_ln69_1' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 174 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%tmp_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i14.i32, i14 %select_ln64_1, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 174 'bitselect' 'tmp_11' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 175 [1/1] (0.00ns)   --->   "%tmp_12 = partselect i6 @_ssdm_op_PartSelect.i6.i14.i32.i32, i14 %select_ln64_1, i32 8, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 175 'partselect' 'tmp_12' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 176 [1/1] (0.78ns)   --->   "%icmp_ln69_1 = icmp_sgt  i6 %tmp_12, i6 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 176 'icmp' 'icmp_ln69_1' <Predicate = (tmp_2)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 177 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%tmp_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i14.i32, i14 %select_ln64_1, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 177 'bitselect' 'tmp_13' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_11 : Operation 178 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%xor_ln69_1 = xor i1 %tmp_13, i1 1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 178 'xor' 'xor_ln69_1' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 179 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%select_ln69_3 = select i1 %xor_ln69_1, i8 255, i8 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 179 'select' 'select_ln69_3' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 180 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%or_ln69_1 = or i1 %tmp_11, i1 %icmp_ln69_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 180 'or' 'or_ln69_1' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 181 [1/1] (0.00ns) (grouped into LUT with out node g_1)   --->   "%select_ln69_1 = select i1 %or_ln69_1, i8 %select_ln69_3, i8 %trunc_ln69_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 181 'select' 'select_ln69_1' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 182 [1/1] (0.83ns)   --->   "%sub_ln64_2 = sub i14 0, i14 %q_7" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64]   --->   Operation 182 'sub' 'sub_ln64_2' <Predicate = (tmp_2 & tmp_14)> <Delay = 0.83> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.83> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 183 [1/1] (0.00ns) (grouped into LUT with out node v_5)   --->   "%select_ln64_2 = select i1 %tmp_14, i14 %sub_ln64_2, i14 %q_7" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64]   --->   Operation 183 'select' 'select_ln64_2' <Predicate = (tmp_2)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 184 [1/1] (0.39ns) (out node of the LUT)   --->   "%g_1 = select i1 %tmp_2, i8 %select_ln69_1, i8 %g" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 184 'select' 'g_1' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 185 [1/1] (0.39ns) (out node of the LUT)   --->   "%b_1 = select i1 %tmp_2, i8 %select_ln69, i8 %b" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 185 'select' 'b_1' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 186 [1/1] (0.23ns) (out node of the LUT)   --->   "%v_5 = select i1 %tmp_2, i14 %select_ln64_2, i14 %zext_ln260_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 186 'select' 'v_5' <Predicate = true> <Delay = 0.23> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.23> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 187 [1/1] (0.00ns)   --->   "%tmp_16 = bitselect i1 @_ssdm_op_BitSelect.i1.i14.i32, i14 %v_5, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 187 'bitselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 188 [1/1] (0.00ns)   --->   "%tmp_17 = partselect i6 @_ssdm_op_PartSelect.i6.i14.i32.i32, i14 %v_5, i32 8, i32 13" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 188 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 189 [1/1] (0.78ns)   --->   "%icmp_ln69_2 = icmp_sgt  i6 %tmp_17, i6 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69]   --->   Operation 189 'icmp' 'icmp_ln69_2' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 190 [1/1] (0.00ns) (grouped into LUT with out node r_1)   --->   "%trunc_ln260 = trunc i14 %v_5"   --->   Operation 190 'trunc' 'trunc_ln260' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 191 [1/1] (0.00ns) (grouped into LUT with out node r_1)   --->   "%xor_ln260 = xor i1 %tmp_16, i1 1"   --->   Operation 191 'xor' 'xor_ln260' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 192 [1/1] (0.00ns) (grouped into LUT with out node r_1)   --->   "%select_ln260 = select i1 %xor_ln260, i8 255, i8 0"   --->   Operation 192 'select' 'select_ln260' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 193 [1/1] (0.00ns) (grouped into LUT with out node r_1)   --->   "%or_ln260 = or i1 %tmp_16, i1 %icmp_ln69_2"   --->   Operation 193 'or' 'or_ln260' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 194 [1/1] (0.39ns) (out node of the LUT)   --->   "%r_1 = select i1 %or_ln260, i8 %select_ln260, i8 %trunc_ln260"   --->   Operation 194 'select' 'r_1' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 0.99>
+ST_12 : Operation 195 [1/1] (0.00ns)   --->   "%zext_ln75_4 = zext i8 %g_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75]   --->   Operation 195 'zext' 'zext_ln75_4' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 196 [3/3] (0.99ns) (grouped into DSP with root node add_ln79_4)   --->   "%tmp10_i = mul i16 %zext_ln75_4, i16 150" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75]   --->   Operation 196 'mul' 'tmp10_i' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 13 <SV = 12> <Delay = 0.99>
+ST_13 : Operation 197 [2/3] (0.99ns) (grouped into DSP with root node add_ln79_4)   --->   "%tmp10_i = mul i16 %zext_ln75_4, i16 150" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75]   --->   Operation 197 'mul' 'tmp10_i' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 14 <SV = 13> <Delay = 3.01>
+ST_14 : Operation 198 [1/1] (0.00ns)   --->   "%zext_ln75 = zext i8 %b_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75]   --->   Operation 198 'zext' 'zext_ln75' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 199 [1/1] (0.00ns)   --->   "%zext_ln75_5 = zext i8 %r_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75]   --->   Operation 199 'zext' 'zext_ln75_5' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 200 [1/1] (0.00ns)   --->   "%shl_ln78_2 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i8.i5, i8 %b_1, i5 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 200 'bitconcatenate' 'shl_ln78_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 201 [1/1] (0.00ns)   --->   "%zext_ln78_2 = zext i13 %shl_ln78_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 201 'zext' 'zext_ln78_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 202 [1/1] (0.00ns)   --->   "%shl_ln78_3 = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i8.i1, i8 %b_1, i1 0" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 202 'bitconcatenate' 'shl_ln78_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 203 [1/1] (0.00ns)   --->   "%zext_ln78_3 = zext i9 %shl_ln78_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 203 'zext' 'zext_ln78_3' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 204 [1/3] (0.00ns) (grouped into DSP with root node add_ln79_4)   --->   "%tmp10_i = mul i16 %zext_ln75_4, i16 150" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75]   --->   Operation 204 'mul' 'tmp10_i' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 205 [1/1] (0.77ns)   --->   "%sub_ln77_1 = sub i9 128, i9 %zext_ln75" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:77]   --->   Operation 205 'sub' 'sub_ln77_1' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 206 [1/1] (0.00ns)   --->   "%sext_ln79_2 = sext i9 %sub_ln77_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 206 'sext' 'sext_ln79_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 207 [1/1] (0.77ns)   --->   "%sub_ln79_1 = sub i11 %sext_ln79_2, i11 %zext_ln78_3" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 207 'sub' 'sub_ln79_1' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 208 [1/1] (0.00ns)   --->   "%sext_ln78_1 = sext i11 %sub_ln79_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 208 'sext' 'sext_ln78_1' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 209 [1/1] (0.82ns)   --->   "%add_ln78_1 = add i15 %zext_ln78_2, i15 %sext_ln78_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 209 'add' 'add_ln78_1' <Predicate = true> <Delay = 0.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 210 [1/1] (0.00ns)   --->   "%sext_ln78_2 = sext i15 %add_ln78_1" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78]   --->   Operation 210 'sext' 'sext_ln78_2' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 211 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79_4 = add i16 %tmp10_i, i16 %sext_ln78_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 211 'add' 'add_ln79_4' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_14 : Operation 212 [3/3] (0.99ns) (grouped into DSP with root node add_ln79_3)   --->   "%mul_ln79 = mul i15 %zext_ln75_5, i15 77" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 212 'mul' 'mul_ln79' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 15 <SV = 14> <Delay = 0.99>
+ST_15 : Operation 213 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79_4 = add i16 %tmp10_i, i16 %sext_ln78_2" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 213 'add' 'add_ln79_4' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_15 : Operation 214 [2/3] (0.99ns) (grouped into DSP with root node add_ln79_3)   --->   "%mul_ln79 = mul i15 %zext_ln75_5, i15 77" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 214 'mul' 'mul_ln79' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 16 <SV = 15> <Delay = 0.64>
+ST_16 : Operation 215 [1/3] (0.00ns) (grouped into DSP with root node add_ln79_3)   --->   "%mul_ln79 = mul i15 %zext_ln75_5, i15 77" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 215 'mul' 'mul_ln79' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_16 : Operation 216 [1/1] (0.00ns) (grouped into DSP with root node add_ln79_3)   --->   "%zext_ln79 = zext i15 %mul_ln79" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 216 'zext' 'zext_ln79' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 217 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79_3 = add i16 %zext_ln79, i16 %add_ln79_4" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 217 'add' 'add_ln79_3' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_16 : Operation 236 [1/1] (0.00ns)   --->   "%ret_ln200 = ret" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 236 'ret' 'ret_ln200' <Predicate = (icmp_ln178)> <Delay = 0.00>
+
+State 17 <SV = 16> <Delay = 1.88>
+ST_17 : Operation 37 [1/1] (0.42ns)   --->   "%store_ln0 = store i64 18446744073709551615, i64 %reuse_addr_reg"   --->   Operation 37 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_17 : Operation 218 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln79_3 = add i16 %zext_ln79, i16 %add_ln79_4" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 218 'add' 'add_ln79_3' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_17 : Operation 219 [1/1] (0.00ns)   --->   "%y_s = partselect i8 @_ssdm_op_PartSelect.i8.i16.i32.i32, i16 %add_ln79_3, i32 8, i32 15" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79]   --->   Operation 219 'partselect' 'y_s' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 220 [1/1] (0.00ns)   --->   "%zext_ln184 = zext i8 %y_s" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 220 'zext' 'zext_ln184' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 221 [1/1] (0.00ns)   --->   "%hist_addr = getelementptr i32 %hist, i64 0, i64 %zext_ln184"   --->   Operation 221 'getelementptr' 'hist_addr' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 222 [1/1] (0.00ns)   --->   "%reuse_addr_reg_load = load i64 %reuse_addr_reg"   --->   Operation 222 'load' 'reuse_addr_reg_load' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 223 [2/2] (1.23ns)   --->   "%hist_load = load i8 %hist_addr"   --->   Operation 223 'load' 'hist_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_17 : Operation 224 [1/1] (1.13ns)   --->   "%addr_cmp = icmp_eq  i64 %reuse_addr_reg_load, i64 %zext_ln184" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 224 'icmp' 'addr_cmp' <Predicate = true> <Delay = 1.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.13> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 225 [1/1] (0.42ns)   --->   "%store_ln184 = store i64 %zext_ln184, i64 %reuse_addr_reg" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 225 'store' 'store_ln184' <Predicate = true> <Delay = 0.42>
+
+State 18 <SV = 17> <Delay = 3.49>
+ST_18 : Operation 36 [1/1] (0.42ns)   --->   "%store_ln0 = store i32 0, i32 %reuse_reg"   --->   Operation 36 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_18 : Operation 226 [1/1] (0.00ns)   --->   "%specpipeline_ln179 = specpipeline void @_ssdm_op_SpecPipeline, i32 2, i32 0, i32 0, i32 0, void @empty_8" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:179->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 226 'specpipeline' 'specpipeline_ln179' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 227 [1/1] (0.00ns)   --->   "%speclooptripcount_ln180 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 173056, i64 2073600, i64 1123328" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:180->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 227 'speclooptripcount' 'speclooptripcount_ln180' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 228 [1/1] (0.00ns)   --->   "%specloopname_ln178 = specloopname void @_ssdm_op_SpecLoopName, void @empty_4" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 228 'specloopname' 'specloopname_ln178' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 229 [1/1] (0.00ns)   --->   "%reuse_reg_load = load i32 %reuse_reg"   --->   Operation 229 'load' 'reuse_reg_load' <Predicate = (addr_cmp)> <Delay = 0.00>
+ST_18 : Operation 230 [1/2] (1.23ns)   --->   "%hist_load = load i8 %hist_addr"   --->   Operation 230 'load' 'hist_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_18 : Operation 231 [1/1] (0.00ns) (grouped into LUT with out node add_ln232)   --->   "%reuse_select = select i1 %addr_cmp, i32 %reuse_reg_load, i32 %hist_load" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 231 'select' 'reuse_select' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_18 : Operation 232 [1/1] (1.01ns) (out node of the LUT)   --->   "%add_ln232 = add i32 %reuse_select, i32 1"   --->   Operation 232 'add' 'add_ln232' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 233 [1/1] (1.23ns)   --->   "%store_ln184 = store i32 %add_ln232, i8 %hist_addr" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 233 'store' 'store_ln184' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 256> <RAM>
+ST_18 : Operation 234 [1/1] (0.42ns)   --->   "%store_ln232 = store i32 %add_ln232, i32 %reuse_reg"   --->   Operation 234 'store' 'store_ln232' <Predicate = true> <Delay = 0.42>
+ST_18 : Operation 235 [1/1] (0.00ns)   --->   "%br_ln178 = br void %for.body.i.i" [/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200]   --->   Operation 235 'br' 'br_ln178' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 3.33ns
+The critical path consists of the following:
+	wire read operation ('p_read23', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) on port 'p_read' (/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) [12]  (1.84 ns)
+	'icmp' operation ('icmp_ln178', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:178->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) [29]  (1.06 ns)
+	blocking operation 0.427 ns on control path)
+
+ <State 2>: 2.23ns
+The critical path consists of the following:
+	fifo read operation ('__Val2__', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pixels' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) [36]  (1.56 ns)
+	'getelementptr' operation ('color_1_addr') [45]  (0 ns)
+	'load' operation ('color_1_load') on array 'color_1' [46]  (0.677 ns)
+
+ <State 3>: 2.07ns
+The critical path consists of the following:
+	'load' operation ('color_1_load') on array 'color_1' [46]  (0.677 ns)
+	'select' operation ('op', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) [49]  (0.393 ns)
+	'mul' operation of DSP[71] ('tmp3_i') [60]  (0.996 ns)
+
+ <State 4>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[71] ('tmp3_i') [60]  (0.996 ns)
+
+ <State 5>: 4ns
+The critical path consists of the following:
+	'load' operation ('color_0_load') on array 'color_0' [44]  (0.677 ns)
+	'select' operation ('op', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) [50]  (0.393 ns)
+	'sub' operation ('sub_ln77', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:77) [64]  (0.776 ns)
+	'sub' operation ('sub_ln79', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [66]  (0.776 ns)
+	'add' operation ('add_ln78', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78) [68]  (0 ns)
+	'add' operation ('add_ln79_2', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [69]  (0.733 ns)
+	'add' operation of DSP[71] ('add_ln79', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [71]  (0.645 ns)
+
+ <State 6>: 1.29ns
+The critical path consists of the following:
+	'add' operation of DSP[71] ('add_ln79', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [71]  (0.645 ns)
+	'add' operation of DSP[73] ('add_ln79_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [73]  (0.645 ns)
+
+ <State 7>: 2.43ns
+The critical path consists of the following:
+	'add' operation of DSP[73] ('add_ln79_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [73]  (0.645 ns)
+	'sub' operation ('delta') [78]  (0.787 ns)
+	'mul' operation of DSP[90] ('ret.V') [80]  (0.996 ns)
+
+ <State 8>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[90] ('ret.V') [80]  (0.996 ns)
+
+ <State 9>: 0.645ns
+The critical path consists of the following:
+	'add' operation of DSP[90] ('value', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105) [90]  (0.645 ns)
+
+ <State 10>: 3.17ns
+The critical path consists of the following:
+	'add' operation of DSP[90] ('value', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:105) [90]  (0.645 ns)
+	'sub' operation ('sub_ln59', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59) [92]  (0.945 ns)
+	'select' operation ('magnitude', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:59) [93]  (0.322 ns)
+	'icmp' operation ('icmp_ln63', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63) [98]  (0.976 ns)
+	'or' operation ('or_ln63', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63) [101]  (0 ns)
+	'select' operation ('q', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:63) [103]  (0.287 ns)
+
+ <State 11>: 2.24ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln64_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64) [130]  (0.831 ns)
+	'select' operation ('select_ln64_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:64) [131]  (0.232 ns)
+	'icmp' operation ('icmp_ln69_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69) [135]  (0.785 ns)
+	'or' operation ('or_ln69_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69) [139]  (0 ns)
+	'select' operation ('select_ln69_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:69) [140]  (0 ns)
+	'select' operation ('g', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:174->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) [158]  (0.393 ns)
+
+ <State 12>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[183] ('tmp10_i', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75) [176]  (0.996 ns)
+
+ <State 13>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[183] ('tmp10_i', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:75) [176]  (0.996 ns)
+
+ <State 14>: 3.02ns
+The critical path consists of the following:
+	'sub' operation ('sub_ln77_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:77) [177]  (0.776 ns)
+	'sub' operation ('sub_ln79_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [179]  (0.776 ns)
+	'add' operation ('add_ln78_1', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:78) [181]  (0.82 ns)
+	'add' operation of DSP[183] ('add_ln79_4', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [183]  (0.645 ns)
+
+ <State 15>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[186] ('mul_ln79', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [184]  (0.996 ns)
+
+ <State 16>: 0.645ns
+The critical path consists of the following:
+	'mul' operation of DSP[186] ('mul_ln79', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [184]  (0 ns)
+	'add' operation of DSP[186] ('add_ln79_3', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [186]  (0.645 ns)
+
+ <State 17>: 1.88ns
+The critical path consists of the following:
+	'add' operation of DSP[186] ('add_ln79_3', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:79) [186]  (0.645 ns)
+	'getelementptr' operation ('hist_addr') [189]  (0 ns)
+	'load' operation ('hist_load') on array 'hist' [192]  (1.24 ns)
+
+ <State 18>: 3.49ns
+The critical path consists of the following:
+	'load' operation ('hist_load') on array 'hist' [192]  (1.24 ns)
+	'select' operation ('reuse_select', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) [194]  (0 ns)
+	'add' operation ('add_ln232') [195]  (1.02 ns)
+	'store' operation ('store_ln184', /home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:184->/home/amd/Workspace/HLS_IP/timing_extreme_20261014/sources/image_preprocess/src/image_preprocess.cpp:200) of variable 'add_ln232' on array 'hist' [196]  (1.24 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

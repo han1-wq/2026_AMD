@@ -1,0 +1,32 @@
+--- yolo_postprocess/src/yolo_postprocess.cpp.before
++++ yolo_postprocess/src/yolo_postprocess.cpp
+@@ -9,8 +9,9 @@
+ // Shared fabric multipliers preserve DSP headroom for the DPU.
+ ap_uint<64> area(unsigned w, unsigned h) {
+ #pragma HLS INLINE off
++#pragma HLS PIPELINE II=1
+     ap_uint<64> value = ap_uint<32>(w) * ap_uint<32>(h);
+-#pragma HLS BIND_OP variable=value op=mul impl=fabric
++#pragma HLS BIND_OP variable=value op=mul impl=fabric latency=2
+     return value;
+ }
+ 
+@@ -24,8 +25,16 @@
+     ap_uint<64> intersection = area(unsigned(right-left), unsigned(bottom-top));
+     ap_uint<65> total = ap_uint<65>(area(unsigned(a.x2-a.x1), unsigned(a.y2-a.y1)))
+                       + area(unsigned(b.x2-b.x1), unsigned(b.y2-b.y1)) - intersection;
+-    ap_uint<82> scaled = total * ap_uint<17>(threshold);
+-#pragma HLS BIND_OP variable=scaled op=mul impl=fabric
++    // NMS is serial already. Reuse one adder for the Q16 threshold product
++    // instead of placing a 65 x 17 fabric multiplier in a congested region.
++    ap_uint<82> scaled = 0;
++    ap_uint<82> term = total;
++    ap_uint<17> limit = threshold;
++    for (unsigned bit = 0; bit < 17; ++bit) {
++#pragma HLS PIPELINE off
++        if (limit[bit]) scaled += term;
++        term <<= 1;
++    }
+     return (ap_uint<82>(intersection) << 16) > scaled;
+ }
+ 

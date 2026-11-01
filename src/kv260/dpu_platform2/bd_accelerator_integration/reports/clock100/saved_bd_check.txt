@@ -1,0 +1,1 @@
+PASS: original cells/connections/addresses preserved; accelerator wiring, clocks, resets, interrupts, DDR maps and IP snapshots verified.

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>OFDM 接收画面 · 640×480 · 7 fps</title>
+<style>
+body{background:#101820;color:#eee;font:17px system-ui;max-width:900px;margin:30px auto}
+img{width:640px;max-width:100%;border:1px solid #567}p{line-height:1.6}a{color:#8df}
+</style>
+<h1>OFDM 接收画面 · 640×480 · 7 fps</h1>
+<p id="state">等待第一帧……</p>
+<img id="frame" alt="经 OFDM 回环返回并通过校验的 JPEG 帧">
+<p>JPEG Q50。画面为合成运动测试源，经板子 OFDM 回环返回；页面轮询实际接收文件，不是摄像头画面。浏览器显示耗时不计入链路测试。</p>
+<p id="finished"></p>
+<script>
+let previous=-1, busy=false;
+async function update(){
+  if(busy)return;
+  busy=true;
+  try{
+    const response=await fetch('received_run/received/latest.json',{cache:'no-store'});
+    if(!response.ok)throw Error('等待接收');
+    const row=await response.json();
+    if(row.index!==previous){
+      document.getElementById('frame').src='received_run/received/'+row.frame;
+      document.getElementById('state').textContent=`接收帧 ${row.index+1} / 840 · ${(row.bytes/1000).toFixed(1)} kB · JPEG 校验通过`;
+      previous=row.index;
+    }
+    if(previous>=839){
+      const completed=await fetch('received_player.html',{method:'HEAD',cache:'no-store'});
+      if(completed.ok){
+        document.getElementById('finished').innerHTML='本轮接收已完成。<a href="received_player.html">播放实际接收视频（7 秒循环）</a> · <a href="received_640x480_7fps.gif">GIF 预览</a>';
+        clearInterval(timer);
+      }
+    }
+  }catch(error){document.getElementById('state').textContent='等待接收帧……'}
+  finally{busy=false}
+}
+const timer=setInterval(update,100);update();
+</script>
+</html>

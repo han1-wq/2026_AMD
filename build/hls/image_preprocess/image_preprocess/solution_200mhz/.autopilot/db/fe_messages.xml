@@ -1,0 +1,559 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:171:62" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:422:90" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423:50" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:426:55" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:427:56" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:428:65" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:429:72" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_address" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="word_address" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=base op=mul impl=fabric" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_count" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pixel_count" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=count op=mul impl=fabric" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="round_shift_even" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="clip" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:44:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="luma" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="adjust" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="adjust" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="adjust" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="adjust" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="adjust" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="equalize" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:112:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:115:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1080" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:117:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:118:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=78 max=360" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:126:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:128:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1080" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:132:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="unpack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:148:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="histogram_pixels" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:150:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="histogram_pixels" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:151:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="histogram_pixels" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=173056 max=2073600" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="statistics_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="statistics_pass" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="statistics_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=words depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="statistics_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pixels depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:175:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="build_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:178:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="build_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:186:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="build_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="build_lut" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="make_coordinates" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:216:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="make_coordinates" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:217:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="make_coordinates" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=1 max=416" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:237:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="color_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:239:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="color_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:240:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="color_stage" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=173056 max=2073600" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:252:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="collect_or_drain" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:255:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="collect_or_drain" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:256:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="collect_or_drain" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=173056 max=2073600" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:262:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="collect_or_drain" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:263:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="collect_or_drain" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=173056 max=2073600" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:271:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interpolate" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="interpolate" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:299:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:301:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=rows complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:302:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=rows type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:314:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=5" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:316:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:317:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:326:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:339:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:348:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=1080" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:350:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:351:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resize_and_split" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:361:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:364:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1080" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:368:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:369:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pack" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1920" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:385:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:389:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=416 max=1080" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:391:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:392:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_words" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=78 max=360" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:406:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:407:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:412:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_words depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:413:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tensor_words depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:414:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=preview_words depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:415:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=in_pixels depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:416:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=tensor_pixels depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:417:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=preview_pixels depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:418:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=pairs depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:419:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="output_pass" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=hist_pixels depth=64" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/scripts/build.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=image_preprocess" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:443:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=src offset=slave bundle=gmem_in depth=388800 max_read_burst_length=32 num_read_outstanding=2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:444:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=luts offset=slave bundle=gmem_in depth=32 max_read_burst_length=32 num_read_outstanding=2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:445:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=tensor offset=slave bundle=gmem_out depth=32448 max_write_burst_length=32 num_write_outstanding=2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:446:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=preview offset=slave bundle=gmem_preview depth=388800 max_write_burst_length=32 num_write_outstanding=2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:447:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=src bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:448:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=luts bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:449:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=tensor bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:450:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=preview bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:451:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=width bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:452:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=height bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:453:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=src_stride bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:454:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=src_capacity bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:455:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=tensor_capacity bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:456:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=preview_stride bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:457:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=preview_capacity bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:458:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=resized_w bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:459:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=resized_h bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:460:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=pad_x bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:461:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=pad_y bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:462:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=output_mode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:463:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=flags bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:464:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=eq_mode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:465:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=saturation_q12 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:466:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=frame_id bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:467:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=config_id bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:468:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=completed_frame_id bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:469:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=completed_config_id bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:470:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=tensor_bytes bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:471:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=preview_bytes bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:472:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=abi_version bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:473:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:486:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=source_required op=mul impl=fabric" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:487:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=preview_required op=mul impl=fabric" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:497:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=color complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:498:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=quant complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:499:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=color type=ram_2p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:500:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=quant type=ram_2p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:501:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=eq type=ram_2p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:503:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=hist type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:508:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=previous type=ram_2p impl=lutram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:515:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:518:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:525:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:530:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=xc type=ram_1p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:531:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="image_preprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=yc type=ram_1p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-273" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:19:0" msg_body="In function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)', Pragma conflict happens on 'INLINE' and DATAFLOW pragmas: Inline into dataflow region may break the canonical form">
+        <args Function="(anonymous namespace)::pixel_count(unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:119:18" msg_body="Inlining function '(anonymous namespace)::word_address(unsigned int, unsigned int, unsigned int)' into '(anonymous namespace)::read_words(ap_uint&lt;128&gt; const*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int)'">
+        <args Callee="(anonymous namespace)::word_address(unsigned int, unsigned int, unsigned int)" Caller="(anonymous namespace)::read_words(ap_uint&lt;128&gt; const*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:77:42" msg_body="Inlining function '(anonymous namespace)::clip(int)' into '(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)'">
+        <args Callee="(anonymous namespace)::clip(int)" Caller="(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:76:15" msg_body="Inlining function '(anonymous namespace)::round_shift_even(int, unsigned int)' into '(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)'">
+        <args Callee="(anonymous namespace)::round_shift_even(int, unsigned int)" Caller="(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:68:13" msg_body="Inlining function '(anonymous namespace)::luma(ap_uint&lt;24&gt;)' into '(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)'">
+        <args Callee="(anonymous namespace)::luma(ap_uint&lt;24&gt;)" Caller="(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:153:22" msg_body="Inlining function '(anonymous namespace)::luma(ap_uint&lt;24&gt;)' into '(anonymous namespace)::histogram_pixels(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, ap_uint&lt;32&gt;*, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int, unsigned int)'">
+        <args Callee="(anonymous namespace)::luma(ap_uint&lt;24&gt;)" Caller="(anonymous namespace)::histogram_pixels(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, ap_uint&lt;32&gt;*, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:152:12" msg_body="Inlining function '(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)' into '(anonymous namespace)::histogram_pixels(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, ap_uint&lt;32&gt;*, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int, unsigned int)'">
+        <args Callee="(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)" Caller="(anonymous namespace)::histogram_pixels(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, ap_uint&lt;32&gt;*, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:171:62" msg_body="Inlining function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)' into '(anonymous namespace)::statistics_pass(ap_uint&lt;128&gt; const*, unsigned int, unsigned int, unsigned int, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int, ap_uint&lt;32&gt;*)'">
+        <args Callee="(anonymous namespace)::pixel_count(unsigned int, unsigned int)" Caller="(anonymous namespace)::statistics_pass(ap_uint&lt;128&gt; const*, unsigned int, unsigned int, unsigned int, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int, ap_uint&lt;32&gt;*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:106:25" msg_body="Inlining function '(anonymous namespace)::clip(int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::clip(int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:106:30" msg_body="Inlining function '(anonymous namespace)::round_shift_even(int, unsigned int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::round_shift_even(int, unsigned int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:105:26" msg_body="Inlining function '(anonymous namespace)::clip(int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::clip(int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:105:31" msg_body="Inlining function '(anonymous namespace)::round_shift_even(int, unsigned int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::round_shift_even(int, unsigned int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:104:27" msg_body="Inlining function '(anonymous namespace)::clip(int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::clip(int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:104:32" msg_body="Inlining function '(anonymous namespace)::round_shift_even(int, unsigned int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::round_shift_even(int, unsigned int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:92:21" msg_body="Inlining function '(anonymous namespace)::luma(ap_uint&lt;24&gt;)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::luma(ap_uint&lt;24&gt;)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:91:18" msg_body="Inlining function '(anonymous namespace)::clip(int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::clip(int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:91:23" msg_body="Inlining function '(anonymous namespace)::round_shift_even(int, unsigned int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::round_shift_even(int, unsigned int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:90:18" msg_body="Inlining function '(anonymous namespace)::clip(int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::clip(int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:90:23" msg_body="Inlining function '(anonymous namespace)::round_shift_even(int, unsigned int)' into '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)'">
+        <args Callee="(anonymous namespace)::round_shift_even(int, unsigned int)" Caller="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:245:22" msg_body="Inlining function '(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)' into '(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int)'">
+        <args Callee="(anonymous namespace)::equalize(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; const*, bool)" Caller="(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:244:27" msg_body="Inlining function '(anonymous namespace)::luma(ap_uint&lt;24&gt;)' into '(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int)'">
+        <args Callee="(anonymous namespace)::luma(ap_uint&lt;24&gt;)" Caller="(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:243:26" msg_body="Inlining function '(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)' into '(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int)'">
+        <args Callee="(anonymous namespace)::adjust(ap_uint&lt;24&gt;, ap_uint&lt;8&gt; (*) [256], unsigned int, unsigned int)" Caller="(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:333:25" msg_body="Inlining function '(anonymous namespace)::interpolate(ap_uint&lt;24&gt;, ap_uint&lt;24&gt;, ap_uint&lt;24&gt;, ap_uint&lt;24&gt;, unsigned int, unsigned int)' into '(anonymous namespace)::resize_and_split(hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*, ap_uint&lt;8&gt; (*) [256])'">
+        <args Callee="(anonymous namespace)::interpolate(ap_uint&lt;24&gt;, ap_uint&lt;24&gt;, ap_uint&lt;24&gt;, ap_uint&lt;24&gt;, unsigned int, unsigned int)" Caller="(anonymous namespace)::resize_and_split(hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*, ap_uint&lt;8&gt; (*) [256])"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:393:6" msg_body="Inlining function '(anonymous namespace)::word_address(unsigned int, unsigned int, unsigned int)' into '(anonymous namespace)::write_words(ap_uint&lt;128&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, bool)'">
+        <args Callee="(anonymous namespace)::word_address(unsigned int, unsigned int, unsigned int)" Caller="(anonymous namespace)::write_words(ap_uint&lt;128&gt;*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, bool)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:423:50" msg_body="Inlining function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)' into '(anonymous namespace)::output_pass(ap_uint&lt;128&gt; const*, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, bool, bool, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, ap_uint&lt;32&gt;*, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*)'">
+        <args Callee="(anonymous namespace)::pixel_count(unsigned int, unsigned int)" Caller="(anonymous namespace)::output_pass(ap_uint&lt;128&gt; const*, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, bool, bool, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, ap_uint&lt;32&gt;*, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:422:90" msg_body="Inlining function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)' into '(anonymous namespace)::output_pass(ap_uint&lt;128&gt; const*, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, bool, bool, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, ap_uint&lt;32&gt;*, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*)'">
+        <args Callee="(anonymous namespace)::pixel_count(unsigned int, unsigned int)" Caller="(anonymous namespace)::output_pass(ap_uint&lt;128&gt; const*, ap_uint&lt;128&gt;*, ap_uint&lt;128&gt;*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, bool, bool, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, ap_uint&lt;32&gt;*, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:547:50" msg_body="Inlining function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)' into 'image_preprocess'">
+        <args Callee="(anonymous namespace)::pixel_count(unsigned int, unsigned int)" Caller="image_preprocess"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:543:59" msg_body="Inlining function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)' into 'image_preprocess'">
+        <args Callee="(anonymous namespace)::pixel_count(unsigned int, unsigned int)" Caller="image_preprocess"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:536:29" msg_body="Inlining function '(anonymous namespace)::pixel_count(unsigned int, unsigned int)' into 'image_preprocess'">
+        <args Callee="(anonymous namespace)::pixel_count(unsigned int, unsigned int)" Caller="image_preprocess"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:517:31" msg_body="Loop 'VITIS_LOOP_517_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_517_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:273:23" msg_body="Loop 'VITIS_LOOP_273_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_273_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:338:35" msg_body="Loop 'VITIS_LOOP_338_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_338_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:58:19" msg_body="Loop 'VITIS_LOOP_58_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_58_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:64:22" msg_body="Loop 'VITIS_LOOP_64_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_64_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:70:22" msg_body="Loop 'VITIS_LOOP_70_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_70_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:442:0" msg_body="Unrolling loop 'VITIS_LOOP_517_3' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:517:31) in function 'image_preprocess' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:517:31" LoopName="VITIS_LOOP_517_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:298:0" msg_body="Unrolling loop 'VITIS_LOOP_273_1' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:273:23) in function '(anonymous namespace)::resize_and_split' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:273:23" LoopName="VITIS_LOOP_273_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:298:0" msg_body="Unrolling loop 'VITIS_LOOP_338_5' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:338:35) in function '(anonymous namespace)::resize_and_split' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:338:35" LoopName="VITIS_LOOP_338_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:236:0" msg_body="Unrolling loop 'VITIS_LOOP_58_1' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:58:19) in function '(anonymous namespace)::color_stage' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:58:19" LoopName="VITIS_LOOP_58_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:236:0" msg_body="Unrolling loop 'VITIS_LOOP_64_2' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:64:22) in function '(anonymous namespace)::color_stage' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:64:22" LoopName="VITIS_LOOP_64_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:236:0" msg_body="Unrolling loop 'VITIS_LOOP_70_3' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:70:22) in function '(anonymous namespace)::color_stage' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:70:22" LoopName="VITIS_LOOP_70_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:147:0" msg_body="Unrolling loop 'VITIS_LOOP_58_1' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:58:19) in function '(anonymous namespace)::histogram_pixels' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:58:19" LoopName="VITIS_LOOP_58_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:147:0" msg_body="Unrolling loop 'VITIS_LOOP_64_2' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:64:22) in function '(anonymous namespace)::histogram_pixels' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:64:22" LoopName="VITIS_LOOP_64_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:147:0" msg_body="Unrolling loop 'VITIS_LOOP_70_3' (/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:70:22) in function '(anonymous namespace)::histogram_pixels' completely with a factor of 3">
+        <args Factor="3" LoopLoc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:70:22" LoopName="VITIS_LOOP_70_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:300:8" msg_body="Applying array_partition to 'rows': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="rows"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:496:16" msg_body="Applying array_partition to 'color': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="color"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:496:31" msg_body="Applying array_partition to 'quant': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="quant"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:410:23" msg_body="Aggregating fifo (hls::stream) variable 'pairs' with compact=bit mode in 48-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="48" HwTyName="fifo (hls::stream)" Name="pairs"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:442:0" msg_body="Aggregating maxi variable 'luts' with compact=none mode in 128-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="128" HwTyName="maxi" Name="luts"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s' into '(anonymous namespace)::read_words(ap_uint&lt;128&gt; const*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int) (.1)'">
+        <args Callee="_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s" Caller="(anonymous namespace)::read_words(ap_uint&lt;128&gt; const*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s' into '(anonymous namespace)::unpack(hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int) (.1)'">
+        <args Callee="_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s" Caller="(anonymous namespace)::unpack(hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s' into '(anonymous namespace)::read_words(ap_uint&lt;128&gt; const*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int) (.108.1)'">
+        <args Callee="_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s" Caller="(anonymous namespace)::read_words(ap_uint&lt;128&gt; const*, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int) (.108.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s' into '(anonymous namespace)::unpack(hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int) (.109.1)'">
+        <args Callee="_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s" Caller="(anonymous namespace)::unpack(hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int) (.109.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s' into '(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int) (.1)'">
+        <args Callee="_llvm.fpga.pack.none.i8.s_struct.ap_uint&lt;8&gt;s" Caller="(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.bits.i48.s_struct.(anonymous namespace)::Pairs.1' into '(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int) (.1)'">
+        <args Callee="_llvm.fpga.pack.bits.i48.s_struct.(anonymous namespace)::Pairs.1" Caller="(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i64.s_struct.(anonymous namespace)::Pairs' into '(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int) (.1)'">
+        <args Callee="_llvm.fpga.pack.none.i64.s_struct.(anonymous namespace)::Pairs" Caller="(anonymous namespace)::color_stage(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;8&gt;, 0&gt;&amp;, ap_uint&lt;8&gt; (*) [256], ap_uint&lt;8&gt; const*, unsigned int, unsigned int, bool, unsigned int) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145:9" msg_body="Inlining function '_llvm.fpga.unpack.bits.s_struct.(anonymous namespace)::Pairs.i48.1' into '(anonymous namespace)::resize_and_split(hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*, ap_uint&lt;8&gt; (*) [256]) (.1)'">
+        <args Callee="_llvm.fpga.unpack.bits.s_struct.(anonymous namespace)::Pairs.i48.1" Caller="(anonymous namespace)::resize_and_split(hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*, ap_uint&lt;8&gt; (*) [256]) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s' into '(anonymous namespace)::resize_and_split(hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*, ap_uint&lt;8&gt; (*) [256]) (.1)'">
+        <args Callee="_llvm.fpga.pack.none.i24.s_struct.ap_uint&lt;24&gt;s" Caller="(anonymous namespace)::resize_and_split(hls::stream&lt;(anonymous namespace)::Pair, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, (anonymous namespace)::Coordinate const*, (anonymous namespace)::Coordinate const*, ap_uint&lt;8&gt; (*) [256]) (.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s' into '(anonymous namespace)::pack(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, bool) (.110.1)'">
+        <args Callee="_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s" Caller="(anonymous namespace)::pack(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, bool) (.110.1)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s' into '(anonymous namespace)::pack(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, bool) (.1)'">
+        <args Callee="_llvm.fpga.pack.none.i128.s_struct.ap_uint&lt;128&gt;s" Caller="(anonymous namespace)::pack(hls::stream&lt;ap_uint&lt;24&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;128&gt;, 0&gt;&amp;, unsigned int, unsigned int, bool) (.1)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

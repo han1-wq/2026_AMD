@@ -1,0 +1,54 @@
+Script started on 2026-10-23 04:45:31-07:00 [TERM="xterm-256color" TTY="/dev/pts/20" COLUMNS="80" LINES="24"]
+INFO 2026-10-23 11:45:35 calibrate.py:77 {'robot': {'calibration_dir': None,
+           'cameras': {},
+           'disable_torque_on_disconnect': True,
+           'id': 'R12252801',
+           'max_relative_target': None,
+           'port': '/dev/ttyACM0',
+           'use_degrees': False},
+ 'teleop': None}
+Try to load calibration params from:  /workspace/calibration/robots/so101_follower/R12252801.json
+Traceback (most recent call last):
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 439, in _connect
+    self._handshake()
+  File "/opt/lerobot/src/lerobot/motors/feetech/feetech.py", line 167, in _handshake
+    self._assert_motors_exist()
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 371, in _assert_motors_exist
+    model_nb = self.ping(id_)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 878, in ping
+    model_number, comm, error = self.packet_handler.ping(self.port_handler, id_)
+  File "/opt/venv/lib/python3.10/site-packages/scservo_sdk/protocol_packet_handler.py", line 221, in ping
+    rxpacket, result, error = self.txRxPacket(port, txpacket)
+  File "/opt/venv/lib/python3.10/site-packages/scservo_sdk/protocol_packet_handler.py", line 199, in txRxPacket
+    rxpacket, result = self.rxPacket(port)
+  File "/opt/venv/lib/python3.10/site-packages/scservo_sdk/protocol_packet_handler.py", line 112, in rxPacket
+    rxpacket.extend(port.readPort(wait_length - rx_length))
+  File "/opt/venv/lib/python3.10/site-packages/scservo_sdk/port_handler.py", line 59, in readPort
+    return self.ser.read(length)
+  File "/opt/venv/lib/python3.10/site-packages/serial/serialposix.py", line 595, in read
+    raise SerialException(
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/venv/bin/lerobot-calibrate", line 7, in <module>
+    sys.exit(main())
+  File "/opt/lerobot/src/lerobot/scripts/lerobot_calibrate.py", line 91, in main
+    calibrate()
+  File "/opt/venv/lib/python3.10/site-packages/draccus/argparsing.py", line 225, in wrapper_inner
+    response = fn(cfg, *args, **kwargs)
+  File "/opt/lerobot/src/lerobot/scripts/lerobot_calibrate.py", line 84, in calibrate
+    device.connect(calibrate=False)
+  File "/opt/lerobot/src/lerobot/robots/so101_follower/so101_follower.py", line 93, in connect
+    self.bus.connect()
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 430, in connect
+    self._connect(handshake)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 441, in _connect
+    raise ConnectionError(
+ConnectionError: 
+Could not connect on port '/dev/ttyACM0'. Make sure you are using the correct port.
+Try running `lerobot-find-port`
+
+
+Script done on 2026-10-23 04:47:09-07:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,140 @@
+{
+  "shoulder_pan": {
+    "id": 1,
+    "model": "sts3215",
+    "registers": {
+      "Torque_Enable": 0,
+      "Operating_Mode": 0,
+      "Homing_Offset": 85,
+      "Min_Position_Limit": 0,
+      "Max_Position_Limit": 4095,
+      "Max_Torque_Limit": 1000,
+      "Torque_Limit": 1000,
+      "Overload_Torque": 80,
+      "Protective_Torque": 20,
+      "Protection_Time": 200,
+      "Protection_Current": 310,
+      "P_Coefficient": 32,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Goal_Velocity": 0,
+      "Present_Position": 3411,
+      "Present_Velocity": 0
+    }
+  },
+  "shoulder_lift": {
+    "id": 2,
+    "model": "sts3215",
+    "registers": {
+      "Torque_Enable": 0,
+      "Operating_Mode": 0,
+      "Homing_Offset": 85,
+      "Min_Position_Limit": 0,
+      "Max_Position_Limit": 4095,
+      "Max_Torque_Limit": 1000,
+      "Torque_Limit": 1000,
+      "Overload_Torque": 80,
+      "Protective_Torque": 20,
+      "Protection_Time": 200,
+      "Protection_Current": 310,
+      "P_Coefficient": 32,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Goal_Velocity": 0,
+      "Present_Position": 2845,
+      "Present_Velocity": 0
+    }
+  },
+  "elbow_flex": {
+    "id": 3,
+    "model": "sts3215",
+    "registers": {
+      "Torque_Enable": 0,
+      "Operating_Mode": 0,
+      "Homing_Offset": 85,
+      "Min_Position_Limit": 0,
+      "Max_Position_Limit": 4095,
+      "Max_Torque_Limit": 1000,
+      "Torque_Limit": 1000,
+      "Overload_Torque": 80,
+      "Protective_Torque": 20,
+      "Protection_Time": 200,
+      "Protection_Current": 310,
+      "P_Coefficient": 32,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Goal_Velocity": 0,
+      "Present_Position": 152,
+      "Present_Velocity": 0
+    }
+  },
+  "wrist_flex": {
+    "id": 4,
+    "model": "sts3215",
+    "registers": {
+      "Torque_Enable": 0,
+      "Operating_Mode": 0,
+      "Homing_Offset": 85,
+      "Min_Position_Limit": 0,
+      "Max_Position_Limit": 4095,
+      "Max_Torque_Limit": 1000,
+      "Torque_Limit": 1000,
+      "Overload_Torque": 80,
+      "Protective_Torque": 20,
+      "Protection_Time": 200,
+      "Protection_Current": 310,
+      "P_Coefficient": 32,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Goal_Velocity": 0,
+      "Present_Position": 764,
+      "Present_Velocity": 0
+    }
+  },
+  "wrist_roll": {
+    "id": 5,
+    "model": "sts3215",
+    "registers": {
+      "Torque_Enable": 0,
+      "Operating_Mode": 0,
+      "Homing_Offset": 85,
+      "Min_Position_Limit": 0,
+      "Max_Position_Limit": 4095,
+      "Max_Torque_Limit": 1000,
+      "Torque_Limit": 1000,
+      "Overload_Torque": 80,
+      "Protective_Torque": 20,
+      "Protection_Time": 200,
+      "Protection_Current": 310,
+      "P_Coefficient": 32,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Goal_Velocity": 0,
+      "Present_Position": 447,
+      "Present_Velocity": 0
+    }
+  },
+  "gripper": {
+    "id": 6,
+    "model": "sts3215",
+    "registers": {
+      "Torque_Enable": 0,
+      "Operating_Mode": 0,
+      "Homing_Offset": 85,
+      "Min_Position_Limit": 0,
+      "Max_Position_Limit": 4095,
+      "Max_Torque_Limit": 1000,
+      "Torque_Limit": 1000,
+      "Overload_Torque": 80,
+      "Protective_Torque": 20,
+      "Protection_Time": 200,
+      "Protection_Current": 310,
+      "P_Coefficient": 32,
+      "I_Coefficient": 0,
+      "D_Coefficient": 32,
+      "Goal_Velocity": 0,
+      "Present_Position": 3255,
+      "Present_Velocity": 0
+    }
+  }
+}

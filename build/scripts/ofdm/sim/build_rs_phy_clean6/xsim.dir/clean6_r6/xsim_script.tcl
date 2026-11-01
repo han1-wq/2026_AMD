@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_phy_clean6/xsim.dir/clean6_r6/xsim_script.tcl

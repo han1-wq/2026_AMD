@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KV260 AI 视觉
+Comment=Astra RGB-D / B3136 / HLS 图像调节与实时检测
+Exec=env DISPLAY=:0 XAUTHORITY=/run/user/1000/gdm/Xauthority /usr/bin/python3 /home/ubuntu/x3plus-kv260-docker/launcher_vision_ui.py
+Icon=camera-video
+Terminal=false
+Categories=Development;Science;
+StartupNotify=true

@@ -1,0 +1,29 @@
+{
+  "task_complete": false,
+  "commands_sent": [
+    {
+      "joint": 4,
+      "delta_rad": 0.003
+    },
+    {
+      "joint": 1,
+      "delta_rad": 0.003
+    },
+    {
+      "joint": 4,
+      "delta_rad": 0.009
+    },
+    {
+      "joint": 4,
+      "delta_rad": 0.012
+    }
+  ],
+  "encoder_confirmed_moves": 0,
+  "latest_failure": "servo-20261012-052723/02-failed.json",
+  "tests_passed": 42,
+  "service_port": 8878,
+  "service_busy": false,
+  "key_configured": true,
+  "cause": "unresolved: commands sent; torque feedback changed; no encoder displacement",
+  "remote_worker_motion_locked": true
+}

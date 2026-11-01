@@ -1,0 +1,7 @@
+Running: xsim.dir/max8_r54/xsimk -runall -simmode gui -testplusarg GAIN=0.75 -testplusarg CFO_HZ=0 -testplusarg INTERFERENCE=0 -testplusarg TIMEOUT_NS=10000000 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -wdb max8_r54.wdb -simrunnum 0 -socket 36803
+Design successfully loaded
+Design Loading Memory Usage: 114544 KB (Peak: 115504 KB)
+Design Loading CPU Usage: 160 ms
+Simulation completed
+Simulation Memory Usage: 194420 KB (Peak: 253812 KB)
+Simulation CPU Usage: 533660 ms

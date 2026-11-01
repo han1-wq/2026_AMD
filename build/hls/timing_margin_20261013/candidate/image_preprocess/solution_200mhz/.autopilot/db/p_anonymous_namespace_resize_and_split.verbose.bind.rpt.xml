@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'p_anonymous_namespace_resize_and_split'" level="0">
+<item name = "Date">Tue Oct 13 23:26:35 2026
+</item>
+<item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
+<item name = "Project">image_preprocess</item>
+<item name = "Solution">solution_200mhz (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.089 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">6, 6249414, 30.000 ns, 31.247 ms, 6, 6249414, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_344_3_fu_260">p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_342_2_VITIS_LOOP_344_3, 2, 9602, 10.000 ns, 48.010 us, 2, 9602, no</column>
+<column name="grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_354_4_fu_275">p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_354_4, 428, 428, 2.140 us, 2.140 us, 428, 428, no</column>
+<column name="grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_376_6_VITIS_LOOP_378_7_fu_302">p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_376_6_VITIS_LOOP_378_7, 2, 2073602, 10.000 ns, 10.368 ms, 2, 2073602, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_334_1">179712, 4175808, 432 ~ 10038, -, -, 416, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,82 @@
+test_cancel_child_process (test_dma_gui.GuiTests) ... skipped 'desktop display required'
+test_failed_transfer_does_not_display_source_as_return (test_dma_gui.GuiTests) ... skipped 'desktop display required'
+test_preview_uses_saved_received_file (test_dma_gui.GuiTests) ... skipped 'desktop display required'
+test_text_payload_is_encoded_for_dma_client (test_dma_gui.GuiTests) ... skipped 'desktop display required'
+test_corruption_and_missing_metadata (test_dma_image.ImageTests) ... ok
+test_download_ignores_unrelated_upload_failure (test_dma_image.ImageTests) ... ok
+test_download_rejects_malformed_status_and_dma_fault (test_dma_image.ImageTests) ... ok
+test_fragmented_tcp_stream (test_dma_image.ImageTests) ... ok
+test_invalid_and_conflicting_records (test_dma_image.ImageTests) ... ok
+test_loopback_requires_returned_image (test_dma_image.ImageTests) ... ok
+test_out_of_order_duplicates_and_exact_length (test_dma_image.ImageTests) ... ok
+test_single_board_failure_preserves_output (test_dma_image.ImageTests) ... ok
+test_single_board_full_duplex_loopback (test_dma_image.ImageTests) ... ok
+test_tcp_connection_nodelay_and_ab_override (test_dma_image.ImageTests) ... ok
+test_upload_completion_and_failure (test_dma_image.ImageTests) ... Saved 3 bytes, CRC32=352441c2, 0.000s
+LOOPBACK PASS: 1 bytes, CRC32=d202ef8d, 0.002s
+SHA256=6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
+Saved /tmp/tmpti5bkycr/received.bin
+LOOPBACK PASS: 1000 bytes, CRC32=721746a6, 0.001s
+SHA256=4e4c294b331f7a2099a379bec34b9f9fc03dc46ab465d998f4d683da53487e6d
+Saved /tmp/tmpqn4iq3ys/received.bin
+LOOPBACK PASS: 1001 bytes, CRC32=ce1c99a9, 0.002s
+SHA256=d57f2a1c8961773c8653c0fc54fb91c8f71c62e5f0a61d7c3c8169f5c42ecd52
+Saved /tmp/tmpr5v1p7ny/received.bin
+LOOPBACK PASS: 262013 bytes, CRC32=89166314, 0.091s
+SHA256=50c692d694b7460e81cc9fc4ec40a92a5e14de7162625dd561197d6cc658458d
+Saved /tmp/tmpipcf9qqo/received.bin
+Uploaded 3 bytes to TCP; session=0000000a image=00000014
+Waiting for remote acceptance; keep the receiver connected.
+Wireless send window drained (each fragment acknowledged).
+Uploaded 3 bytes to TCP; session=0000000a image=00000014
+Waiting for remote acceptance; keep the receiver connected.
+ok
+test_corruption_is_counted (test_dma_image_benchmark.BenchmarkTests) ... ok
+test_deadline_interrupts_blocked_receive (test_dma_image_benchmark.BenchmarkTests) ... ok
+test_failure_retains_matching_diagnostics (test_dma_image_benchmark.BenchmarkTests) ... ok
+test_persistent_full_duplex (test_dma_image_benchmark.BenchmarkTests) ... ok
+test_summary_distinguishes_failure_from_ber (test_dma_image_benchmark.BenchmarkTests) ... ok
+test_early_wakeup_does_not_repeat_frame (test_dma_jpeg_benchmark.VideoScheduleTests) ... ok
+test_end_of_stream_does_not_send_out_of_range (test_dma_jpeg_benchmark.VideoScheduleTests) ... ok
+test_overload_drops_stale_frames (test_dma_jpeg_benchmark.VideoScheduleTests) ... ok
+test_paced_jpeg_decode_and_saved_evidence (test_dma_jpeg_benchmark.VideoScheduleTests) ... ok
+test_enqueue_success_alone_is_not_loopback (test_dma_uart.UartTests) ... ok
+test_matching_radio_return_and_local_acceptance (test_dma_uart.UartTests) ... ok
+test_mismatch_and_rejected_input (test_dma_uart.UartTests) ... ok
+test_failure_stops_without_retry_and_preserves_evidence (test_dma_uart_benchmark.UartBenchmarkTests) ... 2/5 FAIL 0.000s timeout
+2/5 FAIL 0.000s enqueue busy
+2/5 FAIL 0.000s mismatch
+ok
+test_incorrect_return_is_failure (test_dma_uart_benchmark.UartBenchmarkTests) ... 1/1 FAIL 0.000s UART loopback data differs from input
+ok
+test_invalid_size_or_count (test_dma_uart_benchmark.UartBenchmarkTests) ... ok
+test_success_records_bytes_and_hashes (test_dma_uart_benchmark.UartBenchmarkTests) ... 3/3 PASS 0.000s 
+ok
+test_ambiguity_requires_selection (test_serial_devices.DeviceTests) ... ok
+test_descriptor_preferred_over_description_or_location (test_serial_devices.DeviceTests) ... ok
+test_duplicate_serial_uses_location (test_serial_devices.DeviceTests) ... ok
+test_location_fallback_and_unknown (test_serial_devices.DeviceTests) ... ok
+test_open_race_closes_port (test_serial_devices.DeviceTests) ... ok
+test_reopen_resolves_changed_device_number (test_serial_devices.DeviceTests) ... ok
+test_select_interface_one_with_changed_name_and_serial (test_serial_devices.DeviceTests) ... ok
+test_unknown_interface_is_not_selected (test_serial_devices.DeviceTests) ... ok
+test_corrupted_response_then_current (test_serial_packet.PacketTests) ... ok
+test_crc_error (test_serial_packet.PacketTests) ... ok
+test_crc_vector (test_serial_packet.PacketTests) ... ok
+test_false_header_before_valid_response (test_serial_packet.PacketTests) ... ok
+test_invalid_sequence_and_timeout (test_serial_packet.PacketTests) ... ok
+test_no_response_timeout (test_serial_packet.PacketTests) ... ok
+test_partial_timeout (test_serial_packet.PacketTests) ... ok
+test_request (test_serial_packet.PacketTests) ... ok
+test_response_and_sync (test_serial_packet.PacketTests) ... ok
+test_sequence_error (test_serial_packet.PacketTests) ... ok
+test_stale_response_then_current (test_serial_packet.PacketTests) ... ok
+test_disconnect_during_validation_prevents_transmission (test_serial_worker.WorkerTests) ... ok
+test_missing_device_recovers_and_manual_stop_cancels (test_serial_worker.WorkerTests) ... ok
+test_real_serial_transport_with_fragmented_response (test_serial_worker.WorkerTests) ... ok
+test_running_worker_recovers_on_new_port_without_replaying (test_serial_worker.WorkerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 54 tests in 5.053s
+
+OK (skipped=4)

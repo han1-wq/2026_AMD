@@ -1,0 +1,1 @@
+../../../../../projects/ofdm/build_hw/ofdm_ad9361.runs/clk_wiz_0_synth_1/clk_wiz_0.tcl

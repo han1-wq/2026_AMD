@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct  7 19:04:24 2026
+# Process ID: 21642
+# Current directory: /home/amd/ofdm/eeSDR_ofdm_loopback
+# Command line: vivado -mode batch -notrace -source /tmp/ofdm_capture_hw.tcl -log /tmp/ofdm_random_hw.log -journal /tmp/ofdm_random_hw.jou
+# Log file: /tmp/ofdm_random_hw.log
+# Journal file: /tmp/ofdm_random_hw.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.200 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source /tmp/ofdm_capture_hw.tcl -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0ABC01A
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:36
+{"seq": 120, "status": 1, "flags": 16, "length": 0, "tx": "7e30f1f3e5a2bb96abf0761750ca3639db40b9525fbd291bb4ac514c2048494a37fe8082ea1d6c3533b3071801726265ceb09a6fd18bb56116d3d5645bf9e0ed", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:36
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:37
+{"seq": 121, "status": 1, "flags": 16, "length": 0, "tx": "2c3795df65a0ea2d9dcc85f8f054492fd9a36c0eadb9fcceda9a6ee82106786ddcc05673963a26582ee5c91d523ca5e0877dd7a6d31c69052555755d5fbce69c", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:37
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:38
+{"seq": 122, "status": 1, "flags": 4, "length": 64, "tx": "6d98df4de8ee12ba5dc23875d5abbb97291bfc73b73d8e6560b9a024c55447c7ce78f963fd1e85a3ec9e1486fe7e485e9f0a8a50fb6f25afd061dd74159b0503", "rx": "6de69825e8ee12ba5dc23875d5abbb97291bfc73b73d8e65e0ce0848c55447c7ce78f963fd1e85a3ec9e1486fe7e485e9f0a4e6bba802fafd061dd74159bc912"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:38
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:38
+{"seq": 123, "status": 1, "flags": 4, "length": 64, "tx": "1a4416c468fe1bd6e6df0961898f5557da0d282256f2f1b33e29006fc6fde09860110150bb72ff0b17aa2420ca054a6e927a4378f5fc4ef0857b349ba38690dc", "rx": "1a4416441f5f2e141a7198585b895557da753f0845867ce7fc3559a359fde09860110130759de55228aa2420f2074a6e927a4378f5fc4ef0857b349ba38690dc"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:38
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:39
+{"seq": 124, "status": 1, "flags": 16, "length": 0, "tx": "8e8c012df2f70f6a47c95d08512a654fd06b058b799d6c043a3719675035246330c4dda65b894bc1662b1b74b4839aa9b61c6291887adece9b711721bfcbcd3f", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:39
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:40
+{"seq": 125, "status": 1, "flags": 4, "length": 64, "tx": "7c38d4ce994d91bc2e59269b4e9da10113b5a3277881abd36aa219c0414b287d2fdde0240c47eef4f1886d0797edb6c4b22d29100ed5c8e8166077e685087b32", "rx": "7c989ea6994d91bc2e19c0d326e34eaf6470cfaa544ab7725f101fc0414b287d2fdde0240c47eef4f1886de16b4327c9b22d29100ed508f487c015a86d7f869c"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:40
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:40
+{"seq": 126, "status": 1, "flags": 16, "length": 0, "tx": "1e9398743fa52c78e1793a28ad22eaa07c16bdf34b89245b33c37f62086a68cc477a7d8400caa1104df93ed9376660d56c0efbc4f734ed058cb1a7e9a3312769", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:40
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:41
+{"seq": 127, "status": 1, "flags": 16, "length": 0, "tx": "16e99f9490d219060744f033683a4cacaadeec4f610f504b88b4d31f601bce17bc975e5905792dbb9bb65fe3b0481d81e4419e1840dd86ea42b7b9346dfabf6e", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:41
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:42
+{"seq": 128, "status": 1, "flags": 16, "length": 0, "tx": "7967825d227b072751a38a40a1ab93b6e48e4c11c61cf94ac25f1fd5b7a4702a66855bd778537e52865969ad4e4132900024d0261013f1754472c38060f7bc91", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:42
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:42
+{"seq": 129, "status": 1, "flags": 4, "length": 64, "tx": "8b0be2e9e3b1f466a13954ddd13b1cb58c2722adc94690f2c8237bba98cb75ed1a4213c3debfe4fd176c0a3d942c19d4e5c70d409e4b532550cf82d8f3b980b4", "rx": "8ba27adc51b0f466a1b92320ffdd2c8a4ddb8c3c3c455085358dc001fa7d333b2d5249e085dd024a8699093d94ac3a7587b9e2a21387c2e0436b132dd0e2a35f"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:43
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:43
+{"seq": 130, "status": 1, "flags": 4, "length": 64, "tx": "d945c8bda9cc70a575055b3d945638f2a887e2abb81b8eaea735d2f5f66a07c05e25e1e7d07f6c577db960ce6414fb0b8cfdcf8689a22282b4219e4c1d272616", "rx": "d945c87db595bf4a6fdcbd0d2b3dc45c39d253934d188eaea735eab7606a07c08e9e7990edd70cd9b7173ff16454781840fdcf86896eb3d2bd219e4c1d272616"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:43
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:04:44
+{"seq": 131, "status": 1, "flags": 4, "length": 64, "tx": "a15fc5821664490463c7e51f59909819b52b38b2b08daeb8717dbf33398b0db92a73ba97c9bc34a46fd0bdda1002bbc47f43d7d8fb27c6d3df1799fef48a9f60", "rx": "a15fc582166449cecd1850264b0abfd55a3121b2b08d6ef719f0439df25dc54323de2b626acb592a43368a68ecac2a315c437fdffb27c6d31a1399fef48a9f60"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:04:44
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 19:04:44 2026...

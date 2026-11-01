@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/release_dma/TOP.bit": "1acbf5345225a446aa989012ad267763fd61272eb21757d79472eef1e9bd5951",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/release_dma/TOP.xsa": "ecdbe76868f1734e24cb7e6d0c88e03fb0d3cd7539890a1a9945f3af7efb7989",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/release_dma/ofdm_dma_board10.elf": "b98e2dff6f1e77d87644778838d076f5836ccfdccdf9a5cdbab842672eee04f2",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/release_dma/ps7_init.tcl": "650afea958fe29f09eb5f8930a440aab4069b0456601bb8c6dfd1e69437cb105"
+  },
+  "new": {
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_progress_fix/TOP.xsa": "72683c6833e3903ee8272189730790fedad737def9289daf40d0048582c2ab43",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_progress_fix/ofdm_ad9361.runs/impl_1/TOP.bit": "e1b50d9cac44bb95bf184419071a8448bc40dff254f7f1ed2e3856c01209f9b6",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_progress_matched/ofdm_dma/Debug/ofdm_dma.elf": "19fb7d12d62075d089a832bc6e0a2daf3940ce5b5bf45d845a0d88ec1d6b1e0e",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_progress_matched/dma_platform/hw/ps7_init.tcl": "650afea958fe29f09eb5f8930a440aab4069b0456601bb8c6dfd1e69437cb105"
+  },
+  "build_dma_sw_mss1440": {
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_mss1440/ofdm_dma/Debug/ofdm_dma.elf": "9cdcc418d810aa90c0f8003d1a85b0590e33dac7d8418a769c99f2f30a04f3aa",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_mss1440/dma_platform/hw/ps7_init.tcl": "650afea958fe29f09eb5f8930a440aab4069b0456601bb8c6dfd1e69437cb105",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_mss1440/dma_platform/hw/TOP.xsa": "72683c6833e3903ee8272189730790fedad737def9289daf40d0048582c2ab43",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_mss1440/dma_platform/export/dma_platform/sw/dma_platform/standalone_domain/bspinclude/include/lwipopts.h": "53bc0fbd65fd1eb67e3626f593f816b2f5ef5aa7e09a4488f68fe79d3a789de1"
+  },
+  "build_dma_sw_tcp_fix": {
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_progress_fix/TOP.xsa": "72683c6833e3903ee8272189730790fedad737def9289daf40d0048582c2ab43",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_progress_fix/ofdm_ad9361.runs/impl_1/TOP.bit": "e1b50d9cac44bb95bf184419071a8448bc40dff254f7f1ed2e3856c01209f9b6",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_tcp_fix/ofdm_dma/Debug/ofdm_dma.elf": "8f92f5f5d4f8cbfa2eff2a622634afb9fecc4962b62c3525fce044c58b1b4666",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_tcp_fix/dma_platform/hw/ps7_init.tcl": "650afea958fe29f09eb5f8930a440aab4069b0456601bb8c6dfd1e69437cb105",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_tcp_fix/dma_platform/hw/TOP.xsa": "72683c6833e3903ee8272189730790fedad737def9289daf40d0048582c2ab43",
+    "/home/amd/ofdm/eeSDR_ofdm_loopback/build_dma_sw_tcp_fix/dma_platform/export/dma_platform/sw/dma_platform/standalone_domain/bspinclude/include/lwipopts.h": "7242adedcde5b03ed3004fb6c2e22313ac5379e076b6bcce58705d7c23890fd9"
+  }
+}

@@ -1,0 +1,190 @@
+Try to load calibration params from:  /workspace/calibration/robots/so101_follower/follower_so101.json
+MOTION_START: speed=150; torque=400/cap600 (wrist/gripper300); phase=60s; total=900s
+2026-10-23 10:22:13,414 INFO Motors selected for calibration: ['shoulder_pan', 'shoulder_lift', 'elbow_flex', 'wrist_flex', 'wrist_roll', 'gripper']
+2026-10-23 10:22:13,414 INFO Calibration order: ['elbow_flex', 'wrist_flex', 'wrist_roll', 'gripper', 'shoulder_pan', 'shoulder_lift']
+2026-10-23 10:22:13,414 INFO 
+Starting auto calibration for motor elbow_flex
+2026-10-23 10:22:13,414 INFO ============================================================
+2026-10-23 10:22:13,418 INFO Current position: logical=152, physical=237, offset=85
+2026-10-23 10:22:13,419 INFO After resetting offset: logical=152, physical=152, offset=0
+2026-10-23 10:22:13,419 INFO Exploring elbow_flex clockwise limit...
+2026-10-23 10:22:14,355 INFO Motor appears stationary: pos=255, velocity=0, still_count=1
+2026-10-23 10:22:14,355 INFO Velocity near zero and position stable. Limit found at 255.
+2026-10-23 10:22:14,356 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 10:22:14,356 INFO clockwise limit position: 255
+2026-10-23 10:22:14,356 INFO clockwise traveled offset: 18
+2026-10-23 10:22:14,356 INFO Exploring elbow_flex anti_clockwise limit...
+2026-10-23 10:22:14,514 INFO Motor appears stationary: pos=255, velocity=0, still_count=1
+2026-10-23 10:22:14,515 INFO Velocity near zero and position stable. Limit found at 255.
+2026-10-23 10:22:14,515 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 10:22:14,515 INFO anti_clockwise limit position: 255
+2026-10-23 10:22:14,515 INFO anti_clockwise traveled offset: 0
+2026-10-23 10:22:14,516 INFO Using physical limit range: motor_id=3, motor_name=elbow_flex, first_limit=255, second_limit=255, unwrapped_range=[255, 255]
+2026-10-23 10:22:14,516 INFO 
+Step 3: total offset: 0
+2026-10-23 10:22:14,517 INFO Step 3: half offset: 0
+2026-10-23 10:22:14,517 INFO Step 3: computed midpoint: 255
+2026-10-23 10:22:14,517 INFO Step 4: moving toward midpoint...
+2026-10-23 10:22:14,522 INFO Actual midpoint position: logical=255, physical=255
+2026-10-23 10:22:14,523 INFO Step 5: raw midpoint offset = -1792
+2026-10-23 10:22:14,523 INFO Step 5: final homing offset = -1792
+2026-10-23 10:22:14,523 INFO Step 6: logical range = [2047, 2047]
+2026-10-23 10:22:14,526 INFO 
+Calibration complete.
+2026-10-23 10:22:14,526 INFO   Motor ID: 3
+2026-10-23 10:22:14,526 INFO   Homing Offset: -1792
+2026-10-23 10:22:14,526 INFO   Range Min: 2047
+2026-10-23 10:22:14,526 INFO   Range Max: 2047
+2026-10-23 10:22:14,526 INFO ============================================================
+2026-10-23 10:22:15,540 INFO 
+Starting auto calibration for motor wrist_flex
+2026-10-23 10:22:15,540 INFO ============================================================
+2026-10-23 10:22:15,555 INFO Current position: logical=1056, physical=1141, offset=85
+2026-10-23 10:22:15,556 INFO After resetting offset: logical=1056, physical=1056, offset=0
+2026-10-23 10:22:15,556 INFO Exploring wrist_flex clockwise limit...
+2026-10-23 10:22:16,815 INFO Motor appears stationary: pos=1200, velocity=0, still_count=1
+2026-10-23 10:22:16,815 INFO Velocity near zero and position stable. Limit found at 1200.
+2026-10-23 10:22:16,816 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 10:22:16,816 INFO clockwise limit position: 1200
+2026-10-23 10:22:16,816 INFO clockwise traveled offset: 59
+2026-10-23 10:22:16,816 INFO Exploring wrist_flex anti_clockwise limit...
+2026-10-23 10:22:16,975 INFO Motor appears stationary: pos=1200, velocity=0, still_count=1
+2026-10-23 10:22:16,975 INFO Velocity near zero and position stable. Limit found at 1200.
+2026-10-23 10:22:16,976 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 10:22:16,976 INFO anti_clockwise limit position: 1200
+2026-10-23 10:22:16,976 INFO anti_clockwise traveled offset: 0
+2026-10-23 10:22:16,976 INFO Using physical limit range: motor_id=4, motor_name=wrist_flex, first_limit=1200, second_limit=1200, unwrapped_range=[1200, 1200]
+2026-10-23 10:22:16,976 INFO 
+Step 3: total offset: 0
+2026-10-23 10:22:16,977 INFO Step 3: half offset: 0
+2026-10-23 10:22:16,977 INFO Step 3: computed midpoint: 1200
+2026-10-23 10:22:16,977 INFO Step 4: moving toward midpoint...
+2026-10-23 10:22:16,995 INFO Actual midpoint position: logical=1200, physical=1200
+2026-10-23 10:22:16,996 INFO Step 5: raw midpoint offset = -847
+2026-10-23 10:22:16,996 INFO Step 5: final homing offset = -847
+2026-10-23 10:22:16,996 INFO Step 6: logical range = [2047, 2047]
+2026-10-23 10:22:17,001 INFO 
+Calibration complete.
+2026-10-23 10:22:17,001 INFO   Motor ID: 4
+2026-10-23 10:22:17,001 INFO   Homing Offset: -847
+2026-10-23 10:22:17,001 INFO   Range Min: 2047
+2026-10-23 10:22:17,001 INFO   Range Max: 2047
+2026-10-23 10:22:17,001 INFO ============================================================
+2026-10-23 10:22:18,017 INFO 
+Starting auto calibration for motor wrist_roll
+2026-10-23 10:22:18,017 INFO ============================================================
+2026-10-23 10:22:18,027 INFO Current position: logical=1546, physical=1631, offset=85
+2026-10-23 10:22:18,028 INFO After resetting offset: logical=1546, physical=1546, offset=0
+2026-10-23 10:22:18,028 INFO Exploring wrist_roll clockwise limit...
+2026-10-23 10:22:18,351 INFO Motor appears stationary: pos=1624, velocity=0, still_count=1
+2026-10-23 10:22:18,351 INFO Velocity near zero and position stable. Limit found at 1624.
+2026-10-23 10:22:18,352 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 10:22:18,352 INFO clockwise limit position: 1624
+2026-10-23 10:22:18,352 INFO clockwise traveled offset: 4088
+2026-10-23 10:22:18,352 INFO Exploring wrist_roll anti_clockwise limit...
+2026-10-23 10:22:18,673 INFO Motor appears stationary: pos=1625, velocity=0, still_count=1
+2026-10-23 10:22:18,673 INFO Velocity near zero and position stable. Limit found at 1625.
+2026-10-23 10:22:18,674 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 10:22:18,674 INFO anti_clockwise limit position: 1625
+2026-10-23 10:22:18,674 INFO anti_clockwise traveled offset: 4095
+2026-10-23 10:22:18,677 INFO Using physical limit range: motor_id=5, motor_name=wrist_roll, first_limit=1624, second_limit=1625, unwrapped_range=[1625, 5720]
+2026-10-23 10:22:18,677 INFO 
+Step 3: total offset: 4095
+2026-10-23 10:22:18,677 INFO Step 3: half offset: 2047
+2026-10-23 10:22:18,677 INFO Step 3: computed midpoint: 3672
+2026-10-23 10:22:18,677 INFO Step 4: moving toward midpoint...
+2026-10-23 10:22:18,686 INFO Actual midpoint position: logical=1625, physical=1625
+2026-10-23 10:22:18,687 INFO Step 5: raw midpoint offset = 1625
+2026-10-23 10:22:18,687 INFO Step 5: final homing offset = 1625
+2026-10-23 10:22:18,687 INFO Step 6: logical range = [0, 4095]
+2026-10-23 10:22:18,690 INFO 
+Calibration complete.
+2026-10-23 10:22:18,690 INFO   Motor ID: 5
+2026-10-23 10:22:18,690 INFO   Homing Offset: 1625
+2026-10-23 10:22:18,690 INFO   Range Min: 0
+2026-10-23 10:22:18,690 INFO   Range Max: 4095
+2026-10-23 10:22:18,690 INFO ============================================================
+2026-10-23 10:22:19,697 INFO 
+Starting auto calibration for motor gripper
+2026-10-23 10:22:19,697 INFO ============================================================
+2026-10-23 10:22:19,714 INFO Current position: logical=3246, physical=3331, offset=85
+2026-10-23 10:22:19,715 INFO After resetting offset: logical=3246, physical=3246, offset=0
+2026-10-23 10:22:19,715 INFO Exploring gripper clockwise limit...
+2026-10-23 10:22:27,563 INFO Motor appears stationary: pos=260, velocity=0, still_count=1
+2026-10-23 10:22:27,563 INFO Velocity near zero and position stable. Limit found at 260.
+2026-10-23 10:22:27,564 INFO 
+Step 1: explore clockwise limit...
+2026-10-23 10:22:27,564 INFO clockwise limit position: 260
+2026-10-23 10:22:27,564 INFO clockwise traveled offset: 1024
+2026-10-23 10:22:27,564 INFO Exploring gripper anti_clockwise limit...
+2026-10-23 10:22:27,720 INFO Motor appears stationary: pos=260, velocity=0, still_count=1
+2026-10-23 10:22:27,720 INFO Velocity near zero and position stable. Limit found at 260.
+2026-10-23 10:22:27,721 INFO 
+Step 2: explore anti_clockwise limit...
+2026-10-23 10:22:27,721 INFO anti_clockwise limit position: 260
+2026-10-23 10:22:27,721 INFO anti_clockwise traveled offset: 0
+2026-10-23 10:22:27,721 INFO Using physical limit range: motor_id=6, motor_name=gripper, first_limit=260, second_limit=260, unwrapped_range=[260, 260]
+2026-10-23 10:22:27,721 INFO 
+Step 3: total offset: 0
+2026-10-23 10:22:27,721 INFO Step 3: gripper maps physical open/closed limits directly and skips midpoint motion.
+2026-10-23 10:22:27,721 INFO Gripper closed position: logical=260, physical=260
+2026-10-23 10:22:27,722 INFO Step 5: gripper logical range maps open to 0 and closed to 100: open_physical=260, closed_physical=260
+2026-10-23 10:22:27,722 INFO Step 5: raw midpoint offset = 260
+2026-10-23 10:22:27,722 INFO Step 5: final homing offset = 260
+2026-10-23 10:22:27,722 INFO Step 6: logical range = [0, 0]
+2026-10-23 10:22:27,727 INFO 
+Calibration complete.
+2026-10-23 10:22:27,727 INFO   Motor ID: 6
+2026-10-23 10:22:27,727 INFO   Homing Offset: 260
+2026-10-23 10:22:27,727 INFO   Range Min: 0
+2026-10-23 10:22:27,727 INFO   Range Max: 0
+2026-10-23 10:22:27,727 INFO ============================================================
+2026-10-23 10:22:28,731 INFO 
+Starting auto calibration for motor shoulder_pan
+2026-10-23 10:22:28,731 INFO ============================================================
+2026-10-23 10:22:28,745 INFO Current position: logical=3410, physical=3495, offset=85
+2026-10-23 10:22:28,746 INFO After resetting offset: logical=3410, physical=3410, offset=0
+2026-10-23 10:22:28,746 INFO Exploring shoulder_pan clockwise limit...
+2026-10-23 10:22:29,370 ERROR Failed while calibrating motor shoulder_pan: Read failed; stopping without recovery: Failed to read 'Status' on id_=6 after 1 tries. [RxPacketError] Overload error!
+CLEANUP_ERRORS ["gripper/Torque_Enable: Failed to write 'Torque_Enable' on id_=6 with '0' after 1 tries. [RxPacketError] Overload error!", "shoulder_pan/Operating_Mode: Refusing position-mode switch while torque remains 1", "elbow_flex/Operating_Mode: Refusing position-mode switch while torque remains 1", "wrist_flex/Operating_Mode: Refusing position-mode switch while torque remains 1", "wrist_roll/Operating_Mode: Refusing position-mode switch while torque remains 1", "gripper/Operating_Mode: Refusing position-mode switch while torque remains 1", "Stop readback shoulder_pan/Torque_Enable=1", "Stop readback shoulder_pan/Operating_Mode=1", "Stop readback shoulder_pan/Present_Velocity=100", "Stop readback elbow_flex/Torque_Enable=1", "Stop readback elbow_flex/Operating_Mode=1", "Stop readback elbow_flex/Present_Velocity=50", "Stop readback wrist_flex/Torque_Enable=1", "Stop readback wrist_flex/Operating_Mode=1", "Stop readback wrist_flex/Present_Velocity=-50", "Stop readback wrist_roll/Torque_Enable=1", "Stop readback wrist_roll/Operating_Mode=1", "Stop readback wrist_roll/Present_Velocity=-50", "Stop readback gripper/Torque_Enable=1", "Stop readback gripper/Operating_Mode=1", "Stop readback gripper/Present_Velocity=-100"]
+Traceback (most recent call last):
+  File "/run_artifacts/calibrate_slow.py", line 66, in read
+    status = bus.unguarded_read('Status', motor, normalize=False)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 940, in read
+    value, _, _ = self._read(addr, length, id_, num_retry=num_retry, raise_on_error=True, err_msg=err_msg)
+  File "/opt/lerobot/src/lerobot/motors/motors_bus.py", line 980, in _read
+    raise RuntimeError(f"{err_msg} {self.packet_handler.getRxPacketError(error)}")
+RuntimeError: Failed to read 'Status' on id_=6 after 1 tries. [RxPacketError] Overload error!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/run_artifacts/calibrate_slow.py", line 309, in <module>
+    main()
+  File "/run_artifacts/calibrate_slow.py", line 271, in main
+    result = auto.auto_calibrate_connected_device(device, settings, save=False)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 759, in auto_calibrate_connected_device
+    calibration_dict = auto_calibrate_robot(device, config)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 728, in auto_calibrate_robot
+    calibration = auto_calibrate_single_joint(bus, motor_name, config)
+  File "/run_artifacts/calibrate_slow.py", line 252, in record_single
+    result = original_single(bus, name, cfg)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 602, in auto_calibrate_single_joint
+    limit_result = run_limit_exploration_sequence(bus, motor_name, config, behavior)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 489, in run_limit_exploration_sequence
+    first_offset, first_limit = explore_literal_limit(bus, motor_name, behavior.first_direction, config)
+  File "/run_artifacts/calibrate_slow.py", line 129, in wrapped
+    return function(*args, **kwargs)
+  File "/opt/lerobot/src/lerobot/motors/auto_calibrate.py", line 421, in explore_literal_limit
+    current_position = bus.read("Present_Position", motor_name, normalize=False)
+  File "/run_artifacts/calibrate_slow.py", line 77, in read
+    fail(f'Read failed; stopping without recovery: {error}')
+  File "/run_artifacts/calibrate_slow.py", line 53, in fail
+    raise MotionFault(message)
+__main__.MotionFault: Read failed; stopping without recovery: Failed to read 'Status' on id_=6 after 1 tries. [RxPacketError] Overload error!

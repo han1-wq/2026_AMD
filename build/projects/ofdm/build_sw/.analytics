@@ -1,0 +1,7 @@
+timestamp=[2026-10-16 23:29:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.234, duration_ms=234, data={}
+timestamp=[2026-10-16 23:29:28], mode=APP_CREATION, duration=0:00:05.412, duration_ms=5412, data={name=ofdm_dma, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=dma_platform, application_type=application}
+timestamp=[2026-10-16 23:29:33], mode=PLATFORM_GENERATION, duration=0:00:05.538, duration_ms=5538, data={name=dma_platform}
+timestamp=[2026-10-16 23:29:36], mode=BUILD, duration=0:00:01.928, duration_ms=1928, data={name=ofdm_dma, configuration=Debug, clean_build=false}
+timestamp=[2026-10-16 23:35:20], mode=WORKBENCH_START, duration=0:00:04.893, duration_ms=4893, data={}
+timestamp=[2026-10-16 23:35:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.179, duration_ms=179, data={}
+timestamp=[2026-10-16 23:35:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.472, duration_ms=472, data={editors_count=0, platform_editors_count=0, projects_count=3, platform_projects_count=1, active_platform_editor=false, projects=dma_platform,ofdm_dma,ofdm_dma_system}

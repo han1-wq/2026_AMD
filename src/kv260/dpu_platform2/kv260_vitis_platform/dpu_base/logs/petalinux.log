@@ -1,0 +1,6 @@
+TRACE::2026-10-14.01:21:35::SCWLinux::Copying the qemu file from  /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/resources/dpu_base/linux_domain/qemu_args.txt To /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/sw/dpu_base/qemu/
+TRACE::2026-10-14.01:21:35::SCWLinux::Copying the qemu file from  /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/resources/dpu_base/linux_domain/qemu_args.txt To /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/sw/dpu_base/qemu/
+TRACE::2026-10-14.01:21:35::SCWLinux::Copying the qemu file from  /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/resources/dpu_base/linux_domain/qemu_args.txt To /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/sw/dpu_base/linux_domain/qemu/
+TRACE::2026-10-14.01:21:35::SCWLinux::Copying the qemu file from  /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/resources/dpu_base/linux_domain/qemu_args.txt To /home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_base/export/dpu_base/sw/dpu_base/linux_domain/qemu/
+TRACE::2026-10-14.01:21:35::SCWLinux:: Copying the user libraries. 
+TRACE::2026-10-14.01:21:35::SCWLinux::Skipping the Petalinux build as image is already given.

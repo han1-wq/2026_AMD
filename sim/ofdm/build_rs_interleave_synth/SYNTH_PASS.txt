@@ -1,0 +1,4 @@
+dafd3b250bb410a3740ad03c1f15ea604e6da52672e3cd468cfcaa623829ee68  /home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_gf.v
+a938eaf71a0d669aee5e02794b45db10afd5e99fb1b1afe82906bc4c2cebfa1a  /home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_block_layout.v
+0d3d48ea4194a5d785adf070fc4c189965519b91d21d698b17fb5f396be7f27d  /home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/tx/newdesign/rs_packet_encoder.v
+7a062ad21ebdbc8f8e38ac4bafcfc9a6e7cce1aa664c446a3ea813b464f62221  /home/amd/ofdm/eeSDR_ofdm_loopback/rtl/ofdm/rx/newdesign/rs_packet_decoder.v

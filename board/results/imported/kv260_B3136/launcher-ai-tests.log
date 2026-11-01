@@ -1,0 +1,46 @@
+test_environment_override (test_launcher.ConfigTests) ... ok
+test_invalid_assignment_rejected (test_launcher.ConfigTests) ... ok
+test_literal_values_no_execution (test_launcher.ConfigTests) ... ok
+test_alias_to_wrong_character_device_rejected (test_launcher.DeviceTests) ... ok
+test_container_matching_devices (test_launcher.DeviceTests) ... ok
+test_container_stale_device_rejected (test_launcher.DeviceTests) ... ok
+test_duplicate_is_rejected (test_launcher.DeviceTests) ... ok
+test_ftdi_wrong_interface_not_selected (test_launcher.DeviceTests) ... ok
+test_interface_cannot_be_disabled (test_launcher.DeviceTests) ... ok
+test_invalid_vid_rejected (test_launcher.DeviceTests) ... ok
+test_location_disambiguates (test_launcher.DeviceTests) ... ok
+test_missing_alias_rejected (test_launcher.DeviceTests) ... ok
+test_missing_is_rejected (test_launcher.DeviceTests) ... ok
+test_renumbering_does_not_change_identity (test_launcher.DeviceTests) ... ok
+test_same_device_roles_rejected (test_launcher.DeviceTests) ... ok
+test_serial_disambiguates (test_launcher.DeviceTests) ... ok
+test_sysfs_never_inherits_hub_serial (test_launcher.DeviceTests) ... ok
+test_unique_vid_pid (test_launcher.DeviceTests) ... ok
+test_unknown_interface_rejected (test_launcher.DeviceTests) ... ok
+test_volatile_alias_rejected (test_launcher.DeviceTests) ... ok
+test_absent_camera_never_starts_dpu (test_launcher.TaskTests) ... ok
+test_all_action_scripts_exist (test_launcher.TaskTests) ... ok
+test_base_timeout_covers_network_snapshot_and_other_actions_stay_bounded (test_launcher.TaskTests) ... ok
+test_control_lock_prevents_start (test_launcher.TaskTests) ... 已有同类任务或启动/停止操作正在进行；本次操作未执行。等待当前操作结束后重试。
+ok
+test_direct_save_respects_map_lock (test_launcher.TaskTests) ... ok
+test_failure_record_and_log (test_launcher.TaskTests) ... ok
+test_log_memory_and_disk_bound (test_launcher.TaskTests) ... ok
+test_long_start_and_stop_use_control_gate (test_launcher.TaskTests) ... 已有同类任务或启动/停止操作正在进行；本次操作未执行。等待当前操作结束后重试。
+已有同类任务或启动/停止操作正在进行；本次操作未执行。等待当前操作结束后重试。
+已有同类任务或启动/停止操作正在进行；本次操作未执行。等待当前操作结束后重试。
+已有同类任务或启动/停止操作正在进行；本次操作未执行。等待当前操作结束后重试。
+已有同类任务或启动/停止操作正在进行；本次操作未执行。等待当前操作结束后重试。
+ok
+test_map_injection_rejected (test_launcher.TaskTests) ... ok
+test_map_kept_separate_argument (test_launcher.TaskTests) ... ok
+test_missing_serial_never_runs_command (test_launcher.TaskTests) ... ok
+test_running_service_releases_start_gate (test_launcher.TaskTests) ... ok
+test_rviz_modes_share_lock (test_launcher.TaskTests) ... ok
+test_save_rejects_existing_and_dangling_files (test_launcher.TaskTests) ... ok
+test_unready_service_does_not_release_start_gate (test_launcher.TaskTests) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 4.584s
+
+OK

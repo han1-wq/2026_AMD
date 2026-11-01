@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "package_root": "/home/amd/kv260-ofdm-reproduction",
+  "router": "/home/amd/kv260-ofdm-reproduction/skill/SKILL.md",
+  "modules": [
+    {"id": "reusable-workflows", "name": "reusable-evidence-workflows", "path": "/home/amd/kv260-ofdm-reproduction/skill/reusable-workflows/SKILL.md", "default_scope": "offline"},
+    {"id": "pynq-portable", "name": "pynq-portable-evidence-workflow", "path": "/home/amd/kv260-ofdm-reproduction/skill/pynq-portable/SKILL.md", "default_scope": "read-only"},
+    {"id": "delivery-audit", "name": "kv260-delivery-audit", "path": "/home/amd/kv260-ofdm-reproduction/skill/delivery-audit/SKILL.md", "default_scope": "read-only"},
+    {"id": "hls-preprocess", "name": "kv260-hls-preprocess", "path": "/home/amd/kv260-ofdm-reproduction/skill/hls-preprocess/SKILL.md", "default_scope": "offline"},
+    {"id": "hls-postprocess", "name": "kv260-hls-postprocess", "path": "/home/amd/kv260-ofdm-reproduction/skill/hls-postprocess/SKILL.md", "default_scope": "read-only"},
+    {"id": "vivado-platform", "name": "kv260-vivado-platform", "path": "/home/amd/kv260-ofdm-reproduction/skill/vivado-platform/SKILL.md", "default_scope": "read-only"},
+    {"id": "ofdm-link-dma", "name": "ofdm-link-dma", "path": "/home/amd/kv260-ofdm-reproduction/skill/ofdm-link-dma/SKILL.md", "default_scope": "offline"},
+    {"id": "ofdm-firmware", "name": "ofdm-firmware-build", "path": "/home/amd/kv260-ofdm-reproduction/skill/ofdm-firmware/SKILL.md", "default_scope": "offline"},
+    {"id": "kv260-vision", "name": "kv260-b3136-vision", "path": "/home/amd/kv260-ofdm-reproduction/skill/kv260-vision/SKILL.md", "default_scope": "offline"},
+    {"id": "x3plus-navigation", "name": "kv260-x3plus-navigation", "path": "/home/amd/kv260-ofdm-reproduction/skill/x3plus-navigation/SKILL.md", "default_scope": "offline"},
+    {"id": "lerobot-act", "name": "kv260-lerobot-act", "path": "/home/amd/kv260-ofdm-reproduction/skill/lerobot-act/SKILL.md", "default_scope": "read-only"},
+    {"id": "so101-teleop", "name": "so101-teleop-safety", "path": "/home/amd/kv260-ofdm-reproduction/skill/so101-teleop/SKILL.md", "default_scope": "offline"},
+    {"id": "roarm-servo", "name": "roarm-visual-servo-audit", "path": "/home/amd/kv260-ofdm-reproduction/skill/roarm-servo/SKILL.md", "default_scope": "read-only"},
+    {"id": "host-integration", "name": "kv260-host-integration", "path": "/home/amd/kv260-ofdm-reproduction/skill/host-integration/SKILL.md", "default_scope": "read-only"}
+  ],
+  "imported": [
+    {"path": "/home/amd/kv260-ofdm-reproduction/skill/imported/roarm_console/visual-servo/SKILL.md", "sha256": "55a9b64903b774fb9310a2529a114f7cb257871932f469d36d348840088bb5f8", "scope": "historical-context-only"}
+  ],
+  "supporting_documents": [
+    "/home/amd/kv260-ofdm-reproduction/skill/references/EVIDENCE_SCHEMAS.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/PYNQ_SOURCES.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/REUSABLE_PROMPTS.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/README.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/EXECUTION_CONTRACT.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/VALIDATION_MATRIX.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/references/TROUBLESHOOTING.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/RUN_RECORD.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/INTEGRATION_HANDOFF.md",
+    "/home/amd/kv260-ofdm-reproduction/skill/templates/GAP_RECORD.md"
+  ]
+}

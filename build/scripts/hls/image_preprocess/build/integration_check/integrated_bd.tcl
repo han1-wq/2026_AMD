@@ -1,0 +1,1 @@
+../../../../../hls/image_preprocess/integration_check/integrated_bd.tcl

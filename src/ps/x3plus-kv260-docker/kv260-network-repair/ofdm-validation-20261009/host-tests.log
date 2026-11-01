@@ -1,0 +1,23 @@
+ssss..........Saved 3 bytes, CRC32=352441c2, 0.001s
+LOOPBACK PASS: 1 bytes, CRC32=d202ef8d, 0.004s
+SHA256=6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d
+Saved /tmp/tmp7gfp9x5u/received.bin
+LOOPBACK PASS: 1000 bytes, CRC32=721746a6, 0.003s
+SHA256=4e4c294b331f7a2099a379bec34b9f9fc03dc46ab465d998f4d683da53487e6d
+Saved /tmp/tmputb8psyv/received.bin
+LOOPBACK PASS: 1001 bytes, CRC32=ce1c99a9, 0.024s
+SHA256=d57f2a1c8961773c8653c0fc54fb91c8f71c62e5f0a61d7c3c8169f5c42ecd52
+Saved /tmp/tmp4wz0c6v9/received.bin
+LOOPBACK PASS: 262013 bytes, CRC32=89166314, 0.145s
+SHA256=50c692d694b7460e81cc9fc4ec40a92a5e14de7162625dd561197d6cc658458d
+Saved /tmp/tmp0zy7k53n/received.bin
+Uploaded 3 bytes to TCP; session=0000000a image=00000014
+Waiting for remote acceptance; keep the receiver connected.
+Wireless send window drained (each fragment acknowledged).
+Uploaded 3 bytes to TCP; session=0000000a image=00000014
+Waiting for remote acceptance; keep the receiver connected.
+................................
+----------------------------------------------------------------------
+Ran 46 tests in 7.512s
+
+OK (skipped=4)

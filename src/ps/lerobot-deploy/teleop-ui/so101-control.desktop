@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=SO101 遥操作
+Comment=打开本机与 KV260 遥操作控制台
+Exec=/usr/bin/python3 /home/amd/lerobot-deploy/teleop-ui/open-ui.py
+Icon=applications-engineering
+Terminal=false
+Categories=Utility;

@@ -1,0 +1,64 @@
+Python 3.10.12
+No broken requirements found.
+lerobot_path: /opt/lerobot/src/lerobot/__init__.py
+{'lerobot': '0.4.3', 'torch': '2.8.0+cpu', 'torchvision': '0.23.0+cpu', 'av': '15.1.0', 'numpy': '2.2.6', 'pyserial': '3.5', 'feetech-servo-sdk': '1.0.0'}
+usage: auto_calibrate_example.py [-h] --port PORT --device-type {tele,robot}
+                                 [--id ID] [--calibration-dir CALIBRATION_DIR]
+                                 [--try-torque TRY_TORQUE]
+                                 [--max-torque MAX_TORQUE]
+                                 [--torque-step TORQUE_STEP]
+                                 [--explore-velocity EXPLORE_VELOCITY]
+                                 [--wait-time-s WAIT_TIME_S]
+                                 [--velocity-threshold VELOCITY_THRESHOLD]
+                                 [--position-tolerance POSITION_TOLERANCE]
+                                 [--yes] [--log LOG_ENABLED]
+
+Run auto calibration for a SO101 teleoperator or robot.
+
+options:
+  -h, --help            show this help message and exit
+  --port PORT           Serial port, for example COM9.
+  --device-type {tele,robot}
+                        Choose whether to calibrate a teleoperator or a robot.
+  --id ID               Device id used for calibration file naming.
+  --calibration-dir CALIBRATION_DIR
+                        Optional calibration output directory. Defaults to the
+                        project/device standard path.
+  --try-torque TRY_TORQUE
+                        Override try_torque.
+  --max-torque MAX_TORQUE
+                        Override max_torque.
+  --torque-step TORQUE_STEP
+                        Override torque_step.
+  --explore-velocity EXPLORE_VELOCITY
+                        Override explore_velocity.
+  --wait-time-s WAIT_TIME_S
+                        Override wait_time_s.
+  --velocity-threshold VELOCITY_THRESHOLD
+                        Override velocity_threshold.
+  --position-tolerance POSITION_TOLERANCE
+                        Override position_tolerance.
+  --yes                 Skip the interactive confirmation before calibration
+                        starts.
+  --log LOG_ENABLED     Whether to print logger output in terminal. Default is
+                        true. Example: --log=false
+Traceback (most recent call last):
+  File "/deployment/validate_environment.py", line 18, in <module>
+    from lerobot.policies.act.configuration_act import ACTConfig
+  File "/opt/lerobot/src/lerobot/policies/__init__.py", line 17, in <module>
+    from .groot.configuration_groot import GrootConfig as GrootConfig
+  File "/opt/lerobot/src/lerobot/policies/groot/__init__.py", line 18, in <module>
+    from .modeling_groot import GrootPolicy
+  File "/opt/lerobot/src/lerobot/policies/groot/modeling_groot.py", line 42, in <module>
+    from lerobot.policies.groot.groot_n1 import GR00TN15
+  File "/opt/lerobot/src/lerobot/policies/groot/groot_n1.py", line 44, in <module>
+    from lerobot.policies.groot.action_head.flow_matching_action_head import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 879, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1029, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1096, in _cache_bytecode
+  File "<frozen importlib._bootstrap_external>", line 525, in _calc_mode
+  File "<frozen importlib._bootstrap_external>", line 147, in _path_stat
+KeyboardInterrupt

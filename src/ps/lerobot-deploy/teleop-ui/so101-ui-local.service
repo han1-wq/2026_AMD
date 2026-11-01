@@ -1,0 +1,16 @@
+[Unit]
+Description=SO101 local teleoperation dashboard
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/amd/lerobot-deploy/teleop-ui
+ExecStart=/usr/bin/python3 -B /home/amd/lerobot-deploy/teleop-ui/server.py --role local --bind 127.0.0.1 --port 8088
+Restart=on-failure
+RestartSec=3
+# Leave teleoperation children running when only the dashboard is restarted.
+KillMode=process
+UMask=0077
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,36 @@
+{
+ "session": {
+  "name": "Hardware",
+  "uuid": "fd498d1b-0257-490b-b1b6-73f149a475ac",
+  "description": "Vitis IDE session Hardware",
+  "timestamp": "0",
+  "report_file": {
+   "scheme": "FTP",
+   "host": "",
+   "port": 0,
+   "path": "",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "proto_file": {
+   "scheme": "FILE",
+   "host": "",
+   "port": 0,
+   "path": "/home/amd/Workspace/dpu_platform2/kv260_vitis_platform/dpu_trd/Hardware/guidance.pb",
+   "query": "",
+   "fragment": "",
+   "media_type": "",
+   "encoding": "",
+   "data": ""
+  },
+  "build_target": "",
+  "config_files": []
+ },
+ "violation_count": 0,
+ "waived_count": 0,
+ "affirmation_count": 0
+}
+

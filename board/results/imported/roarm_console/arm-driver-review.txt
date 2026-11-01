@@ -1,0 +1,127 @@
+/home/ubuntu/roarm_ws/src/roarm_main/roarm_msgs/srv/GetPoseCmd.srv
+/home/ubuntu/roarm_ws/src/roarm_main/roarm_msgs/srv/ServoCommandType.srv
+/home/ubuntu/roarm_ws/src/roarm_main/roarm_msgs/srv/MoveCircleCmd.srv
+/home/ubuntu/roarm_ws/src/roarm_main/roarm_msgs/srv/MoveLineCmd.srv
+/home/ubuntu/roarm_ws/src/roarm_main/roarm_msgs/srv/MoveJointCmd.srv
+/home/ubuntu/roarm_ws/src/roarm_else/moveit_task_constructor/msgs/srv/GetSolution.srv
+import rclpy
+from rclpy.node import Node
+from serial import SerialException
+from sensor_msgs.msg import JointState
+from std_msgs.msg import Float32
+import os
+from roarm_sdk.roarm import roarm
+
+class RoarmDriver(Node):
+    def __init__(self):
+        super().__init__('roarm_driver')
+        self.declare_parameter('serial_port', '/dev/roarm')
+        self.declare_parameter('baud_rate', 115200)
+        serial_port_name = self.get_parameter('serial_port').value
+        baud_rate = self.get_parameter('baud_rate').value
+        self.roarm_type = os.environ['ROARM_MODEL']
+        self.roarm = roarm(roarm_type=self.roarm_type, port=serial_port_name, baudrate=baud_rate)
+        
+        self.joint_states_sub = self.create_subscription(JointState, 'joint_states', self.joint_states_callback, 10)    
+        self.led_ctrl_sub = self.create_subscription(Float32, 'led_ctrl', self.led_ctrl_callback, 10)
+        
+    def handle_m2_joint_states(self,name,position):
+        base = position[name.index('base_link_to_link1')]
+        shoulder = position[name.index('link1_to_link2')]
+        elbow =  position[name.index('link2_to_link3')]
+        hand =  position[name.index('link3_to_gripper_link')]
+                
+        radians = [base, shoulder, elbow, hand]  
+        return radians
+    
+    def handle_m3_joint_states(self,name,position):
+        base = position[name.index('base_link_to_link1')]
+        shoulder = position[name.index('link1_to_link2')]
+        elbow =  position[name.index('link2_to_link3')]
+        wrist =  position[name.index('link3_to_link4')]
+        roll = position[name.index('link4_to_link5')] 
+        hand =  position[name.index('link5_to_gripper_link')]
+                
+        radians = [base, shoulder, elbow, wrist, roll, hand]  
+        return radians
+        
+    def joint_states_callback(self, msg):
+
+        header = {
+            'stamp': {
+                'sec': msg.header.stamp.sec,
+                'nanosec': msg.header.stamp.nanosec,
+            },
+            'frame_id': msg.header.frame_id,
+        }
+        
+        name = msg.name
+        position = msg.position
+        velocity = msg.velocity
+        effort = msg.effort
+
+        switch_dict = {
+            "roarm_m2": self.handle_m2_joint_states,
+            "roarm_m3": self.handle_m3_joint_states,
+        }
+        radians = switch_dict[self.roarm_type](name,position)   
+        
+        try:
+            self.roarm.joints_radian_ctrl(radians=radians,speed=1000,acc=50)
+            self.roarm.feedback_get()
+        except SerialException as e:
+            self.get_logger().error(f"{e}")
+            
+    def led_ctrl_callback(self, msg):
+        led = msg.data
+        self.roarm.led_ctrl(led=led)
+        
+def main(args=None):
+    rclpy.init(args=args)
+    roarm_driver = RoarmDriver()
+    rclpy.spin(roarm_driver)
+    roarm_driver.destroy_node()
+    rclpy.shutdown()
+
+if __name__ == '__main__':
+    main()
+
+import rclpy,time,json,pathlib,math
+from roarm_driver.roarm_driver import RoarmDriver
+from sensor_msgs.msg import JointState
+root=pathlib.Path('/tmp/roarm-function-check')
+rclpy.init();d=RoarmDriver()
+try:
+ time.sleep(9)
+ d.roarm._write(b'{"T":100}\n');time.sleep(7)
+ # Keep subscription detached until initialization has reached the current MoveIt pose.
+ d.destroy_subscription(d.joint_states_sub)
+ names=['base_link_to_link1','link1_to_link2','link2_to_link3','link3_to_link4','link4_to_link5','link5_to_gripper_link']
+ current=[]
+ sub=d.create_subscription(JointState,'joint_states',lambda m: current.append(m),10)
+ end=time.monotonic()+8
+ while not current and time.monotonic()<end:rclpy.spin_once(d,timeout_sec=.2)
+ assert current,'No MoveIt state'
+ target=[current[-1].position[current[-1].name.index(k)] for k in names]
+ assert all(abs(a-b)<.01 for a,b in zip(target,[0,0,2.618,-1.0472,0,0])),'Unexpected initial state'
+ d.destroy_subscription(sub)
+ d.roarm.joints_radian_ctrl(radians=target.copy(),speed=200,acc=10);time.sleep(7)
+ actual=d.roarm.feedback_get()[4:];error=max(abs(a-b) for a,b in zip(actual,target))
+ (root/'tutorial-circle-align.json').write_text(json.dumps(dict(target=target,actual=actual,max_error=error),indent=2))
+ assert error<.09,'Alignment error '+str(error)
+ last=[0.]
+ def callback(m):
+  d.joint_states_callback(m)
+  if time.monotonic()-last[0]>.4:
+   q=d.roarm.feedback_get()[4:]
+   row=dict(time=time.time(),target=d.handle_m3_joint_states(m.name,m.position),actual=q)
+   (root/'tutorial-circle-feedback.json').write_text(json.dumps(row))
+   with (root/'tutorial-circle-feedback.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')
+   last[0]=time.monotonic()
+ d.joint_states_sub=d.create_subscription(JointState,'joint_states',callback,1)
+ (root/'tutorial-circle-driver.ready').write_text(str(time.time()))
+ rclpy.spin(d)
+except KeyboardInterrupt:pass
+finally:
+ d.roarm.disconnect();d.destroy_node()
+ if rclpy.ok():rclpy.shutdown()

@@ -1,0 +1,128 @@
+[capture] {"width": 640, "height": 480, "bytes": 544159, "sha256": "25a41f603ec64e41e67dafe300bd5fb057782a19401e2d81294daf2991ad8446", "stamp_sec": 1791615406, "stamp_nanosec": 85720273, "frame_id": "camera_depth_optical_frame", "topic": "/yolov4/image", "captured_at": 1791615410.2762084, "source": "Astra RGB-D YOLO annotated image"}
+[image] LOOPBACK PASS: 544159 bytes, CRC32=84e7794f, 0.829s
+[image] SHA256=25a41f603ec64e41e67dafe300bd5fb057782a19401e2d81294daf2991ad8446
+[image] Saved /home/ubuntu/.local/state/kv260-launcher/ofdm-images/yolo-1791615399810959832-returned.png
+[benchmark] 001/3 PASS 1.849s fragments=545 bit_differences=0 
+[benchmark] 002/3 PASS 1.718s fragments=545 bit_differences=0 
+[benchmark] 003/3 PASS 1.738s fragments=545 bit_differences=0 
+[benchmark] {
+[benchmark]   "attempts": 3,
+[benchmark]   "successes": 3,
+[benchmark]   "failures": 0,
+[benchmark]   "failure_rate": 0.0,
+[benchmark]   "compared_bits": 13059816,
+[benchmark]   "differing_bits": 0,
+[benchmark]   "delivered_bit_difference_rate": 0.0,
+[benchmark]   "raw_rf_ber": null,
+[benchmark]   "raw_rf_packet_loss_rate": null,
+[benchmark]   "wall_s": 5.323361148999538,
+[benchmark]   "successful_bytes": 1632477,
+[benchmark]   "application_goodput_Bps": 306662.83092718676,
+[benchmark]   "success_timings": {
+[benchmark]     "elapsed_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 1.7176398869996774,
+[benchmark]       "mean": 1.7680859263327875,
+[benchmark]       "median": 1.7380763519995526,
+[benchmark]       "p90": 1.8264485023992165,
+[benchmark]       "p95": 1.8374950211991745,
+[benchmark]       "p99": 1.846332236239141,
+[benchmark]       "max": 1.8485415399991325,
+[benchmark]       "stdev": 0.057499226680271694
+[benchmark]     },
+[benchmark]     "upload_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 0.6848166679992573,
+[benchmark]       "mean": 0.7529146196660198,
+[benchmark]       "median": 0.7753654049993202,
+[benchmark]       "p90": 0.7939225097994494,
+[benchmark]       "p95": 0.7962421478994657,
+[benchmark]       "p99": 0.7980978583794786,
+[benchmark]       "max": 0.7985617859994818,
+[benchmark]       "stdev": 0.049074883520206135
+[benchmark]     },
+[benchmark]     "metadata_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 0.0026187799994659144,
+[benchmark]       "mean": 0.004001946332209627,
+[benchmark]       "median": 0.0034261909986526007,
+[benchmark]       "p90": 0.005453932598538814,
+[benchmark]       "p95": 0.00570740029852459,
+[benchmark]       "p99": 0.005910174458513211,
+[benchmark]       "max": 0.005960867998510366,
+[benchmark]       "stdev": 0.001423846597876976
+[benchmark]     },
+[benchmark]     "first_data_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 0.003769899998587789,
+[benchmark]       "mean": 0.005115155998889047,
+[benchmark]       "median": 0.00447809899924323,
+[benchmark]       "p90": 0.006573594998917543,
+[benchmark]       "p95": 0.006835531998876831,
+[benchmark]       "p99": 0.007045081598844262,
+[benchmark]       "max": 0.007097468998836121,
+[benchmark]       "stdev": 0.001431213955226289
+[benchmark]     },
+[benchmark]     "image_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 1.7161238469998352,
+[benchmark]       "mean": 1.7663433466659626,
+[benchmark]       "median": 1.7357100089993764,
+[benchmark]       "p90": 1.824898948998816,
+[benchmark]       "p95": 1.8360475664987461,
+[benchmark]       "p99": 1.8449664604986902,
+[benchmark]       "max": 1.8471961839986761,
+[benchmark]       "stdev": 0.05772804294870183
+[benchmark]     },
+[benchmark]     "crc_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 1.7162492199986445,
+[benchmark]       "mean": 1.7664648633326578,
+[benchmark]       "median": 1.7358233619997918,
+[benchmark]       "p90": 1.825022278799588,
+[benchmark]       "p95": 1.8361721433995626,
+[benchmark]       "p99": 1.8450920350795423,
+[benchmark]       "max": 1.8473220079995372,
+[benchmark]       "stdev": 0.057730379879405824
+[benchmark]     },
+[benchmark]     "ack_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 1.7167802839994692,
+[benchmark]       "mean": 1.7670382253327261,
+[benchmark]       "median": 1.736358496998946,
+[benchmark]       "p90": 1.8256524153995997,
+[benchmark]       "p95": 1.8368141551996815,
+[benchmark]       "p99": 1.8457435470397467,
+[benchmark]       "max": 1.8479758949997631,
+[benchmark]       "stdev": 0.05778700190879733
+[benchmark]     },
+[benchmark]     "gap_s": {
+[benchmark]       "n": 3,
+[benchmark]       "min": 0.0003032280001207255,
+[benchmark]       "mean": 0.000766887000281713,
+[benchmark]       "median": 0.0009066540005733259,
+[benchmark]       "p90": 0.0010539540002355353,
+[benchmark]       "p95": 0.0010723665001933114,
+[benchmark]       "p99": 0.0010870965001595323,
+[benchmark]       "max": 0.0010907790001510875,
+[benchmark]       "stdev": 0.0003363631521536335
+[benchmark]     }
+[benchmark]   },
+[benchmark]   "failure_elapsed": null,
+[benchmark]   "post_image_wait": {
+[benchmark]     "n": 3,
+[benchmark]     "min": 0.001345356000456377,
+[benchmark]     "mean": 0.001742579666824895,
+[benchmark]     "median": 0.001516039999842178,
+[benchmark]     "p90": 0.0021962824001093397,
+[benchmark]     "p95": 0.0022813127001427348,
+[benchmark]     "p99": 0.0023493369401694506,
+[benchmark]     "max": 0.00236634300017613,
+[benchmark]     "stdev": 0.0004465376273332897
+[benchmark]   }
+[benchmark] }
+
+
+回环 PASS：实际 RX 与发送数据一致
+SHA256: 25a41f603ec64e41e67dafe300bd5fb057782a19401e2d81294daf2991ad8446
+测试 PASS：成功 3/3，失败 0，差异 0 bits；结果目录：/home/ubuntu/.local/state/kv260-launcher/ofdm-images/benchmark-1791615412955855692

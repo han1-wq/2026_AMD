@@ -1,0 +1,12 @@
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_clean54: 61 Verilog/SV and 14 VHDL
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_clean6: 61 Verilog/SV and 14 VHDL
+{"name": "clean6", "rate": 6, "payload": 64, "rs": 1, "errors": 0, "packets": 1, "cfo": 0, "interference": 0, "passed": true, "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_clean6/driver.log"}
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_bypass54: 61 Verilog/SV and 14 VHDL
+{"name": "clean54", "rate": 54, "payload": 64, "rs": 1, "errors": 0, "packets": 2, "cfo": 0, "interference": 0, "passed": true, "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_clean54/driver.log"}
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_short8: 61 Verilog/SV and 14 VHDL
+{"name": "bypass54", "rate": 54, "payload": 64, "rs": 0, "errors": 0, "packets": 1, "cfo": 0, "interference": 0, "passed": true, "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_bypass54/driver.log"}
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_max8: 61 Verilog/SV and 14 VHDL
+{"name": "short8", "rate": 54, "payload": 1, "rs": 1, "errors": 8, "packets": 1, "cfo": 0, "interference": 0, "passed": true, "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_short8/driver.log"}
+PREPARED /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_impaired: 61 Verilog/SV and 14 VHDL
+{"name": "max8", "rate": 54, "payload": 1024, "rs": 1, "errors": 8, "packets": 2, "cfo": 0, "interference": 0, "passed": false, "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_max8/driver.log"}
+{"name": "impaired", "rate": 54, "payload": 64, "rs": 1, "errors": 0, "packets": 1, "cfo": 300, "interference": 2, "passed": true, "log": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_impaired/driver.log"}

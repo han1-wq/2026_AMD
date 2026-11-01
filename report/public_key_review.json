@@ -1,0 +1,7 @@
+{
+  "path": "src/ps/x3plus-kv260-docker/context/ros.key",
+  "sha256": "4a91c49af0d6f0016108b93698782b596c27ccd836937e18e0e36c3347dc602f",
+  "file_identification": "/home/amd/x3plus-kv260-docker/context/ros.key: PGP/GPG key public ring (v4) created Wed May 29 17:40:54 2019 RSA (Encrypt or Sign) 4096 bits MPI=0xd8f25d58bceee261...",
+  "reason": "Pinned ROS apt PUBLIC key required by Dockerfile; matched original verifier digest",
+  "private_key_included": false
+}

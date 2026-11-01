@@ -1,0 +1,1 @@
+../../../src/ps/lerobot-deploy/install-board.sh

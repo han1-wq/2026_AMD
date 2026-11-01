@@ -1,0 +1,15 @@
+[
+  "/usr/bin/python3",
+  "-u",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/host/dma_uart_benchmark.py",
+  "/dev/ttyUSB1",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_850mhz_uart_bulk_20261016/bulk_2000",
+  "--count",
+  "2000",
+  "--size",
+  "1000",
+  "--timeout",
+  "10",
+  "--seed",
+  "850"
+]

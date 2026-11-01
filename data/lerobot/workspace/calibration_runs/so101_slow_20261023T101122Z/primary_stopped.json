@@ -1,0 +1,38 @@
+{
+  "shoulder_pan": {
+    "Torque_Enable": 1,
+    "Goal_Velocity": 0,
+    "Operating_Mode": 1,
+    "Present_Velocity": 100
+  },
+  "shoulder_lift": {
+    "Torque_Enable": 0,
+    "Goal_Velocity": 0,
+    "Operating_Mode": 0,
+    "Present_Velocity": 0
+  },
+  "elbow_flex": {
+    "Torque_Enable": 1,
+    "Goal_Velocity": 0,
+    "Operating_Mode": 1,
+    "Present_Velocity": 50
+  },
+  "wrist_flex": {
+    "Torque_Enable": 1,
+    "Goal_Velocity": 0,
+    "Operating_Mode": 1,
+    "Present_Velocity": -50
+  },
+  "wrist_roll": {
+    "Torque_Enable": 1,
+    "Goal_Velocity": 0,
+    "Operating_Mode": 1,
+    "Present_Velocity": -50
+  },
+  "gripper": {
+    "Torque_Enable": 1,
+    "Goal_Velocity": 0,
+    "Operating_Mode": 1,
+    "Present_Velocity": -100
+  }
+}

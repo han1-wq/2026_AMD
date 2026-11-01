@@ -1,0 +1,14 @@
+CHANNEL_SMOOTHING_PASS smooth=0 carriers=208
+CHANNEL_SMOOTHING_PASS smooth=1 carriers=208
+DATA_SOFT_METRICS_PASS CW=16 DW=32 pairs=1656
+DATA_SOFT_METRICS_PASS CW=25 DW=51 pairs=1656
+PILOT_ROTATE_PRECISION_PASS checked=4050
+VITERBI_PREFIX_PASS frames=16 bits=4968
+FINE_CFO_SCALE_PASS samples=65536 boundaries=5
+COARSE_CFO_SCALE_PASS samples=65536 boundaries=5
+RF_CHAIN_ANTENNA edge_db=0.000000 edge_mhz=8.125 center_gain=1.000000
+RF_CHAIN_CHANNEL smooth=1 echo_gain=0.000000 echo_delay=1
+RF_CHAIN_ADC_MODE mode=0 wrap=0
+RF_CHAIN_GAIN gain=1.000000 first_tx_i=-97 first_tx_q=127
+RF_CHAIN_PACKET_PASS gain=1.000000 rx_shift=4 packet=1 cfo=0 interference=0 samples=641 bytes=64 adc_overflow=0 adc_max_abs=579
+Fatal: SAMPLE_CADENCE_FAIL cycle=24910 previous=13095

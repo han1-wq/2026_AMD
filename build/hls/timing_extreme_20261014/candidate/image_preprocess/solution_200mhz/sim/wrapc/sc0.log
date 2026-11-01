@@ -1,0 +1,6 @@
+   Build using "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling test_image_preprocess.cpp_pre.cpp.tb.cpp
+   Compiling apatb_image_preprocess.cpp
+   Compiling image_preprocess.cpp_pre.cpp.tb.cpp
+   Compiling apatb_image_preprocess_ir.ll
+   Generating cosim.tv.exe

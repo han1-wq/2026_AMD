@@ -1,0 +1,11 @@
+31ecd828e6bada689927ea2762a4c86dff3527f31672e1ad4aa0a81ce37eda44  /home/ubuntu/x3plus-kv260-docker/context/src/yahboomcar_nav/scripts/navigation_guard.py
+31ecd828e6bada689927ea2762a4c86dff3527f31672e1ad4aa0a81ce37eda44  /opt/x3plus_ws/src/yahboomcar_nav/scripts/navigation_guard.py
+c6bc369b23016a323aeec93cb3bb6c69010216fd1c5ad44ea45885546738979f  /home/ubuntu/x3plus-kv260-docker/context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch
+c6bc369b23016a323aeec93cb3bb6c69010216fd1c5ad44ea45885546738979f  /opt/x3plus_ws/src/yahboomcar_nav/launch/yahboomcar_navigation.launch
+89d9d9eda170cac7e2d6058f9832d1d8d51d992aab28eaf7302f6633639fb389  /home/ubuntu/x3plus-kv260-docker/context/src/yahboomcar_nav/param/common/costmap_common_params_X3plus.yaml
+89d9d9eda170cac7e2d6058f9832d1d8d51d992aab28eaf7302f6633639fb389  /opt/x3plus_ws/src/yahboomcar_nav/param/common/costmap_common_params_X3plus.yaml
+false
+true
+true
+16682 /usr/bin/python /opt/ros/melodic/bin/roslaunch yahboomcar_nav yahboomcar_navigation.launch use_rviz:=false map:=/maps/qps
+c1efe72ab1fbaf699ece3bfe67b6ac94373c1e17e2ae893d408791f9ce636283  /opt/x3plus_ws/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py

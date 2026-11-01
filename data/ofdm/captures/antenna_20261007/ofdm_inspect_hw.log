@@ -1,0 +1,138 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct  7 18:55:19 2026
+# Process ID: 19723
+# Current directory: /home/amd/ofdm/eeSDR_ofdm_loopback
+# Command line: vivado -mode batch -notrace -source /tmp/ofdm_inspect_hw.tcl -log /tmp/ofdm_inspect_hw.log -journal /tmp/ofdm_inspect_hw.jou
+# Log file: /tmp/ofdm_inspect_hw.log
+# Journal file: /tmp/ofdm_inspect_hw.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.200 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source /tmp/ofdm_inspect_hw.tcl -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0ABC01A
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+Property                                       Type    Read-only  Value
+CELL_NAME                                      enum    true       u_ZYNQ_bd_wrapper/ZYNQ_bd_i/ad936x_ofdm_TOP_0/inst/u_ila_0
+CLASS                                          string  true       hw_ila
+CONTROL.CAPTURE_CONDITION                      enum    true       AND
+CONTROL.CAPTURE_MODE                           enum    true       ALWAYS
+CONTROL.DATA_DEPTH                             int     false      4096
+CONTROL.TRIGGER_CONDITION                      string  false      AND
+CONTROL.TRIGGER_MODE                           enum    true       BASIC_ONLY
+CONTROL.TRIGGER_POSITION                       int     false      2048
+CONTROL.TRIG_OUT_MODE                          enum    true       DISABLED
+CONTROL.TSM_FILE                               string  false      
+CONTROL.WINDOW_COUNT                           int     false      1
+CORE_REFRESH_RATE_MS                           int     false      500
+CORE_UUID                                      string  true       2D4D94BB925153A2991D4E865BAE642C
+NAME                                           string  true       hw_ila_1
+STATIC.ILA_CLOCK_FREQ                          int     true       0
+STATIC.IS_ADVANCED_TRIGGER_MODE_SUPPORTED      bool    true       0
+STATIC.IS_BASIC_CAPTURE_MODE_SUPPORTED         bool    true       0
+STATIC.IS_TRANSITIONAL_CAPTURE_MODE_SUPPORTED  bool    true       0
+STATIC.IS_TRIG_IN_SUPPORTED                    bool    true       0
+STATIC.IS_TRIG_OUT_SUPPORTED                   bool    true       0
+STATIC.MAX_DATA_DEPTH                          int     true       4096
+STATIC.PORTS.COUNT                             int     true       19
+STATIC.PORTS.PORT_0.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_0.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_0.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_0.WIDTH                      int     true       1
+STATIC.PORTS.PORT_1.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_1.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_1.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_1.WIDTH                      int     true       1
+STATIC.PORTS.PORT_2.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_2.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_2.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_2.WIDTH                      int     true       16
+STATIC.PORTS.PORT_3.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_3.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_3.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_3.WIDTH                      int     true       16
+STATIC.PORTS.PORT_4.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_4.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_4.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_4.WIDTH                      int     true       4
+STATIC.PORTS.PORT_5.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_5.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_5.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_5.WIDTH                      int     true       12
+STATIC.PORTS.PORT_6.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_6.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_6.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_6.WIDTH                      int     true       12
+STATIC.PORTS.PORT_7.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_7.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_7.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_7.WIDTH                      int     true       1
+STATIC.PORTS.PORT_8.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_8.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_8.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_8.WIDTH                      int     true       12
+STATIC.PORTS.PORT_9.COMPARATOR_COUNT           int     true       1
+STATIC.PORTS.PORT_9.IS_DATA                    bool    true       1
+STATIC.PORTS.PORT_9.IS_TRIGGER                 bool    true       1
+STATIC.PORTS.PORT_9.WIDTH                      int     true       12
+STATIC.PORTS.PORT_10.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_10.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_10.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_10.WIDTH                     int     true       1
+STATIC.PORTS.PORT_11.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_11.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_11.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_11.WIDTH                     int     true       16
+STATIC.PORTS.PORT_12.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_12.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_12.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_12.WIDTH                     int     true       16
+STATIC.PORTS.PORT_13.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_13.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_13.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_13.WIDTH                     int     true       7
+STATIC.PORTS.PORT_14.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_14.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_14.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_14.WIDTH                     int     true       8
+STATIC.PORTS.PORT_15.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_15.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_15.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_15.WIDTH                     int     true       16
+STATIC.PORTS.PORT_16.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_16.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_16.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_16.WIDTH                     int     true       10
+STATIC.PORTS.PORT_17.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_17.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_17.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_17.WIDTH                     int     true       3
+STATIC.PORTS.PORT_18.COMPARATOR_COUNT          int     true       1
+STATIC.PORTS.PORT_18.IS_DATA                   bool    true       1
+STATIC.PORTS.PORT_18.IS_TRIGGER                bool    true       1
+STATIC.PORTS.PORT_18.WIDTH                     int     true       11
+STATIC.TIME_TAG_PORT                           int     true       -1
+STATIC.TIME_TAG_WIDTH                          int     true       0
+STATIC.TSM_COUNTER_0_WIDTH                     int     true       0
+STATIC.TSM_COUNTER_1_WIDTH                     int     true       0
+STATIC.TSM_COUNTER_2_WIDTH                     int     true       0
+STATIC.TSM_COUNTER_3_WIDTH                     int     true       0
+STATUS.CORE_STATUS                             string  true       IDLE
+STATUS.DATA_DEPTH                              int     true       4096
+STATUS.IS_TRIGGER_AT_STARTUP                   bool    true       0
+STATUS.SAMPLE_COUNT                            int     true       0
+STATUS.TRIGGER_POSITION                        int     true       2048
+STATUS.TSM_FLAG0                               bool    true       0
+STATUS.TSM_FLAG1                               bool    true       0
+STATUS.TSM_FLAG2                               bool    true       0
+STATUS.TSM_FLAG3                               bool    true       0
+STATUS.TSM_STATE                               int     true       0
+STATUS.WINDOW_COUNT                            int     true       1
+TRIGGER_START_TIME_SECONDS                     string  true       
+TRIGGER_STOP_TIME_SECONDS                      string  true       
+ERROR: [Labtoolstcl 44-152] hw_probe 'u_ZYNQ_bd_wrapper/ZYNQ_bd_i/ad936x_ofdm_TOP_0/inst/<const0>' does not have property 'PORT_INDEX'
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  7 18:55:32 2026...

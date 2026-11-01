@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/base_global_planner_param.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/costmap_common_params_R2.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/costmap_common_params_X1.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/costmap_common_params_X3.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/costmap_common_params_X3plus.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/dwa_local_planner_params_X3.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/dwa_local_planner_params_X3plus.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/global_costmap_params.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/global_planner_params.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/local_costmap_params.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/move_base_params.yaml": true,
+    "/opt/x3plus_ws/src/yahboomcar_nav/param/common/teb_local_planner.yaml": true
+  },
+  "board_read_exit": 0,
+  "board_state": "[{\"Type\":\"bind\",\"Source\":\"/home/ubuntu/x3plus-maps\",\"Destination\":\"/maps\",\"Mode\":\"\",\"RW\":true,\"Propagation\":\"rprivate\"}]\nMAP_FILES\n/maps/map1.yaml\n/maps/111.yaml\n/maps/666.yaml\n/maps/222.yaml\n/maps/cde.yaml\n/maps/map7.yaml\n/maps/abc.yaml\n/maps/555.yaml\n/maps/4444.yaml\n/maps/test.yaml\n/maps/map_test.yaml\n/maps/map3.yaml\nFINAL_NODES\n/rosout\n"
+}

@@ -1,0 +1,371 @@
+{
+  "hardware_actions": false,
+  "python": "/usr/bin/python3",
+  "numpy_python": "/home/amd/roarm-vision-console/.venv/bin/python",
+  "complete": true,
+  "ok": true,
+  "results": [
+    {
+      "name": "environment",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-c",
+        "import sys,platform; print(sys.version); print(platform.platform())"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.068,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/environment.log"
+    },
+    {
+      "name": "numpy_environment",
+      "command": [
+        "/home/amd/roarm-vision-console/.venv/bin/python",
+        "-B",
+        "-c",
+        "import sys,numpy; print(sys.version); print(\"numpy\",numpy.__version__)"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.169,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/numpy_environment.log"
+    },
+    {
+      "name": "ofdm_host",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/host",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 5.241,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/ofdm_host.log"
+    },
+    {
+      "name": "vision_controls",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/src/ps/kv260_B3136",
+        "-p",
+        "test_controls.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ps/kv260_B3136",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.118,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/vision_controls.log"
+    },
+    {
+      "name": "navigation",
+      "command": [
+        "/home/amd/roarm-vision-console/.venv/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/src/ps/x3plus-kv260-docker/navigation-fix",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ps/x3plus-kv260-docker",
+      "returncode": 0,
+      "error": null,
+      "seconds": 2.43,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/navigation.log"
+    },
+    {
+      "name": "so101_protocol",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/home/amd/kv260-ofdm-reproduction/src/ps/lerobot-deploy/network-teleop",
+        "-p",
+        "test_teleop.py",
+        "-v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ps/lerobot-deploy/network-teleop",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.269,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/so101_protocol.log"
+    },
+    {
+      "name": "hls_host_config",
+      "command": [
+        "/home/amd/roarm-vision-console/.venv/bin/python",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/src/kv260/HLS_IP/image_preprocess/tb/test_host_config.py"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/kv260/HLS_IP/image_preprocess",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.067,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/hls_host_config.log"
+    },
+    {
+      "name": "hls_link_config",
+      "command": [
+        "/home/amd/roarm-vision-console/.venv/bin/python",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/src/kv260/HLS_IP/image_preprocess/tb/test_link_config.py"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/kv260/HLS_IP/image_preprocess",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.069,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/hls_link_config.log"
+    },
+    {
+      "name": "b3136_artifacts",
+      "command": [
+        "sha256sum",
+        "-c",
+        "/home/amd/kv260-ofdm-reproduction/src/ps/kv260_B3136/artifacts.sha256"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ps/kv260_B3136",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.282,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/b3136_artifacts.log"
+    },
+    {
+      "name": "ofdm_xsa",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/firmware/check_dma_xsa.py",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/build_hw/TOP.xsa"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.117,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/ofdm_xsa.log"
+    },
+    {
+      "name": "dma_packets_compile",
+      "command": [
+        "iverilog",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_dma_packets",
+        "-o",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/packets.vvp",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_tx.v",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_rx.v",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim/tb_dma_packets.v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.037,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_packets_compile.log"
+    },
+    {
+      "name": "dma_packets",
+      "command": [
+        "vvp",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/packets.vvp"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.17,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_packets.log"
+    },
+    {
+      "name": "dma_control_compile",
+      "command": [
+        "iverilog",
+        "-g2012",
+        "-Wall",
+        "-s",
+        "tb_dma_control",
+        "-o",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/control.vvp",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/rtl/board/ofdm_dma_control.v",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim/tb_dma_control.v"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.02,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_control_compile.log"
+    },
+    {
+      "name": "dma_control",
+      "command": [
+        "vvp",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/control.vvp"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.014,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_control.log"
+    },
+    {
+      "name": "dma_link_compile",
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-I/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim/test_dma_link.c",
+        "-o",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/link_test"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.169,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_link_compile.log"
+    },
+    {
+      "name": "dma_link",
+      "command": [
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/link_test"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.004,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_link.log"
+    },
+    {
+      "name": "dma_services_compile",
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-ffunction-sections",
+        "-fdata-sections",
+        "-I/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app",
+        "-I/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/link.c",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim/test_dma_services.c",
+        "-Wl,--gc-sections",
+        "-o",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/services_test"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.22,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_services_compile.log"
+    },
+    {
+      "name": "dma_services",
+      "command": [
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/services_test"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.004,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_services.log"
+    },
+    {
+      "name": "dma_phy_compile",
+      "command": [
+        "cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-DOFDM_PHY_TEST",
+        "-I/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/firmware/dma_app/board_phy.c",
+        "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback/sim/test_board_phy.c",
+        "-o",
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/phy_test"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.119,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_phy_compile.log"
+    },
+    {
+      "name": "dma_phy",
+      "command": [
+        "/home/amd/kv260-ofdm-reproduction/sim/results/packaging-validation/dma/phy_test"
+      ],
+      "cwd": "/home/amd/kv260-ofdm-reproduction/src/ofdm/eeSDR_ofdm_loopback",
+      "returncode": 0,
+      "error": null,
+      "seconds": 0.004,
+      "pass_marker_found": true,
+      "ok": true,
+      "log": "sim/results/packaging-validation/dma_phy.log"
+    }
+  ]
+}

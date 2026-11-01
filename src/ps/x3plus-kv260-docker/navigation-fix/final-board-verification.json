@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "start-navigation.sh": true,
+    "stop-navigation.sh": true,
+    "run-robot.sh": true,
+    "start-rviz.sh": true,
+    "launcher_modes.py": true,
+    "navigation-fix/sync-runtime.py": true,
+    "remote-rviz/navigation-view.launch": true,
+    "remote-rviz/navigation.rviz": true,
+    "context/src/yahboomcar_nav/launch/yahboomcar_navigation.launch": true,
+    "context/src/yahboomcar_nav/launch/library/amcl.launch": true,
+    "context/src/yahboomcar_nav/launch/library/move_base.launch": true,
+    "context/src/yahboomcar_nav/launch/view_navigate.launch": true,
+    "context/src/yahboomcar_nav/scripts/navigation_guard.py": true,
+    "context/src/yahboomcar_nav/scripts/send_mark.py": true,
+    "context/src/yahboomcar_nav/rviz/yahboomcar_navigate.rviz": true,
+    "context/src/yahboomcar_nav/CMakeLists.txt": true,
+    "context/src/yahboomcar_nav/package.xml": true,
+    "context/src/yahboomcar_bringup/scripts/Mcnamu_X3plus.py": true
+  },
+  "verification": [
+    "Navigation runtime source checksums verified (10 files).\n",
+    "/rosout\n",
+    "[] none\n"
+  ]
+}

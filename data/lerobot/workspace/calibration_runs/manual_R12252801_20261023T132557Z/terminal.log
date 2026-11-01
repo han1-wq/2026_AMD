@@ -1,0 +1,29 @@
+Script started on 2026-10-23 06:25:57-07:00 [TERM="xterm-256color" TTY="/dev/pts/25" COLUMNS="80" LINES="24"]
+INFO 2026-10-23 13:26:00 calibrate.py:77 {'robot': {'calibration_dir': None,
+           'cameras': {},
+           'disable_torque_on_disconnect': True,
+           'id': 'R12252801',
+           'max_relative_target': None,
+           'port': '/dev/ttyACM0',
+           'use_degrees': False},
+ 'teleop': None}
+Try to load calibration params from:  /workspace/calibration/robots/so101_follower/R12252801.json
+Calibration offset mismatch for shoulder_pan (not in continuous rotation mode)!
+  Expected: 1420, Got: 1509
+Calibration offset mismatch for shoulder_lift (not in continuous rotation mode)!
+  Expected: -1998, Got: -1992
+Calibration offset mismatch for elbow_flex (not in continuous rotation mode)!
+  Expected: 1260, Got: 1211
+Calibration offset mismatch for wrist_flex (not in continuous rotation mode)!
+  Expected: -1745, Got: -1660
+Calibration offset mismatch for wrist_roll (not in continuous rotation mode)!
+  Expected: 1473, Got: 1466
+Calibration offset mismatch for gripper (not in continuous rotation mode)!
+  Expected: 1291, Got: 1286
+Calibration offsets mismatch!
+INFO 2026-10-23 13:26:00 follower.py:105 R12252801 SO101Follower connected.
+Press ENTER to use provided calibration file associated with the id R12252801, or type 'c' and press ENTER to run calibration: 
+INFO 2026-10-23 13:26:04 follower.py:118 Writing calibration file associated with the id R12252801 to the motors
+INFO 2026-10-23 13:26:04 follower.py:537 R12252801 SO101Follower disconnected.
+
+Script done on 2026-10-23 06:26:05-07:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,184 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Wed Oct 14 00:41:35 2026
+| Host         : ubuntu running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_drc -file kv260_hardware_platform_wrapper_drc_routed.rpt -pb kv260_hardware_platform_wrapper_drc_routed.pb -rpx kv260_hardware_platform_wrapper_drc_routed.rpx
+| Design       : kv260_hardware_platform_wrapper
+| Device       : xck26-sfvc784-2LV-c
+| Speed File   : -2LV
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 29
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-2    | Warning  | Input pipelining       | 6          |
+| DPOP-3    | Warning  | PREG Output pipelining | 7          |
+| DPOP-4    | Warning  | MREG Output pipelining | 15         |
+| RTSTAT-10 | Warning  | No routable loads      | 1          |
++-----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-2#1 Warning
+Input pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_293_1_fu_104/mac_muladd_8ns_8ns_15s_17_4_1_U144/image_preprocess_mac_muladd_8ns_8ns_15s_17_4_1_DSP48_1_U/p_reg_reg input kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_color_stage_U0/grp_p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_293_1_fu_104/mac_muladd_8ns_8ns_15s_17_4_1_U144/image_preprocess_mac_muladd_8ns_8ns_15s_17_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#2 Warning
+Input pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_fu_251/mac_muladd_12ns_9s_20ns_20_4_1_U204/image_preprocess_mac_muladd_12ns_9s_20ns_20_4_1_DSP48_10_U/p_reg_reg input kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_fu_251/mac_muladd_12ns_9s_20ns_20_4_1_U204/image_preprocess_mac_muladd_12ns_9s_20ns_20_4_1_DSP48_10_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#3 Warning
+Input pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_fu_251/mac_muladd_12ns_9s_20ns_20_4_1_U205/image_preprocess_mac_muladd_12ns_9s_20ns_20_4_1_DSP48_10_U/p_reg_reg input kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_fu_251/mac_muladd_12ns_9s_20ns_20_4_1_U205/image_preprocess_mac_muladd_12ns_9s_20ns_20_4_1_DSP48_10_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#4 Warning
+Input pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_fu_251/mac_muladd_12ns_9s_20ns_20_4_1_U206/image_preprocess_mac_muladd_12ns_9s_20ns_20_4_1_DSP48_10_U/p_reg_reg input kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/grp_p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_fu_251/mac_muladd_12ns_9s_20ns_20_4_1_U206/image_preprocess_mac_muladd_12ns_9s_20ns_20_4_1_DSP48_10_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#5 Warning
+Input pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/mac_muladd_8ns_8ns_15s_16_4_1_U71/image_preprocess_mac_muladd_8ns_8ns_15s_16_4_1_DSP48_4_U/p_reg_reg input kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/mac_muladd_8ns_8ns_15s_16_4_1_U71/image_preprocess_mac_muladd_8ns_8ns_15s_16_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-2#6 Warning
+Input pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/mac_muladd_8ns_8ns_15s_17_4_1_U66/image_preprocess_mac_muladd_8ns_8ns_15s_17_4_1_DSP48_1_U/p_reg_reg input kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_histogram_pixels_U0/mac_muladd_8ns_8ns_15s_17_4_1_U66/image_preprocess_mac_muladd_8ns_8ns_15s_17_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-3#1 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout output kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#2 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout__0 output kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#3 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout output kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#4 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout__0 output kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#5 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_32s_32_1_1_U88/dout__0 output kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_32s_32_1_1_U88/dout__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#6 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U89/dout output kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U89/dout/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-3#7 Warning
+PREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U90/dout output kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U90/dout/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-4#1 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/bound_reg_102_reg multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/bound_reg_102_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#2 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/bound_reg_102_reg__0 multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/bound_reg_102_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#3 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#4 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout__0 multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_unpack_2_U0/mul_32ns_32ns_64_1_1_U133/dout__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#5 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/bound_reg_80_reg multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/bound_reg_80_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#6 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/bound_reg_80_reg__0 multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/bound_reg_80_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#7 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#8 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout__0 multiplier stage kv260_hardware_platform_i/image_preprocess_1/inst/grp_p_anonymous_namespace_statistics_pass_fu_594/p_anonymous_namespace_unpack_U0/mul_32ns_32ns_64_1_1_U56/dout__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#9 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/b_score_reg_2241_reg multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/b_score_reg_2241_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#10 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_32s_32_1_1_U88/dout multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_32s_32_1_1_U88/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#11 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_32s_32_1_1_U88/dout__0 multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_32s_32_1_1_U88/dout__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#12 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U89/dout multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U89/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#13 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U90/dout multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_32s_6ns_32_1_1_U90/dout/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#14 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_ln159_reg_2297_reg multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_ln159_reg_2297_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-4#15 Warning
+MREG Output pipelining  
+DSP kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_ln160_reg_2302_reg multiplier stage kv260_hardware_platform_i/yolo_postprocess_1/inst/mul_ln160_reg_2302_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+1 net(s) have no routable loads. The problem bus(es) and/or net(s) are kv260_hardware_platform_i/vision_write_sc/inst/s02_entry_pipeline/s02_mmu/inst/w_sreg/skid2vector_q_rep_i_1__0_n_13.
+Related violations: <none>
+
+

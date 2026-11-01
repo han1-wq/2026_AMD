@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_max6_40/xsim.dir/max6_40_r6/xsim_script.tcl

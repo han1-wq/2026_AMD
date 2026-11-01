@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_legacy_reject40/xsim.dir/legacy_reject40_r54/xsim_script.tcl

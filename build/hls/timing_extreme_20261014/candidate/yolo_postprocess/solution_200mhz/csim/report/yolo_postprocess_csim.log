@@ -1,0 +1,16 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../sources/yolo_postprocess/tb/test_yolo_postprocess.cpp in release mode
+   Compiling ../../../../../sources/yolo_postprocess/src/yolo_postprocess.cpp in release mode
+   Generating csim.exe
+case 0 status=0 candidates=0 detections=0
+case 1 status=0 candidates=50 detections=50
+case 2 status=2 candidates=256 detections=0
+case 3 status=0 candidates=256 detections=256
+case 4 status=0 candidates=2 detections=1
+case 5 status=0 candidates=100 detections=100
+case 6 status=0 candidates=100 detections=100
+case 7 status=0 candidates=100 detections=100
+PASS independent floating reference and guards
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

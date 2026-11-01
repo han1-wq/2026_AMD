@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_parallel_clean18/xsim.dir/parallel_clean18_r18/xsim_script.tcl

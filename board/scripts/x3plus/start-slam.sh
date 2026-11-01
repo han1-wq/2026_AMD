@@ -1,0 +1,1 @@
+../../../src/ps/x3plus-kv260-docker/start-slam.sh

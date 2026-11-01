@@ -1,0 +1,2 @@
+RF_CHAIN_PASS packets=2 gain=0.750000 rx_shift=4 rate=6 rs=1 errors=8 dma_accepted=2 dma_dropped=0
+RATE_REGRESSION_PASS cases=1

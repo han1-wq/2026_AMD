@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="yolo_postprocess" xd:componentRef="yolo_postprocess" xd:initiationInterval="x" xd:clockPeriod="5" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:returnValue xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(input)" xd:originalName="input" xd:direction="inout" xd:interfaceRef="m_axi_gmem_in" xd:busTypeRef="aximm" xd:dataWidth="128" xd:bufferDirection="in"/>
+  <xd:arg xd:name="input" xd:originalName="input" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_in"/>
+  <xd:arg xd:name="*(tables)" xd:originalName="tables" xd:direction="inout" xd:interfaceRef="m_axi_gmem_in" xd:busTypeRef="aximm" xd:dataWidth="128" xd:bufferDirection="in"/>
+  <xd:arg xd:name="tables" xd:originalName="tables" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x24" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_in"/>
+  <xd:arg xd:name="*(output)" xd:originalName="output" xd:direction="inout" xd:interfaceRef="m_axi_gmem_out" xd:busTypeRef="aximm" xd:dataWidth="256" xd:bufferDirection="out"/>
+  <xd:arg xd:name="output" xd:originalName="output" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:dataWidth="32" xd:aximmInterfaceRef="m_axi_gmem_out"/>
+  <xd:arg xd:name="input_words" xd:originalName="input_words" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x3C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="table_words" xd:originalName="table_words" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x44" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_capacity" xd:originalName="output_capacity" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x4C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="confidence_q30" xd:originalName="confidence_q30" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x54" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="nms_q16" xd:originalName="nms_q16" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x5C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="enable_nms" xd:originalName="enable_nms" xd:direction="in" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x64" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(candidate_count)" xd:originalName="candidate_count" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x6C" xd:statusOffset="0x70" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(detection_count)" xd:originalName="detection_count" xd:direction="out" xd:interfaceRef="s_axi_control" xd:busTypeRef="axilite" xd:offset="0x7C" xd:statusOffset="0x80" xd:handshakeRef="ap_vld" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="17166" xd:FF="6971" xd:BRAM="0" xd:DSP="6"/>
+</xd:acceleratorMap>

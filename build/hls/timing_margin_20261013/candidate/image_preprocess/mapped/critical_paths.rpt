@@ -1,0 +1,717 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date              : Tue Oct 13 23:30:06 2026
+| Host              : ubuntu running 64-bit Ubuntu 20.04.1 LTS
+| Command           : report_timing -delay_type max -max_paths 10 -file /home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/mapped/critical_paths.rpt
+| Design            : image_preprocess
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.29 08-03-2020
+| Temperature Grade : C
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.927ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[0]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.421ns  (logic 1.326ns (38.761%)  route 2.095ns (61.239%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.304     3.528    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/A[0]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_A[0])
+                                                     -0.565     4.455    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.455    
+                         arrival time                          -3.528    
+  -------------------------------------------------------------------
+                         slack                                  0.927    
+
+Slack (MET) :             0.953ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[0]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.433ns  (logic 1.326ns (38.625%)  route 2.107ns (61.375%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.316     3.540    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/B[0]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_B[0])
+                                                     -0.527     4.493    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.493    
+                         arrival time                          -3.540    
+  -------------------------------------------------------------------
+                         slack                                  0.953    
+
+Slack (MET) :             0.965ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[8]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.430ns  (logic 1.326ns (38.659%)  route 2.104ns (61.341%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.313     3.537    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/B[8]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_B[8])
+                                                     -0.518     4.502    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.502    
+                         arrival time                          -3.537    
+  -------------------------------------------------------------------
+                         slack                                  0.965    
+
+Slack (MET) :             0.966ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[9]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.417ns  (logic 1.326ns (38.806%)  route 2.091ns (61.194%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.300     3.524    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/A[9]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_A[9])
+                                                     -0.530     4.490    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.490    
+                         arrival time                          -3.524    
+  -------------------------------------------------------------------
+                         slack                                  0.966    
+
+Slack (MET) :             0.968ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[1]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.415ns  (logic 1.326ns (38.829%)  route 2.089ns (61.171%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.298     3.522    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/B[1]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_B[1])
+                                                     -0.530     4.490    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.490    
+                         arrival time                          -3.522    
+  -------------------------------------------------------------------
+                         slack                                  0.968    
+
+Slack (MET) :             0.971ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[9]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.415ns  (logic 1.326ns (38.829%)  route 2.089ns (61.171%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.298     3.522    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/B[9]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_B[9])
+                                                     -0.527     4.493    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.493    
+                         arrival time                          -3.522    
+  -------------------------------------------------------------------
+                         slack                                  0.971    
+
+Slack (MET) :             0.971ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[8]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.427ns  (logic 1.326ns (38.693%)  route 2.101ns (61.307%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.310     3.534    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/A[8]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_A[8])
+                                                     -0.515     4.505    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.505    
+                         arrival time                          -3.534    
+  -------------------------------------------------------------------
+                         slack                                  0.971    
+
+Slack (MET) :             0.989ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[1]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.408ns  (logic 1.326ns (38.908%)  route 2.082ns (61.092%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.291     3.515    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/A[1]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_A[1])
+                                                     -0.516     4.504    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.504    
+                         arrival time                          -3.515    
+  -------------------------------------------------------------------
+                         slack                                  0.989    
+
+Slack (MET) :             0.992ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[3]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.391ns  (logic 1.326ns (39.104%)  route 2.065ns (60.896%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.274     3.498    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/B[3]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/B[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_B[3])
+                                                     -0.530     4.490    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_32ns_32ns_64_1_1_U238/dout/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.490    
+                         arrival time                          -3.498    
+  -------------------------------------------------------------------
+                         slack                                  0.992    
+
+Slack (MET) :             0.995ns  (required time - arrival time)
+  Source:                 yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E2 clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Destination:            grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[2]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by ap_clk  {rise@0.000ns fall@2.500ns period=5.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            5.000ns  (ap_clk rise@5.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.396ns  (logic 1.326ns (39.046%)  route 2.070ns (60.954%))
+  Logic Levels:           10  (CARRY8=3 LUT2=1 LUT3=1 LUT4=1 LUT6=4)
+  Clock Path Skew:        -0.052ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.055ns = ( 5.055 - 5.000 ) 
+    Source Clock Delay      (SCD):    0.107ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.107     0.107    yc_index_V_U/ap_clk
+                         RAMB18E2                                     r  yc_index_V_U/ram_reg_bram_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB18E2 (Prop_RAMB18E2_CLKARDCLK_DOUTADOUT[4])
+                                                      0.304     0.411 f  yc_index_V_U/ram_reg_bram_0/DOUTADOUT[4]
+                         net (fo=10, unplaced)        0.276     0.687    yc_index_V_U/DOUTADOUT[4]
+                         LUT6 (Prop_LUT6_I0_O)        0.225     0.912 r  yc_index_V_U/consumed_fu_128[8]_i_2/O
+                         net (fo=10, unplaced)        0.251     1.163    yc_index_V_U/consumed_fu_128[8]_i_2_n_13
+                         LUT3 (Prop_LUT3_I1_O)        0.058     1.221 r  yc_index_V_U/consumed_fu_128[11]_i_4/O
+                         net (fo=12, unplaced)        0.255     1.476    yc_index_V_U/consumed_fu_128[11]_i_4_n_13
+                         LUT6 (Prop_LUT6_I4_O)        0.058     1.534 r  yc_index_V_U/consumed_fu_128[11]_i_24/O
+                         net (fo=1, unplaced)         0.124     1.658    yc_index_V_U/consumed_fu_128[11]_i_24_n_13
+                         CARRY8 (Prop_CARRY8_DI[5]_CO[7])
+                                                      0.148     1.806 r  yc_index_V_U/consumed_fu_128_reg[11]_i_5/CO[7]
+                         net (fo=1, unplaced)         0.006     1.812    yc_index_V_U/consumed_fu_128_reg[11]_i_5_n_13
+                         CARRY8 (Prop_CARRY8_CI_CO[7])
+                                                      0.073     1.885 r  yc_index_V_U/consumed_fu_128_reg[11]_i_3/CO[7]
+                         net (fo=36, unplaced)        0.149     2.034    yc_index_V_U/grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/p_0_in
+                         LUT6 (Prop_LUT6_I1_O)        0.058     2.092 r  yc_index_V_U/consumed_fu_128[7]_i_2/O
+                         net (fo=6, unplaced)         0.240     2.332    yc_index_V_U/consumed_fu_128[7]_i_2_n_13
+                         LUT4 (Prop_LUT4_I1_O)        0.058     2.390 r  yc_index_V_U/consumed_fu_128[11]_i_2/O
+                         net (fo=7, unplaced)         0.243     2.633    yc_index_V_U/consumed_fu_128[11]_i_2_n_13
+                         LUT6 (Prop_LUT6_I0_O)        0.058     2.691 r  yc_index_V_U/consumed_fu_128[10]_i_1/O
+                         net (fo=3, unplaced)         0.224     2.915    yc_index_V_U/ram_reg_bram_0_0[10]
+                         LUT2 (Prop_LUT2_I0_O)        0.056     2.971 r  yc_index_V_U/dout_i_4__1/O
+                         net (fo=1, unplaced)         0.023     2.994    yc_index_V_U/dout_i_4__1_n_13
+                         CARRY8 (Prop_CARRY8_S[2]_O[4])
+                                                      0.230     3.224 r  yc_index_V_U/dout_i_1__0/O[4]
+                         net (fo=40, unplaced)        0.279     3.503    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/A[2]
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/A[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     5.000     5.000 r  
+                                                      0.000     5.000 r  ap_clk (IN)
+                         net (fo=16744, unset)        0.055     5.055    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/CLK
+                         DSP_A_B_DATA                                 r  grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.000     5.055    
+                         clock uncertainty           -0.035     5.020    
+                         DSP_A_B_DATA (Setup_DSP_A_B_DATA_CLK_A[2])
+                                                     -0.522     4.498    grp_p_anonymous_namespace_output_pass_fu_618/p_anonymous_namespace_resize_and_split_U0/mul_ln342_reg_711_reg/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                          4.498    
+                         arrival time                          -3.503    
+  -------------------------------------------------------------------
+                         slack                                  0.995    
+
+
+
+

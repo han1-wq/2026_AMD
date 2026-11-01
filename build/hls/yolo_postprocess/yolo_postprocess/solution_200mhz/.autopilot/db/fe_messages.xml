@@ -1,0 +1,99 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="area" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="area" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="area" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=value op=mul impl=fabric latency=2" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="suppress" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="suppress" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/scripts/build.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=yolo_postprocess" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:60:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=input offset=slave bundle=gmem_in depth=56563 max_read_burst_length=32 num_read_outstanding=2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:61:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=tables offset=slave bundle=gmem_in depth=5376" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:62:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=output offset=slave bundle=gmem_out depth=256 max_write_burst_length=16 num_write_outstanding=2" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:63:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=input bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:64:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=tables bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=output bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=input_words bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:67:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=table_words bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:68:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=output_capacity bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:69:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=confidence_q30 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=nms_q16 bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:71:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=enable_nms bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=candidate_count bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=detection_count bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:74:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:81:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=boxes type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:83:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lut type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=coords complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:103:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:133:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="yolo_postprocess" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:59:0" msg_body="Inlining function '(anonymous namespace)::pack((anonymous namespace)::Box const&amp;)' into 'yolo_postprocess(ap_uint&lt;128&gt; const*, unsigned int const*, ap_uint&lt;256&gt;*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int&amp;, unsigned int&amp;)'">
+        <args Callee="(anonymous namespace)::pack((anonymous namespace)::Box const&amp;)" Caller="yolo_postprocess(ap_uint&lt;128&gt; const*, unsigned int const*, ap_uint&lt;256&gt;*, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int&amp;, unsigned int&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:98:30" msg_body="Applying array_partition to 'coords': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="coords"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

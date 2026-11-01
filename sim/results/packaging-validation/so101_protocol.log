@@ -1,0 +1,19 @@
+test_expired_buffer (test_teleop.ProtocolTests) ... ok
+test_frames_and_fragmentation (test_teleop.ProtocolTests) ... ok
+test_hold_acknowledged_and_preserves_torque (test_teleop.ProtocolTests) ... HOLD: position goal acknowledged; torque preserved; restart both processes to resume
+ok
+test_initial_mismatch_activates_with_clamped_target (test_teleop.ProtocolTests) ... {"applied": 1, "round_trip_ms": 0.85, "present": {"shoulder_pan": 0.0, "shoulder_lift": 0.0, "elbow_flex": 0.0, "wrist_flex": 0.0, "wrist_roll": 0.0, "gripper": 0.0}, "goal": {"shoulder_pan": 0.0, "shoulder_lift": 0.0, "elbow_flex": 5.0, "wrist_flex": 0.0, "wrist_roll": 0.0, "gripper": 0.0}}
+SESSION_COMPLETE 1
+ok
+test_invalid_targets (test_teleop.ProtocolTests) ... ok
+test_local_relative_target_behavior (test_teleop.ProtocolTests) ... ok
+test_oversized (test_teleop.ProtocolTests) ... ok
+test_replay (test_teleop.ProtocolTests) ... ok
+test_server_rejects_faults_before_writing (test_teleop.ProtocolTests) ... ok
+test_timeout_and_disconnect (test_teleop.ProtocolTests) ... ok
+test_wrong_key (test_teleop.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.129s
+
+OK

@@ -1,0 +1,21 @@
+test_padded_rgb_image (test_launcher_yolo_capture.CaptureTests) ... ok
+test_rejects_depth_buffer_and_bad_stride (test_launcher_yolo_capture.CaptureTests) ... ok
+test_frame_status_write_gap_is_rejected (test_launcher_yolo_capture.DesktopCaptureTests) ... ok
+test_stale_or_missing_frames_cannot_be_sent (test_launcher_yolo_capture.DesktopCaptureTests) ... ok
+test_stopped_runtime_fails_without_using_retained_image (test_launcher_yolo_capture.DesktopCaptureTests) ... ok
+test_waits_for_new_frame_and_preserves_pixels_and_configuration (test_launcher_yolo_capture.DesktopCaptureTests) ... ok
+test_cancel_capture_only_cancels_snapshot_job (test_launcher_dma_ui.ShortcutTests) ... ok
+test_capture_automatically_sends_and_previews_actual_return (test_launcher_dma_ui.ShortcutTests) ... ok
+test_default_capture_uses_ipc_and_legacy_topic_is_explicit (test_launcher_dma_ui.ShortcutTests) ... ok
+test_failed_capture_clears_previous_return_and_never_sends (test_launcher_dma_ui.ShortcutTests) ... ok
+test_runtime_button_and_capture_button (test_launcher_dma_ui.ShortcutTests) ... ok
+test_task_button_sends_selected_state_and_log (test_launcher_dma_ui.ShortcutTests) ... ok
+test_missing_log_and_unicode_state (test_launcher_dma_payload.PayloadTests) ... ok
+test_stale_or_oversized_runtime_compacted (test_launcher_dma_payload.PayloadTests) ... ok
+test_task_contains_state_and_recent_log (test_launcher_dma_payload.PayloadTests) ... ok
+test_usb_runtime_contains_device_and_health (test_launcher_dma_payload.PayloadTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 10.814s
+
+OK

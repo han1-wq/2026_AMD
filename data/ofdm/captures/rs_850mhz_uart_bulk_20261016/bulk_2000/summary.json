@@ -1,0 +1,32 @@
+{
+  "requested": 2000,
+  "attempts": 2000,
+  "successes": 2000,
+  "failures": 0,
+  "not_attempted": 0,
+  "completed": true,
+  "passed": true,
+  "wall_s": 407.75816680700154,
+  "successful_bytes": 2000000,
+  "compared_bits": 16000000,
+  "verified_payload_differing_bits": 0,
+  "failed_payload_differing_bits": null,
+  "raw_rf_ber": null,
+  "link_retries": null,
+  "rx_dropped": null,
+  "measurement": "Only fully verified returns are saved; failed/partial data is not bit-counted",
+  "application_goodput_Bps": 4904.868038968382,
+  "success_elapsed_s": {
+    "n": 2000,
+    "min": 0.20115258599980734,
+    "mean": 0.2037715454314548,
+    "median": 0.2035377319989493,
+    "p90": 0.2049453560004622,
+    "p95": 0.20575656245127902,
+    "p99": 0.20798300247926818,
+    "max": 0.30340190599963535,
+    "stdev": 0.002510960108676091
+  },
+  "sent_sha256": "df9c9ec93ee577e1c7c8b1598a173185e62c36b06a010973c6faee5623de60bc",
+  "received_sha256": "df9c9ec93ee577e1c7c8b1598a173185e62c36b06a010973c6faee5623de60bc"
+}

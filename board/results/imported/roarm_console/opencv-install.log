@@ -1,0 +1,11 @@
+Using Python 3.10.21 environment at: /home/amd/roarm-vision-console/.venv
+Resolved 2 packages in 938ms
+Downloading opencv-python-headless (58.4MiB)
+  × Failed to download `opencv-python-headless==5.0.0.93`
+  ├─▶ Request failed after 4 retries in 45.0s
+  ├─▶ Failed to fetch:
+  │   `https://files.pythonhosted.org/packages/9b/21/f6ef335f6e65724aa78b8d792b48d40a48c381715f1e62f5a5049e09d07e/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl`
+  ├─▶ error sending request for url
+  │   (https://files.pythonhosted.org/packages/9b/21/f6ef335f6e65724aa78b8d792b48d40a48c381715f1e62f5a5049e09d07e/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl)
+  ├─▶ client error (Connect)
+  ╰─▶ operation timed out

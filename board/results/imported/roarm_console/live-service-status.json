@@ -1,0 +1,317 @@
+{
+  "vision": {
+    "connected": true,
+    "error": "",
+    "age_s": 0.353,
+    "frames": 188,
+    "stamp": 1791804874.1391845,
+    "width": 640,
+    "height": 480,
+    "depth_sync_ms": 12.47,
+    "detections": {
+      "stamp": {
+        "sec": 1791804874,
+        "nanosec": 139184374
+      },
+      "frame_id": "camera_color_optical_frame",
+      "image_width": 640,
+      "image_height": 480,
+      "sync_delta_ms": 15.49,
+      "dpu_ms": 116.049,
+      "depth": {
+        "topic": "/camera/depth/image_raw",
+        "encoding": "16UC1",
+        "unit": "mm",
+        "width": 320,
+        "height": 240,
+        "mapping": "normalized_rgb_coordinates_without_calibration"
+      },
+      "detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.988971,
+          "bbox": {
+            "x1": 367,
+            "y1": 210,
+            "x2": 451,
+            "y2": 438
+          },
+          "depth_valid": true,
+          "depth_mm": 698.0,
+          "depth_m": 0.698,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 191,
+            "y1": 127,
+            "x2": 218,
+            "y2": 197
+          },
+          "valid_depth_pixels": 261
+        },
+        {
+          "class_id": 63,
+          "class_name": "laptop",
+          "confidence": 0.724788,
+          "bbox": {
+            "x1": 574,
+            "y1": 0,
+            "x2": 639,
+            "y2": 479
+          },
+          "depth_valid": true,
+          "depth_mm": 659.0,
+          "depth_m": 0.659,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 293,
+            "y1": 48,
+            "x2": 314,
+            "y2": 192
+          },
+          "valid_depth_pixels": 29
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.385634,
+          "bbox": {
+            "x1": 388,
+            "y1": 7,
+            "x2": 504,
+            "y2": 60
+          },
+          "depth_valid": true,
+          "depth_mm": 1080.0,
+          "depth_m": 1.08,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 205,
+            "y1": 8,
+            "x2": 241,
+            "y2": 25
+          },
+          "valid_depth_pixels": 393
+        },
+        {
+          "class_id": 63,
+          "class_name": "laptop",
+          "confidence": 0.376974,
+          "bbox": {
+            "x1": 493,
+            "y1": 0,
+            "x2": 638,
+            "y2": 479
+          },
+          "depth_valid": true,
+          "depth_mm": 693.0,
+          "depth_m": 0.693,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 260,
+            "y1": 48,
+            "x2": 305,
+            "y2": 192
+          },
+          "valid_depth_pixels": 1775
+        }
+      ],
+      "tracked_detections": [
+        {
+          "class_id": 39,
+          "class_name": "bottle",
+          "confidence": 0.988406,
+          "bbox": {
+            "x1": 367,
+            "y1": 210,
+            "x2": 451,
+            "y2": 438
+          },
+          "depth_valid": true,
+          "depth_mm": 698.0,
+          "depth_m": 0.698,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 191,
+            "y1": 127,
+            "x2": 218,
+            "y2": 197
+          },
+          "valid_depth_pixels": 261,
+          "track_id": 1,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 63,
+          "class_name": "laptop",
+          "confidence": 0.735049,
+          "bbox": {
+            "x1": 574,
+            "y1": 0,
+            "x2": 639,
+            "y2": 479
+          },
+          "depth_valid": true,
+          "depth_mm": 659.0,
+          "depth_m": 0.659,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 293,
+            "y1": 48,
+            "x2": 314,
+            "y2": 192
+          },
+          "valid_depth_pixels": 29,
+          "track_id": 2,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 62,
+          "class_name": "tvmonitor",
+          "confidence": 0.385386,
+          "bbox": {
+            "x1": 387,
+            "y1": 6,
+            "x2": 502,
+            "y2": 60
+          },
+          "depth_valid": true,
+          "depth_mm": 1080.0,
+          "depth_m": 1.08,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 205,
+            "y1": 8,
+            "x2": 241,
+            "y2": 25
+          },
+          "valid_depth_pixels": 393,
+          "track_id": 612,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        },
+        {
+          "class_id": 63,
+          "class_name": "laptop",
+          "confidence": 0.365124,
+          "bbox": {
+            "x1": 493,
+            "y1": 0,
+            "x2": 638,
+            "y2": 479
+          },
+          "depth_valid": true,
+          "depth_mm": 693.0,
+          "depth_m": 0.693,
+          "depth_unit": "mm",
+          "depth_image_size": {
+            "width": 320,
+            "height": 240
+          },
+          "depth_sample_roi": {
+            "x1": 260,
+            "y1": 48,
+            "x2": 305,
+            "y2": 192
+          },
+          "valid_depth_pixels": 1775,
+          "track_id": 727,
+          "tracking_state": "confirmed",
+          "held": false,
+          "depth_stale": false
+        }
+      ],
+      "tracking": {
+        "enabled": true,
+        "held_count": 0,
+        "iou_threshold": 0.35,
+        "max_age_ms": 500,
+        "depth_stale_ms": 300
+      }
+    }
+  },
+  "model": {
+    "base_url": "https://code.rayinai.com/v1",
+    "model": "gpt-6-astra",
+    "mode": "responses",
+    "effort": "medium",
+    "key_configured": false
+  },
+  "task": "把瓶子远离相机推一点",
+  "direction": "away_from_camera",
+  "phase": "idle",
+  "busy": false,
+  "error": "",
+  "result": null,
+  "feedback": {
+    "id": 1,
+    "feedback": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "before": [
+      347.4647847,
+      2.132043974,
+      209.1004909,
+      0.041417481,
+      0.006135923,
+      0.009203885,
+      1.607611866,
+      -0.004601942,
+      0.003067962,
+      0.012271846589793078
+    ],
+    "source": "serial_encoder",
+    "time": 1791804874.4035666
+  },
+  "feedback_age_s": 0.15,
+  "events": [
+    {
+      "time": "04:34:34",
+      "text": "已读取串口编码器反馈；未发送运动命令"
+    }
+  ],
+  "motion_enabled": false,
+  "motion_block": "尚未验证 RGB/深度配准、相机到机械臂方向及无碰撞接触路径；运动未启用"
+}

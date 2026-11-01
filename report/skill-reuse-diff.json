@@ -1,0 +1,72 @@
+{
+  "checked_at_utc": "2026-10-31T02:19:08.135567+00:00",
+  "ok": true,
+  "previous_seal_comparison": {
+    "baseline_files": 31628,
+    "changed_existing_files": [
+      "README.md",
+      "report/COLLABORATION_LOG.md",
+      "report/PACKAGING_SUMMARY.md",
+      "skill/README.md",
+      "skill/SKILL.md",
+      "skill/catalog.json",
+      "skill/delivery-audit/SKILL.md",
+      "skill/hls-postprocess/SKILL.md",
+      "skill/hls-preprocess/SKILL.md",
+      "skill/host-integration/SKILL.md",
+      "skill/kv260-vision/SKILL.md",
+      "skill/lerobot-act/SKILL.md",
+      "skill/ofdm-firmware/SKILL.md",
+      "skill/ofdm-link-dma/SKILL.md",
+      "skill/references/TROUBLESHOOTING.md",
+      "skill/references/VALIDATION_MATRIX.md",
+      "skill/roarm-servo/SKILL.md",
+      "skill/so101-teleop/SKILL.md",
+      "skill/templates/GAP_RECORD.md",
+      "skill/templates/INTEGRATION_HANDOFF.md",
+      "skill/templates/RUN_RECORD.md",
+      "skill/tools/check_skills.py",
+      "skill/tools/test_check_skills.py",
+      "skill/vivado-platform/SKILL.md",
+      "skill/x3plus-navigation/SKILL.md"
+    ],
+    "missing": [],
+    "unexpected_changes": [],
+    "ok": true
+  },
+  "original_baseline_comparison": {
+    "baseline_files": 31605,
+    "changed_existing_files": [
+      "README.md",
+      "report/COLLABORATION_LOG.md",
+      "report/PACKAGING_SUMMARY.md",
+      "skill/README.md",
+      "skill/SKILL.md"
+    ],
+    "missing": [],
+    "unexpected_changes": [],
+    "ok": true
+  },
+  "new_files_before_this_report": [
+    "skill/evidence/pynq-archived-contract.json",
+    "skill/evidence/reuse-validation.json",
+    "skill/examples/candidate-fail.json",
+    "skill/examples/candidate-pass.json",
+    "skill/examples/reference.json",
+    "skill/pynq-portable/SKILL.md",
+    "skill/references/EVIDENCE_SCHEMAS.md",
+    "skill/references/PYNQ_SOURCES.md",
+    "skill/reusable-workflows/SKILL.md",
+    "skill/templates/REUSABLE_PROMPTS.md",
+    "skill/tools/export_skills.py",
+    "skill/tools/test_export_skills.py",
+    "skill/tools/test_validate_evidence.py",
+    "skill/tools/validate_evidence.py"
+  ],
+  "baselines": {
+    "previous": "/tmp/kv260-skill-reuse-g5bwhah0/SHA256SUMS",
+    "original": "/tmp/kv260-skill-baseline-rplmt8fj/SHA256SUMS"
+  },
+  "hardware_actions": false,
+  "note": "Generated before final seal. This report itself is subsequently added; excluded verifier outputs are mutable."
+}

@@ -1,0 +1,282 @@
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/scripts/inspect_clock_ips.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# open_project /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/HLS_IP'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.1/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/tools/Xilinx/Vitis/2022.1/data/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'local:vision:yolo_postprocess:1.0'. The one found in IP location '/home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess/solution_200mhz/impl/ip' will take precedence over the same IP in location /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'local:vision:image_preprocess:1.0'. The one found in IP location '/home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip' will take precedence over the same IP in location /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'kv260_hardware_platform.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+kv260_hardware_platform_yolo_postprocess_1_0
+kv260_hardware_platform_image_preprocess_1_0
+
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2702.586 ; gain = 5.961 ; free physical = 8190 ; free virtual = 15500
+# puts "REPOSITORIES: [get_property ip_repo_paths [current_project]]"
+REPOSITORIES: /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_sfm_xrt_top_1_0 /home/amd/Workspace/HLS_IP /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0 /tools/Xilinx/Vitis/2022.1/data/cache/xilinx /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/.local/hw_platform/ipcache /tools/Xilinx/Vitis/2022.1/data/ip /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/image_preprocess /home/amd/Workspace/dpu_platform2/bd_accelerator_integration/ip_repo/yolo_postprocess
+# open_bd_design [get_files */kv260_hardware_platform.bd]
+Reading block design file </home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>...
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_3
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_4
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_5
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps8_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:RTLKernel:DPUCZDX8G:1.0 - DPUCZDX8G_1
+Adding component instance block -- xilinx.com:RTLKernel:sfm_xrt_top:1.0 - sfm_xrt_top_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_ic_zynq_ultra_ps_e_0_S_AXI_HPC0_FPD
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - s01_regslice
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_ic_zynq_ultra_ps_e_0_S_AXI_HP1_FPD
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - axi_intc_0_intr_1_interrupt_concat
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - irq_const_tieoff
+Adding component instance block -- local:vision:image_preprocess:1.0 - image_preprocess_1
+Adding component instance block -- local:vision:yolo_postprocess:1.0 - yolo_postprocess_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_read_sc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - vision_write_sc
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH from address space /sfm_xrt_top_1/M_AXI.
+Successfully read diagram <kv260_hardware_platform> from block design file </home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd>
+# report_ip_status -file [file join $root reports clock100 locked_ip_status.rpt]
+# foreach core {image_preprocess yolo_postprocess} {
+#     foreach ip [get_ips *${core}*] { report_property $ip }
+#     foreach def [get_ipdefs -all local:vision:${core}:1.0] { report_property $def }
+# }
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+Property                                       Type     Read-only  Value
+ALLOWED_SIM_MODELS                             string*  true       rtl
+BASE_BOARD_PART                                string   true       xilinx.com:kv260_som:part0:1.3
+BOARD                                          string   true       xilinx.com:kv260_som_som240_1_connector_kv260_carrier_som240_1_connector:part0:1.3
+BOARD_CONNECTIONS                              string   true       som240_1_connector xilinx.com:kv260_carrier:som240_1_connector:1.3
+CLASS                                          string   true       ip
+COMBINED_SIM_MODEL                             string   false      rtl
+CONFIG.AP_CLK.INSERT_VIP                       string   true       0
+CONFIG.AP_RST_N.INSERT_VIP                     string   true       0
+CONFIG.C_M_AXI_GMEM_IN_ARUSER_WIDTH            string   true       1
+CONFIG.C_M_AXI_GMEM_IN_AWUSER_WIDTH            string   true       1
+CONFIG.C_M_AXI_GMEM_IN_BUSER_WIDTH             string   true       1
+CONFIG.C_M_AXI_GMEM_IN_CACHE_VALUE             string   true       "0011"
+CONFIG.C_M_AXI_GMEM_IN_DATA_WIDTH              string   true       128
+CONFIG.C_M_AXI_GMEM_IN_ENABLE_ID_PORTS         string   true       false
+CONFIG.C_M_AXI_GMEM_IN_ENABLE_USER_PORTS       string   true       false
+CONFIG.C_M_AXI_GMEM_IN_ID_WIDTH                string   true       1
+CONFIG.C_M_AXI_GMEM_IN_PROT_VALUE              string   true       "000"
+CONFIG.C_M_AXI_GMEM_IN_RUSER_WIDTH             string   true       1
+CONFIG.C_M_AXI_GMEM_IN_USER_VALUE              string   true       0x00000000
+CONFIG.C_M_AXI_GMEM_IN_WUSER_WIDTH             string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_ARUSER_WIDTH           string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_AWUSER_WIDTH           string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_BUSER_WIDTH            string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_CACHE_VALUE            string   true       "0011"
+CONFIG.C_M_AXI_GMEM_OUT_DATA_WIDTH             string   true       128
+CONFIG.C_M_AXI_GMEM_OUT_ENABLE_ID_PORTS        string   true       false
+CONFIG.C_M_AXI_GMEM_OUT_ENABLE_USER_PORTS      string   true       false
+CONFIG.C_M_AXI_GMEM_OUT_ID_WIDTH               string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_PROT_VALUE             string   true       "000"
+CONFIG.C_M_AXI_GMEM_OUT_RUSER_WIDTH            string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_USER_VALUE             string   true       0x00000000
+CONFIG.C_M_AXI_GMEM_OUT_WUSER_WIDTH            string   true       1
+CONFIG.C_M_AXI_GMEM_PREVIEW_ARUSER_WIDTH       string   true       1
+CONFIG.C_M_AXI_GMEM_PREVIEW_AWUSER_WIDTH       string   true       1
+CONFIG.C_M_AXI_GMEM_PREVIEW_BUSER_WIDTH        string   true       1
+CONFIG.C_M_AXI_GMEM_PREVIEW_CACHE_VALUE        string   true       "0011"
+CONFIG.C_M_AXI_GMEM_PREVIEW_DATA_WIDTH         string   true       128
+CONFIG.C_M_AXI_GMEM_PREVIEW_ENABLE_ID_PORTS    string   true       false
+CONFIG.C_M_AXI_GMEM_PREVIEW_ENABLE_USER_PORTS  string   true       false
+CONFIG.C_M_AXI_GMEM_PREVIEW_ID_WIDTH           string   true       1
+CONFIG.C_M_AXI_GMEM_PREVIEW_PROT_VALUE         string   true       "000"
+CONFIG.C_M_AXI_GMEM_PREVIEW_RUSER_WIDTH        string   true       1
+CONFIG.C_M_AXI_GMEM_PREVIEW_USER_VALUE         string   true       0x00000000
+CONFIG.C_M_AXI_GMEM_PREVIEW_WUSER_WIDTH        string   true       1
+CONFIG.Component_Name                          string   true       kv260_hardware_platform_image_preprocess_1_0
+CONFIG.M_AXI_GMEM_IN.INSERT_VIP                string   true       0
+CONFIG.M_AXI_GMEM_OUT.INSERT_VIP               string   true       0
+CONFIG.M_AXI_GMEM_PREVIEW.INSERT_VIP           string   true       0
+CONFIG.S_AXI_CONTROL.INSERT_VIP                string   true       0
+CORE_REVISION                                  long     true       2114826804
+DELIVERED_TARGETS                              string*  true       synthesis simulation sw_driver
+DESIGN_TOOL_CONTEXTS                           string*  true       HDL IPI Sysgen
+IPDEF                                          string   true       local:vision:image_preprocess:1.0
+IP_CORE_CONTAINER                              string   true       
+IP_DIR                                         string   true       /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_image_preprocess_1_0
+IP_FILE                                        string   true       /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_image_preprocess_1_0/kv260_hardware_platform_image_preprocess_1_0.xci
+IS_BD_CONTEXT                                  bool     true       1
+IS_LOCKED                                      bool     true       1
+KNOWN_TARGETS                                  string*  true       instantiation_template synthesis simulation misc sw_driver
+LOCK_DETAILS                                   string*  true       * IP definition 'KV260 Image Preprocess (1.0)' for IP 'kv260_hardware_platform_image_preprocess_1_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+                                                                   
+NAME                                           string   true       kv260_hardware_platform_image_preprocess_1_0
+PART                                           string   true       xck26-sfvc784-2LV-c
+SCOPE                                          string   true       /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd
+SELECTED_SIM_MODEL                             enum     false      rtl
+STALE_TARGETS                                  string*  true       
+SUPPORTED_TARGETS                              string*  true       instantiation_template synthesis simulation misc sw_driver
+SUPPORTS_MODREF                                bool     true       1
+SW_VERSION                                     string   true       2022.1
+UNSUPPORTED_SIMULATORS                         string*  true       
+UPGRADE_VERSIONS                               string*  true       local:vision:image_preprocess:1.0
+USED_LICENSE_KEYS                              string*  true       
+USER_LOCKED                                    bool     false      0
+Property              Type     Read-only  Value
+ALL_SIM_TYPES         string*  true       rtl
+ANSWER_RECORD         string   true       https://www.xilinx.com/search/support-keyword-search.html#q=KV260%20Image%20Preprocess
+CHANGE_LOG            string   true       
+CLASS                 string   true       ipdef
+CORE_REVISION         long     true       2114827722
+DATASHEET             string   true       
+DESCRIPTION           string   true       An IP generated by Vitis HLS
+DESIGN_TOOL_CONTEXTS  string*  true       HDL IPI Sysgen
+DISPLAY_NAME          string   true       KV260 Image Preprocess
+INTERFACES            string*  true       AXI4
+IS_AXI                string   true       1
+KNOWN_TARGETS         string*  true       synthesis simulation sw_driver misc instantiation_template
+LIBRARY               string   true       vision
+LICENSE_KEYS          string*  true       
+MODEL_NAME            string   true       image_preprocess_v1_0
+NAME                  string   true       image_preprocess
+PRODUCT_GUIDE         string   true       
+PRODUCT_WEBPAGE       string   true       http://www.local
+REPOSITORY            string   true       /home/amd/Workspace/HLS_IP
+REQUIRES_LICENSE      bool     true       0
+SIM_PRECOMPILE        bool     true       0
+SUPPORTED_FAMILIES    string*  true       zynquplus:ALL:Pre-Production
+SUPPORTS_MODREF       bool     true       1
+TAG                   string   true       image_preprocess
+TAXONOMY              string*  true       /VITIS_HLS_IP
+TYPE                  string   true       
+VENDOR                string   true       local
+VERSION               string   true       1.0
+VLNV                  string   true       local:vision:image_preprocess:1.0
+XML_FILE_NAME         string   true       /home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip/component.xml
+Property                                   Type     Read-only  Value
+ALLOWED_SIM_MODELS                         string*  true       rtl
+BASE_BOARD_PART                            string   true       xilinx.com:kv260_som:part0:1.3
+BOARD                                      string   true       xilinx.com:kv260_som_som240_1_connector_kv260_carrier_som240_1_connector:part0:1.3
+BOARD_CONNECTIONS                          string   true       som240_1_connector xilinx.com:kv260_carrier:som240_1_connector:1.3
+CLASS                                      string   true       ip
+COMBINED_SIM_MODEL                         string   false      rtl
+CONFIG.AP_CLK.INSERT_VIP                   string   true       0
+CONFIG.AP_RST_N.INSERT_VIP                 string   true       0
+CONFIG.C_M_AXI_GMEM_IN_ARUSER_WIDTH        string   true       1
+CONFIG.C_M_AXI_GMEM_IN_AWUSER_WIDTH        string   true       1
+CONFIG.C_M_AXI_GMEM_IN_BUSER_WIDTH         string   true       1
+CONFIG.C_M_AXI_GMEM_IN_CACHE_VALUE         string   true       "0011"
+CONFIG.C_M_AXI_GMEM_IN_DATA_WIDTH          string   true       128
+CONFIG.C_M_AXI_GMEM_IN_ENABLE_ID_PORTS     string   true       false
+CONFIG.C_M_AXI_GMEM_IN_ENABLE_USER_PORTS   string   true       false
+CONFIG.C_M_AXI_GMEM_IN_ID_WIDTH            string   true       1
+CONFIG.C_M_AXI_GMEM_IN_PROT_VALUE          string   true       "000"
+CONFIG.C_M_AXI_GMEM_IN_RUSER_WIDTH         string   true       1
+CONFIG.C_M_AXI_GMEM_IN_USER_VALUE          string   true       0x00000000
+CONFIG.C_M_AXI_GMEM_IN_WUSER_WIDTH         string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_ARUSER_WIDTH       string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_AWUSER_WIDTH       string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_BUSER_WIDTH        string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_CACHE_VALUE        string   true       "0011"
+CONFIG.C_M_AXI_GMEM_OUT_DATA_WIDTH         string   true       256
+CONFIG.C_M_AXI_GMEM_OUT_ENABLE_ID_PORTS    string   true       false
+CONFIG.C_M_AXI_GMEM_OUT_ENABLE_USER_PORTS  string   true       false
+CONFIG.C_M_AXI_GMEM_OUT_ID_WIDTH           string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_PROT_VALUE         string   true       "000"
+CONFIG.C_M_AXI_GMEM_OUT_RUSER_WIDTH        string   true       1
+CONFIG.C_M_AXI_GMEM_OUT_USER_VALUE         string   true       0x00000000
+CONFIG.C_M_AXI_GMEM_OUT_WUSER_WIDTH        string   true       1
+CONFIG.Component_Name                      string   true       kv260_hardware_platform_yolo_postprocess_1_0
+CONFIG.M_AXI_GMEM_IN.INSERT_VIP            string   true       0
+CONFIG.M_AXI_GMEM_OUT.INSERT_VIP           string   true       0
+CONFIG.S_AXI_CONTROL.INSERT_VIP            string   true       0
+CORE_REVISION                              long     true       2114826850
+DELIVERED_TARGETS                          string*  true       synthesis simulation sw_driver
+DESIGN_TOOL_CONTEXTS                       string*  true       HDL IPI Sysgen
+IPDEF                                      string   true       local:vision:yolo_postprocess:1.0
+IP_CORE_CONTAINER                          string   true       
+IP_DIR                                     string   true       /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_yolo_postprocess_1_0
+IP_FILE                                    string   true       /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/ip/kv260_hardware_platform_yolo_postprocess_1_0/kv260_hardware_platform_yolo_postprocess_1_0.xci
+IS_BD_CONTEXT                              bool     true       1
+IS_LOCKED                                  bool     true       1
+KNOWN_TARGETS                              string*  true       instantiation_template synthesis simulation misc sw_driver
+LOCK_DETAILS                               string*  true       * IP definition 'Yolo_postprocess (1.0)' for IP 'kv260_hardware_platform_yolo_postprocess_1_0' (customized with software release 2022.1) has a different revision in the IP Catalog.
+                                                               
+NAME                                       string   true       kv260_hardware_platform_yolo_postprocess_1_0
+PART                                       string   true       xck26-sfvc784-2LV-c
+SCOPE                                      string   true       /home/amd/Workspace/dpu_platform2/kv260_vitis_platform2/dpu_trd_system_hw_link/Hardware/dpu.build/link/vivado/vpl/prj/prj.srcs/sources_1/bd/kv260_hardware_platform/kv260_hardware_platform.bd
+SELECTED_SIM_MODEL                         enum     false      rtl
+STALE_TARGETS                              string*  true       
+SUPPORTED_TARGETS                          string*  true       instantiation_template synthesis simulation misc sw_driver
+SUPPORTS_MODREF                            bool     true       1
+SW_VERSION                                 string   true       2022.1
+UNSUPPORTED_SIMULATORS                     string*  true       
+UPGRADE_VERSIONS                           string*  true       local:vision:yolo_postprocess:1.0
+USED_LICENSE_KEYS                          string*  true       
+USER_LOCKED                                bool     false      0
+Property              Type     Read-only  Value
+ALL_SIM_TYPES         string*  true       rtl
+ANSWER_RECORD         string   true       https://www.xilinx.com/search/support-keyword-search.html#q=Yolo_postprocess
+CHANGE_LOG            string   true       
+CLASS                 string   true       ipdef
+CORE_REVISION         long     true       2114827741
+DATASHEET             string   true       
+DESCRIPTION           string   true       An IP generated by Vitis HLS
+DESIGN_TOOL_CONTEXTS  string*  true       HDL IPI Sysgen
+DISPLAY_NAME          string   true       Yolo_postprocess
+INTERFACES            string*  true       AXI4
+IS_AXI                string   true       1
+KNOWN_TARGETS         string*  true       synthesis simulation sw_driver misc instantiation_template
+LIBRARY               string   true       vision
+LICENSE_KEYS          string*  true       
+MODEL_NAME            string   true       yolo_postprocess_v1_0
+NAME                  string   true       yolo_postprocess
+PRODUCT_GUIDE         string   true       
+PRODUCT_WEBPAGE       string   true       http://www.local
+REPOSITORY            string   true       /home/amd/Workspace/HLS_IP
+REQUIRES_LICENSE      bool     true       0
+SIM_PRECOMPILE        bool     true       0
+SUPPORTED_FAMILIES    string*  true       zynquplus:ALL:Pre-Production
+SUPPORTS_MODREF       bool     true       1
+TAG                   string   true       yolo_postprocess
+TAXONOMY              string*  true       /VITIS_HLS_IP
+TYPE                  string   true       
+VENDOR                string   true       local
+VERSION               string   true       1.0
+VLNV                  string   true       local:vision:yolo_postprocess:1.0
+XML_FILE_NAME         string   true       /home/amd/Workspace/HLS_IP/yolo_postprocess/build/yolo_postprocess/solution_200mhz/impl/ip/component.xml
+# close_project
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 20:13:40 2026...

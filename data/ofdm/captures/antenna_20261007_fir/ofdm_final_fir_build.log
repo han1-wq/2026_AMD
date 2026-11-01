@@ -1,0 +1,18 @@
+make: Entering directory '/home/amd/ofdm/eeSDR_ofdm_loopback/build_80m_neighbor_v6/Vitis/AD936x_PS/Debug'
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/amd/ofdm/eeSDR_ofdm_loopback/build_80m_neighbor_v6/Vitis/ZYNQ/export/ZYNQ/sw/ZYNQ/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: AD936x_PS.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/amd/ofdm/eeSDR_ofdm_loopback/build_80m_neighbor_v6/Vitis/ZYNQ/export/ZYNQ/sw/ZYNQ/standalone_domain/bsplib/lib -o "AD936x_PS.elf"  ./src/ad9361.o ./src/ad9361_api.o ./src/ad9361_conv.o ./src/main.o ./src/platform.o ./src/util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: AD936x_PS.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size AD936x_PS.elf  |tee "AD936x_PS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 206826	   4030	  22880	 233736	  39108	AD936x_PS.elf
+Finished building: AD936x_PS.elf.size
+ 
+make: Leaving directory '/home/amd/ofdm/eeSDR_ofdm_loopback/build_80m_neighbor_v6/Vitis/AD936x_PS/Debug'

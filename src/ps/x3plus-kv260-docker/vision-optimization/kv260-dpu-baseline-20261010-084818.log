@@ -1,0 +1,442 @@
+APP_PID=74168
+SAMPLE second=0   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+CMA CmaTotal:=1024000kB CmaFree:=202772kB 
+SAMPLE second=1   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  2.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170  128 48520 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+CMA CmaTotal:=1024000kB CmaFree:=195540kB 
+Starting Astra ROS2 node in the application ROS2 context:
+  /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node
+  OPENNI2_REDIST=/home/ubuntu/x3plus-kv260-docker/context/src/astra_camera/include/openni2_redist/arm64
+  device_uri=<auto>
+  depth start attempt 1/5
+SAMPLE second=2   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  1.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170  112 114104 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175  0.0 19576 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=181900kB 
+[INFO] [1791622104.335364953] [astra_openni2]: Opened Astra depth device: 2bc5/0403@1/9
+[INFO] [1791622104.346875222] [astra_openni2]: Depth mode: 320x240 @ 30 FPS, pixel format DEPTH_1_MM
+[INFO] [1791622104.476831579] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+SAMPLE second=3   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.6  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 79.3 114956 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 46.0 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=171956kB 
+SAMPLE second=4   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.5  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 69.2 123260 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 36.5 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=169196kB 
+SAMPLE second=5   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.4  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 76.2 131496 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 33.6 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=163344kB 
+SAMPLE second=6   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.3  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 81.1 144944 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 32.2 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=156648kB 
+[INFO] [1791622109.403691702] [astra_openni2]: Depth interval: 147 frames (29.14 FPS)
+[INFO] [1791622109.429254519] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+SAMPLE second=7   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.2  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 73.6 156484 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.1 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=151440kB 
+SAMPLE second=8   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.2  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 76.7 160448 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.8 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=144220kB 
+SAMPLE second=9   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.2  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 79.5 161768 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.1 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=147728kB 
+SAMPLE second=10   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 81.0 168724 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.1 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=145120kB 
+SAMPLE second=11   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 82.7 196732 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.1 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=131552kB 
+[INFO] [1791622114.409649796] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+[INFO] [1791622114.435844783] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+SAMPLE second=12   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 81.6 230264 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.2 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=108696kB 
+SAMPLE second=13   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 78.1 255712 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.1 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=100408kB 
+SAMPLE second=14   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 75.1 293628 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.2 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=79556kB 
+SAMPLE second=15   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 77.5 339864 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.5 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=53624kB 
+SAMPLE second=16 [INFO] [1791622119.439312814] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+[INFO] [1791622119.468810284] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 78.4 365700 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.9 41304 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=592kB 
+SAMPLE second=17   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 71.8 303044 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.2 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=2132kB 
+Loading custom DPU Overlay:
+/home/ubuntu/kv260_yolov4_deploy/overlay/dpu.bit
+DPU Overlay loaded
+XModel loaded: /home/ubuntu/kv260_yolov4_deploy/compiled/yolov4_leaky_416_tf.xmodel
+Input tensor: image_input/aquant [1, 416, 416, 3]
+Input fix_point: 6
+Output tensor: conv2d_101/BiasAdd/aquant [1, 26, 26, 255] fix_point= 2
+Output tensor: conv2d_109/BiasAdd/aquant [1, 13, 13, 255] fix_point= 2
+Output tensor: conv2d_93/BiasAdd/aquant [1, 52, 52, 255] fix_point= 2
+Opening Astra HD UVC RGB /dev/v4l/by-id/usb-Astra_Pro_HD_Camera_Astra_Pro_HD_Camera-video-index0...
+Astra UVC opened: device=/dev/v4l/by-id/usb-Astra_Pro_HD_Camera_Astra_Pro_HD_Camera-video-index0 requested=640x480@30 actual=640x480@30.00
+Astra depth ready: 320x240 16UC1
+YOLO frame 1: detections=2 depths=[4.291, 4.907]
+YOLO frame 2: detections=3 depths=[4.291, 4.907, 3.813]
+SAMPLE second=18   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.1  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 71.6 312232 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.4 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=6536kB 
+YOLO frame 3: detections=3 depths=[4.291, 4.907, 3.771]
+YOLO frame 4: detections=3 depths=[4.291, 4.907, 3.813]
+YOLO frame 5: detections=3 depths=[None, None, 3.813]
+YOLO frame 6: detections=3 depths=[4.291, None, 3.813]
+YOLO frame 7: detections=2 depths=[4.291, 3.813]
+YOLO frame 8: detections=2 depths=[4.291, 3.813]
+SAMPLE second=19 YOLO frame 9: detections=2 depths=[4.291, 3.771]
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 74.0 312340 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.5 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=6536kB 
+YOLO frame 10: detections=3 depths=[4.291, 3.813, 4.907]
+YOLO frame 11: detections=3 depths=[4.291, 3.771, 4.907]
+YOLO frame 12: detections=4 depths=[4.291, 3.813, None, 1.981]
+YOLO frame 13: detections=3 depths=[4.291, 3.813, 1.981]
+YOLO frame 14: detections=4 depths=[4.291, 3.813, None, 4.907]
+YOLO frame 15: detections=3 depths=[4.291, 3.771, 4.907]
+SAMPLE second=20   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 76.2 313488 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.6 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4880kB 
+YOLO frame 16: detections=3 depths=[4.291, 3.813, None]
+YOLO frame 17: detections=3 depths=[4.291, 3.813, None]
+YOLO frame 18: detections=2 depths=[None, 3.813]
+[INFO] [1791622124.445402926] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+YOLO frame 19: detections=2 depths=[None, 3.813]
+[INFO] [1791622124.495982358] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 20: detections=1 depths=[3.813]
+YOLO frame 21: detections=1 depths=[3.813]
+YOLO frame 22: detections=1 depths=[3.813]
+SAMPLE second=21   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 78.1 313488 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.7 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 23: detections=1 depths=[3.813]
+YOLO frame 24: detections=1 depths=[3.771]
+YOLO frame 25: detections=1 depths=[3.813]
+YOLO frame 26: detections=1 depths=[3.813]
+YOLO frame 27: detections=1 depths=[3.813]
+YOLO frame 28: detections=2 depths=[3.813, 0.516]
+YOLO frame 29: detections=2 depths=[3.813, 0.516]
+SAMPLE second=22   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 79.9 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.8 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 30: detections=2 depths=[3.856, None]
+YOLO frame 31: detections=1 depths=[3.813]
+YOLO frame 32: detections=1 depths=[3.813]
+YOLO frame 33: detections=1 depths=[3.771]
+YOLO frame 34: detections=1 depths=[3.771]
+YOLO frame 35: detections=1 depths=[3.813]
+YOLO frame 36: detections=1 depths=[3.813]
+SAMPLE second=23   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 81.7 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.0 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 37: detections=1 depths=[3.813]
+YOLO frame 38: detections=1 depths=[3.813]
+YOLO frame 39: detections=1 depths=[3.813]
+YOLO frame 40: detections=2 depths=[3.813, 3.991]
+YOLO frame 41: detections=2 depths=[None, 3.991]
+YOLO frame 42: detections=1 depths=[None]
+YOLO frame 43: detections=0 depths=[]
+SAMPLE second=24   74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 82.8 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.2 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 44: detections=0 depths=[]
+YOLO frame 45: detections=0 depths=[]
+YOLO frame 46: detections=1 depths=[3.813]
+YOLO frame 47: detections=1 depths=[3.813]
+YOLO frame 48: detections=1 depths=[3.813]
+YOLO frame 49: detections=1 depths=[3.771]
+[INFO] [1791622129.475916664] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+SAMPLE second=25 YOLO frame 50: detections=1 depths=[3.771]
+[INFO] [1791622129.502630488] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 84.4 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 27.2 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 51: detections=1 depths=[None]
+YOLO frame 52: detections=1 depths=[None]
+YOLO frame 53: detections=0 depths=[]
+YOLO frame 54: detections=1 depths=[3.813]
+YOLO frame 55: detections=1 depths=[3.813]
+YOLO frame 56: detections=1 depths=[3.771]
+SAMPLE second=26 YOLO frame 57: detections=1 depths=[3.813]
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 82.7 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.3 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 58: detections=1 depths=[3.813]
+YOLO frame 59: detections=1 depths=[3.813]
+YOLO frame 60: detections=1 depths=[3.813]
+YOLO frame 61: detections=1 depths=[3.813]
+YOLO frame 62: detections=1 depths=[3.813]
+YOLO frame 63: detections=1 depths=[3.813]
+SAMPLE second=27 YOLO frame 64: detections=1 depths=[3.813]
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 83.9 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.4 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 65: detections=1 depths=[3.813]
+YOLO frame 66: detections=1 depths=[None]
+YOLO frame 67: detections=1 depths=[3.813]
+YOLO frame 68: detections=1 depths=[3.813]
+YOLO frame 69: detections=1 depths=[None]
+YOLO frame 70: detections=1 depths=[None]
+SAMPLE second=28 YOLO frame 71: detections=1 depths=[3.813]
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 85.0 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.4 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 72: detections=1 depths=[3.813]
+YOLO frame 73: detections=1 depths=[3.813]
+YOLO frame 74: detections=1 depths=[3.813]
+YOLO frame 75: detections=1 depths=[None]
+YOLO frame 76: detections=1 depths=[None]
+YOLO frame 77: detections=0 depths=[]
+SAMPLE second=29 YOLO frame 78: detections=0 depths=[]
+  74168   74140  0.0   792 /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74170   74168  0.0  5052 sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74175   74170 86.1 313644 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227   74175 26.5 41476 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+CMA CmaTotal:=1024000kB CmaFree:=4820kB 
+YOLO frame 79: detections=0 depths=[]
+YOLO frame 80: detections=0 depths=[]
+YOLO frame 81: detections=0 depths=[]
+[INFO] [1791622134.482614847] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+[INFO] [1791622134.531489129] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 82: detections=0 depths=[]
+YOLO frame 83: detections=1 depths=[3.813]
+YOLO frame 84: detections=1 depths=[3.813]
+YOLO frame 85: detections=1 depths=[3.813]
+YOLO frame 86: detections=1 depths=[3.813]
+YOLO frame 87: detections=1 depths=[None]
+YOLO frame 88: detections=1 depths=[3.813]
+YOLO frame 89: detections=1 depths=[3.813]
+YOLO frame 90: detections=2 depths=[None, 2.7]
+YOLO frame 91: detections=2 depths=[3.813, 2.7]
+YOLO frame 92: detections=2 depths=[3.813, None]
+YOLO frame 93: detections=2 depths=[3.813, None]
+YOLO frame 94: detections=2 depths=[3.813, 2.679]
+YOLO frame 95: detections=2 depths=[3.813, 2.679]
+YOLO frame 96: detections=2 depths=[3.813, None]
+YOLO frame 97: detections=1 depths=[3.813]
+YOLO frame 98: detections=1 depths=[3.813]
+YOLO frame 99: detections=1 depths=[3.813]
+YOLO frame 100: detections=1 depths=[3.813]
+YOLO frame 101: detections=1 depths=[3.813]
+YOLO frame 102: detections=1 depths=[None]
+YOLO frame 103: detections=1 depths=[None]
+YOLO frame 104: detections=1 depths=[3.813]
+YOLO frame 105: detections=1 depths=[3.813]
+YOLO frame 106: detections=1 depths=[3.813]
+YOLO frame 107: detections=2 depths=[3.813, 3.991]
+YOLO frame 108: detections=2 depths=[3.813, 3.991]
+YOLO frame 109: detections=2 depths=[3.813, None]
+YOLO frame 110: detections=2 depths=[3.813, None]
+YOLO frame 111: detections=1 depths=[3.813]
+YOLO frame 112: detections=1 depths=[3.813]
+[INFO] [1791622139.485533150] [astra_openni2]: Depth interval: 148 frames (29.58 FPS)
+[INFO] [1791622139.512513097] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 113: detections=1 depths=[3.813]
+YOLO frame 114: detections=1 depths=[3.813]
+YOLO frame 115: detections=1 depths=[3.813]
+YOLO frame 116: detections=1 depths=[3.813]
+YOLO frame 117: detections=1 depths=[3.813]
+YOLO frame 118: detections=1 depths=[3.813]
+YOLO frame 119: detections=1 depths=[3.813]
+YOLO frame 120: detections=1 depths=[3.813]
+YOLO frame 121: detections=1 depths=[3.813]
+YOLO frame 122: detections=1 depths=[None]
+YOLO frame 123: detections=1 depths=[3.771]
+YOLO frame 124: detections=1 depths=[3.813]
+YOLO frame 125: detections=1 depths=[3.813]
+YOLO frame 126: detections=1 depths=[3.813]
+YOLO frame 127: detections=1 depths=[3.771]
+YOLO frame 128: detections=1 depths=[3.813]
+YOLO frame 129: detections=1 depths=[3.813]
+YOLO frame 130: detections=1 depths=[3.813]
+YOLO frame 131: detections=1 depths=[3.813]
+YOLO frame 132: detections=1 depths=[3.813]
+YOLO frame 133: detections=1 depths=[3.813]
+YOLO frame 134: detections=1 depths=[None]
+YOLO frame 135: detections=1 depths=[None]
+YOLO frame 136: detections=1 depths=[3.813]
+YOLO frame 137: detections=1 depths=[3.813]
+YOLO frame 138: detections=1 depths=[3.813]
+YOLO frame 139: detections=1 depths=[3.813]
+YOLO frame 140: detections=1 depths=[3.813]
+YOLO frame 141: detections=1 depths=[None]
+YOLO frame 142: detections=0 depths=[]
+YOLO frame 143: detections=0 depths=[]
+YOLO frame 144: detections=0 depths=[]
+[INFO] [1791622144.491288043] [astra_openni2]: Depth interval: 149 frames (29.77 FPS)
+[INFO] [1791622144.518041006] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 145: detections=0 depths=[]
+YOLO frame 146: detections=1 depths=[3.813]
+YOLO frame 147: detections=1 depths=[3.813]
+YOLO frame 148: detections=1 depths=[3.813]
+YOLO frame 149: detections=1 depths=[3.771]
+YOLO frame 150: detections=1 depths=[3.813]
+YOLO frame 151: detections=1 depths=[3.813]
+YOLO frame 152: detections=1 depths=[3.813]
+YOLO frame 153: detections=1 depths=[3.813]
+YOLO frame 154: detections=1 depths=[3.813]
+YOLO frame 155: detections=1 depths=[None]
+YOLO frame 156: detections=0 depths=[]
+YOLO frame 157: detections=1 depths=[3.813]
+YOLO frame 158: detections=1 depths=[3.813]
+YOLO frame 159: detections=2 depths=[3.813, 1.981]
+YOLO frame 160: detections=2 depths=[3.813, 1.981]
+YOLO frame 161: detections=2 depths=[3.813, None]
+YOLO frame 162: detections=1 depths=[3.813]
+YOLO frame 163: detections=1 depths=[3.813]
+YOLO frame 164: detections=1 depths=[3.813]
+YOLO frame 165: detections=1 depths=[3.813]
+YOLO frame 166: detections=1 depths=[3.813]
+YOLO frame 167: detections=1 depths=[3.813]
+YOLO frame 168: detections=1 depths=[3.813]
+YOLO frame 169: detections=1 depths=[3.813]
+YOLO frame 170: detections=1 depths=[3.813]
+YOLO frame 171: detections=1 depths=[None]
+bash: line 23: 74168 Killed                  /usr/bin/timeout --signal=INT --kill-after=12s 35s sudo -n -E /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+APP_EXIT=137
+RESULT_LINES=171
+FINAL_PROCS YOLO frame 172: detections=1 depths=[None]
+  74175 /usr/local/share/pynq-venv/bin/python3 /home/ubuntu/kv260_yolov4_deploy/remote_camera_yolov4.py
+  74227 /home/ubuntu/kv260_astra_ws/install/astra_openni2/lib/astra_openni2/astra_openni2_node --ros-args -p depth_width:=320 -p depth_height:=240 -p depth_fps:=30
+FINAL_CMA CmaTotal:=1024000kB CmaFree:=5464kB 
+YOLO frame 173: detections=0 depths=[]
+YOLO frame 174: detections=0 depths=[]
+YOLO frame 175: detections=1 depths=[3.813]
+[INFO] [1791622149.522477911] [astra_openni2]: Depth interval: 149 frames (29.62 FPS)
+[INFO] [1791622149.549580929] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 176: detections=1 depths=[3.813]
+YOLO frame 177: detections=1 depths=[3.813]
+YOLO frame 178: detections=1 depths=[3.813]
+YOLO frame 179: detections=1 depths=[3.813]
+YOLO frame 180: detections=1 depths=[3.813]
+YOLO frame 181: detections=1 depths=[3.813]
+YOLO frame 182: detections=1 depths=[3.813]
+YOLO frame 183: detections=1 depths=[3.813]
+YOLO frame 184: detections=1 depths=[3.813]
+YOLO frame 185: detections=1 depths=[3.813]
+YOLO frame 186: detections=1 depths=[3.813]
+YOLO frame 187: detections=1 depths=[3.813]
+YOLO frame 188: detections=1 depths=[3.813]
+YOLO frame 189: detections=1 depths=[3.813]
+YOLO frame 190: detections=1 depths=[3.813]
+YOLO frame 191: detections=1 depths=[3.813]
+YOLO frame 192: detections=1 depths=[3.813]
+YOLO frame 193: detections=2 depths=[3.813, 3.147]
+YOLO frame 194: detections=2 depths=[3.813, 3.147]
+YOLO frame 195: detections=2 depths=[None, None]
+YOLO frame 196: detections=2 depths=[None, None]
+YOLO frame 197: detections=1 depths=[3.813]
+YOLO frame 198: detections=1 depths=[3.813]
+YOLO frame 199: detections=1 depths=[3.813]
+YOLO frame 200: detections=2 depths=[None, 2.679]
+YOLO frame 201: detections=2 depths=[3.856, 2.679]
+YOLO frame 202: detections=2 depths=[3.9, None]
+YOLO frame 203: detections=4 depths=[3.945, None, 2.811, 0.517]
+YOLO frame 204: detections=3 depths=[3.945, 2.721, 0.517]
+YOLO frame 205: detections=3 depths=[3.945, 2.721, None]
+YOLO frame 206: detections=3 depths=[3.856, 2.721, None]
+[INFO] [1791622154.529400593] [astra_openni2]: Depth interval: 149 frames (29.76 FPS)
+YOLO frame 207: detections=2 depths=[3.856, None]
+[INFO] [1791622154.578817920] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 208: detections=1 depths=[3.856]
+YOLO frame 209: detections=1 depths=[3.813]
+YOLO frame 210: detections=1 depths=[3.813]
+YOLO frame 211: detections=1 depths=[3.813]
+YOLO frame 212: detections=1 depths=[3.813]
+YOLO frame 213: detections=1 depths=[3.813]
+YOLO frame 214: detections=2 depths=[3.813, 4.291]
+YOLO frame 215: detections=3 depths=[3.813, 4.291, 1.981]
+YOLO frame 216: detections=3 depths=[3.813, None, 1.981]
+YOLO frame 217: detections=3 depths=[3.813, None, None]
+YOLO frame 218: detections=2 depths=[3.813, None]
+YOLO frame 219: detections=1 depths=[3.813]
+YOLO frame 220: detections=1 depths=[3.813]
+YOLO frame 221: detections=1 depths=[3.813]
+YOLO frame 222: detections=1 depths=[3.813]
+YOLO frame 223: detections=1 depths=[None]
+YOLO frame 224: detections=1 depths=[3.813]
+YOLO frame 225: detections=1 depths=[3.813]
+YOLO frame 226: detections=1 depths=[3.813]
+YOLO frame 227: detections=1 depths=[3.813]
+YOLO frame 228: detections=1 depths=[3.813]
+YOLO frame 229: detections=1 depths=[3.813]
+YOLO frame 230: detections=1 depths=[3.813]
+YOLO frame 231: detections=1 depths=[3.813]
+YOLO frame 232: detections=1 depths=[3.813]
+YOLO frame 233: detections=1 depths=[None]
+YOLO frame 234: detections=1 depths=[None]
+YOLO frame 235: detections=1 depths=[3.813]
+YOLO frame 236: detections=1 depths=[3.813]
+YOLO frame 237: detections=1 depths=[3.813]
+YOLO frame 238: detections=1 depths=[None]
+[INFO] [1791622159.531853419] [astra_openni2]: Depth interval: 148 frames (29.59 FPS)
+[INFO] [1791622159.557302509] [astra_openni2]: Publishing /camera/depth/image_raw: 320x240, 16UC1, step=640
+YOLO frame 239: detections=1 depths=[None]
+YOLO frame 240: detections=0 depths=[]
+YOLO frame 241: detections=0 depths=[]
+YOLO frame 242: detections=0 depths=[]
+YOLO frame 243: detections=1 depths=[3.813]
+YOLO frame 244: detections=1 depths=[3.813]
+YOLO frame 245: detections=1 depths=[3.813]
+YOLO frame 246: detections=1 depths=[3.813]

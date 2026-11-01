@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 13 19:42:45 2026
+# Process ID: 373328
+# Current directory: /home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip/vivado.log
+# Journal file: /home/amd/Workspace/HLS_IP/image_preprocess/build/image_preprocess/solution_200mhz/impl/ip/vivado.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 19:42:59 2026...

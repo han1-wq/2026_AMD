@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_interleave_phy_impaired40/xsim.dir/impaired40_r54/xsim_script.tcl

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct  7 19:12:28 2026
+# Process ID: 23577
+# Current directory: /home/amd/ofdm/eeSDR_ofdm_loopback
+# Command line: vivado -mode batch -notrace -source /tmp/ofdm_capture_hw.tcl -log /tmp/ofdm_payload_hw.log -journal /tmp/ofdm_payload_hw.jou
+# Log file: /tmp/ofdm_payload_hw.log
+# Journal file: /tmp/ofdm_payload_hw.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.200 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source /tmp/ofdm_capture_hw.tcl -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/0ABC01A
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 3647.594 ; gain = 910.004 ; free physical = 2542 ; free virtual = 10887
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:12:41
+{"seq": 140, "status": 1, "flags": 4, "length": 64, "tx": "3007440488bb0dadb8390383ffb461d6a2634f0ce42c3a9af3aaf069b1714a0e8a8d6c65337df9b5e2a88f25222be567bf971aa9dfac79f737503e8c24e3f460", "rx": "902a947f5bd72e26ca69cb699f2e65f401082452c61aa4865668960aee72539f5b98cf87748c832e7fdf73c4c41a9714fb4d7a7f664a361dbfcba26261830fa4"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:12:41
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:12:42
+{"seq": 141, "status": 1, "flags": 4, "length": 64, "tx": "0f94c8792d92b27600ec44a68f03afe657693df583599ebd7bd08b2f28bb585c91399bbf8a41fcdb78427a456a2a8438cc5dc00aaa9a8d7f89a2fa7004190648", "rx": "0f94c8792d92b27600ec44a68f03afe657c11147559182bd7bd08bafed0034d1099aec7a9ba75044b294b2596a2a84384c9716c245f84390eb2cd65ae2ad07c8"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:12:42
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:12:43
+{"seq": 142, "status": 1, "flags": 16, "length": 0, "tx": "f92a7c49585bd5cb4309194a2b928e34de9a89dff6793ff5b050855416107bc7d1a4cec51e4422b601f87060ccc83db7c253661c4ba9dad8590705bf3c802f52", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+wait_on_hw_ila: Time (s): cpu = 00:00:00.11 ; elapsed = 00:02:00 . Memory (MB): peak = 3664.598 ; gain = 0.000 ; free physical = 2491 ; free virtual = 10817
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2026-Oct-07 19:14:43
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:14:43
+{"seq": 143, "status": 1, "flags": 4, "length": 64, "tx": "5ed9f30b0439243e15bb687e239220c316964bd76e19479bf462a3f21da0dd48c84a5d76286d4d173fe852b3328aa27b3699afc63bb00982d0cc30e45a4043e2", "rx": "9ec552140d13c26a89db169141ec3b9a29964bd76ea125665af356f61da0dd48c84a5d76286d1da6772dee38c759947b3699afc63bb00982d0cc30e45a407b50"}
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2026-Oct-07 19:14:44
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2026-Oct-07 19:14:44
+{"seq": 144, "status": 1, "flags": 16, "length": 0, "tx": "e5097414f1d8b82bcf6516a9687f963c77af22386bfeef1f3de48141f0be420b66ae158758349fe3b6a59869c4f5706ebb9931c12ccef64d25e119e27264ac0e", "rx": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}

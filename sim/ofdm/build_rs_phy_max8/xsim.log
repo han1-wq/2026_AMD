@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Oct 16 04:12:05 2026
+# Process ID: 280234
+# Current directory: /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_max8
+# Command line: xsim -mode tcl -source {xsim.dir/max8_r54/xsim_script.tcl}
+# Log file: /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_max8/xsim.log
+# Journal file: /home/amd/ofdm/eeSDR_ofdm_loopback/sim/build_rs_phy_max8/xsim.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source xsim.dir/max8_r54/xsim_script.tcl
+# xsim {max8_r54} -testplusarg GAIN=0.75 -testplusarg CFO_HZ=0 -testplusarg INTERFERENCE=0 -testplusarg TIMEOUT_NS=10000000 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module \tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8) .tx.u_core.u_tx_modulate0.u_pilot_scramble.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module \tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8) .tx.u_core.u_tx_gen_sig.u_tx_gen_sig_interleaver.u_blk_mem_tx_gen_sig_interleaver.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module \tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8) .tx.u_core.u_tx_gen_sig.u_tx_gen_sig_interleaver.u_blk_mem_gen_tx_gen_interleaved_bits.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module \tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8) .tx.u_core.u_tx_out_arrange.u_blk_p_re.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module \tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8) .tx.u_core.u_tx_out_arrange.u_blk_p_im.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module \tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8) .rx.u_bpsk_deinterleaver.u_rom_pattern_store.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+RF_CHAIN_ANTENNA edge_db=0.000000 edge_mhz=8.125 center_gain=0.750000
+RF_CHAIN_CHANNEL smooth=1 echo_gain=0.000000 echo_delay=1
+RF_CHAIN_ADC_MODE mode=0 wrap=0
+Note: file_written romlifo is true
+Time: 0 ps  Iteration: 0  Process: /tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8)/rx/u_bpsk_data_viterbi_decoders/data_decoder.u_core/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17391  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written romwe is true
+Time: 0 ps  Iteration: 0  Process: /tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8)/rx/u_bpsk_data_viterbi_decoders/data_decoder.u_core/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17387  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written rombram is true
+Time: 0 ps  Iteration: 0  Process: /tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8)/rx/u_bpsk_data_viterbi_decoders/data_decoder.u_core/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17383  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written romlifo is true
+Time: 0 ps  Iteration: 0  Process: /tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8)/rx/u_viterbi_decoders/signal_decoder.u_impl/u_viterbi_0/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17391  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written romwe is true
+Time: 0 ps  Iteration: 0  Process: /tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8)/rx/u_viterbi_decoders/signal_decoder.u_impl/u_viterbi_0/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17387  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+Note: file_written rombram is true
+Time: 0 ps  Iteration: 0  Process: /tb_ofdm_rf_chain(PACKETS=2,PAYLOAD_LENGTH=1024,RS_INJECT_ERRORS=8)/rx/u_viterbi_decoders/signal_decoder.u_impl/u_viterbi_0/U0/a1/a1/viterbi_main_i/ntm/A1_NT_I/par_dec/DPAR_I/tbr/TRACE_LAT_I/bk1/line__17383  File: /tools/Xilinx/Vivado/2022.1/data/ip/xilinx/viterbi_v9_1/hdl/viterbi_v9_1_vh_rfs.vhd
+RF_CHAIN_GAIN gain=0.750000 first_tx_i=-97 first_tx_q=127
+RF_CHAIN_PACKET_PASS gain=0.750000 rx_shift=4 packet=1 cfo=0 interference=0 samples=3761 bytes=1024 adc_overflow=0 adc_max_abs=474
+RF_CHAIN_PACKET_PASS gain=0.750000 rx_shift=4 packet=2 cfo=0 interference=0 samples=7522 bytes=1024 adc_overflow=0 adc_max_abs=474
+RF_CHAIN_PASS packets=2 gain=0.750000 rx_shift=4 rate=54 rs=1 errors=8 dma_accepted=2 dma_dropped=0
+$finish called at time : 2098543750 ps : File "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/tb_ofdm_rf_chain.v" Line 61
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:08:58 . Memory (MB): peak = 2707.523 ; gain = 0.000 ; free physical = 6629 ; free virtual = 14377
+exit
+INFO: xsimkernel Simulation Memory Usage: 194420 KB (Peak: 253812 KB), Simulation CPU Usage: 533660 ms
+INFO: [Common 17-206] Exiting xsim at Fri Oct 16 04:21:06 2026...

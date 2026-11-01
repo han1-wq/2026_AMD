@@ -1,0 +1,67 @@
+[
+  {
+    "check": "python_ast",
+    "file": "build/package_sources.py",
+    "ok": true
+  },
+  {
+    "check": "python_ast",
+    "file": "build/index_delivery.py",
+    "ok": true
+  },
+  {
+    "check": "python_ast",
+    "file": "build/verify_delivery.py",
+    "ok": true
+  },
+  {
+    "check": "python_ast",
+    "file": "sim/run_software_checks.py",
+    "ok": true
+  },
+  {
+    "check": "bash_syntax",
+    "file": "build/build_hls.sh",
+    "exit": 0,
+    "ok": true
+  },
+  {
+    "check": "bash_syntax",
+    "file": "build/build_ofdm_firmware.sh",
+    "exit": 0,
+    "ok": true
+  },
+  {
+    "check": "reject_invalid_arguments",
+    "command": [
+      "/home/amd/kv260-ofdm-reproduction/build/build_hls.sh",
+      "invalid",
+      "csim"
+    ],
+    "exit": 2,
+    "ok": true
+  },
+  {
+    "check": "reject_invalid_arguments",
+    "command": [
+      "/home/amd/kv260-ofdm-reproduction/build/build_hls.sh",
+      "image_preprocess",
+      "invalid"
+    ],
+    "exit": 2,
+    "ok": true
+  },
+  {
+    "check": "reject_invalid_arguments",
+    "command": [
+      "/home/amd/kv260-ofdm-reproduction/build/build_ofdm_firmware.sh",
+      "/home/amd/kv260-ofdm-reproduction/build"
+    ],
+    "exit": 2,
+    "ok": true
+  },
+  {
+    "check": "classification_and_secret_rules",
+    "ok": true
+  }
+]

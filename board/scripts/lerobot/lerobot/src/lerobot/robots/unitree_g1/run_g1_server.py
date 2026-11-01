@@ -1,0 +1,1 @@
+../../../../../../../../src/ps/lerobot-deploy/lerobot/src/lerobot/robots/unitree_g1/run_g1_server.py

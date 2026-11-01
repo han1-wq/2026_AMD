@@ -1,0 +1,13 @@
+{
+  "board": "192.168.137.10",
+  "source": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/small_image/demo_source.png",
+  "received": "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/small_image/demo_received.png",
+  "bytes": 446,
+  "byte_equal": true,
+  "sha256": "9be8d12c4222e97fd662d222c2b6fe6e493049ad1c60c1bab1d285bf58720d17",
+  "uart_pass": true,
+  "image_pass": true,
+  "returned_preview_loaded": true,
+  "uart_status": "回环 PASS：实际 RX 数据与发送数据一致",
+  "image_status": "回环 PASS：实际 RX 数据与发送数据一致\nSHA256: 9be8d12c4222e97fd662d222c2b6fe6e493049ad1c60c1bab1d285bf58720d17"
+}

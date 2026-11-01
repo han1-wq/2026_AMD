@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/./sim/autowrap/testbench/image_preprocess.cpp_pre.cpp.tb.cpp

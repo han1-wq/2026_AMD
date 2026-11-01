@@ -1,0 +1,27 @@
+{
+  "python": "3.10.12",
+  "serial": "3.5",
+  "profiles": [
+    {
+      "name": "unicast",
+      "success": 412,
+      "failures": 0,
+      "errors": [],
+      "max_call_ms": 174.95206400053576
+    },
+    {
+      "name": "sync_fast",
+      "success": 7440,
+      "failures": 1,
+      "errors": [
+        {
+          "comm": -6,
+          "error": 0
+        }
+      ],
+      "max_call_ms": 50.8155360003002
+    }
+  ],
+  "error": "SerialTimeoutException: Write timeout",
+  "read_only_packets": 9932
+}

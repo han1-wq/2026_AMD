@@ -1,0 +1,10 @@
+[
+  "/usr/bin/python3",
+  "-u",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/host/dma_image_benchmark.py",
+  "192.168.137.10",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/demo_20261009/demo_source.png",
+  "/home/amd/ofdm/eeSDR_ofdm_loopback/sim/captures/rs_ack_compare400_20261016/ack_100ms/benchmark_400",
+  "--count",
+  "400"
+]

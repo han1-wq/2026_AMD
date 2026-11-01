@@ -1,0 +1,1 @@
+../../../../../src/kv260/HLS_IP/yolo_postprocess/scripts/check_nms_arithmetic.sh

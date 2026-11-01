@@ -1,0 +1,1 @@
+../../../src/host/kv260-launcher-ai/stop-astra-rgbd-yolov4.sh

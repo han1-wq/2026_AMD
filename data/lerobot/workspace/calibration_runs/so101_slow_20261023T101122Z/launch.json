@@ -1,0 +1,22 @@
+{
+  "utc_start": "2026-10-23T10:22:11.425228+00:00",
+  "container": "so101-autocal-slow-20261023t101122",
+  "image": "lerobot-cpu:joyandai-0.4.3",
+  "serial": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B91028053-if00",
+  "user_confirmed": "Power-cycled, shoulder checked, safely supported, motion area clear, supervisor ready to cut power.",
+  "explore_velocity": 150,
+  "try_torque": 400,
+  "max_torque": 600,
+  "wrist_roll_torque": 300,
+  "gripper_torque": 300,
+  "motion_budget_s": 900,
+  "phase_budget_s": 60,
+  "cleanup_budget_s": 60,
+  "external_process_budget_s": 975,
+  "sha256": {
+    "calibrate_slow.py": "6b67bd175c0ba244984f12c93c36cf6b0072a6a03dfca8326c8764b2d675f05a",
+    "before.json": "3ae44d2b932d63f3a79dc1eee1aa20f5b9c490af77f9900ef94f433006deb20d",
+    "original_before.json": "071cb4cc1c5f626ebc0ea52511206fb3d8ff1eecab54c9b58658fc7e25ebe176",
+    "test_slow.py": "bba6f8d1f897cb0724ad857df57768fb9adc1204ef4953282ee2b2fb673a7ca7"
+  }
+}

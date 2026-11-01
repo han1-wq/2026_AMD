@@ -1,0 +1,7 @@
+PASS: 256-entry quantization LUTs match NumPy at 9 fix_point settings
+OpenCV: 5.0.0 NumPy: 2.2.6
+Compared bytes: 519168
+Differing bytes: 12285
+Maximum INT8 error: 1
+Mean absolute INT8 error: 0.023662860576923076
+PASS: numeric bound and padding; this does not certify model accuracy

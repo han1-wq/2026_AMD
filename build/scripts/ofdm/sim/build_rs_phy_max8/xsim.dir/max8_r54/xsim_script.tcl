@@ -1,0 +1,1 @@
+../../../../../../../sim/ofdm/build_rs_phy_max8/xsim.dir/max8_r54/xsim_script.tcl

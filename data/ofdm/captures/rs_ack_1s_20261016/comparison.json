@@ -1,0 +1,62 @@
+{
+  "initial_1s": {
+    "attempts": 50,
+    "successes": 50,
+    "differing_bits": 0,
+    "mean_s": 0.12498676760005764,
+    "p95_s": 0.12704273764920798,
+    "goodput_Bps": 590319.5340882018,
+    "counters": {
+      "tx_submitted": 7500,
+      "tx_completed": 7500,
+      "tx_rejected": 0,
+      "tx_failed": 0,
+      "rx_accepted": 7500,
+      "rx_dropped": 0,
+      "rx_overflow": 0,
+      "rx_timeout": 0,
+      "link_retries": 0,
+      "link_failures": 0
+    }
+  },
+  "baseline_100ms": {
+    "attempts": 50,
+    "successes": 50,
+    "differing_bits": 0,
+    "mean_s": 0.1255176124798163,
+    "p95_s": 0.12801247394891108,
+    "goodput_Bps": 587812.7556524331,
+    "counters": {
+      "tx_submitted": 7500,
+      "tx_completed": 7500,
+      "tx_rejected": 0,
+      "tx_failed": 0,
+      "rx_accepted": 7500,
+      "rx_dropped": 0,
+      "rx_overflow": 0,
+      "rx_timeout": 0,
+      "link_retries": 0,
+      "link_failures": 0
+    }
+  },
+  "final_1s": {
+    "attempts": 200,
+    "successes": 200,
+    "differing_bits": 0,
+    "mean_s": 0.12512143815989474,
+    "p95_s": 0.12695721944965044,
+    "goodput_Bps": 589816.0788909722,
+    "counters": {
+      "tx_submitted": 30000,
+      "tx_completed": 30000,
+      "tx_rejected": 0,
+      "tx_failed": 0,
+      "rx_accepted": 30000,
+      "rx_dropped": 0,
+      "rx_overflow": 0,
+      "rx_timeout": 0,
+      "link_retries": 0,
+      "link_failures": 0
+    }
+  }
+}

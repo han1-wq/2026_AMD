@@ -1,0 +1,8 @@
+PING 192.168.137.10 (192.168.137.10) 56(84) bytes of data.
+From 192.168.137.1 icmp_seq=1 Redirect Network(New nexthop: 10.137.168.192)
+From 192.168.137.1 icmp_seq=1 Redirect Network(New nexthop: 10.137.168.192)
+64 bytes from 192.168.137.10: icmp_seq=1 ttl=255 time=0.743 ms
+
+--- 192.168.137.10 ping statistics ---
+1 packets transmitted, 1 received, +2 errors, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.743/0.743/0.743/0.000 ms

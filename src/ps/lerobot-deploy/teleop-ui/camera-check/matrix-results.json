@@ -1,0 +1,274 @@
+[
+  {
+    "case": "mjpeg-request15",
+    "captures": [
+      {
+        "camera": "integrated",
+        "requested": [
+          "mjpeg",
+          "640x480",
+          15
+        ],
+        "start_monotonic": 6320.552982627,
+        "end_monotonic": 6329.673514308,
+        "returncode": 0,
+        "timeout": false,
+        "progress": {
+          "frame": "133",
+          "fps": "16.68",
+          "stream_0_0_q": "-1.0",
+          "bitrate": "N/A",
+          "total_size": "N/A",
+          "out_time_us": "7968184",
+          "out_time_ms": "7968184",
+          "out_time": "00:00:07.968184",
+          "dup_frames": "0",
+          "drop_frames": "0",
+          "speed": "0.999x",
+          "progress": "end"
+        },
+        "diagnostics": [
+          "[video4linux2,v4l2 @ 0xaaab0676ee70] The driver changed the time per frame from 1/15 to 1/60",
+          "  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 640x480, 60 fps, 60 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 640x480, q=2-31, 60 fps, 60 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0 -> #0:0 (copy)",
+          "ioctl(VIDIOC_QBUF): Bad file descriptor"
+        ]
+      },
+      {
+        "camera": "web",
+        "requested": [
+          "mjpeg",
+          "640x360",
+          15
+        ],
+        "start_monotonic": 6320.553997907,
+        "end_monotonic": 6321.139102806,
+        "returncode": 1,
+        "timeout": false,
+        "progress": {},
+        "diagnostics": [
+          "[video4linux2,v4l2 @ 0xaaaae9323e70] The driver changed the time per frame from 1/15 to 1/30",
+          "[video4linux2,v4l2 @ 0xaaaae9323e70] ioctl(VIDIOC_STREAMON): No space left on device",
+          "/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0: No space left on device"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "raw-low",
+    "captures": [
+      {
+        "camera": "integrated",
+        "requested": [
+          "yuyv422",
+          "640x480",
+          30
+        ],
+        "start_monotonic": 6330.063694286,
+        "end_monotonic": 6338.964945742,
+        "returncode": 0,
+        "timeout": false,
+        "progress": {
+          "frame": "133",
+          "fps": "16.67",
+          "stream_0_0_q": "-1.0",
+          "bitrate": "N/A",
+          "total_size": "N/A",
+          "out_time_us": "7968164",
+          "out_time_ms": "7968164",
+          "out_time": "00:00:07.968164",
+          "dup_frames": "0",
+          "drop_frames": "0",
+          "speed": "0.999x",
+          "progress": "end"
+        },
+        "diagnostics": [
+          "  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, q=2-31, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0 -> #0:0 (copy)",
+          "ioctl(VIDIOC_QBUF): Bad file descriptor"
+        ]
+      },
+      {
+        "camera": "web",
+        "requested": [
+          "yuyv422",
+          "640x360",
+          30
+        ],
+        "start_monotonic": 6330.064472541,
+        "end_monotonic": 6330.534183607,
+        "returncode": 1,
+        "timeout": false,
+        "progress": {},
+        "diagnostics": [
+          "[video4linux2,v4l2 @ 0xaaaae7143db0] ioctl(VIDIOC_STREAMON): No space left on device",
+          "/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0: No space left on device"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "raw-mjpeg",
+    "captures": [
+      {
+        "camera": "integrated",
+        "requested": [
+          "yuyv422",
+          "640x480",
+          30
+        ],
+        "start_monotonic": 6339.349915275,
+        "end_monotonic": 6348.260600387,
+        "returncode": 0,
+        "timeout": false,
+        "progress": {
+          "frame": "133",
+          "fps": "16.68",
+          "stream_0_0_q": "-1.0",
+          "bitrate": "N/A",
+          "total_size": "N/A",
+          "out_time_us": "7968176",
+          "out_time_ms": "7968176",
+          "out_time": "00:00:07.968176",
+          "dup_frames": "0",
+          "drop_frames": "0",
+          "speed": "0.999x",
+          "progress": "end"
+        },
+        "diagnostics": [
+          "  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x480, q=2-31, 147456 kb/s, 30 fps, 30 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0 -> #0:0 (copy)",
+          "ioctl(VIDIOC_QBUF): Bad file descriptor"
+        ]
+      },
+      {
+        "camera": "web",
+        "requested": [
+          "mjpeg",
+          "640x360",
+          30
+        ],
+        "start_monotonic": 6339.350541167,
+        "end_monotonic": 6339.87988087,
+        "returncode": 1,
+        "timeout": false,
+        "progress": {},
+        "diagnostics": [
+          "[video4linux2,v4l2 @ 0xaaaaf7771e70] ioctl(VIDIOC_STREAMON): No space left on device",
+          "/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0: No space left on device"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "mjpeg-raw",
+    "captures": [
+      {
+        "camera": "integrated",
+        "requested": [
+          "mjpeg",
+          "640x480",
+          60
+        ],
+        "start_monotonic": 6348.643977047,
+        "end_monotonic": 6357.546449578,
+        "returncode": 0,
+        "timeout": false,
+        "progress": {
+          "frame": "133",
+          "fps": "16.68",
+          "stream_0_0_q": "-1.0",
+          "bitrate": "N/A",
+          "total_size": "N/A",
+          "out_time_us": "7968162",
+          "out_time_ms": "7968162",
+          "out_time": "00:00:07.968162",
+          "dup_frames": "0",
+          "drop_frames": "0",
+          "speed": "0.999x",
+          "progress": "end"
+        },
+        "diagnostics": [
+          "  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 640x480, 60 fps, 60 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0: Video: mjpeg (Baseline), yuvj422p(pc, bt470bg/unknown/unknown), 640x480, q=2-31, 60 fps, 60 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0 -> #0:0 (copy)",
+          "ioctl(VIDIOC_QBUF): Bad file descriptor"
+        ]
+      },
+      {
+        "camera": "web",
+        "requested": [
+          "yuyv422",
+          "640x360",
+          30
+        ],
+        "start_monotonic": 6348.644787274,
+        "end_monotonic": 6349.120067606,
+        "returncode": 1,
+        "timeout": false,
+        "progress": {},
+        "diagnostics": [
+          "[video4linux2,v4l2 @ 0xaaaacc448e70] ioctl(VIDIOC_STREAMON): No space left on device",
+          "/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0: No space left on device"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "raw720-slow",
+    "captures": [
+      {
+        "camera": "integrated",
+        "requested": [
+          "yuyv422",
+          "1280x720",
+          10
+        ],
+        "start_monotonic": 6357.945625343,
+        "end_monotonic": 6367.20073697,
+        "returncode": 0,
+        "timeout": false,
+        "progress": {
+          "frame": "80",
+          "fps": "9.99",
+          "stream_0_0_q": "-1.0",
+          "bitrate": "N/A",
+          "total_size": "N/A",
+          "out_time_us": "7998209",
+          "out_time_ms": "7998209",
+          "out_time": "00:00:07.998209",
+          "dup_frames": "0",
+          "drop_frames": "0",
+          "speed": "0.999x",
+          "progress": "end"
+        },
+        "diagnostics": [
+          "  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 1280x720, 147456 kb/s, 10 fps, 10 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 1280x720, q=2-31, 147456 kb/s, 10 fps, 10 tbr, 1000k tbn, 1000k tbc",
+          "  Stream #0:0 -> #0:0 (copy)",
+          "ioctl(VIDIOC_QBUF): Bad file descriptor"
+        ]
+      },
+      {
+        "camera": "web",
+        "requested": [
+          "yuyv422",
+          "1280x720",
+          15
+        ],
+        "start_monotonic": 6357.946288446,
+        "end_monotonic": 6358.466581701,
+        "returncode": 1,
+        "timeout": false,
+        "progress": {},
+        "diagnostics": [
+          "[video4linux2,v4l2 @ 0xaaaab6413e70] ioctl(VIDIOC_STREAMON): No space left on device",
+          "/dev/v4l/by-id/usb-Generic_Web_Camera_20250708V1.000-video-index0: No space left on device"
+        ]
+      }
+    ]
+  }
+]

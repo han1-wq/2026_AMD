@@ -1,0 +1,1233 @@
+{
+  "kernels": {
+    "image_preprocess": {
+      "validation": {
+        "kernel": "image_preprocess",
+        "completed": [
+          "test_lut_arithmetic_compile",
+          "test_lut_arithmetic",
+          "test_validation_compile",
+          "test_validation",
+          "test_coordinates_compile",
+          "test_coordinates",
+          "csim",
+          "synth",
+          "mapped",
+          "cosim",
+          "export"
+        ],
+        "status": "passed",
+        "stage": "export",
+        "updated": "2026-10-14 00:26:22"
+      },
+      "mapped_resources": {
+        "lut": 12884.0,
+        "ff": 12851.0,
+        "bram_tiles": 11.5,
+        "dsp": 37.0
+      },
+      "mapped_setup_wns_ns": 1.198,
+      "hls_functions": {
+        "csynth": {
+          "Best-caseLatency": "5",
+          "Worst-caseLatency": "10425286",
+          "Interval-min": "6",
+          "Interval-max": "10425287",
+          "DSP": "35",
+          "FF": "17128",
+          "LUT": "27141",
+          "loops": {
+            "VITIS_LOOP_555_1": {
+              "PipelineII": null,
+              "PipelineDepth": "22",
+              "TripCount": "32"
+            },
+            "VITIS_LOOP_557_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "1",
+              "TripCount": "16"
+            },
+            "VITIS_LOOP_567_4": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": "256"
+            },
+            "VITIS_LOOP_249_1": {
+              "PipelineII": null,
+              "PipelineDepth": "1",
+              "TripCount": "21"
+            },
+            "VITIS_LOOP_272_1": {
+              "PipelineII": null,
+              "PipelineDepth": "49",
+              "TripCount": {
+                "range": {
+                  "min": "1",
+                  "max": "416"
+                }
+              }
+            },
+            "VITIS_LOOP_145_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "78",
+                  "max": "360"
+                }
+              }
+            },
+            "VITIS_LOOP_143_1": {
+              "PipelineII": null,
+              "PipelineDepth": "5 ~ 376",
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            },
+            "VITIS_LOOP_156_1_VITIS_LOOP_160_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "4",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            },
+            "VITIS_LOOP_178_1": {
+              "PipelineII": "2",
+              "PipelineDepth": "18",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            },
+            "VITIS_LOOP_206_1": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": "256"
+            },
+            "VITIS_LOOP_214_2": {
+              "PipelineII": null,
+              "PipelineDepth": "3 ~ 12",
+              "TripCount": "256"
+            },
+            "VITIS_LOOP_293_1": {
+              "PipelineII": "1",
+              "PipelineDepth": "18",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            },
+            "VITIS_LOOP_316_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            },
+            "VITIS_LOOP_309_1": {
+              "PipelineII": "2",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            },
+            "VITIS_LOOP_369_2_VITIS_LOOP_371_3": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": {
+                "range": {
+                  "min": "0",
+                  "max": "9600"
+                }
+              }
+            },
+            "VITIS_LOOP_381_4": {
+              "PipelineII": "1",
+              "PipelineDepth": "12",
+              "TripCount": "416"
+            },
+            "VITIS_LOOP_403_6_VITIS_LOOP_405_7": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": {
+                "range": {
+                  "min": "0",
+                  "max": "2073600"
+                }
+              }
+            },
+            "VITIS_LOOP_360_1": {
+              "PipelineII": null,
+              "PipelineDepth": "432 ~ 10040",
+              "TripCount": "416"
+            },
+            "VITIS_LOOP_423_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1920"
+                }
+              }
+            },
+            "VITIS_LOOP_419_1": {
+              "PipelineII": null,
+              "PipelineDepth": "422 ~ 1926",
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            },
+            "VITIS_LOOP_444_1_VITIS_LOOP_446_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": "32448"
+            },
+            "VITIS_LOOP_446_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "78",
+                  "max": "360"
+                }
+              }
+            },
+            "VITIS_LOOP_444_1": {
+              "PipelineII": null,
+              "PipelineDepth": "5 ~ 375",
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            }
+          }
+        },
+        "entry_proc_csynth": {
+          "Best-caseLatency": "0",
+          "Worst-caseLatency": "0",
+          "Interval-min": "0",
+          "Interval-max": "0",
+          "DSP": "0",
+          "FF": "3",
+          "LUT": "56",
+          "loops": {}
+        },
+        "image_preprocess_Pipeline_VITIS_LOOP_557_2_csynth": {
+          "Best-caseLatency": "18",
+          "Worst-caseLatency": "18",
+          "Interval-min": "18",
+          "Interval-max": "18",
+          "DSP": "0",
+          "FF": "7",
+          "LUT": "487",
+          "loops": {
+            "VITIS_LOOP_557_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "1",
+              "TripCount": "16"
+            }
+          }
+        },
+        "image_preprocess_Pipeline_VITIS_LOOP_567_4_csynth": {
+          "Best-caseLatency": "258",
+          "Worst-caseLatency": "258",
+          "Interval-min": "258",
+          "Interval-max": "258",
+          "DSP": "0",
+          "FF": "29",
+          "LUT": "73",
+          "loops": {
+            "VITIS_LOOP_567_4": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": "256"
+            }
+          }
+        },
+        "image_preprocess_csynth": {
+          "Best-caseLatency": "5",
+          "Worst-caseLatency": "10425286",
+          "Interval-min": "6",
+          "Interval-max": "10425287",
+          "DSP": "35",
+          "FF": "17128",
+          "LUT": "27141",
+          "loops": {
+            "VITIS_LOOP_555_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "32"
+            }
+          }
+        },
+        "p_anonymous_namespace_build_lut_Pipeline_VITIS_LOOP_206_1_csynth": {
+          "Best-caseLatency": "258",
+          "Worst-caseLatency": "258",
+          "Interval-min": "258",
+          "Interval-max": "258",
+          "DSP": "0",
+          "FF": "44",
+          "LUT": "126",
+          "loops": {
+            "VITIS_LOOP_206_1": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": "256"
+            }
+          }
+        },
+        "p_anonymous_namespace_build_lut_csynth": {
+          "Best-caseLatency": "1029",
+          "Worst-caseLatency": "3333",
+          "Interval-min": "1029",
+          "Interval-max": "3333",
+          "DSP": "0",
+          "FF": "261",
+          "LUT": "708",
+          "loops": {
+            "VITIS_LOOP_214_2": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "256"
+            }
+          }
+        },
+        "p_anonymous_namespace_collect_or_drain_Pipeline_VITIS_LOOP_309_1_csynth": {
+          "Best-caseLatency": "346114",
+          "Worst-caseLatency": "4147202",
+          "Interval-min": "346114",
+          "Interval-max": "4147202",
+          "DSP": "0",
+          "FF": "133",
+          "LUT": "245",
+          "loops": {
+            "VITIS_LOOP_309_1": {
+              "PipelineII": "2",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_collect_or_drain_Pipeline_VITIS_LOOP_316_2_csynth": {
+          "Best-caseLatency": "173058",
+          "Worst-caseLatency": "2073602",
+          "Interval-min": "173058",
+          "Interval-max": "2073602",
+          "DSP": "0",
+          "FF": "25",
+          "LUT": "93",
+          "loops": {
+            "VITIS_LOOP_316_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_collect_or_drain_csynth": {
+          "Best-caseLatency": "173060",
+          "Worst-caseLatency": "4147204",
+          "Interval-min": "173060",
+          "Interval-max": "4147204",
+          "DSP": "0",
+          "FF": "187",
+          "LUT": "403",
+          "loops": {}
+        },
+        "p_anonymous_namespace_color_stage_Pipeline_VITIS_LOOP_293_1_csynth": {
+          "Best-caseLatency": "173074",
+          "Worst-caseLatency": "2073618",
+          "Interval-min": "173074",
+          "Interval-max": "2073618",
+          "DSP": "8",
+          "FF": "1273",
+          "LUT": "2885",
+          "loops": {
+            "VITIS_LOOP_293_1": {
+              "PipelineII": "1",
+              "PipelineDepth": "18",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_color_stage_csynth": {
+          "Best-caseLatency": "173076",
+          "Worst-caseLatency": "2073620",
+          "Interval-min": "173076",
+          "Interval-max": "2073620",
+          "DSP": "8",
+          "FF": "1281",
+          "LUT": "2954",
+          "loops": {}
+        },
+        "p_anonymous_namespace_coordinate_divide_csynth": {
+          "Best-caseLatency": "23",
+          "Worst-caseLatency": "23",
+          "Interval-min": "23",
+          "Interval-max": "23",
+          "DSP": "0",
+          "FF": "69",
+          "LUT": "120",
+          "loops": {
+            "VITIS_LOOP_249_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "21"
+            }
+          }
+        },
+        "p_anonymous_namespace_histogram_pixels_csynth": {
+          "Best-caseLatency": "346129",
+          "Worst-caseLatency": "4147217",
+          "Interval-min": "346129",
+          "Interval-max": "4147217",
+          "DSP": "7",
+          "FF": "674",
+          "LUT": "1186",
+          "loops": {
+            "VITIS_LOOP_178_1": {
+              "PipelineII": "2",
+              "PipelineDepth": "18",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_make_coordinates_csynth": {
+          "Best-caseLatency": "50",
+          "Worst-caseLatency": "20385",
+          "Interval-min": "50",
+          "Interval-max": "20385",
+          "DSP": "0",
+          "FF": "263",
+          "LUT": "440",
+          "loops": {
+            "VITIS_LOOP_272_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": {
+                "range": {
+                  "min": "1",
+                  "max": "416"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_output_pass_Block_entry412_proc_csynth": {
+          "Best-caseLatency": "0",
+          "Worst-caseLatency": "0",
+          "Interval-min": "0",
+          "Interval-max": "0",
+          "DSP": "0",
+          "FF": "3",
+          "LUT": "40",
+          "loops": {}
+        },
+        "p_anonymous_namespace_output_pass_Block_entry414_proc_csynth": {
+          "Best-caseLatency": "0",
+          "Worst-caseLatency": "0",
+          "Interval-min": "0",
+          "Interval-max": "0",
+          "DSP": "0",
+          "FF": "3",
+          "LUT": "40",
+          "loops": {}
+        },
+        "p_anonymous_namespace_output_pass_Block_entry47_proc_csynth": {
+          "Best-caseLatency": "0",
+          "Worst-caseLatency": "0",
+          "Interval-min": "0",
+          "Interval-max": "0",
+          "DSP": "0",
+          "FF": "48",
+          "LUT": "188",
+          "loops": {}
+        },
+        "p_anonymous_namespace_output_pass_csynth": {
+          "Best-caseLatency": "4011007",
+          "Worst-caseLatency": "6250276",
+          "Interval-min": "173077",
+          "Interval-max": "6250249",
+          "DSP": "24",
+          "FF": "8329",
+          "LUT": "12399",
+          "loops": {}
+        },
+        "p_anonymous_namespace_pack_3_Pipeline_VITIS_LOOP_423_2_csynth": {
+          "Best-caseLatency": "419",
+          "Worst-caseLatency": "1923",
+          "Interval-min": "419",
+          "Interval-max": "1923",
+          "DSP": "0",
+          "FF": "351",
+          "LUT": "920",
+          "loops": {
+            "VITIS_LOOP_423_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1920"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_pack_3_csynth": {
+          "Best-caseLatency": "1",
+          "Worst-caseLatency": "2080081",
+          "Interval-min": "1",
+          "Interval-max": "2080081",
+          "DSP": "0",
+          "FF": "613",
+          "LUT": "1133",
+          "loops": {
+            "VITIS_LOOP_419_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_pack_Pipeline_VITIS_LOOP_423_2_csynth": {
+          "Best-caseLatency": "419",
+          "Worst-caseLatency": "419",
+          "Interval-min": "419",
+          "Interval-max": "419",
+          "DSP": "0",
+          "FF": "328",
+          "LUT": "888",
+          "loops": {
+            "VITIS_LOOP_423_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": "416"
+            }
+          }
+        },
+        "p_anonymous_namespace_pack_csynth": {
+          "Best-caseLatency": "1",
+          "Worst-caseLatency": "175553",
+          "Interval-min": "1",
+          "Interval-max": "175553",
+          "DSP": "0",
+          "FF": "480",
+          "LUT": "1033",
+          "loops": {
+            "VITIS_LOOP_419_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "416"
+            }
+          }
+        },
+        "p_anonymous_namespace_read_words_1_Pipeline_VITIS_LOOP_145_2_csynth": {
+          "Best-caseLatency": "81",
+          "Worst-caseLatency": "363",
+          "Interval-min": "81",
+          "Interval-max": "363",
+          "DSP": "0",
+          "FF": "162",
+          "LUT": "113",
+          "loops": {
+            "VITIS_LOOP_145_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "78",
+                  "max": "360"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_read_words_1_csynth": {
+          "Best-caseLatency": "2081",
+          "Worst-caseLatency": "406081",
+          "Interval-min": "2081",
+          "Interval-max": "406081",
+          "DSP": "1",
+          "FF": "369",
+          "LUT": "589",
+          "loops": {
+            "VITIS_LOOP_143_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_read_words_Pipeline_VITIS_LOOP_145_2_csynth": {
+          "Best-caseLatency": "81",
+          "Worst-caseLatency": "363",
+          "Interval-min": "81",
+          "Interval-max": "363",
+          "DSP": "0",
+          "FF": "162",
+          "LUT": "113",
+          "loops": {
+            "VITIS_LOOP_145_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "78",
+                  "max": "360"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_read_words_csynth": {
+          "Best-caseLatency": "2081",
+          "Worst-caseLatency": "406081",
+          "Interval-min": "2081",
+          "Interval-max": "406081",
+          "DSP": "1",
+          "FF": "369",
+          "LUT": "589",
+          "loops": {
+            "VITIS_LOOP_143_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_369_2_VITIS_LOOP_371_3_csynth": {
+          "Best-caseLatency": "2",
+          "Worst-caseLatency": "9602",
+          "Interval-min": "2",
+          "Interval-max": "9602",
+          "DSP": "0",
+          "FF": "47",
+          "LUT": "213",
+          "loops": {
+            "VITIS_LOOP_369_2_VITIS_LOOP_371_3": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": {
+                "range": {
+                  "min": "0",
+                  "max": "9600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_381_4_csynth": {
+          "Best-caseLatency": "428",
+          "Worst-caseLatency": "428",
+          "Interval-min": "428",
+          "Interval-max": "428",
+          "DSP": "9",
+          "FF": "766",
+          "LUT": "783",
+          "loops": {
+            "VITIS_LOOP_381_4": {
+              "PipelineII": "1",
+              "PipelineDepth": "12",
+              "TripCount": "416"
+            }
+          }
+        },
+        "p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_403_6_VITIS_LOOP_405_7_csynth": {
+          "Best-caseLatency": "2",
+          "Worst-caseLatency": "2073602",
+          "Interval-min": "2",
+          "Interval-max": "2073602",
+          "DSP": "0",
+          "FF": "25",
+          "LUT": "104",
+          "loops": {
+            "VITIS_LOOP_403_6_VITIS_LOOP_405_7": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": {
+                "range": {
+                  "min": "0",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_resize_and_split_csynth": {
+          "Best-caseLatency": "8",
+          "Worst-caseLatency": "6250248",
+          "Interval-min": "8",
+          "Interval-max": "6250248",
+          "DSP": "11",
+          "FF": "1060",
+          "LUT": "1739",
+          "loops": {
+            "VITIS_LOOP_360_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "416"
+            }
+          }
+        },
+        "p_anonymous_namespace_statistics_pass_Block_entry36_proc_csynth": {
+          "Best-caseLatency": "0",
+          "Worst-caseLatency": "0",
+          "Interval-min": "0",
+          "Interval-max": "0",
+          "DSP": "0",
+          "FF": "24",
+          "LUT": "161",
+          "loops": {}
+        },
+        "p_anonymous_namespace_statistics_pass_csynth": {
+          "Best-caseLatency": "346145",
+          "Worst-caseLatency": "4147233",
+          "Interval-min": "346130",
+          "Interval-max": "4147218",
+          "DSP": "11",
+          "FF": "2197",
+          "LUT": "3602",
+          "loops": {}
+        },
+        "p_anonymous_namespace_unpack_2_Pipeline_VITIS_LOOP_156_1_VITIS_LOOP_160_2_csynth": {
+          "Best-caseLatency": "173060",
+          "Worst-caseLatency": "2073604",
+          "Interval-min": "173060",
+          "Interval-max": "2073604",
+          "DSP": "0",
+          "FF": "387",
+          "LUT": "1237",
+          "loops": {
+            "VITIS_LOOP_156_1_VITIS_LOOP_160_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "4",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_unpack_2_csynth": {
+          "Best-caseLatency": "173062",
+          "Worst-caseLatency": "2073606",
+          "Interval-min": "173062",
+          "Interval-max": "2073606",
+          "DSP": "3",
+          "FF": "520",
+          "LUT": "1342",
+          "loops": {}
+        },
+        "p_anonymous_namespace_unpack_Pipeline_VITIS_LOOP_156_1_VITIS_LOOP_160_2_csynth": {
+          "Best-caseLatency": "173060",
+          "Worst-caseLatency": "2073604",
+          "Interval-min": "173060",
+          "Interval-max": "2073604",
+          "DSP": "0",
+          "FF": "387",
+          "LUT": "1237",
+          "loops": {
+            "VITIS_LOOP_156_1_VITIS_LOOP_160_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "4",
+              "TripCount": {
+                "range": {
+                  "min": "173056",
+                  "max": "2073600"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_unpack_csynth": {
+          "Best-caseLatency": "173062",
+          "Worst-caseLatency": "2073606",
+          "Interval-min": "173062",
+          "Interval-max": "2073606",
+          "DSP": "3",
+          "FF": "520",
+          "LUT": "1324",
+          "loops": {}
+        },
+        "p_anonymous_namespace_validate_settings_csynth": {
+          "Best-caseLatency": "3",
+          "Worst-caseLatency": "3",
+          "Interval-min": "1",
+          "Interval-max": "1",
+          "DSP": "0",
+          "FF": "961",
+          "LUT": "1279",
+          "loops": {}
+        },
+        "p_anonymous_namespace_write_words_4_Pipeline_VITIS_LOOP_446_2_csynth": {
+          "Best-caseLatency": "81",
+          "Worst-caseLatency": "363",
+          "Interval-min": "81",
+          "Interval-max": "363",
+          "DSP": "0",
+          "FF": "162",
+          "LUT": "115",
+          "loops": {
+            "VITIS_LOOP_446_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": {
+                "range": {
+                  "min": "78",
+                  "max": "360"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_write_words_4_csynth": {
+          "Best-caseLatency": "1",
+          "Worst-caseLatency": "405001",
+          "Interval-min": "1",
+          "Interval-max": "405001",
+          "DSP": "1",
+          "FF": "464",
+          "LUT": "632",
+          "loops": {
+            "VITIS_LOOP_444_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": {
+                "range": {
+                  "min": "416",
+                  "max": "1080"
+                }
+              }
+            }
+          }
+        },
+        "p_anonymous_namespace_write_words_Pipeline_VITIS_LOOP_444_1_VITIS_LOOP_446_2_csynth": {
+          "Best-caseLatency": "32451",
+          "Worst-caseLatency": "32451",
+          "Interval-min": "32451",
+          "Interval-max": "32451",
+          "DSP": "0",
+          "FF": "149",
+          "LUT": "96",
+          "loops": {
+            "VITIS_LOOP_444_1_VITIS_LOOP_446_2": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": "32448"
+            }
+          }
+        },
+        "p_anonymous_namespace_write_words_csynth": {
+          "Best-caseLatency": "1",
+          "Worst-caseLatency": "32459",
+          "Interval-min": "1",
+          "Interval-max": "32459",
+          "DSP": "0",
+          "FF": "221",
+          "LUT": "354",
+          "loops": {}
+        }
+      },
+      "cosim_report": "Report time       : Wed 14 Oct 2026 12:26:04 AM PDT.\nSolution          : solution_200mhz.\nSimulation tool   : xsim.\n\n+----------+----------+-----------------------------------------------+-----------------------------------------------+----------------------+\n|          |          |             Latency(Clock Cycles)             |              Interval(Clock Cycles)           | Total Execution Time |\n+   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+    (Clock Cycles)    +\n|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |                      |\n+----------+----------+-----------------------------------------------+-----------------------------------------------+----------------------+\n|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|                    NA|\n|   Verilog|      Pass|            260|         230192|        1126267|            183|         251018|        1126190|               2761468|\n+----------+----------+-----------------------------------------------+-----------------------------------------------+----------------------+\n"
+    },
+    "yolo_postprocess": {
+      "validation": {
+        "kernel": "yolo_postprocess",
+        "completed": [
+          "test_nms_arithmetic_compile",
+          "test_nms_arithmetic",
+          "csim",
+          "synth",
+          "mapped",
+          "cosim",
+          "export"
+        ],
+        "status": "passed",
+        "stage": "export",
+        "updated": "2026-10-14 00:21:18"
+      },
+      "mapped_resources": {
+        "lut": 4819.0,
+        "ff": 7223.0,
+        "bram_tiles": 12.0,
+        "dsp": 24.0
+      },
+      "mapped_setup_wns_ns": 1.694,
+      "hls_functions": {
+        "csynth": {
+          "Best-caseLatency": "undef",
+          "Worst-caseLatency": "undef",
+          "Interval-min": "undef",
+          "Interval-max": "undef",
+          "DSP": "22",
+          "FF": "8366",
+          "LUT": "10540",
+          "loops": {
+            "VITIS_LOOP_130_1": {
+              "PipelineII": null,
+              "PipelineDepth": "54535 ~ 861679",
+              "TripCount": "3"
+            },
+            "VITIS_LOOP_173_9": {
+              "PipelineII": null,
+              "PipelineDepth": "undef",
+              "TripCount": "undef"
+            },
+            "VITIS_LOOP_131_2_VITIS_LOOP_132_3": {
+              "PipelineII": "1",
+              "PipelineDepth": "10",
+              "TripCount": "1792"
+            },
+            "VITIS_LOOP_145_7": {
+              "PipelineII": "1",
+              "PipelineDepth": "12",
+              "TripCount": "85"
+            },
+            "VITIS_LOOP_175_10": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": "undef"
+            },
+            "VITIS_LOOP_183_11": {
+              "PipelineII": "1",
+              "PipelineDepth": "22",
+              "TripCount": "undef"
+            },
+            "VITIS_LOOP_171_8": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": "undef"
+            }
+          }
+        },
+        "p_anonymous_namespace_area_csynth": {
+          "Best-caseLatency": "6",
+          "Worst-caseLatency": "6",
+          "Interval-min": "1",
+          "Interval-max": "1",
+          "DSP": "4",
+          "FF": "337",
+          "LUT": "196",
+          "loops": {}
+        },
+        "p_anonymous_namespace_suppress_csynth": {
+          "Best-caseLatency": "18",
+          "Worst-caseLatency": "18",
+          "Interval-min": "1",
+          "Interval-max": "1",
+          "DSP": "16",
+          "FF": "2207",
+          "LUT": "1692",
+          "loops": {}
+        },
+        "p_anonymous_namespace_threshold_product_csynth": {
+          "Best-caseLatency": "6",
+          "Worst-caseLatency": "6",
+          "Interval-min": "1",
+          "Interval-max": "1",
+          "DSP": "4",
+          "FF": "439",
+          "LUT": "261",
+          "loops": {}
+        },
+        "yolo_postprocess_Pipeline_VITIS_LOOP_131_2_VITIS_LOOP_132_3_csynth": {
+          "Best-caseLatency": "1802",
+          "Worst-caseLatency": "1802",
+          "Interval-min": "1802",
+          "Interval-max": "1802",
+          "DSP": "0",
+          "FF": "371",
+          "LUT": "817",
+          "loops": {
+            "VITIS_LOOP_131_2_VITIS_LOOP_132_3": {
+              "PipelineII": "1",
+              "PipelineDepth": "10",
+              "TripCount": "1792"
+            }
+          }
+        },
+        "yolo_postprocess_Pipeline_VITIS_LOOP_145_7_csynth": {
+          "Best-caseLatency": "97",
+          "Worst-caseLatency": "97",
+          "Interval-min": "97",
+          "Interval-max": "97",
+          "DSP": "0",
+          "FF": "861",
+          "LUT": "1215",
+          "loops": {
+            "VITIS_LOOP_145_7": {
+              "PipelineII": "1",
+              "PipelineDepth": "12",
+              "TripCount": "85"
+            }
+          }
+        },
+        "yolo_postprocess_Pipeline_VITIS_LOOP_171_8_csynth": {
+          "Best-caseLatency": "undef",
+          "Worst-caseLatency": "undef",
+          "Interval-min": "undef",
+          "Interval-max": "undef",
+          "DSP": "0",
+          "FF": "245",
+          "LUT": "108",
+          "loops": {
+            "VITIS_LOOP_171_8": {
+              "PipelineII": "1",
+              "PipelineDepth": "3",
+              "TripCount": "undef"
+            }
+          }
+        },
+        "yolo_postprocess_Pipeline_VITIS_LOOP_175_10_csynth": {
+          "Best-caseLatency": "undef",
+          "Worst-caseLatency": "undef",
+          "Interval-min": "undef",
+          "Interval-max": "undef",
+          "DSP": "0",
+          "FF": "133",
+          "LUT": "199",
+          "loops": {
+            "VITIS_LOOP_175_10": {
+              "PipelineII": "1",
+              "PipelineDepth": "2",
+              "TripCount": "undef"
+            }
+          }
+        },
+        "yolo_postprocess_Pipeline_VITIS_LOOP_183_11_csynth": {
+          "Best-caseLatency": "undef",
+          "Worst-caseLatency": "undef",
+          "Interval-min": "undef",
+          "Interval-max": "undef",
+          "DSP": "16",
+          "FF": "2547",
+          "LUT": "1895",
+          "loops": {
+            "VITIS_LOOP_183_11": {
+              "PipelineII": "1",
+              "PipelineDepth": "22",
+              "TripCount": "undef"
+            }
+          }
+        },
+        "yolo_postprocess_csynth": {
+          "Best-caseLatency": "undef",
+          "Worst-caseLatency": "undef",
+          "Interval-min": "undef",
+          "Interval-max": "undef",
+          "DSP": "22",
+          "FF": "8366",
+          "LUT": "10540",
+          "loops": {
+            "VITIS_LOOP_130_1": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "3"
+            },
+            "VITIS_LOOP_173_9": {
+              "PipelineII": null,
+              "PipelineDepth": null,
+              "TripCount": "undef"
+            }
+          }
+        }
+      },
+      "cosim_report": "Report time       : Wed 14 Oct 2026 12:21:01 AM PDT.\nSolution          : solution_200mhz.\nSimulation tool   : xsim.\n\n+----------+----------+-----------------------------------------------+-----------------------------------------------+----------------------+\n|          |          |             Latency(Clock Cycles)             |              Interval(Clock Cycles)           | Total Execution Time |\n+   RTL    +  Status  +-----------------------------------------------+-----------------------------------------------+    (Clock Cycles)    +\n|          |          |      min      |      avg      |      max      |      min      |      avg      |      max      |                      |\n+----------+----------+-----------------------------------------------+-----------------------------------------------+----------------------+\n|      VHDL|        NA|             NA|             NA|             NA|             NA|             NA|             NA|                    NA|\n|   Verilog|      Pass|        1390494|        1392102|        1397142|        1390459|        1392458|        1397107|               6960372|\n+----------+----------+-----------------------------------------------+-----------------------------------------------+----------------------+\n"
+    }
+  },
+  "source_audit": {
+    "image_preprocess": {
+      "source_sha256": "1b464ca10c6a23ae549ccb0c12f3446f0d5e9e63758ef2ac600354da02f98f07",
+      "preprocessed_sha256": "e2eb7446017f93f59ff960c09e27b5793d5c2f8c75ff0be98f0c51f0eeb0bcd1",
+      "header_sha256": "548117d65110ea42024d4bf8ea3a900892f1a3cd7de4f0a0f9ff35d5b81b6f01",
+      "normalized_header_match": true,
+      "normalized_source_and_pragmas_match": true,
+      "method": "Suffix comparison after removing comments, include/line directives, whitespace, generated loop labels, sdx_kernel attributes and generated DIRECTIVE TOP; source HLS pragmas retained.",
+      "build_time_hashes_available": false,
+      "build_time_hashes_match": null
+    },
+    "yolo_postprocess": {
+      "source_sha256": "a8957c7a7c01cf74b4e408c705a8ef949bcca513c07bdce4682e2b075893c65f",
+      "preprocessed_sha256": "33364d997976270726ba3efefd7342dcca1a0fab405cf58be15b55b8172142fa",
+      "header_sha256": "10eaaaa08055fef6d1d2ae18bc28c2a2723cc1baef5c8b6d11166218af4a06eb",
+      "normalized_header_match": true,
+      "normalized_source_and_pragmas_match": true,
+      "method": "Suffix comparison after removing comments, include/line directives, whitespace, generated loop labels, sdx_kernel attributes and generated DIRECTIVE TOP; source HLS pragmas retained.",
+      "build_time_hashes_available": false,
+      "build_time_hashes_match": null
+    }
+  },
+  "acceptance_scope": "Integrated base platform under existing timing constraints; methodology clock warnings are reported separately. Does not certify a DPU-linked platform, bitstream, XSA or board execution.",
+  "previous_routed": {
+    "available": true,
+    "slack_ns": {
+      "global": {
+        "max": 0.038,
+        "min": 0.009
+      },
+      "image_preprocess": {
+        "max": 0.221,
+        "min": 0.009
+      },
+      "yolo_postprocess": {
+        "max": 0.038,
+        "min": 0.009
+      }
+    },
+    "setup_hold_nonnegative": true,
+    "resources": {
+      "lut": 27306.0,
+      "ff": 32488.0,
+      "bram_tiles": 23.5,
+      "dsp": 63.0
+    },
+    "per_kernel_resources": {
+      "image_preprocess": {
+        "lut": 13367.0,
+        "ff": 14353.0,
+        "bram_tiles": 11.5,
+        "dsp": 55.0
+      },
+      "yolo_postprocess": {
+        "lut": 7808.0,
+        "ff": 7127.0,
+        "bram_tiles": 12.0,
+        "dsp": 8.0
+      }
+    },
+    "checkpoint_exists": true,
+    "routing_complete": false,
+    "drc_no_errors": false,
+    "bus_skew_passed": false,
+    "methodology_critical_warnings": null
+  },
+  "candidate_routed": {
+    "available": true,
+    "slack_ns": {
+      "global": {
+        "max": 0.157,
+        "min": 0.01
+      },
+      "image_preprocess": {
+        "max": 0.403,
+        "min": 0.01
+      },
+      "yolo_postprocess": {
+        "max": 0.157,
+        "min": 0.01
+      }
+    },
+    "setup_hold_nonnegative": true,
+    "resources": {
+      "lut": 23104.0,
+      "ff": 31106.0,
+      "bram_tiles": 23.5,
+      "dsp": 61.0
+    },
+    "per_kernel_resources": {
+      "image_preprocess": {
+        "lut": 12511.0,
+        "ff": 12892.0,
+        "bram_tiles": 11.5,
+        "dsp": 37.0
+      },
+      "yolo_postprocess": {
+        "lut": 4468.0,
+        "ff": 7205.0,
+        "bram_tiles": 12.0,
+        "dsp": 24.0
+      }
+    },
+    "checkpoint_exists": true,
+    "routing_complete": true,
+    "route_counts": {
+      "routable nets": 47501,
+      "fully routed nets": 47501,
+      "nets with routing errors": 0
+    },
+    "drc_no_errors": true,
+    "bus_skew_passed": true,
+    "bus_skew_slacks_ns": [
+      13.658,
+      14.835,
+      14.187,
+      29.777,
+      29.393,
+      14.685,
+      14.728
+    ],
+    "methodology_critical_warnings": [
+      "TIMING-4",
+      "TIMING-27"
+    ]
+  },
+  "platform_status": {
+    "stage": "passed",
+    "updated": "2026-10-14 00:43:15",
+    "returncode": 0
+  },
+  "fixtures_identical": true,
+  "abi_verified": true,
+  "export_hashes_verified": true,
+  "acceptance_passed": true
+}

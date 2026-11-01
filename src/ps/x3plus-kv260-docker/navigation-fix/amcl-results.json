@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "position_error_m": 1.992392289296629, 
+      "pose": {
+        "y": 0.25618511458793, 
+        "x": 0.15165845940527245, 
+        "yaw": -0.0830636897160633, 
+        "cov_x": 0.13850740839966857, 
+        "cov_y": 0.14176983265562482
+      }, 
+      "map_to_odom_exists": 1, 
+      "initialpose_subscribers": 1, 
+      "new_pose_messages": 13, 
+      "phase": "cold_start_default_zero", 
+      "start_point_subscribers": 0
+    }, 
+    {
+      "position_error_m": 1.9515830849474909, 
+      "pose": {
+        "y": 0.3569479998374861, 
+        "x": 0.15740382542995726, 
+        "yaw": -0.11818868498353675, 
+        "cov_x": 0.12088018701687336, 
+        "cov_y": 0.07987923580097822
+      }, 
+      "map_to_odom_exists": 1, 
+      "initialpose_subscribers": 1, 
+      "new_pose_messages": 8, 
+      "phase": "rviz_start_point_wrong_topic", 
+      "start_point_subscribers": 0
+    }, 
+    {
+      "position_error_m": 0.06730186614193621, 
+      "pose": {
+        "y": 0.9877305834715425, 
+        "x": 1.933825967296542, 
+        "yaw": 0.5845259074606015, 
+        "cov_x": 0.007787869361508104, 
+        "cov_y": 0.0012659491517412746
+      }, 
+      "map_to_odom_exists": 1, 
+      "initialpose_subscribers": 1, 
+      "new_pose_messages": 16, 
+      "phase": "rviz_initialpose_correct_topic", 
+      "start_point_subscribers": 0
+    }, 
+    {
+      "position_error_m": 2.232864656600267, 
+      "pose": {
+        "y": 0.000737481110832675, 
+        "x": 0.0032128323133924753, 
+        "yaw": 0.0018872490122036404, 
+        "cov_x": 0.011116859843481363, 
+        "cov_y": 0.0009424550509131206
+      }, 
+      "map_to_odom_exists": 1, 
+      "initialpose_subscribers": 1, 
+      "new_pose_messages": 13, 
+      "phase": "restart_launch_overwrites_saved_pose", 
+      "start_point_subscribers": 0
+    }
+  ], 
+  "reloaded_after_restart": {
+    "initial_pose_y": 0.0, 
+    "initial_pose_x": 0.0, 
+    "initial_pose_a": 0.0, 
+    "resample_interval": 1
+  }, 
+  "truth": [
+    2.0, 
+    1.0, 
+    0.6
+  ], 
+  "scope": "Real AMCL, copied production launch; synthetic static map/raycast laser and odometry; forced stationary updates; no base driver or move_base.", 
+  "saved_after_shutdown": {
+    "initial_pose_y": 0.9877305834715422, 
+    "initial_pose_x": 1.933825967296542, 
+    "initial_pose_a": 0.5845259074606014, 
+    "resample_interval": 1
+  }, 
+  "odom": [
+    4.0, 
+    -2.0, 
+    1.0
+  ]
+}

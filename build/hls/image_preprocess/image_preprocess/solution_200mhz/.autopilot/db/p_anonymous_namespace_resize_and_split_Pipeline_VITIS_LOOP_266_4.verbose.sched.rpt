@@ -1,0 +1,430 @@
+
+
+================================================================
+== Vitis HLS Report for 'p_anonymous_namespace_resize_and_split_Pipeline_VITIS_LOOP_266_4'
+================================================================
+* Date:           Tue Oct 13 03:46:57 2026
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        image_preprocess
+* Solution:       solution_200mhz (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.026 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      428|      428|  2.140 us|  2.140 us|  428|  428|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_266_4  |      426|      426|        12|          1|          1|   416|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 12
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 12, States = { 1 2 3 4 5 6 7 8 9 10 11 12 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.01>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%dx = alloca i32 1"   --->   Operation 15 'alloca' 'dx' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%zext_ln1540_15_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %zext_ln1540_15"   --->   Operation 16 'read' 'zext_ln1540_15_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln1540_14_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %zext_ln1540_14"   --->   Operation 17 'read' 'zext_ln1540_14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%sy1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %sy1"   --->   Operation 18 'read' 'sy1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%trunc_ln5_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %trunc_ln5"   --->   Operation 19 'read' 'trunc_ln5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %width"   --->   Operation 20 'read' 'width_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%content_y_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %content_y"   --->   Operation 21 'read' 'content_y_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%add43_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %add43"   --->   Operation 22 'read' 'add43_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%pad_x_cast4_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %pad_x_cast4"   --->   Operation 23 'read' 'pad_x_cast4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln1540_15_cast = zext i12 %zext_ln1540_15_read"   --->   Operation 24 'zext' 'zext_ln1540_15_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%zext_ln1540_14_cast = zext i12 %zext_ln1540_14_read"   --->   Operation 25 'zext' 'zext_ln1540_14_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%pad_x_cast4_cast = zext i8 %pad_x_cast4_read"   --->   Operation 26 'zext' 'pad_x_cast4_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i24 %rows_V, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 27 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i24 %rows_V_1, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 28 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_0, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 29 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_1, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 30 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %quant_2, i64 666, i64 23, i64 18446744073709551615"   --->   Operation 31 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i12 %xc_weight, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 32 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i11 %xc_index, i64 666, i64 18, i64 18446744073709551615"   --->   Operation 33 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %tensor_pixels5, void @empty_27, i32 0, i32 0, void @empty_53, i32 0, i32 0, void @empty_53, void @empty_53, void @empty_53, i32 0, i32 0, i32 0, i32 0, void @empty_53, void @empty_53, i32 4294967295, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.42ns)   --->   "%store_ln0 = store i9 0, i9 %dx"   --->   Operation 35 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body39"   --->   Operation 36 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%dx_1 = load i9 %dx" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 37 'load' 'dx_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.88ns)   --->   "%icmp_ln266 = icmp_eq  i9 %dx_1, i9 416" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:266]   --->   Operation 38 'icmp' 'icmp_ln266' <Predicate = true> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 416, i64 416, i64 416"   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.77ns)   --->   "%add_ln266 = add i9 %dx_1, i9 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:266]   --->   Operation 40 'add' 'add_ln266' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln266 = br i1 %icmp_ln266, void %for.body39.split_ifconv, void %for.inc117.exitStub" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:266]   --->   Operation 41 'br' 'br_ln266' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%zext_ln266 = zext i9 %dx_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:266]   --->   Operation 42 'zext' 'zext_ln266' <Predicate = (!icmp_ln266)> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.88ns)   --->   "%icmp_ln269 = icmp_ult  i9 %dx_1, i9 %pad_x_cast4_cast" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 43 'icmp' 'icmp_ln269' <Predicate = (!icmp_ln266)> <Delay = 0.88> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.88> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 44 [1/1] (0.91ns)   --->   "%icmp_ln269_1 = icmp_ult  i10 %zext_ln266, i10 %add43_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 44 'icmp' 'icmp_ln269_1' <Predicate = (!icmp_ln266)> <Delay = 0.91> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.91> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.77ns)   --->   "%sub_ln270 = sub i9 %dx_1, i9 %pad_x_cast4_cast" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 45 'sub' 'sub_ln270' <Predicate = (!icmp_ln266)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln270 = zext i9 %sub_ln270" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 46 'zext' 'zext_ln270' <Predicate = (!icmp_ln266)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%xc_index_addr = getelementptr i11 %xc_index, i64 0, i64 %zext_ln270" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 47 'getelementptr' 'xc_index_addr' <Predicate = (!icmp_ln266)> <Delay = 0.00>
+ST_1 : Operation 48 [2/2] (1.23ns)   --->   "%coord_index_V = load i9 %xc_index_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 48 'load' 'coord_index_V' <Predicate = (!icmp_ln266)> <Delay = 1.23> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 11> <Depth = 416> <RAM>
+ST_1 : Operation 49 [1/1] (0.42ns)   --->   "%store_ln266 = store i9 %add_ln266, i9 %dx" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:266]   --->   Operation 49 'store' 'store_ln266' <Predicate = (!icmp_ln266)> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 3.02>
+ST_2 : Operation 50 [1/2] (1.23ns)   --->   "%coord_index_V = load i9 %xc_index_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 50 'load' 'coord_index_V' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 11> <Depth = 416> <RAM>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%zext_ln271 = zext i11 %coord_index_V" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:271]   --->   Operation 51 'zext' 'zext_ln271' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.79ns)   --->   "%add_ln272 = add i12 %zext_ln271, i12 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272]   --->   Operation 52 'add' 'add_ln272' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%zext_ln272 = zext i12 %add_ln272" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272]   --->   Operation 53 'zext' 'zext_ln272' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.99ns)   --->   "%icmp_ln272 = icmp_ult  i32 %zext_ln272, i32 %width_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272]   --->   Operation 54 'icmp' 'icmp_ln272' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.42>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%xc_weight_addr = getelementptr i12 %xc_weight, i64 0, i64 %zext_ln270" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 55 'getelementptr' 'xc_weight_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 56 [2/2] (1.23ns)   --->   "%coord_weight_V = load i9 %xc_weight_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 56 'load' 'coord_weight_V' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 416> <RAM>
+ST_3 : Operation 57 [1/1] (0.79ns)   --->   "%add_ln272_1 = add i11 %coord_index_V, i11 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272]   --->   Operation 57 'add' 'add_ln272_1' <Predicate = (icmp_ln272)> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 58 [1/1] (0.38ns)   --->   "%sx1 = select i1 %icmp_ln272, i11 %add_ln272_1, i11 %coord_index_V" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272]   --->   Operation 58 'select' 'sx1' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln274 = zext i11 %coord_index_V" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 59 'zext' 'zext_ln274' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%rows_V_addr = getelementptr i24 %rows_V, i64 0, i64 %zext_ln274" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 60 'getelementptr' 'rows_V_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%rows_V_1_addr = getelementptr i24 %rows_V_1, i64 0, i64 %zext_ln274" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 61 'getelementptr' 'rows_V_1_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [2/2] (1.23ns)   --->   "%rows_V_load = load i11 %rows_V_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 62 'load' 'rows_V_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_3 : Operation 63 [2/2] (1.23ns)   --->   "%rows_V_1_load = load i11 %rows_V_1_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 63 'load' 'rows_V_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_3 : Operation 64 [1/1] (0.00ns)   --->   "%zext_ln274_1 = zext i11 %sx1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 64 'zext' 'zext_ln274_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%rows_V_addr_1 = getelementptr i24 %rows_V, i64 0, i64 %zext_ln274_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 65 'getelementptr' 'rows_V_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%rows_V_1_addr_1 = getelementptr i24 %rows_V_1, i64 0, i64 %zext_ln274_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 66 'getelementptr' 'rows_V_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [2/2] (1.23ns)   --->   "%rows_V_load_1 = load i11 %rows_V_addr_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 67 'load' 'rows_V_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_3 : Operation 68 [2/2] (1.23ns)   --->   "%rows_V_1_load_1 = load i11 %rows_V_1_addr_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 68 'load' 'rows_V_1_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+
+State 4 <SV = 3> <Delay = 2.58>
+ST_4 : Operation 69 [1/2] (1.23ns)   --->   "%coord_weight_V = load i9 %xc_weight_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 69 'load' 'coord_weight_V' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_1P_BRAM">   --->   Core 90 'RAM_1P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 12> <Depth = 416> <RAM>
+ST_4 : Operation 70 [1/2] (1.23ns)   --->   "%rows_V_load = load i11 %rows_V_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 70 'load' 'rows_V_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_4 : Operation 71 [1/2] (1.23ns)   --->   "%rows_V_1_load = load i11 %rows_V_1_addr" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 71 'load' 'rows_V_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_4 : Operation 72 [1/1] (0.42ns)   --->   "%a_V = mux i24 @_ssdm_op_Mux.ap_auto.2i24.i1, i24 %rows_V_load, i24 %rows_V_1_load, i1 %trunc_ln5_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 72 'mux' 'a_V' <Predicate = true> <Delay = 0.42> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 73 [1/2] (1.23ns)   --->   "%rows_V_load_1 = load i11 %rows_V_addr_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 73 'load' 'rows_V_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_4 : Operation 74 [1/2] (1.23ns)   --->   "%rows_V_1_load_1 = load i11 %rows_V_1_addr_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 74 'load' 'rows_V_1_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM_2P_BRAM">   --->   Core 94 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 24> <Depth = 1920> <RAM>
+ST_4 : Operation 75 [1/1] (0.42ns)   --->   "%b_V = mux i24 @_ssdm_op_Mux.ap_auto.2i24.i1, i24 %rows_V_load_1, i24 %rows_V_1_load_1, i1 %trunc_ln5_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 75 'mux' 'b_V' <Predicate = true> <Delay = 0.42> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 76 [1/1] (0.42ns)   --->   "%c_V = mux i24 @_ssdm_op_Mux.ap_auto.2i24.i1, i24 %rows_V_load, i24 %rows_V_1_load, i1 %sy1_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 76 'mux' 'c_V' <Predicate = true> <Delay = 0.42> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 77 [1/1] (0.42ns)   --->   "%d_V = mux i24 @_ssdm_op_Mux.ap_auto.2i24.i1, i24 %rows_V_load_1, i24 %rows_V_1_load_1, i1 %sy1_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274]   --->   Operation 77 'mux' 'd_V' <Predicate = true> <Delay = 0.42> <CoreInst = "Multiplexer">   --->   Core 76 'Multiplexer' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 78 [1/1] (0.80ns)   --->   "%ix_V = sub i12 2048, i12 %coord_weight_V" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270]   --->   Operation 78 'sub' 'ix_V' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%va = trunc i24 %a_V"   --->   Operation 79 'trunc' 'va' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "%vb = trunc i24 %b_V"   --->   Operation 80 'trunc' 'vb' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "%vc_V = trunc i24 %c_V"   --->   Operation 81 'trunc' 'vc_V' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%vd_V = trunc i24 %d_V"   --->   Operation 82 'trunc' 'vd_V' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln1540_1 = zext i12 %ix_V"   --->   Operation 83 'zext' 'zext_ln1540_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln1540_3 = zext i12 %coord_weight_V"   --->   Operation 84 'zext' 'zext_ln1540_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln1540_4 = zext i8 %vc_V"   --->   Operation 85 'zext' 'zext_ln1540_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_2 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_4"   --->   Operation 86 'mul' 'ret_V_2' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 87 [1/1] (0.00ns)   --->   "%zext_ln1540_5 = zext i8 %vd_V"   --->   Operation 87 'zext' 'zext_ln1540_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 88 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_3 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_5"   --->   Operation 88 'mul' 'ret_V_3' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "%va_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %a_V, i32 8, i32 15"   --->   Operation 89 'partselect' 'va_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "%vb_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %b_V, i32 8, i32 15"   --->   Operation 90 'partselect' 'vb_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 91 [1/1] (0.00ns)   --->   "%vc_V_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %c_V, i32 8, i32 15"   --->   Operation 91 'partselect' 'vc_V_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 92 [1/1] (0.00ns)   --->   "%vd_V_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %d_V, i32 8, i32 15"   --->   Operation 92 'partselect' 'vd_V_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 93 [1/1] (0.00ns)   --->   "%zext_ln1540_8 = zext i8 %vc_V_1"   --->   Operation 93 'zext' 'zext_ln1540_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 94 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_6 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_8"   --->   Operation 94 'mul' 'ret_V_6' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln1540_9 = zext i8 %vd_V_1"   --->   Operation 95 'zext' 'zext_ln1540_9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 96 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_7 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_9"   --->   Operation 96 'mul' 'ret_V_7' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 97 [1/1] (0.00ns)   --->   "%va_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %a_V, i32 16, i32 23"   --->   Operation 97 'partselect' 'va_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%vb_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %b_V, i32 16, i32 23"   --->   Operation 98 'partselect' 'vb_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (0.00ns)   --->   "%vc_V_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %c_V, i32 16, i32 23"   --->   Operation 99 'partselect' 'vc_V_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 100 [1/1] (0.00ns)   --->   "%vd_V_2 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %d_V, i32 16, i32 23"   --->   Operation 100 'partselect' 'vd_V_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%zext_ln1540_12 = zext i8 %vc_V_2"   --->   Operation 101 'zext' 'zext_ln1540_12' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 102 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_10 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_12"   --->   Operation 102 'mul' 'ret_V_10' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%zext_ln1540_13 = zext i8 %vd_V_2"   --->   Operation 103 'zext' 'zext_ln1540_13' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 104 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_11 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_13"   --->   Operation 104 'mul' 'ret_V_11' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 0.53>
+ST_5 : Operation 105 [1/1] (0.00ns)   --->   "%zext_ln1540 = zext i8 %va"   --->   Operation 105 'zext' 'zext_ln1540' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 106 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V = mul i20 %zext_ln1540_1, i20 %zext_ln1540"   --->   Operation 106 'mul' 'ret_V' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 107 [1/1] (0.00ns)   --->   "%zext_ln1540_2 = zext i8 %vb"   --->   Operation 107 'zext' 'zext_ln1540_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 108 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_1 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_2"   --->   Operation 108 'mul' 'ret_V_1' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 109 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_2 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_4"   --->   Operation 109 'mul' 'ret_V_2' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 110 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_3 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_5"   --->   Operation 110 'mul' 'ret_V_3' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln1540_6 = zext i8 %va_1"   --->   Operation 111 'zext' 'zext_ln1540_6' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 112 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_4 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_6"   --->   Operation 112 'mul' 'ret_V_4' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 113 [1/1] (0.00ns)   --->   "%zext_ln1540_7 = zext i8 %vb_1"   --->   Operation 113 'zext' 'zext_ln1540_7' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 114 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_5 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_7"   --->   Operation 114 'mul' 'ret_V_5' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 115 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_6 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_8"   --->   Operation 115 'mul' 'ret_V_6' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 116 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_7 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_9"   --->   Operation 116 'mul' 'ret_V_7' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 117 [1/1] (0.00ns)   --->   "%zext_ln1540_10 = zext i8 %va_2"   --->   Operation 117 'zext' 'zext_ln1540_10' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 118 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_8 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_10"   --->   Operation 118 'mul' 'ret_V_8' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "%zext_ln1540_11 = zext i8 %vb_2"   --->   Operation 119 'zext' 'zext_ln1540_11' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 120 [4/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_9 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_11"   --->   Operation 120 'mul' 'ret_V_9' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 121 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_10 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_12"   --->   Operation 121 'mul' 'ret_V_10' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_5 : Operation 122 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_11 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_13"   --->   Operation 122 'mul' 'ret_V_11' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 6 <SV = 5> <Delay = 0.53>
+ST_6 : Operation 123 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V = mul i20 %zext_ln1540_1, i20 %zext_ln1540"   --->   Operation 123 'mul' 'ret_V' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 124 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_1 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_2"   --->   Operation 124 'mul' 'ret_V_1' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 125 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_2 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_4"   --->   Operation 125 'mul' 'ret_V_2' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 126 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_3 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_5"   --->   Operation 126 'mul' 'ret_V_3' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 127 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_4 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_6"   --->   Operation 127 'mul' 'ret_V_4' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 128 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_5 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_7"   --->   Operation 128 'mul' 'ret_V_5' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 129 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_6 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_8"   --->   Operation 129 'mul' 'ret_V_6' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 130 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_7 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_9"   --->   Operation 130 'mul' 'ret_V_7' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 131 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_8 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_10"   --->   Operation 131 'mul' 'ret_V_8' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 132 [3/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_9 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_11"   --->   Operation 132 'mul' 'ret_V_9' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 133 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_10 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_12"   --->   Operation 133 'mul' 'ret_V_10' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 134 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_11 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_13"   --->   Operation 134 'mul' 'ret_V_11' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 7 <SV = 6> <Delay = 2.69>
+ST_7 : Operation 135 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V = mul i20 %zext_ln1540_1, i20 %zext_ln1540"   --->   Operation 135 'mul' 'ret_V' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 136 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_1 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_2"   --->   Operation 136 'mul' 'ret_V_1' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 137 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_2 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_4"   --->   Operation 137 'mul' 'ret_V_2' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 138 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_3 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_5"   --->   Operation 138 'mul' 'ret_V_3' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 139 [1/1] (1.69ns) (grouped into DSP with root node add_ln232)   --->   "%bottom_V = add i20 %ret_V_3, i20 %ret_V_2"   --->   Operation 139 'add' 'bottom_V' <Predicate = true> <Delay = 1.69> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 140 [1/1] (0.00ns) (grouped into DSP with root node add_ln232)   --->   "%zext_ln1540_17 = zext i20 %bottom_V"   --->   Operation 140 'zext' 'zext_ln1540_17' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 141 [3/3] (0.99ns) (grouped into DSP with root node add_ln232)   --->   "%mul_ln1540_1 = mul i30 %zext_ln1540_17, i30 %zext_ln1540_15_cast"   --->   Operation 141 'mul' 'mul_ln1540_1' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 142 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_4 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_6"   --->   Operation 142 'mul' 'ret_V_4' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 143 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_5 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_7"   --->   Operation 143 'mul' 'ret_V_5' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 144 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_6 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_8"   --->   Operation 144 'mul' 'ret_V_6' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 145 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_7 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_9"   --->   Operation 145 'mul' 'ret_V_7' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 146 [1/1] (1.69ns) (grouped into DSP with root node add_ln232_4)   --->   "%bottom_V_1 = add i20 %ret_V_7, i20 %ret_V_6"   --->   Operation 146 'add' 'bottom_V_1' <Predicate = true> <Delay = 1.69> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 147 [1/1] (0.00ns) (grouped into DSP with root node add_ln232_4)   --->   "%zext_ln1540_19 = zext i20 %bottom_V_1"   --->   Operation 147 'zext' 'zext_ln1540_19' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 148 [3/3] (0.99ns) (grouped into DSP with root node add_ln232_4)   --->   "%mul_ln1540_7 = mul i30 %zext_ln1540_19, i30 %zext_ln1540_15_cast"   --->   Operation 148 'mul' 'mul_ln1540_7' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 149 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_8 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_10"   --->   Operation 149 'mul' 'ret_V_8' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 150 [2/4] (0.53ns) (root node of the DSP)   --->   "%ret_V_9 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_11"   --->   Operation 150 'mul' 'ret_V_9' <Predicate = true> <Delay = 0.53> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 151 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_10 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_12"   --->   Operation 151 'mul' 'ret_V_10' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 152 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_11 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_13"   --->   Operation 152 'mul' 'ret_V_11' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 153 [1/1] (1.69ns) (grouped into DSP with root node add_ln232_8)   --->   "%bottom_V_2 = add i20 %ret_V_11, i20 %ret_V_10"   --->   Operation 153 'add' 'bottom_V_2' <Predicate = true> <Delay = 1.69> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_7 : Operation 154 [1/1] (0.00ns) (grouped into DSP with root node add_ln232_8)   --->   "%zext_ln1540_21 = zext i20 %bottom_V_2"   --->   Operation 154 'zext' 'zext_ln1540_21' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 155 [3/3] (0.99ns) (grouped into DSP with root node add_ln232_8)   --->   "%mul_ln1540_13 = mul i30 %zext_ln1540_21, i30 %zext_ln1540_15_cast"   --->   Operation 155 'mul' 'mul_ln1540_13' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 8 <SV = 7> <Delay = 2.69>
+ST_8 : Operation 156 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V = mul i20 %zext_ln1540_1, i20 %zext_ln1540"   --->   Operation 156 'mul' 'ret_V' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 157 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_1 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_2"   --->   Operation 157 'mul' 'ret_V_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 158 [1/1] (1.69ns) (grouped into DSP with root node sum_V)   --->   "%top_V = add i20 %ret_V_1, i20 %ret_V"   --->   Operation 158 'add' 'top_V' <Predicate = true> <Delay = 1.69> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 159 [1/1] (0.00ns) (grouped into DSP with root node sum_V)   --->   "%zext_ln1540_16 = zext i20 %top_V"   --->   Operation 159 'zext' 'zext_ln1540_16' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 160 [3/3] (0.99ns) (grouped into DSP with root node sum_V)   --->   "%mul_ln1540 = mul i30 %zext_ln1540_16, i30 %zext_ln1540_14_cast"   --->   Operation 160 'mul' 'mul_ln1540' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 161 [2/3] (0.99ns) (grouped into DSP with root node add_ln232)   --->   "%mul_ln1540_1 = mul i30 %zext_ln1540_17, i30 %zext_ln1540_15_cast"   --->   Operation 161 'mul' 'mul_ln1540_1' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 162 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_4 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_6"   --->   Operation 162 'mul' 'ret_V_4' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 163 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_5 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_7"   --->   Operation 163 'mul' 'ret_V_5' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 164 [1/1] (1.69ns) (grouped into DSP with root node sum_V_1)   --->   "%top_V_1 = add i20 %ret_V_5, i20 %ret_V_4"   --->   Operation 164 'add' 'top_V_1' <Predicate = true> <Delay = 1.69> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 165 [1/1] (0.00ns) (grouped into DSP with root node sum_V_1)   --->   "%zext_ln1540_18 = zext i20 %top_V_1"   --->   Operation 165 'zext' 'zext_ln1540_18' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 166 [3/3] (0.99ns) (grouped into DSP with root node sum_V_1)   --->   "%mul_ln1540_6 = mul i30 %zext_ln1540_18, i30 %zext_ln1540_14_cast"   --->   Operation 166 'mul' 'mul_ln1540_6' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 167 [2/3] (0.99ns) (grouped into DSP with root node add_ln232_4)   --->   "%mul_ln1540_7 = mul i30 %zext_ln1540_19, i30 %zext_ln1540_15_cast"   --->   Operation 167 'mul' 'mul_ln1540_7' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 168 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_8 = mul i20 %zext_ln1540_1, i20 %zext_ln1540_10"   --->   Operation 168 'mul' 'ret_V_8' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 169 [1/4] (0.00ns) (root node of the DSP)   --->   "%ret_V_9 = mul i20 %zext_ln1540_3, i20 %zext_ln1540_11"   --->   Operation 169 'mul' 'ret_V_9' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 170 [1/1] (1.69ns) (grouped into DSP with root node sum_V_2)   --->   "%top_V_2 = add i20 %ret_V_9, i20 %ret_V_8"   --->   Operation 170 'add' 'top_V_2' <Predicate = true> <Delay = 1.69> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 171 [1/1] (0.00ns) (grouped into DSP with root node sum_V_2)   --->   "%zext_ln1540_20 = zext i20 %top_V_2"   --->   Operation 171 'zext' 'zext_ln1540_20' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 172 [3/3] (0.99ns) (grouped into DSP with root node sum_V_2)   --->   "%mul_ln1540_12 = mul i30 %zext_ln1540_20, i30 %zext_ln1540_14_cast"   --->   Operation 172 'mul' 'mul_ln1540_12' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_8 : Operation 173 [2/3] (0.99ns) (grouped into DSP with root node add_ln232_8)   --->   "%mul_ln1540_13 = mul i30 %zext_ln1540_21, i30 %zext_ln1540_15_cast"   --->   Operation 173 'mul' 'mul_ln1540_13' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 9 <SV = 8> <Delay = 0.99>
+ST_9 : Operation 174 [2/3] (0.99ns) (grouped into DSP with root node sum_V)   --->   "%mul_ln1540 = mul i30 %zext_ln1540_16, i30 %zext_ln1540_14_cast"   --->   Operation 174 'mul' 'mul_ln1540' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 175 [1/3] (0.00ns) (grouped into DSP with root node add_ln232)   --->   "%mul_ln1540_1 = mul i30 %zext_ln1540_17, i30 %zext_ln1540_15_cast"   --->   Operation 175 'mul' 'mul_ln1540_1' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 176 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln232 = add i30 %mul_ln1540_1, i30 2097152"   --->   Operation 176 'add' 'add_ln232' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 177 [2/3] (0.99ns) (grouped into DSP with root node sum_V_1)   --->   "%mul_ln1540_6 = mul i30 %zext_ln1540_18, i30 %zext_ln1540_14_cast"   --->   Operation 177 'mul' 'mul_ln1540_6' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 178 [1/3] (0.00ns) (grouped into DSP with root node add_ln232_4)   --->   "%mul_ln1540_7 = mul i30 %zext_ln1540_19, i30 %zext_ln1540_15_cast"   --->   Operation 178 'mul' 'mul_ln1540_7' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 179 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln232_4 = add i30 %mul_ln1540_7, i30 2097152"   --->   Operation 179 'add' 'add_ln232_4' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 180 [2/3] (0.99ns) (grouped into DSP with root node sum_V_2)   --->   "%mul_ln1540_12 = mul i30 %zext_ln1540_20, i30 %zext_ln1540_14_cast"   --->   Operation 180 'mul' 'mul_ln1540_12' <Predicate = true> <Delay = 0.99> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 181 [1/3] (0.00ns) (grouped into DSP with root node add_ln232_8)   --->   "%mul_ln1540_13 = mul i30 %zext_ln1540_21, i30 %zext_ln1540_15_cast"   --->   Operation 181 'mul' 'mul_ln1540_13' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_9 : Operation 182 [2/2] (0.64ns) (root node of the DSP)   --->   "%add_ln232_8 = add i30 %mul_ln1540_13, i30 2097152"   --->   Operation 182 'add' 'add_ln232_8' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 10 <SV = 9> <Delay = 1.29>
+ST_10 : Operation 183 [1/3] (0.00ns) (grouped into DSP with root node sum_V)   --->   "%mul_ln1540 = mul i30 %zext_ln1540_16, i30 %zext_ln1540_14_cast"   --->   Operation 183 'mul' 'mul_ln1540' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 184 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln232 = add i30 %mul_ln1540_1, i30 2097152"   --->   Operation 184 'add' 'add_ln232' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 185 [2/2] (0.64ns) (root node of the DSP)   --->   "%sum_V = add i30 %add_ln232, i30 %mul_ln1540"   --->   Operation 185 'add' 'sum_V' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 186 [1/3] (0.00ns) (grouped into DSP with root node sum_V_1)   --->   "%mul_ln1540_6 = mul i30 %zext_ln1540_18, i30 %zext_ln1540_14_cast"   --->   Operation 186 'mul' 'mul_ln1540_6' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 187 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln232_4 = add i30 %mul_ln1540_7, i30 2097152"   --->   Operation 187 'add' 'add_ln232_4' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 188 [2/2] (0.64ns) (root node of the DSP)   --->   "%sum_V_1 = add i30 %add_ln232_4, i30 %mul_ln1540_6"   --->   Operation 188 'add' 'sum_V_1' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 189 [1/3] (0.00ns) (grouped into DSP with root node sum_V_2)   --->   "%mul_ln1540_12 = mul i30 %zext_ln1540_20, i30 %zext_ln1540_14_cast"   --->   Operation 189 'mul' 'mul_ln1540_12' <Predicate = true> <Delay = 0.00> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 190 [1/2] (0.64ns) (root node of the DSP)   --->   "%add_ln232_8 = add i30 %mul_ln1540_13, i30 2097152"   --->   Operation 190 'add' 'add_ln232_8' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_10 : Operation 191 [2/2] (0.64ns) (root node of the DSP)   --->   "%sum_V_2 = add i30 %add_ln232_8, i30 %mul_ln1540_12"   --->   Operation 191 'add' 'sum_V_2' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+
+State 11 <SV = 10> <Delay = 1.64>
+ST_11 : Operation 192 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%xor_ln269 = xor i1 %icmp_ln269, i1 1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 192 'xor' 'xor_ln269' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 193 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%and_ln269 = and i1 %xor_ln269, i1 %icmp_ln269_1" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 193 'and' 'and_ln269' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 194 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%and_ln269_1 = and i1 %and_ln269, i1 %content_y_read" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 194 'and' 'and_ln269_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 195 [1/2] (0.64ns) (root node of the DSP)   --->   "%sum_V = add i30 %add_ln232, i30 %mul_ln1540"   --->   Operation 195 'add' 'sum_V' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 196 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%trunc_ln6 = partselect i8 @_ssdm_op_PartSelect.i8.i30.i32.i32, i30 %sum_V, i32 22, i32 29"   --->   Operation 196 'partselect' 'trunc_ln6' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 197 [1/2] (0.64ns) (root node of the DSP)   --->   "%sum_V_1 = add i30 %add_ln232_4, i30 %mul_ln1540_6"   --->   Operation 197 'add' 'sum_V_1' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 198 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%trunc_ln232_1 = partselect i8 @_ssdm_op_PartSelect.i8.i30.i32.i32, i30 %sum_V_1, i32 22, i32 29"   --->   Operation 198 'partselect' 'trunc_ln232_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 199 [1/2] (0.64ns) (root node of the DSP)   --->   "%sum_V_2 = add i30 %add_ln232_8, i30 %mul_ln1540_12"   --->   Operation 199 'add' 'sum_V_2' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 127 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 200 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%trunc_ln232_2 = partselect i8 @_ssdm_op_PartSelect.i8.i30.i32.i32, i30 %sum_V_2, i32 22, i32 29"   --->   Operation 200 'partselect' 'trunc_ln232_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 201 [1/1] (0.00ns) (grouped into LUT with out node p_V)   --->   "%p_Result_s = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %trunc_ln232_2, i8 %trunc_ln232_1, i8 %trunc_ln6"   --->   Operation 201 'bitconcatenate' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 202 [1/1] (0.32ns) (out node of the LUT)   --->   "%p_V = select i1 %and_ln269_1, i24 %p_Result_s, i24 8421504" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269]   --->   Operation 202 'select' 'p_V' <Predicate = true> <Delay = 0.32> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.32> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_11 : Operation 203 [1/1] (0.00ns)   --->   "%v = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %p_V, i32 16, i32 23"   --->   Operation 203 'partselect' 'v' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 204 [1/1] (0.00ns)   --->   "%zext_ln587 = zext i8 %v"   --->   Operation 204 'zext' 'zext_ln587' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 205 [1/1] (0.00ns)   --->   "%quant_0_addr = getelementptr i8 %quant_0, i64 0, i64 %zext_ln587"   --->   Operation 205 'getelementptr' 'quant_0_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 206 [2/2] (0.67ns)   --->   "%quant_0_load = load i8 %quant_0_addr"   --->   Operation 206 'load' 'quant_0_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_11 : Operation 207 [1/1] (0.00ns)   --->   "%v_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %p_V, i32 8, i32 15"   --->   Operation 207 'partselect' 'v_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 208 [1/1] (0.00ns)   --->   "%zext_ln587_1 = zext i8 %v_1"   --->   Operation 208 'zext' 'zext_ln587_1' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 209 [1/1] (0.00ns)   --->   "%quant_1_addr = getelementptr i8 %quant_1, i64 0, i64 %zext_ln587_1"   --->   Operation 209 'getelementptr' 'quant_1_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 210 [2/2] (0.67ns)   --->   "%quant_1_load = load i8 %quant_1_addr"   --->   Operation 210 'load' 'quant_1_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_11 : Operation 211 [1/1] (0.00ns)   --->   "%v_2 = trunc i24 %p_V"   --->   Operation 211 'trunc' 'v_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 212 [1/1] (0.00ns)   --->   "%zext_ln587_2 = zext i8 %v_2"   --->   Operation 212 'zext' 'zext_ln587_2' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 213 [1/1] (0.00ns)   --->   "%quant_2_addr = getelementptr i8 %quant_2, i64 0, i64 %zext_ln587_2"   --->   Operation 213 'getelementptr' 'quant_2_addr' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 214 [2/2] (0.67ns)   --->   "%quant_2_load = load i8 %quant_2_addr"   --->   Operation 214 'load' 'quant_2_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_11 : Operation 223 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 223 'ret' 'ret_ln0' <Predicate = (icmp_ln266)> <Delay = 0.00>
+
+State 12 <SV = 11> <Delay = 2.23>
+ST_12 : Operation 215 [1/1] (0.00ns)   --->   "%specpipeline_ln267 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_53" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:267]   --->   Operation 215 'specpipeline' 'specpipeline_ln267' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 216 [1/1] (0.00ns)   --->   "%specloopname_ln268 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:268]   --->   Operation 216 'specloopname' 'specloopname_ln268' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 217 [1/2] (0.67ns)   --->   "%quant_0_load = load i8 %quant_0_addr"   --->   Operation 217 'load' 'quant_0_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_12 : Operation 218 [1/2] (0.67ns)   --->   "%quant_1_load = load i8 %quant_1_addr"   --->   Operation 218 'load' 'quant_1_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_12 : Operation 219 [1/2] (0.67ns)   --->   "%quant_2_load = load i8 %quant_2_addr"   --->   Operation 219 'load' 'quant_2_load' <Predicate = true> <Delay = 0.67> <CoreInst = "RAM_2P_LUTRAM">   --->   Core 93 'RAM_2P_LUTRAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 256> <RAM>
+ST_12 : Operation 220 [1/1] (0.00ns)   --->   "%p_Result_1 = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %quant_2_load, i8 %quant_1_load, i8 %quant_0_load"   --->   Operation 220 'bitconcatenate' 'p_Result_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 221 [1/1] (1.55ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i24P0A, i24 %tensor_pixels5, i24 %p_Result_1" [/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 221 'write' 'write_ln174' <Predicate = true> <Delay = 1.55> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.55> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 64> <FIFO>
+ST_12 : Operation 222 [1/1] (0.00ns)   --->   "%br_ln266 = br void %for.body39" [/home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:266]   --->   Operation 222 'br' 'br_ln266' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 2.01ns
+The critical path consists of the following:
+	'alloca' operation ('dx') [17]  (0 ns)
+	'load' operation ('dx', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269) on local variable 'dx' [40]  (0 ns)
+	'sub' operation ('sub_ln270', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270) [54]  (0.776 ns)
+	'getelementptr' operation ('xc_index_addr', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270) [56]  (0 ns)
+	'load' operation ('coord.index.V', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270) on array 'xc_index' [57]  (1.24 ns)
+
+ <State 2>: 3.03ns
+The critical path consists of the following:
+	'load' operation ('coord.index.V', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270) on array 'xc_index' [57]  (1.24 ns)
+	'add' operation ('add_ln272', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272) [61]  (0.798 ns)
+	'icmp' operation ('icmp_ln272', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272) [64]  (0.991 ns)
+
+ <State 3>: 2.42ns
+The critical path consists of the following:
+	'add' operation ('add_ln272_1', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272) [63]  (0.798 ns)
+	'select' operation ('sx1', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:272) [65]  (0.389 ns)
+	'getelementptr' operation ('rows_V_addr_1', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274) [73]  (0 ns)
+	'load' operation ('rows_V_load_1', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:274) on array 'rows_V' [75]  (1.24 ns)
+
+ <State 4>: 2.58ns
+The critical path consists of the following:
+	'load' operation ('coord.weight.V', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270) on array 'xc_weight' [59]  (1.24 ns)
+	'sub' operation ('ix.V', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:270) [80]  (0.809 ns)
+	'mul' operation of DSP[93] ('ret.V') [93]  (0.535 ns)
+
+ <State 5>: 0.535ns
+The critical path consists of the following:
+	'mul' operation of DSP[87] ('ret.V') [87]  (0.535 ns)
+
+ <State 6>: 0.535ns
+The critical path consists of the following:
+	'mul' operation of DSP[87] ('ret.V') [87]  (0.535 ns)
+
+ <State 7>: 2.69ns
+The critical path consists of the following:
+	'mul' operation of DSP[93] ('ret.V') [93]  (0 ns)
+	'add' operation of DSP[101] ('bottom.V') [96]  (1.7 ns)
+	'mul' operation of DSP[101] ('mul_ln1540_1') [100]  (0.996 ns)
+
+ <State 8>: 2.69ns
+The critical path consists of the following:
+	'mul' operation of DSP[87] ('ret.V') [87]  (0 ns)
+	'add' operation of DSP[102] ('top.V') [91]  (1.7 ns)
+	'mul' operation of DSP[102] ('mul_ln1540') [98]  (0.996 ns)
+
+ <State 9>: 0.996ns
+The critical path consists of the following:
+	'mul' operation of DSP[102] ('mul_ln1540') [98]  (0.996 ns)
+
+ <State 10>: 1.29ns
+The critical path consists of the following:
+	'add' operation of DSP[101] ('add_ln232') [101]  (0.645 ns)
+	'add' operation of DSP[102] ('sum.V') [102]  (0.645 ns)
+
+ <State 11>: 1.64ns
+The critical path consists of the following:
+	'add' operation of DSP[102] ('sum.V') [102]  (0.645 ns)
+	'select' operation ('p.V', /home/amd/Workspace/HLS_IP/image_preprocess/src/image_preprocess.cpp:269) [147]  (0.321 ns)
+	'getelementptr' operation ('quant_0_addr') [150]  (0 ns)
+	'load' operation ('quant_0_load') on array 'quant_0' [151]  (0.677 ns)
+
+ <State 12>: 2.23ns
+The critical path consists of the following:
+	'load' operation ('quant_0_load') on array 'quant_0' [151]  (0.677 ns)
+	fifo write operation ('write_ln174', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) on port 'tensor_pixels5' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174) [161]  (1.56 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

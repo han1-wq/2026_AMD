@@ -1,0 +1,19 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 754, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/actionlib/action_server.py", line 56, in ros_timer
+    callable()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/actionlib/action_server.py", line 301, in publish_status_async
+    self.publish_status()
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/actionlib/action_server.py", line 325, in publish_status
+    self.status_pub.publish(status_array)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 882, in publish
+    self.impl.publish(data)
+  File "/opt/ros/melodic/lib/python2.7/dist-packages/rospy/topics.py", line 1041, in publish
+    raise ROSException("publish() to a closed topic")
+ROSException: publish() to a closed topic
+

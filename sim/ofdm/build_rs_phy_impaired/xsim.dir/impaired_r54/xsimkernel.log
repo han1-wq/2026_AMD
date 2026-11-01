@@ -1,0 +1,7 @@
+Running: xsim.dir/impaired_r54/xsimk -runall -simmode gui -testplusarg GAIN=0.75 -testplusarg CFO_HZ=300 -testplusarg INTERFERENCE=2 -testplusarg TIMEOUT_NS=10000000 -testplusarg ECHO_GAIN=0 -testplusarg ECHO_DELAY=1 -testplusarg ADC_MODE=0 -wdb impaired_r54.wdb -simrunnum 0 -socket 44279
+Design successfully loaded
+Design Loading Memory Usage: 114540 KB (Peak: 115500 KB)
+Design Loading CPU Usage: 170 ms
+Simulation completed
+Simulation Memory Usage: 194416 KB (Peak: 253808 KB)
+Simulation CPU Usage: 29280 ms

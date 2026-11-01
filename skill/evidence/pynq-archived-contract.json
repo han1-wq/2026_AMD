@@ -1,0 +1,14 @@
+{
+  "bit": {
+    "path": "/home/amd/kv260-ofdm-reproduction/src/ps/kv260_B3136/overlay/dpu.bit",
+    "sha256": "fd88c6ed3e4955bac031dd70ecb77b4544e8e71f9f7a6b0f3cb73e1eedc2e6a6"
+  },
+  "hwh": {
+    "path": "/home/amd/kv260-ofdm-reproduction/src/ps/kv260_B3136/overlay/dpu.hwh",
+    "sha256": "682f8d5f32f7ee48273ca54e56e85152c9bdcf098b7a29fb131d4957a5147d1c"
+  },
+  "expected_instances": [
+    "image_preprocess_1",
+    "yolo_postprocess_1"
+  ]
+}

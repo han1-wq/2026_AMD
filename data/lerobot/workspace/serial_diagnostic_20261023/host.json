@@ -1,0 +1,15 @@
+{
+  "python": "3.8.10",
+  "serial": "3.5",
+  "profiles": [
+    {
+      "name": "unicast",
+      "success": 14,
+      "failures": 0,
+      "errors": [],
+      "max_call_ms": 3.5554599890019745
+    }
+  ],
+  "error": "SerialTimeoutException: Write timeout",
+  "read_only_packets": 103
+}

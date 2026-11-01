@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Oct 13 23:30:49 2026
+# Process ID: 460874
+# Current directory: /home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/image_preprocess/xsim_script.tcl}
+# Log file: /home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/sim/verilog/xsim.log
+# Journal file: /home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/sim/verilog/xsim.jou
+# Running On: ubuntu, OS: Linux, CPU Frequency: 2419.199 MHz, CPU Physical cores: 8, Host memory: 25159 MB
+#-----------------------------------------------------------
+source xsim.dir/image_preprocess/xsim_script.tcl
+# xsim {image_preprocess} -autoloadwcfg -tclbatch {image_preprocess.tcl}
+Time resolution is 1 ps
+source image_preprocess.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 12 [0.00%] @ "113000"
+// RTL Simulation : 1 / 12 [0.00%] @ "5686073000"
+// RTL Simulation : 2 / 12 [0.00%] @ "7974398000"
+// RTL Simulation : 3 / 12 [0.00%] @ "10250993000"
+// RTL Simulation : 4 / 12 [0.00%] @ "12144973000"
+// RTL Simulation : 5 / 12 [0.00%] @ "14073458000"
+// RTL Simulation : 6 / 12 [0.00%] @ "14074553000"
+// RTL Simulation : 7 / 12 [0.00%] @ "14075468000"
+// RTL Simulation : 8 / 12 [0.00%] @ "14076383000"
+// RTL Simulation : 9 / 12 [0.00%] @ "14077298000"
+// RTL Simulation : 10 / 12 [0.00%] @ "14078213000"
+// RTL Simulation : 11 / 12 [0.00%] @ "14079128000"
+// RTL Simulation : 12 / 12 [100.00%] @ "14080043000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 14080072500 ps : File "/home/amd/Workspace/HLS_IP/timing_margin_20261013/candidate/image_preprocess/solution_200mhz/sim/verilog/image_preprocess.autotb.v" Line 879
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:11:47 . Memory (MB): peak = 2707.527 ; gain = 0.000 ; free physical = 4112 ; free virtual = 9350
+## quit
+INFO: xsimkernel Simulation Memory Usage: 1419060 KB (Peak: 1550136 KB), Simulation CPU Usage: 667700 ms
+INFO: [Common 17-206] Exiting xsim at Tue Oct 13 23:42:40 2026...

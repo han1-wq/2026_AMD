@@ -1,0 +1,29 @@
+WARNING:root:'torchcodec' is not available in your platform, falling back to 'pyav' as a default decoder
+/home/ubuntu/lerobot-deploy/venv/lib/python3.10/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+WARNING:root:'torchcodec' is not available in your platform, falling back to 'pyav' as a default decoder
+Loading weights from local directory
+{
+  "passed": true,
+  "architecture": "aarch64",
+  "python": "3.10.12",
+  "versions": {
+    "lerobot": "0.4.3",
+    "torch": "2.8.0+cpu",
+    "torchvision": "0.23.0",
+    "av": "15.1.0",
+    "numpy": "2.2.6",
+    "feetech-servo-sdk": "1.0.0"
+  },
+  "video_backend": "pyav",
+  "torch_cuda": null,
+  "synthetic_reduced_act_chunk_seconds": [
+    0.10441297499983193,
+    0.10395706700001028,
+    0.10401726300005976
+  ],
+  "training_loss": null,
+  "max_rss_kib": 549240,
+  "note": "Random reduced ACT, one 64x64 image. Not a trained model or real-robot performance guarantee."
+}
+ENVIRONMENT_PASS

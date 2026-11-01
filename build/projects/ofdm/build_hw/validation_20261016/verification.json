@@ -1,0 +1,47 @@
+{
+  "verified_at": "2026-10-16T03:09:19.189385",
+  "tool_version": "2022.1",
+  "artifacts": {
+    "build_hw/TOP.xsa": {
+      "sha256": "77ea070f8a392737e2047a8d3163df2b5b7f3e6f872f888cf431bc972ac898e5",
+      "bytes": 1409191
+    },
+    "build_sw/dma_platform/hw/TOP.xsa": {
+      "sha256": "77ea070f8a392737e2047a8d3163df2b5b7f3e6f872f888cf431bc972ac898e5",
+      "bytes": 1409191
+    },
+    "build_sw/dma_platform/export/dma_platform/hw/TOP.xsa": {
+      "sha256": "77ea070f8a392737e2047a8d3163df2b5b7f3e6f872f888cf431bc972ac898e5",
+      "bytes": 1409191
+    },
+    "build_hw/TOP.bit": {
+      "sha256": "caad3a45c330d077e16839360dbb7916ea2ccf624ff48837c194c0136f660bfe",
+      "bytes": 4045663
+    },
+    "build_sw/ofdm_dma/Debug/ofdm_dma.elf": {
+      "sha256": "c22d3e85037b972aeaa04c2566a93be597e724db4c600674562065521304a772",
+      "bytes": 1381156
+    },
+    "build_hw/ofdm_ad9361.runs/impl_1/TOP_routed.dcp": {
+      "sha256": "1e4c178f7b57ab9c9992cf60c7c9fa1bff9d7df8d9d7c9cef2f7d6c9608c952f",
+      "bytes": 42382399
+    }
+  },
+  "source_files_unchanged": 132,
+  "gui_projects_visible": true,
+  "hardware_exit": 0,
+  "software_exit": 0,
+  "timing_ns": {
+    "WNS": 0.601807,
+    "TNS": 0,
+    "WHS": 0.034789,
+    "THS": 0,
+    "WPWS": 3.25
+  },
+  "limits": [
+    "No board test performed for this rebuild",
+    "7 input ports and 12 output ports lack I/O delays",
+    "CDC report contains 2 unsafe endpoints; methodology TIMING-6/TIMING-7 remain",
+    "Bitstream DRC: 0 errors, 79 warnings, 33 advisories"
+  ]
+}

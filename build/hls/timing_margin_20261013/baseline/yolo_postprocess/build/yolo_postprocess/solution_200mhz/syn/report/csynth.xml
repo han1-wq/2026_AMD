@@ -1,0 +1,2569 @@
+<profile>
+    <ReportVersion>
+        <Version>2022.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xck26-sfvc784-2LV-c</Part>
+        <TopModelName>yolo_postprocess</TopModelName>
+        <TargetClockPeriod>5.00</TargetClockPeriod>
+        <ClockUncertainty>0.62</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>4.375</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>undef</Best-caseLatency>
+            <Average-caseLatency>undef</Average-caseLatency>
+            <Worst-caseLatency>undef</Worst-caseLatency>
+            <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+            <Interval-min>undef</Interval-min>
+            <Interval-max>undef</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <VITIS_LOOP_87_1>
+                <TripCount>3</TripCount>
+                <Latency>
+                    <range>
+                        <min>163605</min>
+                        <max>2585037</max>
+                    </range>
+                </Latency>
+                <AbsoluteTimeLatency>
+                    <range>
+                        <min>818025</min>
+                        <max>12925185</max>
+                    </range>
+                </AbsoluteTimeLatency>
+                <IterationLatency>
+                    <range>
+                        <min>54535</min>
+                        <max>861679</max>
+                    </range>
+                </IterationLatency>
+                <InstanceList/>
+                <VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6>
+                    <TripCount>
+                        <range>
+                            <min>507</min>
+                            <max>8112</max>
+                        </range>
+                    </TripCount>
+                    <Latency>
+                        <range>
+                            <min>52728</min>
+                            <max>859872</max>
+                        </range>
+                    </Latency>
+                    <AbsoluteTimeLatency>
+                        <range>
+                            <min>263640</min>
+                            <max>4299360</max>
+                        </range>
+                    </AbsoluteTimeLatency>
+                    <IterationLatency>
+                        <range>
+                            <min>104</min>
+                            <max>106</max>
+                        </range>
+                    </IterationLatency>
+                    <InstanceList/>
+                </VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6>
+            </VITIS_LOOP_87_1>
+            <VITIS_LOOP_130_9>
+                <TripCount>undef</TripCount>
+                <Latency>undef</Latency>
+                <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                <IterationLatency>undef</IterationLatency>
+                <InstanceList/>
+                <VITIS_LOOP_140_11>
+                    <TripCount>undef</TripCount>
+                    <Latency>undef</Latency>
+                    <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                    <IterationLatency>
+                        <range>
+                            <min>3</min>
+                            <max>27</max>
+                        </range>
+                    </IterationLatency>
+                    <InstanceList/>
+                </VITIS_LOOP_140_11>
+            </VITIS_LOOP_130_9>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>12</BRAM_18K>
+            <DSP>6</DSP>
+            <FF>6716</FF>
+            <LUT>12884</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>288</BRAM_18K>
+            <DSP>1248</DSP>
+            <FF>234240</FF>
+            <LUT>117120</LUT>
+            <URAM>64</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>yolo_postprocess</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>yolo_postprocess</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>yolo_postprocess</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWVALID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWREADY</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWADDR</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWLEN</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWSIZE</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWBURST</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWLOCK</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWCACHE</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWPROT</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWQOS</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWREGION</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_AWUSER</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WVALID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WREADY</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WDATA</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>128</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WSTRB</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>16</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WLAST</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_WUSER</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARVALID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARREADY</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARADDR</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARLEN</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARSIZE</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARBURST</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARLOCK</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARCACHE</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARPROT</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARQOS</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARREGION</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_ARUSER</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RVALID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RREADY</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RDATA</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>128</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RLAST</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RUSER</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_RRESP</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_BVALID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_BREADY</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_BRESP</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_BID</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_in_BUSER</name>
+            <Object>gmem_in</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWVALID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWREADY</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWADDR</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWLEN</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWSIZE</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWBURST</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWLOCK</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWCACHE</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWPROT</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWQOS</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWREGION</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_AWUSER</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WVALID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WREADY</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WDATA</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>256</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WSTRB</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WLAST</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_WUSER</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARVALID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARREADY</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARADDR</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARLEN</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARSIZE</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARBURST</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARLOCK</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARCACHE</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARPROT</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>3</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARQOS</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARREGION</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_ARUSER</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RVALID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RREADY</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RDATA</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>256</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RLAST</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RUSER</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_RRESP</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_BVALID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_BREADY</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_BRESP</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_BID</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axi_gmem_out_BUSER</name>
+            <Object>gmem_out</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>m_axi</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="4">
+            <ModuleName>yolo_postprocess</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_yolo_postprocess_Pipeline_VITIS_LOOP_88_2_VITIS_LOOP_89_3_fu_863</InstName>
+                    <ModuleName>yolo_postprocess_Pipeline_VITIS_LOOP_88_2_VITIS_LOOP_89_3</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>863</ID>
+                    <BindInstances>add_ln88_1_fu_189_p2 add_ln88_fu_201_p2 add_ln91_3_fu_241_p2 add_ln91_2_fu_333_p2 add_ln89_fu_291_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_yolo_postprocess_Pipeline_VITIS_LOOP_102_7_fu_873</InstName>
+                    <ModuleName>yolo_postprocess_Pipeline_VITIS_LOOP_102_7</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>873</ID>
+                    <BindInstances>add_ln102_fu_322_p2 add_ln104_fu_363_p2 add_ln110_fu_547_p2 byte_index_1_fu_382_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_yolo_postprocess_Pipeline_VITIS_LOOP_132_10_fu_891</InstName>
+                    <ModuleName>yolo_postprocess_Pipeline_VITIS_LOOP_132_10</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>891</ID>
+                    <BindInstances>add_ln132_fu_105_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_p_anonymous_namespace_suppress_fu_899</InstName>
+                    <ModuleName>p_anonymous_namespace_suppress</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>899</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_p_anonymous_namespace_area_fu_133</InstName>
+                            <ModuleName>p_anonymous_namespace_area</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>133</ID>
+                            <BindInstances>mul_32ns_32ns_64_3_1_U23</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_p_anonymous_namespace_area_fu_139</InstName>
+                            <ModuleName>p_anonymous_namespace_area</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>139</ID>
+                            <BindInstances>mul_32ns_32ns_64_3_1_U23</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_p_anonymous_namespace_area_fu_145</InstName>
+                            <ModuleName>p_anonymous_namespace_area</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>145</ID>
+                            <BindInstances>mul_32ns_32ns_64_3_1_U23</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>sub_ln25_fu_240_p2 sub_ln25_1_fu_246_p2 sub_ln26_fu_252_p2 sub_ln26_1_fu_258_p2 sub_ln27_fu_264_p2 sub_ln27_1_fu_270_p2 bit_2_fu_327_p2 add_ln886_fu_357_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_yolo_postprocess_Pipeline_VITIS_LOOP_128_8_fu_912</InstName>
+                    <ModuleName>yolo_postprocess_Pipeline_VITIS_LOOP_128_8</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>912</ID>
+                    <BindInstances>add_ln128_fu_203_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>boxes_x1_U boxes_y1_U boxes_x2_U boxes_y2_U boxes_score_U boxes_cls_U boxes_id_U lut_U add_ln76_fu_968_p2 add_ln87_fu_1091_p2 empty_49_fu_1121_p2 sub_ln95_fu_1235_p2 mul_8ns_6ns_14_1_1_U46 add_ln95_fu_1258_p2 sub_ln95_1_fu_1178_p2 mac_muladd_14ns_6ns_21ns_21_4_1_U53 mac_muladd_14ns_6ns_21ns_21_4_1_U53 mul_6ns_6ns_11_1_1_U47 add_ln95_2_fu_1292_p2 add_ln96_fu_1302_p2 add_ln96_1_fu_1307_p2 y_2_fu_1446_p2 mul_6ns_6ns_11_1_1_U48 add_ln97_fu_1383_p2 add_ln97_1_fu_1389_p2 x_2_fu_1481_p2 mul_6ns_6ns_11_1_1_U49 add_ln102_fu_1428_p2 mul_32s_32s_32_1_1_U50 mul_32s_6ns_32_1_1_U51 add_ln116_fu_1692_p2 cx_fu_1711_p2 mul_32s_6ns_32_1_1_U52 add_ln117_fu_1720_p2 cy_fu_1739_p2 add_ln118_fu_1658_p2 add_ln119_fu_1668_p2 add_ln119_1_fu_1682_p2 boxes_x1_d1 boxes_y1_d1 boxes_x2_d1 boxes_y2_d1 count_2_fu_1600_p2 add_ln97_2_fu_1776_p2 id_6_fu_1781_p2 add_ln96_3_fu_1786_p2 written_2_fu_1811_p2 add_ln138_fu_1851_p2 add_ln140_fu_1907_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>yolo_postprocess_Pipeline_VITIS_LOOP_88_2_VITIS_LOOP_89_3</Name>
+            <Loops>
+                <VITIS_LOOP_88_2_VITIS_LOOP_89_3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <EstimatedClockPeriod>4.375</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1802</Best-caseLatency>
+                    <Average-caseLatency>1802</Average-caseLatency>
+                    <Worst-caseLatency>1802</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>9.010 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>9.010 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>9.010 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1802</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_88_2_VITIS_LOOP_89_3>
+                        <Name>VITIS_LOOP_88_2_VITIS_LOOP_89_3</Name>
+                        <TripCount>1792</TripCount>
+                        <Latency>1800</Latency>
+                        <AbsoluteTimeLatency>9.000 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>10</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_88_2_VITIS_LOOP_89_3>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>371</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>817</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_88_2_VITIS_LOOP_89_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln88_1_fu_189_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:88" URAM="0" VARIABLE="add_ln88_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_88_2_VITIS_LOOP_89_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln88_fu_201_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:88" URAM="0" VARIABLE="add_ln88"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_88_2_VITIS_LOOP_89_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln91_3_fu_241_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:91" URAM="0" VARIABLE="add_ln91_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_88_2_VITIS_LOOP_89_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln91_2_fu_333_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:91" URAM="0" VARIABLE="add_ln91_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_88_2_VITIS_LOOP_89_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln89_fu_291_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:89" URAM="0" VARIABLE="add_ln89"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yolo_postprocess_Pipeline_VITIS_LOOP_102_7</Name>
+            <Loops>
+                <VITIS_LOOP_102_7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <EstimatedClockPeriod>4.375</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>97</Best-caseLatency>
+                    <Average-caseLatency>97</Average-caseLatency>
+                    <Worst-caseLatency>97</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.485 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.485 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.485 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>97</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_102_7>
+                        <Name>VITIS_LOOP_102_7</Name>
+                        <TripCount>85</TripCount>
+                        <Latency>95</Latency>
+                        <AbsoluteTimeLatency>0.475 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>12</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_102_7>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>861</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1215</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln102_fu_322_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:102" URAM="0" VARIABLE="add_ln102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln104_fu_363_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:104" URAM="0" VARIABLE="add_ln104"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln110_fu_547_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:110" URAM="0" VARIABLE="add_ln110"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_102_7" OPTYPE="add" PRAGMA="" RTLNAME="byte_index_1_fu_382_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:102" URAM="0" VARIABLE="byte_index_1"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yolo_postprocess_Pipeline_VITIS_LOOP_132_10</Name>
+            <Loops>
+                <VITIS_LOOP_132_10/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <EstimatedClockPeriod>3.104</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_132_10>
+                        <Name>VITIS_LOOP_132_10</Name>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_132_10>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>133</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>199</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_132_10" OPTYPE="add" PRAGMA="" RTLNAME="add_ln132_fu_105_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:132" URAM="0" VARIABLE="add_ln132"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>p_anonymous_namespace_area</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <TargetInitiationInterval>1</TargetInitiationInterval>
+                    <EstimatedClockPeriod>3.479</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>2</Best-caseLatency>
+                    <Average-caseLatency>2</Average-caseLatency>
+                    <Worst-caseLatency>2</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1</PipelineInitiationInterval>
+                    <PipelineDepth>3</PipelineDepth>
+                    <PipelineType>yes</PipelineType>
+                </SummaryOfOverallLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>64</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1053</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="mul" PRAGMA="yes" RTLNAME="mul_32ns_32ns_64_3_1_U23" SOURCE="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_base.h:1540" URAM="0" VARIABLE="ret_V"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>p_anonymous_namespace_suppress</Name>
+            <Loops>
+                <VITIS_LOOP_33_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <EstimatedClockPeriod>4.301</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>12</Average-caseLatency>
+                    <Worst-caseLatency>23</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.115 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1 ~ 23</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_33_1>
+                        <Name>VITIS_LOOP_33_1</Name>
+                        <TripCount>17</TripCount>
+                        <Latency>17</Latency>
+                        <AbsoluteTimeLatency>85.000 ns</AbsoluteTimeLatency>
+                        <IterationLatency>1</IterationLatency>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_33_1>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <FF>692</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>4177</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln25_fu_240_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:25" URAM="0" VARIABLE="sub_ln25"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln25_1_fu_246_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:25" URAM="0" VARIABLE="sub_ln25_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln26_fu_252_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:26" URAM="0" VARIABLE="sub_ln26"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln26_1_fu_258_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:26" URAM="0" VARIABLE="sub_ln26_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln27_fu_264_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:27" URAM="0" VARIABLE="sub_ln27"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln27_1_fu_270_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:27" URAM="0" VARIABLE="sub_ln27_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_33_1" OPTYPE="add" PRAGMA="" RTLNAME="bit_2_fu_327_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:33" URAM="0" VARIABLE="bit_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_33_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln886_fu_357_p2" SOURCE="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_base.h:886" URAM="0" VARIABLE="add_ln886"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yolo_postprocess_Pipeline_VITIS_LOOP_128_8</Name>
+            <Loops>
+                <VITIS_LOOP_128_8/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <EstimatedClockPeriod>4.375</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_128_8>
+                        <Name>VITIS_LOOP_128_8</Name>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_128_8>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>245</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>108</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_128_8" OPTYPE="add" PRAGMA="" RTLNAME="add_ln128_fu_203_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:128" URAM="0" VARIABLE="add_ln128"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>yolo_postprocess</Name>
+            <Loops>
+                <VITIS_LOOP_87_1>
+                    <VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6/>
+                </VITIS_LOOP_87_1>
+                <VITIS_LOOP_130_9>
+                    <VITIS_LOOP_140_11/>
+                </VITIS_LOOP_130_9>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>0.62</ClockUncertainty>
+                    <EstimatedClockPeriod>4.375</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>undef</Best-caseLatency>
+                    <Average-caseLatency>undef</Average-caseLatency>
+                    <Worst-caseLatency>undef</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>undef</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_87_1>
+                        <Name>VITIS_LOOP_87_1</Name>
+                        <TripCount>3</TripCount>
+                        <Latency>163605 ~ 2585037</Latency>
+                        <AbsoluteTimeLatency>0.818 ms ~ 12.925 ms</AbsoluteTimeLatency>
+                        <IterationLatency>
+                            <range>
+                                <min>54535</min>
+                                <max>861679</max>
+                            </range>
+                        </IterationLatency>
+                        <PipelineDepth>54535 ~ 861679</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_yolo_postprocess_Pipeline_VITIS_LOOP_88_2_VITIS_LOOP_89_3_fu_863</Instance>
+                        </InstanceList>
+                        <VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6>
+                            <Name>VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6</Name>
+                            <TripCount>
+                                <range>
+                                    <min>507</min>
+                                    <max>8112</max>
+                                </range>
+                            </TripCount>
+                            <Latency>52728 ~ 859872</Latency>
+                            <AbsoluteTimeLatency>0.264 ms ~ 4.299 ms</AbsoluteTimeLatency>
+                            <IterationLatency>
+                                <range>
+                                    <min>104</min>
+                                    <max>106</max>
+                                </range>
+                            </IterationLatency>
+                            <PipelineDepth>104 ~ 106</PipelineDepth>
+                            <PipelineType>no</PipelineType>
+                            <InstanceList>
+                                <Instance>grp_yolo_postprocess_Pipeline_VITIS_LOOP_102_7_fu_873</Instance>
+                            </InstanceList>
+                        </VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6>
+                    </VITIS_LOOP_87_1>
+                    <VITIS_LOOP_130_9>
+                        <Name>VITIS_LOOP_130_9</Name>
+                        <TripCount>undef</TripCount>
+                        <Latency>undef</Latency>
+                        <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                        <IterationLatency>undef</IterationLatency>
+                        <PipelineDepth>undef</PipelineDepth>
+                        <PipelineType>no</PipelineType>
+                        <InstanceList>
+                            <Instance>grp_yolo_postprocess_Pipeline_VITIS_LOOP_132_10_fu_891</Instance>
+                        </InstanceList>
+                        <VITIS_LOOP_140_11>
+                            <Name>VITIS_LOOP_140_11</Name>
+                            <TripCount>undef</TripCount>
+                            <Latency>undef</Latency>
+                            <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
+                            <IterationLatency>
+                                <range>
+                                    <min>3</min>
+                                    <max>27</max>
+                                </range>
+                            </IterationLatency>
+                            <PipelineDepth>3 ~ 27</PipelineDepth>
+                            <PipelineType>no</PipelineType>
+                            <InstanceList>
+                                <Instance>grp_p_anonymous_namespace_suppress_fu_899</Instance>
+                            </InstanceList>
+                        </VITIS_LOOP_140_11>
+                    </VITIS_LOOP_130_9>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>12</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>4</UTIL_BRAM>
+                    <DSP>6</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>6716</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>12884</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>11</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_x1_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_x1"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_y1_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_y1"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_x2_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_x2"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_y2_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_y2"/>
+                <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_score_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_score"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_cls_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_cls"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="boxes_id_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:80" URAM="0" VARIABLE="boxes_id"/>
+                <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="yes" RTLNAME="lut_U" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:82" URAM="0" VARIABLE="lut"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln76_fu_968_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:76" URAM="0" VARIABLE="add_ln76"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_87_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln87_fu_1091_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:87" URAM="0" VARIABLE="add_ln87"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_87_1" OPTYPE="sub" PRAGMA="" RTLNAME="empty_49_fu_1121_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:87" URAM="0" VARIABLE="empty_49"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_87_1" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln95_fu_1235_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="sub_ln95"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_87_1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_8ns_6ns_14_1_1_U46" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="mul_ln95"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_87_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln95_fu_1258_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="add_ln95"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_87_1" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln95_1_fu_1178_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="sub_ln95_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_87_1" OPTYPE="mul" PRAGMA="" RTLNAME="mac_muladd_14ns_6ns_21ns_21_4_1_U53" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="mul_ln95_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="1" ID="" IMPL="dsp48" LATENCY="3" LOOP="VITIS_LOOP_87_1" OPTYPE="add" PRAGMA="" RTLNAME="mac_muladd_14ns_6ns_21ns_21_4_1_U53" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="add_ln95_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_6ns_11_1_1_U47" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:94" URAM="0" VARIABLE="mul1031920"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln95_2_fu_1292_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="add_ln95_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln96_fu_1302_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:96" URAM="0" VARIABLE="add_ln96"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln96_1_fu_1307_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:96" URAM="0" VARIABLE="add_ln96_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="y_2_fu_1446_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:95" URAM="0" VARIABLE="y_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_6ns_11_1_1_U48" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:84" URAM="0" VARIABLE="mul_ln84"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln97_fu_1383_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:97" URAM="0" VARIABLE="add_ln97"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln97_1_fu_1389_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:97" URAM="0" VARIABLE="add_ln97_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="x_2_fu_1481_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:96" URAM="0" VARIABLE="x_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="mul" PRAGMA="" RTLNAME="mul_6ns_6ns_11_1_1_U49" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:94" URAM="0" VARIABLE="mul1031920_mid1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln102_fu_1428_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:102" URAM="0" VARIABLE="add_ln102"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="3" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_1_1_U50" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:113" URAM="0" VARIABLE="b_score"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_6ns_32_1_1_U51" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:116" URAM="0" VARIABLE="mul_ln116"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln116_fu_1692_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:116" URAM="0" VARIABLE="add_ln116"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="cx_fu_1711_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:116" URAM="0" VARIABLE="cx"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="1" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_6ns_32_1_1_U52" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:117" URAM="0" VARIABLE="mul_ln117"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln117_fu_1720_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:117" URAM="0" VARIABLE="add_ln117"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="cy_fu_1739_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:117" URAM="0" VARIABLE="cy"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln118_fu_1658_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:118" URAM="0" VARIABLE="add_ln118"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln119_fu_1668_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:119" URAM="0" VARIABLE="add_ln119"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln119_1_fu_1682_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:119" URAM="0" VARIABLE="add_ln119_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="sub" PRAGMA="" RTLNAME="boxes_x1_d1" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:120" URAM="0" VARIABLE="b_x1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="sub" PRAGMA="" RTLNAME="boxes_y1_d1" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:120" URAM="0" VARIABLE="b_y1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="boxes_x2_d1" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:120" URAM="0" VARIABLE="b_x2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="boxes_y2_d1" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:120" URAM="0" VARIABLE="b_y2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="count_2_fu_1600_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:121" URAM="0" VARIABLE="count_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln97_2_fu_1776_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:97" URAM="0" VARIABLE="add_ln97_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="id_6_fu_1781_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:97" URAM="0" VARIABLE="id_6"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_95_4_VITIS_LOOP_96_5_VITIS_LOOP_97_6" OPTYPE="add" PRAGMA="" RTLNAME="add_ln96_3_fu_1786_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:96" URAM="0" VARIABLE="add_ln96_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_130_9" OPTYPE="add" PRAGMA="" RTLNAME="written_2_fu_1811_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:138" URAM="0" VARIABLE="written_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_130_9" OPTYPE="add" PRAGMA="" RTLNAME="add_ln138_fu_1851_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:138" URAM="0" VARIABLE="add_ln138"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_140_11" OPTYPE="add" PRAGMA="" RTLNAME="add_ln140_fu_1907_p2" SOURCE="/home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:140" URAM="0" VARIABLE="add_ln140"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_op>
+            <ENTRY impl="all mul" latency="-1 mul" op="mul" precision="mul standard"/>
+            <ENTRY impl="all add" latency="-1 add" op="add" precision="add standard"/>
+            <ENTRY impl="all sub" latency="-1 sub" op="sub" precision="sub standard"/>
+            <ENTRY impl="all fadd" latency="-1 fadd" op="fadd" precision="fadd standard"/>
+            <ENTRY impl="all fsub" latency="-1 fsub" op="fsub" precision="fsub standard"/>
+            <ENTRY impl="all fdiv" latency="-1 fdiv" op="fdiv" precision="fdiv standard"/>
+            <ENTRY impl="all fexp" latency="-1 fexp" op="fexp" precision="fexp standard"/>
+            <ENTRY impl="all flog" latency="-1 flog" op="flog" precision="flog standard"/>
+            <ENTRY impl="all fmul" latency="-1 fmul" op="fmul" precision="fmul standard"/>
+            <ENTRY impl="all frsqrt" latency="-1 frsqrt" op="frsqrt" precision="frsqrt standard"/>
+            <ENTRY impl="all frecip" latency="-1 frecip" op="frecip" precision="frecip standard"/>
+            <ENTRY impl="all fsqrt" latency="-1 fsqrt" op="fsqrt" precision="fsqrt standard"/>
+            <ENTRY impl="all dadd" latency="-1 dadd" op="dadd" precision="dadd standard"/>
+            <ENTRY impl="all dsub" latency="-1 dsub" op="dsub" precision="dsub standard"/>
+            <ENTRY impl="all ddiv" latency="-1 ddiv" op="ddiv" precision="ddiv standard"/>
+            <ENTRY impl="all dexp" latency="-1 dexp" op="dexp" precision="dexp standard"/>
+            <ENTRY impl="all dlog" latency="-1 dlog" op="dlog" precision="dlog standard"/>
+            <ENTRY impl="all dmul" latency="-1 dmul" op="dmul" precision="dmul standard"/>
+            <ENTRY impl="all drsqrt" latency="-1 drsqrt" op="drsqrt" precision="drsqrt standard"/>
+            <ENTRY impl="all drecip" latency="-1 drecip" op="drecip" precision="drecip standard"/>
+            <ENTRY impl="all dsqrt" latency="-1 dsqrt" op="dsqrt" precision="dsqrt standard"/>
+            <ENTRY impl="all hadd" latency="-1 hadd" op="hadd" precision="hadd standard"/>
+            <ENTRY impl="all hsub" latency="-1 hsub" op="hsub" precision="hsub standard"/>
+            <ENTRY impl="all hdiv" latency="-1 hdiv" op="hdiv" precision="hdiv standard"/>
+            <ENTRY impl="all hmul" latency="-1 hmul" op="hmul" precision="hmul standard"/>
+            <ENTRY impl="all hsqrt" latency="-1 hsqrt" op="hsqrt" precision="hsqrt standard"/>
+            <ENTRY impl="all facc" latency="-1 facc" op="facc" precision="facc standard"/>
+            <ENTRY impl="all fmacc" latency="-1 fmacc" op="fmacc" precision="fmacc standard"/>
+            <ENTRY impl="all fmadd" latency="-1 fmadd" op="fmadd" precision="fmadd standard"/>
+        </config_op>
+        <config_storage>
+            <ENTRY auto_srl_max_bits="1024 fifo" auto_srl_max_depth="2 fifo" impl="autosrl fifo" type="fifo"/>
+        </config_storage>
+        <config_export library="vision" vendor="local" version="1.0"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="input" index="0" direction="in" srcType="ap_uint&lt;128&gt; const *" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axi_gmem_in" name="" usage="data" direction="in"/>
+                <hwRef type="interface" interface="s_axi_control" name="" usage="address" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="tables" index="1" direction="in" srcType="unsigned int const *" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axi_gmem_in" name="" usage="data" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="tables_1" usage="address" direction="in"/>
+                <hwRef type="register" interface="s_axi_control" name="tables_2" usage="address" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output" index="2" direction="out" srcType="ap_uint&lt;256&gt;*" srcSize="256">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axi_gmem_out" name="" usage="data" direction="out"/>
+                <hwRef type="interface" interface="s_axi_control" name="" usage="address" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="input_words" index="3" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="input_words" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="table_words" index="4" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="table_words" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output_capacity" index="5" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="output_capacity" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="confidence_q30" index="6" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="confidence_q30" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="nms_q16" index="7" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="nms_q16" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="enable_nms" index="8" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="enable_nms" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="candidate_count" index="9" direction="out" srcType="unsigned int&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="candidate_count" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="candidate_count_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="detection_count" index="10" direction="out" srcType="unsigned int&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="detection_count" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="detection_count_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <ReturnValue ReturnValueName="srcType">unsigned int</ReturnValue>
+    <ReturnValue ReturnValueName="srcSize">32</ReturnValue>
+    <ReturnValue ReturnValueName="hwRefs" type="register" interface="s_axi_control" name="ap_return" usage="data" direction="out"/>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="8" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="R" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="R" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="ap_return" access="R" description="Data signal of ap_return" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="ap_return" access="R" description="Bit 31 to 0 of ap_return"/>
+                    </fields>
+                </register>
+                <register offset="0x18" name="input_r_1" access="W" description="Data signal of input_r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="input_r" access="W" description="Bit 31 to 0 of input_r"/>
+                    </fields>
+                </register>
+                <register offset="0x1c" name="input_r_2" access="W" description="Data signal of input_r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="input_r" access="W" description="Bit 63 to 32 of input_r"/>
+                    </fields>
+                </register>
+                <register offset="0x24" name="tables_1" access="W" description="Data signal of tables" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="tables" access="W" description="Bit 31 to 0 of tables"/>
+                    </fields>
+                </register>
+                <register offset="0x28" name="tables_2" access="W" description="Data signal of tables" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="tables" access="W" description="Bit 63 to 32 of tables"/>
+                    </fields>
+                </register>
+                <register offset="0x30" name="output_r_1" access="W" description="Data signal of output_r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="output_r" access="W" description="Bit 31 to 0 of output_r"/>
+                    </fields>
+                </register>
+                <register offset="0x34" name="output_r_2" access="W" description="Data signal of output_r" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="output_r" access="W" description="Bit 63 to 32 of output_r"/>
+                    </fields>
+                </register>
+                <register offset="0x3c" name="input_words" access="W" description="Data signal of input_words" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="input_words" access="W" description="Bit 31 to 0 of input_words"/>
+                    </fields>
+                </register>
+                <register offset="0x44" name="table_words" access="W" description="Data signal of table_words" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="table_words" access="W" description="Bit 31 to 0 of table_words"/>
+                    </fields>
+                </register>
+                <register offset="0x4c" name="output_capacity" access="W" description="Data signal of output_capacity" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="output_capacity" access="W" description="Bit 31 to 0 of output_capacity"/>
+                    </fields>
+                </register>
+                <register offset="0x54" name="confidence_q30" access="W" description="Data signal of confidence_q30" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="confidence_q30" access="W" description="Bit 31 to 0 of confidence_q30"/>
+                    </fields>
+                </register>
+                <register offset="0x5c" name="nms_q16" access="W" description="Data signal of nms_q16" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="nms_q16" access="W" description="Bit 31 to 0 of nms_q16"/>
+                    </fields>
+                </register>
+                <register offset="0x64" name="enable_nms" access="W" description="Data signal of enable_nms" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="enable_nms" access="W" description="Bit 31 to 0 of enable_nms"/>
+                    </fields>
+                </register>
+                <register offset="0x6c" name="candidate_count" access="R" description="Data signal of candidate_count" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="candidate_count" access="R" description="Bit 31 to 0 of candidate_count"/>
+                    </fields>
+                </register>
+                <register offset="0x70" name="candidate_count_ctrl" access="R" description="Control signal of candidate_count" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="candidate_count_ap_vld" access="R" description="Control signal candidate_count_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x7c" name="detection_count" access="R" description="Data signal of detection_count" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="detection_count" access="R" description="Bit 31 to 0 of detection_count"/>
+                    </fields>
+                </register>
+                <register offset="0x80" name="detection_count_ctrl" access="R" description="Control signal of detection_count" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="detection_count_ap_vld" access="R" description="Control signal detection_count_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="24" argName="input"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="36" argName="tables"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="48" argName="output"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="60" argName="input_words"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="68" argName="table_words"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="76" argName="output_capacity"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="84" argName="confidence_q30"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="92" argName="nms_q16"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="100" argName="enable_nms"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="108" argName="candidate_count"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="124" argName="detection_count"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control:m_axi_gmem_in:m_axi_gmem_out</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="m_axi_gmem_in" type="axi4full" busTypeName="aximm" mode="master" dataWidth="128" addrWidth="64" portPrefix="m_axi_gmem_in_" paramPrefix="C_M_AXI_GMEM_IN_" preferredUsageValue="MEMORY">
+            <busParams>
+                <busParam busParamName="NUM_READ_OUTSTANDING">2</busParam>
+                <busParam busParamName="NUM_WRITE_OUTSTANDING">16</busParam>
+                <busParam busParamName="MAX_READ_BURST_LENGTH">32</busParam>
+                <busParam busParamName="MAX_WRITE_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_BURST_LENGTH">256</busParam>
+                <busParam busParamName="PROTOCOL">AXI4</busParam>
+                <busParam busParamName="READ_WRITE_MODE">READ_ONLY</busParam>
+                <busParam busParamName="HAS_BURST">0</busParam>
+                <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
+            </busParams>
+            <ports>
+                <port>m_axi_gmem_in_ARADDR</port>
+                <port>m_axi_gmem_in_ARBURST</port>
+                <port>m_axi_gmem_in_ARCACHE</port>
+                <port>m_axi_gmem_in_ARID</port>
+                <port>m_axi_gmem_in_ARLEN</port>
+                <port>m_axi_gmem_in_ARLOCK</port>
+                <port>m_axi_gmem_in_ARPROT</port>
+                <port>m_axi_gmem_in_ARQOS</port>
+                <port>m_axi_gmem_in_ARREADY</port>
+                <port>m_axi_gmem_in_ARREGION</port>
+                <port>m_axi_gmem_in_ARSIZE</port>
+                <port>m_axi_gmem_in_ARUSER</port>
+                <port>m_axi_gmem_in_ARVALID</port>
+                <port>m_axi_gmem_in_AWADDR</port>
+                <port>m_axi_gmem_in_AWBURST</port>
+                <port>m_axi_gmem_in_AWCACHE</port>
+                <port>m_axi_gmem_in_AWID</port>
+                <port>m_axi_gmem_in_AWLEN</port>
+                <port>m_axi_gmem_in_AWLOCK</port>
+                <port>m_axi_gmem_in_AWPROT</port>
+                <port>m_axi_gmem_in_AWQOS</port>
+                <port>m_axi_gmem_in_AWREADY</port>
+                <port>m_axi_gmem_in_AWREGION</port>
+                <port>m_axi_gmem_in_AWSIZE</port>
+                <port>m_axi_gmem_in_AWUSER</port>
+                <port>m_axi_gmem_in_AWVALID</port>
+                <port>m_axi_gmem_in_BID</port>
+                <port>m_axi_gmem_in_BREADY</port>
+                <port>m_axi_gmem_in_BRESP</port>
+                <port>m_axi_gmem_in_BUSER</port>
+                <port>m_axi_gmem_in_BVALID</port>
+                <port>m_axi_gmem_in_RDATA</port>
+                <port>m_axi_gmem_in_RID</port>
+                <port>m_axi_gmem_in_RLAST</port>
+                <port>m_axi_gmem_in_RREADY</port>
+                <port>m_axi_gmem_in_RRESP</port>
+                <port>m_axi_gmem_in_RUSER</port>
+                <port>m_axi_gmem_in_RVALID</port>
+                <port>m_axi_gmem_in_WDATA</port>
+                <port>m_axi_gmem_in_WID</port>
+                <port>m_axi_gmem_in_WLAST</port>
+                <port>m_axi_gmem_in_WREADY</port>
+                <port>m_axi_gmem_in_WSTRB</port>
+                <port>m_axi_gmem_in_WUSER</port>
+                <port>m_axi_gmem_in_WVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="2" num_write_outstanding="16" max_read_burst_length="32" max_write_burst_length="16" max_widen_bitwidth="0" argName="input"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="128" final_bitwidth="128" argName="input"/>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="2" num_write_outstanding="16" max_read_burst_length="32" max_write_burst_length="16" max_widen_bitwidth="0" argName="tables"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="32" final_bitwidth="128" argName="tables"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="m_axi_gmem_out" type="axi4full" busTypeName="aximm" mode="master" dataWidth="256" addrWidth="64" portPrefix="m_axi_gmem_out_" paramPrefix="C_M_AXI_GMEM_OUT_" preferredUsageValue="MEMORY">
+            <busParams>
+                <busParam busParamName="NUM_READ_OUTSTANDING">16</busParam>
+                <busParam busParamName="NUM_WRITE_OUTSTANDING">2</busParam>
+                <busParam busParamName="MAX_READ_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_WRITE_BURST_LENGTH">16</busParam>
+                <busParam busParamName="MAX_BURST_LENGTH">256</busParam>
+                <busParam busParamName="PROTOCOL">AXI4</busParam>
+                <busParam busParamName="READ_WRITE_MODE">WRITE_ONLY</busParam>
+                <busParam busParamName="HAS_BURST">0</busParam>
+                <busParam busParamName="SUPPORTS_NARROW_BURST">0</busParam>
+            </busParams>
+            <ports>
+                <port>m_axi_gmem_out_ARADDR</port>
+                <port>m_axi_gmem_out_ARBURST</port>
+                <port>m_axi_gmem_out_ARCACHE</port>
+                <port>m_axi_gmem_out_ARID</port>
+                <port>m_axi_gmem_out_ARLEN</port>
+                <port>m_axi_gmem_out_ARLOCK</port>
+                <port>m_axi_gmem_out_ARPROT</port>
+                <port>m_axi_gmem_out_ARQOS</port>
+                <port>m_axi_gmem_out_ARREADY</port>
+                <port>m_axi_gmem_out_ARREGION</port>
+                <port>m_axi_gmem_out_ARSIZE</port>
+                <port>m_axi_gmem_out_ARUSER</port>
+                <port>m_axi_gmem_out_ARVALID</port>
+                <port>m_axi_gmem_out_AWADDR</port>
+                <port>m_axi_gmem_out_AWBURST</port>
+                <port>m_axi_gmem_out_AWCACHE</port>
+                <port>m_axi_gmem_out_AWID</port>
+                <port>m_axi_gmem_out_AWLEN</port>
+                <port>m_axi_gmem_out_AWLOCK</port>
+                <port>m_axi_gmem_out_AWPROT</port>
+                <port>m_axi_gmem_out_AWQOS</port>
+                <port>m_axi_gmem_out_AWREADY</port>
+                <port>m_axi_gmem_out_AWREGION</port>
+                <port>m_axi_gmem_out_AWSIZE</port>
+                <port>m_axi_gmem_out_AWUSER</port>
+                <port>m_axi_gmem_out_AWVALID</port>
+                <port>m_axi_gmem_out_BID</port>
+                <port>m_axi_gmem_out_BREADY</port>
+                <port>m_axi_gmem_out_BRESP</port>
+                <port>m_axi_gmem_out_BUSER</port>
+                <port>m_axi_gmem_out_BVALID</port>
+                <port>m_axi_gmem_out_RDATA</port>
+                <port>m_axi_gmem_out_RID</port>
+                <port>m_axi_gmem_out_RLAST</port>
+                <port>m_axi_gmem_out_RREADY</port>
+                <port>m_axi_gmem_out_RRESP</port>
+                <port>m_axi_gmem_out_RUSER</port>
+                <port>m_axi_gmem_out_RVALID</port>
+                <port>m_axi_gmem_out_WDATA</port>
+                <port>m_axi_gmem_out_WID</port>
+                <port>m_axi_gmem_out_WLAST</port>
+                <port>m_axi_gmem_out_WREADY</port>
+                <port>m_axi_gmem_out_WSTRB</port>
+                <port>m_axi_gmem_out_WUSER</port>
+                <port>m_axi_gmem_out_WVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="m_axi" register_option="0" offset="slave" latency="0" num_read_outstanding="16" num_write_outstanding="2" max_read_burst_length="16" max_write_burst_length="16" max_widen_bitwidth="0" argName="output"/>
+                <constraint constraint_type="bitwidth" orig_bitwidth="256" final_bitwidth="256" argName="output"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="M_AXI">
+                <table isCollapsed="0">
+                    <keys size="11">Interface, Data Width (SW-&gt;HW), Address Width, Latency, Offset, Register, Max Widen Bitwidth, Max Read Burst Length, Max Write Burst Length, Num Read Outstanding, Num Write Outstanding</keys>
+                    <column name="m_axi_gmem_in">128 -&gt; 128, 64, 0, slave, 0, 0, 32, 16, 2, 16, , , , </column>
+                    <column name="m_axi_gmem_out">256 -&gt; 256, 64, 0, slave, 0, 0, 16, 16, 16, 2, , , , </column>
+                </table>
+            </item>
+            <item name="S_AXILITE Interfaces">
+                <table isCollapsed="0">
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 8, 24, 0, , , , , </column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table isCollapsed="0">
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">ap_return, 0x10, 32, R, Data signal of ap_return, </column>
+                    <column name="s_axi_control">input_r_1, 0x18, 32, W, Data signal of input_r, </column>
+                    <column name="s_axi_control">input_r_2, 0x1c, 32, W, Data signal of input_r, </column>
+                    <column name="s_axi_control">tables_1, 0x24, 32, W, Data signal of tables, </column>
+                    <column name="s_axi_control">tables_2, 0x28, 32, W, Data signal of tables, </column>
+                    <column name="s_axi_control">output_r_1, 0x30, 32, W, Data signal of output_r, </column>
+                    <column name="s_axi_control">output_r_2, 0x34, 32, W, Data signal of output_r, </column>
+                    <column name="s_axi_control">input_words, 0x3c, 32, W, Data signal of input_words, </column>
+                    <column name="s_axi_control">table_words, 0x44, 32, W, Data signal of table_words, </column>
+                    <column name="s_axi_control">output_capacity, 0x4c, 32, W, Data signal of output_capacity, </column>
+                    <column name="s_axi_control">confidence_q30, 0x54, 32, W, Data signal of confidence_q30, </column>
+                    <column name="s_axi_control">nms_q16, 0x5c, 32, W, Data signal of nms_q16, </column>
+                    <column name="s_axi_control">enable_nms, 0x64, 32, W, Data signal of enable_nms, </column>
+                    <column name="s_axi_control">candidate_count, 0x6c, 32, R, Data signal of candidate_count, </column>
+                    <column name="s_axi_control">candidate_count_ctrl, 0x70, 32, R, Control signal of candidate_count, 0=candidate_count_ap_vld</column>
+                    <column name="s_axi_control">detection_count, 0x7c, 32, R, Data signal of detection_count, </column>
+                    <column name="s_axi_control">detection_count_ctrl, 0x80, 32, R, Control signal of detection_count, 0=detection_count_ap_vld</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table isCollapsed="0">
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk, </column>
+                    <column name="ap_rst_n">reset, ap_rst_n, </column>
+                    <column name="interrupt">interrupt, interrupt, </column>
+                    <column name="ap_ctrl">ap_ctrl_hs, , </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="input">in, ap_uint&lt;128&gt; const *</column>
+                    <column name="tables">in, unsigned int const *</column>
+                    <column name="output">out, ap_uint&lt;256&gt;*</column>
+                    <column name="input_words">in, unsigned int</column>
+                    <column name="table_words">in, unsigned int</column>
+                    <column name="output_capacity">in, unsigned int</column>
+                    <column name="confidence_q30">in, unsigned int</column>
+                    <column name="nms_q16">in, unsigned int</column>
+                    <column name="enable_nms">in, unsigned int</column>
+                    <column name="candidate_count">out, unsigned int&amp;</column>
+                    <column name="detection_count">out, unsigned int&amp;</column>
+                    <column name="return">out, unsigned int</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="5">Argument, HW Interface, HW Type, HW Usage, HW Info</keys>
+                    <column name="input">m_axi_gmem_in, interface, , </column>
+                    <column name="input">s_axi_control, interface, offset, </column>
+                    <column name="tables">m_axi_gmem_in, interface, , </column>
+                    <column name="tables">s_axi_control, register, offset, name=tables_1 offset=0x24 range=32</column>
+                    <column name="tables">s_axi_control, register, offset, name=tables_2 offset=0x28 range=32</column>
+                    <column name="output">m_axi_gmem_out, interface, , </column>
+                    <column name="output">s_axi_control, interface, offset, </column>
+                    <column name="input_words">s_axi_control, register, , name=input_words offset=0x3c range=32</column>
+                    <column name="table_words">s_axi_control, register, , name=table_words offset=0x44 range=32</column>
+                    <column name="output_capacity">s_axi_control, register, , name=output_capacity offset=0x4c range=32</column>
+                    <column name="confidence_q30">s_axi_control, register, , name=confidence_q30 offset=0x54 range=32</column>
+                    <column name="nms_q16">s_axi_control, register, , name=nms_q16 offset=0x5c range=32</column>
+                    <column name="enable_nms">s_axi_control, register, , name=enable_nms offset=0x64 range=32</column>
+                    <column name="candidate_count">s_axi_control, register, , name=candidate_count offset=0x6c range=32</column>
+                    <column name="candidate_count">s_axi_control, register, , name=candidate_count_ctrl offset=0x70 range=32</column>
+                    <column name="detection_count">s_axi_control, register, , name=detection_count offset=0x7c range=32</column>
+                    <column name="detection_count">s_axi_control, register, , name=detection_count_ctrl offset=0x80 range=32</column>
+                    <column name="return">s_axi_control, register, , name=ap_return offset=0x10 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.">
+            <item name="Inferred Burst Summary">
+                <table>
+                    <keys size="6">HW Interface, Loop, Direction, Length, Width, Location</keys>
+                    <column name="m_axi_gmem_out">VITIS_LOOP_128_8, write, variable, 256, /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:128:27</column>
+                </table>
+            </item>
+            <item name="Inferred Bursts and Widening Missed">
+                <table>
+                    <keys size="6">HW Interface, Variable, Loop, Problem, Resolution, Location</keys>
+                    <column name="m_axi_gmem_in">input, VITIS_LOOP_102_7, Access load is in the conditional branch, 214-232, /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:102:39</column>
+                    <column name="m_axi_gmem_in">tables, , Access is clobbered by load, 214-231, /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:88:26</column>
+                    <column name="m_axi_gmem_out">output, VITIS_LOOP_128_8, Could not widen since type i256 size is greater than or equal to the max_widen_bitwidth threshold of 0, 214-353, /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:128:27</column>
+                    <column name="m_axi_gmem_in">tables, VITIS_LOOP_89_3, Could not widen since type i32 size is greater than or equal to the max_widen_bitwidth threshold of 0, 214-353, /home/amd/Workspace/HLS_IP/yolo_postprocess/src/yolo_postprocess.cpp:89:30</column>
+                </table>
+            </item>
+        </section>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="inline" location="../src/yolo_postprocess.cpp:11" status="valid" parentFunction="area" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="../src/yolo_postprocess.cpp:12" status="valid" parentFunction="area" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="bind_op" location="../src/yolo_postprocess.cpp:14" status="valid" parentFunction="area" variable="value" isDirective="0" options="variable=value op=mul impl=fabric latency=2"/>
+        <Pragma type="inline" location="../src/yolo_postprocess.cpp:19" status="valid" parentFunction="suppress" variable="" isDirective="0" options="off"/>
+        <Pragma type="pipeline" location="../src/yolo_postprocess.cpp:34" status="valid" parentFunction="suppress" variable="" isDirective="0" options="off"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:60" status="valid" parentFunction="yolo_postprocess" variable="input" isDirective="0" options="m_axi port=input offset=slave bundle=gmem_in depth=56563 max_read_burst_length=32 num_read_outstanding=2"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:61" status="valid" parentFunction="yolo_postprocess" variable="tables" isDirective="0" options="m_axi port=tables offset=slave bundle=gmem_in depth=5376"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:62" status="valid" parentFunction="yolo_postprocess" variable="output" isDirective="0" options="m_axi port=output offset=slave bundle=gmem_out depth=256 max_write_burst_length=16 num_write_outstanding=2"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:63" status="valid" parentFunction="yolo_postprocess" variable="input" isDirective="0" options="s_axilite port=input bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:64" status="valid" parentFunction="yolo_postprocess" variable="tables" isDirective="0" options="s_axilite port=tables bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:65" status="valid" parentFunction="yolo_postprocess" variable="output" isDirective="0" options="s_axilite port=output bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:66" status="valid" parentFunction="yolo_postprocess" variable="input_words" isDirective="0" options="s_axilite port=input_words bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:67" status="valid" parentFunction="yolo_postprocess" variable="table_words" isDirective="0" options="s_axilite port=table_words bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:68" status="valid" parentFunction="yolo_postprocess" variable="output_capacity" isDirective="0" options="s_axilite port=output_capacity bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:69" status="valid" parentFunction="yolo_postprocess" variable="confidence_q30" isDirective="0" options="s_axilite port=confidence_q30 bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:70" status="valid" parentFunction="yolo_postprocess" variable="nms_q16" isDirective="0" options="s_axilite port=nms_q16 bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:71" status="valid" parentFunction="yolo_postprocess" variable="enable_nms" isDirective="0" options="s_axilite port=enable_nms bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:72" status="valid" parentFunction="yolo_postprocess" variable="candidate_count" isDirective="0" options="s_axilite port=candidate_count bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:73" status="valid" parentFunction="yolo_postprocess" variable="detection_count" isDirective="0" options="s_axilite port=detection_count bundle=control"/>
+        <Pragma type="interface" location="../src/yolo_postprocess.cpp:74" status="valid" parentFunction="yolo_postprocess" variable="return" isDirective="0" options="s_axilite port=return bundle=control"/>
+        <Pragma type="bind_storage" location="../src/yolo_postprocess.cpp:81" status="valid" parentFunction="yolo_postprocess" variable="boxes" isDirective="0" options="variable=boxes type=ram_2p impl=bram"/>
+        <Pragma type="bind_storage" location="../src/yolo_postprocess.cpp:83" status="valid" parentFunction="yolo_postprocess" variable="lut" isDirective="0" options="variable=lut type=ram_2p impl=bram"/>
+        <Pragma type="pipeline" location="../src/yolo_postprocess.cpp:90" status="valid" parentFunction="yolo_postprocess" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="array_partition" location="../src/yolo_postprocess.cpp:99" status="valid" parentFunction="yolo_postprocess" variable="coords" isDirective="0" options="variable=coords complete"/>
+        <Pragma type="pipeline" location="../src/yolo_postprocess.cpp:103" status="valid" parentFunction="yolo_postprocess" variable="" isDirective="0" options="II=1"/>
+        <Pragma type="pipeline" location="../src/yolo_postprocess.cpp:133" status="valid" parentFunction="yolo_postprocess" variable="" isDirective="0" options="II=1"/>
+    </PragmaReport>
+</profile>
+
